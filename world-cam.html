@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: auto;
+        }
+
+        .video-section {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            position: relative;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            outline: none;
+            background: #000;
+        }
+
+        .video-container .player {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            pointer-events: none;
+            display: block;
+        }
+
+        .video-label {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-family: 'DM Mono', monospace;
+            font-size: 10px;
+            color: black;
+            background: white;
+            padding: 4px 8px;
+            z-index: 10;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: transparent;
+            z-index: 9999;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="player" data-video-id="DBWgFXSMr-8"></div>
+            <div class="video-label">Shibuya Crossing, Tokyo, Japan</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="rnXIjl_Rzy4"></div>
+            <div class="video-label">Times Square, New York City, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="B4-L2nfGcuE"></div>
+            <div class="video-label">Bald Eagle Nest, Big Bear Valley, California, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="K_Vg94nBiaY"></div>
+            <div class="video-label">Rialto Bridge, Venice, Italy</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="r0szTKKXh-k"></div>
+            <div class="video-label">Western Wall, Jerusalem, Israel</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="86-7Dr7yeVQ"></div>
+            <div class="video-label">Bourbon Street, New Orleans, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="7-Qf3g-0xEI"></div>
+            <div class="video-label">Great Mosque, Mecca, Saudi Arabia</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="gIv9J38Dax8"></div>
+            <div class="video-label">Niagara Falls, New York, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="u4UZ4UvZXrg"></div>
+            <div class="video-label">Temple Bar, Dublin, Ireland</div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="player" data-video-id="RDqrx6S2z20"></div>
+            <div class="video-label">Prati District, Rome, Italy</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="57w2gYXjRic"></div>
+            <div class="video-label">Abbey Road, London, England</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="uV3wWHSvkfs"></div>
+            <div class="video-label">El Zócalo, Mexico City, Mexico</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="-FguEt6H91s"></div>
+            <div class="video-label">Broad Street, Oxford, England</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="KyQAB-TKOVA"></div>
+            <div class="video-label">Watering Hole, Mpala Research Centre, Kenya</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="OzYp4NRZlwQ"></div>
+            <div class="video-label">Palais d'Iéna, Paris, France</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="cn8_34TuMaM"></div>
+            <div class="video-label">Harry Reid Airport, Las Vegas, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="8EZrLmaouXg"></div>
+            <div class="video-label">Copacabana Beach, Rio de Janeiro, Brazil</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="sQxL8t0gtu8"></div>
+            <div class="video-label">Chicago Skydeck, Chicago, USA</div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="player" data-video-id="IFnbDmgP69Q"></div>
+            <div class="video-label">Prague, Czechia</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="xHLEKR3_8iI"></div>
+            <div class="video-label">Overlook Luna Park, Coney Island, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="u70ySp4OuHY"></div>
+            <div class="video-label">West Parade, Kingston, Jamaica</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="R__e74ULCXQ"></div>
+            <div class="video-label">Bellagio Conservatory & Botanical Gardens, Las Vegas, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="nWFcWooDAxI"></div>
+            <div class="video-label">Tossa de Mar, Girona, Spain</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="RH5fgOcO0jg"></div>
+            <div class="video-label">The Franklin Institute, Philadelphia, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="DYWJdgulUEg"></div>
+            <div class="video-label">Baykalsk, Russia</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="ojLU8UsTiQQ"></div>
+            <div class="video-label">Maui, Hawaii, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="Gd9d4q6WvUY"></div>
+            <div class="video-label">Dam Square, Amsterdam, Netherlands</div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="player" data-video-id="AttVS4KM8tY"></div>
+            <div class="video-label">Praha hlavní nádraží, Prague, Czechia</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="q5522RsCN00"></div>
+            <div class="video-label">Axis Experience Center, Cincinnati, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="RA6Jm7sv_F4"></div>
+            <div class="video-label">Stavanger, Norway</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="HkHhXsWci7Q"></div>
+            <div class="video-label">Galveston Beach, Texas, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="MgnXYdXTNWE"></div>
+            <div class="video-label">Coastal towns, United Kingdom</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="KdXa0xp7jLs"></div>
+            <div class="video-label">Statue of Liberty, New York City, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="uvNosrM4muQ"></div>
+            <div class="video-label">Agdao Market, Davao City, Philippines</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="3LXQWU67Ufk"></div>
+            <div class="video-label">Venice Beach, California, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="tkpmcVQroqs"></div>
+            <div class="video-label">Broad Haven Beach, Pembrokeshire, Wales</div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="player" data-video-id="809RMryNnlM"></div>
+            <div class="video-label">The Rink, Bryant Park, New York City, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="WeTM0K_MTDA"></div>
+            <div class="video-label">Bay Beach Resort, Koh Samui, Thailand</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="xBGwYTurIsY"></div>
+            <div class="video-label">Mount Washington Observatory, New Hampshire, USA</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="gFRtAAmiFbE"></div>
+            <div class="video-label">Kabukicho, Tokyo, Japan</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="XSD5ptYisw8"></div>
+            <div class="video-label">Jiufen, Taiwan</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="rxyNjFKwzJA"></div>
+            <div class="video-label">Vancouver Harbor, Vancouver, Canada</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="OmyDLXvaus4"></div>
+            <div class="video-label">Hamburg, Germany</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="1phWWCgzXgM"></div>
+            <div class="video-label">Stationseiland, Amsterdam, Netherlands</div>
+        </div>
+        <div class="video-container">
+            <div class="player" data-video-id="RV2Iu0wbgec"></div>
+            <div class="video-label">Los Bauliches Beach, Fuengirola, Spain</div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        window.scrollTo(0, 0);
+        
+        let players = {};
+        const sections = document.querySelectorAll('.video-section');
+
+        function onYouTubeIframeAPIReady() {
+            playSection(sections[0]);
+
+            for (let i = 1; i < sections.length; i++) {
+                setTimeout(() => {
+                    playSection(sections[i]);
+                }, i * 5000);
+            }
+        }
+
+        function playSection(section) {
+            if (!section) return;
+            
+            const playerDivs = section.querySelectorAll('.player');
+            
+            playerDivs.forEach((playerDiv) => {
+                const videoId = playerDiv.getAttribute('data-video-id');
+                const playerId = playerDiv.id || `player-${videoId}-${Math.random().toString(36).substr(2, 9)}`;
+                playerDiv.id = playerId;
+
+                if (!players[playerId]) {
+                    players[playerId] = new YT.Player(playerId, {
+                        videoId: videoId,
+                        playerVars: {
+                            autoplay: 1,
+                            mute: 1,
+                            controls: 0,
+                            loop: 1,
+                            playlist: videoId,
+                            modestbranding: 1,
+                            rel: 0,
+                            showinfo: 0,
+                            fs: 0,
+                            playsinline: 1
+                        },
+                        events: {
+                            onReady: (event) => {
+                                event.target.playVideo();
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

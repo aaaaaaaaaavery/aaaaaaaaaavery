@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily To-Do List</title>
+  <style>
+    body {
+      background-color: #f8f2eb;
+      font-family: "Helvetica Neue", sans-serif;
+      color: black;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    #countdown-section {
+      margin-bottom: 1rem;
+    }
+
+    #countdown-section .time-input {
+      width: 150px;
+      margin-right: 0.5rem;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+
+    #countdown-section button {
+      margin-left: 0;
+    }
+
+    #countdown {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    #time-back {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #666;
+    }
+
+    #input-section {
+      margin-bottom: 1rem;
+    }
+
+    input[type="text"] {
+      padding: 0.5rem;
+      width: 300px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .time-input {
+      padding: 0.5rem;
+      width: 150px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      font-family: monospace;
+      text-align: center;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .todo-content {
+      margin-left: 0.5rem;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .todo-text {
+      margin-right: 0.5rem;
+    }
+
+    .deadline-info {
+      font-size: 0.9rem;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .done .todo-text {
+      color: gray;
+      text-decoration: line-through;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid black;
+      border-radius: 2px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked::after {
+      content: "✔";
+      position: absolute;
+      top: -2px;
+      left: 2px;
+      font-size: 14px;
+      color: black;
+    }
+
+    .accomplished-missed {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .accomplished-section, .missed-section {
+      flex: 1;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .accomplished-section .section-title {
+      color: green;
+    }
+
+    .missed-section .section-title {
+      color: red;
+    }
+
+    .accomplished-list, .missed-list {
+      list-style: none;
+      padding: 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      min-height: 100px;
+      padding: 0.5rem;
+    }
+
+    .accomplished-item {
+      color: green;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .missed-item {
+      color: red;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .accomplished-check, .missed-check {
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Persistent List Styles */
+    .main-container {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .daily-section {
+      flex: 1;
+    }
+
+    .persistent-section {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .persistent-section h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .persistent-input-section {
+      margin-bottom: 1rem;
+    }
+
+    .persistent-input-section input[type="text"] {
+      width: 200px;
+      margin-right: 0.5rem;
+    }
+
+    .persistent-list {
+      list-style: none;
+      padding: 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      min-height: 200px;
+      padding: 0.5rem;
+    }
+
+    .persistent-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      padding: 0.25rem;
+    }
+
+    .persistent-item.done .persistent-text {
+      color: gray;
+      text-decoration: line-through;
+    }
+
+    .persistent-text {
+      margin-left: 0.5rem;
+      flex-grow: 1;
+    }
+
+    .persistent-checkbox {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid black;
+      border-radius: 2px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .persistent-checkbox:checked::after {
+      content: "✔";
+      position: absolute;
+      top: -2px;
+      left: 2px;
+      font-size: 14px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="daily-section">
+      <h1>Today's To-Do List</h1>
+      <div id="countdown-section">
+        <input type="text" id="end-time-input" class="time-input" placeholder="HH:MM" maxlength="5" />
+        <button onclick="setEndTime()">Set End Time</button>
+      </div>
+      <div id="countdown">Time left today: --:--:--</div>
+      <div id="time-back">Time you get back: 0 minutes</div>
+
+      <div id="input-section">
+        <input type="text" id="todo-input" placeholder="Add a new task..." />
+        <input type="text" id="deadline-input" class="time-input" placeholder="HH:MM" maxlength="5" />
+        <button onclick="addTodo()">Add</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+
+      <div class="accomplished-missed">
+        <div class="accomplished-section">
+          <div class="section-title">Accomplished</div>
+          <ul id="accomplished-list" class="accomplished-list"></ul>
+        </div>
+        <div class="missed-section">
+          <div class="section-title">Missed Deadline</div>
+          <ul id="missed-list" class="missed-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="persistent-section">
+      <h2>My Tasks</h2>
+      <div class="persistent-input-section">
+        <input type="text" id="persistent-input" placeholder="Add a task..." />
+        <button onclick="addPersistentTask()">Add</button>
+      </div>
+      <ul id="persistent-list" class="persistent-list"></ul>
+    </div>
+  </div>
+
+  <script>
+    // Global variables
+    let totalTimeBack = 0; // Start fresh each time
+    let deadlineTimers = new Map();
+    let endTime = null; // Start fresh each time
+    let countdownInterval = null;
+
+    // Load saved end time
+    function loadEndTime() {
+      // Don't load saved end time - start fresh each time
+      // if (endTime) {
+      //   document.getElementById('end-time-input').value = endTime;
+      //   setEndTime();
+      // }
+    }
+
+    // Set end time and start countdown
+    function setEndTime() {
+      const endTimeInput = document.getElementById('end-time-input').value;
+      if (!endTimeInput) return;
+      
+      endTime = endTimeInput;
+      localStorage.setItem('endTime', endTime);
+      
+      // Hide input section and show countdown
+      document.getElementById('countdown-section').style.display = 'none';
+      
+      // Start countdown timer
+      if (countdownInterval) clearInterval(countdownInterval);
+      countdownInterval = setInterval(updateCountdown, 1000);
+      updateCountdown();
+    }
+
+    // Countdown timer
+    function updateCountdown() {
+      if (!endTime) return;
+      
+      const now = new Date();
+      const [hours, minutes] = endTime.split(':');
+      const endTimeDate = new Date();
+      endTimeDate.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+
+      const diff = endTimeDate - now;
+
+      if (diff > 0) {
+        const hoursLeft = Math.floor(diff / (1000 * 60 * 60));
+        const minutesLeft = Math.floor((diff / (1000 * 60)) % 60);
+        const secondsLeft = Math.floor((diff / 1000) % 60);
+
+        // Format time remaining
+        let timeRemaining = '';
+        if (hoursLeft > 0) {
+          timeRemaining = `${hoursLeft} hour${hoursLeft !== 1 ? 's' : ''} ${minutesLeft} minute${minutesLeft !== 1 ? 's' : ''} and ${secondsLeft} second${secondsLeft !== 1 ? 's' : ''}`;
+        } else {
+          timeRemaining = `${minutesLeft} minute${minutesLeft !== 1 ? 's' : ''} and ${secondsLeft} second${secondsLeft !== 1 ? 's' : ''}`;
+        }
+
+        // Format deadline time for display
+        const endTimeDisplay = new Date();
+        endTimeDisplay.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+        const deadlineTimeStr = endTimeDisplay.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'});
+
+        document.getElementById('countdown').textContent = `${timeRemaining} until ${deadlineTimeStr}`;
+      } else {
+        clearListAtEndTime();
+      }
+      
+      document.getElementById('time-back').textContent = `Time you get back: ${totalTimeBack} minutes`;
+    }
+
+    function clearListAtEndTime() {
+      document.getElementById('todo-list').innerHTML = '';
+      localStorage.removeItem('todos');
+      localStorage.removeItem('timeBack');
+      localStorage.removeItem('endTime');
+      totalTimeBack = 0;
+      endTime = null;
+      deadlineTimers.clear();
+      
+      if (countdownInterval) {
+        clearInterval(countdownInterval);
+        countdownInterval = null;
+      }
+      
+      // Reset to input mode
+      document.getElementById('countdown-section').style.display = 'block';
+      document.getElementById('end-time-input').value = '';
+      document.getElementById('countdown').textContent = 'Time left today: --:--:--';
+    }
+
+    // To-Do list logic
+    const todoList = document.getElementById('todo-list');
+    const todoInput = document.getElementById('todo-input');
+    const deadlineInput = document.getElementById('deadline-input');
+
+    function loadTodos() {
+      // Don't load saved todos - start fresh each time
+      // const saved = JSON.parse(localStorage.getItem('todos')) || [];
+      // saved.forEach(item => {
+      //   createTodoElement(item.text, item.deadline, item.done, item.timeBack || 0);
+      // });
+    }
+
+    function saveTodos() {
+      const items = Array.from(todoList.children).map(li => ({
+        text: li.querySelector('.todo-text').textContent,
+        deadline: li.dataset.deadline,
+        done: li.classList.contains('done'),
+        timeBack: parseInt(li.dataset.timeBack) || 0
+      }));
+      localStorage.setItem('todos', JSON.stringify(items));
+      localStorage.setItem('timeBack', totalTimeBack.toString());
+    }
+
+    function addTodo() {
+      const text = todoInput.value.trim();
+      const deadline = deadlineInput.value;
+      
+      if (text !== '' && deadline !== '') {
+        // Check if deadline is in the future
+        if (!isTimeInFuture(deadline)) {
+          alert('Please enter a deadline time that is in the future.');
+          deadlineInput.style.borderColor = 'red';
+          deadlineInput.focus();
+          return;
+        }
+        
+        createTodoElement(text, deadline, false, 0);
+        todoInput.value = '';
+        deadlineInput.value = '';
+        deadlineInput.style.borderColor = ''; // Reset border color
+        saveTodos();
+      }
+    }
+
+    function updateTaskDeadlineCountdown(li, deadline) {
+      if (!deadline || !li.querySelector('.deadline-info')) return;
+      
+      const deadlineTime = new Date();
+      const [hours, minutes] = deadline.split(':');
+      
+      if (!hours || !minutes) return;
+      
+      deadlineTime.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+
+      const now = new Date();
+      const diff = deadlineTime - now;
+
+      if (diff > 0) {
+        const hoursLeft = Math.floor(diff / (1000 * 60 * 60));
+        const minutesLeft = Math.floor((diff / (1000 * 60)) % 60);
+        const secondsLeft = Math.floor((diff / 1000) % 60);
+        
+        let timeLeftText = '';
+        if (hoursLeft > 0) {
+          timeLeftText = `${hoursLeft}h ${minutesLeft}m ${secondsLeft}s`;
+        } else {
+          timeLeftText = `${minutesLeft}m ${secondsLeft}s`;
+        }
+        
+        li.querySelector('.deadline-info').textContent = `Deadline: ${deadline} (${timeLeftText} left)`;
+        li.dataset.timeLeft = Math.floor(diff / (1000 * 60));
+      } else {
+        li.querySelector('.deadline-info').textContent = `Deadline: ${deadline} (OVERDUE)`;
+        li.dataset.timeLeft = 0;
+      }
+    }
+
+    function createTodoElement(text, deadline, done, timeBack) {
+      const li = document.createElement('li');
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+
+      const todoContent = document.createElement('div');
+      todoContent.className = 'todo-content';
+
+      const span = document.createElement('span');
+      span.className = 'todo-text';
+      span.textContent = text;
+
+      const deadlineSpan = document.createElement('span');
+      deadlineSpan.className = 'deadline-info';
+
+      li.dataset.deadline = deadline;
+      li.dataset.timeBack = timeBack;
+
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          // Calculate time saved
+          const timeLeft = parseInt(li.dataset.timeLeft) || 0;
+          if (timeLeft > 0) {
+            totalTimeBack += timeLeft;
+            li.dataset.timeBack = (parseInt(li.dataset.timeBack) + timeLeft).toString();
+            document.getElementById('time-back').textContent = `Time you get back: ${totalTimeBack} minutes`;
+            localStorage.setItem('timeBack', totalTimeBack.toString());
+          }
+          
+          // Check if completed before deadline
+          const deadline = li.dataset.deadline;
+          const now = new Date();
+          const [hours, minutes] = deadline.split(':');
+          const deadlineTime = new Date();
+          deadlineTime.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+          
+          if (now < deadlineTime) {
+            // Completed before deadline - move to accomplished
+            moveToAccomplishedList(li);
+        } else {
+            // Completed after deadline - move to missed
+            moveToMissedList(li);
+          }
+          
+          saveTodos();
+        }
+      });
+
+      todoContent.appendChild(span);
+      todoContent.appendChild(deadlineSpan);
+      li.appendChild(checkbox);
+      li.appendChild(todoContent);
+
+      // Update deadline countdown
+      updateTaskDeadlineCountdown(li, deadline);
+
+      // Set up timer for this task's deadline countdown
+      const timer = setInterval(() => {
+        if (!li.classList.contains('done')) {
+          updateTaskDeadlineCountdown(li, deadline);
+        }
+      }, 1000); // Update every second
+      
+      deadlineTimers.set(li, timer);
+
+      if (done) {
+        li.classList.add('done');
+        checkbox.checked = true;
+        todoList.appendChild(li);
+        clearInterval(timer);
+      } else {
+        // Add new tasks to bottom (but above completed tasks)
+        const completedTasks = Array.from(todoList.children).filter(li => li.classList.contains('done'));
+        if (completedTasks.length > 0) {
+          todoList.insertBefore(li, completedTasks[0]);
+        } else {
+          todoList.appendChild(li);
+        }
+      }
+    }
+
+    // Check if time is in the future
+    function isTimeInFuture(timeString) {
+      if (!timeString || timeString.length < 5) return true; // Allow incomplete times
+      
+      const now = new Date();
+      const [hours, minutes] = timeString.split(':');
+      
+      if (!hours || !minutes) return true;
+      
+      const inputTime = new Date();
+      inputTime.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+      
+      return inputTime > now;
+    }
+
+    // Auto-advance time input functionality
+    function setupTimeInputAutoAdvance() {
+      const endTimeInput = document.getElementById('end-time-input');
+      const deadlineInput = document.getElementById('deadline-input');
+      
+      [endTimeInput, deadlineInput].forEach(input => {
+        input.addEventListener('input', function(e) {
+          let value = this.value;
+          
+          // Only allow numbers and colons
+          value = value.replace(/[^0-9:]/g, '');
+          
+          // Auto-add colon after 2 digits
+          if (value.length === 2 && !value.includes(':')) {
+            value = value + ':';
+          }
+          
+          // Limit to 5 characters (HH:MM)
+          if (value.length > 5) {
+            value = value.substring(0, 5);
+          }
+          
+          this.value = value;
+          
+          // Validate time is in future (only for deadline input)
+          if (input === deadlineInput && value.length === 5) {
+            if (!isTimeInFuture(value)) {
+              this.style.borderColor = 'red';
+              this.title = 'Please enter a time in the future';
+            } else {
+              this.style.borderColor = '';
+              this.title = '';
+            }
+          }
+        });
+        
+        input.addEventListener('keydown', function(e) {
+          // Allow: backspace, delete, tab, escape, enter
+          if ([8, 9, 27, 13, 46].indexOf(e.keyCode) !== -1 ||
+              // Allow: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
+              (e.keyCode === 65 && e.ctrlKey === true) ||
+              (e.keyCode === 67 && e.ctrlKey === true) ||
+              (e.keyCode === 86 && e.ctrlKey === true) ||
+              (e.keyCode === 88 && e.ctrlKey === true)) {
+            return;
+          }
+          // Ensure that it is a number and stop the keypress
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+          }
+        });
+        
+        input.addEventListener('blur', function() {
+          // Validate on blur
+          if (input === deadlineInput && this.value.length === 5) {
+            if (!isTimeInFuture(this.value)) {
+              this.style.borderColor = 'red';
+              this.title = 'Please enter a time in the future';
+            } else {
+              this.style.borderColor = '';
+              this.title = '';
+            }
+          }
+        });
+      });
+    }
+
+    // Check deadlines and move tasks to appropriate sections
+    function checkDeadlines() {
+      const now = new Date();
+      const tasks = Array.from(todoList.children);
+      
+      tasks.forEach(task => {
+        if (task.classList.contains('done')) return; // Skip completed tasks
+        
+        const deadline = task.dataset.deadline;
+        if (!deadline) return;
+        
+        const [hours, minutes] = deadline.split(':');
+        const deadlineTime = new Date();
+        deadlineTime.setHours(parseInt(hours), parseInt(minutes), 0, 0);
+        
+        if (now >= deadlineTime) {
+          // Deadline has passed, move to missed list
+          moveToMissedList(task);
+        }
+      });
+    }
+
+    function moveToAccomplishedList(task) {
+      const text = task.querySelector('.todo-text').textContent;
+      const deadline = task.dataset.deadline;
+      
+      const accomplishedItem = document.createElement('li');
+      accomplishedItem.className = 'accomplished-item';
+      accomplishedItem.innerHTML = `<span class="accomplished-check">✅</span>${text} (${deadline})`;
+      
+      document.getElementById('accomplished-list').appendChild(accomplishedItem);
+      
+      // Remove from main list
+      task.remove();
+      if (deadlineTimers.has(task)) {
+        clearInterval(deadlineTimers.get(task));
+        deadlineTimers.delete(task);
+      }
+    }
+
+    function moveToMissedList(task) {
+      const text = task.querySelector('.todo-text').textContent;
+      const deadline = task.dataset.deadline;
+      
+      const missedItem = document.createElement('li');
+      missedItem.className = 'missed-item';
+      missedItem.innerHTML = `<span class="missed-check">❌</span>${text} (${deadline})`;
+      
+      document.getElementById('missed-list').appendChild(missedItem);
+      
+      // Remove from main list
+      task.remove();
+      if (deadlineTimers.has(task)) {
+        clearInterval(deadlineTimers.get(task));
+        deadlineTimers.delete(task);
+      }
+    }
+
+    // Persistent List functionality
+    const persistentList = document.getElementById('persistent-list');
+    const persistentInput = document.getElementById('persistent-input');
+
+    function loadPersistentTasks() {
+      const saved = JSON.parse(localStorage.getItem('persistentTasks')) || [];
+      saved.forEach(task => {
+        createPersistentTaskElement(task.text, task.done);
+      });
+    }
+
+    function savePersistentTasks() {
+      const items = Array.from(persistentList.children).map(li => ({
+        text: li.querySelector('.persistent-text').textContent,
+        done: li.classList.contains('done')
+      }));
+      localStorage.setItem('persistentTasks', JSON.stringify(items));
+    }
+
+    function addPersistentTask() {
+      const text = persistentInput.value.trim();
+      if (text !== '') {
+        createPersistentTaskElement(text, false);
+        persistentInput.value = '';
+        savePersistentTasks();
+      }
+    }
+
+    function createPersistentTaskElement(text, done) {
+      const li = document.createElement('li');
+      li.className = 'persistent-item';
+      
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.className = 'persistent-checkbox';
+      
+      const span = document.createElement('span');
+      span.className = 'persistent-text';
+      span.textContent = text;
+      
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          li.classList.add('done');
+          // Move to accomplished section
+          movePersistentToAccomplished(li, text);
+        } else {
+          li.classList.remove('done');
+        }
+        savePersistentTasks();
+      });
+      
+      if (done) {
+        li.classList.add('done');
+        checkbox.checked = true;
+      }
+      
+      li.appendChild(checkbox);
+      li.appendChild(span);
+      persistentList.appendChild(li);
+    }
+
+    function movePersistentToAccomplished(li, text) {
+      const accomplishedItem = document.createElement('li');
+      accomplishedItem.className = 'accomplished-item';
+      accomplishedItem.innerHTML = `<span class="accomplished-check">✅</span>${text}`;
+      
+      document.getElementById('accomplished-list').appendChild(accomplishedItem);
+      
+      // Remove from persistent list
+      li.remove();
+    }
+
+    // Allow Enter key to add persistent tasks
+    persistentInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        addPersistentTask();
+      }
+    });
+
+    loadTodos();
+    loadEndTime();
+    loadPersistentTasks();
+    setupTimeInputAutoAdvance();
+    
+    // Check deadlines every minute
+    setInterval(checkDeadlines, 60000);
+  </script>
+
+</body>
+</html>
