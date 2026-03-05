@@ -1,0 +1,205 @@
+
+🧪 Testing 92 feeds...
+
+Testing mlbtraderumors... ✅ (15 items)
+Testing cbs-nfl-rss... ✅ (36 items)
+Testing yahoo-nfl-rss... ✅ (50 items)
+Testing foxsports-nfl-api... ✅ (30 items)
+Testing espn-nfl-rss... ✅ (23 items)
+Testing nfl-com... ❌ HTTP 503
+Testing yahoo-mlb-rss... ✅ (50 items)
+Testing yahoo-nba-rss... ✅ (50 items)
+Testing cbs-mlb-rss... ✅ (36 items)
+Testing espn-nba-rss... ✅ (17 items)
+Testing nba-com-news... ❌ HTTP 503
+Testing cbs-nba-rss... ✅ (36 items)
+Testing foxsports-nba-api... ✅ (30 items)
+Testing yahoo-nhl-rss... ✅ (50 items)
+Testing nhl-com-news... ❌ HTTP 503
+Testing espn-nhl-rss... ✅ (11 items)
+Testing cbs-nhl-rss... ✅ (36 items)
+Testing hockeywriters... ❌ HTTP 503
+Testing hockeynews... ❌ HTTP 503
+Testing onefootball-home... ❌ HTTP 503
+Testing goal-com... ✅ (20 items)
+Testing worldsoccertalk... ❌ HTTP 503
+Testing espn-soccer-rss... ✅ (18 items)
+Testing yahoo-soccer-rss... ✅ (50 items)
+Testing cbs-soccer-rss... ✅ (36 items)
+Testing transfermarkt-rss... ❌ Not valid RSS/Atom XML
+Testing getfootballnewsgermany-bundesliga... ✅ (10 items)
+Testing bundesliga-com... ❌ HTTP 503
+Testing reddit-nwsl... ❌ HTTP 503
+Testing reddit-ligue1... ❌ HTTP 503
+Testing reddit-ligamx... ❌ HTTP 503
+Testing newsnow-ligamx... ✅ (30 items)
+Testing yahoo-collegefootball-rss... ✅ (50 items)
+Testing nytimes-athletic-cfb... ❌ HTTP 503
+Testing espn-ncf-rss... ✅ (19 items)
+Testing cbs-collegefootball-rss... ✅ (36 items)
+Testing foxsports-cfb-api... ✅ (30 items)
+Testing 247sports-cfb... ❌ HTTP 503
+Testing reddit-cfb... ❌ HTTP 503
+Testing collegefootballnews... ❌ HTTP 503
+Testing sportingnews-cfb... ❌ HTTP 503
+Testing si-cfb... ❌ HTTP 503
+Testing bleacherreport-cfb... ❌ HTTP 503
+Testing saturdaydownsouth... ❌ HTTP 503
+Testing on3-cfb... ❌ HTTP 503
+Testing golfdigest... ❌ HTTP 503
+Testing pgatour-com... ❌ HTTP 503
+Testing golfwrx... ❌ HTTP 503
+Testing golfmonthly... ❌ HTTP 503
+Testing si-golf... ❌ HTTP 503
+Testing si-ufc... ❌ HTTP 503
+Testing mmajunkie... ❌ HTTP 503
+Testing mmamania... ❌ HTTP 503
+Testing sherdog... ❌ HTTP 503
+Testing mma-core... ❌ HTTP 503
+Testing ufc-com... ❌ HTTP 503
+Testing tapology... ❌ HTTP 503
+Testing mmafighting... ❌ HTTP 503
+Testing ringmagazine-rss... ❌ HTTP 503
+Testing boxingnews24... ❌ HTTP 503
+Testing badlefthook... ❌ HTTP 503
+Testing boxingscene... ❌ HTTP 503
+Testing boxing247... ❌ HTTP 503
+Testing newsnow-nfl... ✅ (30 items)
+Testing newsnow-nba... ✅ (30 items)
+Testing newsnow-soccer... ✅ (30 items)
+Testing newsnow-championsleague... ✅ (30 items)
+Testing newsnow-premierleague... ✅ (30 items)
+Testing newsnow-mls... ✅ (30 items)
+Testing newsnow-laliga... ✅ (30 items)
+Testing newsnow-seriea... ✅ (30 items)
+Testing newsnow-bundesliga... ✅ (30 items)
+Testing newsnow-facup... ✅ (30 items)
+Testing newsnow-ligue1... ✅ (30 items)
+Testing newsnow-nwsl... ✅ (30 items)
+Testing newsnow-f1... ❌ HTTP 504
+Testing newsnow-europaleague... ❌ HTTP 504
+Testing newsnow-ncaabasketball... ❌ HTTP 504
+Testing newsnow-ncaafootball... ❌ HTTP 504
+Testing newsnow-pgatour... ❌ HTTP 504
+Testing newsnow-ufc... ❌ HTTP 504
+Testing newsnow-boxing... ❌ HTTP 504
+Testing newsnow-tennis... ❌ HTTP 504
+Testing newsnow-nascar... ❌ HTTP 504
+Testing newsnow-wnba... ❌ HTTP 504
+Testing newsnow-livgolf... ❌ HTTP 504
+Testing newsnow-motogp... ❌ HTTP 504
+Testing newsnow-lpga... ❌ HTTP 504
+Testing newsnow-indycar... ❌ HTTP 504
+Testing newsnow-trackandfield... ❌ HTTP 504
+Testing newsnow-europaconferenceleague... ❌ HTTP 504
+Testing nwsl-bundle... ❌ HTTP 504
+
+📊 Summary:
+   ✅ Working: 36
+   ❌ Failing: 56
+
+❌ Failing Feeds:
+
+   RzsFiWRkJWt232Z1 → nfl-com: HTTP 503
+   gpNdeo4WRun54WuS → nba-com-news: HTTP 503
+   tjqR23Xwa5us4EGS → nhl-com-news: HTTP 503
+   Zf7Ng96ruXO870Ee → hockeywriters: HTTP 503
+   V79dVmqWDC7pLACZ → hockeynews: HTTP 503
+   SBZfeZPSsLT2mwmU → onefootball-home: HTTP 503
+   f5rbTpdVjq93AlTY → worldsoccertalk: HTTP 503
+   W5qj2Lq2skC4hTyn → transfermarkt-rss: Not valid RSS/Atom XML
+   fg5UIrrq1YikBxyg → bundesliga-com: HTTP 503
+   HL9rA42ELIkqWXJg → reddit-nwsl: HTTP 503
+   UNtqy55sZPAGDxWp → reddit-ligue1: HTTP 503
+   o3KVLBimGj35TqzR → reddit-ligamx: HTTP 503
+   ydzB00a4yYWWhOJE → nytimes-athletic-cfb: HTTP 503
+   SQahLIzekjAsW3lk → 247sports-cfb: HTTP 503
+   tBrt5dpIhevVbeQi → reddit-cfb: HTTP 503
+   d2PbmQcxqRMOPRvs → collegefootballnews: HTTP 503
+   ZX6NqXnTRPsqJl24 → sportingnews-cfb: HTTP 503
+   TC8CR6Epre8sOBbW → si-cfb: HTTP 503
+   ftJXlnwUtPK98zMT → bleacherreport-cfb: HTTP 503
+   LsKtD2ijrBKLHTPy → saturdaydownsouth: HTTP 503
+   L3knSpnVPuEqu9F3 → on3-cfb: HTTP 503
+   GNRqjlnU2hDoUspd → golfdigest: HTTP 503
+   PGlnIglwoK57BFgx → pgatour-com: HTTP 503
+   SBEwIpFRnxpFz5yO → golfwrx: HTTP 503
+   yoYhJTH3khDR6VnA → golfmonthly: HTTP 503
+   Kk2DP7BQ6R63genW → si-golf: HTTP 503
+   52JoNIj0uJyAO8Ro → si-ufc: HTTP 503
+   DZNQ6V2829Gsq89j → mmajunkie: HTTP 503
+   9HbNO7koG4FRO0EZ → mmamania: HTTP 503
+   2NV0LB8BpoemNq2N → sherdog: HTTP 503
+   X39lxMdIQOjTjP4s → mma-core: HTTP 503
+   C3NmUDHJr8cWHBCk → ufc-com: HTTP 503
+   sZGhLnyeUeeeDnBs → tapology: HTTP 503
+   6KutJNC4K8DelGwZ → mmafighting: HTTP 503
+   aScu4PsqcyQ1kfFt → ringmagazine-rss: HTTP 503
+   TBwd9L3O8cQywuxX → boxingnews24: HTTP 503
+   i1VCLI9hScfbZjgu → badlefthook: HTTP 503
+   FpEL1AAFV73VieeD → boxingscene: HTTP 503
+   xBIj1RcHaBcd7WfJ → boxing247: HTTP 503
+   zRogbCPNliFNNTuM → newsnow-f1: HTTP 504
+   Y86rdhcYGEJTzVVE → newsnow-europaleague: HTTP 504
+   1miuV1gDF41iBCUm → newsnow-ncaabasketball: HTTP 504
+   O8juJbxSctWCFqdV → newsnow-ncaafootball: HTTP 504
+   R0LMNrxS5mPorbsV → newsnow-pgatour: HTTP 504
+   II7WkAEfi65q8OMI → newsnow-ufc: HTTP 504
+   8UNhLRsk0v8buOUz → newsnow-boxing: HTTP 504
+   Nh0zQXRLhhvfmuTh → newsnow-tennis: HTTP 504
+   vOF2I7lq3n3IsV8K → newsnow-nascar: HTTP 504
+   Eaaaqyki6E6nnMZR → newsnow-wnba: HTTP 504
+   InHgRAqAOeKlilq8 → newsnow-livgolf: HTTP 504
+   VkQvfkJZA51pa8EB → newsnow-motogp: HTTP 504
+   0afVGov5MVxxBF7B → newsnow-lpga: HTTP 504
+   Zo7JsQDXIT8D0pCD → newsnow-indycar: HTTP 504
+   VqavgJOoX0LKkfkb → newsnow-trackandfield: HTTP 504
+   0zeKHWCVNtBCrCro → newsnow-europaconferenceleague: HTTP 504
+   _QoQmejtlVFZhkOXP → nwsl-bundle: HTTP 504
+
+✅ Working Feeds (for index.html replacement):
+
+YJjVVRof201ZO9zO → https://rss-feed-service-124291936014.us-central1.run.app/feeds/mlbtraderumors.xml
+PlvW7vqF4AaGbwcp → https://rss-feed-service-124291936014.us-central1.run.app/feeds/cbs-nfl-rss.xml
+rHWxXQ9YaXdlGVjA → https://rss-feed-service-124291936014.us-central1.run.app/feeds/yahoo-nfl-rss.xml
+yQjCNVjNGrK8PYed → https://rss-feed-service-124291936014.us-central1.run.app/feeds/foxsports-nfl-api.xml
+cexYuRoRAMSoUAp8 → https://rss-feed-service-124291936014.us-central1.run.app/feeds/espn-nfl-rss.xml
+BKInO41JsrUscMDQ → https://rss-feed-service-124291936014.us-central1.run.app/feeds/yahoo-mlb-rss.xml
+3aWvxow1noZCrVBq → https://rss-feed-service-124291936014.us-central1.run.app/feeds/yahoo-nba-rss.xml
+Bv6N7qiA79eXbSl6 → https://rss-feed-service-124291936014.us-central1.run.app/feeds/cbs-mlb-rss.xml
+pbw0uEDOop5lPZ1h → https://rss-feed-service-124291936014.us-central1.run.app/feeds/espn-nba-rss.xml
+XNu5yCjXjSTjFNuz → https://rss-feed-service-124291936014.us-central1.run.app/feeds/cbs-nba-rss.xml
+bGCDWYzMpS4kpEEJ → https://rss-feed-service-124291936014.us-central1.run.app/feeds/foxsports-nba-api.xml
+6gjSXkILFAiwYPLU → https://rss-feed-service-124291936014.us-central1.run.app/feeds/yahoo-nhl-rss.xml
+aEOH2tj5bfjq4oJd → https://rss-feed-service-124291936014.us-central1.run.app/feeds/espn-nhl-rss.xml
+xtqmDS6UnTyXSmXG → https://rss-feed-service-124291936014.us-central1.run.app/feeds/cbs-nhl-rss.xml
+tWKu85yTZrmms6lo → https://rss-feed-service-124291936014.us-central1.run.app/feeds/goal-com.xml
+3SZSbvRR7GXi7Al1 → https://rss-feed-service-124291936014.us-central1.run.app/feeds/espn-soccer-rss.xml
+SlUe5H1aOykHQcvX → https://rss-feed-service-124291936014.us-central1.run.app/feeds/yahoo-soccer-rss.xml
+10xrZLK2Mn4xhAqJ → https://rss-feed-service-124291936014.us-central1.run.app/feeds/cbs-soccer-rss.xml
+ixvULiUvb7Hm3fDx → https://rss-feed-service-124291936014.us-central1.run.app/feeds/getfootballnewsgermany-bundesliga.xml
+Eh9IrBhQ1Pk3MxVu → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-ligamx.xml
+cYgsxfZK9RmqKiOn → https://rss-feed-service-124291936014.us-central1.run.app/feeds/yahoo-collegefootball-rss.xml
+Z2rHcU1BGE8RLayI → https://rss-feed-service-124291936014.us-central1.run.app/feeds/espn-ncf-rss.xml
+1wcMh76GcHSPwTvk → https://rss-feed-service-124291936014.us-central1.run.app/feeds/cbs-collegefootball-rss.xml
+Zzvx41Fx8M8WXUS1 → https://rss-feed-service-124291936014.us-central1.run.app/feeds/foxsports-cfb-api.xml
+kjurR9A5jgpHvsLg → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-nfl.xml
+akV2j729WtUvltyb → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-nba.xml
+3V06VrWkV19SDcqR → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-soccer.xml
+j3EAnbrpQMEYzW57 → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-championsleague.xml
+V6GJiuM6jBXVG34K → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-premierleague.xml
+iuBiYyHPmlifaUUK → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-mls.xml
+t8z976udlBJCMLSW → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-laliga.xml
+HSwo9xgOL1OUFqS0 → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-seriea.xml
+qeqYXeDvgq5bpYsL → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-bundesliga.xml
+6hu4o6gj1agGCz5i → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-facup.xml
+AdN94t2aMmFNKpiW → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-ligue1.xml
+PE7NGL6ftSREkzv9 → https://rss-feed-service-124291936014.us-central1.run.app/feeds/newsnow-nwsl.xml
+Error: Error: ENOENT: no such file or directory, open 'rss-feed-service/FEED_TEST_RESULTS.json'
+    at Module.writeFileSync (node:fs:2425:20)
+    at testAllFeeds (file:///Users/avery/Downloads/Copy%20of%20THPORTHINDEX/rss-feed-service/test-new-feeds.js:230:6) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'rss-feed-service/FEED_TEST_RESULTS.json'
+}

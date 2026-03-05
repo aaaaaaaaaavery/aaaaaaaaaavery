@@ -1,0 +1,14 @@
+{
+  "name": "fetch-yesterday-scores",
+  "version": "1.0.0",
+  "description": "Cloud Function to fetch yesterday's scores for all leagues",
+  "main": "cloud-function-yesterday.js",
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "luxon": "^3.4.4",
+    "node-fetch": "^2.7.0"
+  },
+  "engines": {
+    "node": "20"
+  }
+}

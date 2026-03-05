@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.x/build/global/luxon.min.js"></script>
+
+    <script>
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      const host = location.hostname;
+      if (isMobile && !host.startsWith("m.")) {
+        const mobileHost = "m." + host.replace(/^www\\./, "");
+        location.replace(
+          location.protocol + "//" +
+          mobileHost +
+          location.pathname +
+          location.search +
+          location.hash
+        );
+      }
+    </script>
+
+    <style>
+      .news-tab[data-tab="fantasy"],
+      .news-tab[data-tab="transactions"],
+      #fantasy-feed,
+      #transactions-feed {
+        display: none !important;
+      }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBFZXZSG19"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CBFZXZSG19');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get the latest sports news, social buzz, and live scores for NFL, NBA, MLB, and more — all in one place.">
+    <meta name="robots" content="index, follow" />
+    <title>THPORTH | All the latest sports news</title>
+   
+    <link rel="icon" type="image/png" href="https://github.com/THPORTH/thporth/blob/main/thporth_AllSportsNews_logo-white.png?raw=true" />
+    <link rel="canonical" href="https://www.thporth.com/" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.thporth.com/" />
+    <meta property="og:title" content="THPORTH | All the latest sports news" />
+    <meta property="og:description" content="Get the latest sports news, social buzz, and live scores for NFL, NBA, MLB, and more — all in one place." />
+    <meta property="og:image" content="https://github.com/ajolly2/ajolly2.github.io/blob/master/thporth_AllSportsNews_logo-red.png?raw=true" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.thporth.com/" />
+    <meta name="twitter:title" content="THPORTH | All the latest sports news" />
+    <meta name="twitter:description" content="Get the latest sports news, social buzz, and live scores for NFL, NBA, MLB, and more — all in one place." />
+    <meta name="twitter:image" content="https://github.com/ajolly2/ajolly2.github.io/blob/master/thporth_AllSportsNews_logo-red.png?raw=true" />
+
+    <style>
+      /* TERMINAL CONTROL SYSTEM REDESIGN - KEEPING ALL ORIGINAL FUNCTIONALITY */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
+      /* Global Resets */
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Roboto Mono', monospace;
+        background-color: #1A1A1A;
+        color: #CCCCCC;
+        overflow-x: hidden;
+      }
+
+      ul, li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .spacer-line {
+        height: 10px;
+      }
+
+      /* Terminal Header Bar */
+      .terminal-header {
+        background-color: #0F0F0F;
+        border-bottom: 2px solid #00FF00;
+        padding: 8px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .terminal-header-left {
+        color: #00FF00;
+      }
+
+      .terminal-header-center {
+        color: #CCCCCC;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .terminal-header-right {
+        color: #CCCCCC;
+      }
+
+      /* Menu Bar */
+      .terminal-menu {
+        background-color: #0F0F0F;
+        border-bottom: 1px solid #333333;
+        padding: 4px 16px;
+        display: flex;
+        gap: 24px;
+        font-size: 11px;
+        color: #CCCCCC;
+      }
+
+      .terminal-menu span {
+        cursor: pointer;
+        padding: 2px 4px;
+        border: 1px solid transparent;
+      }
+
+      .terminal-menu span:hover {
+        border: 1px solid #00FF00;
+        color: #00FF00;
+      }
+
+      /* Control Panel */
+      .control-panel {
+        background-color: #0F0F0F;
+        border-bottom: 1px solid #333333;
+        padding: 12px 16px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .control-section {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .control-section-label {
+        color: #00FF00;
+        font-size: 11px;
+        font-weight: 500;
+        margin-right: 8px;
+      }
+
+      .terminal-button {
+        background-color: #1A1A1A;
+        border: 1px solid #333333;
+        color: #CCCCCC;
+        padding: 6px 12px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .terminal-button:hover {
+        border-color: #00FF00;
+        color: #00FF00;
+      }
+
+      .terminal-button.active {
+        background-color: #00FF00;
+        color: #1A1A1A;
+        border-color: #00FF00;
+      }
+
+      .status-readout {
+        color: #CCCCCC;
+        font-size: 10px;
+        margin-left: 16px;
+      }
+
+      /* Main Layout - KEEPING ORIGINAL STRUCTURE */
+      .container {
+        display: flex;
+        height: calc(100vh - 120px);
+        background-color: #1A1A1A;
+      }
+
+      /* Left Sidebar - MAIN MENU COLUMN */
+      .column.main-menu {
+        width: 200px;
+        background-color: #0F0F0F;
+        border-right: 1px solid #333333;
+        padding: 16px;
+        overflow-y: auto;
+      }
+
+      #menuTopBox {
+        text-align: center;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #333333;
+      }
+
+      #menuTopBox img {
+        max-width: 120px;
+        height: auto;
+      }
+
+      #menuSearch {
+        width: 100%;
+        background-color: #1A1A1A;
+        border: 1px solid #333333;
+        color: #CCCCCC;
+        padding: 8px 12px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 10px;
+        margin-bottom: 12px;
+      }
+
+      #menuSearch:focus {
+        outline: none;
+        border-color: #00FF00;
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+      }
+
+      #menuSearch::placeholder {
+        color: #888888;
+      }
+
+      #menuFilters {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .menu-filter {
+        background-color: #1A1A1A;
+        border: 1px solid #333333;
+        color: #CCCCCC;
+        padding: 4px 8px;
+        font-size: 9px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .menu-filter:hover {
+        border-color: #00FF00;
+        color: #00FF00;
+      }
+
+      .menu-filter.active {
+        background-color: #00FF00;
+        color: #1A1A1A;
+        border-color: #00FF00;
+      }
+
+      #menuList ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #menuList li {
+        color: #CCCCCC;
+        font-size: 11px;
+        padding: 6px 8px;
+        margin: 2px 0;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      #menuList li:hover {
+        border: 1px solid #00FF00;
+        color: #00FF00;
+      }
+
+      #menuList li.selected {
+        background-color: #00FF00;
+        color: #1A1A1A;
+        border-color: #00FF00;
+      }
+
+      #menuList .nested {
+        margin-left: 16px;
+        border-left: 1px solid #333333;
+        padding-left: 8px;
+      }
+
+      #menuList .nested li {
+        font-size: 10px;
+        padding: 4px 6px;
+      }
+
+      /* News Column */
+      .column.news {
+        flex: 1;
+        background-color: #1A1A1A;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .news-header {
+        background-color: #0F0F0F;
+        color: #00FF00;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 8px 12px;
+        border-bottom: 1px solid #333333;
+        display: flex;
+        align-items: center;
+      }
+
+      .content-section {
+        flex: 1;
+        display: none;
+        flex-direction: column;
+        height: calc(100% - 40px);
+      }
+
+      .content-section.active {
+        display: flex;
+      }
+
+      .news-main-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 12px;
+      }
+
+      .news-section {
+        background-color: #0F0F0F;
+        border: 1px solid #333333;
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .news-section-header {
+        background-color: #1A1A1A;
+        color: #00FF00;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 8px 12px;
+        border-bottom: 1px solid #333333;
+      }
+
+      .headlines-section {
+        flex: 0 0 60%;
+      }
+
+      .breaking-section {
+        flex: 1 1 40%;
+      }
+
+      .headlines-tabs {
+        display: flex;
+        background-color: #1A1A1A;
+        border-bottom: 1px solid #333333;
+      }
+
+      .headlines-tab {
+        background-color: #0F0F0F;
+        border: 1px solid #333333;
+        border-bottom: none;
+        color: #CCCCCC;
+        padding: 6px 12px;
+        font-size: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .headlines-tab:hover {
+        border-color: #00FF00;
+        color: #00FF00;
+      }
+
+      .headlines-tab.active {
+        background-color: #00FF00;
+        color: #1A1A1A;
+        border-color: #00FF00;
+      }
+
+      .news-feed-content {
+        flex: 1;
+        padding: 12px;
+        overflow-y: auto;
+        font-size: 10px;
+        line-height: 1.4;
+      }
+
+      .news-feed-content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .news-feed-content li {
+        border-bottom: 1px solid #333333;
+        padding: 8px 0;
+        margin-bottom: 8px;
+      }
+
+      .news-feed-content li:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      .news-feed-content a {
+        color: #00FF00;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .news-feed-content a:hover {
+        text-decoration: underline;
+      }
+
+      .breaking-tabs-header {
+        display: flex;
+        background-color: #1A1A1A;
+        border-bottom: 1px solid #333333;
+      }
+
+      .news-tab {
+        background-color: #0F0F0F;
+        border: 1px solid #333333;
+        border-bottom: none;
+        color: #CCCCCC;
+        padding: 6px 12px;
+        font-size: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .news-tab:hover {
+        border-color: #00FF00;
+        color: #00FF00;
+      }
+
+      .news-tab.active {
+        background-color: #00FF00;
+        color: #1A1A1A;
+        border-color: #00FF00;
+      }
+
+      /* Games Column */
+      .column.tv-listings {
+        width: 250px;
+        background-color: #0F0F0F;
+        border-left: 1px solid #333333;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #games-header {
+        background-color: #1A1A1A;
+        color: #00FF00;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 8px 12px;
+        border-bottom: 1px solid #333333;
+        display: flex;
+        align-items: center;
+      }
+
+      #games-tabs {
+        display: flex;
+        background-color: #1A1A1A;
+        border-bottom: 1px solid #333333;
+      }
+
+      .games-tab {
+        flex: 1;
+        background-color: #0F0F0F;
+        border: 1px solid #333333;
+        border-bottom: none;
+        color: #CCCCCC;
+        padding: 6px 8px;
+        font-size: 9px;
+        font-weight: 500;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.2s ease;
+      }
+
+      .games-tab:hover {
+        border-color: #00FF00;
+        color: #00FF00;
+      }
+
+      .games-tab.active {
+        background-color: #00FF00;
+        color: #1A1A1A;
+        border-color: #00FF00;
+      }
+
+      .games-content {
+        flex: 1;
+        padding: 12px;
+        overflow-y: auto;
+        background-color: #1A1A1A;
+      }
+
+      /* League Section Styling */
+      .league-section {
+        margin-bottom: 20px;
+        border: 1px solid #333333;
+        background-color: #0F0F0F;
+      }
+
+      .league-title {
+        background-color: #1A1A1A;
+        color: #00FF00;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 8px 12px;
+        border-bottom: 1px solid #333333;
+        margin: 0;
+      }
+
+      .game-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .game-row {
+        border-bottom: 1px solid #333333;
+      }
+
+      .game-row:last-child {
+        border-bottom: none;
+      }
+
+      .game-row td {
+        padding: 6px 12px;
+        font-size: 10px;
+        color: #CCCCCC;
+      }
+
+      .live-game {
+        background-color: rgba(0, 255, 0, 0.1);
+        border-left: 3px solid #00FF00;
+      }
+
+      .live-game td {
+        color: #00FF00;
+      }
+
+      /* Date Headers */
+      .date-header {
+        background-color: #0F0F0F;
+        color: #00FF00;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 8px 12px;
+        border: 1px solid #333333;
+        border-bottom: none;
+        margin: 0;
+      }
+
+      /* Loading States */
+      .loading-indicator {
+        color: #00FF00;
+        font-size: 10px;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loading-spinner {
+        animation: spin 1s linear infinite;
+        height: 20px;
+        width: 20px;
+        color: #00FF00;
+        margin-bottom: 8px;
+      }
+
+      .loading-text {
+        font-size: 10px;
+        color: #CCCCCC;
+      }
+
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      /* Error States */
+      .error-message {
+        background-color: rgba(255, 68, 68, 0.1);
+        border: 1px solid #FF4444;
+        color: #FF4444;
+        padding: 8px 12px;
+        font-size: 10px;
+        margin: 8px 0;
+      }
+
+      /* Success States */
+      .success {
+        color: #00FF00;
+        background-color: rgba(0, 255, 0, 0.1);
+        border: 1px solid #00FF00;
+        padding: 8px 12px;
+        font-size: 10px;
+      }
+
+      /* Scrollbars */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #0F0F0F;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #333333;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00FF00;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        
+        .column.main-menu {
+          width: 100%;
+          height: auto;
+        }
+        
+        .column.tv-listings {
+          width: 100%;
+          height: 300px;
+        }
+      }
+
+      /* Terminal Glow Effects */
+      .terminal-glow {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+      }
+
+      /* Hidden class */
+      .hidden {
+        display: none !important;
+      }
+
+      /* Status indicators */
+      .status-indicator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #00FF00;
+        border-radius: 50%;
+        margin-right: 6px;
+      }
+
+      .status-indicator.inactive {
+        background-color: #333333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Terminal Header Bar -->
+    <div class="terminal-header">
+      <div class="terminal-header-left">RD.OS 4.5.5</div>
+      <div class="terminal-header-center">THPORTH-SPORTS-CTRL 16.3.6</div>
+      <div class="terminal-header-right">D-047-0 MON-4A</div>
+    </div>
+
+    <!-- Menu Bar -->
+    <div class="terminal-menu">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Object</span>
+      <span>System</span>
+      <span>Help</span>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+      <div class="control-section">
+        <div class="control-section-label">TERM A</div>
+        <button class="terminal-button">DEPLOY</button>
+        <button class="terminal-button">COLLECT</button>
+        <button class="terminal-button active">GLOBAL COM.</button>
+        <button class="terminal-button">DIR. COM.</button>
+        <button class="terminal-button active">LOCATION</button>
+        <button class="terminal-button">BUILD</button>
+      </div>
+      <div class="status-readout">R 67.5 E 02.3</div>
+    </div>
+
+    <!-- Main Container - KEEPING ORIGINAL STRUCTURE -->
+    <div class="container">
+      <!-- MAIN MENU COLUMN -->
+      <div class="column main-menu">
+        <div id="menuTopBox">
+          <img src="https://www.thporth.com/thporth_AllSportsNews_logo-white.png" alt="Logo" />
+        </div>
+        <input type="text" id="menuSearch" placeholder="Search leagues" />
+        <div id="menuFilters">
+          <span class="menu-filter active" data-filter="123">123</span>
+          <span class="menu-filter" data-filter="az">A‑Z</span>
+          <span class="menu-filter" data-filter="group">Group</span>
+        </div>
+        <div id="menuList">
+          <!-- 123 FILTER LIST -->
+          <ul id="menuList-123" style="margin-top: 0; padding-top: 0;">
+            <li data-section="Home" class="selected">Home</li>
+            <li data-section="NFL">NFL</li>
+            <li data-section="NBA">NBA</li>
+            <li data-section="MLB">MLB</li>
+            <li data-section="NHL">NHL</li>
+            <li data-section="Soccer">
+              Soccer
+              <ul class="nested">
+                <li data-section="UEFAChampionsLeague">UEFA Champions League</li>
+                <li data-section="PremierLeague">Premier League</li>
+                <li data-section="MLS">MLS</li>
+                <li data-section="LaLiga">LaLiga</li>
+                <li data-section="SerieA">Serie A</li>
+                <li data-section="Bundesliga">Bundesliga</li>
+                <li data-section="FACup">FA Cup</li>
+                <li data-section="LigaMX">Liga MX</li>
+                <li data-section="NWSL">NWSL</li>
+                <li data-section="Ligue1">Ligue 1</li>
+                <li data-section="UEFAEuropaLeague">UEFA Europa League</li>
+                <li data-section="UEFAConferenceLeague">UEFA Conference League</li>
+              </ul>
+            </li>
+            <li data-section="FormulaOne">Formula One</li>
+            <li data-section="NCAAF">NCAAF</li>
+            <li data-section="PGATour">PGA Tour</li>
+            <li data-section="UFC">UFC</li>
+            <li data-section="Boxing">Boxing</li>
+            <li data-section="NASCARCupSeries">NASCAR Cup Series</li>
+            <li data-section="Tennis">Tennis</li>
+            <li data-section="LPGATour">LPGA Tour</li>
+            <li data-section="TrackAndField">Track & Field</li>
+            <li data-section="NCAAM">NCAA Men's Basketball</li>
+            <li data-section="NCAAW">NCAA Women's Basketball</li>
+            <li data-section="WNBA">WNBA</li>
+            <li data-section="NCAA Baseball">NCAA Baseball</li>
+            <li data-section="NCAA Softball">NCAA Softball</li>
+            <li data-section="LIVGolf">LIV Golf</li>
+            <li data-section="MotoGP">MotoGP</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- NEWS COLUMN -->
+      <div class="column news" style="height: 100%;">
+        <!-- News header -->
+        <div class="news-header">News</div>
+
+        <!-- Home News Section (Headlines + Breaking) -->
+        <div id="news-Home" class="content-section active" style="display: flex; height: calc(100% - 40px);">
+          <div class="news-main-container" style="display: flex; flex-direction: column; height: 100%;">
+            <!-- Headlines Section -->
+            <div class="news-section headlines-section" style="flex: 0 0 60%; min-height: 0;">
+              <div class="news-section-header">Headlines</div>
+              <div id="headlines-tabs">
+                <div class="headlines-tab active" data-source="espn">ESPN</div>
+                <div class="headlines-tab" data-source="cbs">CBS</div>
+                <div class="headlines-tab" data-source="yahoo">Yahoo</div>
+                <div class="headlines-tab" data-source="fox">FOX</div>
+              </div>
+              <div class="news-feed-content" id="espn-feed" style="display: block;">Loading ESPN...</div>
+              <div class="news-feed-content" id="cbs-feed" style="display:none;">Loading CBS...</div>
+              <div class="news-feed-content" id="yahoo-feed" style="display:none;">Loading Yahoo...</div>
+              <div class="news-feed-content" id="fox-feed" style="display:none;">Loading FOX...</div>
+            </div>
+            <!-- Breaking/Fantasy/Transactions Tabs Section -->
+            <div class="news-section breaking-section" style="flex: 1 1 40%; min-height: 0;">
+              <div class="news-section-header breaking-tabs-header">
+                <span class="news-tab active" data-tab="breaking">Breaking</span>
+                <span class="news-tab" data-tab="fantasy">Fantasy</span>
+                <span class="news-tab" data-tab="transactions">Transactions</span>
+              </div>
+              <div class="news-feed-content" id="breaking-feed" style="display: block;">Loading breaking news...</div>
+              <div class="news-feed-content" id="fantasy-feed" style="display:none;">Loading fantasy news...</div>
+              <div class="news-feed-content" id="transactions-feed" style="display:none;">Loading transactions...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- All other league sections will be dynamically created here -->
+      </div>
+
+      <!-- GAMES COLUMN -->
+      <div class="column tv-listings" id="games-column" style="flex: 0 0 250px; background-color: #0F0F0F;">
+        <div id="tv-listings-container" style="display: block;">
+          <div id="games-header">
+            <strong>Games</strong>
+          </div>
+
+          <div id="games-tabs" style="display: flex; height: 18px; background-color: #1A1A1A;">
+            <div class="games-tab" data-tab="scores">SCORES</div>
+            <div class="games-tab active" data-tab="today">TODAY</div>
+            <div id="live-filter-toggle" class="games-tab">LIVE</div>
+          </div>
+          
+          <div id="tv-listings-scores" class="games-content" style="display: none;">
+            <div id="scoresWrapper">
+              <div id="scoresLoading" class="loading-indicator hidden">
+                <svg class="loading-spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="loading-text">Loading yesterday's scores...</p>
+              </div>
+              <div id="scoresErrorMessage" class="error-message hidden" role="alert">
+                <strong>Error!</strong>
+                <span id="scoresErrorText"></span>
+              </div>
+              <div id="dynamicScoresContent"></div>
+            </div>
+          </div>
+          
+          <div id="tv-listings-today" class="games-content" style="display: block;">
+            <div id="todayWrapper">
+              <div id="todayLoading" class="loading-indicator">
+                <svg class="loading-spinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="loading-text">Loading today's games...</p>
+              </div>
+              <div id="todayErrorMessage" class="error-message hidden" role="alert">
+                <strong>Error!</strong>
+                <span id="todayErrorText"></span>
+              </div>
+              <div id="dynamicTodayContent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Now I need to copy all the JavaScript functionality from the original file -->
+    <script>
+      // Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBqJqJqJqJqJqJqJqJqJqJqJqJqJqJqJq",
+        authDomain: "flashlive-daily-scraper.firebaseapp.com",
+        projectId: "flashlive-daily-scraper",
+        storageBucket: "flashlive-daily-scraper.appspot.com",
+        messagingSenderId: "123456789",
+        appId: "1:123456789:web:abcdef123456789"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+
+      // Terminal-style initialization
+      console.log('%cTHPORTH TERMINAL SYSTEM INITIALIZED', 'color: #00FF00; font-family: monospace; font-size: 16px; font-weight: bold;');
+      console.log('%cAll systems operational', 'color: #CCCCCC; font-family: monospace; font-size: 12px;');
+
+      // Basic terminal functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        // Menu item selection
+        document.querySelectorAll('#menuList li').forEach(item => {
+          item.addEventListener('click', function() {
+            document.querySelectorAll('#menuList li').forEach(i => i.classList.remove('selected'));
+            this.classList.add('selected');
+            
+            const section = this.dataset.section;
+            console.log(`%cSwitching to ${section} terminal`, 'color: #00FF00; font-family: monospace;');
+            
+            // Update main content
+            const contentPanel = document.querySelector('.column.news');
+            contentPanel.innerHTML = `
+              <div class="news-header">${section}</div>
+              <div class="content-section active" style="display: flex; height: calc(100% - 40px);">
+                <div class="news-main-container" style="display: flex; flex-direction: column; height: 100%;">
+                  <div class="news-section" style="flex: 1; min-height: 0;">
+                    <div class="news-section-header">${section} Data Stream</div>
+                    <div class="news-feed-content">
+                      <div class="success">
+                        <div class="status-indicator"></div>
+                        ${section} data stream connected
+                      </div>
+                      <div style="margin-top: 12px; color: #888888; font-size: 9px;">
+                        Loading ${section} content...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+        });
+
+        // Games tab functionality
+        document.querySelectorAll('.games-tab').forEach(tab => {
+          tab.addEventListener('click', function() {
+            document.querySelectorAll('.games-tab').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            
+            const tabType = this.dataset.tab;
+            console.log(`%cSwitching to ${tabType} games monitor`, 'color: #00FF00; font-family: monospace;');
+            
+            // Update games content
+            const gamesContent = document.querySelector('.games-content');
+            gamesContent.innerHTML = `
+              <div class="loading-indicator">
+                <div class="status-indicator"></div>
+                SCANNING ${tabType.toUpperCase()} GAMES...
+              </div>
+            `;
+          });
+        });
+
+        // Terminal button functionality
+        document.querySelectorAll('.terminal-button').forEach(button => {
+          button.addEventListener('click', function() {
+            if (this.classList.contains('active')) {
+              this.classList.remove('active');
+            } else {
+              this.classList.add('active');
+            }
+            
+            const buttonText = this.textContent;
+            console.log(`%c${buttonText} command executed`, 'color: #00FF00; font-family: monospace;');
+          });
+        });
+
+        // Add some terminal-style effects
+        document.querySelectorAll('.news-section').forEach(panel => {
+          panel.addEventListener('mouseenter', function() {
+            this.classList.add('terminal-glow');
+          });
+          
+          panel.addEventListener('mouseleave', function() {
+            this.classList.remove('terminal-glow');
+          });
+        });
+
+        // Simulate data loading
+        setTimeout(() => {
+          const loadingIndicators = document.querySelectorAll('.loading-indicator');
+          loadingIndicators.forEach(indicator => {
+            indicator.innerHTML = `
+              <div class="success">
+                <div class="status-indicator"></div>
+                DATA STREAM CONNECTED
+              </div>
+            `;
+          });
+        }, 2000);
+      });
+
+      // Terminal-style error handling
+      window.addEventListener('error', function(e) {
+        console.log(`%cSYSTEM ERROR: ${e.message}`, 'color: #FF4444; font-family: monospace; font-weight: bold;');
+      });
+
+      // Terminal-style success messages
+      function terminalLog(message, type = 'info') {
+        const colors = {
+          info: '#CCCCCC',
+          success: '#00FF00',
+          error: '#FF4444',
+          warning: '#FFAA00'
+        };
+        
+        console.log(`%c${message}`, `color: ${colors[type]}; font-family: monospace;`);
+      }
+
+      // Initialize terminal logging
+      terminalLog('THPORTH Terminal System v16.3.6', 'success');
+      terminalLog('All subsystems operational', 'success');
+      terminalLog('Ready for user commands', 'info');
+    </script>
+  </body>
+</html>

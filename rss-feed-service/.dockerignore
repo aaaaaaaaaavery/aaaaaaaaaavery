@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+*.log
+*.md
+.git
+.gitignore
+.env
+*.test.js
+*.spec.js
+test-*.js
+inspect-*.js
+find-*.js
+get-*.js
+*.sh
+.cache
+.DS_Store
+

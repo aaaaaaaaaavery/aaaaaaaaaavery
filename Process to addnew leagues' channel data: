@@ -1,0 +1,76 @@
+Process to add new leagues' channel data:
+
+1. Create new league's tab in Upcoming Schedule document
+
+https://docs.google.com/spreadsheets/d/1gGY9dr485hf4WrdGkx01kC6Gw7oTuKeYYh_UQD5qkt4/edit?gid=50932962#gid=50932962
+
+
+
+
+2. Grab schedule and convert to CSV in Cursor:
+
+Give me the following data in CSV format in these columns: Date, Time, Away Team, Home Team, Channel.  Add 1 hour to every time you see.  Put date in 9/13/2025 format. Add only the first channel for each game.  Give me the csv results in code block.
+
+
+
+
+
+
+3. Data > Split text to columns
+
+
+
+
+4. Format Date, Time, Plain Text
+
+
+
+**SKIP THIS STEP IF NOT A NEW LEAGUE, IF JUST ADDING UPCOMING SCHEDULE FOR EXISTING LEAGUE**
+5. Add league's team name mapping to Google Apps Script (google-sheets-team-converter.js):
+
+Convert all team names for this league from output to input
+
+Output is the league names from Flashscore. Input is the league names from where I grabbed the schedule.
+
+
+
+**SKIP THIS STEP IF NOT A NEW LEAGUE, IF JUST ADDING UPCOMING SCHEDULE FOR EXISTING LEAGUE**
+6. Add [league name tab in Google Sheets upcoming schedule doc] to const LEAGUE_CONFIGS in import-from-sheets.cjs
+
+*Make sure to specify if league is in Upcoming Schedule Document #2
+
+
+
+
+7. Run node import-from-sheets.cjs in Copy of THPORTHINDEX
+
+
+
+
+8. Add to const LEAGUE_TO_COLLECTION_MAP in index.js of channel-lookup-deploy the mapping for [FlashLive API league name] : [league name tab in Google Sheets upcoming schedule doc]
+
+
+
+
+9. Deploy index.js in channel-lookup-deploy folder in Terminal:
+
+gcloud functions deploy channel-lookup \
+  --gen2 \
+  --region=us-central1 \
+  --runtime=nodejs20 \
+  --entry-point=channelLookupHandler \
+  --trigger-http \
+  --allow-unauthenticated
+
+
+
+10. Manually trigger index.js in same folder:
+
+curl -X POST https://us-central1-flashlive-daily-scraper.cloudfunctions.net/channel-lookup
+
+
+Note:
+
+To add league-wide channel data:
+Add League and Channel to LeagueChannels tab in Google Sheets upcoming schedule document (last tab), then run node import-from-sheets.js, then manually trgigger index.js in channel-lookup-deploy folder
+

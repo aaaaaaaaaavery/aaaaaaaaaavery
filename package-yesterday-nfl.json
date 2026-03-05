@@ -1,0 +1,15 @@
+{
+  "name": "fetch-yesterday-nfl",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Script to fetch yesterday's NFL games with final scores",
+  "main": "fetch-yesterday-nfl.js",
+  "scripts": {
+    "fetch-yesterday-nfl": "node fetch-yesterday-nfl.js"
+  },
+  "dependencies": {
+    "luxon": "^3.4.4",
+    "firebase-admin": "^12.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "working": [
+    {
+      "rssAppId": "3aWvxow1noZCrVBq",
+      "feedId": "yahoo-nba-rss",
+      "itemCount": 50
+    }
+  ],
+  "failing": [
+    {
+      "rssAppId": "YJjVVRof201ZO9zO",
+      "feedId": "mlbtraderumors",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "PlvW7vqF4AaGbwcp",
+      "feedId": "cbs-nfl-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "rHWxXQ9YaXdlGVjA",
+      "feedId": "yahoo-nfl-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "yQjCNVjNGrK8PYed",
+      "feedId": "foxsports-nfl-api",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "cexYuRoRAMSoUAp8",
+      "feedId": "espn-nfl-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "RzsFiWRkJWt232Z1",
+      "feedId": "nfl-com",
+      "error": "HTTP 503"
+    },
+    {
+      "rssAppId": "BKInO41JsrUscMDQ",
+      "feedId": "yahoo-mlb-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Bv6N7qiA79eXbSl6",
+      "feedId": "cbs-mlb-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "pbw0uEDOop5lPZ1h",
+      "feedId": "espn-nba-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "gpNdeo4WRun54WuS",
+      "feedId": "nba-com-news",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "XNu5yCjXjSTjFNuz",
+      "feedId": "cbs-nba-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "bGCDWYzMpS4kpEEJ",
+      "feedId": "foxsports-nba-api",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "6gjSXkILFAiwYPLU",
+      "feedId": "yahoo-nhl-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "tjqR23Xwa5us4EGS",
+      "feedId": "nhl-com-news",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "aEOH2tj5bfjq4oJd",
+      "feedId": "espn-nhl-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "xtqmDS6UnTyXSmXG",
+      "feedId": "cbs-nhl-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Zf7Ng96ruXO870Ee",
+      "feedId": "hockeywriters",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "V79dVmqWDC7pLACZ",
+      "feedId": "hockeynews",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "SBZfeZPSsLT2mwmU",
+      "feedId": "onefootball-home",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "tWKu85yTZrmms6lo",
+      "feedId": "goal-com",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "f5rbTpdVjq93AlTY",
+      "feedId": "worldsoccertalk",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "3SZSbvRR7GXi7Al1",
+      "feedId": "espn-soccer-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "SlUe5H1aOykHQcvX",
+      "feedId": "yahoo-soccer-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "10xrZLK2Mn4xhAqJ",
+      "feedId": "cbs-soccer-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "W5qj2Lq2skC4hTyn",
+      "feedId": "transfermarkt-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "ixvULiUvb7Hm3fDx",
+      "feedId": "getfootballnewsgermany-bundesliga",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "fg5UIrrq1YikBxyg",
+      "feedId": "bundesliga-com",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "HL9rA42ELIkqWXJg",
+      "feedId": "reddit-nwsl",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "UNtqy55sZPAGDxWp",
+      "feedId": "reddit-ligue1",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "o3KVLBimGj35TqzR",
+      "feedId": "reddit-ligamx",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Eh9IrBhQ1Pk3MxVu",
+      "feedId": "newsnow-ligamx",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "cYgsxfZK9RmqKiOn",
+      "feedId": "yahoo-collegefootball-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "ydzB00a4yYWWhOJE",
+      "feedId": "nytimes-athletic-cfb",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Z2rHcU1BGE8RLayI",
+      "feedId": "espn-ncf-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "1wcMh76GcHSPwTvk",
+      "feedId": "cbs-collegefootball-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Zzvx41Fx8M8WXUS1",
+      "feedId": "foxsports-cfb-api",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "SQahLIzekjAsW3lk",
+      "feedId": "247sports-cfb",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "tBrt5dpIhevVbeQi",
+      "feedId": "reddit-cfb",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "d2PbmQcxqRMOPRvs",
+      "feedId": "collegefootballnews",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "ZX6NqXnTRPsqJl24",
+      "feedId": "sportingnews-cfb",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "TC8CR6Epre8sOBbW",
+      "feedId": "si-cfb",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "ftJXlnwUtPK98zMT",
+      "feedId": "bleacherreport-cfb",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "LsKtD2ijrBKLHTPy",
+      "feedId": "saturdaydownsouth",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "L3knSpnVPuEqu9F3",
+      "feedId": "on3-cfb",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "GNRqjlnU2hDoUspd",
+      "feedId": "golfdigest",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "PGlnIglwoK57BFgx",
+      "feedId": "pgatour-com",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "SBEwIpFRnxpFz5yO",
+      "feedId": "golfwrx",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "yoYhJTH3khDR6VnA",
+      "feedId": "golfmonthly",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Kk2DP7BQ6R63genW",
+      "feedId": "si-golf",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "52JoNIj0uJyAO8Ro",
+      "feedId": "si-ufc",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "DZNQ6V2829Gsq89j",
+      "feedId": "mmajunkie",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "9HbNO7koG4FRO0EZ",
+      "feedId": "mmamania",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "2NV0LB8BpoemNq2N",
+      "feedId": "sherdog",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "X39lxMdIQOjTjP4s",
+      "feedId": "mma-core",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "C3NmUDHJr8cWHBCk",
+      "feedId": "ufc-com",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "sZGhLnyeUeeeDnBs",
+      "feedId": "tapology",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "6KutJNC4K8DelGwZ",
+      "feedId": "mmafighting",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "aScu4PsqcyQ1kfFt",
+      "feedId": "ringmagazine-rss",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "TBwd9L3O8cQywuxX",
+      "feedId": "boxingnews24",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "i1VCLI9hScfbZjgu",
+      "feedId": "badlefthook",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "FpEL1AAFV73VieeD",
+      "feedId": "boxingscene",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "xBIj1RcHaBcd7WfJ",
+      "feedId": "boxing247",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "kjurR9A5jgpHvsLg",
+      "feedId": "newsnow-nfl",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "akV2j729WtUvltyb",
+      "feedId": "newsnow-nba",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "3V06VrWkV19SDcqR",
+      "feedId": "newsnow-soccer",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "j3EAnbrpQMEYzW57",
+      "feedId": "newsnow-championsleague",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "V6GJiuM6jBXVG34K",
+      "feedId": "newsnow-premierleague",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "iuBiYyHPmlifaUUK",
+      "feedId": "newsnow-mls",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "t8z976udlBJCMLSW",
+      "feedId": "newsnow-laliga",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "HSwo9xgOL1OUFqS0",
+      "feedId": "newsnow-seriea",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "qeqYXeDvgq5bpYsL",
+      "feedId": "newsnow-bundesliga",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "6hu4o6gj1agGCz5i",
+      "feedId": "newsnow-facup",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "AdN94t2aMmFNKpiW",
+      "feedId": "newsnow-ligue1",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "PE7NGL6ftSREkzv9",
+      "feedId": "newsnow-nwsl",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "zRogbCPNliFNNTuM",
+      "feedId": "newsnow-f1",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Y86rdhcYGEJTzVVE",
+      "feedId": "newsnow-europaleague",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "1miuV1gDF41iBCUm",
+      "feedId": "newsnow-ncaabasketball",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "O8juJbxSctWCFqdV",
+      "feedId": "newsnow-ncaafootball",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "R0LMNrxS5mPorbsV",
+      "feedId": "newsnow-pgatour",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "II7WkAEfi65q8OMI",
+      "feedId": "newsnow-ufc",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "8UNhLRsk0v8buOUz",
+      "feedId": "newsnow-boxing",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Nh0zQXRLhhvfmuTh",
+      "feedId": "newsnow-tennis",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "vOF2I7lq3n3IsV8K",
+      "feedId": "newsnow-nascar",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Eaaaqyki6E6nnMZR",
+      "feedId": "newsnow-wnba",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "InHgRAqAOeKlilq8",
+      "feedId": "newsnow-livgolf",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "VkQvfkJZA51pa8EB",
+      "feedId": "newsnow-motogp",
+      "error": "HTTP 503"
+    },
+    {
+      "rssAppId": "0afVGov5MVxxBF7B",
+      "feedId": "newsnow-lpga",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "Zo7JsQDXIT8D0pCD",
+      "feedId": "newsnow-indycar",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "VqavgJOoX0LKkfkb",
+      "feedId": "newsnow-trackandfield",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "0zeKHWCVNtBCrCro",
+      "feedId": "newsnow-europaconferenceleague",
+      "error": "HTTP 404"
+    },
+    {
+      "rssAppId": "_QoQmejtlVFZhkOXP",
+      "feedId": "nwsl-bundle",
+      "error": "HTTP 404"
+    }
+  ],
+  "note": "Most feeds return 404 because the RSS feed service needs to be redeployed with the new feeds. Only yahoo-nba-rss is working because it already existed in the system."
+}
+

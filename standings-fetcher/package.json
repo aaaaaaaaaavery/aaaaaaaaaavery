@@ -1,0 +1,20 @@
+{
+  "name": "standings-fetcher",
+  "version": "1.0.0",
+  "description": "Service to fetch and cache sports standings",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "luxon": "^3.0.0",
+    "firebase-admin": "^11.0.0",
+    "node-fetch": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=20 <23"
+  }
+}
+

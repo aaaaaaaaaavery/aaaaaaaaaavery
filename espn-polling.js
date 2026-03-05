@@ -1,0 +1,332 @@
+// espn-polling.js - Standalone ESPN Live Data Polling Service
+// NOT the production deploy: Dockerfile and Cloud Run use index.js. This file is for local/alternate use only.
+import { DateTime } from 'luxon';
+import admin from 'firebase-admin';
+import fetch from 'node-fetch';
+import express from 'express';
+
+const app = express();
+app.use(express.json());
+
+const PORT = process.env.PORT || 8080;
+const FIREBASE_PROJECT_ID = process.env.FIREBASE_PROJECT_ID;
+
+// Firebase Admin initialization
+let db;
+function initializeFirebase() {
+  if (db) return db;
+  if (!admin.apps.length) {
+    admin.initializeApp({
+      credential: admin.credential.applicationDefault(),
+      projectId: FIREBASE_PROJECT_ID
+    });
+  }
+  db = admin.firestore();
+  console.log('Firebase Firestore initialized.');
+  return db;
+}
+
+// ESPN Live Data Polling Handler
+const pollESPNLiveDataHandler = async (req, res) => {
+  try {
+    console.log('--- /pollESPNLiveData started (ESPN API only) ---');
+    
+    const db = initializeFirebase();
+    // Store ESPN live data in separate collection to avoid duplicates with /refreshAll games
+    const gamesRef = db.collection(`artifacts/${FIREBASE_PROJECT_ID}/public/data/espnLiveGames`);
+    const nowInMountain = DateTime.now().setZone('America/Denver');
+    const todayStr = nowInMountain.toISODate();
+    const dateStr = nowInMountain.toFormat('yyyyMMdd'); // YYYYMMDD format for ESPN API
+    
+    console.log(`[ESPN Live Data] Fetching games for ${todayStr} (${dateStr})`);
+    
+    // ESPN API leagues configuration - ALL available leagues (excluding NCAAM and NCAAW)
+    const ESPN_LEAGUES = [
+      // American Football
+      { sport: 'football', league: 'nfl', leagueName: 'NFL' },
+      { sport: 'football', league: 'college-football', leagueName: 'NCAAF' },
+      
+      // Basketball
+      { sport: 'basketball', league: 'nba', leagueName: 'NBA' },
+      { sport: 'basketball', league: 'wnba', leagueName: 'WNBA' },
+      // Note: mens-college-basketball and womens-college-basketball removed - using NCAA API instead
+      
+      // Baseball
+      { sport: 'baseball', league: 'mlb', leagueName: 'MLB' },
+      
+      // Hockey
+      { sport: 'hockey', league: 'nhl', leagueName: 'NHL' },
+      
+      // Soccer - Major Leagues
+      { sport: 'soccer', league: 'usa.1', leagueName: 'MLS' },
+      { sport: 'soccer', league: 'usa.nwsl', leagueName: 'NWSL' },
+      { sport: 'soccer', league: 'eng.1', leagueName: 'Premier League' },
+      { sport: 'soccer', league: 'esp.1', leagueName: 'La Liga' },
+      { sport: 'soccer', league: 'ger.1', leagueName: 'Bundesliga' },
+      { sport: 'soccer', league: 'ita.1', leagueName: 'Serie A' },
+      { sport: 'soccer', league: 'fra.1', leagueName: 'Ligue 1' },
+      { sport: 'soccer', league: 'mex.1', leagueName: 'Liga MX' },
+      { sport: 'soccer', league: 'ned.1', leagueName: 'Eredivisie' },
+      { sport: 'soccer', league: 'por.1', leagueName: 'Liga Portugal' },
+      { sport: 'soccer', league: 'bel.1', leagueName: 'Belgian Pro League' },
+      { sport: 'soccer', league: 'sco.1', leagueName: 'Scottish Premiership' },
+      { sport: 'soccer', league: 'arg.1', leagueName: 'Liga Profesional Argentina' },
+      { sport: 'soccer', league: 'bra.1', leagueName: 'Brasileirao' },
+      { sport: 'soccer', league: 'eng.2', leagueName: 'EFL Championship' },
+      { sport: 'soccer', league: 'eng.3', leagueName: 'EFL League One' },
+      { sport: 'soccer', league: 'eng.4', leagueName: 'EFL League Two' },
+      { sport: 'soccer', league: 'eng.5', leagueName: 'National League' },
+      { sport: 'soccer', league: 'esp.2', leagueName: 'LaLiga2' },
+      { sport: 'soccer', league: 'ger.2', leagueName: '2. Bundesliga' },
+      { sport: 'soccer', league: 'ita.2', leagueName: 'Serie B' },
+      { sport: 'soccer', league: 'fra.2', leagueName: 'Ligue 2' },
+      { sport: 'soccer', league: 'mex.2', leagueName: 'Liga MX Expansion' },
+      
+      // Soccer - UEFA Competitions
+      { sport: 'soccer', league: 'uefa.champions', leagueName: 'UEFA Champions League' },
+      { sport: 'soccer', league: 'uefa.europa', leagueName: 'UEFA Europa League' },
+      { sport: 'soccer', league: 'uefa.europa.conf', leagueName: 'UEFA Conference League' },
+      { sport: 'soccer', league: 'uefa.nations', leagueName: 'UEFA Nations League' },
+      
+      // Soccer - Other Competitions
+      { sport: 'soccer', league: 'fifa.world', leagueName: 'FIFA World Cup' },
+      { sport: 'soccer', league: 'concacaf.gold', leagueName: 'CONCACAF Gold Cup' },
+      { sport: 'soccer', league: 'concacaf.champions', leagueName: 'CONCACAF Champions Cup' },
+      { sport: 'soccer', league: 'usa.usoc', leagueName: 'U.S. Open Cup' },
+      { sport: 'soccer', league: 'eng.fa', leagueName: 'FA Cup' },
+      { sport: 'soccer', league: 'eng.league_cup', leagueName: 'Carabao Cup' },
+      { sport: 'soccer', league: 'esp.king', leagueName: 'Copa del Rey' },
+      { sport: 'soccer', league: 'ita.coppa', leagueName: 'Coppa Italia' },
+      { sport: 'soccer', league: 'ger.dfb', leagueName: 'DFB-Pokal' },
+      { sport: 'soccer', league: 'fra.coupe', leagueName: 'Coupe de France' },
+      
+      // Tennis
+      { sport: 'tennis', league: 'atp', leagueName: 'ATP' },
+      { sport: 'tennis', league: 'wta', leagueName: 'WTA' },
+      
+      // Golf
+      { sport: 'golf', league: 'pga-tour', leagueName: 'PGA Tour' },
+      { sport: 'golf', league: 'lpga', leagueName: 'LPGA Tour' },
+      { sport: 'golf', league: 'euro-tour', leagueName: 'European Tour' },
+      { sport: 'golf', league: 'liv', leagueName: 'LIV Golf' },
+      
+      // Racing
+      { sport: 'racing', league: 'f1', leagueName: 'Formula 1' },
+      { sport: 'racing', league: 'nascar-cup', leagueName: 'NASCAR Cup Series' },
+      { sport: 'racing', league: 'nascar-xfinity', leagueName: 'NASCAR Xfinity Series' },
+      { sport: 'racing', league: 'nascar-truck', leagueName: 'NASCAR Truck Series' },
+      { sport: 'racing', league: 'indycar', leagueName: 'IndyCar' },
+      
+      // MMA
+      { sport: 'mma', league: 'ufc', leagueName: 'UFC' },
+      { sport: 'mma', league: 'bellator', leagueName: 'Bellator' },
+      
+      // Boxing
+      { sport: 'boxing', league: 'boxing', leagueName: 'Boxing' }
+    ];
+    
+    const allGames = [];
+    let totalFetched = 0;
+    // Helper: create canonical key for matching (league|home|away|date)
+    const getGameKey = (league, homeTeam, awayTeam, date) => {
+      return `${league}|${(homeTeam || '').toLowerCase().trim()}|${(awayTeam || '').toLowerCase().trim()}|${date}`;
+    };
+    
+    // Fetch from each ESPN API league
+    for (const { sport, league, leagueName } of ESPN_LEAGUES) {
+      try {
+        const url = `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?dates=${dateStr}`;
+        console.log(`[ESPN] Fetching ${leagueName}...`);
+        
+        const response = await fetch(url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+          }
+        });
+        
+        if (!response.ok) {
+          console.warn(`[ESPN] ${leagueName}: HTTP ${response.status} - skipping`);
+          continue;
+        }
+        
+        const data = await response.json();
+        const events = data.events || [];
+        
+        for (const event of events) {
+          const competition = event.competitions?.[0];
+          if (!competition) continue;
+          
+          const competitors = competition.competitors || [];
+          const awayTeam = competitors.find(c => c.homeAway === 'away');
+          const homeTeam = competitors.find(c => c.homeAway === 'home');
+          
+          if (!awayTeam || !homeTeam) continue;
+          
+          const status = competition.status || {};
+          const gameDate = competition.date ? new Date(competition.date) : new Date();
+          
+          // Get the actual game date from the event (convert to Mountain time)
+          const gameDateMountain = DateTime.fromJSDate(gameDate).setZone('America/Denver');
+          const actualGameDateStr = gameDateMountain.toISODate();
+          
+          // Map ESPN status to your format
+          let matchStatus = 'SCHEDULED';
+          if (status.type?.state === 'in') matchStatus = 'IN PROGRESS';
+          else if (status.type?.state === 'post') matchStatus = 'FINAL';
+          
+          // Get broadcast info
+          const broadcasts = competition.broadcasts?.[0]?.names || [];
+          const channel = broadcasts.length > 0 ? broadcasts[0] : '';
+          
+          // Map sport to display name
+          let sportDisplayName = 'Other';
+          if (sport === 'football') {
+            sportDisplayName = 'American Football';
+          } else if (sport === 'basketball') {
+            sportDisplayName = 'Basketball';
+          } else if (sport === 'baseball') {
+            sportDisplayName = 'Baseball';
+          } else if (sport === 'hockey') {
+            sportDisplayName = 'Hockey';
+          } else if (sport === 'soccer') {
+            sportDisplayName = 'Soccer';
+          } else if (sport === 'tennis') {
+            sportDisplayName = 'Tennis';
+          } else if (sport === 'golf') {
+            sportDisplayName = 'Golf';
+          } else if (sport === 'racing') {
+            sportDisplayName = 'Auto Racing';
+          } else if (sport === 'mma') {
+            sportDisplayName = 'MMA';
+          } else if (sport === 'boxing') {
+            sportDisplayName = 'Boxing';
+          }
+          
+          const gameData = {
+            'League': leagueName,
+            'Sport': sportDisplayName,
+            'Home Team': homeTeam.team?.displayName || '',
+            'Away Team': awayTeam.team?.displayName || '',
+            'Home Score': homeTeam.score || '',
+            'Away Score': awayTeam.score || '',
+            'Match Status': matchStatus,
+            'Channel': channel,
+            'channel': channel,
+            'Start Time': admin.firestore.Timestamp.fromDate(gameDate),
+            'gameDate': actualGameDateStr,
+            'Matchup': `${awayTeam.team?.displayName || ''} vs ${homeTeam.team?.displayName || ''}`,
+            // Standardized Game ID (use event.id when available)
+            'Game ID': event.id ? `espn-${league}-${event.id}` : `espn-${league}-${Date.now()}-${totalFetched++}`,
+            'Last Updated': admin.firestore.FieldValue.serverTimestamp(),
+            // Canonical key used for cross-writer matching
+            'canonicalGameKey': getGameKey(leagueName, homeTeam.team?.displayName || '', awayTeam.team?.displayName || '', actualGameDateStr),
+            'source': 'ESPN_LIVE', // Flag to identify ESPN live data
+            'period': status.period || '',
+            'displayClock': status.displayClock || ''
+          };
+          
+          allGames.push(gameData);
+        }
+        
+        console.log(`[ESPN] ${leagueName}: Found ${events.length} games`);
+        
+        // Small delay to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 200));
+        
+      } catch (err) {
+        console.error(`[ESPN] Error fetching ${leagueName}:`, err.message);
+      }
+    }
+    
+    console.log(`[ESPN Live Data] Total games fetched: ${allGames.length}`);
+    
+    // Clean up old games from ESPN collection (older than yesterday)
+    const yesterdayStr = nowInMountain.minus({ days: 1 }).toISODate();
+    const cleanupSnapshot = await gamesRef.where('gameDate', '<', yesterdayStr).get();
+    if (!cleanupSnapshot.empty) {
+      const cleanupBatch = db.batch();
+      cleanupSnapshot.forEach(doc => {
+        cleanupBatch.delete(doc.ref);
+      });
+      await cleanupBatch.commit();
+      console.log(`[ESPN Live Data] Cleaned up ${cleanupSnapshot.size} old games`);
+    }
+    
+    // Write to Firestore with change detection
+    const batch = db.batch();
+    let writeCount = 0;
+    let skipCount = 0;
+    
+    for (const game of allGames) {
+      const docRef = gamesRef.doc(game['Game ID']);
+      
+      // Check if game exists and has changed
+      try {
+        const existingDoc = await docRef.get();
+        if (existingDoc.exists) {
+          const existing = existingDoc.data();
+          // Preserve user-set POSTPONED/PPD/CANCELED: do not overwrite with API status (e.g. FINAL) when polling runs
+          const existingStatus = (existing['Match Status'] || '').toUpperCase().trim();
+          const isUserSetNoOverwrite = existingStatus === 'POSTPONED' || existingStatus === 'PPD' || existingStatus === 'CANCELED';
+          if (isUserSetNoOverwrite) {
+            skipCount++;
+            continue; // Skip write entirely so PPD stays
+          }
+          // Compare key fields
+          if (existing['Home Score'] === game['Home Score'] &&
+              existing['Away Score'] === game['Away Score'] &&
+              existing['Match Status'] === game['Match Status'] &&
+              existing['Channel'] === game['Channel']) {
+            skipCount++;
+            continue; // Skip unchanged games
+          }
+        }
+        
+        batch.set(docRef, game, { merge: true });
+        writeCount++;
+      } catch (err) {
+        console.error(`Error processing game ${game['Game ID']}:`, err.message);
+      }
+    }
+    
+    if (writeCount > 0) {
+      await batch.commit();
+      console.log(`[ESPN Live Data] ✅ Wrote ${writeCount} games, skipped ${skipCount} unchanged`);
+    } else {
+      console.log(`[ESPN Live Data] ✅ No changes detected (${skipCount} games checked)`);
+    }
+    
+    if (res) {
+      res.status(200).json({
+        success: true,
+        message: 'ESPN live data polling complete',
+        gamesFetched: allGames.length,
+        gamesWritten: writeCount,
+        gamesSkipped: skipCount
+      });
+    }
+    
+  } catch (err) {
+    console.error('--- /pollESPNLiveData FAILED ---', err);
+    if (res) {
+      res.status(500).json({
+        success: false,
+        error: err.message
+      });
+    }
+  }
+};
+
+// Health check endpoint
+app.get('/', (req, res) => {
+  res.status(200).json({ status: 'ESPN Polling Service is running' });
+});
+
+// Main polling endpoint
+app.post('/pollESPNLiveData', pollESPNLiveDataHandler);
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`ESPN Polling Service listening on port ${PORT}`);
+});
+

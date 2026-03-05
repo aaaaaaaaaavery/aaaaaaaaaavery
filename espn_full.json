@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "id": "401779841",
+      "name": "Miami Hurricanes at Texas A&M Aggies",
+      "date": "2025-12-20T17:00Z",
+      "competitions_date": "2025-12-20T17:00Z"
+    },
+    {
+      "id": "401778315",
+      "name": "Florida International Panthers at UTSA Roadrunners",
+      "date": "2025-12-27T01:00Z",
+      "competitions_date": "2025-12-27T01:00Z"
+    },
+    {
+      "id": "401778307",
+      "name": "Memphis Tigers at NC State Wolfpack",
+      "date": "2025-12-19T19:30Z",
+      "competitions_date": "2025-12-19T19:30Z"
+    },
+    {
+      "id": "401778306",
+      "name": "Kennesaw State Owls at Western Michigan Broncos",
+      "date": "2025-12-19T16:00Z",
+      "competitions_date": "2025-12-19T16:00Z"
+    },
+    {
+      "id": "401769072",
+      "name": "Alabama Crimson Tide at Indiana Hoosiers",
+      "date": "2026-01-01T21:00Z",
+      "competitions_date": "2026-01-01T21:00Z"
+    },
+    {
+      "id": "401778317",
+      "name": "Penn State Nittany Lions at Clemson Tigers",
+      "date": "2025-12-27T17:00Z",
+      "competitions_date": "2025-12-27T17:00Z"
+    },
+    {
+      "id": "401778302",
+      "name": "Boise State Broncos at Washington Huskies",
+      "date": "2025-12-14T01:00Z",
+      "competitions_date": "2025-12-14T01:00Z"
+    },
+    {
+      "id": "401778330",
+      "name": "Michigan Wolverines at Texas Longhorns",
+      "date": "2025-12-31T20:00Z",
+      "competitions_date": "2025-12-31T20:00Z"
+    },
+    {
+      "id": "401779843",
+      "name": "James Madison Dukes at Oregon Ducks",
+      "date": "2025-12-21T00:30Z",
+      "competitions_date": "2025-12-21T00:30Z"
+    },
+    {
+      "id": "401769070",
+      "name": "Miami Hurricanes at Ohio State Buckeyes",
+      "date": "2026-01-01T00:30Z",
+      "competitions_date": "2026-01-01T00:30Z"
+    }
+  ]
+}

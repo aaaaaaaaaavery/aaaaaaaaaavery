@@ -1,0 +1,125 @@
+Total unique teams: 124
+Alabama A&M
+Alabama A&M W
+Alcorn State W
+Appalachian State
+Apprentice Builders W
+BYU W
+Belmont
+Bethesda
+Binghamton
+Bluefield State
+Butler
+CBS Ambassadors
+Cal Poly
+Carolina University
+Chicago State W
+Coastal Carolina W
+Coppin State
+Creighton
+Dallas Univ.
+Delaware State
+Delaware State W
+Dickinson Red Devils
+East Texas A&M
+East Texas A&M Lions W
+East. Washington
+Elon
+Fairfield W
+Fairleigh Dickinson W
+Felician W
+Fresno State
+Georgia
+Hampton W
+Harris-Stowe W
+IU Indy W
+Indiana
+Iowa State W
+James Madison
+Kansas W
+Kentucky State W
+LSU
+La Grange
+La Salle
+Lafayette
+Life Pacific
+Lindenwood W
+Longwood W
+Loyola Marymount
+Loyola Marymount W
+Lynchburg
+MUW Owls
+MUW Owls W
+Marquette
+Md.-East. Shore
+Md.-East. Shore W
+Mercer
+Middle Tenn. St.
+Milligan
+Miss. Valley St.
+Mississippi St.
+Montana
+Montana State
+Morris College W
+New Mexico
+New Orleans W
+New Paltz W
+Norfolk State
+North Alabama
+North Dakota St
+North Florida W
+Northwest Eagles W
+Northwest Indian
+Northwestern W
+Notre Dame W
+Oakland W
+Oklahoma State W
+Ottawa Spirit
+Pacific
+Pacific Lutheran
+Palm Beach Atlantic W
+Plattsburgh
+Prairie View A&M
+Presbyterian
+Queens Royals
+RIT Tigers
+Randolph W
+Regent University
+Richmond Spiders
+Rider
+Rutgers
+San Diego W
+San Francisco W
+Seattle U Redhawks W
+South Carolina State W
+South Dakota Coyotes
+Southern Indiana
+Southern Jaguars W
+Southern Univ.
+Southern Virginia
+Talladega W
+Tarleton
+Temple
+Texas A&M SA Jaguars
+Texas A&M W
+Texas A&M-CC W
+Texas State
+Tulsa Golden Hurricane W
+UC Davis
+UC Irvine Anteaters W
+UMKC W
+UNC Greensboro W
+UNLV Lady Rebels W
+USC Upstate
+UTSA Roadrunners
+Utah Tech
+Utah Valley Wolverines W
+VCU W
+Vermont
+Villanova W
+Wagner W
+Washington & Lee
+Washington State W
+Western Kentucky W
+Winthrop W
+Wisconsin Badgers W

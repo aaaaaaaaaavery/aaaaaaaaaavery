@@ -1,0 +1,81 @@
+PROBLEM DESCRIPTION FOR CHATGPT
+
+I have a sports website that scrapes game data from FlashLive API and stores it in Firestore. The issue is with correctly filtering games by date.
+
+THE PROBLEM:
+- Games that are from YESTERDAY are showing up in TODAY's games section
+- Example: A game that starts at 9:00 PM CST on October 28th (which is 3:00 AM UTC on October 29th) is showing up as a "today" game when we run the scraper on October 29th
+- The game should NOT appear because it's actually from yesterday (October 28th)
+
+WHAT WE NEED:
+- Only games that start between 12:01 AM PST and 11:59 PM EST on the CURRENT DAY should be included
+- Games must have the correct `gameDate` field set to the actual date the game is played (in EST), not the date when the scraper runs
+- The frontend filters games by `gameDate == todayStr`, so if `gameDate` is wrong, games show up on the wrong day
+
+CURRENT LOGIC IN index.js:
+
+1. We fetch games from FlashLive API (they come with UTC/Zulu timestamps)
+2. We filter games using this logic:
+   ```javascript
+   // Convert to PST and EST to check the actual local times
+   const gamePST = DateTime.fromISO(startTimeUTC, { zone: 'utc' }).setZone('America/Los_Angeles');
+   const gameEST = DateTime.fromISO(startTimeUTC, { zone: 'utc' }).setZone('America/New_York');
+   
+   // Get current PST and EST dates
+   const nowPST = DateTime.now().setZone('America/Los_Angeles');
+   const nowEST = DateTime.now().setZone('America/New_York');
+   const todayPST = nowPST.toISODate();
+   const todayEST = nowEST.toISODate();
+   
+   // Game is "today" if it starts on today's date in either PST or EST
+   const gameDatePST = gamePST.toISODate();
+   const gameDateEST = gameEST.toISODate();
+   
+   isTodayGame = (gameDatePST === todayPST) || (gameDateEST === todayEST);
+   ```
+
+3. Then we set the gameDate field:
+   ```javascript
+   const gameEST = DateTime.fromISO(startTimeUTC, { zone: 'utc' }).setZone('America/New_York');
+   gameDateStr = gameEST.toISODate(); // Use actual game date in EST
+   ```
+
+THE ISSUE:
+- When we run the scraper on October 29th, a game that starts at 3:00 AM UTC (October 29th) is being checked:
+  - gameDatePST = October 28th (because 3 AM UTC = 8 PM PST on Oct 28th)
+  - gameDateEST = October 29th (because 3 AM UTC = 11 PM EST on Oct 28th... wait, that's wrong)
+  
+Actually, let me recalculate:
+- 2025-10-29T03:00:00.000Z = 3:00 AM UTC on October 29th
+- In CST (Central Time, UTC-6): October 28th, 9:00 PM
+- In EST (Eastern Time, UTC-5): October 29th, 12:00 AM (midnight)
+
+So the gameDateEST would be October 29th, which matches "today" when running on Oct 29th, so it gets included. But the game was actually played on October 28th!
+
+WHAT WE NEED:
+The gameDate should be set to October 28th (the date when the game actually starts in local time), and then when filtering, we should only include games where:
+- The game starts on TODAY's date in either PST OR EST
+- But we also need to handle the edge case where a game might start late at night PST (like 11 PM PST) which is already the next day in EST
+
+REQUIREMENTS:
+1. Games between 12:01 AM PST and 11:59 PM EST on the current day should be included
+2. The `gameDate` field should be the actual date the game is played (in EST)
+3. When running the scraper, only games from TODAY should be included, not yesterday's games
+4. The frontend uses `where('gameDate', '==', todayStr)` to filter, so `gameDate` must be correct
+
+EXAMPLE:
+- Today is October 29th
+- Game starts at: 2025-10-29T03:00:00.000Z (3 AM UTC Oct 29)
+- This converts to: 9:00 PM CST on October 28th
+- This game should have `gameDate = "2024-10-28"` and should NOT be included when scraping on Oct 29
+
+PLEASE PROVIDE:
+1. The correct filtering logic to determine if a game is "today's game"
+2. The correct way to set the `gameDate` field
+3. An explanation of why the current logic is failing
+
+CURRENT CODE LOCATION:
+The filtering happens in `index.js` in two places:
+- `initialScrapeAndStartPollingHandler` function (around line 631-697)
+- `pollLiveGamesHandler` function (around line 943-1016)
+

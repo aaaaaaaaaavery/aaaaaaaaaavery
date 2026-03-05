@@ -1,0 +1,22 @@
+========================================
+NCAAM TEAM NAMES REPORT - NCAA API
+Generated: 2026-01-16T12:52:10.608-06:00
+========================================
+
+Total Unique Teams: 0
+Date Range: 2025/12/17 to 2026/04/16
+Games Processed: 3667
+Successful API Calls: 121/121
+
+==================================================
+TEAM NAMES (Alphabetical)
+==================================================
+
+  (No teams found)
+
+==================================================
+SUMMARY
+==================================================
+Total Teams: 0
+Date Range: 2025/12/17 to 2026/04/16
+API Endpoint: https://ncaa-api.henrygd.me/scoreboard/basketball-men/d1/yyyy/MM/dd

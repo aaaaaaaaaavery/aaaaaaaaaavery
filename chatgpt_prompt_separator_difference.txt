@@ -1,0 +1,136 @@
+I have two HTML files with separator line logic for a games table. The separator line in `sampler.html` works correctly (games with the same start time have a partial separator that doesn't extend over the start time column), but the same logic in `index (1).html` doesn't work (all separators extend full width).
+
+Here are the key differences between the two implementations:
+
+## 1. normalizeDisplayTime Function
+
+**sampler.html (line 9576):**
+```javascript
+function normalizeDisplayTime(label) {
+    if (label === null || label === undefined) return label;
+    if (typeof label !== 'string') return label;
+    const cleaned = label
+        .replace(/[\u00A0\u2007\u202F]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    if (cleaned === '' || cleaned.toUpperCase() === 'TBD') return 'TBD';
+    const timeMatch = cleaned.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+    if (timeMatch) {
+        let hour = parseInt(timeMatch[1], 10);
+        const minutes = timeMatch[2];
+        const meridiem = timeMatch[3].toUpperCase();
+        if (hour === 12) hour = 0;
+        if (meridiem === 'PM') hour += 12;
+        return `${hour.toString().padStart(2, '0')}:${minutes}`;
+    }
+    return cleaned.toUpperCase();
+}
+```
+**Note:** Does NOT strip HTML tags.
+
+**index (1).html (line 12476):**
+```javascript
+function normalizeDisplayTime(label) {
+    if (label === null || label === undefined) return label;
+    if (typeof label !== 'string') return label;
+    // Strip HTML tags first (like sampler.html does implicitly)
+    const withoutHTML = label.replace(/<[^>]*>/g, '');
+    const cleaned = withoutHTML
+        .replace(/[\u00A0\u2007\u202F]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    if (cleaned === '' || cleaned.toUpperCase() === 'TBD') return 'TBD';
+    const timeMatch = cleaned.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+    if (timeMatch) {
+        let hour = parseInt(timeMatch[1], 10);
+        const minutes = timeMatch[2];
+        const meridiem = timeMatch[3].toUpperCase();
+        if (hour === 12) hour = 0;
+        if (meridiem === 'PM') hour += 12;
+        return `${hour.toString().padStart(2, '0')}:${minutes}`;
+    }
+    return cleaned.toUpperCase();
+}
+```
+**Note:** DOES strip HTML tags first.
+
+## 2. How currentTimeLabel is Normalized
+
+**sampler.html (line 11682):**
+```javascript
+const normalizedTimeLabel = (!isLive && !isFinal) ? normalizeDisplayTime(currentTimeLabel) : null;
+```
+**Note:** Normalizes `currentTimeLabel` directly (which may contain HTML for Live games, but is plain text like "7:00 PM" for scheduled games).
+
+**index (1).html (line 14693-14695):**
+```javascript
+// Extract plain text from currentTimeLabel before normalizing (remove HTML tags)
+const currentTimeLabelPlain = currentTimeLabel ? currentTimeLabel.replace(/<[^>]*>/g, '') : '';
+const normalizedTimeLabel = (!isLive && !isFinal) ? normalizeDisplayTime(currentTimeLabelPlain) : null;
+```
+**Note:** Strips HTML first, then normalizes.
+
+## 3. How currentGameTimeLabel is Determined for Comparison
+
+**sampler.html (line 12027):**
+```javascript
+const currentGameTimeLabel = normalizedTimeLabel || currentTimeLabel;
+```
+
+**index (1).html (line 15085):**
+```javascript
+const currentGameTimeLabel = normalizedTimeLabel || currentTimeLabel;
+```
+**Note:** Same logic in both files.
+
+## 4. How nextTimeLabel is Generated
+
+**sampler.html (line 12017-12018):**
+```javascript
+} else if (nextRawStart && nextRawStart.toDate) {
+    nextTimeLabel = luxon.DateTime.fromJSDate(nextRawStart.toDate()).toFormat('h:mm a');
+```
+
+**index (1).html (line 15072-15073):**
+```javascript
+} else if (nextRawStart && nextRawStart.toDate) {
+    nextTimeLabel = luxon.DateTime.fromJSDate(nextRawStart.toDate()).toFormat('h:mm a');
+```
+**Note:** Same logic, but `index (1).html` has more complex handling for `currentTimeLabel`'s `rawStart` (handles serialized Firestore timestamps with `_seconds` property), but `nextRawStart` uses the simpler check.
+
+## 5. The Comparison Logic
+
+**sampler.html (line 12023-12028):**
+```javascript
+const nextNormalizedTimeLabel = (!nextIsLive && !nextIsFinal) ? normalizeDisplayTime(nextTimeLabel) : null;
+const nextGameTimeLabel = nextNormalizedTimeLabel || nextTimeLabel;
+
+// Check if next game has a different start time from current game
+const currentGameTimeLabel = normalizedTimeLabel || currentTimeLabel;
+const isDifferentTime = nextGameTimeLabel !== currentGameTimeLabel;
+```
+
+**index (1).html (line 15081-15086):**
+```javascript
+const nextNormalizedTimeLabel = (!nextIsLive && !nextIsFinal) ? normalizeDisplayTime(nextTimeLabel) : null;
+const nextGameTimeLabel = nextNormalizedTimeLabel || nextTimeLabel;
+
+// Check if next game has a different start time from current game
+const currentGameTimeLabel = normalizedTimeLabel || currentTimeLabel;
+const isDifferentTime = nextGameTimeLabel !== currentGameTimeLabel;
+```
+**Note:** Same logic.
+
+## The Problem
+
+Based on debug logs, in `index (1).html`, `nextTimeLabel` is always "TBD" for scheduled games, which causes `isDifferentTime` to always be `true`, making all separator lines extend full width. The logs show that scheduled games have `nextTimeLabel: "TBD"` even when the next game should have a start time like "7:00 PM" or "8:00 PM".
+
+## Question
+
+What is causing `nextTimeLabel` to be "TBD" in `index (1).html` when it should be a formatted time string like "7:00 PM"? Is it because:
+1. `nextRawStart` doesn't have `toDate()` method (maybe it's a serialized Firestore timestamp)?
+2. `nextData.timeString` is empty when it shouldn't be?
+3. Some other condition is being met that sets it to "TBD"?
+
+How should I fix this to match the working behavior in `sampler.html`?
+

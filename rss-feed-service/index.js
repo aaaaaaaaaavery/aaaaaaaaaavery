@@ -1,0 +1,4471 @@
+import express from 'express';
+import RSS from 'rss';
+import NodeCache from 'node-cache';
+import fetch from 'node-fetch';
+import * as cheerio from 'cheerio';
+import { scrapeWebsite, scrapeESPN, scrapeCBS, scrapeYahoo, scrapeNewsNow, scrapeNFL, scrapeNBA, scrapeNHL, scrapeHockeyWriters, scrapeOneFootball, scrapeWorldSoccerTalk, scrapeBundesliga, scrapeAthleticCFB, scrapeSportingNewsCFB, scrapeSaturdayDownSouth, scrapeOn3CFB, scrapeGolfMonthly, scrapeBoxingNews24, scrapeBadLeftHook, scrapeSkySportsFootball, scrapeReddit } from './scraper.js';
+import { scrapeWithBrowser, scrapeWithFallback } from './browser-scraper.js';
+import youtubeRouter, { generateChannelRSS, generatePlaylistRSS, generateSearchRSS, generateChannelJSONFeed } from './youtube-rss.js';
+import xTwitterRouter from './x-twitter-rss.js';
+import rsshubRouter from './rsshub-integration.js';
+import bundleRouter from './bundle-rss.js';
+import puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Configure puppeteer with stealth plugin for Cloudflare bypass
+puppeteer.use(StealthPlugin());
+
+// Cloud Run only - no database, fetch feeds on-demand with in-memory cache
+console.log('[Service] Using Cloud Run only - feeds fetched on-demand, cached in memory');
+
+// Get cache TTL based on time of day (EST)
+// 15 minutes during active hours (7 AM - 11 PM EST), 60 minutes during off-hours
+function getCacheTTLMinutes() {
+  const now = new Date();
+  // Convert to EST (UTC-5) or EDT (UTC-4) - using UTC-5 for simplicity
+  const estHour = (now.getUTCHours() - 5 + 24) % 24;
+  
+  // Active hours: 7 AM - 11 PM EST (7 to 23)
+  if (estHour >= 7 && estHour < 23) {
+    return 15; // 15 minutes during active hours
+  } else {
+    return 60; // 60 minutes during off-hours (11 PM - 7 AM EST)
+  }
+}
+
+const app = express();
+const PORT = process.env.PORT || 8080;
+const CACHE_TTL = 15 * 60; // 15 minutes cache during active hours (reduces server load)
+const cache = new NodeCache({ stdTTL: CACHE_TTL });
+const ARTICLE_CACHE_TTL = 7 * 24 * 60 * 60; // 7 days for article history (rolling window)
+const articleCache = new NodeCache({ stdTTL: ARTICLE_CACHE_TTL });
+const MAX_ARTICLES_PER_FEED = 50; // Maximum articles to keep in each feed
+
+// CORS middleware - allow all origins for RSS feeds
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
+  next();
+});
+
+// Rate limiting: Track requests per source to avoid overloading servers
+const requestTimestamps = new Map();
+const MAX_REQUESTS_PER_HOUR = 10; // Max requests per source per hour
+
+function checkRateLimit(sourceId) {
+  const now = Date.now();
+  const hourAgo = now - (60 * 60 * 1000);
+  
+  if (!requestTimestamps.has(sourceId)) {
+    requestTimestamps.set(sourceId, []);
+  }
+  
+  const timestamps = requestTimestamps.get(sourceId);
+  // Remove timestamps older than 1 hour
+  const recent = timestamps.filter(ts => ts > hourAgo);
+  
+  if (recent.length >= MAX_REQUESTS_PER_HOUR) {
+    return false; // Rate limit exceeded
+  }
+  
+  recent.push(now);
+  requestTimestamps.set(sourceId, recent);
+  return true; // Within rate limit
+}
+
+// Global concurrency control for NewsNow feeds
+// NewsNow feeds all hit the same domain, so we need to limit concurrent requests
+// Only allow 1 NewsNow scrape at a time, with 5-second delay between scrapes
+let newsnowActiveRequests = 0;
+const MAX_CONCURRENT_NEWSNOW = 1; // Only 1 NewsNow request at a time
+const newsnowQueue = [];
+let lastNewsNowScrapeTime = 0;
+const DELAY_BETWEEN_NEWSNOW_SCRAPES = 10000; // 10 seconds delay between NewsNow scrapes
+
+function isNewsNowFeed(sourceId) {
+  return sourceId && sourceId.startsWith('newsnow-');
+}
+
+async function waitForNewsNowSlot() {
+  return new Promise((resolve) => {
+    const processQueue = async () => {
+      // If we're already at max concurrent requests, queue it
+      if (newsnowActiveRequests >= MAX_CONCURRENT_NEWSNOW) {
+        newsnowQueue.push(processQueue);
+        return;
+      }
+      
+      // Check if we need to wait for the delay period (based on when last scrape COMPLETED)
+      const now = Date.now();
+      const timeSinceLastScrape = now - lastNewsNowScrapeTime;
+      
+      if (timeSinceLastScrape < DELAY_BETWEEN_NEWSNOW_SCRAPES && lastNewsNowScrapeTime > 0) {
+        const waitTime = DELAY_BETWEEN_NEWSNOW_SCRAPES - timeSinceLastScrape;
+        console.log(`[NewsNow Queue] Waiting ${(waitTime / 1000).toFixed(2)}s before processing next feed (${timeSinceLastScrape}ms since last scrape completed)`);
+        await new Promise(r => setTimeout(r, waitTime));
+      }
+      
+      // We can proceed now - don't update lastNewsNowScrapeTime here, it will be updated when scrape completes
+      newsnowActiveRequests++;
+      resolve();
+    };
+    
+    processQueue();
+  });
+}
+
+function releaseNewsNowSlot() {
+  newsnowActiveRequests--;
+  // Process next in queue - the delay will be handled in waitForNewsNowSlot
+  if (newsnowQueue.length > 0 && newsnowActiveRequests < MAX_CONCURRENT_NEWSNOW) {
+    const next = newsnowQueue.shift();
+    next();
+  }
+}
+
+// News source configurations
+const NEWS_SOURCES = {
+  // Home page breaking feed (NewsNow via RSS.app)
+  'home-breaking': {
+    url: 'https://rss.app/feeds/yTWZ2e72VcuxPyrv.xml',
+    title: 'NewsNow - Home',
+    description: 'Sport news in a live news feed, including the latest headlines and breaking updates from the world of sport.',
+    isDirectRSS: true
+  },
+  // MLB
+  'mlb-com': {
+    url: 'https://www.mlb.com/news',
+    title: 'MLB.com News',
+    description: 'Latest MLB news and updates',
+    scraper: async () => await scrapeWebsite('https://www.mlb.com/news', {
+      selector: ['article', '.article-item', '.news-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3, .title, .headline',
+      dateSelector: '.date, time, .published',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'sportsfeed-mntwinsbot': {
+    url: 'https://sportsfeed.me/@mntwinsbot.rss',
+    title: 'Minnesota Twins News (bot)',
+    description: 'Minnesota Twins news from SportsFeed.me bot',
+    isDirectRSS: true
+  },
+  'espn-mlb': {
+    url: 'https://www.espn.com/mlb/',
+    title: 'ESPN MLB',
+    description: 'ESPN MLB news and analysis',
+    scraper: async () => await scrapeESPN('mlb')
+  },
+  'cbs-mlb': {
+    url: 'https://www.cbssports.com/mlb/',
+    title: 'CBS Sports MLB',
+    description: 'CBS Sports MLB coverage',
+    scraper: async () => await scrapeCBS('mlb')
+  },
+  'yahoo-mlb': {
+    url: 'https://sports.yahoo.com/mlb/',
+    title: 'Yahoo Sports MLB',
+    description: 'Yahoo Sports MLB news',
+    scraper: async () => await scrapeYahoo('mlb')
+  },
+  'fox-mlb': {
+    url: 'https://www.foxsports.com/mlb',
+    title: 'FOX Sports MLB',
+    description: 'FOX Sports MLB coverage',
+    scraper: async () => await scrapeWebsite('https://www.foxsports.com/mlb', {
+      selector: ['.article', '.story', 'article'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      maxItems: 20
+    })
+  },
+  // NBA
+  'nba-com': {
+    url: 'https://www.nba.com/news',
+    title: 'NBA.com News',
+    description: 'Latest NBA news',
+    scraper: async () => await scrapeWebsite('https://www.nba.com/news', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      maxItems: 20
+    })
+  },
+  'espn-nba': {
+    url: 'https://www.espn.com/nba/',
+    title: 'ESPN NBA',
+    description: 'ESPN NBA news',
+    scraper: async () => await scrapeESPN('nba')
+  },
+  'cbs-nba': {
+    url: 'https://www.cbssports.com/nba/',
+    title: 'CBS Sports NBA',
+    description: 'CBS Sports NBA coverage',
+    scraper: async () => await scrapeCBS('nba')
+  },
+  'yahoo-nba': {
+    url: 'https://sports.yahoo.com/nba/',
+    title: 'Yahoo Sports NBA',
+    description: 'Yahoo Sports NBA news',
+    scraper: async () => await scrapeYahoo('nba')
+  },
+  // NFL
+  'nfl-com': {
+    url: 'https://www.nfl.com/news',
+    title: 'NFL.com News',
+    description: 'Latest NFL news',
+    scraper: async () => await scrapeNFL()
+  },
+  'espn-nfl': {
+    url: 'https://www.espn.com/nfl/',
+    title: 'ESPN NFL',
+    description: 'ESPN NFL news',
+    scraper: async () => await scrapeESPN('nfl')
+  },
+  'cbs-nfl': {
+    url: 'https://www.cbssports.com/nfl/',
+    title: 'CBS Sports NFL',
+    description: 'CBS Sports NFL coverage',
+    scraper: async () => await scrapeCBS('nfl')
+  },
+  // NHL
+  'nhl-com': {
+    url: 'https://www.nhl.com/news',
+    title: 'NHL.com News',
+    description: 'Latest NHL news',
+    scraper: async () => await scrapeWebsite('https://www.nhl.com/news', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      maxItems: 20
+    })
+  },
+  'espn-nhl': {
+    url: 'https://www.espn.com/nhl/',
+    title: 'ESPN NHL',
+    description: 'ESPN NHL news',
+    scraper: async () => await scrapeESPN('nhl')
+  },
+  'cbs-nhl': {
+    url: 'https://www.cbssports.com/nhl/',
+    title: 'CBS Sports NHL',
+    description: 'CBS Sports NHL coverage',
+    scraper: async () => await scrapeCBS('nhl')
+  },
+  // Direct RSS feed proxies
+  'mlb-rss': {
+    url: 'https://www.mlb.com/feeds/news/rss.xml',
+    title: 'MLB.com RSS',
+    description: 'MLB.com news RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-nba-rss': {
+    url: 'https://sports.yahoo.com/nba/rss/',
+    title: 'Yahoo Sports NBA RSS',
+    description: 'Yahoo Sports NBA RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-seriea-rss': {
+    url: 'https://sports.yahoo.com/soccer/serie-a/rss/',
+    title: 'Yahoo Sports Serie A RSS',
+    description: 'Yahoo Sports Serie A RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-wnba-rss': {
+    url: 'https://sports.yahoo.com/wnba/rss/',
+    title: 'Yahoo Sports WNBA RSS',
+    description: 'Yahoo Sports WNBA RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-tennis-rss': {
+    url: 'https://sports.yahoo.com/ten/rss/',
+    title: 'Yahoo Sports Tennis RSS',
+    description: 'Yahoo Sports Tennis RSS feed',
+    isDirectRSS: true
+  },
+  'espn-mlb-rss': {
+    url: 'https://www.espn.com/espn/rss/mlb/news',
+    title: 'ESPN MLB RSS',
+    description: 'ESPN MLB RSS feed',
+    isDirectRSS: true
+  },
+  'espn-ncb-rss': {
+    url: 'https://www.espn.com/espn/rss/ncb/news',
+    title: 'ESPN College Basketball RSS',
+    description: 'ESPN College Basketball RSS feed',
+    isDirectRSS: true
+  },
+  'espn-tennis-rss': {
+    url: 'https://www.espn.com/espn/rss/tennis/news',
+    title: 'ESPN Tennis RSS',
+    description: 'ESPN Tennis RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-headlines-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/',
+    title: 'CBS Sports Headlines RSS',
+    description: 'CBS Sports Headlines RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-ncaam-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/college-basketball',
+    title: 'CBS Sports College Basketball RSS',
+    description: 'CBS Sports College Basketball RSS feed',
+    isDirectRSS: true
+  },
+  'bbc-tennis-rss': {
+    url: 'https://feeds.bbci.co.uk/sport/tennis/rss.xml',
+    title: 'BBC Tennis RSS',
+    description: 'BBC Tennis RSS feed',
+    isDirectRSS: true
+  },
+  'fangraphs-rss': {
+    url: 'https://blogs.fangraphs.com/feed',
+    title: 'FanGraphs RSS',
+    description: 'FanGraphs baseball analysis RSS feed',
+    isDirectRSS: true
+  },
+  'jayski-rss': {
+    url: 'https://www.jayski.com/json/articles/?format=rss',
+    title: 'Jayski RSS',
+    description: 'Jayski NASCAR news RSS feed',
+    isDirectRSS: true
+  },
+  'racingexperts-rss': {
+    url: 'https://theracingexperts.com/feed/',
+    title: 'Racing Experts RSS',
+    description: 'Racing Experts RSS feed',
+    isDirectRSS: true
+  },
+  'motogpnews-rss': {
+    url: 'https://www.motogpnews.com/feed/',
+    title: 'MotoGP News RSS',
+    description: 'MotoGP News RSS feed',
+    isDirectRSS: true
+  },
+  // Scraped websites
+  'nhl-video-recaps': {
+    url: 'https://www.nhl.com/video/topic/game-recaps/',
+    title: 'NHL Game Recaps',
+    description: 'NHL game recap videos',
+    useBrowser: true,
+    browserConfig: {
+      selector: 'a[href*="/video/"]',
+      titleSelector: 'span, div, h1, h2, h3',
+      linkSelector: 'a[href*="/video/"]',
+      dateSelector: 'time, [datetime]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'a[href*="/video/"]',
+      scrollToBottom: false,
+      scrollDelay: 500,
+      timeout: 30000
+    }
+  },
+  'autosport-f1': {
+    url: 'https://www.autosport.com/rss/f1/news/',
+    title: 'Autosport F1',
+    description: 'Autosport Formula 1 news',
+    isDirectRSS: true
+  },
+  'planetf1': {
+    url: 'https://www.planetf1.com/news',
+    title: 'Planet F1',
+    description: 'Planet F1 news',
+    scraper: async () => await scrapeWebsite('https://www.planetf1.com/news', {
+      selector: ['article', '.article-item', '.story', '.post', '.entry'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3, .entry-title, .post-title',
+      dateSelector: '.date, time, [datetime], .entry-date, .post-date',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'onefootball-seriea': {
+    url: 'https://onefootball.com/en/competition/serie-a-13',
+    title: 'OneFootball Serie A',
+    description: 'OneFootball Serie A news',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"], [data-testid*="article"]',
+      titleSelector: 'h1, h2, h3, h4, [class*="title"], [class*="headline"]',
+      linkSelector: 'a[href*="/news/"], a[href*="/article/"]',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 3000,
+      timeout: 60000
+    }
+  },
+  'football-italia': {
+    url: 'https://www.footitalia.com/feed/',
+    title: 'FootItalia',
+    description: 'FootItalia RSS feed',
+    isDirectRSS: true
+  },
+  // Note: newsnow-motogp is configured below with other NewsNow feeds using RSS.app
+  'newsnow-nhl': {
+    url: 'https://rss.app/feeds/f6NecqzpQER7SJ0V.xml',
+    title: 'NewsNow NHL',
+    description: 'NewsNow NHL news',
+    isDirectRSS: true
+  },
+  'si-nba': {
+    url: 'https://www.si.com/nba',
+    title: 'Sports Illustrated NBA',
+    description: 'Sports Illustrated NBA news',
+    scraper: async () => await scrapeWebsite('https://www.si.com/nba', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'bleacherreport-nba': {
+    url: 'https://bleacherreport.com/nba',
+    title: 'Bleacher Report NBA',
+    description: 'Bleacher Report NBA news',
+    scraper: async () => await scrapeWebsite('https://bleacherreport.com/nba', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'bbc-premierleague': {
+    url: 'https://feeds.bbci.co.uk/sport/football/rss.xml',
+    title: 'BBC Sport Football',
+    description: 'BBC Sport Football RSS feed',
+    isDirectRSS: true
+  },
+  'skysports-premierleague': {
+    url: 'https://rss.app/feeds/rHpOLE8kER7CAvet.xml',
+    title: 'Sky Sports Premier League',
+    description: 'Sky Sports Premier League news',
+    isDirectRSS: true
+  },
+  // 'sportingnews-premierleague': {
+  //   url: 'https://www.sportingnews.com/us/premier-league',
+  //   title: 'Sporting News Premier League',
+  //   description: 'Sporting News Premier League news',
+  //   scraper: async () => await scrapeWebsite('https://www.sportingnews.com/us/premier-league', {
+  //     selector: ['article', '.article-item', '.story'],
+  //     linkSelector: 'a',
+  //     titleSelector: 'h1, h2, h3',
+  //     dateSelector: '.date, time',
+  //     imageSelector: 'img',
+  //     maxItems: 20
+  //   })
+  // },
+  'sportsmole-premierleague': {
+    url: 'https://rss.app/feeds/JYxQrVlHfrmg8oxQ.xml',
+    title: 'Sports Mole Premier League',
+    description: 'Sports Mole Premier League news',
+    isDirectRSS: true
+  },
+  'sportbible-premierleague': {
+    url: 'https://www.sportbible.com/premier-league',
+    title: 'SPORTbible Premier League',
+    description: 'SPORTbible Premier League news',
+    scraper: async () => await scrapeWebsite('https://www.sportbible.com/premier-league', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'foxsports-home-api': {
+    url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30',
+    title: 'FOX Sports Home API',
+    description: 'FOX Sports general RSS feed',
+    isDirectRSS: true
+  },
+  'foxsports-mlb-api': {
+    url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs/mlb',
+    title: 'FOX Sports MLB API',
+    description: 'FOX Sports MLB RSS feed',
+    isDirectRSS: true
+  },
+  'athletic-mlb': {
+    url: 'https://www.mlbtraderumors.com/feed',
+    title: 'MLB Trade Rumors',
+    description: 'MLB Trade Rumors RSS feed',
+    isDirectRSS: true
+  },
+  // 'athletic-wnba': {
+  //   url: 'https://www.nytimes.com/athletic/wnba/',
+  //   title: 'The Athletic WNBA',
+  //   description: 'The Athletic WNBA news',
+  //   useBrowserFallback: true,
+  //   scraperConfig: {
+  //     selector: ['article', '.article-item', '.story'],
+  //     linkSelector: 'a',
+  //     titleSelector: 'h1, h2, h3',
+  //     dateSelector: '.date, time',
+  //     imageSelector: 'img',
+  //     maxItems: 20
+  //   },
+  //   browserConfig: {
+  //     selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+  //     titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+  //     linkSelector: 'a',
+  //     dateSelector: 'time, [datetime], [class*="date"]',
+  //     imageSelector: 'img',
+  //     maxItems: 20,
+  //     waitForSelector: 'article',
+  //     scrollToBottom: true,
+  //     scrollDelay: 2000,
+  //     timeout: 30000
+  //   }
+  // },
+  'tennis-com': {
+    url: 'https://rss.app/feeds/VBHHVxCk3C9atbsX.xml',
+    title: 'Tennis.com',
+    description: 'Tennis.com news',
+    isDirectRSS: true
+  },
+  'tennisgazette': {
+    url: 'https://rss.app/feeds/BwWnkEz2PxK4MMVM.xml',
+    title: 'Tennis Gazette',
+    description: 'Tennis Gazette news',
+    isDirectRSS: true
+  },
+  'motogp-com': {
+    url: 'https://www.motogp.com/en/news/latest-news',
+    title: 'MotoGP.com',
+    description: 'MotoGP.com latest news',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"], [data-article-id]',
+      titleSelector: 'h1, h2, h3, h4, [class*="title"], [class*="headline"]',
+      linkSelector: 'a[href*="/news/"], a[href*="/article/"]',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 3000,
+      timeout: 60000
+    }
+  },
+  'motorsport-motogp': {
+    url: 'https://www.motorsport.com/rss/motogp/news/',
+    title: 'Motorsport.com MotoGP',
+    description: 'Motorsport.com MotoGP RSS feed',
+    isDirectRSS: true
+  },
+  'autosport-motogp': {
+    url: 'https://www.autosport.com/rss/motogp/news/',
+    title: 'Autosport MotoGP',
+    description: 'Autosport MotoGP RSS feed',
+    isDirectRSS: true
+  },
+  'racer-indycar': {
+    url: 'https://racer.com/category/indycar',
+    title: 'Racer IndyCar',
+    description: 'Racer IndyCar news',
+    scraper: async () => await scrapeWebsite('https://racer.com/category/indycar', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'racer-f1': {
+    url: 'https://racer.com/f1/feed',
+    title: 'Racer Formula 1',
+    description: 'Racer Formula 1 RSS feed',
+    isDirectRSS: true
+  },
+  'foxsports-wnba': {
+    url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs/wnba',
+    title: 'FOX Sports WNBA',
+    description: 'FOX Sports WNBA RSS feed',
+    isDirectRSS: true
+  },
+  'yardbarker-wnba': {
+    url: 'https://rss.app/feeds/rgEu0zKxEb9WknTv.xml',
+    title: 'WNBA.com',
+    description: 'WNBA.com RSS feed',
+    isDirectRSS: true
+  },
+  'talkbasket-wnba': {
+    url: 'https://feeds.feedburner.com/tb-nba',
+    title: 'TalkBasket WNBA',
+    description: 'TalkBasket NBA/WNBA news',
+    isDirectRSS: true
+  },
+  'bleacherreport-wnba': {
+    url: 'https://bleacherreport.com/wnba',
+    title: 'Bleacher Report WNBA',
+    description: 'Bleacher Report WNBA news',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'si-wnba': {
+    url: 'https://www.si.com/wnba',
+    title: 'Sports Illustrated WNBA',
+    description: 'Sports Illustrated WNBA news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/wnba', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'motorsport-nascar': {
+    url: 'https://www.motorsport.com/rss/nascar-cup/news/',
+    title: 'Motorsport.com NASCAR',
+    description: 'Motorsport.com NASCAR RSS feed',
+    isDirectRSS: true
+  },
+  'trackandfieldnews': {
+    url: 'https://trackandfieldnews.com/',
+    title: 'Track and Field News',
+    description: 'Track and Field News',
+    scraper: async () => await scrapeWebsite('https://trackandfieldnews.com/', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  // Direct RSS feeds
+  'mlbtraderumors': {
+    url: 'https://www.mlbtraderumors.com/feed',
+    title: 'MLB Trade Rumors',
+    description: 'MLB Trade Rumors RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-nfl-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/nfl/',
+    title: 'CBS Sports NFL RSS',
+    description: 'CBS Sports NFL RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-nfl-rss': {
+    url: 'https://sports.yahoo.com/nfl/rss/',
+    title: 'Yahoo Sports NFL RSS',
+    description: 'Yahoo Sports NFL RSS feed',
+    isDirectRSS: true
+  },
+  'foxsports-nfl-api': {
+    url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs/nfl',
+    title: 'FOX Sports NFL API',
+    description: 'FOX Sports NFL RSS feed',
+    isDirectRSS: true
+  },
+  'espn-nfl-rss': {
+    url: 'https://www.espn.com/espn/rss/nfl/news',
+    title: 'ESPN NFL RSS',
+    description: 'ESPN NFL RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-mlb-rss': {
+    url: 'https://sports.yahoo.com/mlb/rss/',
+    title: 'Yahoo Sports MLB RSS',
+    description: 'Yahoo Sports MLB RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-nba-rss': {
+    url: 'https://sports.yahoo.com/nba/rss/',
+    title: 'Yahoo Sports NBA RSS',
+    description: 'Yahoo Sports NBA RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-mlb-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/mlb',
+    title: 'CBS Sports MLB RSS',
+    description: 'CBS Sports MLB RSS feed',
+    isDirectRSS: true
+  },
+  'espn-nba-rss': {
+    url: 'https://www.espn.com/espn/rss/nba/news',
+    title: 'ESPN NBA RSS',
+    description: 'ESPN NBA RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-nba-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/nba',
+    title: 'CBS Sports NBA RSS',
+    description: 'CBS Sports NBA RSS feed',
+    isDirectRSS: true
+  },
+  'foxsports-nba-api': {
+    url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs/nba',
+    title: 'FOX Sports NBA API',
+    description: 'FOX Sports NBA RSS feed',
+    isDirectRSS: true
+  },
+  'formula1-latest': {
+    url: 'https://www.formula1.com/en/latest/all.xml',
+    title: 'Formula 1 - Latest',
+    description: 'Latest Formula 1 news',
+    isDirectRSS: true
+  },
+  'talksport-premierleague': {
+    url: 'https://talksport.com/football/premier-league/feed/',
+    title: 'talkSPORT Premier League',
+    description: 'talkSPORT Premier League news',
+    isDirectRSS: true
+  },
+  'footballtalk-premierleague': {
+    url: 'https://football-talk.co.uk/topics/premier-league/feed/',
+    title: 'Football-Talk Premier League',
+    description: 'Football-Talk Premier League news',
+    isDirectRSS: true
+  },
+  'motorsport-all': {
+    url: 'https://www.motorsport.com/rss/f1/news/',
+    title: 'Motorsport.com Formula 1',
+    description: 'Motorsport.com Formula 1 news',
+    isDirectRSS: true
+  },
+  'sportsmole-rss': {
+    url: 'https://www.sportsmole.co.uk/rss.xml',
+    title: 'Sports Mole',
+    description: 'Sports Mole news',
+    isDirectRSS: true
+  },
+  'daily-mail-premierleague': {
+    url: 'https://www.dailymail.co.uk/sport/premierleague/index.rss',
+    title: 'Daily Mail Premier League',
+    description: 'Daily Mail Premier League news',
+    isDirectRSS: true
+  },
+  'bbc-football-rss': {
+    url: 'https://feeds.bbci.co.uk/sport/football/rss.xml',
+    title: 'BBC Football RSS',
+    description: 'BBC Football RSS feed',
+    isDirectRSS: true
+  },
+  'guardian-soccer-rss': {
+    url: 'https://www.theguardian.com/us/soccer/rss',
+    title: 'The Guardian Soccer',
+    description: 'The Guardian Soccer RSS feed',
+    isDirectRSS: true
+  },
+  'sportsmole-laliga': {
+    url: 'https://www.sportsmole.co.uk/football/la-liga.xml',
+    title: 'Sports Mole La Liga',
+    description: 'Sports Mole La Liga news',
+    isDirectRSS: true
+  },
+  'foxsports-soccer-bundle': {
+    url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i',
+    title: 'FOX Sports Soccer Bundle',
+    description: 'Combined FOX Sports Soccer feeds',
+    scraper: async () => {
+      const sources = [
+        'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30',
+        'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&aggregateId=7f83e8ca-6701-5ea0-96ee-072636b67336'
+      ];
+      const articlesMap = new Map();
+
+      const parseRss = (xml) => {
+        const $ = cheerio.load(xml, { xmlMode: true });
+        $('item').each((_, elem) => {
+          const $item = $(elem);
+          const title = cleanRSSText($item.find('title').first().text());
+          const link = $item.find('link').first().text().trim();
+          const description = cleanRSSText($item.find('description').first().text());
+          const pubDate = $item.find('pubDate').first().text().trim();
+          const image = $item.find('media\\:content, enclosure').first().attr('url') || '';
+          if (link && title) {
+            const date = pubDate ? new Date(pubDate) : new Date();
+            articlesMap.set(link, {
+              title: title.substring(0, 200),
+              link,
+              description: description.substring(0, 500),
+              date,
+              image
+            });
+          }
+        });
+      };
+
+      for (const src of sources) {
+        try {
+          const resp = await fetch(src);
+          if (resp.ok) {
+            const xml = await resp.text();
+            parseRss(xml);
+          }
+        } catch (e) {
+          console.error(`Error fetching FOX Sports feed ${src}:`, e.message);
+        }
+      }
+
+      const merged = Array.from(articlesMap.values()).sort((a, b) => new Date(b.date) - new Date(a.date));
+      return merged.slice(0, 50);
+    }
+  },
+  'yahoo-nhl-rss': {
+    url: 'https://sports.yahoo.com/nhl/rss/',
+    title: 'Yahoo Sports NHL RSS',
+    description: 'Yahoo Sports NHL RSS feed',
+    isDirectRSS: true
+  },
+  'espn-nhl-rss': {
+    url: 'https://www.espn.com/espn/rss/nhl/news',
+    title: 'ESPN NHL RSS',
+    description: 'ESPN NHL RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-nhl-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/nhl',
+    title: 'CBS Sports NHL RSS',
+    description: 'CBS Sports NHL RSS feed',
+    isDirectRSS: true
+  },
+  'espn-soccer-rss': {
+    url: 'https://www.espn.com/espn/rss/soccer/news',
+    title: 'ESPN Soccer RSS',
+    description: 'ESPN Soccer RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-soccer-rss': {
+    url: 'https://sports.yahoo.com/soccer/rss/',
+    title: 'Yahoo Sports Soccer RSS',
+    description: 'Yahoo Sports Soccer RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-general-news-rss': {
+    url: 'https://sports.yahoo.com/general/news/rss/',
+    title: 'Yahoo Sports General News RSS',
+    description: 'Yahoo Sports General News RSS feed',
+    isDirectRSS: true
+  },
+  'yahoo-sports-rss': {
+    url: 'https://sports.yahoo.com/rss/',
+    title: 'Yahoo Sports RSS',
+    description: 'Yahoo Sports RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-soccer-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/soccer',
+    title: 'CBS Sports Soccer RSS',
+    description: 'CBS Sports Soccer RSS feed',
+    isDirectRSS: true
+  },
+  'transfermarkt-rss': {
+    url: 'https://www.transfermarkt.co.uk/rss/news',
+    title: 'Transfermarkt',
+    description: 'Transfermarkt news',
+    isDirectRSS: true
+  },
+  'getfootballnewsgermany-bundesliga': {
+    url: 'https://www.getfootballnewsgermany.com/feed/',
+    title: 'Get Football News Germany Bundesliga',
+    description: 'Get Football News Germany Bundesliga RSS feed',
+    isDirectRSS: true
+  },
+  'bulinews': {
+    url: 'https://bulinews.com/rss.xml',
+    title: 'Bulinews',
+    description: 'Bulinews German football news RSS feed',
+    isDirectRSS: true
+  },
+  'bundesliga-com': {
+    url: 'https://www.bundesliga.com/en/bundesliga/news',
+    title: 'Bundesliga.com',
+    description: 'Bundesliga.com news',
+    scraper: async () => await scrapeBundesliga()
+  },
+  'yahoo-collegefootball-rss': {
+    url: 'https://sports.yahoo.com/college-football/rss/',
+    title: 'Yahoo Sports College Football RSS',
+    description: 'Yahoo Sports College Football RSS feed',
+    isDirectRSS: true
+  },
+  'espn-ncf-rss': {
+    url: 'https://www.espn.com/espn/rss/ncf/news',
+    title: 'ESPN College Football RSS',
+    description: 'ESPN College Football RSS feed',
+    isDirectRSS: true
+  },
+  'cbs-collegefootball-rss': {
+    url: 'https://www.cbssports.com/rss/headlines/college-football/',
+    title: 'CBS Sports College Football RSS',
+    description: 'CBS Sports College Football RSS feed',
+    isDirectRSS: true
+  },
+  'foxsports-cfb-api': {
+    url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs/cfb',
+    title: 'FOX Sports CFB API',
+    description: 'FOX Sports College Football RSS feed',
+    isDirectRSS: true
+  },
+  'ringmagazine-rss': {
+    url: 'https://rss.app/feeds/Ds2MzJvS3g82JEWo.xml',
+    title: 'Ring Magazine',
+    description: 'Ring Magazine news',
+    isDirectRSS: true
+  },
+  // NewsNow feeds (using RSS.app - replace PLACEHOLDER with actual RSS.app feed URLs)
+  'newsnow-nfl': {
+    url: 'https://rss.app/feeds/p1ZVFsbDUnJYjv2W.xml',
+    title: 'NewsNow NFL',
+    description: 'NewsNow NFL news',
+    isDirectRSS: true
+  },
+  'newsnow-nba': {
+    url: 'https://rss.app/feeds/DAW1lyIJiVvC15d7.xml',
+    title: 'NewsNow NBA',
+    description: 'NewsNow NBA news',
+    isDirectRSS: true
+  },
+  'newsnow-soccer': {
+    url: 'https://rss.app/feeds/Dfufmz7TFqC6GnBo.xml',
+    title: 'NewsNow Soccer',
+    description: 'NewsNow Soccer news',
+    isDirectRSS: true
+  },
+  'newsnow-premierleague': {
+    url: 'https://rss.app/feeds/YZsB4uk1HBX2x9is.xml',
+    title: 'NewsNow Premier League',
+    description: 'NewsNow Premier League news',
+    isDirectRSS: true
+  },
+  'newsnow-mls': {
+    url: 'https://rss.app/feeds/1VcH4Tlwl3jp7FxM.xml',
+    title: 'NewsNow MLS',
+    description: 'NewsNow MLS news',
+    isDirectRSS: true
+  },
+  'newsnow-laliga': {
+    url: 'https://rss.app/feeds/ax5jpvxefcNyJ8tG.xml',
+    title: 'NewsNow La Liga',
+    description: 'NewsNow La Liga news',
+    isDirectRSS: true
+  },
+  'newsnow-seriea': {
+    url: 'https://rss.app/feeds/c1VqpvXG2tw99AMj.xml',
+    title: 'NewsNow Serie A',
+    description: 'NewsNow Serie A news',
+    isDirectRSS: true
+  },
+  'newsnow-bundesliga': {
+    url: 'https://rss.app/feeds/DhzMrmRCci5XmvNK.xml',
+    title: 'NewsNow Bundesliga',
+    description: 'NewsNow Bundesliga news',
+    isDirectRSS: true
+  },
+  'newsnow-facup': {
+    url: 'https://rss.app/feeds/rlDgQSVbk1oX4nyH.xml',
+    title: 'NewsNow FA Cup',
+    description: 'NewsNow FA Cup news',
+    isDirectRSS: true
+  },
+  'newsnow-ligue1': {
+    url: 'https://rss.app/feeds/IkFlbElDK5Df8r5n.xml',
+    title: 'NewsNow Ligue 1',
+    description: 'NewsNow Ligue 1 news',
+    isDirectRSS: true
+  },
+  'newsnow-nwsl': {
+    url: 'https://rss.app/feeds/zL71BDnU9LO5QpOP.xml',
+    title: 'NewsNow NWSL',
+    description: 'NewsNow NWSL news',
+    isDirectRSS: true
+  },
+  'newsnow-f1': {
+    url: 'https://rss.app/feeds/66TtNPKPxa27riIb.xml',
+    title: 'NewsNow Formula 1',
+    description: 'NewsNow Formula 1 news',
+    isDirectRSS: true
+  },
+  'newsnow-europaleague': {
+    url: 'https://rss.app/feeds/t4y6rNhryW6usRQt.xml',
+    title: 'UEFA Europa League Headlines',
+    description: 'UEFA Europa League Headlines RSS feed',
+    isDirectRSS: true
+  },
+  'newsnow-ncaabasketball': {
+    url: 'https://rss.app/feeds/qfILCaM9ny12mTQM.xml',
+    title: 'NewsNow NCAA Basketball',
+    description: 'NewsNow NCAA Basketball news',
+    isDirectRSS: true
+  },
+  'ncaa-com-ncaam': {
+    url: 'https://www.ncaa.com/news/basketball-men/d1/rss.xml',
+    title: 'NCAA.com Men\'s Basketball',
+    description: 'NCAA.com Men\'s Division I Basketball news',
+    isDirectRSS: true
+  },
+  'newsnow-ncaaw': {
+    url: 'https://rss.app/feeds/PLACEHOLDER.xml', // TODO: Replace with actual RSS.app feed URL
+    title: 'NewsNow NCAA Women\'s Basketball',
+    description: 'NewsNow NCAA Women\'s Basketball news',
+    isDirectRSS: true
+  },
+  'ncaa-com-ncaaw': {
+    url: 'https://www.ncaa.com/news/basketball-women/d1/rss.xml',
+    title: 'NCAA.com Women\'s Basketball',
+    description: 'NCAA.com Women\'s Division I Basketball news',
+    isDirectRSS: true
+  },
+  'newsnow-ncaafootball': {
+    url: 'https://rss.app/feeds/UCSYGcWMwbv5t4WK.xml',
+    title: 'NewsNow NCAA Football',
+    description: 'NewsNow NCAA Football news',
+    isDirectRSS: true
+  },
+  'newsnow-pgatour': {
+    url: 'https://rss.app/feeds/inlh7g3F9GYdw9yO.xml',
+    title: 'NewsNow PGA Tour',
+    description: 'NewsNow PGA Tour news',
+    isDirectRSS: true
+  },
+  'pgatour-headlines': {
+    url: 'https://rss.app/feeds/tzko1hIT45pRtAkP.xml',
+    title: 'PGA Tour Headlines',
+    description: 'PGA Tour Headlines RSS feed',
+    isDirectRSS: true
+  },
+  'newsnow-ufc': {
+    url: 'https://rss.app/feeds/dxSlMr1fn2sPpi1q.xml',
+    title: 'NewsNow UFC',
+    description: 'NewsNow UFC news',
+    isDirectRSS: true
+  },
+  'newsnow-boxing': {
+    url: 'https://rss.app/feeds/Lu8ZJZz0qdsAKl42.xml',
+    title: 'NewsNow Boxing',
+    description: 'NewsNow Boxing news',
+    isDirectRSS: true
+  },
+  'mastodon-buffalosabres': {
+    url: 'https://www.sportsbots.xyz/users/BuffaloSabres.rss',
+    title: 'Buffalo Sabres (Mastodon)',
+    description: 'Buffalo Sabres Mastodon feed from sportsbots.xyz',
+    isDirectRSS: true
+  },
+  'nitter-buffalosabres': {
+    url: 'https://nitter.net/BuffaloSabres/rss',
+    title: 'Buffalo Sabres (Nitter/Twitter)',
+    description: 'Buffalo Sabres Twitter feed via Nitter',
+    isDirectRSS: true,
+    fallbackUrls: [
+      'https://nitter.poast.org/BuffaloSabres/rss',
+      'https://nitter.it/BuffaloSabres/rss',
+      'https://nitter.unixfox.eu/BuffaloSabres/rss'
+    ]
+  },
+  'newsnow-tennis': {
+    url: 'https://rss.app/feeds/OV51bAzBY18ZzOU1.xml',
+    title: 'NewsNow Tennis',
+    description: 'NewsNow Tennis news',
+    isDirectRSS: true
+  },
+  'newsnow-nascar': {
+    url: 'https://rss.app/feeds/PAFrBRCX7fRPh1ig.xml',
+    title: 'NewsNow NASCAR',
+    description: 'NewsNow NASCAR news',
+    isDirectRSS: true
+  },
+  'newsnow-wnba': {
+    url: 'https://rss.app/feeds/UpJRWkmfU8B0BDFl.xml',
+    title: 'NewsNow WNBA',
+    description: 'NewsNow WNBA news',
+    isDirectRSS: true
+  },
+  'newsnow-livgolf': {
+    url: 'https://rss.app/feeds/8pwEPIfEanp8UtU4.xml',
+    title: 'NewsNow LIV Golf',
+    description: 'NewsNow LIV Golf news',
+    isDirectRSS: true
+  },
+  'newsnow-motogp': {
+    url: 'https://rss.app/feeds/PLACEHOLDER.xml', // TODO: Replace with actual RSS.app feed URL
+    title: 'NewsNow MotoGP',
+    description: 'NewsNow MotoGP news',
+    isDirectRSS: true
+  },
+  'newsnow-lpga': {
+    url: 'https://rss.app/feeds/b4Qmy6EH1be8rqrl.xml',
+    title: 'NewsNow LPGA',
+    description: 'NewsNow LPGA news',
+    isDirectRSS: true
+  },
+  'newsnow-indycar': {
+    url: 'https://rss.app/feeds/gZVtJXvA4oZ2ThW1.xml',
+    title: 'NewsNow IndyCar',
+    description: 'NewsNow IndyCar news',
+    isDirectRSS: true
+  },
+  'newsnow-trackandfield': {
+    url: 'https://rss.app/feeds/PLACEHOLDER.xml', // TODO: Replace with actual RSS.app feed URL
+    title: 'NewsNow Track and Field',
+    description: 'NewsNow Track and Field news',
+    isDirectRSS: true
+  },
+  'newsnow-europaconferenceleague': {
+    url: 'https://rss.app/feeds/tY68KqXJ3BR24z4B.xml',
+    title: 'UEFA Conference League',
+    description: 'UEFA Conference League RSS feed',
+    isDirectRSS: true
+  },
+  'newsnow-ligamx': {
+    url: 'https://rss.app/feeds/tf843fYkpUgTquzi.xml',
+    title: 'NewsNow Liga MX',
+    description: 'NewsNow Liga MX news',
+    isDirectRSS: true
+  },
+  // Scraped websites
+  'nfl-com': {
+    url: 'https://www.nfl.com/news',
+    title: 'NFL.com News',
+    description: 'NFL.com news',
+    scraper: async () => await scrapeNFL()
+  },
+  'nba-com-news': {
+    url: 'https://www.nba.com/news',
+    title: 'NBA.com News',
+    description: 'NBA.com news',
+    scraper: async () => await scrapeNBA()
+  },
+  'nhl-com-news': {
+    url: 'https://www.nhl.com/news',
+    title: 'NHL.com News',
+    description: 'NHL.com news',
+    scraper: async () => await scrapeNHL()
+  },
+  'hockeywriters': {
+    url: 'https://thehockeywriters.com/hockey-headlines/',
+    title: 'The Hockey Writers',
+    description: 'The Hockey Writers news',
+    scraper: async () => await scrapeHockeyWriters()
+  },
+  'hockeynews': {
+    url: 'https://thehockeynews.com/rss/THNHOME/full',
+    title: 'The Hockey News',
+    description: 'The Hockey News RSS feed',
+    isDirectRSS: true
+  },
+  'onefootball-home': {
+    url: 'https://onefootball.com/en/home',
+    title: 'OneFootball',
+    description: 'OneFootball news',
+    scraper: async () => await scrapeOneFootball()
+  },
+  'goal-com': {
+    url: 'https://www.goal.com/en-us/news',
+    title: 'Goal.com',
+    description: 'Goal.com news',
+    scraper: async () => await scrapeWebsite('https://www.goal.com/en-us/news', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'worldsoccertalk': {
+    url: 'https://worldsoccertalk.com/news/',
+    title: 'World Soccer Talk',
+    description: 'World Soccer Talk news',
+    scraper: async () => await scrapeWorldSoccerTalk()
+  },
+  'reddit-nwsl': {
+    url: 'https://www.reddit.com/r/NWSL/',
+    title: 'Reddit r/NWSL',
+    description: 'Reddit NWSL community',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story', '[data-testid="post-container"]'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: '[data-testid="post-container"], article[data-testid*="post"], .Post',
+      titleSelector: 'h3, [data-testid*="post-title"], a[data-click-id="body"]',
+      linkSelector: 'a[data-click-id="body"], a[href*="/r/NWSL/"]',
+      dateSelector: 'time, [data-testid*="post_timestamp"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: '[data-testid="post-container"]',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'reddit-ligue1': {
+    url: 'https://www.reddit.com/r/Ligue1/',
+    title: 'Reddit r/Ligue1',
+    description: 'Reddit Ligue 1 community',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story', '[data-testid="post-container"]'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: '[data-testid="post-container"], article[data-testid*="post"], .Post',
+      titleSelector: 'h3, [data-testid*="post-title"], a[data-click-id="body"]',
+      linkSelector: 'a[data-click-id="body"], a[href*="/r/Ligue1/"]',
+      dateSelector: 'time, [data-testid*="post_timestamp"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: '[data-testid="post-container"]',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'reddit-ligamx': {
+    url: 'https://www.reddit.com/r/LigaMX/',
+    title: 'Reddit r/LigaMX',
+    description: 'Reddit Liga MX community',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story', '[data-testid="post-container"]'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: '[data-testid="post-container"], article[data-testid*="post"], .Post',
+      titleSelector: 'h3, [data-testid*="post-title"], a[data-click-id="body"]',
+      linkSelector: 'a[data-click-id="body"], a[href*="/r/LigaMX/"]',
+      dateSelector: 'time, [data-testid*="post_timestamp"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: '[data-testid="post-container"]',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'reddit-cfb': {
+    url: 'https://www.reddit.com/r/CFB/',
+    title: 'Reddit r/CFB',
+    description: 'Reddit College Football community',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story', '[data-testid="post-container"]'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: '[data-testid="post-container"], article[data-testid*="post"], .Post',
+      titleSelector: 'h3, [data-testid*="post-title"], a[data-click-id="body"]',
+      linkSelector: 'a[data-click-id="body"], a[href*="/r/CFB/"]',
+      dateSelector: 'time, [data-testid*="post_timestamp"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: '[data-testid="post-container"]',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'reddit-nfl': {
+    url: 'https://www.reddit.com/r/nfl/.rss',
+    title: 'Reddit r/NFL',
+    description: 'Reddit NFL community',
+    isDirectRSS: true
+  },
+  'reddit-nba': {
+    url: 'https://www.reddit.com/r/nba/.rss',
+    title: 'Reddit r/NBA',
+    description: 'Reddit NBA community',
+    isDirectRSS: true
+  },
+  'reddit-mlb': {
+    url: 'https://www.reddit.com/r/mlb/.rss',
+    title: 'Reddit r/MLB',
+    description: 'Reddit MLB community',
+    isDirectRSS: true
+  },
+  'reddit-nhl': {
+    url: 'https://www.reddit.com/r/nhl/.rss',
+    title: 'Reddit r/NHL',
+    description: 'Reddit NHL community',
+    isDirectRSS: true
+  },
+  'reddit-formula1': {
+    url: 'https://www.reddit.com/r/formula1/.rss',
+    title: 'Reddit r/formula1',
+    description: 'Reddit Formula One community',
+    isDirectRSS: true
+  },
+  'reddit-cfb': {
+    url: 'https://www.reddit.com/r/CFB/.rss',
+    title: 'Reddit r/CFB',
+    description: 'Reddit College Football community',
+    isDirectRSS: true
+  },
+  'reddit-soccer': {
+    url: 'https://www.reddit.com/r/soccer/.rss',
+    title: 'Reddit r/soccer',
+    description: 'Reddit Soccer community',
+    isDirectRSS: true
+  },
+  'reddit-premierleague': {
+    url: 'https://www.reddit.com/r/PremierLeague/.rss',
+    title: 'Reddit r/PremierLeague',
+    description: 'Reddit Premier League community',
+    isDirectRSS: true
+  },
+  'reddit-championsleague': {
+    url: 'https://www.reddit.com/r/ChampionsLeague/.rss',
+    title: 'Reddit r/ChampionsLeague',
+    description: 'Reddit UEFA Champions League community',
+    isDirectRSS: true
+  },
+  'reddit-mls': {
+    url: 'https://www.reddit.com/r/MLS/.rss',
+    title: 'Reddit r/MLS',
+    description: 'Reddit MLS community',
+    isDirectRSS: true
+  },
+  'reddit-laliga': {
+    url: 'https://www.reddit.com/r/LaLiga/.rss',
+    title: 'Reddit r/LaLiga',
+    description: 'Reddit LaLiga community',
+    isDirectRSS: true
+  },
+  'reddit-seriea': {
+    url: 'https://www.reddit.com/r/seriea/.rss',
+    title: 'Reddit r/seriea',
+    description: 'Reddit Serie A community',
+    isDirectRSS: true
+  },
+  'reddit-bundesliga': {
+    url: 'https://www.reddit.com/r/Bundesliga/.rss',
+    title: 'Reddit r/Bundesliga',
+    description: 'Reddit Bundesliga community',
+    isDirectRSS: true
+  },
+  'reddit-ligamx': {
+    url: 'https://www.reddit.com/r/LigaMX.rss',
+    title: 'Reddit r/LigaMX',
+    description: 'Reddit Liga MX community',
+    isDirectRSS: true
+  },
+  'reddit-nwsl': {
+    url: 'https://www.reddit.com/r/NWSL/.rss',
+    title: 'Reddit r/NWSL',
+    description: 'Reddit NWSL community',
+    isDirectRSS: true
+  },
+  'reddit-ligue1': {
+    url: 'https://www.reddit.com/r/Ligue1/.rss',
+    title: 'Reddit r/Ligue1',
+    description: 'Reddit Ligue 1 community',
+    isDirectRSS: true
+  },
+  'reddit-europaleague': {
+    url: 'https://www.reddit.com/r/EuropaLeague.rss',
+    title: 'Reddit r/EuropaLeague',
+    description: 'Reddit UEFA Europa League community',
+    isDirectRSS: true
+  },
+  'reddit-collegebasketball': {
+    url: 'https://www.reddit.com/r/CollegeBasketball/.rss',
+    title: 'Reddit r/CollegeBasketball',
+    description: 'Reddit College Basketball community',
+    isDirectRSS: true
+  },
+  'reddit-ncaaw': {
+    url: 'https://www.reddit.com/r/NCAAW.rss',
+    title: 'Reddit r/NCAAW',
+    description: 'Reddit NCAA Women\'s Basketball community',
+    isDirectRSS: true
+  },
+  'reddit-golf': {
+    url: 'https://www.reddit.com/r/golf/.rss',
+    title: 'Reddit r/golf',
+    description: 'Reddit Golf community',
+    isDirectRSS: true
+  },
+  'reddit-ufc': {
+    url: 'https://www.reddit.com/r/ufc/.rss',
+    title: 'Reddit r/ufc',
+    description: 'Reddit UFC community',
+    isDirectRSS: true
+  },
+  'reddit-boxing': {
+    url: 'https://www.reddit.com/r/Boxing/.rss',
+    title: 'Reddit r/Boxing',
+    description: 'Reddit Boxing community',
+    isDirectRSS: true
+  },
+  'reddit-nascar': {
+    url: 'https://www.reddit.com/r/NASCAR/.rss',
+    title: 'Reddit r/NASCAR',
+    description: 'Reddit NASCAR community',
+    isDirectRSS: true
+  },
+  'reddit-tennis': {
+    url: 'https://www.reddit.com/r/tennis/.rss',
+    title: 'Reddit r/tennis',
+    description: 'Reddit Tennis community',
+    isDirectRSS: true
+  },
+  'reddit-wnba': {
+    url: 'https://www.reddit.com/r/WNBA/.rss',
+    title: 'Reddit r/WNBA',
+    description: 'Reddit WNBA community',
+    isDirectRSS: true
+  },
+  'reddit-livgolf': {
+    url: 'https://www.reddit.com/r/LIVGolf/.rss',
+    title: 'Reddit r/LIVGolf',
+    description: 'Reddit LIV Golf community',
+    isDirectRSS: true
+  },
+  'reddit-indycar': {
+    url: 'https://www.reddit.com/r/INDYCAR.rss',
+    title: 'Reddit r/INDYCAR',
+    description: 'Reddit IndyCar community',
+    isDirectRSS: true
+  },
+  'reddit-motogp': {
+    url: 'https://www.reddit.com/r/motogp/.rss',
+    title: 'Reddit r/motogp',
+    description: 'Reddit MotoGP community',
+    isDirectRSS: true
+  },
+  'nytimes-athletic-cfb': {
+    url: 'https://www.nytimes.com/athletic/college-football/',
+    title: 'The Athletic College Football',
+    description: 'The Athletic College Football news',
+    scraper: async () => await scrapeAthleticCFB()
+  },
+  '247sports-cfb': {
+    url: 'https://247sports.com/news/?sport=football',
+    title: '247Sports College Football',
+    description: '247Sports College Football news',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'collegefootballnews': {
+    url: 'https://collegefootballnews.com/',
+    title: 'College Football News',
+    description: 'College Football News',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'a[href*="/story"], a[href*="/article"], a[href*="/news"], a[href*="/2025/"], [class*="headline"] a, h2 a, h3 a, [class*="post"] a, [class*="entry"] a',
+      titleSelector: 'h1, h2, h3, h4, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      scrollToBottom: true,
+      scrollDelay: 4000,
+      timeout: 90000
+    }
+  },
+  'sportingnews-cfb': {
+    url: 'https://www.sportingnews.com/us/ncaa-football/news',
+    title: 'Sporting News College Football',
+    description: 'Sporting News College Football news',
+    scraper: async () => await scrapeSportingNewsCFB()
+  },
+  'si-cfb': {
+    url: 'https://www.si.com/college/college-football',
+    title: 'Sports Illustrated College Football',
+    description: 'Sports Illustrated College Football news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/college/college-football', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'si-ncaaf': {
+    url: 'https://www.si.com/college/college-football',
+    title: 'Sports Illustrated College Football',
+    description: 'Sports Illustrated College Football news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/college/college-football', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'bleacherreport-cfb': {
+    url: 'https://bleacherreport.com/college-football',
+    title: 'Bleacher Report College Football',
+    description: 'Bleacher Report College Football news',
+    scraper: async () => await scrapeWebsite('https://bleacherreport.com/college-football', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    })
+  },
+  'si-ncaaf': {
+    url: 'https://www.si.com/college-football',
+    title: 'Sports Illustrated College Football',
+    description: 'Sports Illustrated College Football news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/college-football', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'saturdaydownsouth': {
+    url: 'https://www.saturdaydownsouth.com/',
+    title: 'Saturday Down South',
+    description: 'Saturday Down South',
+    scraper: async () => await scrapeSaturdayDownSouth()
+  },
+  'on3-cfb': {
+    url: 'https://www.on3.com/category/football/news/',
+    title: 'On3 College Football',
+    description: 'On3 College Football news',
+    scraper: async () => await scrapeOn3CFB()
+  },
+  'golfdigest': {
+    url: 'https://www.golfdigest.com/golf-news',
+    title: 'Golf Digest',
+    description: 'Golf Digest news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.golfdigest.com/golf-news', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'pgatour-com': {
+    url: 'https://www.pgatour.com/news',
+    title: 'PGA Tour.com',
+    description: 'PGA Tour.com news',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'a[href*="/news/"], [class*="article"] a, [class*="story"] a, [data-module*="article"] a',
+      titleSelector: 'h1, h2, h3, h4, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      scrollToBottom: true,
+      scrollDelay: 3000,
+      timeout: 60000
+    }
+  },
+  'golfwrx': {
+    url: 'https://www.golfwrx.com/',
+    title: 'GolfWRX',
+    description: 'GolfWRX',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'a[href*="/threads/"], a[href*="/articles/"], [class*="thread"] a, [class*="article"] a',
+      titleSelector: 'h1, h2, h3, h4, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      scrollToBottom: true,
+      scrollDelay: 3000,
+      timeout: 60000
+    }
+  },
+  'golfweek': {
+    url: 'https://rss.app/feeds/bq5oS9yvnpMBjuFi.xml',
+    title: 'Golfweek',
+    description: 'Golfweek news',
+    isDirectRSS: true
+  },
+  'golfmonthly': {
+    url: 'https://www.golfmonthly.com/news',
+    title: 'Golf Monthly',
+    description: 'Golf Monthly news',
+    scraper: async () => await scrapeGolfMonthly()
+  },
+  'golf-com': {
+    url: 'https://golf.com/feed/',
+    title: 'Golf.com',
+    description: 'Golf.com RSS feed',
+    isDirectRSS: true
+  },
+  'si-golf': {
+    url: 'https://www.si.com/golf/',
+    title: 'Sports Illustrated Golf',
+    description: 'Sports Illustrated Golf news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/golf/', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'si-pgatour': {
+    url: 'https://www.si.com/golf/',
+    title: 'Sports Illustrated PGA Tour',
+    description: 'Sports Illustrated PGA Tour news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/golf/', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'mmajunkie': {
+    url: 'https://rss.app/feeds/5NfCSdqK5QaxQ0xf.xml',
+    title: 'MMA Junkie',
+    description: 'MMA Junkie',
+    isDirectRSS: true
+  },
+  'mmamania': {
+    url: 'https://rss.app/feeds/fw8WvEBlLdo3O9OY.xml',
+    title: 'MMA Mania',
+    description: 'MMA Mania',
+    isDirectRSS: true
+  },
+  'sherdog': {
+    url: 'https://www.sherdog.com/rss/news.xml',
+    title: 'Sherdog',
+    description: 'Sherdog',
+    isDirectRSS: true
+  },
+  'mma-core': {
+    url: 'https://rss.app/feeds/7CQ232pGUHbuZL2T.xml',
+    title: 'MMA Core',
+    description: 'MMA Core',
+    isDirectRSS: true
+  },
+  'ufc-com': {
+    url: 'https://rss.app/feeds/hgh0wCY5bk1by0Yx.xml',
+    title: 'UFC.com',
+    description: 'UFC.com news',
+    isDirectRSS: true
+  },
+  'tapology': {
+    url: 'https://rss.app/feeds/mYyJbiAWUJ5vuSl8.xml',
+    title: 'Tapology',
+    description: 'Tapology news',
+    isDirectRSS: true
+  },
+  'mmafighting': {
+    url: 'https://rss.app/feeds/V6vxBDuSAE9ptbOK.xml',
+    title: 'MMA Fighting',
+    description: 'MMA Fighting',
+    isDirectRSS: true
+  },
+  'boxingnews24': {
+    url: 'https://rss.app/feeds/BuA1VFufHTtZaRvi.xml',
+    title: 'Boxing News 24',
+    description: 'Boxing News 24',
+    isDirectRSS: true
+  },
+  'bbc-boxing': {
+    url: 'https://feeds.bbci.co.uk/sport/boxing/rss.xml',
+    title: 'BBC Boxing',
+    description: 'BBC Sport Boxing RSS feed',
+    isDirectRSS: true
+  },
+  'boxingnews-online': {
+    url: 'https://boxingnewsonline.net/feed/',
+    title: 'Boxing News',
+    description: 'Boxing News Online RSS feed',
+    isDirectRSS: true
+  },
+  'badlefthook': {
+    url: 'https://www.badlefthook.com/',
+    title: 'Bad Left Hook',
+    description: 'Bad Left Hook',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeBadLeftHook(),
+    browserConfig: {
+      selector: 'article, [data-testid*="article"], [class*="article"], [class*="story"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'boxingscene': {
+    url: 'https://www.boxingscene.com/feed',
+    title: 'Boxing Scene',
+    description: 'Boxing Scene RSS feed',
+    isDirectRSS: true
+  },
+  'boxing247': {
+    url: 'https://www.boxing247.com/',
+    title: 'Boxing 247',
+    description: 'Boxing 247',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'ringmagazine-rss': {
+    url: 'https://rss.app/feeds/Ds2MzJvS3g82JEWo.xml',
+    title: 'Ring Magazine',
+    description: 'Ring Magazine news',
+    isDirectRSS: true
+  },
+  // New feeds to replace RSS.app
+  'yahoo-premierleague': {
+    url: 'https://sports.yahoo.com/soccer/premier-league/rss/',
+    title: 'Yahoo Sports Premier League',
+    description: 'Yahoo Sports Premier League RSS feed',
+    isDirectRSS: true
+  },
+  'teamtalk-premierleague': {
+    url: 'https://rss.app/feeds/EHAiDdVx32ygjj2E.xml',
+    title: 'TEAMTalk Premier League',
+    description: 'TEAMTalk English Premiership news',
+    isDirectRSS: true
+  },
+  'athletic-championsleague': {
+    url: 'https://nytimes.com/athletic/rss/champions-league.xml',
+    title: 'The Athletic Champions League',
+    description: 'The Athletic Champions League news',
+    isDirectRSS: true
+  },
+  'racefans-f1': {
+    url: 'https://www.racefans.net/category/formula-1/',
+    title: 'RaceFans Formula 1',
+    description: 'RaceFans Formula 1 news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.racefans.net/category/formula-1/', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'si-championsleague': {
+    url: 'https://www.si.com/soccer/champions-league',
+    title: 'Sports Illustrated Champions League',
+    description: 'Sports Illustrated Champions League news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/soccer/champions-league', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'si-laliga': {
+    url: 'https://www.si.com/soccer/la-liga',
+    title: 'Sports Illustrated La Liga',
+    description: 'Sports Illustrated La Liga news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/soccer/la-liga', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'football-espana-laliga': {
+    url: 'https://www.football-espana.net/category/la-liga/feed',
+    title: 'Football-España La Liga',
+    description: 'Football-España La Liga RSS feed',
+    isDirectRSS: true
+  },
+  'soccernews-laliga': {
+    url: 'https://www.soccernews.com/category/la-liga/feed/',
+    title: 'Soccernews La Liga',
+    description: 'Soccernews La Liga RSS feed',
+    isDirectRSS: true
+  },
+  'si-nfl': {
+    url: 'https://www.si.com/nfl',
+    title: 'Sports Illustrated NFL',
+    description: 'Sports Illustrated NFL news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/nfl', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'si-premierleague': {
+    url: 'https://www.si.com/soccer/premier-league',
+    title: 'Sports Illustrated Premier League',
+    description: 'Sports Illustrated Premier League news',
+    useBrowserFallback: true,
+    scraper: async () => await scrapeWithFallback('https://www.si.com/soccer/premier-league', {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    }, {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }),
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'bleacherreport-mlb': {
+    url: 'https://bleacherreport.com/mlb',
+    title: 'Bleacher Report MLB',
+    description: 'Bleacher Report MLB news',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3',
+      dateSelector: '.date, time',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      linkSelector: 'a',
+      dateSelector: 'time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article',
+      scrollToBottom: true,
+      scrollDelay: 2000,
+      timeout: 30000
+    }
+  },
+  'mlssoccer-com': {
+    url: 'https://www.mlssoccer.com/news/',
+    title: 'MLS Soccer.com',
+    description: 'MLS Soccer.com news',
+    useBrowserFallback: true,
+    scraperConfig: {
+      selector: ['article', '.article-item', '.story', '[class*="article"]'],
+      linkSelector: 'a',
+      titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+      dateSelector: '.date, time, [datetime], [class*="date"]',
+      imageSelector: 'img',
+      maxItems: 20
+    },
+    browserConfig: {
+      selector: 'article, [class*="article"], [class*="story"], [class*="post"], [data-testid*="article"], [class*="news-item"]',
+      titleSelector: 'h1, h2, h3, h4, [class*="title"], [class*="headline"], a[href*="/news/"]',
+      linkSelector: 'a[href*="/news/"], a[href*="/article/"]',
+      dateSelector: 'time, [datetime], [class*="date"], [class*="timestamp"]',
+      imageSelector: 'img',
+      maxItems: 20,
+      waitForSelector: 'article, [class*="article"], [class*="news"]',
+      scrollToBottom: true,
+      scrollDelay: 3000,
+      timeout: 60000
+    }
+  },
+  'nbcsports-profootballtalk': {
+    url: 'https://profootballtalk.nbcsports.com/feed/',
+    title: 'NBC Sports ProFootballTalk',
+    description: 'NBC Sports ProFootballTalk news',
+    isDirectRSS: true
+  },
+  'bleacherreport-nfl': {
+    url: 'https://bleacherreport.com/nfl.rss',
+    title: 'Bleacher Report NFL',
+    description: 'Bleacher Report NFL news',
+    isDirectRSS: true
+  },
+  'athletic-nhl': {
+    url: 'https://nytimes.com/athletic/rss/nhl.xml',
+    title: 'The Athletic NHL',
+    description: 'The Athletic NHL news',
+    isDirectRSS: true
+  },
+  'skysports-football': {
+    url: 'https://www.skysports.com/sitemap_news_football.xml',
+    title: 'Sky Sports Football',
+    description: 'Sky Sports Football news',
+    scraper: async () => await scrapeSkySportsFootball()
+  },
+  'fourfourtwo': {
+    url: 'https://www.fourfourtwo.com/feeds.xml',
+    title: 'FourFourTwo',
+    description: 'FourFourTwo news',
+    isDirectRSS: true
+  },
+  'cultofcalcio-seriea': {
+    url: 'https://cultofcalcio.com/feed/',
+    title: 'Cult of Calcio',
+    description: 'Cult of Calcio Serie A news',
+    isDirectRSS: true
+  },
+  // 'as-com-soccer': {
+  //   url: 'https://en.as.com/soccer/',
+  //   title: 'AS.com Soccer',
+  //   description: 'AS.com Soccer news',
+  //   useBrowserFallback: true,
+  //   scraperConfig: {
+  //     selector: ['article', '.article-item', '.story'],
+  //     linkSelector: 'a',
+  //     titleSelector: 'h1, h2, h3',
+  //     dateSelector: '.date, time',
+  //     imageSelector: 'img',
+  //     maxItems: 20
+  //   },
+  //   browserConfig: {
+  //     selector: 'article, [class*="article"], [class*="story"], [class*="post"]',
+  //     titleSelector: 'h1, h2, h3, [class*="title"], [class*="headline"]',
+  //     linkSelector: 'a',
+  //     dateSelector: 'time, [datetime], [class*="date"]',
+  //     imageSelector: 'img',
+  //     maxItems: 20,
+  //     waitForSelector: 'article',
+  //     scrollToBottom: true,
+  //     scrollDelay: 2000,
+  //     timeout: 30000
+  //   }
+  // },
+  'the-race': {
+    url: 'https://www.the-race.com/rss/',
+    title: 'The Race',
+    description: 'The Race RSS feed',
+    isDirectRSS: true
+  },
+  // YouTube Channels (using YouTube API)
+  'youtube-tennischannel': {
+    url: 'https://www.youtube.com/@TennisChannel/videos',
+    title: 'Tennis Channel YouTube',
+    description: 'Tennis Channel YouTube videos',
+    youtubeChannel: 'TennisChannel',
+    isYouTubeChannel: true
+  },
+  'youtube-wta': {
+    url: 'https://www.youtube.com/@WTA/videos',
+    title: 'WTA YouTube',
+    description: 'WTA YouTube videos',
+    youtubeChannel: 'WTA',
+    isYouTubeChannel: true
+  },
+  'youtube-atptour': {
+    url: 'https://www.youtube.com/@ATPTour/videos',
+    title: 'ATP Tour YouTube',
+    description: 'ATP Tour YouTube videos',
+    youtubeChannel: 'ATPTour',
+    isYouTubeChannel: true
+  },
+  'youtube-tennistv': {
+    url: 'https://www.youtube.com/@tennistv/videos',
+    title: 'TennisTV YouTube',
+    description: 'TennisTV YouTube videos',
+    youtubeChannel: 'tennistv',
+    isYouTubeChannel: true
+  },
+  'youtube-ringmagazine': {
+    url: 'https://www.youtube.com/@RingMagazine/videos',
+    title: 'Ring Magazine YouTube',
+    description: 'Ring Magazine YouTube videos',
+    youtubeChannel: 'RingMagazine',
+    isYouTubeChannel: true
+  },
+  'youtube-premierboxingchampions': {
+    url: 'https://www.youtube.com/@PremierBoxingChampions/videos',
+    title: 'Premier Boxing Champions YouTube',
+    description: 'Premier Boxing Champions YouTube videos',
+    youtubeChannel: 'PremierBoxingChampions',
+    isYouTubeChannel: true
+  },
+  'youtube-matchroomboxing': {
+    url: 'https://www.youtube.com/@MatchroomBoxing/videos',
+    title: 'Matchroom Boxing YouTube',
+    description: 'Matchroom Boxing YouTube videos',
+    youtubeChannel: 'MatchroomBoxing',
+    isYouTubeChannel: true
+  },
+  'youtube-toprank': {
+    url: 'https://www.youtube.com/@toprank/videos',
+    title: 'Top Rank YouTube',
+    description: 'Top Rank YouTube videos',
+    youtubeChannel: 'toprank',
+    isYouTubeChannel: true
+  },
+  'youtube-daznboxing': {
+    url: 'https://www.youtube.com/@DAZNBoxing/videos',
+    title: 'DAZN Boxing YouTube',
+    description: 'DAZN Boxing YouTube videos',
+    youtubeChannel: 'DAZNBoxing',
+    isYouTubeChannel: true
+  },
+  'youtube-nba': {
+    url: 'https://www.youtube.com/@NBA/videos',
+    title: 'NBA YouTube',
+    description: 'NBA YouTube videos',
+    youtubeChannel: 'NBA',
+    isYouTubeChannel: true
+  },
+  'youtube-formula1': {
+    url: 'https://www.youtube.com/@Formula1/videos',
+    title: 'Formula 1 YouTube',
+    description: 'Formula 1 YouTube videos',
+    youtubeChannel: 'Formula1',
+    isYouTubeChannel: true
+  },
+  'youtube-cbssportscfb': {
+    url: 'https://www.youtube.com/@CBSSportsCFB/videos',
+    title: 'CBS Sports CFB YouTube',
+    description: 'CBS Sports College Football YouTube videos',
+    youtubeChannel: 'CBSSportsCFB',
+    isYouTubeChannel: true
+  },
+  'youtube-cfbonfox': {
+    url: 'https://www.youtube.com/@CFBonFOX/videos',
+    title: 'CFB on FOX YouTube',
+    description: 'CFB on FOX YouTube videos',
+    youtubeChannel: 'CFBonFOX',
+    isYouTubeChannel: true
+  },
+  'youtube-espncfb': {
+    url: 'https://www.youtube.com/@espncfb/videos',
+    title: 'ESPN CFB YouTube',
+    description: 'ESPN College Football YouTube videos',
+    youtubeChannel: 'espncfb',
+    isYouTubeChannel: true
+  },
+  'youtube-nwsl': {
+    url: 'https://www.youtube.com/@NWSLsoccer/videos',
+    title: 'NWSL YouTube',
+    description: 'NWSL YouTube videos',
+    youtubeChannel: 'NWSLsoccer',
+    isYouTubeChannel: true
+  },
+  'youtube-anaheimducks': {
+    url: 'https://www.youtube.com/@AnaheimDucks/videos',
+    title: 'Anaheim Ducks YouTube',
+    description: 'Anaheim Ducks YouTube videos',
+    youtubeChannel: 'AnaheimDucks',
+    isYouTubeChannel: true
+  },
+  'youtube-bostonbruins': {
+    url: 'https://www.youtube.com/@BostonBruinsNHL/videos',
+    title: 'Boston Bruins YouTube',
+    description: 'Boston Bruins YouTube videos',
+    youtubeChannel: 'BostonBruinsNHL',
+    isYouTubeChannel: true
+  },
+  'youtube-buffalosabres': {
+    url: 'https://www.youtube.com/@BuffaloSabres/videos',
+    title: 'Buffalo Sabres YouTube',
+    description: 'Buffalo Sabres YouTube videos',
+    youtubeChannel: 'BuffaloSabres',
+    isYouTubeChannel: true
+  },
+  'youtube-calgaryflames': {
+    url: 'https://www.youtube.com/@NHLFlames/videos',
+    title: 'Calgary Flames YouTube',
+    description: 'Calgary Flames YouTube videos',
+    youtubeChannel: 'NHLFlames',
+    isYouTubeChannel: true
+  },
+  'youtube-carolinahurricanes': {
+    url: 'https://www.youtube.com/@CarolinaHurricanes/videos',
+    title: 'Carolina Hurricanes YouTube',
+    description: 'Carolina Hurricanes YouTube videos',
+    youtubeChannel: 'CarolinaHurricanes',
+    isYouTubeChannel: true
+  },
+  'youtube-chicagoblackhawks': {
+    url: 'https://www.youtube.com/@blackhawks/videos',
+    title: 'Chicago Blackhawks YouTube',
+    description: 'Chicago Blackhawks YouTube videos',
+    youtubeChannel: 'blackhawks',
+    isYouTubeChannel: true
+  },
+  'youtube-coloradoavalanche': {
+    url: 'https://www.youtube.com/@ColoradoAvalanche/videos',
+    title: 'Colorado Avalanche YouTube',
+    description: 'Colorado Avalanche YouTube videos',
+    youtubeChannel: 'ColoradoAvalanche',
+    isYouTubeChannel: true
+  },
+  'youtube-bluejackets': {
+    url: 'https://www.youtube.com/@BlueJacketsNHL/videos',
+    title: 'Columbus Blue Jackets YouTube',
+    description: 'Columbus Blue Jackets YouTube videos',
+    youtubeChannel: 'BlueJacketsNHL',
+    isYouTubeChannel: true
+  },
+  'youtube-dallasstars': {
+    url: 'https://www.youtube.com/@dallasstars/videos',
+    title: 'Dallas Stars YouTube',
+    description: 'Dallas Stars YouTube videos',
+    youtubeChannel: 'dallasstars',
+    isYouTubeChannel: true
+  },
+  'youtube-detroitredwings': {
+    url: 'https://www.youtube.com/@OfficialRedWings/videos',
+    title: 'Detroit Red Wings YouTube',
+    description: 'Detroit Red Wings YouTube videos',
+    youtubeChannel: 'OfficialRedWings',
+    isYouTubeChannel: true
+  },
+  'youtube-edmontonoilers': {
+    url: 'https://www.youtube.com/@edmontonoilers/videos',
+    title: 'Edmonton Oilers YouTube',
+    description: 'Edmonton Oilers YouTube videos',
+    youtubeChannel: 'edmontonoilers',
+    isYouTubeChannel: true
+  },
+  'youtube-floridapanthers': {
+    url: 'https://www.youtube.com/@flapanthers/videos',
+    title: 'Florida Panthers YouTube',
+    description: 'Florida Panthers YouTube videos',
+    youtubeChannel: 'flapanthers',
+    isYouTubeChannel: true
+  },
+  'youtube-losangeleskings': {
+    url: 'https://www.youtube.com/@lakings/videos',
+    title: 'Los Angeles Kings YouTube',
+    description: 'Los Angeles Kings YouTube videos',
+    youtubeChannel: 'lakings',
+    isYouTubeChannel: true
+  },
+  'youtube-minnesotawild': {
+    url: 'https://www.youtube.com/@mnwild/videos',
+    title: 'Minnesota Wild YouTube',
+    description: 'Minnesota Wild YouTube videos',
+    youtubeChannel: 'mnwild',
+    isYouTubeChannel: true
+  },
+  'youtube-montrealcanadiens': {
+    url: 'https://www.youtube.com/@canadiensmtl/videos',
+    title: 'Montreal Canadiens YouTube',
+    description: 'Montreal Canadiens YouTube videos',
+    youtubeChannel: 'canadiensmtl',
+    isYouTubeChannel: true
+  },
+  'youtube-nashvillepredators': {
+    url: 'https://www.youtube.com/@NashvillePredatorsNHL/videos',
+    title: 'Nashville Predators YouTube',
+    description: 'Nashville Predators YouTube videos',
+    youtubeChannel: 'NashvillePredatorsNHL',
+    isYouTubeChannel: true
+  },
+  'youtube-newjerseydevils': {
+    url: 'https://www.youtube.com/@njdevils/videos',
+    title: 'New Jersey Devils YouTube',
+    description: 'New Jersey Devils YouTube videos',
+    youtubeChannel: 'njdevils',
+    isYouTubeChannel: true
+  },
+  'youtube-newyorkislanders': {
+    url: 'https://www.youtube.com/@NY_Islanders/videos',
+    title: 'New York Islanders YouTube',
+    description: 'New York Islanders YouTube videos',
+    youtubeChannel: 'NY_Islanders',
+    isYouTubeChannel: true
+  },
+  'youtube-newyorkrangers': {
+    url: 'https://www.youtube.com/@nyrangers/videos',
+    title: 'New York Rangers YouTube',
+    description: 'New York Rangers YouTube videos',
+    youtubeChannel: 'nyrangers',
+    isYouTubeChannel: true
+  },
+  'youtube-ottawasenators': {
+    url: 'https://www.youtube.com/@OttawaSenatorsNHL/videos',
+    title: 'Ottawa Senators YouTube',
+    description: 'Ottawa Senators YouTube videos',
+    youtubeChannel: 'OttawaSenatorsNHL',
+    isYouTubeChannel: true
+  },
+  'youtube-philadelphiaflyers': {
+    url: 'https://www.youtube.com/@PhiladelphiaFlyers/videos',
+    title: 'Philadelphia Flyers YouTube',
+    description: 'Philadelphia Flyers YouTube videos',
+    youtubeChannel: 'PhiladelphiaFlyers',
+    isYouTubeChannel: true
+  },
+  'youtube-pittsburghpenguins': {
+    url: 'https://www.youtube.com/@penguins/videos',
+    title: 'Pittsburgh Penguins YouTube',
+    description: 'Pittsburgh Penguins YouTube videos',
+    youtubeChannel: 'penguins',
+    isYouTubeChannel: true
+  },
+  'youtube-sanjosesharks': {
+    url: 'https://www.youtube.com/@sanjosesharks/videos',
+    title: 'San Jose Sharks YouTube',
+    description: 'San Jose Sharks YouTube videos',
+    youtubeChannel: 'sanjosesharks',
+    isYouTubeChannel: true
+  },
+  'youtube-seattlekraken': {
+    url: 'https://www.youtube.com/@SeattleKraken/videos',
+    title: 'Seattle Kraken YouTube',
+    description: 'Seattle Kraken YouTube videos',
+    youtubeChannel: 'SeattleKraken',
+    isYouTubeChannel: true
+  },
+  'youtube-stlouisblues': {
+    url: 'https://www.youtube.com/@StLouisBlues/videos',
+    title: 'St. Louis Blues YouTube',
+    description: 'St. Louis Blues YouTube videos',
+    youtubeChannel: 'StLouisBlues',
+    isYouTubeChannel: true
+  },
+  'youtube-tampabaylightning': {
+    url: 'https://www.youtube.com/@TBLightningNHL/videos',
+    title: 'Tampa Bay Lightning YouTube',
+    description: 'Tampa Bay Lightning YouTube videos',
+    youtubeChannel: 'TBLightningNHL',
+    isYouTubeChannel: true
+  },
+  'youtube-torontomapleleafs': {
+    url: 'https://www.youtube.com/@TorontoMapleLeafs/videos',
+    title: 'Toronto Maple Leafs YouTube',
+    description: 'Toronto Maple Leafs YouTube videos',
+    youtubeChannel: 'TorontoMapleLeafs',
+    isYouTubeChannel: true
+  },
+  'youtube-utahmammoth': {
+    url: 'https://www.youtube.com/@UtahMammoth/videos',
+    title: 'Utah Mammoth YouTube',
+    description: 'Utah Mammoth YouTube videos',
+    youtubeChannel: 'UtahMammoth',
+    isYouTubeChannel: true
+  },
+  'youtube-vancouvercanucks': {
+    url: 'https://www.youtube.com/@Canucks1970/videos',
+    title: 'Vancouver Canucks YouTube',
+    description: 'Vancouver Canucks YouTube videos',
+    youtubeChannel: 'Canucks1970',
+    isYouTubeChannel: true
+  },
+  'youtube-vegasgoldenknights': {
+    url: 'https://www.youtube.com/@vegasgoldenknights/videos',
+    title: 'Vegas Golden Knights YouTube',
+    description: 'Vegas Golden Knights YouTube videos',
+    youtubeChannel: 'vegasgoldenknights',
+    isYouTubeChannel: true
+  },
+  'youtube-washingtoncapitals': {
+    url: 'https://www.youtube.com/@Capitals/videos',
+    title: 'Washington Capitals YouTube',
+    description: 'Washington Capitals YouTube videos',
+    youtubeChannel: 'Capitals',
+    isYouTubeChannel: true
+  },
+  'youtube-winnipegjets': {
+    url: 'https://www.youtube.com/@NHLJets/videos',
+    title: 'Winnipeg Jets YouTube',
+    description: 'Winnipeg Jets YouTube videos',
+    youtubeChannel: 'NHLJets',
+    isYouTubeChannel: true
+  },
+  // NFL teams
+  'youtube-houstontexans': {
+    url: 'https://www.youtube.com/@HoustonTexans/videos',
+    title: 'Houston Texans YouTube',
+    description: 'Houston Texans YouTube videos',
+    youtubeChannel: 'HoustonTexans',
+    isYouTubeChannel: true
+  },
+  'youtube-pittsburghsteelers': {
+    url: 'https://www.youtube.com/@steelers/videos',
+    title: 'Pittsburgh Steelers YouTube',
+    description: 'Pittsburgh Steelers YouTube videos',
+    youtubeChannel: 'steelers',
+    isYouTubeChannel: true
+  },
+  'youtube-buffalobills': {
+    url: 'https://www.youtube.com/@buffalobills/videos',
+    title: 'Buffalo Bills YouTube',
+    description: 'Buffalo Bills YouTube videos',
+    youtubeChannel: 'buffalobills',
+    isYouTubeChannel: true
+  },
+  'youtube-jacksonvillejaguars': {
+    url: 'https://www.youtube.com/@jaguars/videos',
+    title: 'Jacksonville Jaguars YouTube',
+    description: 'Jacksonville Jaguars YouTube videos',
+    youtubeChannel: 'jaguars',
+    isYouTubeChannel: true
+  },
+  'youtube-losangeleschargers': {
+    url: 'https://www.youtube.com/@Chargers/videos',
+    title: 'Los Angeles Chargers YouTube',
+    description: 'Los Angeles Chargers YouTube videos',
+    youtubeChannel: 'Chargers',
+    isYouTubeChannel: true
+  },
+  'youtube-newenglandpatriots': {
+    url: 'https://www.youtube.com/@patriots/videos',
+    title: 'New England Patriots YouTube',
+    description: 'New England Patriots YouTube videos',
+    youtubeChannel: 'patriots',
+    isYouTubeChannel: true
+  },
+  'youtube-denverbroncos': {
+    url: 'https://www.youtube.com/@broncos/videos',
+    title: 'Denver Broncos YouTube',
+    description: 'Denver Broncos YouTube videos',
+    youtubeChannel: 'broncos',
+    isYouTubeChannel: true
+  },
+  'youtube-losangelesrams': {
+    url: 'https://www.youtube.com/@LARams/videos',
+    title: 'Los Angeles Rams YouTube',
+    description: 'Los Angeles Rams YouTube videos',
+    youtubeChannel: 'LARams',
+    isYouTubeChannel: true
+  },
+  'youtube-carolinapanthers': {
+    url: 'https://www.youtube.com/@CarolinaPanthers/videos',
+    title: 'Carolina Panthers YouTube',
+    description: 'Carolina Panthers YouTube videos',
+    youtubeChannel: 'CarolinaPanthers',
+    isYouTubeChannel: true
+  },
+  'youtube-sanfrancisco49ers': {
+    url: 'https://www.youtube.com/@49ers/videos',
+    title: 'San Francisco 49ers YouTube',
+    description: 'San Francisco 49ers YouTube videos',
+    youtubeChannel: '49ers',
+    isYouTubeChannel: true
+  },
+  'youtube-philadelphiaeagles': {
+    url: 'https://www.youtube.com/@eagles/videos',
+    title: 'Philadelphia Eagles YouTube',
+    description: 'Philadelphia Eagles YouTube videos',
+    youtubeChannel: 'eagles',
+    isYouTubeChannel: true
+  },
+  'youtube-greenbaypackers': {
+    url: 'https://www.youtube.com/@packers/videos',
+    title: 'Green Bay Packers YouTube',
+    description: 'Green Bay Packers YouTube videos',
+    youtubeChannel: 'packers',
+    isYouTubeChannel: true
+  },
+  'youtube-chicagobears': {
+    url: 'https://www.youtube.com/@ChicagoBears/videos',
+    title: 'Chicago Bears YouTube',
+    description: 'Chicago Bears YouTube videos',
+    youtubeChannel: 'ChicagoBears',
+    isYouTubeChannel: true
+  },
+  'youtube-seattleseahawks': {
+    url: 'https://www.youtube.com/@Seahawks/videos',
+    title: 'Seattle Seahawks YouTube',
+    description: 'Seattle Seahawks YouTube videos',
+    youtubeChannel: 'Seahawks',
+    isYouTubeChannel: true
+  },
+  'youtube-minnesotavikings': {
+    url: 'https://www.youtube.com/@vikings/videos',
+    title: 'Minnesota Vikings YouTube',
+    description: 'Minnesota Vikings YouTube videos',
+    youtubeChannel: 'vikings',
+    isYouTubeChannel: true
+  },
+  'youtube-detroitlions': {
+    url: 'https://www.youtube.com/@detroitlionsnfl/videos',
+    title: 'Detroit Lions YouTube',
+    description: 'Detroit Lions YouTube videos',
+    youtubeChannel: 'detroitlionsnfl',
+    isYouTubeChannel: true
+  },
+  'youtube-dallascowboys': {
+    url: 'https://www.youtube.com/@DallasCowboys/videos',
+    title: 'Dallas Cowboys YouTube',
+    description: 'Dallas Cowboys YouTube videos',
+    youtubeChannel: 'DallasCowboys',
+    isYouTubeChannel: true
+  },
+  'youtube-newyorkgiants': {
+    url: 'https://www.youtube.com/@nygiants/videos',
+    title: 'New York Giants YouTube',
+    description: 'New York Giants YouTube videos',
+    youtubeChannel: 'nygiants',
+    isYouTubeChannel: true
+  },
+  'youtube-washingtoncommanders': {
+    url: 'https://www.youtube.com/@commanders/videos',
+    title: 'Washington Commanders YouTube',
+    description: 'Washington Commanders YouTube videos',
+    youtubeChannel: 'commanders',
+    isYouTubeChannel: true
+  },
+  'youtube-atlantafalcons': {
+    url: 'https://www.youtube.com/@AtlantaFalcons/videos',
+    title: 'Atlanta Falcons YouTube',
+    description: 'Atlanta Falcons YouTube videos',
+    youtubeChannel: 'AtlantaFalcons',
+    isYouTubeChannel: true
+  },
+  'youtube-neworleanssaints': {
+    url: 'https://www.youtube.com/@NewOrleansSaints/videos',
+    title: 'New Orleans Saints YouTube',
+    description: 'New Orleans Saints YouTube videos',
+    youtubeChannel: 'NewOrleansSaints',
+    isYouTubeChannel: true
+  },
+  'youtube-tampabaybuccaneers': {
+    url: 'https://www.youtube.com/@buccaneers/videos',
+    title: 'Tampa Bay Buccaneers YouTube',
+    description: 'Tampa Bay Buccaneers YouTube videos',
+    youtubeChannel: 'buccaneers',
+    isYouTubeChannel: true
+  },
+  'youtube-arizonacardinals': {
+    url: 'https://www.youtube.com/@azcardinals/videos',
+    title: 'Arizona Cardinals YouTube',
+    description: 'Arizona Cardinals YouTube videos',
+    youtubeChannel: 'azcardinals',
+    isYouTubeChannel: true
+  },
+  'youtube-baltimoreravens': {
+    url: 'https://www.youtube.com/@BaltimoreRavens/videos',
+    title: 'Baltimore Ravens YouTube',
+    description: 'Baltimore Ravens YouTube videos',
+    youtubeChannel: 'BaltimoreRavens',
+    isYouTubeChannel: true
+  },
+  'youtube-cincinnatibengals': {
+    url: 'https://www.youtube.com/@Bengals/videos',
+    title: 'Cincinnati Bengals YouTube',
+    description: 'Cincinnati Bengals YouTube videos',
+    youtubeChannel: 'Bengals',
+    isYouTubeChannel: true
+  },
+  'youtube-clevelandbrowns': {
+    url: 'https://www.youtube.com/@browns/videos',
+    title: 'Cleveland Browns YouTube',
+    description: 'Cleveland Browns YouTube videos',
+    youtubeChannel: 'browns',
+    isYouTubeChannel: true
+  },
+  'youtube-miamidolphins': {
+    url: 'https://www.youtube.com/@MiamiDolphins/videos',
+    title: 'Miami Dolphins YouTube',
+    description: 'Miami Dolphins YouTube videos',
+    youtubeChannel: 'MiamiDolphins',
+    isYouTubeChannel: true
+  },
+  'youtube-newyorkjets': {
+    url: 'https://www.youtube.com/@nyjets/videos',
+    title: 'New York Jets YouTube',
+    description: 'New York Jets YouTube videos',
+    youtubeChannel: 'nyjets',
+    isYouTubeChannel: true
+  },
+  'youtube-indianapoliscolts': {
+    url: 'https://www.youtube.com/@colts/videos',
+    title: 'Indianapolis Colts YouTube',
+    description: 'Indianapolis Colts YouTube videos',
+    youtubeChannel: 'colts',
+    isYouTubeChannel: true
+  },
+  'youtube-kansascitychiefs': {
+    url: 'https://www.youtube.com/@KansasCityChiefs/videos',
+    title: 'Kansas City Chiefs YouTube',
+    description: 'Kansas City Chiefs YouTube videos',
+    youtubeChannel: 'KansasCityChiefs',
+    isYouTubeChannel: true
+  },
+  'youtube-lasvegasraiders': {
+    url: 'https://www.youtube.com/@raiders/videos',
+    title: 'Las Vegas Raiders YouTube',
+    description: 'Las Vegas Raiders YouTube videos',
+    youtubeChannel: 'raiders',
+    isYouTubeChannel: true
+  },
+  'youtube-tennesseetitans': {
+    url: 'https://www.youtube.com/@Titans/videos',
+    title: 'Tennessee Titans YouTube',
+    description: 'Tennessee Titans YouTube videos',
+    youtubeChannel: 'Titans',
+    isYouTubeChannel: true
+  },
+  // NBA teams
+  'youtube-atlantahawks': {
+    url: 'https://www.youtube.com/@ATLHawks/videos',
+    title: 'Atlanta Hawks YouTube',
+    description: 'Atlanta Hawks YouTube videos',
+    youtubeChannel: 'ATLHawks',
+    isYouTubeChannel: true
+  },
+  'youtube-bostonceltics': {
+    url: 'https://www.youtube.com/@Celtics/videos',
+    title: 'Boston Celtics YouTube',
+    description: 'Boston Celtics YouTube videos',
+    youtubeChannel: 'Celtics',
+    isYouTubeChannel: true
+  },
+  'youtube-brooklynnets': {
+    url: 'https://www.youtube.com/@brooklynnets/videos',
+    title: 'Brooklyn Nets YouTube',
+    description: 'Brooklyn Nets YouTube videos',
+    youtubeChannel: 'brooklynnets',
+    isYouTubeChannel: true
+  },
+  'youtube-charlottehornets': {
+    url: 'https://www.youtube.com/@hornets/videos',
+    title: 'Charlotte Hornets YouTube',
+    description: 'Charlotte Hornets YouTube videos',
+    youtubeChannel: 'hornets',
+    isYouTubeChannel: true
+  },
+  'youtube-chicagobulls': {
+    url: 'https://www.youtube.com/@ChicagoBulls/videos',
+    title: 'Chicago Bulls YouTube',
+    description: 'Chicago Bulls YouTube videos',
+    youtubeChannel: 'ChicagoBulls',
+    isYouTubeChannel: true
+  },
+  'youtube-clevelandcavaliers': {
+    url: 'https://www.youtube.com/@cavs/videos',
+    title: 'Cleveland Cavaliers YouTube',
+    description: 'Cleveland Cavaliers YouTube videos',
+    youtubeChannel: 'cavs',
+    isYouTubeChannel: true
+  },
+  'youtube-dallasmavericks': {
+    url: 'https://www.youtube.com/@mavericks/videos',
+    title: 'Dallas Mavericks YouTube',
+    description: 'Dallas Mavericks YouTube videos',
+    youtubeChannel: 'mavericks',
+    isYouTubeChannel: true
+  },
+  'youtube-denvernuggets': {
+    url: 'https://www.youtube.com/@DenverNuggets/videos',
+    title: 'Denver Nuggets YouTube',
+    description: 'Denver Nuggets YouTube videos',
+    youtubeChannel: 'DenverNuggets',
+    isYouTubeChannel: true
+  },
+  'youtube-detroitpistons': {
+    url: 'https://www.youtube.com/@PistonsTV/videos',
+    title: 'Detroit Pistons YouTube',
+    description: 'Detroit Pistons YouTube videos',
+    youtubeChannel: 'PistonsTV',
+    isYouTubeChannel: true
+  },
+  'youtube-goldenstatewarriors': {
+    url: 'https://www.youtube.com/@warriors/videos',
+    title: 'Golden State Warriors YouTube',
+    description: 'Golden State Warriors YouTube videos',
+    youtubeChannel: 'warriors',
+    isYouTubeChannel: true
+  },
+  'youtube-houstonrockets': {
+    url: 'https://www.youtube.com/@OfficialRockets/videos',
+    title: 'Houston Rockets YouTube',
+    description: 'Houston Rockets YouTube videos',
+    youtubeChannel: 'OfficialRockets',
+    isYouTubeChannel: true
+  },
+  'youtube-indianapacers': {
+    url: 'https://www.youtube.com/@pacers/videos',
+    title: 'Indiana Pacers YouTube',
+    description: 'Indiana Pacers YouTube videos',
+    youtubeChannel: 'pacers',
+    isYouTubeChannel: true
+  },
+  'youtube-losangelesclippers': {
+    url: 'https://www.youtube.com/@laclippers/videos',
+    title: 'Los Angeles Clippers YouTube',
+    description: 'Los Angeles Clippers YouTube videos',
+    youtubeChannel: 'laclippers',
+    isYouTubeChannel: true
+  },
+  'youtube-losangeleslakers': {
+    url: 'https://www.youtube.com/@lakers/videos',
+    title: 'Los Angeles Lakers YouTube',
+    description: 'Los Angeles Lakers YouTube videos',
+    youtubeChannel: 'lakers',
+    isYouTubeChannel: true
+  },
+  'youtube-memphisgrizzlies': {
+    url: 'https://www.youtube.com/@MemphisGrizzlies/videos',
+    title: 'Memphis Grizzlies YouTube',
+    description: 'Memphis Grizzlies YouTube videos',
+    youtubeChannel: 'MemphisGrizzlies',
+    isYouTubeChannel: true
+  },
+  'youtube-miamiheat': {
+    url: 'https://www.youtube.com/@MiamiHEAT/videos',
+    title: 'Miami Heat YouTube',
+    description: 'Miami Heat YouTube videos',
+    youtubeChannel: 'MiamiHEAT',
+    isYouTubeChannel: true
+  },
+  'youtube-milwaukeebucks': {
+    url: 'https://www.youtube.com/@bucks/videos',
+    title: 'Milwaukee Bucks YouTube',
+    description: 'Milwaukee Bucks YouTube videos',
+    youtubeChannel: 'bucks',
+    isYouTubeChannel: true
+  },
+  'youtube-minnesotatimberwolves': {
+    url: 'https://www.youtube.com/@timberwolves/videos',
+    title: 'Minnesota Timberwolves YouTube',
+    description: 'Minnesota Timberwolves YouTube videos',
+    youtubeChannel: 'timberwolves',
+    isYouTubeChannel: true
+  },
+  'youtube-neworleanspelicans': {
+    url: 'https://www.youtube.com/@NBAPelicans/videos',
+    title: 'New Orleans Pelicans YouTube',
+    description: 'New Orleans Pelicans YouTube videos',
+    youtubeChannel: 'NBAPelicans',
+    isYouTubeChannel: true
+  },
+  'youtube-newyorkknicks': {
+    url: 'https://www.youtube.com/@NYKnicks/videos',
+    title: 'New York Knicks YouTube',
+    description: 'New York Knicks YouTube videos',
+    youtubeChannel: 'NYKnicks',
+    isYouTubeChannel: true
+  },
+  'youtube-oklahomacitythunder': {
+    url: 'https://www.youtube.com/@okcthunder/videos',
+    title: 'Oklahoma City Thunder YouTube',
+    description: 'Oklahoma City Thunder YouTube videos',
+    youtubeChannel: 'okcthunder',
+    isYouTubeChannel: true
+  },
+  'youtube-orlandomagic': {
+    url: 'https://www.youtube.com/@OrlandoMagic/videos',
+    title: 'Orlando Magic YouTube',
+    description: 'Orlando Magic YouTube videos',
+    youtubeChannel: 'OrlandoMagic',
+    isYouTubeChannel: true
+  },
+  'youtube-philadelphia76ers': {
+    url: 'https://www.youtube.com/@sixers/videos',
+    title: 'Philadelphia 76ers YouTube',
+    description: 'Philadelphia 76ers YouTube videos',
+    youtubeChannel: 'sixers',
+    isYouTubeChannel: true
+  },
+  'youtube-phoenixsuns': {
+    url: 'https://www.youtube.com/@suns/videos',
+    title: 'Phoenix Suns YouTube',
+    description: 'Phoenix Suns YouTube videos',
+    youtubeChannel: 'suns',
+    isYouTubeChannel: true
+  },
+  'youtube-portlandtrailblazers': {
+    url: 'https://www.youtube.com/@trailblazers/videos',
+    title: 'Portland Trail Blazers YouTube',
+    description: 'Portland Trail Blazers YouTube videos',
+    youtubeChannel: 'trailblazers',
+    isYouTubeChannel: true
+  },
+  'youtube-sacramentokings': {
+    url: 'https://www.youtube.com/@SacramentoKings/videos',
+    title: 'Sacramento Kings YouTube',
+    description: 'Sacramento Kings YouTube videos',
+    youtubeChannel: 'SacramentoKings',
+    isYouTubeChannel: true
+  },
+  'youtube-sanantoniospurs': {
+    url: 'https://www.youtube.com/@spurs/videos',
+    title: 'San Antonio Spurs YouTube',
+    description: 'San Antonio Spurs YouTube videos',
+    youtubeChannel: 'spurs',
+    isYouTubeChannel: true
+  },
+  'youtube-torontoraptors': {
+    url: 'https://www.youtube.com/@TorontoRaptors/videos',
+    title: 'Toronto Raptors YouTube',
+    description: 'Toronto Raptors YouTube videos',
+    youtubeChannel: 'TorontoRaptors',
+    isYouTubeChannel: true
+  },
+  'youtube-utahjazz': {
+    url: 'https://www.youtube.com/@utahjazz/videos',
+    title: 'Utah Jazz YouTube',
+    description: 'Utah Jazz YouTube videos',
+    youtubeChannel: 'utahjazz',
+    isYouTubeChannel: true
+  },
+  'youtube-washingtonwizards': {
+    url: 'https://www.youtube.com/@WashingtonWizards/videos',
+    title: 'Washington Wizards YouTube',
+    description: 'Washington Wizards YouTube videos',
+    youtubeChannel: 'WashingtonWizards',
+    isYouTubeChannel: true
+  },
+  // Premier League teams (game-specific Media tabs)
+  'youtube-arsenal': {
+    url: 'https://www.youtube.com/@arsenal/videos',
+    title: 'Arsenal YouTube',
+    description: 'Arsenal YouTube videos',
+    youtubeChannel: 'arsenal',
+    isYouTubeChannel: true
+  },
+  'youtube-mancity': {
+    url: 'https://www.youtube.com/@mancity/videos',
+    title: 'Manchester City YouTube',
+    description: 'Manchester City YouTube videos',
+    youtubeChannel: 'mancity',
+    isYouTubeChannel: true
+  },
+  'youtube-astonvilla': {
+    url: 'https://www.youtube.com/@avfcofficial/videos',
+    title: 'Aston Villa YouTube',
+    description: 'Aston Villa YouTube videos',
+    youtubeChannel: 'avfcofficial',
+    isYouTubeChannel: true
+  },
+  'youtube-liverpool': {
+    url: 'https://www.youtube.com/@LiverpoolFC/videos',
+    title: 'Liverpool YouTube',
+    description: 'Liverpool YouTube videos',
+    youtubeChannel: 'LiverpoolFC',
+    isYouTubeChannel: true
+  },
+  'youtube-brentford': {
+    url: 'https://www.youtube.com/@BrentfordFC/videos',
+    title: 'Brentford YouTube',
+    description: 'Brentford YouTube videos',
+    youtubeChannel: 'BrentfordFC',
+    isYouTubeChannel: true
+  },
+  'youtube-newcastle': {
+    url: 'https://www.youtube.com/@NUFC/videos',
+    title: 'Newcastle United YouTube',
+    description: 'Newcastle United YouTube videos',
+    youtubeChannel: 'NUFC',
+    isYouTubeChannel: true
+  },
+  'youtube-manutd': {
+    url: 'https://www.youtube.com/@manutd/videos',
+    title: 'Manchester United YouTube',
+    description: 'Manchester United YouTube videos',
+    youtubeChannel: 'manutd',
+    isYouTubeChannel: true
+  },
+  'youtube-chelsea': {
+    url: 'https://www.youtube.com/@chelseafc/videos',
+    title: 'Chelsea YouTube',
+    description: 'Chelsea YouTube videos',
+    youtubeChannel: 'chelseafc',
+    isYouTubeChannel: true
+  },
+  'youtube-fulham': {
+    url: 'https://www.youtube.com/@fulhamfc/videos',
+    title: 'Fulham YouTube',
+    description: 'Fulham YouTube videos',
+    youtubeChannel: 'fulhamfc',
+    isYouTubeChannel: true
+  },
+  'youtube-sunderland': {
+    url: 'https://www.youtube.com/@SunderlandAFC/videos',
+    title: 'Sunderland YouTube',
+    description: 'Sunderland YouTube videos',
+    youtubeChannel: 'SunderlandAFC',
+    isYouTubeChannel: true
+  },
+  'youtube-brighton': {
+    url: 'https://www.youtube.com/@officialbhafc/videos',
+    title: 'Brighton & Hove Albion YouTube',
+    description: 'Brighton & Hove Albion YouTube videos',
+    youtubeChannel: 'officialbhafc',
+    isYouTubeChannel: true
+  },
+  'youtube-everton': {
+    url: 'https://www.youtube.com/@Everton/videos',
+    title: 'Everton YouTube',
+    description: 'Everton YouTube videos',
+    youtubeChannel: 'Everton',
+    isYouTubeChannel: true
+  },
+  'youtube-crystalpalace': {
+    url: 'https://www.youtube.com/@OfficialCPFC/videos',
+    title: 'Crystal Palace YouTube',
+    description: 'Crystal Palace YouTube videos',
+    youtubeChannel: 'OfficialCPFC',
+    isYouTubeChannel: true
+  },
+  'youtube-tottenham': {
+    url: 'https://www.youtube.com/@TottenhamHotspur/videos',
+    title: 'Tottenham Hotspur YouTube',
+    description: 'Tottenham Hotspur YouTube videos',
+    youtubeChannel: 'TottenhamHotspur',
+    isYouTubeChannel: true
+  },
+  'youtube-bournemouth': {
+    url: 'https://www.youtube.com/@AFCBournemouth/videos',
+    title: 'Bournemouth YouTube',
+    description: 'Bournemouth YouTube videos',
+    youtubeChannel: 'AFCBournemouth',
+    isYouTubeChannel: true
+  },
+  'youtube-leeds': {
+    url: 'https://www.youtube.com/@LeedsUnited/videos',
+    title: 'Leeds United YouTube',
+    description: 'Leeds United YouTube videos',
+    youtubeChannel: 'LeedsUnited',
+    isYouTubeChannel: true
+  },
+  'youtube-nottinghamforest': {
+    url: 'https://www.youtube.com/@NottinghamForestFC/videos',
+    title: 'Nottingham Forest YouTube',
+    description: 'Nottingham Forest YouTube videos',
+    youtubeChannel: 'NottinghamForestFC',
+    isYouTubeChannel: true
+  },
+  'youtube-westham': {
+    url: 'https://www.youtube.com/@westhamunited/videos',
+    title: 'West Ham United YouTube',
+    description: 'West Ham United YouTube videos',
+    youtubeChannel: 'westhamunited',
+    isYouTubeChannel: true
+  },
+  'youtube-burnley': {
+    url: 'https://www.youtube.com/@burnleyofficial/videos',
+    title: 'Burnley YouTube',
+    description: 'Burnley YouTube videos',
+    youtubeChannel: 'burnleyofficial',
+    isYouTubeChannel: true
+  },
+  'youtube-wolves': {
+    url: 'https://www.youtube.com/@OfficialWolvesVideo/videos',
+    title: 'Wolves YouTube',
+    description: 'Wolves YouTube videos',
+    youtubeChannel: 'OfficialWolvesVideo',
+    isYouTubeChannel: true
+  },
+  'youtube-wnba': {
+    url: 'https://www.youtube.com/@WNBA/videos',
+    title: 'WNBA YouTube',
+    description: 'WNBA YouTube videos',
+    youtubeChannel: 'WNBA',
+    isYouTubeChannel: true
+  },
+  'youtube-mls': {
+    url: 'https://www.youtube.com/@mls/videos',
+    title: 'MLS YouTube',
+    description: 'MLS YouTube videos',
+    youtubeChannel: 'mls',
+    isYouTubeChannel: true
+  },
+  'youtube-ligue1': {
+    url: 'https://www.youtube.com/@Ligue1/videos',
+    title: 'Ligue 1 YouTube',
+    description: 'Ligue 1 YouTube videos',
+    youtubeChannel: 'Ligue1',
+    isYouTubeChannel: true
+  },
+  'youtube-bundesliga': {
+    url: 'https://www.youtube.com/@bundesliga/videos',
+    title: 'Bundesliga YouTube',
+    description: 'Bundesliga YouTube videos',
+    youtubeChannel: 'bundesliga',
+    isYouTubeChannel: true
+  },
+  'youtube-seriea': {
+    url: 'https://www.youtube.com/@seriea/videos',
+    title: 'Serie A YouTube',
+    description: 'Serie A YouTube videos',
+    youtubeChannel: 'seriea',
+    isYouTubeChannel: true
+  },
+  'youtube-buffalo-sabres': {
+    url: 'https://www.youtube.com/results?search_query=buffalo+sabres',
+    title: 'Buffalo Sabres YouTube Search',
+    description: 'Latest YouTube videos for Buffalo Sabres',
+    youtubeSearch: 'buffalo sabres',
+    isYouTubeSearch: true
+  },
+  'youtube-laliga': {
+    url: 'https://www.youtube.com/@LaLiga/videos',
+    title: 'La Liga YouTube',
+    description: 'La Liga YouTube videos',
+    youtubeChannel: 'LaLiga',
+    isYouTubeChannel: true
+  },
+  'youtube-nhl': {
+    url: 'https://www.youtube.com/@NHL/videos',
+    title: 'NHL YouTube',
+    description: 'NHL YouTube videos',
+    youtubeChannel: 'NHL',
+    isYouTubeChannel: true
+  },
+  'youtube-nfl': {
+    url: 'https://www.youtube.com/@NFL/videos',
+    title: 'NFL YouTube',
+    description: 'NFL YouTube videos',
+    youtubeChannel: 'NFL',
+    isYouTubeChannel: true
+  },
+  'youtube-mlb': {
+    url: 'https://www.youtube.com/@MLB/videos',
+    title: 'MLB YouTube',
+    description: 'MLB YouTube videos',
+    youtubeChannel: 'MLB',
+    isYouTubeChannel: true
+  },
+  'youtube-olympics': {
+    url: 'https://www.youtube.com/@Olympics/videos',
+    title: 'Olympics YouTube',
+    description: 'Olympics YouTube videos',
+    youtubeChannel: 'Olympics',
+    isYouTubeChannel: true
+  },
+  // YouTube Playlists
+  'youtube-ncaaf-playlist-1': {
+    url: 'https://www.youtube.com/playlist?list=PLXEMPXZ3PY1gD1F0DJeQYZjN_CKWsH911',
+    title: 'NCAAF Playlist 1',
+    description: 'NCAAF YouTube playlist',
+    youtubePlaylist: 'PLXEMPXZ3PY1gD1F0DJeQYZjN_CKWsH911',
+    isYouTubePlaylist: true
+  },
+  'youtube-ncaaf-playlist-2': {
+    url: 'https://youtube.com/playlist?list=PLSrXjFYZsRuP1HW8mkTM7Z5q2PExbltfj',
+    title: 'NCAAF Playlist 2',
+    description: 'NCAAF YouTube playlist',
+    youtubePlaylist: 'PLSrXjFYZsRuP1HW8mkTM7Z5q2PExbltfj',
+    isYouTubePlaylist: true
+  },
+  'youtube-ncaaf-playlist-3': {
+    url: 'https://youtube.com/playlist?list=PLtKVUJ3gZpTu0ApQHGUVeZa-tez87ucO6',
+    title: 'NCAAF Playlist 3',
+    description: 'NCAAF YouTube playlist',
+    youtubePlaylist: 'PLtKVUJ3gZpTu0ApQHGUVeZa-tez87ucO6',
+    isYouTubePlaylist: true
+  },
+  'youtube-ncaaf-playlist-4': {
+    url: 'https://www.youtube.com/playlist?list=PLmkjXprBSRGPTiKLn8i8KIdN5I3nPP9sx',
+    title: 'NCAAF Playlist 4',
+    description: 'NCAAF YouTube playlist',
+    youtubePlaylist: 'PLmkjXprBSRGPTiKLn8i8KIdN5I3nPP9sx',
+    isYouTubePlaylist: true
+  },
+  'youtube-ncaaf-playlist-5': {
+    url: 'https://www.youtube.com/playlist?list=PLJOfoNRMTY5z5QvxedrpMNi01zflJJpUN',
+    title: 'NCAAF Playlist 5',
+    description: 'NCAAF YouTube playlist',
+    youtubePlaylist: 'PLJOfoNRMTY5z5QvxedrpMNi01zflJJpUN',
+    isYouTubePlaylist: true
+  },
+  'youtube-ncaaf-playlist-6': {
+    url: 'https://www.youtube.com/playlist?list=PL87LlAF-2PIwKpIUaKO4_p5QNmjxhYUFG',
+    title: 'NCAAF Playlist 6',
+    description: 'NCAAF YouTube playlist',
+    youtubePlaylist: 'PL87LlAF-2PIwKpIUaKO4_p5QNmjxhYUFG',
+    isYouTubePlaylist: true
+  },
+  'youtube-premierleague-playlist-1': {
+    url: 'https://youtube.com/playlist?list=PLcj4z4KsbIoVYKuevRiaE94KlwPuXqLHy',
+    title: 'Premier League Playlist 1',
+    description: 'Premier League YouTube playlist',
+    youtubePlaylist: 'PLcj4z4KsbIoVYKuevRiaE94KlwPuXqLHy',
+    isYouTubePlaylist: true
+  },
+  'youtube-premierleague-playlist-2': {
+    url: 'https://youtube.com/playlist?list=PLXEMPXZ3PY1hMzinDc1TvSm8U2NUyz-0E',
+    title: 'Premier League Playlist 2',
+    description: 'Premier League YouTube playlist',
+    youtubePlaylist: 'PLXEMPXZ3PY1hMzinDc1TvSm8U2NUyz-0E',
+    isYouTubePlaylist: true
+  },
+  'youtube-premierleague-playlist-3': {
+    url: 'https://youtube.com/playlist?list=PLkwBiY2Dq-oaG6vHAhmcCOc3Q_-To2dlA',
+    title: 'Premier League Playlist 3',
+    description: 'Premier League YouTube playlist',
+    youtubePlaylist: 'PLkwBiY2Dq-oaG6vHAhmcCOc3Q_-To2dlA',
+    isYouTubePlaylist: true
+  },
+  'youtube-mlb-playlist': {
+    url: 'https://youtube.com/playlist?list=PLL-lmlkrmJanq-c41voXY4cCbxVR0bjxR',
+    title: 'MLB Playlist',
+    description: 'MLB YouTube playlist',
+    youtubePlaylist: 'PLL-lmlkrmJanq-c41voXY4cCbxVR0bjxR',
+    isYouTubePlaylist: true
+  },
+  'youtube-lpga': {
+    url: 'https://www.youtube.com/@LPGA/videos',
+    title: 'LPGA Tour YouTube',
+    description: 'LPGA Tour YouTube videos',
+    youtubeChannel: 'LPGA',
+    isYouTubeChannel: true
+  },
+  'youtube-ligamx': {
+    url: 'https://www.youtube.com/@ligabbvamx/videos',
+    title: 'Liga MX YouTube',
+    description: 'Liga MX YouTube videos',
+    youtubeChannel: 'ligabbvamx',
+    isYouTubeChannel: true
+  },
+  'youtube-facup': {
+    url: 'https://www.youtube.com/@thefacup/videos',
+    title: 'FA Cup YouTube',
+    description: 'FA Cup YouTube videos',
+    youtubeChannel: 'thefacup',
+    isYouTubeChannel: true
+  },
+  'youtube-indycar': {
+    url: 'https://www.youtube.com/@indycar/videos',
+    title: 'IndyCar YouTube',
+    description: 'IndyCar YouTube videos',
+    youtubeChannel: 'indycar',
+    isYouTubeChannel: true
+  },
+  'youtube-pgatour': {
+    url: 'https://www.youtube.com/@PGATOUR/videos',
+    title: 'PGA Tour YouTube',
+    description: 'PGA Tour YouTube videos',
+    youtubeChannel: 'PGATOUR',
+    isYouTubeChannel: true
+  },
+  'youtube-motogp': {
+    url: 'https://www.youtube.com/@motogp/videos',
+    title: 'MotoGP YouTube',
+    description: 'MotoGP YouTube videos',
+    youtubeChannel: 'motogp',
+    isYouTubeChannel: true
+  },
+  'youtube-livgolf': {
+    url: 'https://www.youtube.com/@LIVGolf/videos',
+    title: 'LIV Golf YouTube',
+    description: 'LIV Golf YouTube videos',
+    youtubeChannel: 'LIVGolf',
+    isYouTubeChannel: true
+  },
+  'youtube-nascar': {
+    url: 'https://www.youtube.com/@NASCAR/videos',
+    title: 'NASCAR Cup Series YouTube',
+    description: 'NASCAR Cup Series YouTube videos',
+    youtubeChannel: 'NASCAR',
+    isYouTubeChannel: true
+  },
+  'youtube-ufc': {
+    url: 'https://www.youtube.com/@ufc/videos',
+    title: 'UFC YouTube',
+    description: 'UFC YouTube videos',
+    youtubeChannel: 'ufc',
+    isYouTubeChannel: true
+  }
+};
+
+// Helper function to decode HTML entities
+function decodeHTMLEntities(text) {
+  if (!text) return '';
+  const entities = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#39;': "'",
+    '&apos;': "'",
+    '&nbsp;': ' ',
+    '&#8217;': "'", // Right single quotation mark
+    '&#8216;': "'", // Left single quotation mark
+    '&#8220;': '"', // Left double quotation mark
+    '&#8221;': '"', // Right double quotation mark
+    '&#8211;': '-', // En dash
+    '&#8212;': '-', // Em dash
+    '&#8230;': '...' // Ellipsis
+  };
+  
+  // Decode numeric entities like &#39;
+  let decoded = text.replace(/&#(\d+);/g, (match, dec) => {
+    return String.fromCharCode(dec);
+  });
+  
+  // Decode hex entities like &#x27;
+  decoded = decoded.replace(/&#x([0-9a-fA-F]+);/g, (match, hex) => {
+    return String.fromCharCode(parseInt(hex, 16));
+  });
+  
+  // Decode named entities
+  for (const [entity, char] of Object.entries(entities)) {
+    decoded = decoded.replace(new RegExp(entity, 'g'), char);
+  }
+  
+  return decoded;
+}
+
+// Helper function to clean and normalize text for RSS feeds
+// This ensures special characters like curly quotes are properly handled
+function cleanRSSText(text) {
+  if (!text) return '';
+  
+  // First decode HTML entities
+  let cleaned = decodeHTMLEntities(String(text));
+  
+  // Trim whitespace
+  cleaned = cleaned.trim();
+  
+  // Replace common problematic Unicode characters with their ASCII equivalents
+  // Curly quotes to straight quotes
+  cleaned = cleaned.replace(/['']/g, "'"); // Left/right single quote to straight apostrophe
+  cleaned = cleaned.replace(/[""]/g, '"'); // Left/right double quote to straight quote
+  cleaned = cleaned.replace(/…/g, '...'); // Ellipsis
+  cleaned = cleaned.replace(/–/g, '-'); // En dash
+  cleaned = cleaned.replace(/—/g, '-'); // Em dash
+  
+  // Remove any other problematic control characters
+  cleaned = cleaned.replace(/[\x00-\x08\x0B-\x0C\x0E-\x1F]/g, '');
+  
+  return cleaned;
+}
+
+// Generate RSS feed
+function generateRSS(sourceId, sourceConfig, articles, baseUrl) {
+  const feedUrl = `${baseUrl}/feeds/${sourceId}.xml`;
+  
+  const feed = new RSS({
+    title: sourceConfig.title,
+    description: sourceConfig.description,
+    feed_url: feedUrl,
+    site_url: sourceConfig.url,
+    language: 'en',
+    pubDate: new Date(),
+    custom_namespaces: {
+      'content': 'http://purl.org/rss/1.0/modules/content/',
+      'media': 'http://search.yahoo.com/mrss/'
+    }
+  });
+  
+  articles.forEach(article => {
+    // Clean titles and descriptions to handle special characters properly
+    const cleanTitle = cleanRSSText(article.title);
+    const cleanDescription = cleanRSSText(article.description || article.title);
+    
+    // Build description with image if available
+    let descriptionWithImage = cleanDescription;
+    if (article.image) {
+      // Add image to description for better compatibility
+      descriptionWithImage = `<img src="${article.image}" alt="${cleanTitle}" style="max-width: 100%; height: auto;" /><br/><br/>${cleanDescription}`;
+    }
+    
+    const item = {
+      title: cleanTitle,
+      description: descriptionWithImage,
+      url: article.link,
+      date: article.date,
+      guid: article.link
+    };
+    
+    if (article.image) {
+      // Determine media type based on URL
+      let mediaType = 'image/jpeg';
+      if (article.image.includes('.png')) mediaType = 'image/png';
+      else if (article.image.includes('.gif') || article.image.includes('.gifv')) mediaType = 'image/gif';
+      else if (article.image.includes('.webp')) mediaType = 'image/webp';
+      else if (article.image.includes('.mp4') || article.image.includes('v.redd.it')) mediaType = 'video/mp4';
+      
+      item.custom_elements = [
+        {
+          'media:content': {
+            _attr: {
+              url: article.image,
+              type: mediaType,
+              medium: article.image.includes('video') || article.image.includes('mp4') ? 'video' : 'image'
+            }
+          }
+        },
+        {
+          'media:thumbnail': {
+            _attr: {
+              url: article.image
+            }
+          }
+        }
+      ];
+      
+      // Also add as enclosure for broader compatibility
+      item.enclosure = {
+        url: article.image,
+        type: mediaType
+      };
+    }
+    
+    feed.item(item);
+  });
+  
+  // Generate XML with proper UTF-8 encoding declaration
+  let xml = feed.xml({ indent: true });
+  
+  // Ensure XML declaration includes UTF-8 encoding if not present
+  if (!xml.includes('<?xml')) {
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + xml;
+  } else if (!xml.includes('encoding="UTF-8"') && !xml.includes("encoding='UTF-8'")) {
+    xml = xml.replace('<?xml version="1.0"?>', '<?xml version="1.0" encoding="UTF-8"?>');
+  }
+  
+  return xml;
+}
+
+// Route: Get RSS feed (with mobile-friendly HTML view option)
+app.get('/feeds/:sourceId.xml', async (req, res) => {
+  const { sourceId } = req.params;
+  const userAgent = req.get('User-Agent') || '';
+  const isMobile = /Mobile|Android|iPhone|iPad/i.test(userAgent);
+  const view = req.query.view; // ?view=html for web view
+  
+  const sourceConfig = NEWS_SOURCES[sourceId];
+  if (!sourceConfig) {
+    console.error(`Feed not found: ${sourceId}. Available feeds: ${Object.keys(NEWS_SOURCES).filter(k => k.includes('youtube')).join(', ')}`);
+    return res.status(404).send('Feed not found');
+  }
+  
+  // Check cache (handle JSON and XML differently)
+  const cached = cache.get(sourceId);
+  if (cached && !view) {
+    if (sourceConfig.isYouTubeChannelJSON) {
+      // For JSON feeds, cached is a JSON string, parse and return
+      try {
+        const jsonFeed = JSON.parse(cached);
+        res.set('Content-Type', 'application/json; charset=utf-8');
+        res.set('Cache-Control', 'public, max-age=900');
+        return res.json(jsonFeed);
+      } catch (e) {
+        // If parsing fails, regenerate
+      }
+    } else {
+      res.set('Content-Type', 'application/rss+xml; charset=utf-8');
+      res.set('Cache-Control', 'public, max-age=900'); // 15 minutes
+      res.set('X-Content-Type-Options', 'nosniff');
+      return res.send(cached);
+    }
+  }
+  
+  // Handle YouTube channels, playlists, and search
+  if (sourceConfig.isYouTubeChannel || sourceConfig.isYouTubePlaylist || sourceConfig.isYouTubeSearch || sourceConfig.isYouTubeChannelJSON) {
+    const publicBaseUrl = req.protocol + '://' + req.get('host');
+    
+    // Directly call YouTube router functions instead of making HTTP requests
+    // This avoids the double HTTP request chain that breaks bundles
+    try {
+      // Handle JSON format channel feeds (/videos or /shorts)
+      if (sourceConfig.isYouTubeChannelJSON && sourceConfig.youtubeChannelUrl) {
+        const jsonFeed = await generateChannelJSONFeed(sourceConfig.youtubeChannelUrl, publicBaseUrl);
+        // Cache the result (as JSON string)
+        const jsonString = JSON.stringify(jsonFeed, null, 2);
+        cache.set(sourceId, jsonString);
+        const cacheMaxAgeSeconds = getCacheTTLMinutes() * 60;
+        res.set('Content-Type', 'application/json; charset=utf-8');
+        res.set('Cache-Control', `public, max-age=${cacheMaxAgeSeconds}`);
+        return res.json(jsonFeed);
+      }
+      
+      // Handle XML RSS feeds
+      let feedXml;
+      if (sourceConfig.isYouTubeChannel) {
+        const isShorts = sourceConfig.isShorts === true;
+        feedXml = await generateChannelRSS(sourceConfig.youtubeChannel, publicBaseUrl, isShorts);
+      } else if (sourceConfig.isYouTubePlaylist) {
+        feedXml = await generatePlaylistRSS(sourceConfig.youtubePlaylist, publicBaseUrl);
+      } else if (sourceConfig.isYouTubeSearch) {
+        feedXml = await generateSearchRSS(sourceConfig.youtubeSearch, publicBaseUrl);
+      }
+      
+      if (feedXml) {
+        // Cache the result
+        cache.set(sourceId, feedXml);
+        res.set('Content-Type', 'application/rss+xml; charset=utf-8');
+        res.set('Cache-Control', 'public, max-age=1800');
+        return res.send(feedXml);
+      } else {
+        console.error(`YouTube router returned empty feed for ${sourceId}`);
+        return res.status(500).send('Error generating YouTube feed');
+      }
+    } catch (fetchError) {
+      console.error(`Error generating YouTube feed for ${sourceId}:`, fetchError.message);
+      const errorMsg = fetchError.message.includes('quota') || fetchError.message.includes('403')
+        ? 'YouTube API quota exceeded. Please try again later or request a quota increase.'
+        : 'Error generating YouTube feed';
+      return res.status(500).send(errorMsg);
+    }
+  }
+  
+  try {
+    // Check rate limit
+    if (!checkRateLimit(sourceId)) {
+      // Return cached data if available, even if expired
+      const cached = cache.get(sourceId);
+      if (cached) {
+        res.set('Content-Type', 'application/rss+xml; charset=utf-8');
+        res.set('X-Rate-Limit', 'exceeded');
+        return res.send(cached);
+      }
+      return res.status(429).send('Rate limit exceeded. Please try again later.');
+    }
+    
+    // RSS.app feeds: Serve directly from RSS.app (bypass database)
+    if (sourceConfig.isDirectRSS && sourceConfig.url && sourceConfig.url.includes('rss.app')) {
+      try {
+        console.log(`[RSS.app] Fetching ${sourceId} directly from RSS.app`);
+        const response = await fetch(sourceConfig.url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+          }
+        });
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const rssXml = await response.text();
+        
+        // Cache the RSS XML result in memory
+        cache.set(sourceId, rssXml);
+        
+        const cacheMaxAgeSeconds = getCacheTTLMinutes() * 60;
+        res.set('Content-Type', 'application/rss+xml; charset=utf-8');
+        res.set('Cache-Control', `public, max-age=${cacheMaxAgeSeconds}`);
+        res.set('X-Content-Type-Options', 'nosniff');
+        res.set('X-From-RSSApp', 'true');
+        return res.send(rssXml);
+      } catch (error) {
+        console.error(`[RSS.app] Error fetching ${sourceId}:`, error.message);
+        return res.status(503).send(`Feed not available. Error fetching from RSS.app.`);
+      }
+    }
+    
+    // Non-RSS.app feeds: Fetch on-demand (Reddit, scrapers)
+    console.log(`[On-Demand] Fetching ${sourceId}...`);
+    
+    let articles = [];
+    
+    // Process scraper feeds
+    if (sourceConfig.scraper) {
+      try {
+        articles = await sourceConfig.scraper();
+        if (!Array.isArray(articles)) {
+          throw new Error('Scraper did not return an array');
+        }
+        console.log(`[On-Demand] Scraper ${sourceId} returned ${articles.length} articles`);
+      } catch (scraperError) {
+        console.error(`[On-Demand] ✗ Scraper error for ${sourceId}:`, scraperError.message);
+        return res.status(503).send(`Feed not available. Error: ${scraperError.message}`);
+      }
+    }
+    // Process direct RSS feeds that are NOT RSS.app
+    else if (sourceConfig.isDirectRSS) {
+      try {
+        const headers = {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Connection': 'keep-alive',
+          'Upgrade-Insecure-Requests': '1'
+        };
+        
+        // Add Referer for Reddit feeds
+        if (sourceId.startsWith('reddit-')) {
+          headers['Referer'] = 'https://www.reddit.com/';
+        }
+        
+        // Add Referer for GGFN feed to bypass blocking
+        if (sourceId === 'getfootballnewsgermany-bundesliga') {
+          headers['Referer'] = 'https://www.getfootballnewsgermany.com/';
+          headers['Origin'] = 'https://www.getfootballnewsgermany.com';
+        }
+        
+        // Add Referer for Sherdog to bypass Cloudflare protection
+        if (sourceId === 'sherdog') {
+          headers['Referer'] = 'https://www.sherdog.com/';
+          headers['Origin'] = 'https://www.sherdog.com';
+        }
+        
+        let response;
+        let rssText;
+        
+        // For Nitter feeds, try fallback URLs if primary fails
+        const urlsToTry = sourceConfig.fallbackUrls 
+          ? [sourceConfig.url, ...sourceConfig.fallbackUrls]
+          : [sourceConfig.url];
+        
+        let lastError;
+        for (const url of urlsToTry) {
+          try {
+            response = await fetch(url, { headers });
+            
+            if (!response.ok) {
+              // For Sherdog, if we get 403/503, try browser fallback
+              if (sourceId === 'sherdog' && (response.status === 403 || response.status === 503)) {
+                console.log(`[Sherdog] Cloudflare blocking detected (${response.status}), using browser fallback...`);
+                throw new Error('CLOUDFLARE_BLOCK');
+              }
+              // For Nitter, try next URL
+              if (sourceConfig.fallbackUrls && urlsToTry.length > 1) {
+                console.log(`[${sourceId}] Failed to fetch from ${url} (${response.status}), trying fallback...`);
+                lastError = new Error(`HTTP error! status: ${response.status}`);
+                continue;
+              }
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            rssText = await response.text();
+            
+            // Check if Cloudflare challenge page (Sherdog or Nitter)
+            if ((sourceId === 'sherdog' || sourceId.includes('nitter')) && 
+                (rssText.includes('Just a moment') || rssText.includes('challenge-platform') || 
+                 rssText.includes('cf-browser-verification') || rssText.includes('Verifying your browser'))) {
+              if (sourceId === 'sherdog') {
+                console.log(`[Sherdog] Cloudflare challenge detected, using browser fallback...`);
+                throw new Error('CLOUDFLARE_BLOCK');
+              }
+              // For Nitter, try next URL
+              if (sourceConfig.fallbackUrls && urlsToTry.length > 1) {
+                console.log(`[${sourceId}] Cloudflare challenge on ${url}, trying fallback...`);
+                lastError = new Error('Cloudflare challenge detected');
+                continue;
+              }
+              throw new Error('Cloudflare challenge detected');
+            }
+            
+            // If we got valid RSS, break out of loop
+            if (rssText.includes('<rss') || rssText.includes('<feed') || rssText.includes('<item>') || rssText.includes('<entry>')) {
+              if (url !== sourceConfig.url) {
+                console.log(`[${sourceId}] Successfully fetched from fallback URL: ${url}`);
+              }
+              break;
+            } else {
+              // Invalid RSS, try next URL
+              if (sourceConfig.fallbackUrls && urlsToTry.length > 1) {
+                console.log(`[${sourceId}] Invalid RSS from ${url}, trying fallback...`);
+                lastError = new Error('Invalid RSS format');
+                continue;
+              }
+              throw new Error('Invalid RSS format');
+            }
+          } catch (fetchError) {
+            // If this is the last URL or not a Nitter feed, throw the error
+            if (url === urlsToTry[urlsToTry.length - 1] || !sourceConfig.fallbackUrls) {
+              throw fetchError;
+            }
+            lastError = fetchError;
+            continue;
+          }
+        }
+        
+        // If we exhausted all URLs, throw the last error
+        if (!rssText) {
+          throw lastError || new Error('Failed to fetch from all URLs');
+        }
+        
+        // Use browser fallback for Sherdog if Cloudflare is blocking
+        if (sourceId === 'sherdog' && rssText && (rssText.includes('Just a moment') || rssText.includes('challenge-platform'))) {
+          try {
+            console.log(`[Sherdog] Cloudflare challenge detected, using browser fallback...`);
+            const browser = await puppeteer.launch({
+              headless: true,
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
+            });
+            const page = await browser.newPage();
+            await page.goto(sourceConfig.url, { waitUntil: 'networkidle2', timeout: 30000 });
+            rssText = await page.content();
+            await browser.close();
+            
+            // Verify we got RSS XML, not HTML challenge page
+            if (rssText.includes('Just a moment') || rssText.includes('challenge-platform')) {
+              throw new Error('Browser fallback also blocked by Cloudflare');
+            }
+          } catch (browserError) {
+            console.error(`[Sherdog] Browser fallback failed:`, browserError.message);
+            throw new Error(`Failed to fetch Sherdog RSS feed: ${browserError.message}`);
+          }
+        }
+      
+      // Check if Reddit blocked the request (returns HTML instead of XML)
+      if (rssText.includes('You\'ve been blocked') || rssText.includes('blocked by network security')) {
+        throw new Error('Reddit blocked the request. Please try again later.');
+      }
+      
+      const $ = cheerio.load(rssText, { xml: true });
+      
+      if ($('parsererror').length > 0) {
+        throw new Error('Failed to parse RSS XML');
+      }
+      
+      // Handle both RSS (<item>) and Atom (<entry>) formats
+      const items = $('item').length > 0 ? $('item') : $('entry');
+      
+      items.each((index, item) => {
+          try {
+            const $item = $(item);
+            // RSS format uses 'title', Atom uses 'title' too
+            const title = $item.find('title').text() || 'No title';
+            // RSS uses 'link' text, Atom uses 'link' href attribute
+            const link = $item.find('link').text() || $item.find('link').attr('href') || $item.find('guid').text() || '#';
+            // RSS uses 'description', Atom uses 'content' or 'summary'
+            const description = $item.find('description').text() || $item.find('content').text() || $item.find('summary').text() || '';
+            // RSS uses 'pubDate', Atom uses 'published' or 'updated'
+            const pubDate = $item.find('pubDate').text() || $item.find('published').text() || $item.find('updated').text();
+            // RSS uses 'guid', Atom uses 'id'
+            const guid = $item.find('guid').text() || $item.find('id').text() || link;
+            const image = $item.find('media\\:content').attr('url') || $item.find('enclosure').attr('url') || '';
+            
+            let date = new Date();
+            if (pubDate) {
+              date = new Date(pubDate);
+              if (isNaN(date.getTime())) {
+                date = new Date();
+              }
+            }
+            
+            articles.push({
+              title: title.substring(0, 200),
+              link: link,
+              description: description.substring(0, 500),
+              date: date,
+              image: image,
+              guid: guid || link || `${sourceId}-${title.substring(0, 50)}`
+            });
+          } catch (err) {
+            console.error(`[On-Demand] Error parsing RSS item:`, err.message);
+          }
+        });
+      } catch (fetchError) {
+        console.error(`[On-Demand] ✗ Error fetching ${sourceId}:`, fetchError.message);
+        return res.status(503).send(`Feed not available. Error: ${fetchError.message}`);
+      }
+    } else {
+      return res.status(404).send('Feed not found or not configured');
+    }
+    
+    // Generate RSS feed from articles
+    if (articles.length > 0) {
+      const baseUrl = req.protocol + '://' + req.get('host');
+      const rssXml = generateRSS(sourceId, sourceConfig, articles, baseUrl);
+      
+      // Cache the RSS XML result in memory
+      cache.set(sourceId, rssXml);
+      
+      const cacheMaxAgeSeconds = getCacheTTLMinutes() * 60;
+      res.set('Content-Type', 'application/rss+xml; charset=utf-8');
+      res.set('Cache-Control', `public, max-age=${cacheMaxAgeSeconds}`);
+      res.set('X-Content-Type-Options', 'nosniff');
+      res.set('X-From-OnDemand', 'true');
+      return res.send(rssXml);
+    } else {
+      return res.status(503).send(`Feed not available. No articles found.`);
+    }
+      
+  } catch (error) {
+    console.error(`Error generating feed for ${sourceId}:`, error);
+    return res.status(503).send(`Feed not available. Error: ${error.message}`);
+  }
+});
+
+// Generate HTML view for mobile browsers
+function generateHTMLView(sourceId, sourceConfig, articles) {
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${sourceConfig.title}</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #1a1a1a;
+      color: #e0e0e0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .header {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #333;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .description {
+      color: #999;
+      font-size: 14px;
+    }
+    .articles {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .article {
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .article-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .article-title a {
+      color: #4a9eff;
+      text-decoration: none;
+    }
+    .article-title a:hover {
+      text-decoration: underline;
+    }
+    .article-description {
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .article-date {
+      color: #666;
+      font-size: 12px;
+    }
+    .article-image {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+    }
+    .rss-link {
+      color: #4a9eff;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>${sourceConfig.title}</h1>
+    <div class="description">${sourceConfig.description}</div>
+    <a href="/feeds/${sourceId}.xml?raw=1" class="rss-link">View RSS Feed</a>
+  </div>
+  <div class="articles">
+    ${articles.map(article => `
+      <div class="article">
+        <div class="article-title">
+          <a href="${article.link}" target="_blank">${article.title}</a>
+        </div>
+        ${article.description ? `<div class="article-description">${article.description}</div>` : ''}
+        <div class="article-date">${article.date.toLocaleDateString()} ${article.date.toLocaleTimeString()}</div>
+        ${article.image ? `<img src="${article.image}" alt="${article.title}" class="article-image" onerror="this.style.display='none'">` : ''}
+      </div>
+    `).join('')}
+  </div>
+  <div class="footer">
+    Generated by RSS Feed Service
+  </div>
+</body>
+</html>`;
+  return html;
+}
+
+// Health check
+// Generic RSS XML feed proxy endpoint (to bypass CORS)
+app.get('/proxy/rss', async (req, res) => {
+  const feedUrl = req.query.url;
+  
+  if (!feedUrl) {
+    return res.status(400).json({ error: 'url parameter is required' });
+  }
+  
+  // Validate URL
+  try {
+    new URL(feedUrl);
+  } catch (e) {
+    return res.status(400).json({ error: 'Invalid URL' });
+  }
+  
+  // Cache key based on URL
+  const cacheKey = `proxy-rss-${feedUrl}`;
+  const cached = cache.get(cacheKey);
+  if (cached) {
+    res.set('Content-Type', 'application/rss+xml; charset=utf-8');
+    res.set('Cache-Control', 'public, max-age=900'); // 15 minutes
+    return res.send(cached);
+  }
+  
+  try {
+    console.log(`[RSS Proxy] Fetching: ${feedUrl}`);
+    
+    const response = await fetch(feedUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+      },
+      timeout: 15000
+    });
+    
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+    
+    const xmlText = await response.text();
+    
+    if (!xmlText || xmlText.length < 100) {
+      throw new Error('Feed returned empty or too short content');
+    }
+    
+    // Validate it's RSS/XML
+    if (!xmlText.includes('<rss') && !xmlText.includes('<feed') && !xmlText.includes('<?xml')) {
+      throw new Error('Response does not appear to be RSS/XML');
+    }
+    
+    // Cache the response
+    cache.set(cacheKey, xmlText);
+    
+    res.set('Content-Type', 'application/rss+xml; charset=utf-8');
+    res.set('Cache-Control', 'public, max-age=900'); // 15 minutes
+    res.send(xmlText);
+  } catch (error) {
+    console.error(`[RSS Proxy] Error fetching ${feedUrl}:`, error.message);
+    res.status(500).json({ error: 'Failed to fetch feed', details: error.message });
+  }
+});
+
+// Generic JSON feed proxy endpoint (for RSS Bridge JSON feeds, etc.)
+app.get('/proxy/json-feed', async (req, res) => {
+  const feedUrl = req.query.url;
+  
+  if (!feedUrl) {
+    return res.status(400).json({ error: 'Missing url parameter' });
+  }
+  
+  // Validate URL
+  try {
+    new URL(feedUrl);
+  } catch (error) {
+    return res.status(400).json({ error: 'Invalid URL' });
+  }
+  
+  const cacheKey = `json-feed-${Buffer.from(feedUrl).toString('base64')}`;
+  
+  // Check cache
+  const cached = cache.get(cacheKey);
+  if (cached) {
+    res.set('Content-Type', 'application/json; charset=utf-8');
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Cache-Control', 'public, max-age=300'); // 5 minutes
+    return res.json(cached);
+  }
+  
+  try {
+    console.log(`[JSON Feed Proxy] Fetching: ${feedUrl}`);
+    
+    const response = await fetch(feedUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'application/json, application/feed+json, */*'
+      }
+    });
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    let jsonData = await response.json();
+    
+    // Validate it's a JSON Feed
+    if (!jsonData.version || !jsonData.items) {
+      throw new Error('Invalid JSON Feed format');
+    }
+    
+    // If this is an RSS Bridge feed, try to enhance with HTML version for video content
+    if (feedUrl.includes('rss-bridge.org') && feedUrl.includes('format=Json')) {
+      try {
+        const htmlUrl = feedUrl.replace('format=Json', 'format=Html');
+        console.log(`[JSON Feed Proxy] Fetching HTML version for video content: ${htmlUrl}`);
+        
+        const htmlResponse = await fetch(htmlUrl, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+          }
+        });
+        
+        if (htmlResponse.ok) {
+          const htmlText = await htmlResponse.text();
+          const $ = cheerio.load(htmlText);
+          
+          // Enhance each item with video content from HTML
+          jsonData.items = jsonData.items.map(item => {
+            // Find matching HTML item by URL
+            const itemUrl = item.url;
+            if (!itemUrl) return item;
+            
+            // Find the section containing this item
+            const $sections = $('section.feeditem');
+            for (let i = 0; i < $sections.length; i++) {
+              const $section = $($sections[i]);
+              const sectionLink = $section.find('a.itemtitle').attr('href');
+              
+              if (sectionLink && (sectionLink.includes(itemUrl.split('/').pop()) || itemUrl.includes(sectionLink))) {
+                // Extract video tags from this section
+                const $video = $section.find('video');
+                const $iframe = $section.find('iframe');
+                
+                if ($video.length > 0) {
+                  // Get the video HTML
+                  const videoHtml = $.html($video);
+                  if (videoHtml && !item.content_html.includes('video')) {
+                    item.content_html = (item.content_html || '') + videoHtml;
+                  }
+                } else if ($iframe.length > 0) {
+                  // Get the iframe HTML
+                  const iframeHtml = $.html($iframe);
+                  if (iframeHtml && !item.content_html.includes('iframe')) {
+                    item.content_html = (item.content_html || '') + iframeHtml;
+                  }
+                }
+                break;
+              }
+            }
+            
+            return item;
+          });
+        }
+      } catch (htmlError) {
+        console.warn(`[JSON Feed Proxy] Could not enhance with HTML version: ${htmlError.message}`);
+        // Continue with JSON data only
+      }
+    }
+    
+    // Cache the result (5 minutes)
+    cache.set(cacheKey, jsonData, 300);
+    
+    res.set('Content-Type', 'application/json; charset=utf-8');
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Cache-Control', 'public, max-age=300');
+    res.json(jsonData);
+  } catch (error) {
+    console.error(`[JSON Feed Proxy] Error fetching ${feedUrl}:`, error.message);
+    res.status(500).json({ error: 'Failed to fetch feed', details: error.message });
+  }
+});
+
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
+// Serve Nitter widget HTML
+app.get('/widget/nitter', (req, res) => {
+  const widgetPath = path.join(__dirname, 'nitter-widget.html');
+  
+  try {
+    const html = fs.readFileSync(widgetPath, 'utf-8');
+    res.set('Content-Type', 'text/html');
+    res.send(html);
+  } catch (error) {
+    console.error('Error serving Nitter widget:', error);
+    res.status(500).send('Widget not found');
+  }
+});
+
+// List available feeds
+app.get('/feeds', (req, res) => {
+  res.json({
+    feeds: Object.keys(NEWS_SOURCES).map(id => ({
+      id,
+      url: `/feeds/${id}.xml`,
+      htmlUrl: `/feeds/${id}.xml?view=html`,
+      title: NEWS_SOURCES[id].title,
+      isDirectRSS: NEWS_SOURCES[id].isDirectRSS || false
+    }))
+  });
+});
+
+// JSON endpoint for feeds (for YouTube channel JSON feeds)
+app.get('/feeds/:sourceId.json', async (req, res) => {
+  const { sourceId } = req.params;
+  
+  const sourceConfig = NEWS_SOURCES[sourceId];
+  if (!sourceConfig) {
+    return res.status(404).json({ error: 'Feed not found' });
+  }
+  
+  // Only serve JSON for feeds that support it
+  if (!sourceConfig.isYouTubeChannelJSON) {
+    return res.status(400).json({ error: 'This feed does not support JSON format. Use .xml instead.' });
+  }
+  
+  // Check cache
+  const cached = cache.get(sourceId);
+  if (cached) {
+    try {
+      const jsonFeed = JSON.parse(cached);
+      res.set('Content-Type', 'application/json; charset=utf-8');
+      res.set('Cache-Control', 'public, max-age=900');
+      return res.json(jsonFeed);
+    } catch (e) {
+      // If parsing fails, regenerate
+    }
+  }
+  
+  // Generate JSON feed
+  try {
+    const publicBaseUrl = req.protocol + '://' + req.get('host');
+    const jsonFeed = await generateChannelJSONFeed(sourceConfig.youtubeChannelUrl, publicBaseUrl);
+    const jsonString = JSON.stringify(jsonFeed, null, 2);
+    cache.set(sourceId, jsonString);
+    res.set('Content-Type', 'application/json; charset=utf-8');
+    res.set('Cache-Control', 'public, max-age=1800');
+    return res.json(jsonFeed);
+  } catch (error) {
+    console.error(`Error generating JSON feed for ${sourceId}:`, error.message);
+    const errorMsg = error.message.includes('quota') || error.message.includes('403')
+      ? 'YouTube API quota exceeded. Please try again later or request a quota increase.'
+      : 'Error generating feed';
+    return res.status(500).json({ error: errorMsg });
+  }
+});
+
+// Mount YouTube router
+app.use('/youtube', youtubeRouter);
+
+// Mount X.com/Twitter router (direct scraping - may not work)
+app.use('/x', xTwitterRouter);
+
+// Mount RSSHub router (recommended for X.com)
+app.use('/rsshub', rsshubRouter);
+
+// Mount Bundle router (combine multiple feeds)
+app.use('/bundle', bundleRouter);
+
+// No background job needed - feeds are fetched on-demand when requested
+// In-memory cache (NodeCache) handles caching for 15 minutes
+
+app.listen(PORT, () => {
+  console.log(`RSS Feed Service running on port ${PORT}`);
+  console.log(`Available feeds: ${Object.keys(NEWS_SOURCES).length}`);
+  console.log(`YouTube playlist RSS: /youtube/playlist/:playlistId.xml`);
+  console.log(`RSS Bundle: /bundle?feeds=url1,url2,url3&name=BundleName`);
+  console.log('[Service] All feeds fetched on-demand, cached in memory for 15 minutes');
+  console.log('[Service] No background jobs - no Firestore - Cloud Run only');
+});
+

@@ -1,0 +1,1732 @@
+Date,Time,Away Team,Home Team,Channel
+11/3/2025,11:00,NC Central,North Carolina,ACCNX
+11/3/2025,11:00,South Carolina Upstate,Clemson,ACCNX
+11/3/2025,11:00,Wright State,Butler,ESPN+
+11/3/2025,11:00,Winthrop,Marquette,ESPN+
+11/3/2025,11:00,Cleary University,Oakland,ESPN+
+11/3/2025,11:00,Mercy,Iona,ESPN+
+11/3/2025,11:00,Thiel,Youngstown State,ESPN+
+11/3/2025,11:30,Tennessee State,Middle Tennessee,ESPN+
+11/3/2025,12:00,Baylor,Duke,ESPN
+11/3/2025,12:00,St. Thomas,Iowa State,ESPN+
+11/3/2025,12:00,Winthrop,Marquette,ESPN+
+11/3/2025,12:00,King University,Chattanooga,ESPN+
+11/3/2025,12:00,St. Thomas-MN,Iowa State,ESPN+
+11/3/2025,12:00,Arkansas-Pine Bluff,Memphis,ESPN+
+11/3/2025,12:00,Friends University,Oral Roberts,Midco Sports Plus
+11/3/2025,12:00,Norfolk State,Ole Miss,SEC Network
+11/3/2025,12:00,Pensacola Christian,McNeese,ESPN+
+11/3/2025,12:00,Centenary,SE Louisiana,ESPN+
+11/3/2025,12:00,Nelson University,Stephen F. Austin,ESPN+
+11/3/2025,12:00,Montevallo,Samford,ESPN+
+11/3/2025,12:30,LaGrange,Jacksonville State,ESPN+
+11/3/2025,13:00,Northwestern State,Nebraska,B1G+
+11/3/2025,13:00,Sioux Falls (S.D.),Utah,ESPN+
+11/3/2025,13:00,Drake,Eastern Illinois,ESPN+
+11/3/2025,13:00,Sioux Falls,Utah,ESPN+
+11/3/2025,13:00,Westcliff,Utah Tech,ESPN+
+11/3/2025,14:00,Prairie View A&M,UTEP,ESPN+
+11/3/2025,14:00,Eastern Oregon,Boise State,MW Network
+11/3/2025,14:00,Le Moyne,St. John's,ESPN+
+11/3/2025,14:00,Idaho,Washington State,ESPN+
+11/3/2025,14:00,Saint Francis (PA),Duquesne,ESPN+
+11/3/2025,14:30,California,Vanderbilt,ESPNU
+11/3/2025,15:30,UNT Dallas,East Texas A&M,ESPN+
+11/3/2025,16:00,Saint Anselm,UMass Lowell,ESPN+
+11/3/2025,16:00,Covenant College,Charleston,TBD
+11/3/2025,16:00,LIU Brooklyn,Northeastern,TBD
+11/3/2025,16:30,Warren Wilson,Presbyterian,ESPN+
+11/3/2025,17:00,Stetson,Alabama,SECN+
+11/3/2025,17:00,Alabama State,Georgia,SECN+
+11/3/2025,17:00,Bucknell,Penn State,B1G+
+11/3/2025,17:00,Hofstra,Miami,ACCNX
+11/3/2025,17:00,Radford,Wake Forest,ACCNX
+11/3/2025,17:00,Campbell,Tulane,ESPN+
+11/3/2025,17:00,SUNY Geneseo,Binghamton,ESPN+
+11/3/2025,17:00,Pace University,Army,ESPN+
+11/3/2025,17:00,University of the District of Columbia,George Washington,ESPN+
+11/3/2025,17:00,Southwestern Christian,Sam Houston,ESPN+
+11/3/2025,17:30,Auburn,Charlotte,ESPN+
+11/3/2025,17:30,Belmont,Oklahoma,SECN+
+11/3/2025,18:00,York-NE,South Dakota,Midco Sports Plus
+11/3/2025,18:00,Holy Cross,Boston College,ACCNX
+11/3/2025,18:00,Florida A&M,Florida State,ACCNX
+11/3/2025,18:00,Central Connecticut,Bryant,ESPN+
+11/3/2025,18:00,Miami-OH,Coastal Carolina,ESPN+
+11/3/2025,18:00,UNC Wilmington,East Carolina,ESPN+
+11/3/2025,18:00,College of Biblical Studies,Texas A&M-Corpus Christi,ESPN+
+11/3/2025,18:00,Worcester State,New Hampshire,ESPN+
+11/3/2025,18:00,Sewanee,Austin Peay,ESPN+
+11/3/2025,18:00,Quinnipiac,Boston University,ESPN+
+11/3/2025,18:00,Adelphi,Fordham,ESPN+
+11/3/2025,18:00,Mansfield,St. Bonaventure,ESPN+
+11/3/2025,18:00,Central Michigan,Georgia Southern,ESPN+
+11/3/2025,18:00,Buffalo,Marshall,ESPN+
+11/3/2025,18:00,Kent State,James Madison,ESPN+
+11/3/2025,18:30,Indiana State,IU Indianapolis,ESPN+
+11/3/2025,18:30,Morehead State,Kentucky,SECN+
+11/3/2025,18:30,Western Michigan,Appalachian State,ESPN+
+11/3/2025,18:30,Oglethorpe,Georgia State,ESPN+
+11/3/2025,18:30,Indiana State,IUPUI,ESPN+
+11/3/2025,18:30,Charleston Southern,Jacksonville,ESPN+
+11/3/2025,18:30,Stevenson,UMBC,ESPN+
+11/3/2025,18:30,Spalding,Bellarmine,ESPN+
+11/3/2025,18:30,Howard Payne,Abilene Christian,ESPN+
+11/3/2025,18:30,Mercer,UNC Asheville,ESPN+
+11/3/2025,18:30,Oklahoma Christian,North Texas,ESPN+
+11/3/2025,18:30,UMass,Old Dominion,ESPN+
+11/3/2025,19:00,Mississippi University for Women,Jackson State,TBD
+11/3/2025,19:00,Wagner,Rutgers,B1G+
+11/3/2025,19:00,Fairleigh Dickinson,Purdue,B1G+
+11/3/2025,19:00,Loyola Maryland,Maryland,B1G+
+11/3/2025,19:00,Lafayette,Villanova,ESPN+
+11/3/2025,19:00,Chestnut Hill College,Monmouth,TBD
+11/3/2025,19:00,South Dakota State,Creighton,ESPN+
+11/3/2025,19:00,Transylvania,Eastern Kentucky,ESPN+
+11/3/2025,19:00,North Greenville,Furman,ESPN+
+11/3/2025,19:00,UW-Stevens Point,Green Bay,ESPN+
+11/3/2025,19:00,Gardner-Webb,Queens (NC),ESPN+
+11/3/2025,19:00,George Mason,Temple,ESPN+
+11/3/2025,19:00,North Carolina A&T,Texas Tech,ESPN+
+11/3/2025,19:00,Purdue Fort Wayne,West Virginia,ESPN+
+11/3/2025,19:00,North Florida,Florida,SECN+
+11/3/2025,19:00,Grand Canyon,South Carolina,SECN+
+11/3/2025,19:00,Cumberland,Tennessee Tech,ESPN+
+11/3/2025,19:00,Franklin College,Southern Indiana,ESPN+
+11/3/2025,19:00,UT Martin,North Alabama,ESPN+
+11/3/2025,19:00,Gardner-Webb,Queens,ESPN+
+11/3/2025,19:00,Rhode Island,Manhattan,ESPN+
+11/3/2025,19:00,NJIT,Sacred Heart,ESPN+
+11/3/2025,19:00,Johnson C. Smith,High Point,ESPN+
+11/3/2025,19:00,Bloomsburg,Delaware,ESPN+
+11/3/2025,19:00,Elon,East Tennessee State,ESPN+
+11/3/2025,19:00,Converse,Wofford,ESPN+
+11/3/2025,19:00,Loyola Chicago,Milwaukee,ESPN+
+11/3/2025,19:00,Chicago State,Cleveland State,ESPN+
+11/3/2025,19:00,North Dakota State,Northern Iowa,ESPN+
+11/3/2025,19:00,Lincoln (MO),Wichita State,ESPN+
+11/3/2025,19:00,Toledo,Troy,ESPN+
+11/3/2025,19:00,Northern Illinois,Southern Miss,ESPN+
+11/3/2025,19:00,Bowling Green,Louisiana,ESPN+
+11/3/2025,19:30,Bridgewater State,Stonehill,NEC Front Row
+11/3/2025,19:30,Southern U,Iowa,B1G+
+11/3/2025,19:30,New Orleans,Oklahoma State,ESPN+
+11/3/2025,19:30,Omaha,Kansas State,ESPN+
+11/3/2025,19:30,Davidson,Mississippi State,SECN+
+11/3/2025,19:30,Central Arkansas,Missouri,SECN+
+11/3/2025,19:30,Saint Mary's,UT Rio Grande Valley,ESPN+
+11/3/2025,19:30,Saint Louis,Missouri State,ESPN+
+11/3/2025,19:30,Dayton,Illinois State,ESPN+
+11/3/2025,19:30,Eastern Michigan,UL Monroe,ESPN+
+11/3/2025,20:00,Fresno Pacific,Fresno State,MW Network
+11/3/2025,20:00,Seattle U,Washington,B1G+
+11/3/2025,20:00,Air Force,Denver,Midco Sports Plus
+11/3/2025,20:00,Ball State,Arkansas State,ESPN+
+11/3/2025,20:00,Trevecca,Murray State,ESPN+
+11/3/2025,20:00,Schreiner,Tarleton,ESPN+
+11/3/2025,20:00,Incarnate Word,Texas,SECN+
+11/3/2025,20:00,Central Baptist,Little Rock,ESPN+
+11/3/2025,20:00,Missouri Baptist,SIU Edwardsville,ESPN+
+11/3/2025,20:00,UC Riverside,California Baptist,ESPN+
+11/3/2025,20:00,Ohio,Texas State,ESPN+
+11/3/2025,20:00,Akron,South Alabama,ESPN+
+11/3/2025,20:30,Coppin State,Arizona State,ESPN+
+11/3/2025,20:30,Park University,Southern Utah,ESPN+
+11/3/2025,21:00,Northern Arizona,New Mexico,MW Network
+11/3/2025,21:00,West Georgia,Oregon,B1G+
+11/3/2025,21:00,Northwest,Eastern Washington,ESPN+
+11/3/2025,21:00,Stanislaus State,Santa Clara,ESPN+
+11/3/2025,21:00,UC San Diego,Pacific,ESPN+
+11/3/2025,21:00,Bethesda,San Diego,ESPN+
+11/3/2025,21:00,Santa Cruz,Cal Poly,ESPN+
+11/3/2025,21:00,CSU Monterey Bay,UC Santa Barbara,ESPN+
+11/3/2025,21:30,CSU San Marcos,Nevada,MW Network
+11/3/2025,21:30,Stanton,Sacramento State,ESPN+
+11/3/2025,21:30,Utah Valley,Cal State Bakersfield,ESPN+
+11/3/2025,22:00,UCLA,San Diego State,B1G+
+11/3/2025,22:00,UNC Greensboro,Stanford,ACCNX
+11/3/2025,22:30,William Jessup,UC Davis,ESPN+
+11/4/2025,12:00,Lewis,Southern Illinois,ESPN+
+11/4/2025,14:00,UMass Boston,Merrimack,ESPN+
+11/4/2025,16:00,Battle in the Boro,Tennessee,TBD
+11/4/2025,16:00,Ro Greensboro Invitational,Tennessee,TBD
+11/4/2025,17:30,Louisville,UConn,ESPN
+11/4/2025,18:00,Drexel,Pittsburgh,TBD
+11/4/2025,18:00,Drexel,Pittsburgh,ACCNX
+11/4/2025,18:00,Towson,Virginia Tech,ACCNX
+11/4/2025,18:00,Dean College,Vermont,ESPN+
+11/4/2025,18:00,Colgate,Siena,ESPN+
+11/4/2025,18:00,Mount St. Mary's,Richmond,ESPN+
+11/4/2025,18:30,Mercyhurst,Michigan State,B1G+
+11/4/2025,18:30,Lehigh,Cincinnati,ESPN+
+11/4/2025,18:30,New Haven,Xavier,ESPN+
+11/4/2025,19:00,Florida Memorial,Florida Atlantic,TBD
+11/4/2025,19:00,SEMO,Illinois,B1G+
+11/4/2025,19:00,Canisius,Michigan,B1G+
+11/4/2025,19:00,Lipscomb,Indiana,B1G+
+11/4/2025,19:00,Stony Brook,Syracuse,ACCNX
+11/4/2025,19:00,Morgan State,Virginia,ACCNX
+11/4/2025,19:00,Valparaiso,DePaul,ESPN+
+11/4/2025,19:00,Shorter,Kennesaw State,ESPN+
+11/4/2025,19:00,Frostburg State,Liberty,ESPN+
+11/4/2025,19:00,Howard,Providence,ESPN+
+11/4/2025,19:00,Saint Peter's,Seton Hall,ESPN+
+11/4/2025,19:00,West Chester,St. Bonaventure,ESPN+
+11/4/2025,19:00,Westminster,Idaho State,ESPN+
+11/4/2025,19:00,Judson,Bradley,ESPN+
+11/4/2025,19:00,Florida Memorial,Florida Atlantic,ESPN+
+11/4/2025,19:30,Louisiana Tech,Arkansas,SECN+
+11/4/2025,19:30,UT Arlington,Houston,ESPN+
+11/4/2025,20:00,North Dakota,Minnesota,B1G+
+11/4/2025,20:00,Northern New Mexico,Northern Colorado,ESPN+
+11/4/2025,20:00,Westminster,Western Illinois,ESPN+
+11/4/2025,21:00,Bethesda,Cal State Northridge,ESPN+
+11/4/2025,21:00,Willamette,Portland,ESPN+
+11/4/2025,21:00,Seattle Pacific,Montana,ESPN+
+11/4/2025,21:00,Carroll College,Montana State,ESPN+
+11/4/2025,22:00,Pepperdine,Cal State Fullerton,ESPN+
+11/4/2025,23:59,Portland State,Hawai'i,ESPN+
+11/5/2025,00:00,Portland State,Hawai'i,ESPN+
+11/5/2025,11:00,Trinity College of Florida,North Florida,ESPN+
+11/5/2025,12:00,Harris-Stowe,Lindenwood,ESPN+
+11/5/2025,14:00,San Diego,UC Irvine,ESPN+
+11/5/2025,19:00,Fairleigh Dickinson,Notre Dame,ACCNX
+11/5/2025,19:00,Fairfield,Villanova,ESPN+
+11/5/2025,19:00,Randolph,Longwood,ESPN+
+11/5/2025,19:00,Apprentice School,Hampton,TBD
+11/5/2025,19:30,New Orleans,Tulsa,TBD
+11/5/2025,19:30,Oakland,Wisconsin,B1G+
+11/5/2025,19:30,Kansas City,Kansas,ESPN+
+11/5/2025,19:30,East Texas A&M,Oklahoma State,ESPN+
+11/5/2025,19:30,Southern,Iowa State,ESPN+
+11/5/2025,19:30,New Orleans,Tulsa,ESPN+
+11/5/2025,19:30,UNC Greensboro,San Francisco,ESPN+
+11/5/2025,19:30,Kentucky State,Western Kentucky,ESPN+
+11/5/2025,20:00,IU Indy,Northwestern,B1G+
+11/5/2025,20:00,Utah Valley,Loyola Marymount,ESPN+
+11/5/2025,20:00,Texas A&M-Corpus Christi,Texas A&M,SECN+
+11/5/2025,21:00,Northwest,Seattle U,ESPN+
+11/6/2025,10:00,Radford,Georgia Tech,ACCNX
+11/6/2025,11:00,Bethune-Cookman,Miami,TBD
+11/6/2025,11:00,Bethune-Cookman,Miami,ACCNX
+11/6/2025,11:00,Lincoln (PA),Coppin State,ESPN+
+11/6/2025,12:00,Fisk,North Alabama,ESPN+
+11/6/2025,12:00,Evansville,Southeast Missouri,ESPN+
+11/6/2025,TBD,Campbell,Charlotte,TBD
+11/6/2025,13:00,New Hampshire,Boston College,ACCNX
+11/6/2025,13:00,Mississippi Valley State,Troy,ESPN+
+11/6/2025,14:00,Nevada,Sacramento State,ESPN+
+11/6/2025,14:30,UC Santa Barbara,UCLA,B1G+
+11/6/2025,15:00,Sewanee,Lipscomb,ESPN+
+11/6/2025,17:00,Middle Tennessee,Saint Louis,ESPN+
+11/6/2025,17:30,Florida Tech,Jacksonville,ESPN+
+11/6/2025,18:00,Georgia Southern,Florida State,TBD
+11/6/2025,18:00,Radford,Georgia Tech,TBD
+11/6/2025,18:00,UMBC,Maryland,B1G+
+11/6/2025,18:00,Georgia Southern,Florida State,ACCNX
+11/6/2025,18:00,Presbyterian,Wake Forest,ACCNX
+11/6/2025,18:00,Bloomsburg,Binghamton,ESPN+
+11/6/2025,18:00,Virginia Lynchburg,Western Carolina,ESPN+
+11/6/2025,18:00,Chattanooga,Florida,SECN+
+11/6/2025,18:00,Lafayette,Rider,ESPN+
+11/6/2025,18:00,Slippery Rock,Duquesne,ESPN+
+11/6/2025,18:00,Green Bay,Loyola Chicago,ESPN+
+11/6/2025,18:00,Northern Kentucky,Marshall,ESPN+
+11/6/2025,18:30,Warner,Stetson,ESPN+
+11/6/2025,18:30,Monmouth,Kentucky,SECN+
+11/6/2025,18:30,Furman,Georgia,SECN+
+11/6/2025,18:30,Warren Wilson,UNC Asheville,ESPN+
+11/6/2025,18:30,Campbell,Charlotte,ESPN+
+11/6/2025,19:00,UTSA,Texas Tech,TBD
+11/6/2025,19:00,Northwestern State,Wichita State,TBD
+11/6/2025,19:00,Clemson,Mercer,TBD
+11/6/2025,19:00,Quinnipiac,Rutgers,B1G+
+11/6/2025,19:00,Eastern Illinois,Purdue,B1G+
+11/6/2025,19:00,Stonehill College,Georgetown,ESPN+
+11/6/2025,19:00,Elon,North Carolina,ACCNX
+11/6/2025,19:00,Mercyhurst,Dayton,ESPN+
+11/6/2025,19:00,Stonehill,Georgetown,ESPN+
+11/6/2025,19:00,Mars Hill,Queens (NC),ESPN+
+11/6/2025,19:00,Erskine,South Carolina Upstate,ESPN+
+11/6/2025,19:00,UTSA,Texas Tech,ESPN+
+11/6/2025,19:00,McNeese,Alabama,SECN+
+11/6/2025,19:00,Bloomsburg,Binghamton,ESPN+
+11/6/2025,19:00,Mars Hill,Queens,ESPN+
+11/6/2025,19:00,La Salle,Loyola Maryland,ESPN+
+11/6/2025,19:00,William & Mary,Davidson,ESPN+
+11/6/2025,19:00,Clemson,Mercer,ESPN+
+11/6/2025,19:00,Northwestern State,Wichita State,ESPN+
+11/6/2025,19:00,George Mason,James Madison,ESPN+
+11/6/2025,19:30,Missouri,Tulane,TBD
+11/6/2025,19:30,Langston,Oklahoma State,ESPN+
+11/6/2025,19:30,Missouri,Tulane,ESPN+
+11/6/2025,20:00,UC Riverside,Arizona,TBD
+11/6/2025,20:00,New Mexico,Colorado,TBD
+11/6/2025,20:00,New Mexico,Colorado,ESPN+
+11/6/2025,20:00,UC Riverside,Arizona,ESPN+
+11/6/2025,22:00,Santa Clara,Stanford,ACCNX
+11/7/2025,11:00,Charleston Southern,Charleston,TBD
+11/7/2025,11:30,Arkansas-Pine Bluff,Arkansas,SECN+
+11/7/2025,12:00,William Carey University-MS,Southern Miss,ESPN+
+11/7/2025,12:00,Georgia State,Mississippi State,SECN+
+11/7/2025,12:00,Arkansas State,Tarleton,ESPN+
+11/7/2025,12:00,William Carey University (MS),Southern Miss,ESPN+
+11/7/2025,TBD,Memphis,Little Rock,TBD
+11/7/2025,TBD,Chico State,Saint Mary's,ESPN+
+11/7/2025,TBD,Lyon College,Central Arkansas,ESPN+
+11/7/2025,TBD,SIU Edwardsville,Eastern Kentucky,ESPN+
+11/7/2025,TBD,Corban,Oregon State,ESPN+
+11/7/2025,14:00,East Carolina,Liberty,TBD
+11/7/2025,14:00,Idaho,UC Davis,ESPN+
+11/7/2025,14:00,East Carolina,Liberty,ESPN+
+11/7/2025,16:00,King's College (PA),Pennsylvania,ESPN+
+11/7/2025,17:00,NJIT,Fordham,ESPN+
+11/7/2025,17:00,Cedarville,Miami (OH),ESPN+
+11/7/2025,18:00,Cincinnati,Penn State,B1G+
+11/7/2025,18:00,Columbia,Butler,ESPN+
+11/7/2025,18:00,Merrimack,Rhode Island,ESPN+
+11/7/2025,18:00,Northeastern,Yale,ESPN+
+11/7/2025,18:00,Cornell,Bryant,ESPN+
+11/7/2025,18:00,Murray State,Southern Indiana,ESPN+
+11/7/2025,18:00,St. Bonaventure,Niagara,ESPN+
+11/7/2025,18:00,Dartmouth,Boston University,ESPN+
+11/7/2025,18:00,Denver,UC San Diego,ESPN+
+11/7/2025,18:00,Akron,Robert Morris,ESPN+
+11/7/2025,18:00,Delta State,Louisiana,ESPN+
+11/7/2025,18:30,Bob Jones,Appalachian State,ESPN+
+11/7/2025,18:30,Eastern Michigan,Canisius,ESPN+
+11/7/2025,18:30,Purdue Fort Wayne,Xavier,ESPN+
+11/7/2025,18:30,East Tennessee State,Tennessee,SECN+
+11/7/2025,18:30,Morehead State,Bellarmine,ESPN+
+11/7/2025,18:30,Elizabeth City State,Old Dominion,ESPN+
+11/7/2025,18:30,Molloy,Stony Brook,TBD
+11/7/2025,18:30,Frostburg State,Towson,TBD
+11/7/2025,19:00,George Washington,Temple,TBD
+11/7/2025,19:00,Grambling State,North Texas,TBD
+11/7/2025,19:00,Bowling Green,South Carolina,SECN+
+11/7/2025,19:00,UAlbany,Syracuse,ACCNX
+11/7/2025,19:00,Albany,Syracuse,ACCNX
+11/7/2025,19:00,Navy,Delaware,ESPN+
+11/7/2025,19:00,Long Island University,South Florida,ESPN+
+11/7/2025,19:00,George Washington,Temple,ESPN+
+11/7/2025,19:00,Kent State,West Virginia,ESPN+
+11/7/2025,19:00,Saint Joseph's,Maine,ESPN+
+11/7/2025,19:00,Drexel,Marist,ESPN+
+11/7/2025,19:00,Chico State,Saint Mary's,ESPN+
+11/7/2025,19:00,Incarnate Word,Abilene Christian,ESPN+
+11/7/2025,19:00,Grambling,North Texas,ESPN+
+11/7/2025,19:30,Arlington Baptist,UT Rio Grande Valley,ESPN+
+11/7/2025,19:30,Ithaca,Colgate,ESPN+
+11/7/2025,19:30,Missouri State,UT Arlington,ESPN+
+11/7/2025,19:30,Brown,Belmont,ESPN+
+11/7/2025,19:30,Louisiana Tech,UL Monroe,ESPN+
+11/7/2025,20:00,Rice,South Dakota State,TBD
+11/7/2025,20:00,Utah,Utah State,TBD
+11/7/2025,20:00,Manhattan,Minnesota,B1G+
+11/7/2025,20:00,St. John's,Harvard,ESPN+
+11/7/2025,20:00,Richmond,Texas,SECN+
+11/7/2025,20:00,Memphis,Little Rock,ESPN+
+11/7/2025,20:00,Wright State,Tennessee State,ESPN+
+11/7/2025,20:00,Milwaukee,Northern Illinois,ESPN+
+11/7/2025,21:00,Montana State,Portland,ESPN+
+11/7/2025,21:30,Fresno State,Cal State Bakersfield,ESPN+
+11/8/2025,12:00,Saint Francis (PA),La Salle,ESPN+
+11/8/2025,12:00,Saint Anselm,Vermont,ESPN+
+11/8/2025,12:00,Wofford,High Point,ESPN+
+11/8/2025,TBD,Samford,Nebraska,B1G+
+11/8/2025,13:00,Mount St. Mary's,Pitt,TBD
+11/8/2025,13:00,Mount St. Mary's,Pittsburgh,ACCNX
+11/8/2025,13:00,Western Kentucky,Longwood,ESPN+
+11/8/2025,13:00,Valparaiso,Detroit Mercy,ESPN+
+11/8/2025,14:00,Alabama State,Auburn,SECN+
+11/8/2025,14:00,Wisconsin,Marquette,ESPN+
+11/8/2025,14:00,Gardner-Webb,West Georgia,ESPN+
+11/8/2025,14:00,Newberry,Winthrop,ESPN+
+11/8/2025,14:00,Siena,UMass,ESPN+
+11/8/2025,14:00,Florida A&M,Howard,ESPN+
+11/8/2025,15:00,Wisconsin,Marquette,ESPN+
+11/8/2025,15:00,Texas A&M-Texarkana,Stephen F. Austin,ESPN+
+11/8/2025,16:00,Eastern Washington,Arizona State,ESPN+
+11/8/2025,16:00,California Baptist,Pacific,ESPN+
+11/8/2025,16:00,Emory & Henry,Radford,ESPN+
+11/8/2025,16:00,Northern Arizona,Utah Tech,ESPN+
+11/8/2025,16:00,Washington State,Southern Utah,ESPN+
+11/8/2025,16:00,Lamar,Northern Colorado,ESPN+
+11/8/2025,16:00,Westminster,Weber State,ESPN+
+11/8/2025,17:00,Montana,Oregon,B1G+
+11/8/2025,17:00,Westmont College,Pepperdine,ESPN+
+11/8/2025,17:00,San Diego,Cal State Northridge,ESPN+
+11/8/2025,18:00,Delaware State,American University,ESPN+
+11/8/2025,19:00,Florida Atlantic,Kennesaw State,TBD
+11/8/2025,19:00,Lehigh,Fairfield,ESPN+
+11/8/2025,19:00,Florida Atlantic,Kennesaw State,ESPN+
+11/8/2025,20:00,UTSA,Houston,TBD
+11/8/2025,20:00,UTSA,Houston,ESPN+
+11/9/2025,11:00,Le Moyne,Lafayette,ESPN+
+11/9/2025,12:00,UMass Lowell,Boston College,ACCNX
+11/9/2025,12:00,Harvard,Michigan,B1G+
+11/9/2025,12:00,Columbia,Ohio,ESPN+
+11/9/2025,TBD,Duquesne,Western Michigan,ESPN+
+11/9/2025,TBD,San Francisco State,Saint Mary's,ESPN+
+11/9/2025,TBD,UC Santa Barbara,Seattle U,ESPN+
+11/9/2025,13:00,Holy Cross,Duke,ACCNX
+11/9/2025,13:00,Illinois State,Illinois,B1G+
+11/9/2025,13:00,Georgetown,Maryland,B1G+
+11/9/2025,13:00,Coppin State,Ohio State,B1G+
+11/9/2025,13:00,Davenport,Central Michigan,ESPN+
+11/9/2025,13:00,Ball State,IUPUI,ESPN+
+11/9/2025,13:00,Duquesne,Western Michigan,ESPN+
+11/9/2025,13:00,Lees-McRae,Coastal Carolina,ESPN+
+11/9/2025,13:00,Barton,William & Mary,TBD
+11/9/2025,14:00,Princeton,Georgia Tech,TBD
+11/9/2025,14:00,Northern Kentucky,Louisville,TBD
+11/9/2025,14:00,Loyola Maryland,Virginia Tech,ACCNX
+11/9/2025,14:00,Eastern Michigan,Michigan State,B1G+
+11/9/2025,14:00,Stony Brook,Rutgers,B1G+
+11/9/2025,14:00,Princeton,Georgia Tech,ACCNX
+11/9/2025,14:00,Northern Kentucky,Louisville,ACCNX
+11/9/2025,14:00,Bucknell,Virginia,ACCNX
+11/9/2025,14:00,Hampton,Wake Forest,ACCNX
+11/9/2025,14:00,Sacred Heart,Iowa State,ESPN+
+11/9/2025,14:00,Kentucky,Buffalo,ESPN+
+11/9/2025,14:00,Gonzaga,Toledo,ESPN+
+11/9/2025,15:00,SIU Edwardsville,Northwestern,B1G+
+11/9/2025,15:00,Evansville,Iowa,B1G+
+11/9/2025,15:00,Ally Tipoff,NC State,ESPN
+11/9/2025,15:00,Ally Tipoff,NC State,ESPN
+11/9/2025,15:00,Chicago State,Notre Dame,ACCNX
+11/9/2025,15:00,Lindenwood,Baylor,ESPN+
+11/9/2025,15:00,Creighton,Drake,ESPN+
+11/9/2025,15:00,Northwestern State,Kansas,ESPN+
+11/9/2025,15:00,Houston Christian,Tarleton,ESPN+
+11/9/2025,15:00,Texas State,Texas Tech,ESPN+
+11/9/2025,15:00,Tennessee,UT Martin,ESPN+
+11/9/2025,15:00,Mississippi Valley State,Mississippi State,SECN+
+11/9/2025,15:00,Chattanooga,Lipscomb,ESPN+
+11/9/2025,15:00,Virginia-Lynchburg,Campbell,TBD
+11/9/2025,15:30,UT Dallas,East Texas A&M,ESPN+
+11/9/2025,16:00,UC Irvine,Arizona,TBD
+11/9/2025,16:00,Cal Poly,Stanford,ACCNX
+11/9/2025,16:00,UC Irvine,Arizona,ESPN+
+11/9/2025,16:00,Queens (NC),James Madison,ESPN+
+11/9/2025,16:00,Queens,James Madison,ESPN+
+11/9/2025,16:30,Florida State,UConn,TBD
+11/9/2025,16:30,Florida State,UConn,FS1
+11/9/2025,17:00,Denver,Loyola Marymount,ESPN+
+11/9/2025,17:00,Walla Walla University,Idaho,ESPN+
+11/9/2025,17:00,Northern Iowa,Saint Louis,ESPN+
+11/9/2025,17:00,Cleveland State,Cal State Fullerton,ESPN+
+11/9/2025,18:00,Oral Roberts,Oklahoma State,ESPN+
+11/9/2025,18:00,Tusculum,Western Carolina,ESPN+
+11/9/2025,19:30,Prairie View A&M,Tulsa,TBD
+11/9/2025,19:30,Prairie View A&M,Tulsa,ESPN+
+11/9/2025,22:00,Sacramento State,California,TBD
+11/9/2025,22:00,Sacramento State,California,ACCNX
+11/10/2025,11:00,Presbyterian,Elon,TBD
+11/10/2025,13:00,Minot State,Montana State,ESPN+
+11/10/2025,17:00,Walsh,Kent State,ESPN+
+11/10/2025,18:00,New Hampshire,Colgate,ESPN+
+11/10/2025,18:00,Saint Peter's,Fordham,ESPN+
+11/10/2025,18:00,Emmanuel College,Rhode Island,ESPN+
+11/10/2025,18:30,South Carolina Upstate,Georgia,SECN+
+11/10/2025,18:30,Miami-OH,Oakland,ESPN+
+11/10/2025,18:30,Miami (OH),Oakland,ESPN+
+11/10/2025,19:00,Central Connecticut State,Providence,TBD
+11/10/2025,19:00,Furman,Vanderbilt,SEC Network
+11/10/2025,19:00,UNC Greensboro,Auburn,SECN+
+11/10/2025,19:00,St. Thomas-TX,Incarnate Word,ESPN+
+11/10/2025,19:00,Blue Mountain College,Southern Miss,ESPN+
+11/10/2025,19:00,Alcorn State,Alabama,SECN+
+11/10/2025,19:00,Jacksonville,Florida,SECN+
+11/10/2025,19:00,Furman,Vanderbilt,SECN+
+11/10/2025,19:00,Jacksonville State,North Alabama,ESPN+
+11/10/2025,19:00,St. Thomas (TX),Incarnate Word,ESPN+
+11/10/2025,19:00,Florida A&M,George Mason,ESPN+
+11/10/2025,19:00,Gardner-Webb,Mercer,ESPN+
+11/10/2025,19:00,Central Connecticut,Providence,ESPN+
+11/10/2025,19:30,Lamar,Kansas State,TBD
+11/10/2025,19:30,Milwaukee,Wisconsin,B1G+
+11/10/2025,19:30,Lamar,Kansas State,ESPN+
+11/10/2025,20:00,UL Lafayette,Texas,SECN+
+11/10/2025,21:00,Central Arkansas,Arkansas,SEC Network
+11/10/2025,21:00,Montana,Washington,B1G+
+11/10/2025,22:00,Air Force,Oregon State,ESPN+
+11/10/2025,22:30,UCLA,Oklahoma,FS1
+11/11/2025,00:00,Bowling Green,Wisconsin,B1G+
+11/11/2025,11:00,Loyola Maryland,Radford,ESPN+
+11/11/2025,12:00,Prairie View A&M,Oklahoma State,ESPN+
+11/11/2025,TBD,Memphis,South Alabama,TBD
+11/11/2025,14:00,Boston University,Northeastern,TBD
+11/11/2025,16:30,Utah State,Cal State Bakersfield,ESPN+
+11/11/2025,17:00,St. John's,Quinnipiac,TBD
+11/11/2025,17:00,West Liberty,Duquesne,ESPN+
+11/11/2025,17:00,St. John's,Quinnipiac,ESPN+
+11/11/2025,17:00,Stetson,Towson,TBD
+11/11/2025,18:00,Charleston Southern,East Carolina,TBD
+11/11/2025,18:00,Clemson,South Carolina,TBD
+11/11/2025,18:00,Cornell,Pitt,TBD
+11/11/2025,18:00,Cornell,Pittsburgh,ACCNX
+11/11/2025,18:00,Clemson,South Carolina,ESPN2
+11/11/2025,18:00,Wagner,NJIT,ESPN+
+11/11/2025,18:00,La Salle,Lehigh,ESPN+
+11/11/2025,18:00,Howard,George Washington,ESPN+
+11/11/2025,18:00,Hofstra,Yale,ESPN+
+11/11/2025,18:00,Harvard,UMass,ESPN+
+11/11/2025,18:00,Charleston Southern,East Carolina,ESPN+
+11/11/2025,18:30,Dayton,Xavier,ESPN+
+11/11/2025,18:30,UT Rio Grande Valley,Abilene Christian,ESPN+
+11/11/2025,19:00,Temple,West Virginia,TBD
+11/11/2025,19:00,Canisius,Syracuse,ACCNX
+11/11/2025,19:00,Marshall,Indiana,B1G+
+11/11/2025,19:00,Cincinnati,Saint Joseph's,ESPN+
+11/11/2025,19:00,Maine,NC State,ACCNX
+11/11/2025,19:00,St. Bonaventure,Binghamton,ESPN+
+11/11/2025,19:00,Bryant,Marist,ESPN+
+11/11/2025,19:00,Temple,West Virginia,ESPN+
+11/11/2025,19:00,Georgia State,Wofford,ESPN+
+11/11/2025,19:00,Middle Tennessee,Tennessee Tech,ESPN+
+11/11/2025,19:00,Cincinnati,St. Bonaventure,ESPN+
+11/11/2025,19:00,New Mexico Highlands,New Mexico State,ESPN+
+11/11/2025,19:00,North Dakota,Green Bay,ESPN+
+11/11/2025,19:00,Eastern Illinois,Indiana State,ESPN+
+11/11/2025,19:00,Western Illinois,Northern Illinois,ESPN+
+11/11/2025,19:30,Rice,Houston,TBD
+11/11/2025,19:30,Wichita State,Western Kentucky,TBD
+11/11/2025,19:30,Rice,Houston,ESPN+
+11/11/2025,19:30,Wyoming,UT Arlington,ESPN+
+11/11/2025,19:30,Arkansas State,Missouri,SECN+
+11/11/2025,19:30,Missouri State,Southeast Missouri State,ESPN+
+11/11/2025,19:30,Wichita State,Western Kentucky,ESPN+
+11/11/2025,19:30,Grambling,UL Monroe,ESPN+
+11/11/2025,20:00,Marquette,Minnesota,B1G+
+11/11/2025,20:00,Embry-Riddle (FL),Northern Arizona,ESPN+
+11/11/2025,20:00,Bethany College (WV),Northern Colorado,ESPN+
+11/11/2025,20:00,Memphis,South Alabama,ESPN+
+11/11/2025,20:00,Santa Clara,Texas A&M-Corpus Christi,ESPN+
+11/11/2025,21:00,Grand Canyon,Oregon,B1G+
+11/11/2025,21:00,Utah Valley,Utah,ESPN+
+11/11/2025,21:00,Warner Pacific,Portland,ESPN+
+11/11/2025,22:00,Pacific,California,TBD
+11/11/2025,22:00,Pacific,California,ACCNX
+11/11/2025,23:00,Willamette,Portland State,ESPN+
+11/12/2025,11:00,Nicholls,Florida State,TBD
+11/12/2025,11:00,Nicholls,Florida State,ACCNX
+11/12/2025,11:30,Coppin State,Penn State,B1G+
+11/12/2025,12:00,North Florida,Tulane,TBD
+11/12/2025,12:00,Chicago State,Illinois State,ESPN+
+11/12/2025,12:00,North Florida,Tulane,ESPN+
+11/12/2025,TBD,Colorado,Louisville,TBD
+11/12/2025,14:00,UC Davis,Weber State,ESPN+
+11/12/2025,14:00,Kennesaw State,East Tennessee State,ESPN+
+11/12/2025,17:00,Buffalo,Vermont,ESPN+
+11/12/2025,18:00,DePaul,Bradley,TBD
+11/12/2025,18:00,Rider,Boston College,ACCNX
+11/12/2025,18:00,Stony Brook,Fordham,ESPN+
+11/12/2025,18:00,Brown,Holy Cross,ESPN+
+11/12/2025,18:00,Mount St. Mary's,Bucknell,ESPN+
+11/12/2025,18:00,Sacramento State,UC San Diego,ESPN+
+11/12/2025,18:00,DePaul,Bradley,ESPN+
+11/12/2025,18:00,Liberty,James Madison,ESPN+
+11/12/2025,18:00,Penn,Drexel,FloHoops
+11/12/2025,18:30,Youngstown State,Michigan State,B1G+
+11/12/2025,18:30,Colby-Sawyer,Dartmouth,ESPN+
+11/12/2025,18:30,South Carolina Upstate,Kentucky,SECN+
+11/12/2025,18:30,Northern Kentucky,Ball State,ESPN+
+11/12/2025,18:30,Delaware,Old Dominion,ESPN+
+11/12/2025,18:30,Davidson,Appalachian State,ESPN+
+11/12/2025,19:00,Colorado,Louisville,TBD
+11/12/2025,19:00,Akron,Notre Dame,TBD
+11/12/2025,19:00,Southern,Ole Miss,SECN+
+11/12/2025,19:00,Norfolk State,Duke,ACCNX
+11/12/2025,19:00,Purdue,Purdue Fort Wayne,B1G+
+11/12/2025,19:00,Colorado,Louisville,ACCNX
+11/12/2025,19:00,Akron,Notre Dame,ACCNX
+11/12/2025,19:00,Central Michigan,Butler,ESPN+
+11/12/2025,19:00,Fairleigh Dickinson,Manhattan,ESPN+
+11/12/2025,19:00,Longwood,Navy,ESPN+
+11/12/2025,19:00,Purdue,Purdue Fort Wayne,ESPN+
+11/12/2025,19:00,Chattanooga,Troy,ESPN+
+11/12/2025,19:00,Princeton,Villanova,ESPN+
+11/12/2025,19:00,Vanderbilt,Austin Peay,ESPN+
+11/12/2025,19:00,Evansville,Eastern Kentucky,ESPN+
+11/12/2025,19:00,Merrimack,High Point,ESPN+
+11/12/2025,19:00,Pittsburgh-Johnstown,Cleveland State,ESPN+
+11/12/2025,19:00,Wilberforce,Wright State,ESPN+
+11/12/2025,19:00,Western Carolina,Campbell,TBD
+11/12/2025,19:00,Richmond,William & Mary,TBD
+11/12/2025,19:00,Coastal Carolina,UNC Wilmington,TBD
+11/12/2025,19:00,Shaw University,North Carolina A&T,TBD
+11/12/2025,19:30,Loyola,UConn,truTV
+11/12/2025,19:30,Lamar,Kansas,ESPN+
+11/12/2025,19:30,Valparaiso,Iowa State,ESPN+
+11/12/2025,20:00,Southern Indiana,Saint Louis,ESPN+
+11/12/2025,21:00,Creighton,Nebraska,FS1
+11/12/2025,21:00,Omaha,Utah Tech,ESPN+
+11/12/2025,21:00,Kansas City,Oklahoma,SEC Network
+11/12/2025,21:00,UC Irvine,Idaho State,ESPN+
+11/12/2025,21:00,California Baptist,Long Beach State,ESPN+
+11/12/2025,22:00,Hope International University,Cal State Fullerton,ESPN+
+11/13/2025,11:00,Rhode Island,Rutgers,B1G+
+11/13/2025,11:00,Morehead State,Ohio,ESPN+
+11/13/2025,12:00,New Hampshire,Green Bay,ESPN+
+11/13/2025,12:00,Mississippi Valley State,Auburn,SECN+
+11/13/2025,12:00,Tarleton,Texas A&M,SECN+
+11/13/2025,TBD,South Dakota,Kansas State,TBD
+11/13/2025,TBD,Colorado State,Gonzaga,ESPN+
+11/13/2025,13:00,IU Southeast,Miami (OH),ESPN+
+11/13/2025,17:00,South Dakota,Kansas State,ESPN+
+11/13/2025,18:00,WBCA Challenge,South Florida,TBD
+11/13/2025,18:00,Gardner-Webb,Virginia Tech,ACCNX
+11/13/2025,18:00,WBCA Challenge,South Florida,TBD
+11/13/2025,18:00,Mercer,Wake Forest,ACCNX
+11/13/2025,18:00,Siena,Army,ESPN+
+11/13/2025,18:30,Bellarmine,Ohio State,B1G+
+11/13/2025,19:00,Nelson University (TX),North Texas,TBD
+11/13/2025,19:00,Florida Atlantic,Miami,TBD
+11/13/2025,19:00,Charleston Southern,Georgia Tech,TBD
+11/13/2025,19:00,American,Clemson,TBD
+11/13/2025,19:00,Belmont,Tennessee,SECN+
+11/13/2025,19:00,Belmont,Tennessee,SEC Network
+11/13/2025,19:00,Towson,Maryland,B1G+
+11/13/2025,19:00,American University,Clemson,ACCNX
+11/13/2025,19:00,Charleston Southern,Georgia Tech,ACCNX
+11/13/2025,19:00,Florida Atlantic,Miami,ACCNX
+11/13/2025,19:00,UMBC,Virginia,ACCNX
+11/13/2025,19:00,Western Michigan,Milwaukee,ESPN+
+11/13/2025,19:00,Nelson University,North Texas,ESPN+
+11/13/2025,19:00,Oral Roberts,Lindenwood,ESPN+
+11/13/2025,19:00,Ave Maria,Florida Gulf Coast,ESPN+
+11/13/2025,19:00,Johnson University (TN),Lipscomb,ESPN+
+11/13/2025,19:00,Alabama State,West Georgia,ESPN+
+11/13/2025,19:00,Georgia State,Furman,ESPN+
+11/13/2025,19:30,Texas State,UTSA,TBD
+11/13/2025,19:30,Houston Christian,Tulsa,TBD
+11/13/2025,19:30,Jackson State,Mississippi State,SECN+
+11/13/2025,19:30,Southern Miss,Jacksonville State,ESPN+
+11/13/2025,19:30,SE Louisiana,Arkansas,SECN+
+11/13/2025,19:30,Houston Christian,Tulsa,ESPN+
+11/13/2025,19:30,Texas State,UTSA,ESPN+
+11/13/2025,20:30,Drake,Iowa,BTN
+11/13/2025,20:30,Saint Peter's,Lafayette,ESPN+
+11/13/2025,21:00,Arizona State,San Diego,TBD
+11/13/2025,21:00,WBCA Challenge,North Carolina,TBD
+11/13/2025,21:00,WBCA Challenge,North Carolina,TBD
+11/13/2025,21:00,Southern Utah,Eastern Washington,ESPN+
+11/13/2025,21:00,Arizona State,San Diego,ESPN+
+11/14/2025,00:00,Saint Martin's,Hawai'i,ESPN+
+11/14/2025,00:00,Saint Martin's,Hawai'i,ESPN+
+11/14/2025,11:00,La Salle University,Temple,TBD
+11/14/2025,11:00,La Salle,Temple,ESPN+
+11/14/2025,11:30,North Alabama,Oklahoma,SECN+
+11/14/2025,12:00,North Florida,South Alabama,ESPN+
+11/14/2025,TBD,Georgetown,George Mason,TBD
+11/14/2025,TBD,Illinois,Oregon State,ESPN+
+11/14/2025,TBD,Seton Hall,San Francisco,ESPN+
+11/14/2025,13:30,Yale,St. John's,ESPN+
+11/14/2025,16:00,Iona,Charleston,TBD
+11/14/2025,18:00,NJIT,Minnesota,B1G+
+11/14/2025,18:00,Canisius,St. Bonaventure,ESPN+
+11/14/2025,18:00,Tennessee State,UT Arlington,ESPN+
+11/14/2025,18:00,UNC Greensboro,Presbyterian,ESPN+
+11/14/2025,18:30,Bowling Green,Marquette,ESPN+
+11/14/2025,18:30,Kent State,Xavier,ESPN+
+11/14/2025,18:30,Abilene Christian,Stephen F. Austin,ESPN+
+11/14/2025,19:00,Stanford,Washington State,TBD
+11/14/2025,19:00,Duke,West Virginia,ESPNU
+11/14/2025,19:00,Duke,West Virginia,ESPNU
+11/14/2025,19:00,Stanford,Washington State,ESPN+
+11/14/2025,19:00,Georgetown,George Mason,ESPN+
+11/14/2025,19:30,UMES,Northwestern,B1G+
+11/14/2025,19:30,Bowling Green,Marquette,ESPN+
+11/14/2025,19:30,UL Lafayette,Nicholls,ESPN+
+11/14/2025,19:30,University of Louisiana at Lafayette,Nicholls,ESPN+
+11/14/2025,19:30,Indiana State,Western Kentucky,ESPN+
+11/14/2025,20:00,Denver,Northern Colorado,ESPN+
+11/14/2025,20:00,Pepperdine,Utah Valley,ESPN+
+11/14/2025,20:00,San Jose State,California Baptist,ESPN+
+11/14/2025,20:00,Bluefield University,Longwood,ESPN+
+11/14/2025,21:00,Illinois,Oregon State,ESPN+
+11/14/2025,21:00,Wyoming,Santa Clara,ESPN+
+11/14/2025,21:00,Saint Mary's,UC Riverside,ESPN+
+11/14/2025,21:30,Baylor,UNLV,MW Network
+11/15/2025,12:00,Bethune-Cookman,Florida International,ESPN+
+11/15/2025,TBD,Charlotte,Cal,TBD
+11/15/2025,TBD,Tennessee Tech,Kennesaw State,ESPN+
+11/15/2025,TBD,Cal Poly,Seattle U,ESPN+
+11/15/2025,13:00,Boston College,Providence,TBD
+11/15/2025,13:00,Vermont,Lehigh,ESPN+
+11/15/2025,13:00,Boston College,Providence,ESPN+
+11/15/2025,13:00,Kentucky,Marshall,ESPN+
+11/15/2025,13:00,Penn,Hofstra,TBD
+11/15/2025,14:00,Coastal Carolina,Virginia Tech,ACCNX
+11/15/2025,14:00,Boston College,Providence,ESPN+
+11/15/2025,14:00,Champion Christian,Northwestern State,ESPN+
+11/15/2025,15:00,Ball State,Memphis,TBD
+11/15/2025,15:00,Middle Tennessee,Rice,TBD
+11/15/2025,15:00,Iowa,Northern Iowa,ESPN+
+11/15/2025,15:00,Middle Tennessee,Rice,ESPN+
+11/15/2025,15:00,Ball State,Memphis,ESPN+
+11/15/2025,16:00,Washington,Utah,TBD
+11/15/2025,16:00,Michigan,Notre Dame,NBC
+11/15/2025,16:00,Notre Dame,Michigan,NBC
+11/15/2025,16:00,Southern Illinois,Purdue Fort Wayne,ESPN+
+11/15/2025,16:00,Washington,Utah,ESPN+
+11/15/2025,16:00,Claflin,East Tennessee State,ESPN+
+11/15/2025,16:30,Wichita State,Missouri State,TBD
+11/15/2025,16:30,Queens (NC),Winthrop,ESPN+
+11/15/2025,16:30,Queens,Winthrop,ESPN+
+11/15/2025,17:00,Sacramento State,Long Beach State,ESPN+
+11/15/2025,17:00,Rider,Bryant,ESPN+
+11/15/2025,17:00,Southern Utah,Idaho,ESPN+
+11/15/2025,17:00,Grand Canyon,UC Santa Barbara,ESPN+
+11/15/2025,17:00,Little Rock,Arkansas State,ESPN+
+11/15/2025,17:00,Howard,Elon,TBD
+11/15/2025,17:30,Albany,Rhode Island,ESPN+
+11/15/2025,18:00,Charlotte,California,TBD
+11/15/2025,18:00,WBCA Challenge,North Carolina,TBD
+11/15/2025,18:00,WBCA Challenge,Fairfield,TBD
+11/15/2025,18:00,Charlotte,California,ACCNX
+11/15/2025,18:00,Bradley,IUPUI,ESPN+
+11/15/2025,19:00,Kansas,Missouri,ESPN+
+11/15/2025,19:00,Missouri,Kansas,ESPN+
+11/15/2025,19:00,Northern Arizona,UC Irvine,ESPN+
+11/15/2025,19:00,Richmond,Columbia,ESPN+
+11/15/2025,20:00,Saint Louis,Murray State,ESPN+
+11/15/2025,21:00,WBCA Challenge,South Florida,TBD
+11/15/2025,21:00,WBCA Challenge,South Florida,TBD
+11/16/2025,12:00,Ohio State,UConn,Peacock
+11/16/2025,12:00,Georgetown (Ky.),Cincinnati,ESPN+
+11/16/2025,12:00,Georgetown (KY),Cincinnati,ESPN+
+11/16/2025,12:00,Cornell,Canisius,ESPN+
+11/16/2025,TBD,Charlotte,Harvard/Oakland,TBD
+11/16/2025,TBD,UC San Diego,San Francisco,ESPN+
+11/16/2025,TBD,Nevada,Saint Mary's,ESPN+
+11/16/2025,TBD,Stanford,Gonzaga,ESPN+
+11/16/2025,13:00,Princeton,Maryland,B1G+
+11/16/2025,13:00,North Dakota State,Nebraska,BTN
+11/16/2025,13:00,Scranton,Pittsburgh,ACCNX
+11/16/2025,13:00,New England College,New Hampshire,ESPN+
+11/16/2025,13:00,North Dakota,Eastern Kentucky,ESPN+
+11/16/2025,13:00,Florida,Navy,ESPN+
+11/16/2025,13:00,Iona,Davidson,ESPN+
+11/16/2025,13:00,Belmont,Dayton,ESPN+
+11/16/2025,13:00,Old Dominion,William & Mary,TBD
+11/16/2025,13:30,Duke,Liberty,ESPN+
+11/16/2025,14:00,Villanova,James Madison,TBD
+11/16/2025,14:00,East Carolina,High Point,TBD
+11/16/2025,14:00,Duke,Liberty,TBD
+11/16/2025,14:00,Texas A&M,Kansas State,TBD
+11/16/2025,14:00,Radford,Virginia,ACCNX
+11/16/2025,14:00,Fairleigh Dickinson,Rutgers,B1G+
+11/16/2025,14:00,Western Michigan,Michigan State,B1G+
+11/16/2025,14:00,Penn State,Saint Joseph's,ESPN+
+11/16/2025,14:00,Wagner,Syracuse,ACCNX
+11/16/2025,14:00,Wofford,Appalachian State,ESPN+
+11/16/2025,14:00,Indiana State,Austin Peay,ESPN+
+11/16/2025,14:00,Miami-OH,Bellarmine,ESPN+
+11/16/2025,14:00,Fordham,Buffalo,ESPN+
+11/16/2025,14:00,Norfolk State,Iowa State,ESPN+
+11/16/2025,14:00,Jacksonville State,Georgia,SECN+
+11/16/2025,14:00,Miami (OH),Bellarmine,ESPN+
+11/16/2025,14:00,Maryland-Eastern Shore,Loyola Chicago,ESPN+
+11/16/2025,14:00,Penn State,St. Bonaventure,ESPN+
+11/16/2025,14:00,Hampton,Gardner-Webb,ESPN+
+11/16/2025,14:00,East Carolina,High Point,ESPN+
+11/16/2025,14:00,Campbell,Furman,ESPN+
+11/16/2025,14:00,Akron,Cleveland State,ESPN+
+11/16/2025,14:00,Bucknell,Youngstown State,ESPN+
+11/16/2025,14:00,Evansville,Wright State,ESPN+
+11/16/2025,14:00,Detroit Mercy,Toledo,ESPN+
+11/16/2025,14:00,Texas A&M,Kansas State,ESPN+
+11/16/2025,14:00,Villanova,James Madison,ESPN+
+11/16/2025,14:00,Loyola (MD),Drexel,FloHoops
+11/16/2025,14:00,Coppin State,Towson,TBD
+11/16/2025,14:00,Winston-Salem State University,North Carolina A&T,TBD
+11/16/2025,15:00,Louisville,Clemson,ESPN2
+11/16/2025,15:00,Portland State,Colorado,TBD
+11/16/2025,15:00,Green Bay,Wisconsin,B1G+
+11/16/2025,15:00,Jacksonville,Georgia Tech,ACC Network
+11/16/2025,15:00,Le Moyne,Baylor,ESPN+
+11/16/2025,15:00,Portland State,Colorado,ESPN+
+11/16/2025,15:00,Arkansas,Texas Tech,ESPN+
+11/16/2025,15:00,Arkansas-Pine Bluff,UL Monroe,ESPN+
+11/16/2025,15:00,Fisk,UT Martin,ESPN+
+11/16/2025,15:00,Brown,UMBC,ESPN+
+11/16/2025,15:00,UT Arlington,Lamar,ESPN+
+11/16/2025,15:00,McNeese,Tarleton,ESPN+
+11/16/2025,15:30,Oklahoma,Western Carolina,ESPN+
+11/16/2025,15:30,Niagara,Kent State,ESPN+
+11/16/2025,16:00,Grambling State,Arizona,TBD
+11/16/2025,16:00,Arizona State,Santa Clara,TBD
+11/16/2025,16:00,Arizona State,Santa Clara,ESPN+
+11/16/2025,16:00,New Mexico,New Mexico State,ESPN+
+11/16/2025,16:00,Grambling,Arizona,ESPN+
+11/16/2025,17:00,Seton Hall,Pacific,TBD
+11/16/2025,17:00,Indiana,Florida State,TBD
+11/16/2025,17:00,Stanford,Gonzaga,TBD
+11/16/2025,17:00,Indiana,Florida State,ACCN
+11/16/2025,17:00,Army West Point,Oregon,B1G+
+11/16/2025,17:00,Northern Kentucky,Butler,ESPN+
+11/16/2025,17:00,Indiana,Florida State,ACC Network
+11/16/2025,17:00,Texas Southern,Texas,SECN+
+11/16/2025,17:00,Seton Hall,Pacific,ESPN+
+11/17/2025,12:00,Northwestern,DePaul,ESPN+
+11/17/2025,18:00,Delaware,American University,ESPN+
+11/17/2025,18:00,Stonehill,Maine,ESPN+
+11/17/2025,18:00,Chicago State,Western Illinois,ESPN+
+11/17/2025,18:00,Erskine,Presbyterian,ESPN+
+11/17/2025,19:00,Georgia State,Auburn,SECN+
+11/17/2025,19:00,Houston,Stephen F. Austin,TBD
+11/17/2025,19:00,UM Kansas City,Lindenwood,ESPN+
+11/17/2025,19:00,IU East,Southern Indiana,ESPN+
+11/17/2025,19:00,Alabama A&M,Alabama,SECN+
+11/17/2025,19:00,Kansas City,Lindenwood,ESPN+
+11/17/2025,19:00,Houston,Stephen F. Austin,ESPN+
+11/17/2025,19:00,George Washington,Longwood,ESPN+
+11/17/2025,19:00,South Carolina State,South Carolina Upstate,ESPN+
+11/17/2025,19:30,Prairie View A&M,Sam Houston,ESPN+
+11/17/2025,20:00,Tulsa,Oral Roberts,TBD
+11/17/2025,20:00,Benedictine,Utah Valley,ESPN+
+11/17/2025,20:00,UT Rio Grande Valley,Texas State,ESPN+
+11/18/2025,11:00,Northeastern,Providence,ESPN+
+11/18/2025,12:00,Murray State,Illinois,B1G+
+11/18/2025,14:00,Utah State,Oregon State,ESPN+
+11/18/2025,17:00,Quinnipiac,Yale,ESPN+
+11/18/2025,18:00,Temple,Richmond,TBD
+11/18/2025,18:00,Le Moyne,Pitt,TBD
+11/18/2025,18:00,Le Moyne,Pittsburgh,ACCNX
+11/18/2025,18:00,Salem,Marshall,ESPN+
+11/18/2025,18:00,Temple,Richmond,ESPN+
+11/18/2025,18:00,Duquesne,Robert Morris,ESPN+
+11/18/2025,18:00,Colgate,Cornell,ESPN+
+11/18/2025,18:00,Norfolk State,Pennsylvania,ESPN+
+11/18/2025,18:00,UMass Lowell,UMass,ESPN+
+11/18/2025,18:00,SE Louisiana,Southern Miss,ESPN+
+11/18/2025,18:30,West Chester,La Salle,ESPN+
+11/18/2025,19:00,SEMO,Wichita State,TBD
+11/18/2025,19:00,Binghamton,Michigan,B1G+
+11/18/2025,19:00,Sacred Heart,Georgetown,ESPN+
+11/18/2025,19:00,Purdue,Kentucky,SEC Network
+11/18/2025,19:00,LeTourneau,Houston Christian,ESPN+
+11/18/2025,19:00,Illinois State,Loyola Chicago,ESPN+
+11/18/2025,19:00,Southeast Missouri State,Wichita State,ESPN+
+11/18/2025,19:30,Troy,Kansas State,TBD
+11/18/2025,19:30,Troy,Kansas State,ESPN+
+11/18/2025,19:30,Georgia Southern,Missouri State,ESPN+
+11/18/2025,19:30,Southern Illinois,Missouri,SECN+
+11/18/2025,20:00,Ole Miss,Memphis,TBD
+11/18/2025,20:00,Ole Miss,Memphis,ESPN+
+11/18/2025,20:30,Benedictine,Southern Utah,ESPN+
+11/18/2025,21:00,Boise State,Colorado,TBD
+11/18/2025,21:00,Westcliff,Loyola Marymount,ESPN+
+11/18/2025,21:00,Boise State,Colorado,ESPN+
+11/19/2025,11:00,Indiana State,SIU Edwardsville,ESPN+
+11/19/2025,11:00,Toledo,Northern Kentucky,ESPN+
+11/19/2025,11:00,Bellarmine,Wright State,ESPN+
+11/19/2025,12:00,Abilene Christian,North Texas,TBD
+11/19/2025,12:00,Abilene Christian,North Texas,ESPN+
+11/19/2025,TBD,Butler,Indiana,TBD
+11/19/2025,TBD,Marquette,Milwaukee,ESPN+
+11/19/2025,TBD,Arkansas State,Central Arkansas,ESPN+
+11/19/2025,16:00,Bryant,Merrimack,ESPN+
+11/19/2025,17:00,UNC Asheville,Western Carolina,ESPN+
+11/19/2025,18:00,Harvard,Boston College,ACCNX
+11/19/2025,18:00,Coastal Carolina,NC State,ACC Network
+11/19/2025,18:00,Holy Cross,Rhode Island,ESPN+
+11/19/2025,18:00,Saint Peter's,NJIT,ESPN+
+11/19/2025,18:00,Drexel,Lehigh,ESPN+
+11/19/2025,18:00,Buffalo,St. Bonaventure,ESPN+
+11/19/2025,18:00,Lipscomb,Belmont,ESPN+
+11/19/2025,18:30,Kent State,Ohio State,B1G+
+11/19/2025,19:00,Rice,Princeton,TBD
+11/19/2025,19:00,West Georgia,Georgia Tech,TBD
+11/19/2025,19:00,Samford,Alabama,SECN+
+11/19/2025,19:00,Butler,Indiana,TBD
+11/19/2025,19:00,West Georgia,Georgia Tech,ACCNX
+11/19/2025,19:00,Central Michigan,Detroit Mercy,ESPN+
+11/19/2025,19:00,Marquette,Milwaukee,ESPN+
+11/19/2025,19:00,Rice,Princeton,ESPN+
+11/19/2025,19:00,Oklahoma State,St. John's,ESPN+
+11/19/2025,19:00,Oregon,Washington State,ESPN+
+11/19/2025,19:00,East Texas A&M,Oklahoma,SECN+
+11/19/2025,19:00,Winthrop,South Carolina,SEC Network
+11/19/2025,19:00,Rider,Navy,ESPN+
+11/19/2025,19:00,North Alabama,Tennessee State,ESPN+
+11/19/2025,19:00,Florida Gulf Coast,George Mason,ESPN+
+11/19/2025,19:00,UNC Wilmington,Gardner-Webb,ESPN+
+11/19/2025,19:00,Furman,Radford,ESPN+
+11/19/2025,19:00,Vermont,High Point,ESPN+
+11/19/2025,19:00,Eastern Michigan,Purdue Fort Wayne,ESPN+
+11/19/2025,19:00,Boston University,Brown,ESPN+
+11/19/2025,19:30,Minnesota,Kansas,ESPN+
+11/19/2025,19:30,Loyola New Orleans,New Orleans,ESPN+
+11/19/2025,19:30,Mississippi Valley State,Nicholls,ESPN+
+11/19/2025,19:30,St. Mary's,Lamar,ESPN+
+11/19/2025,19:30,Vanderbilt,Western Kentucky,ESPN+
+11/19/2025,20:00,Oral Roberts,Nebraska,B1G+
+11/19/2025,20:00,Morehead State,Louisville,ACC Network
+11/19/2025,20:00,James Madison,Texas,SECN+
+11/19/2025,20:00,UTSA,Incarnate Word,ESPN+
+11/19/2025,21:00,Fresno State,Washington,B1G+
+11/19/2025,21:00,Cal State Northridge,California Baptist,ESPN+
+11/20/2025,10:30,Appalachian State,West Virginia,ESPN+
+11/20/2025,11:00,Saint Joseph's,Columbia,ESPN+
+11/20/2025,11:30,St. Mary's,California,ACCNX
+11/20/2025,12:00,Texas State,Texas A&M-Corpus Christi,ESPN+
+11/20/2025,12:30,Troy,Missouri,SECN+
+11/20/2025,13:00,Florida Atlantic,South Alabama,ESPN+
+11/20/2025,14:30,Saint Mary's,California,TBD
+11/20/2025,15:00,New Hampshire,Army,ESPN+
+11/20/2025,18:00,Niagara,Virginia Tech,ACCNX
+11/20/2025,18:00,Bethune-Cookman,Maryland,B1G+
+11/20/2025,18:00,WBCA Showcase,Davidson,TBD
+11/20/2025,18:00,Longwood,Virginia,ACC Network
+11/20/2025,18:00,Austin Peay,Chattanooga,ESPN+
+11/20/2025,18:00,Binghamton,Akron,ESPN+
+11/20/2025,18:30,WBCA Showcase,Davidson,TBD
+11/20/2025,18:30,Eastern Illinois,Michigan State,B1G+
+11/20/2025,18:30,Cincinnati,Ball State,ESPN+
+11/20/2025,18:30,Ohio,Xavier,ESPN+
+11/20/2025,18:30,North Florida,Georgia,SECN+
+11/20/2025,18:30,Florida State,Florida,SEC Network
+11/20/2025,19:00,North Carolina,North Carolina A&T,TBD
+11/20/2025,19:00,Fordham,Seton Hall,ESPN+
+11/20/2025,19:00,Northern Iowa,Creighton,ESPN+
+11/20/2025,19:00,Iowa State,Drake,ESPN+
+11/20/2025,19:00,Mount St. Mary's,Loyola Maryland,ESPN+
+11/20/2025,19:00,Mississippi State,Texas Tech,ESPN+
+11/20/2025,19:00,Rutgers,Auburn,SECN+
+11/20/2025,19:00,IUPUI,Evansville,ESPN+
+11/20/2025,19:00,University of North Carolina,North Carolina A&T,TBD
+11/20/2025,19:00,Howard,Monmouth,TBD
+11/20/2025,19:30,Houston,UTRGV,ESPN+
+11/20/2025,19:30,Tennessee,Middle Tennessee,ESPN+
+11/20/2025,19:30,Houston,UT Rio Grande Valley,ESPN+
+11/20/2025,19:30,Little Rock,Arkansas,SECN+
+11/20/2025,19:30,UL Monroe,Sam Houston,ESPN+
+11/20/2025,20:00,Florida Atlantic,South Alabama,TBD
+11/20/2025,20:00,NC Central,Wake Forest,ACC Network
+11/20/2025,20:00,North Carolina Central,Wake Forest,ACC Network
+11/20/2025,20:00,Duke,South Florida,ESPNU
+11/20/2025,20:00,Bradley,Western Illinois,ESPN+
+11/20/2025,20:00,Weber State,Utah Valley,ESPN+
+11/20/2025,21:00,WBCA Showcase,Iowa,TBD
+11/20/2025,21:00,San Francisco,Long Beach State,ESPN+
+11/20/2025,22:00,UC Davis,Stanford,TBD
+11/20/2025,22:00,UC Davis,Stanford,ACCNX
+11/21/2025,11:00,Old Dominion,East Carolina,TBD
+11/21/2025,11:00,Old Dominion,East Carolina,ESPN+
+11/21/2025,11:00,Presbyterian,UNC Wilmington,TBD
+11/21/2025,12:00,Alabama State,Vanderbilt,SECN+
+11/21/2025,TBD,UC Riverside,Idaho,ESPN+
+11/21/2025,TBD,Colorado State,Oregon State,ESPN+
+11/21/2025,13:00,Clinton,Winthrop,ESPN+
+11/21/2025,16:00,Loyola Marymount,Hawai'i,ESPN+
+11/21/2025,17:00,Utah,Syracuse,FS2
+11/21/2025,17:00,Syracuse,Utah,FS2
+11/21/2025,18:30,Grambling State,DePaul,TBD
+11/21/2025,18:30,Saint Louis,Illinois State,ESPN+
+11/21/2025,18:30,Grambling,DePaul,ESPN+
+11/21/2025,19:00,George Washington,Georgetown,ESPN+
+11/21/2025,19:00,Yale University,Providence,ESPN+
+11/21/2025,19:00,Yale,Providence,ESPN+
+11/21/2025,19:00,Northern Illinois,SIU Edwardsville,ESPN+
+11/21/2025,19:00,Canisius,Dayton,ESPN+
+11/21/2025,19:00,Gardner-Webb,UNC Greensboro,ESPN+
+11/21/2025,19:00,Stillman,Samford,ESPN+
+11/21/2025,19:30,Cleveland State,Northwestern,B1G+
+11/21/2025,19:30,Arkansas Baptist,Northwestern State,ESPN+
+11/21/2025,20:00,Tulane,North Dakota State,TBD
+11/21/2025,20:00,Michigan,UConn,FOX
+11/21/2025,20:00,Northern Arizona,Arizona,ESPN+
+11/21/2025,21:00,Southern Utah,Cal Poly,ESPN+
+11/21/2025,21:30,Cal State Fullerton,Sacramento State,ESPN+
+11/22/2025,10:00,South Carolina Upstate,Morehead State,ESPN+
+11/22/2025,12:00,Boston College,UMass,ESPN+
+11/22/2025,TBD,Princeton,Penn State,TBD
+11/22/2025,TBD,Mercer,Georgia Southern,ESPN+
+11/22/2025,TBD,Midway,Eastern Kentucky,ESPN+
+11/22/2025,TBD,Indiana University East,Wright State,ESPN+
+11/22/2025,13:00,Robert Morris,Pitt,TBD
+11/22/2025,13:00,Boston College,UMass,TBD
+11/22/2025,13:00,Robert Morris,Pittsburgh,ACCNX
+11/22/2025,13:00,Albany,St. Bonaventure,ESPN+
+11/22/2025,13:00,Drexel,NJIT,ESPN+
+11/22/2025,13:00,American University,La Salle,ESPN+
+11/22/2025,13:00,Eastern Illinois,Central Michigan,ESPN+
+11/22/2025,13:00,Sacred Heart,Northeastern,TBD
+11/22/2025,14:00,Wofford,Charlotte,TBD
+11/22/2025,14:00,Kentucky,Louisville,TBD
+11/22/2025,14:00,Wofford,Charlotte,ESPN+
+11/22/2025,14:00,Kansas State,Green Bay,ESPN+
+11/22/2025,14:00,Air Force,UC San Diego,ESPN+
+11/22/2025,14:00,Appalachian State,UNC Asheville,ESPN+
+11/22/2025,14:00,Florida International,Jacksonville,ESPN+
+11/22/2025,14:00,UMass Lowell,Boston University,ESPN+
+11/22/2025,14:00,East Texas A&M,SE Louisiana,ESPN+
+11/22/2025,14:00,Niagara,Radford,ESPN+
+11/22/2025,14:00,Northern Kentucky,Chattanooga,ESPN+
+11/22/2025,14:00,Bucknell,Hofstra,TBD
+11/22/2025,15:00,ETSU,Memphis,TBD
+11/22/2025,15:00,Missouri State,Tulsa,TBD
+11/22/2025,15:00,Cal State Bakersfield,Wichita State,TBD
+11/22/2025,15:00,Jacksonville State,New Orleans,ESPN+
+11/22/2025,15:00,Cal State Bakersfield,Wichita State,ESPN+
+11/22/2025,15:00,East Tennessee State,Memphis,ESPN+
+11/22/2025,15:00,Missouri State,Tulsa,ESPN+
+11/22/2025,15:00,Nicholls,Southern Miss,ESPN+
+11/22/2025,16:00,UNLV,Arizona State,ESPN+
+11/22/2025,17:00,Westcliff,UC Santa Barbara,ESPN+
+11/22/2025,17:30,WBCA Showcase,Davidson,TBD
+11/22/2025,19:00,Temple,Villanova,TBD
+11/22/2025,19:00,Temple,Villanova,ESPN+
+11/22/2025,19:00,West Alabama,North Alabama,ESPN+
+11/22/2025,20:00,WBCA Showcase,Miami,TBD
+11/22/2025,21:00,Colorado,UT Arlington,TBD
+11/22/2025,21:00,Portland State,Utah Tech,ESPN+
+11/23/2025,00:00,San Diego State,Penn State,TBD
+11/23/2025,12:00,Syracuse,Michigan,FS1
+11/23/2025,12:00,Maine,Brown,ESPN+
+11/23/2025,TBD,Eastern Washington,Gonzaga,ESPN+
+11/23/2025,12:30,Miami-OH,Purdue,BTN
+11/23/2025,13:00,Western Carolina,Wake Forest,ACCNX
+11/23/2025,13:00,Loyola Maryland,Yale,ESPN+
+11/23/2025,14:00,Illinois,Florida State,TBD
+11/23/2025,14:00,Georgia Tech,Georgia,TBD
+11/23/2025,14:00,Georgia Tech,Georgia,SECN+
+11/23/2025,14:00,Milwaukee,Butler,ESPN+
+11/23/2025,14:00,Illinois,Florida State,ACCNX
+11/23/2025,14:00,Rhode Island,NC State,ACCNX
+11/23/2025,14:00,Canisius,Cincinnati,ESPN+
+11/23/2025,14:00,Manhattan,Fordham,ESPN+
+11/23/2025,14:00,Clemson,Furman,ESPN+
+11/23/2025,14:00,William & Mary,Howard,ESPN+
+11/23/2025,14:00,Mercyhurst,Iowa State,ESPN+
+11/23/2025,14:00,Virginia Tech,James Madison,ESPN+
+11/23/2025,14:00,Navy,Richmond,ESPN+
+11/23/2025,14:00,Coppin State,Tennessee,SECN+
+11/23/2025,14:00,Queens (NC),South Carolina,SECN+
+11/23/2025,14:00,Morgan State,George Washington,ESPN+
+11/23/2025,14:00,North Carolina A&T,Old Dominion,ESPN+
+11/23/2025,14:30,Utah,UConn,FS1
+11/23/2025,14:30,George Mason,Maryland,BTN
+11/23/2025,15:00,Incarnate Word,Rice,TBD
+11/23/2025,15:00,Texas Tech,New Mexico,TBD
+11/23/2025,15:00,Detroit Mercy,Wisconsin,B1G+
+11/23/2025,15:00,Oral Roberts,Kansas,ESPN+
+11/23/2025,15:00,Bellarmine,Bradley,ESPN+
+11/23/2025,15:00,High Point,Houston,ESPN+
+11/23/2025,15:00,Tennessee State,Vanderbilt,SECN+
+11/23/2025,15:00,Austin Peay,Southern Illinois,ESPN+
+11/23/2025,15:00,Incarnate Word,Rice,ESPN+
+11/23/2025,15:00,Lamar,UL Monroe,ESPN+
+11/23/2025,16:00,Lehigh,Stanford,ACCNX
+11/23/2025,16:00,Cal State Northridge,Idaho,ESPN+
+11/23/2025,16:00,Fresno State,Santa Clara,ESPN+
+11/23/2025,16:00,IUPUI,Marshall,ESPN+
+11/23/2025,17:00,Southern,UCLA,B1G+
+11/23/2025,17:00,Vermont,Washington,B1G+
+11/23/2025,17:00,Utah State,Oregon,B1G+
+11/23/2025,17:00,Cal State Fullerton,Pacific,ESPN+
+11/23/2025,17:00,Towson,UMBC,ESPN+
+11/23/2025,17:00,Long Beach State,Oregon State,ESPN+
+11/23/2025,17:00,San Jose State,Pepperdine,ESPN+
+11/23/2025,18:00,UNC Greensboro,North Carolina,ACC Network
+11/23/2025,19:00,Oakland,Michigan State,B1G+
+11/23/2025,19:30,Portland,Hawai'i,ESPN+
+11/24/2025,11:00,Ohio State,Belmont,TBD
+11/24/2025,11:00,Saint Mary's of the Woods,Indiana State,ESPN+
+11/24/2025,11:00,Pink Flamingo Championship,Ohio State,TBD
+11/24/2025,12:00,Stoney Brook,Georgia State,ESPN+
+11/24/2025,12:00,Middle Tennessee,Providence,TBD
+11/24/2025,TBD,Delaware State,Hampton,TBD
+11/24/2025,13:30,West Virginia,McNeese State,TBD
+11/24/2025,13:30,Pink Flamingo Championship,West Virginia,TBD
+11/24/2025,14:00,New Mexico State,San Diego,ESPN+
+11/24/2025,14:30,Alcorn State,Mississippi State,TBD
+11/24/2025,16:00,South Florida,Minnesota,TBD
+11/24/2025,16:00,South Florida,Minnesota,TBD
+11/24/2025,16:00,Pink Flamingo Championship,Minnesota,TBD
+11/24/2025,17:00,UTSA,Auburn,TBD
+11/24/2025,17:00,Hoopfest Basketball Women's Challenge,UTSA,TBD
+11/24/2025,18:00,Xavier,Akron,TBD
+11/24/2025,18:00,Purdue Fort Wayne,Nebraska,TBD
+11/24/2025,18:00,Central Connecticut State,St. John's,ESPN+
+11/24/2025,18:00,Kent State,Duquesne,ESPN+
+11/24/2025,18:00,Central Connecticut,St. John's,ESPN+
+11/24/2025,18:00,Occidental,UC San Diego,ESPN+
+11/24/2025,18:00,Saint Joseph's,Pennsylvania,ESPN+
+11/24/2025,18:00,Xavier,Akron,ESPN+
+11/24/2025,18:00,Presbyterian,Coastal Carolina,ESPN+
+11/24/2025,18:00,Purdue Fort Wayne,Nebraska,TBD
+11/24/2025,18:30,Pink Flamingo Championship,Alabama,TBD
+11/24/2025,19:00,Siena,Rutgers,B1G+
+11/24/2025,19:00,Florida,Florida Atlantic,ESPN+
+11/24/2025,19:00,Elon,Georgetown,ESPN+
+11/24/2025,19:00,Chicago State,Northern Illinois,ESPN+
+11/24/2025,19:00,Wright State,Ohio,ESPN+
+11/24/2025,19:00,Montana State,Troy,ESPN+
+11/24/2025,19:00,Longwood,Ole Miss,SECN+
+11/24/2025,19:00,Concordia (TX),Houston Christian,ESPN+
+11/24/2025,19:00,Binghamton,Columbia,ESPN+
+11/24/2025,19:30,Texas A&M-Corpus Christi,Oklahoma State,ESPN+
+11/24/2025,20:00,California,Grand Canyon,TBD
+11/24/2025,20:00,Hoopfest Basketball Women's Challenge,Grand Canyon,TBD
+11/24/2025,20:30,Virginia,Northwestern State,TBD
+11/24/2025,20:30,Northwestern State,Virginia,TBD
+11/24/2025,21:00,Central Michigan,Notre Dame,ACC Network
+11/24/2025,21:00,Chapman University,Cal Poly,ESPN+
+11/25/2025,11:00,Merrimack,Boston College,ACCNX
+11/25/2025,11:00,Le Moyne,Bucknell,ESPN+
+11/25/2025,11:00,New Haven,Fairfield,ESPN+
+11/25/2025,12:00,Samford,Georgia State,ESPN+
+11/25/2025,12:00,Norfolk State,Appalachian State,ESPN+
+11/25/2025,TBD,FloHoops,Lehigh,TBD
+11/25/2025,TBD,Evansville,SIU Edwardsville,ESPN+
+11/25/2025,TBD,Roosevelt,Western Michigan,ESPN+
+11/25/2025,13:00,Indiana,FGCU,TBD
+11/25/2025,13:00,Indiana,Florida Gulf Coast,ESPN+
+11/25/2025,14:00,Western Carolina,West Georgia,ESPN+
+11/25/2025,TBD,FloHoops,3:00 pm,TBD
+11/25/2025,15:00,Hoopfest Basketball Women's Challenge,Saint Mary's,TBD
+11/25/2025,16:00,Wofford,UNC Asheville,ESPN+
+11/25/2025,16:00,Montreat,South Carolina Upstate,ESPN+
+11/25/2025,17:00,Georgia Southern,Charleston Southern,ESPN+
+11/25/2025,17:30,Texas Tech,Old Dominion,TBD
+11/25/2025,18:00,Villanova,La Salle,TBD
+11/25/2025,18:00,Lafayette,Pitt,TBD
+11/25/2025,18:00,Virginia,FloSports,TBD
+11/25/2025,18:00,Kennesaw State,South Alabama,ESPN+
+11/25/2025,18:00,Northeastern,UMass Lowell,ESPN+
+11/25/2025,18:00,Fairleigh Dickinson,NJIT,ESPN+
+11/25/2025,18:00,UMass,Holy Cross,ESPN+
+11/25/2025,TBD,FloHoops,6:00 pm,TBD
+11/25/2025,18:30,Villanova,La Salle,ESPN+
+11/25/2025,18:30,Georgia Southwestern,Jacksonville,ESPN+
+11/25/2025,18:30,Toledo,Youngstown State,ESPN+
+11/25/2025,19:00,Louisiana Monroe,Clemson,ACC Network
+11/25/2025,19:00,Colorado,Texas A&M,TBD
+11/25/2025,19:00,UL Monroe,Clemson,ACC Network
+11/25/2025,19:00,Fisk,Southern Indiana,ESPN+
+11/25/2025,19:00,Rider,George Mason,ESPN+
+11/25/2025,19:00,Florida A&M,Mercer,ESPN+
+11/25/2025,19:00,New Hampshire,Brown,ESPN+
+11/25/2025,19:30,North American,Sam Houston,ESPN+
+11/25/2025,20:00,Louisiana,Memphis,TBD
+11/25/2025,20:00,Northern Colorado,Arizona,TBD
+11/25/2025,20:00,Louisiana,Memphis,ESPN+
+11/25/2025,20:00,Tarleton,Texas State,ESPN+
+11/25/2025,20:00,Northern Colorado,Arizona,ESPN+
+11/25/2025,20:30,Utah Tech,Arizona State,ESPN+
+11/25/2025,TBD,FloHoops,9:00 pm,TBD
+11/26/2025,10:00,Puerto Rico Shootout,East Carolina,TBD
+11/26/2025,11:00,Yale,American University,ESPN+
+11/26/2025,TBD,Third-Place Game - Nassau, Bahamas,FloHoops,TBD
+11/26/2025,12:00,Towson,Georgetown,ESPN+
+11/26/2025,12:00,Loyola Chicago,DePaul,ESPN+
+11/26/2025,12:00,Eastern Kentucky,Morehead State,ESPN+
+11/26/2025,12:00,Bryant,Boston University,ESPN+
+11/26/2025,12:00,Central Arkansas,Georgia State,ESPN+
+11/26/2025,TBD,Rice,Illinois State,TBD
+11/26/2025,TBD,West Virginia,Ohio State/Belmont,TBD
+11/26/2025,12:30,Puerto Rico Shootout,Rice,TBD
+11/26/2025,13:00,Robert Morris,Eastern Michigan,ESPN+
+11/26/2025,13:00,Delaware,Loyola Maryland,ESPN+
+11/26/2025,13:00,Princeton,Rhode Island,ESPN+
+11/26/2025,13:00,Anderson,IUPUI,ESPN+
+11/26/2025,TBD,Championship - Nassau, Bahamas,FloHoops,TBD
+11/26/2025,14:00,Towson,Georgetown,ESPN+
+11/26/2025,14:00,Houston Christian,New Orleans,ESPN+
+11/26/2025,14:00,Virginia-Wise,Liberty,ESPN+
+11/26/2025,14:30,North Texas,Saint Mary's,TBD
+11/26/2025,14:30,Siena,Cornell,ESPN+
+11/26/2025,15:00,Louisiana Tech,Baylor,ESPN+
+11/26/2025,15:00,Southern Indiana,Valparaiso,ESPN+
+11/26/2025,15:00,Hoopfest Basketball Women's Challenge,Nort Texas,TBD
+11/26/2025,15:00,Puerto Rico Shootout,Wake Forest,TBD
+11/26/2025,TBD,Third-Place Game - Nassau, Bahamas,FloHoops,TBD
+11/26/2025,17:00,UTSA,Grand Canyon,TBD
+11/26/2025,17:00,Michigan,Detroit Mercy,TBD
+11/26/2025,17:00,Wake Forest,Morgan State,TBD
+11/26/2025,17:00,Life Pacific,Cal State Northridge,ESPN+
+11/26/2025,17:00,Michigan,Detroit Mercy,ESPN+
+11/26/2025,17:30,Maryland,Kentucky,TBD
+11/26/2025,17:30,Puerto Rico Shootout,Maryland,TBD
+11/26/2025,18:00,St. Bonaventure,Cleveland State,ESPN+
+11/26/2025,18:00,Hoopfest Basketball Women's Challenge,Grand Canyon,TBD
+11/26/2025,TBD,Championship - Nassau, Bahamas,FloHoops,TBD
+11/26/2025,19:30,California,Auburn,TBD
+11/26/2025,19:30,Western Illinois,Iowa,B1G+
+11/26/2025,21:00,Weber State,Utah,ESPN+
+11/26/2025,21:00,Hoopfest Basketball Women's Challenge,Auburn,TBD
+11/27/2025,10:00,Puerto Rico Shootout,Illinois State,TBD
+11/27/2025,11:00,East Carolina,Illinois State,TBD
+11/27/2025,11:00,North Carolina,South Dakota State,TBD
+11/27/2025,11:00,Women's Cancun Challenge,North Carolina,TBD
+11/27/2025,12:00,Air Force,Florida Atlantic,TBD
+11/27/2025,12:00,Oregon,Old Dominion,TBD
+11/27/2025,12:00,Air Force,Florida Atlantic,ESPN+
+11/27/2025,12:00,Hoopfest Basketball Women's Challenge,Old Dominion,TBD
+11/27/2025,TBD,Rice,Morgan State,TBD
+11/27/2025,12:30,Puerto Rico Shootout,Wake Forest,TBD
+11/27/2025,13:30,Tulane,Elon,TBD
+11/27/2025,13:30,Kansas State,Columbia,TBD
+11/27/2025,13:30,Women's Cancun Challenge,Columbia,TBD
+11/27/2025,14:30,Wake Forest,FloSports,TBD
+11/27/2025,15:00,Texas Tech,North Texas,TBD
+11/27/2025,15:00,Hoopfest Basketball Women's Challenge,Texas Tech,TBD
+11/27/2025,15:00,Puerto Rico Shootout,Hofstra,TBD
+11/27/2025,16:00,NC State,Green Bay,TBD
+11/27/2025,16:00,Maryland,Hofstra,TBD
+11/27/2025,16:00,Women's Cancun Challenge,NC State,TBD
+11/27/2025,17:30,Puerto Rico Shootout,Morgan State,TBD
+11/27/2025,18:30,Women's Cancun Challenge,Southern Miss,TBD
+11/27/2025,21:00,Women's Cancun Challenge,Richmond,TBD
+11/27/2025,22:30,Resorts World Classic,Troy,TBD
+11/28/2025,10:00,Puerto Rico Shootout,Illinois State,TBD
+11/28/2025,11:00,Charlotte,Oklahoma State,TBD
+11/28/2025,11:00,Tulsa,Kent State,TBD
+11/28/2025,11:00,Boston College,James Madison,TBD
+11/28/2025,11:00,Kansas State,North Carolina,TBD
+11/28/2025,11:00,Oklahoma State,Charlotte,TBD
+11/28/2025,11:00,North Carolina,Kansas State,TBD
+11/28/2025,11:00,Iowa State,Marquette,TBD
+11/28/2025,11:00,Abilene Christian,Northwestern,TBD
+11/28/2025,11:00,Nassau Championship,Kent State,TBD
+11/28/2025,11:00,Coconut Hoops,Iowa State,TBD
+11/28/2025,11:00,Women's Cancun Challenge,Kansas State,TBD
+11/28/2025,11:00,Cayman Islands Classic,Oklahoma State,TBD
+11/28/2025,12:00,Wake Forest,Illinois State,TBD
+11/28/2025,12:00,Saint Francis (PA),Iona,ESPN+
+11/28/2025,TBD,Tulane,Boise State/North Dakota,TBD
+11/28/2025,TBD,Pitt,Ball State,TBD
+11/28/2025,TBD,Cincinnati,Alabama A&M,TBD
+11/28/2025,TBD,Elon,Elon,TBD
+11/28/2025,12:30,Little Rock,Arizona State,ESPN+
+11/28/2025,12:30,Puerto Rico Shootout,East Carolina,TBD
+11/28/2025,13:00,Wright State,Florida Atlantic,TBD
+11/28/2025,13:00,Valparaiso,Cleveland State,ESPN+
+11/28/2025,13:00,Wright State,Florida Atlantic,ESPN+
+11/28/2025,13:30,East Carolina,Hofstra,TBD
+11/28/2025,13:30,Miami,George Washington,TBD
+11/28/2025,13:30,Houston,Arkansas State,TBD
+11/28/2025,13:30,Indiana,Gonzaga,TBD
+11/28/2025,13:30,Bethune-Cookman,North Florida,ESPN+
+11/28/2025,13:30,Seattle U,Presbyterian,ESPN+
+11/28/2025,13:30,Nassau Championship,Houston,TBD
+11/28/2025,13:30,Coconut Hoops,Indiana,TBD
+11/28/2025,13:30,Women's Cancun Challenge,South Dakota State,TBD
+11/28/2025,13:30,Cayman Islands Classic,George Washington,TBD
+11/28/2025,14:00,Mercer,Charleston Southern,ESPN+
+11/28/2025,14:00,Brown,Bucknell,ESPN+
+11/28/2025,15:00,UC Santa Barbara,California Baptist,ESPN+
+11/28/2025,15:00,Puerto Rico Shootout,Rice,TBD
+11/28/2025,16:00,Florida State,Missouri State,TBD
+11/28/2025,16:00,NC State,Southern Miss,TBD
+11/28/2025,16:00,Clemson,Western Carolina,TBD
+11/28/2025,16:00,Wisconsin,Ole Miss,TBD
+11/28/2025,16:00,Nassau Championship,Clemson,TBD
+11/28/2025,16:00,Coconut Hoops,Florida State,TBD
+11/28/2025,16:00,Women's Cancun Challenge,NC State,TBD
+11/28/2025,17:00,Wichita State,UC Irvine,TBD
+11/28/2025,17:00,Georgia Tech,St. John's,TBD
+11/28/2025,17:00,Wichita State,UC Irvine,ESPN+
+11/28/2025,17:00,Cayman Islands Classic,Georgia Tech,TBD
+11/28/2025,17:30,Puerto Rico Shootout,Kentucky,TBD
+11/28/2025,18:00,Jackson State,Coastal Carolina,ESPN+
+11/28/2025,18:30,Temple,Michigan State,TBD
+11/28/2025,18:30,Milwaukee,Pacific,ESPN+
+11/28/2025,18:30,Nassau Championship,Michigan State,TBD
+11/28/2025,18:30,Coconut Hoops,Oklahoma,TBD
+11/28/2025,18:30,Women's Cancun Challenge,Cancun, Mexico,TBD
+11/28/2025,19:00,Eastern Illinois,Louisville,TBD
+11/28/2025,19:00,Northeastern,Rutgers,B1G+
+11/28/2025,19:00,Eastern Illinois,Louisville,ACCNX
+11/28/2025,19:00,South Carolina Upstate,Kennesaw State,ESPN+
+11/28/2025,19:30,Memphis,Florida,TBD
+11/28/2025,19:30,Kansas,Georgia,TBD
+11/28/2025,19:30,Cayman Islands Classic,Memphis,TBD
+11/28/2025,20:00,Stanford,FGCU,TBD
+11/28/2025,20:00,San Jose State,Portland State,ESPN+
+11/28/2025,20:00,Resorts World Classic,Stanford,TBD
+11/28/2025,21:00,Women's Cancun Challenge,Green Bay,TBD
+11/28/2025,22:00,UC San Diego,Washington,B1G+
+11/28/2025,22:30,Resorts World Classic,Texas Southern,TBD
+11/29/2025,11:00,Murray State,Boston College,TBD
+11/29/2025,11:00,Miami,Oklahoma State,TBD
+11/29/2025,11:00,Oklahoma State,Miami,TBD
+11/29/2025,11:00,Kansas State,South Dakota State,TBD
+11/29/2025,11:00,Women's Cancun Challenge,South Dakota State,TBD
+11/29/2025,11:00,Cayman Islands Classic,Miami,TBD
+11/29/2025,12:00,Army,Eastern Kentucky,ESPN+
+11/29/2025,TBD,East Tennessee State,Louisville,TBD
+11/29/2025,TBD,Pitt,Chicago State,TBD
+11/29/2025,TBD,Cincinnati,New Mexico,TBD
+11/29/2025,TBD,Eastern Illinois,Bellarmine,ESPN+
+11/29/2025,13:00,Manhattan,Navy,ESPN+
+11/29/2025,13:30,Charlotte,George Washington,TBD
+11/29/2025,13:30,Wisconsin,James Madison,TBD
+11/29/2025,13:30,North Carolina,Columbia,TBD
+11/29/2025,13:30,Northwestern,Missouri,TBD
+11/29/2025,13:30,Women's Cancun Challenge,North Carolina,TBD
+11/29/2025,13:30,Cayman Islands Classic,Charlotte,TBD
+11/29/2025,14:00,William & Mary,Tennessee State,ESPN+
+11/29/2025,14:00,Drexel,St. Bonaventure,ESPN+
+11/29/2025,14:00,UNC Asheville,Furman,ESPN+
+11/29/2025,14:00,Eureka,Indiana State,ESPN+
+11/29/2025,15:00,Westminster,Utah Tech,ESPN+
+11/29/2025,15:30,Liberty,Duquesne,ESPN+
+11/29/2025,16:00,CSU Bakersfield,Arizona,TBD
+11/29/2025,16:00,Utah,Montana,TBD
+11/29/2025,16:00,Utah,Montana,ESPN+
+11/29/2025,16:00,Radford,Cleveland State,ESPN+
+11/29/2025,17:00,Wichita State,Idaho,TBD
+11/29/2025,17:00,Georgia Tech,Florida,TBD
+11/29/2025,17:00,Cayman Islands Classic,Florida,TBD
+11/29/2025,18:00,Nevada,Portland,ESPN+
+11/29/2025,18:30,Jacksonville State,Pacific,ESPN+
+11/29/2025,19:00,Cal Lutheran,UC Riverside,ESPN+
+11/29/2025,19:30,Memphis,St. John's,TBD
+11/29/2025,19:30,Kansas,Dayton,TBD
+11/29/2025,19:30,Colgate,UC Irvine,ESPN+
+11/29/2025,19:30,Cayman Islands Classic,St. John's,TBD
+11/29/2025,20:00,Stanford,Colorado State,TBD
+11/29/2025,20:00,Loyola Marymount,Cal State Fullerton,ESPN+
+11/29/2025,20:00,Resorts World Classic,Colorado State,TBD
+11/29/2025,20:30,SEMO,Arizona State,ESPN+
+11/29/2025,21:00,Cal State Bakersfield,Arizona,ESPN+
+11/29/2025,22:30,Resorts World Classic,Florida Gulf Coast,TBD
+11/30/2025,TBD,Third-Place Game - Nassau, Bahamas,FloHoops,TBD
+11/30/2025,TBD,FloHoops,12:00 pm,TBD
+11/30/2025,TBD,Tulsa,Tulsa,TBD
+11/30/2025,TBD,Iowa State,Iowa State,TBD
+11/30/2025,13:00,DePaul,Princeton,TBD
+11/30/2025,13:00,Purdue,Central Michigan,TBD
+11/30/2025,13:00,Yale,Penn State,B1G+
+11/30/2025,13:00,Niagara,Ohio State,B1G+
+11/30/2025,13:00,Fairfield,Iowa,BTN
+11/30/2025,13:00,Mercyhurst,Canisius,ESPN+
+11/30/2025,13:00,Purdue,Central Michigan,ESPN+
+11/30/2025,13:00,Duquesne,Navy,ESPN+
+11/30/2025,13:00,Bryant,Providence,ESPN+
+11/30/2025,13:00,Lafayette,NJIT,ESPN+
+11/30/2025,13:00,Maine Fort Kent,UMass Lowell,ESPN+
+11/30/2025,13:00,Ohio,Davidson,ESPN+
+11/30/2025,13:00,Eastern Michigan,Detroit Mercy,ESPN+
+11/30/2025,13:00,Southern Indiana,Northern Kentucky,ESPN+
+11/30/2025,13:00,DePaul,Princeton,ESPN+
+11/30/2025,13:00,Gardner-Webb,Coastal Carolina,ESPN+
+11/30/2025,13:00,Queens,UNC Wilmington,TBD
+11/30/2025,13:30,Harvard,Arkansas,SECN+
+11/30/2025,TBD,Championship - Nassau, Bahamas,FloHoops,TBD
+11/30/2025,TBD,FloHoops,2:00 pm,TBD
+11/30/2025,14:00,Montana State,Colorado,TBD
+11/30/2025,14:00,Howard,Syracuse,ACCNX
+11/30/2025,14:00,UMES,Virginia,ACCNX
+11/30/2025,14:00,Saint Peter's,Rutgers,B1G+
+11/30/2025,14:00,Bryant,Providence,ESPN+
+11/30/2025,14:00,Bellarmine,Louisville,ACCNX
+11/30/2025,14:00,Maryland-Eastern Shore,Virginia,ACCNX
+11/30/2025,14:00,Purdue Fort Wayne,Bowling Green,ESPN+
+11/30/2025,14:00,Marshall,Morehead State,ESPN+
+11/30/2025,14:00,New Orleans,South Florida,ESPN+
+11/30/2025,14:00,Pennsylvania,Texas,SECN+
+11/30/2025,14:00,New Hampshire,Holy Cross,ESPN+
+11/30/2025,14:00,Brown,Lehigh,ESPN+
+11/30/2025,14:00,Long Island University,Fordham,ESPN+
+11/30/2025,14:00,Towson,Delaware,ESPN+
+11/30/2025,14:00,Georgia Southern,Wofford,ESPN+
+11/30/2025,14:30,UConn,Xavier,FS1
+11/30/2025,15:00,Le Moyne,Illinois,B1G+
+11/30/2025,15:00,Grambling State,Baylor,ESPN+
+11/30/2025,15:00,Grambling,Baylor,ESPN+
+11/30/2025,15:00,Montana State,Colorado,ESPN+
+11/30/2025,15:00,UL Monroe,Mississippi State,SECN+
+11/30/2025,15:00,Oregon,Auburn,SECN+
+11/30/2025,15:00,Oakland,UT Martin,ESPN+
+11/30/2025,15:00,Western Kentucky,Southern Illinois,ESPN+
+11/30/2025,15:00,Florida A&M,South Alabama,ESPN+
+11/30/2025,15:30,Liberty,Manhattan,ESPN+
+11/30/2025,16:00,Temple,Clemson/Western Carolina,TBD
+11/30/2025,16:00,Northern Illinois,Evansville,ESPN+
+11/30/2025,TBD,Third-Place Game - Nassau, Bahamas,FloHoops,TBD
+11/30/2025,TBD,FloHoops,4:30 pm,TBD
+11/30/2025,17:00,CSU Monterey Bay,San Francisco,ESPN+
+11/30/2025,18:00,Eastern Washington,Portland,ESPN+
+11/30/2025,TBD,Championship - Nassau, Bahamas,FloHoops,TBD
+11/30/2025,TBD,FloHoops,Monday, December 1,TBD
+11/30/2025,18:00,Central Connecticut State,Pitt,TBD
+11/30/2025,18:30,NJCU,Stony Brook,TBD
+11/30/2025,19:00,Villanova,West Virginia,ESPN+
+11/30/2025,20:00,Samford,Minnesota,B1G+
+11/30/2025,21:00,San Jose State,Washington,B1G+
+12/2/2025,17:00,UConn,South Florida,ESPN2
+12/2/2025,19:00,Seton Hall,Princeton,TBD
+12/2/2025,19:00,Bellarmine,Illinois,B1G+
+12/2/2025,21:00,College of Charleston,Colorado,TBD
+12/3/2025,11:30,William & Mary,Wake Forest,ACCNX
+12/3/2025,11:30,Miami (OH),Cincinnati,ESPN+
+12/3/2025,13:00,Quinnipiac,Boston College,ACCNX
+12/3/2025,16:00,UMass,Northeastern,TBD
+12/3/2025,17:00,Auburn,Syracuse,ACC Network
+12/3/2025,17:00,New Jersey Institute of Technology,Monmouth,TBD
+12/3/2025,18:00,James Madison,East Carolina,TBD
+12/3/2025,18:00,Western Michigan,Indiana,B1G+
+12/3/2025,18:00,American,Drexel,FloHoops
+12/3/2025,18:30,Sam Houston,Rice,TBD
+12/3/2025,19:00,Wichita State,Texas Tech,TBD
+12/3/2025,19:00,Oklahoma State,North Texas,TBD
+12/3/2025,19:00,Central Michigan,Michigan,B1G+
+12/3/2025,19:00,Evansville,Purdue,B1G+
+12/3/2025,19:00,Mount St. Mary's,Maryland,B1G+
+12/3/2025,19:00,Wichita State,Texas Tech,ESPN+
+12/3/2025,19:00,Mercer,Campbell,TBD
+12/3/2025,19:30,UNLV,UTSA,TBD
+12/3/2025,19:30,Florida Atlantic,Western Kentucky,TBD
+12/3/2025,20:00,Kansas,Northwestern,TBD
+12/3/2025,20:00,Southern University,Arizona,TBD
+12/3/2025,20:00,Bradley,Nebraska,B1G+
+12/3/2025,20:00,Kansas,Northwestern,B1G+
+12/3/2025,20:00,Southeastern Louisiana,Baylor,ESPN+
+12/3/2025,21:00,Oregon State,Oregon,B1G+
+12/4/2025,11:00,Providence,Xavier,ESPN+
+12/4/2025,11:00,Loyola,Towson,TBD
+12/4/2025,13:00,Butler,Seton Hall,ESPN+
+12/4/2025,19:00,Villanova,Georgetown,TBD
+12/4/2025,19:00,Creighton,St. John's,ESPN+
+12/4/2025,19:30,Mississippi Valley State,Tulsa,TBD
+12/4/2025,19:30,Missouri State,Tulane,TBD
+12/4/2025,20:30,Utah,Colorado State,TBD
+12/4/2025,21:00,Marquette,DePaul,TBD
+12/5/2025,11:00,Houston Christian,South Florida,ESPN+
+12/5/2025,19:00,Maryland Eastern Shore,Wichita State,TBD
+12/5/2025,19:00,Mercyhurst,West Virginia,ESPN+
+12/5/2025,20:30,McNeese State,Arizona State,ESPN+
+12/6/2025,12:00,Indiana,Illinois,BTN
+12/6/2025,13:00,Nebraska,Penn State,B1G+
+12/6/2025,14:00,Fordham,Hofstra,TBD
+12/6/2025,15:00,Texas Southern,North Texas,TBD
+12/6/2025,15:00,UNLV,Rice,TBD
+12/6/2025,15:00,Mississippi Valley State,Oklahoma State,ESPN+
+12/6/2025,16:30,San Francisco,Arizona State,ESPN+
+12/6/2025,18:00,Iowa,Rutgers,FS1
+12/7/2025,12:00,New Hampshire,Louisville,TBD
+12/7/2025,12:00,NC Central,South Carolina,SEC Network
+12/7/2025,12:00,Boston University,North Carolina,ACC Network
+12/7/2025,12:00,Virginia,Boston College,ACCNX
+12/7/2025,12:00,Purdue,Michigan,BTN
+12/7/2025,TBD,Memphis,Middle Tennessee,TBD
+12/7/2025,TBD,Charlotte,Mississippi State,TBD
+12/7/2025,TBD,Charlotte,Mississippi State,SECN+
+12/7/2025,TBD,Central Michigan,Kentucky,SECN+
+12/7/2025,TBD,Louisiana Monroe,Alabama,SECN+
+12/7/2025,13:00,DePaul,UConn,FS1
+12/7/2025,14:00,Tulsa,Creighton,TBD
+12/7/2025,14:00,Elon,East Carolina,TBD
+12/7/2025,14:00,App State,Clemson,TBD
+12/7/2025,14:00,Notre Dame,Florida State,TBD
+12/7/2025,14:00,Georgia State,Miami,TBD
+12/7/2025,14:00,South Alabama,Florida,SECN+
+12/7/2025,14:00,Duke,Virginia Tech,ACC Network
+12/7/2025,14:00,Georgetown,Wake Forest,ACCNX
+12/7/2025,14:00,Seton Hall,NC State,ACCNX
+12/7/2025,14:00,Ohio State,Northwestern,BTN
+12/7/2025,14:00,Northern Illinois,Iowa State,ESPN+
+12/7/2025,14:00,Xavier,Cincinnati,ESPN+
+12/7/2025,14:00,Providence,St. John's,ESPN+
+12/7/2025,14:00,Tulsa,Creighton,ESPN+
+12/7/2025,15:00,UTSA,Baylor,TBD
+12/7/2025,15:00,SIU Edwardsville,Missouri,SECN+
+12/7/2025,15:00,Prairie View,Texas,SECN+
+12/7/2025,15:00,Maryland Eastern Shore,Oklahoma,SECN+
+12/7/2025,15:00,Jackson State,Arkansas,SECN+
+12/7/2025,15:00,Kansas State,Ole Miss,SECN+
+12/7/2025,15:00,Wyoming,Colorado,TBD
+12/7/2025,15:00,Kansas State,Ole Miss,TBD
+12/7/2025,15:00,Kansas,Missouri State,TBD
+12/7/2025,15:00,Oregon,UCLA,FS1
+12/7/2025,15:00,UTSA,Baylor,ESPN+
+12/7/2025,15:00,Southern,Houston,ESPN+
+12/7/2025,16:00,New Mexico,Arizona,TBD
+12/7/2025,16:00,Maryland,Minnesota,BTN
+12/7/2025,16:00,Butler,Marquette,ESPN+
+12/7/2025,17:00,San Jose State,California,TBD
+12/7/2025,18:00,Michigan State,Wisconsin,BTN
+12/8/2025,19:00,Norfolk State,Georgia Tech,TBD
+12/8/2025,19:00,Texas Southern,West Virginia,ESPN+
+12/9/2025,12:00,Alabama State,Baylor,ESPN+
+12/9/2025,18:00,Bryant,Boston College,ACCNX
+12/9/2025,18:00,Columbia,Seton Hall,ESPN+
+12/9/2025,18:00,Marywood,Hofstra,TBD
+12/9/2025,18:30,Long Island,Xavier,ESPN+
+12/9/2025,19:00,Arizona State,Penn State,TBD
+12/9/2025,20:00,Omaha,Nebraska,B1G+
+12/10/2025,12:00,San Diego State,Kansas State,TBD
+12/10/2025,12:00,San Diego,Wisconsin,B1G+
+12/10/2025,TBD,St. John's,Stony Brook,TBD
+12/10/2025,13:00,Eastern Kentucky,Arizona,TBD
+12/10/2025,18:00,Presbyterian,Virginia Tech,ACCNX
+12/10/2025,19:00,Illinois,Missouri,SEC Network
+12/10/2025,19:00,Howard,Virginia,ACCNX
+12/10/2025,19:00,Colgate,Syracuse,ACCNX
+12/10/2025,19:00,Delaware State,Maryland,B1G+
+12/10/2025,19:00,Arizona State,Penn State,BTN
+12/10/2025,19:00,Iowa,Iowa State,ESPN
+12/10/2025,19:00,Rhode Island,Providence,ESPN+
+12/10/2025,19:00,St. John's,Stony Brook,TBD
+12/10/2025,19:30,Rutgers,Princeton,TBD
+12/10/2025,20:00,Alabama A&M,Minnesota,B1G+
+12/10/2025,21:00,Ball State,Louisville,ACC Network
+12/10/2025,21:00,Boise State,Utah,ESPN+
+12/10/2025,22:00,Idaho,California,TBD
+12/11/2025,11:00,Lipscomb,Purdue,B1G+
+12/11/2025,11:30,Carolina University,Campbell,TBD
+12/11/2025,18:30,Northern Kentucky,Ohio State,B1G+
+12/11/2025,19:00,Morehead State,Notre Dame,TBD
+12/11/2025,19:00,Georgia Tech,West Virginia,TBD
+12/11/2025,19:00,Little Rock,Oklahoma,SECN+
+12/11/2025,19:00,Georgia Tech,West Virginia,ESPN+
+12/11/2025,19:00,UMass Lowell,DePaul,ESPN+
+12/11/2025,19:00,Indiana State,Butler,ESPN+
+12/12/2025,11:00,FGCU,Florida Atlantic,TBD
+12/12/2025,12:15,UT Arlington,Rice,TBD
+12/12/2025,19:00,Texas Tech,Washington State,TBD
+12/13/2025,12:00,Akron,Michigan,B1G+
+12/13/2025,12:00,Delaware State,Georgetown,ESPN+
+12/13/2025,13:00,Wofford,Ole Miss,SECN+
+12/13/2025,13:00,Auburn,Seton Hall,ESPN+
+12/13/2025,13:00,Coppin State,William & Mary,FloHoops
+12/13/2025,14:00,Prairie View A&M,UTSA,TBD
+12/13/2025,14:00,UNLV,Cincinnati,ESPN+
+12/13/2025,14:00,Hofstra,St. John's,ESPN+
+12/13/2025,14:00,Stonehill,Providence,ESPN+
+12/13/2025,15:00,Lindenwood,Iowa,B1G+
+12/13/2025,15:00,Green Bay,Washington,B1G+
+12/13/2025,15:30,Loyola Marymount,Wichita State,TBD
+12/13/2025,16:00,Oklahoma,Oklahoma State,ESPNU
+12/13/2025,21:00,Houston,New Mexico,TBD
+12/14/2025,12:00,Dayton,Purdue,B1G+
+12/14/2025,TBD,Winthrop,Tennessee,SECN+
+12/14/2025,TBD,Arizona State,Oregon State,TBD
+12/14/2025,TBD,Illinois State,Nebraska,B1G+
+12/14/2025,13:00,Eastern Michigan,Indiana,B1G+
+12/14/2025,13:00,Toledo,Ohio State,B1G+
+12/14/2025,13:00,Saint Francis,Xavier,ESPN+
+12/14/2025,13:00,Duquesne,Stony Brook,TBD
+12/14/2025,13:00,Longwood,Elon,TBD
+12/14/2025,14:00,Kansas State,Creighton,TBD
+12/14/2025,14:00,North Texas,Illinois,TBD
+12/14/2025,14:00,College of Charleston,Florida State,TBD
+12/14/2025,14:00,Pitt,Clemson,TBD
+12/14/2025,14:00,West Georgia,Florida,SECN+
+12/14/2025,14:00,Kansas State,Creighton,FS1
+12/14/2025,14:00,NC State,Miami,ACCNX
+12/14/2025,14:00,Georgia Tech,Wake Forest,ACCNX
+12/14/2025,14:00,Eastern Illinois,Butler,ESPN+
+12/14/2025,15:00,Texas Tech,Abilene Christian,TBD
+12/14/2025,15:00,New Orleans,Tulane,TBD
+12/14/2025,15:00,Southern Miss,Mississippi State,SECN+
+12/14/2025,15:00,SC State,Ole Miss,SECN+
+12/14/2025,15:00,Miami (OH),Colorado,TBD
+12/14/2025,15:00,West Virginia,Texas A&M,SECN+
+12/14/2025,15:00,Montana State,Oregon,B1G+
+12/14/2025,15:00,North Texas,Illinois,B1G+
+12/14/2025,15:00,Denver,Kansas,ESPN+
+12/14/2025,15:00,Le Moyne,Marquette,ESPN+
+12/14/2025,15:30,Penn State,South Carolina,ESPN
+12/14/2025,16:00,UNC Asheville,East Carolina,TBD
+12/14/2025,16:00,Notre Dame,James Madison,TBD
+12/14/2025,16:00,California,Stanford,TBD
+12/14/2025,16:00,Jackson State,Alabama,SEC Network
+12/14/2025,16:00,Louisville,North Carolina,ACC Network
+12/14/2025,16:00,ETSU,Virginia Tech,ACCNX
+12/14/2025,16:00,Northwestern,Utah,ESPN+
+12/14/2025,17:30,Michigan State,DePaul,TBD
+12/14/2025,17:30,Michigan State,DePaul,FS1
+12/14/2025,18:00,Wyoming,Minnesota,B1G+
+12/14/2025,18:00,Northern Iowa,Iowa State,ESPN+
+12/14/2025,18:30,Davidson,Charlotte,TBD
+12/15/2025,11:00,North Carolina A&T,Georgia,SEC Network
+12/15/2025,12:00,Texas A&M-Kingsville,UTSA,TBD
+12/15/2025,TBD,Memphis,Murray State,TBD
+12/15/2025,19:00,Norfolk State,Campbell,TBD
+12/15/2025,19:30,Tulsa,Oklahoma State,TBD
+12/15/2025,19:30,South Florida,Vanderbilt,SECN+
+12/15/2025,19:30,Tulsa,Oklahoma State,ESPN+
+12/15/2025,19:30,South Florida,Vanderbilt,ESPN+
+12/15/2025,20:00,Chicago State,Arizona,TBD
+12/16/2025,12:00,Oral Roberts,Wichita State,TBD
+12/16/2025,12:00,Montana,Houston,ESPN+
+12/16/2025,15:30,Chestnut Hill,Drexel,TBD
+12/16/2025,18:30,Howard,Cincinnati,ESPN+
+12/16/2025,19:00,Sam Houston,Alabama,SECN+
+12/16/2025,19:00,Binghamton,Syracuse,ACCNX
+12/16/2025,19:00,Washington State,Seton Hall,ESPN+
+12/16/2025,21:00,Northern Colorado,Colorado,TBD
+12/16/2025,21:00,Arizona State,Gonzaga,TBD
+12/16/2025,22:00,Cal Poly,UCLA,BTN
+12/17/2025,11:00,Wofford,East Carolina,TBD
+12/17/2025,11:00,Winthrop,Charlotte,TBD
+12/17/2025,11:00,Clemson,Charleston Southern,TBD
+12/17/2025,11:00,Georgian Court,Stony Brook,TBD
+12/17/2025,TBD,Alabama State,Mississippi State,SECN+
+12/17/2025,12:30,Jacksonville,Texas Tech,ESPN+
+12/17/2025,14:30,Florida A&M,Florida,SECN+
+12/17/2025,15:00,Rice,Grambling State,TBD
+12/17/2025,17:00,Tulane,Alabama,TBD
+12/17/2025,17:00,Tulane,Alabama,SECN+
+12/17/2025,18:00,Eastern Kentucky,Louisville,ACC Network
+12/17/2025,19:00,St. John's,New Haven,TBD
+12/17/2025,19:00,Mississippi Valley State,Ole Miss,SECN+
+12/17/2025,19:00,Marquette,UConn,Peacock
+12/17/2025,19:30,Creighton,Omaha,TBD
+12/17/2025,19:30,Kansas City,Arkansas,SECN+
+12/17/2025,19:30,Haskell,Kansas,ESPN+
+12/17/2025,20:00,UNC Wilmington,North Carolina,ACC Network
+12/17/2025,21:00,Northwestern State,Texas,SEC Network
+12/17/2025,21:00,UC Riverside,Utah,ESPN+
+12/18/2025,11:00,Radford,Hampton,TBD
+12/18/2025,11:30,Yale University,Monmouth,TBD
+12/18/2025,12:00,Arkansas-Pine Bluff,Tulsa,TBD
+12/18/2025,12:00,Loyola Chicago,Northwestern,B1G+
+12/18/2025,TBD,Alcorn State,Auburn,SECN+
+12/18/2025,14:00,Portland,Oregon,B1G+
+12/18/2025,18:00,Saint Francis,Pitt,TBD
+12/18/2025,18:00,Virginia Tech,Florida State,TBD
+12/18/2025,18:00,Miami,Wake Forest,ACCNX
+12/18/2025,18:30,UAlbany,Vanderbilt,SECN+
+12/18/2025,18:30,Norfolk State,Ohio State,B1G+
+12/18/2025,19:00,Oral Roberts,North Texas,TBD
+12/18/2025,19:00,South Carolina,South Florida,ESPN2
+12/18/2025,19:00,South Dakota State,Duke,ACC Network
+12/18/2025,19:00,Georgia Tech,NC State,ACCNX
+12/18/2025,20:00,Bellarmine,Arizona,TBD
+12/18/2025,20:00,Southern,Baylor,ESPN+
+12/19/2025,10:30,Mercyhurst,Syracuse,ACCNX
+12/19/2025,11:00,Central Connecticut State,Maryland,B1G+
+12/19/2025,12:00,Northeastern,Boston College,ACCNX
+12/19/2025,13:00,Florida Atlantic,UMass,TBD
+12/19/2025,18:30,Wright State,Kentucky,SECN+
+12/19/2025,19:00,Coppin State,Temple,TBD
+12/19/2025,19:00,Jackson State,Illinois,B1G+
+12/19/2025,19:00,Seton Hall,Villanova,ESPN+
+12/19/2025,19:00,Xavier,Butler,ESPN+
+12/19/2025,22:00,Washington,Stanford,TBD
+12/20/2025,10:30,Louisville,Tennessee,TBD
+12/20/2025,10:30,Louisville,Tennessee,SECN+
+12/20/2025,12:00,Winthrop,Virginia,ACCNX
+12/20/2025,12:00,Lafayette,Rutgers,B1G+
+12/20/2025,12:00,Lehigh,Towson,TBD
+12/20/2025,TBD,SF Austin,Arkansas,SECN+
+12/20/2025,13:00,Delaware State,Tulane,TBD
+12/20/2025,13:00,UConn,Iowa,FOX
+12/20/2025,13:00,Iowa,UConn,FOX
+12/20/2025,13:00,Truman State,Marquette,ESPN+
+12/20/2025,14:00,Memphis,Southeastern Louisiana,TBD
+12/20/2025,14:00,UTSA,Columbia,TBD
+12/20/2025,14:00,South Carolina State,Florida State,TBD
+12/20/2025,14:00,DePaul,Creighton,ESPN+
+12/20/2025,14:00,Vermont,Drexel,FloHoops
+12/20/2025,14:00,Ferrum College,North Carolina A&T,TBD
+12/20/2025,15:00,Middle Tennessee,Wichita State,TBD
+12/20/2025,15:00,Houston Christian,Rice,TBD
+12/20/2025,15:00,Duke,Belmont,TBD
+12/20/2025,17:00,Long Beach State,UCLA,B1G+
+12/21/2025,11:00,ETSU,Charlotte,TBD
+12/21/2025,12:00,Kennesaw State,Miami,ACC Network
+12/21/2025,12:00,Coppin State,Georgia,SECN+
+12/21/2025,12:00,Radford,Virginia Tech,ACCNX
+12/21/2025,12:00,California Baptist,Nebraska,B1G+
+12/21/2025,12:00,Oakland,Michigan,B1G+
+12/21/2025,12:00,Jackson State,Purdue,B1G+
+12/21/2025,12:00,IU Indy,Wisconsin,B1G+
+12/21/2025,TBD,Mercer/Detroit Mercy,Tulane,TBD
+12/21/2025,TBD,Old Dominion,Ole Miss,SECN+
+12/21/2025,TBD,Troy,Alabama,SECN+
+12/21/2025,13:00,Campbell,East Carolina,TBD
+12/21/2025,13:00,Pitt,Duquesne,TBD
+12/21/2025,13:00,NC State,Davidson,TBD
+12/21/2025,13:00,Prairie View,Texas A&M,SECN+
+12/21/2025,13:00,North Alabama,Missouri,SECN+
+12/21/2025,13:00,Western Carolina,Indiana,B1G+
+12/21/2025,13:00,Northwestern,George Washington,ESPN+
+12/21/2025,13:00,Georgetown,Providence,ESPN+
+12/21/2025,13:00,Navy,South Florida,ESPN+
+12/21/2025,13:00,Kansas,Iowa State,ESPN2
+12/21/2025,13:00,Norfolk State,Elon,TBD
+12/21/2025,14:00,North Florida,Clemson,TBD
+12/21/2025,14:00,Charleston Southern,North Carolina,ACC Network
+12/21/2025,14:00,Oklahoma State,Cincinnati,ESPN+
+12/21/2025,14:00,Houston,West Virginia,ESPN+
+12/21/2025,14:30,Richmond,Penn State,TBD
+12/21/2025,14:45,Tulsa,Florida,TBD
+12/21/2025,14:45,Tulsa,Florida,SECN+
+12/21/2025,15:00,Santa Clara,North Texas,TBD
+12/21/2025,15:00,Minnesota,Drake,TBD
+12/21/2025,15:00,Michigan State,Indiana State,TBD
+12/21/2025,15:00,Texas Tech,Baylor,ESPN+
+12/21/2025,16:00,Washington,Pacific,ESPN+
+12/21/2025,17:00,Bellarmine,Notre Dame,TBD
+12/21/2025,18:00,Bay Area Women's Classic,Oregon,TBD
+12/21/2025,19:00,Colorado,Arizona State,ESPN+
+12/21/2025,20:30,Bay Area Women's Classic,California,ESPN2
+12/22/2025,11:30,Temple,Princeton,TBD
+12/22/2025,12:00,St. John's,Villanova,ESPN+
+12/22/2025,TBD,So Indiana,Tennessee,SECN+
+12/22/2025,13:00,NC Central,Oklahoma,SECN+
+12/22/2025,13:00,Gardner-Webb,Wake Forest,ACCNX
+12/22/2025,14:00,Utah,Arizona,ESPN+
+12/22/2025,16:00,Seton Hall,Creighton,ESPN+
+12/22/2025,18:30,Western Michigan,Ohio State,B1G+
+12/28/2025,12:00,Wofford,Georgia Tech,ACC Network
+12/28/2025,12:00,Providence,South Carolina,SEC Network
+12/28/2025,12:00,Illinois,Purdue,BTN
+12/28/2025,TBD,Stonehill,Vanderbilt,SECN+
+12/28/2025,TBD,Samford,Mississippi State,SECN+
+12/28/2025,13:00,Xavier,Seton Hall,ESPN+
+12/28/2025,14:00,Stetson,Miami,ACC Network
+12/28/2025,14:00,Furman,Florida,SECN+
+12/28/2025,14:00,Hofstra,Kentucky,SECN+
+12/28/2025,14:00,Southeastern Louisiana,Texas,SEC Network
+12/28/2025,14:00,Rutgers,Michigan State,B1G+
+12/28/2025,14:00,UCLA,Ohio State,BTN
+12/28/2025,15:00,Rust College,Memphis,TBD
+12/28/2025,15:00,Clemson,Chicago State,TBD
+12/28/2025,15:00,Kansas City,Missouri,SECN+
+12/28/2025,15:00,Alcorn State,Ole Miss,SECN+
+12/28/2025,15:00,Arkansas State,Arkansas,SECN+
+12/28/2025,16:00,Cornell,Stanford,TBD
+12/28/2025,16:00,UConn,Butler,TNT
+12/28/2025,16:00,Duke,Syracuse,ACC Network
+12/28/2025,16:00,Penn State,Iowa,BTN
+12/28/2025,17:00,Cal Poly,California,TBD
+12/28/2025,18:00,Creighton,Georgetown,TBD
+12/29/2025,TBD,Charleston So,Georgia,SECN+
+12/29/2025,TBD,Jackson State,Auburn,SECN+
+12/29/2025,TBD,Northwestern,Washington,B1G+
+12/29/2025,16:00,Wisconsin,Maryland,B1G+
+12/29/2025,17:00,Georgian Court University,Monmouth,TBD
+12/29/2025,18:00,Pittsburgh,Notre Dame,ACC Network
+12/29/2025,18:00,Minnesota,Indiana,B1G+
+12/29/2025,19:00,Villanova,DePaul,ESPN+
+12/29/2025,19:00,Columbia International,UNC Wilmington,TBD
+12/29/2025,19:30,St. John's,Marquette,ESPN+
+12/29/2025,20:00,North Carolina,Boston College,ACC Network
+12/29/2025,21:00,Michigan,Oregon,FS1
+12/30/2025,14:00,Tulane,UTSA,ESPN+
+12/30/2025,15:00,Morgan State,Towson,TBD
+12/30/2025,19:00,North Texas,Florida Atlantic,ESPN+
+12/30/2025,19:00,Rice,South Florida,ESPN+
+12/30/2025,19:00,North Carolina Wesleyan,Elon,TBD
+12/30/2025,19:30,Wichita State,Tulsa,ESPN+
+12/31/2025,12:00,Ohio State,Purdue,BTN
+12/31/2025,12:00,Newberry College,North Carolina A&T,TBD
+12/31/2025,TBD,Arizona State,Utah,ESPN+
+12/31/2025,13:00,Georgetown,Seton Hall,ESPN+
+12/31/2025,14:00,UCLA,Penn State,Peacock
+12/31/2025,14:00,Iowa State,Houston,ESPN+
+12/31/2025,14:00,Cincinnati,Kansas State,ESPN+
+12/31/2025,15:00,UConn,Providence,Peacock
+12/31/2025,15:00,Baylor,Oklahoma State,ESPN+
+12/31/2025,15:00,Memphis,Charlotte,ESPN+
+12/31/2025,21:00,Arizona,Colorado,TBD

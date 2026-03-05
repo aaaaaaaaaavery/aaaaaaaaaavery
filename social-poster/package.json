@@ -1,0 +1,28 @@
+{
+  "name": "thporth-social-poster",
+  "version": "1.0.0",
+  "description": "Automated social media posting for featured games",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "scrape-logos": "node logo-scraper-improved.js",
+    "preview": "node preview.js",
+    "preview:all": "node preview.js --all",
+    "preview:mock": "node preview.js --mock",
+    "add-text": "node add-text-to-image.js",
+    "add-scoreboard": "node add-scoreboard-text.js",
+    "test": "node -e \"require('./index.js').createDailyPost('neon').then(r => console.log(r)).catch(e => console.error(e))\""
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "canvas": "^2.11.2",
+    "twitter-api-v2": "^1.15.0",
+    "express": "^4.18.2",
+    "luxon": "^3.4.4",
+    "puppeteer": "^21.6.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

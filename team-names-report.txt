@@ -1,0 +1,244 @@
+========================================
+TEAM NAMES REPORT - ESPN API
+Generated: 2026-01-16T16:01:40.107Z
+========================================
+
+
+==================================================
+PREMIER LEAGUE
+==================================================
+Total Teams: 20
+
+  1. AFC Bournemouth
+  2. Arsenal
+  3. Aston Villa
+  4. Brentford
+  5. Brighton & Hove Albion
+  6. Burnley
+  7. Chelsea
+  8. Crystal Palace
+  9. Everton
+ 10. Fulham
+ 11. Leeds United
+ 12. Liverpool
+ 13. Manchester City
+ 14. Manchester United
+ 15. Newcastle United
+ 16. Nottingham Forest
+ 17. Sunderland
+ 18. Tottenham Hotspur
+ 19. West Ham United
+ 20. Wolverhampton Wanderers
+
+==================================================
+SERIE A
+==================================================
+Total Teams: 20
+
+  1. AC Milan
+  2. AS Roma
+  3. Atalanta
+  4. Bologna
+  5. Cagliari
+  6. Como
+  7. Cremonese
+  8. Fiorentina
+  9. Genoa
+ 10. Hellas Verona
+ 11. Internazionale
+ 12. Juventus
+ 13. Lazio
+ 14. Lecce
+ 15. Napoli
+ 16. Parma
+ 17. Pisa
+ 18. Sassuolo
+ 19. Torino
+ 20. Udinese
+
+==================================================
+BUNDESLIGA
+==================================================
+Total Teams: 18
+
+  1. 1. FC Heidenheim 1846
+  2. 1. FC Union Berlin
+  3. Bayer Leverkusen
+  4. Bayern Munich
+  5. Borussia Dortmund
+  6. Borussia Mönchengladbach
+  7. Eintracht Frankfurt
+  8. FC Augsburg
+  9. FC Cologne
+ 10. Hamburg SV
+ 11. Mainz
+ 12. RB Leipzig
+ 13. SC Freiburg
+ 14. St. Pauli
+ 15. TSG Hoffenheim
+ 16. VfB Stuttgart
+ 17. VfL Wolfsburg
+ 18. Werder Bremen
+
+==================================================
+LIGUE 1
+==================================================
+Total Teams: 18
+
+  1. AJ Auxerre
+  2. AS Monaco
+  3. Angers
+  4. Brest
+  5. Le Havre AC
+  6. Lens
+  7. Lille
+  8. Lorient
+  9. Lyon
+ 10. Marseille
+ 11. Metz
+ 12. Nantes
+ 13. Nice
+ 14. Paris FC
+ 15. Paris Saint-Germain
+ 16. Stade Rennais
+ 17. Strasbourg
+ 18. Toulouse
+
+==================================================
+MLS
+==================================================
+Total Teams: 30
+
+  1. Atlanta United FC
+  2. Austin FC
+  3. CF Montréal
+  4. Charlotte FC
+  5. Chicago Fire FC
+  6. Colorado Rapids
+  7. Columbus Crew
+  8. D.C. United
+  9. FC Cincinnati
+ 10. FC Dallas
+ 11. Houston Dynamo FC
+ 12. Inter Miami CF
+ 13. LA Galaxy
+ 14. LAFC
+ 15. Minnesota United FC
+ 16. Nashville SC
+ 17. New England Revolution
+ 18. New York City FC
+ 19. New York Red Bulls
+ 20. Orlando City SC
+ 21. Philadelphia Union
+ 22. Portland Timbers
+ 23. Real Salt Lake
+ 24. San Diego FC
+ 25. San Jose Earthquakes
+ 26. Seattle Sounders FC
+ 27. Sporting Kansas City
+ 28. St. Louis CITY SC
+ 29. Toronto FC
+ 30. Vancouver Whitecaps
+
+==================================================
+LIGA MX
+==================================================
+Total Teams: 18
+
+  1. América
+  2. Atlas
+  3. Atlético de San Luis
+  4. Cruz Azul
+  5. FC Juarez
+  6. Guadalajara
+  7. León
+  8. Mazatlán FC
+  9. Monterrey
+ 10. Necaxa
+ 11. Pachuca
+ 12. Puebla
+ 13. Pumas UNAM
+ 14. Querétaro
+ 15. Santos
+ 16. Tigres UANL
+ 17. Tijuana
+ 18. Toluca
+
+==================================================
+NWSL
+==================================================
+Total Teams: 16
+
+  1. Angel City FC
+  2. Bay FC
+  3. Boston Legacy FC
+  4. Chicago Stars FC
+  5. Denver Summit FC
+  6. Gotham FC
+  7. Houston Dash
+  8. Kansas City Current
+  9. North Carolina Courage
+ 10. Orlando Pride
+ 11. Portland Thorns FC
+ 12. Racing Louisville FC
+ 13. San Diego Wave FC
+ 14. Seattle Reign FC
+ 15. Utah Royals
+ 16. Washington Spirit
+
+==================================================
+UEFA CHAMPIONS LEAGUE
+==================================================
+Total Teams: 36
+
+  1. AS Monaco
+  2. Ajax Amsterdam
+  3. Arsenal
+  4. Atalanta
+  5. Athletic Club
+  6. Atlético Madrid
+  7. Barcelona
+  8. Bayer Leverkusen
+  9. Bayern Munich
+ 10. Benfica
+ 11. Bodo/Glimt
+ 12. Borussia Dortmund
+ 13. Chelsea
+ 14. Club Brugge
+ 15. Eintracht Frankfurt
+ 16. F.C. København
+ 17. FK Qarabag
+ 18. Galatasaray
+ 19. Internazionale
+ 20. Juventus
+ 21. Kairat Almaty
+ 22. Liverpool
+ 23. Manchester City
+ 24. Marseille
+ 25. Napoli
+ 26. Newcastle United
+ 27. Olympiacos
+ 28. PSV Eindhoven
+ 29. Pafos
+ 30. Paris Saint-Germain
+ 31. Real Madrid
+ 32. Slavia Prague
+ 33. Sporting CP
+ 34. Tottenham Hotspur
+ 35. Union St.-Gilloise
+ 36. Villarreal
+
+
+==================================================
+SUMMARY
+==================================================
+Premier League                  20 teams
+Serie A                         20 teams
+Bundesliga                      18 teams
+Ligue 1                         18 teams
+MLS                             30 teams
+Liga MX                         18 teams
+NWSL                            16 teams
+UEFA Champions League           36 teams
+--------------------------------------------------
+TOTAL                          176 teams

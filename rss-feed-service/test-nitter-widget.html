@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Nitter Widget</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    .widget-container {
+      margin-top: 20px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      display: block;
+    }
+    
+    .info {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #1976d2;
+    }
+    
+    .info code {
+      background: #fff;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Nitter Widget Test</h1>
+    
+    <div class="info">
+      <strong>How to use:</strong><br/>
+      If testing locally, make sure your RSS feed service is running on <code>http://localhost:8080</code> or update the iframe src below.<br/>
+      If deployed, replace <code>localhost:8080</code> with your Cloud Run service URL.
+    </div>
+    
+    <div class="widget-container">
+      <iframe 
+        id="nitterWidget"
+        src="http://localhost:8080/widget/nitter?username=BuffaloSabres" 
+        title="Nitter Feed Widget">
+      </iframe>
+    </div>
+    
+    <div style="margin-top: 20px; padding: 15px; background: #f5f5f5; border-radius: 4px;">
+      <strong>Alternative URLs:</strong><br/>
+      <ul style="margin: 10px 0; padding-left: 20px;">
+        <li>Default: <code>/widget/nitter?username=BuffaloSabres</code></li>
+        <li>Custom feed: <code>/widget/nitter?feed=/feeds/nitter-buffalosabres.xml</code></li>
+        <li>Direct RSS feed: <code>/feeds/nitter-buffalosabres.xml</code></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+

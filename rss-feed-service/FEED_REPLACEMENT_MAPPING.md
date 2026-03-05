@@ -1,0 +1,121 @@
+# Feed Replacement Mapping
+
+## Bundle
+- Replace: `https://rss.app/feeds/_QoQmejtlVFZhkOXP.xml`
+- New: `https://rss-feed-service-124291936014.us-central1.run.app/bundle/nwsl-bundle.xml`
+
+## Individual Feeds
+
+### Direct RSS Feeds
+- Replace: `YJjVVRof201ZO9zO` → `mlbtraderumors`
+- Replace: `PlvW7vqF4AaGbwcp` → `cbs-nfl-rss`
+- Replace: `rHWxXQ9YaXdlGVjA` → `yahoo-nfl-rss`
+- Replace: `yQjCNVjNGrK8PYed` → `foxsports-nfl-api`
+- Replace: `cexYuRoRAMSoUAp8` → `espn-nfl-rss`
+- Replace: `RzsFiWRkJWt232Z1` → `nfl-com`
+- Replace: `BKInO41JsrUscMDQ` → `yahoo-mlb-rss`
+- Replace: `3aWvxow1noZCrVBq` → `yahoo-nba-rss`
+- Replace: `Bv6N7qiA79eXbSl6` → `cbs-mlb-rss`
+- Replace: `pbw0uEDOop5lPZ1h` → `espn-nba-rss`
+- Replace: `gpNdeo4WRun54WuS` → `nba-com-news`
+- Replace: `XNu5yCjXjSTjFNuz` → `cbs-nba-rss`
+- Replace: `bGCDWYzMpS4kpEEJ` → `foxsports-nba-api`
+- Replace: `6gjSXkILFAiwYPLU` → `yahoo-nhl-rss`
+- Replace: `tjqR23Xwa5us4EGS` → `nhl-com-news`
+- Replace: `aEOH2tj5bfjq4oJd` → `espn-nhl-rss`
+- Replace: `xtqmDS6UnTyXSmXG` → `cbs-nhl-rss`
+- Replace: `Zf7Ng96ruXO870Ee` → `hockeywriters`
+- Replace: `V79dVmqWDC7pLACZ` → `hockeynews`
+- Replace: `SBZfeZPSsLT2mwmU` → `onefootball-home`
+- Replace: `tWKu85yTZrmms6lo` → `goal-com`
+- Replace: `f5rbTpdVjq93AlTY` → `worldsoccertalk`
+- Replace: `3SZSbvRR7GXi7Al1` → `espn-soccer-rss`
+- Replace: `SlUe5H1aOykHQcvX` → `yahoo-soccer-rss`
+- Replace: `10xrZLK2Mn4xhAqJ` → `cbs-soccer-rss`
+- Replace: `W5qj2Lq2skC4hTyn` → `transfermarkt-rss`
+- Replace: `ixvULiUvb7Hm3fDx` → `getfootballnewsgermany-bundesliga`
+- Replace: `fg5UIrrq1YikBxyg` → `bundesliga-com`
+- Replace: `tnA7WHOi3hNDP2Wr` → RSS.app keyword (need alternative)
+- Replace: `HL9rA42ELIkqWXJg` → `reddit-nwsl`
+- Replace: `UNtqy55sZPAGDxWp` → `reddit-ligue1`
+- Replace: `tbxA99undrBg8j4I` → RSS.app keyword (need alternative)
+- Replace: `tr10VModrXb2evce` → RSS.app keyword (need alternative)
+- Replace: `o3KVLBimGj35TqzR` → `reddit-ligamx`
+- Replace: `Eh9IrBhQ1Pk3MxVu` → `newsnow-ligamx`
+- Replace: `tw7ijzsLkAnmByMf` → RSS.app keyword (need alternative)
+- Replace: `tOYU1riYpjBIE6yi` → RSS.app keyword (need alternative)
+- Replace: `cYgsxfZK9RmqKiOn` → `yahoo-collegefootball-rss`
+- Replace: `ydzB00a4yYWWhOJE` → `nytimes-athletic-cfb`
+- Replace: `Z2rHcU1BGE8RLayI` → `espn-ncf-rss`
+- Replace: `1wcMh76GcHSPwTvk` → `cbs-collegefootball-rss`
+- Replace: `Zzvx41Fx8M8WXUS1` → `foxsports-cfb-api`
+- Replace: `SQahLIzekjAsW3lk` → `247sports-cfb`
+- Replace: `tBrt5dpIhevVbeQi` → `reddit-cfb`
+- Replace: `d2PbmQcxqRMOPRvs` → `collegefootballnews`
+- Replace: `ZX6NqXnTRPsqJl24` → `sportingnews-cfb`
+- Replace: `TC8CR6Epre8sOBbW` → `si-cfb`
+- Replace: `ftJXlnwUtPK98zMT` → `bleacherreport-cfb`
+- Replace: `LsKtD2ijrBKLHTPy` → `saturdaydownsouth`
+- Replace: `L3knSpnVPuEqu9F3` → `on3-cfb`
+- Replace: `GNRqjlnU2hDoUspd` → `golfdigest`
+- Replace: `PGlnIglwoK57BFgx` → `pgatour-com`
+- Replace: `SBEwIpFRnxpFz5yO` → `golfwrx`
+- Replace: `yoYhJTH3khDR6VnA` → `golfmonthly`
+- Replace: `tllqhjMEqKlOTnp9` → RSS.app keyword (need alternative)
+- Replace: `tsB8keuq7AkVMhlt` → RSS.app keyword (need alternative)
+- Replace: `Kk2DP7BQ6R63genW` → `si-golf`
+- Replace: `52JoNIj0uJyAO8Ro` → `si-ufc`
+- Replace: `DZNQ6V2829Gsq89j` → `mmajunkie`
+- Replace: `9HbNO7koG4FRO0EZ` → `mmamania`
+- Replace: `2NV0LB8BpoemNq2N` → `sherdog`
+- Replace: `X39lxMdIQOjTjP4s` → `mma-core`
+- Replace: `C3NmUDHJr8cWHBCk` → `ufc-com`
+- Replace: `sZGhLnyeUeeeDnBs` → `tapology`
+- Replace: `6KutJNC4K8DelGwZ` → `mmafighting`
+- Replace: `aScu4PsqcyQ1kfFt` → `ringmagazine-rss`
+- Replace: `TBwd9L3O8cQywuxX` → `boxingnews24`
+- Replace: `i1VCLI9hScfbZjgu` → `badlefthook`
+- Replace: `FpEL1AAFV73VieeD` → `boxingscene`
+- Replace: `xBIj1RcHaBcd7WfJ` → `boxing247`
+- Replace: `t5VOWN5DnuNwIVYF` → RSS.app keyword (need alternative)
+
+### NewsNow Feeds
+- Replace: `kjurR9A5jgpHvsLg` → `newsnow-nfl`
+- Replace: `akV2j729WtUvltyb` → `newsnow-nba`
+- Replace: `3V06VrWkV19SDcqR` → `newsnow-soccer`
+- Replace: `j3EAnbrpQMEYzW57` → `newsnow-championsleague`
+- Replace: `V6GJiuM6jBXVG34K` → `newsnow-premierleague`
+- Replace: `iuBiYyHPmlifaUUK` → `newsnow-mls`
+- Replace: `t8z976udlBJCMLSW` → `newsnow-laliga`
+- Replace: `HSwo9xgOL1OUFqS0` → `newsnow-seriea`
+- Replace: `qeqYXeDvgq5bpYsL` → `newsnow-bundesliga`
+- Replace: `6hu4o6gj1agGCz5i` → `newsnow-facup`
+- Replace: `AdN94t2aMmFNKpiW` → `newsnow-ligue1`
+- Replace: `PE7NGL6ftSREkzv9` → `newsnow-nwsl`
+- Replace: `zRogbCPNliFNNTuM` → `newsnow-f1`
+- Replace: `Y86rdhcYGEJTzVVE` → `newsnow-europaleague`
+- Replace: `1miuV1gDF41iBCUm` → `newsnow-ncaabasketball`
+- Replace: `O8juJbxSctWCFqdV` → `newsnow-ncaafootball`
+- Replace: `R0LMNrxS5mPorbsV` → `newsnow-pgatour`
+- Replace: `II7WkAEfi65q8OMI` → `newsnow-ufc`
+- Replace: `8UNhLRsk0v8buOUz` → `newsnow-boxing`
+- Replace: `Nh0zQXRLhhvfmuTh` → `newsnow-tennis`
+- Replace: `vOF2I7lq3n3IsV8K` → `newsnow-nascar`
+- Replace: `Eaaaqyki6E6nnMZR` → `newsnow-wnba`
+- Replace: `InHgRAqAOeKlilq8` → `newsnow-livgolf`
+- Replace: `VkQvfkJZA51pa8EB` → `newsnow-motogp`
+- Replace: `0afVGov5MVxxBF7B` → `newsnow-lpga`
+- Replace: `Zo7JsQDXIT8D0pCD` → `newsnow-indycar`
+- Replace: `VqavgJOoX0LKkfkb` → `newsnow-trackandfield`
+- Replace: `0zeKHWCVNtBCrCro` → `newsnow-europaconferenceleague`
+
+## RSS.app Keyword Feeds (Cannot Replicate - Need Alternatives)
+- `tnA7WHOi3hNDP2Wr` - NWSL keyword
+- `tbxA99undrBg8j4I` - Ligue 1 keyword
+- `tr10VModrXb2evce` - Liga MX keyword
+- `tw7ijzsLkAnmByMf` - UEFA Europa League keyword
+- `tOYU1riYpjBIE6yi` - NCAA Women's Basketball keyword
+- `tllqhjMEqKlOTnp9` - Golfweek keyword
+- `tsB8keuq7AkVMhlt` - PGA Tour topicId
+- `t5VOWN5DnuNwIVYF` - Boxing keyword
+

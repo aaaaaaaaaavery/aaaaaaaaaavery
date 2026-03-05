@@ -1,0 +1,808 @@
+Deployment
+
+gcloud run deploy flashlive-scraper \
+  --source=. \
+  --allow-unauthenticated \
+  --region=us-central1 \
+  --project=flashlive-daily-scraper \
+  --clear-base-image \
+  --set-env-vars=SPREADSHEET_ID=1vSHd7VQzFjTeZhIbWGJHsU_Mbz5OOYvkPHyVU0auzWw,\
+SHEET_NAME=Sheet1,\
+FIREBASE_PROJECT_ID=flashlive-daily-scraper,\
+RAPIDAPI_KEY=1c6421f9acmshe820d0c9faf1cf5p165f88jsnc42711af762d,\
+RAPIDAPI_HOST=flashlive-sports.p.rapidapi.com
+
+
+Manual trigger
+
+curl -X POST https://flashlive-scraper-124291936014.us-central1.run.app/initialScrapeAndStartPolling && \
+curl -X GET https://flashlive-scraper-124291936014.us-central1.run.app/pollLiveGames
+
+
+
+
+Latest index.js
+
+// index.js
+import { DateTime } from 'luxon';
+import admin from 'firebase-admin';
+import { google } from 'googleapis';
+import fetch from 'node-fetch';
+import express from 'express';
+
+
+
+
+// Firebase Admin initialization using application default credentials
+let db;
+function initializeFirebase() {
+if (db) return db; // Return existing db instance if already initialized
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.applicationDefault(),
+    projectId: process.env.FIREBASE_PROJECT_ID
+  });
+}
+db = admin.firestore();
+console.log('Firebase Firestore initialized.');
+return db;
+}
+
+
+
+
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
+const SHEET_NAME = process.env.SHEET_NAME;
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
+const RAPIDAPI_HOST = process.env.RAPIDAPI_HOST;
+const FIREBASE_PROJECT_ID = process.env.FIREBASE_PROJECT_ID;
+const API_REQUEST_DELAY_MS = 1500;
+
+
+
+
+// Allowed leagues with sport-specific filtering
+const ALLOWED_LEAGUE_KEYWORDS = {
+ // Soccer-specific leagues
+ 'Soccer': [
+   "Euro Women", "Europe: Conference League - League phase", "Leagues Cup", "Europa League", "North & Central America: Leagues Cup - Play Offs",
+   // "World: Club Friendly", // Commented out - can be easily re-added later
+   "Conference League", "Portugal: Super Cup", "UEFA Champions League", "Europe: Champions League - League phase",
+   "World: Friendly International",
+   "England: Premier League", "England: EFL Cup", "Italy: Coppa Italia",
+   "Turkey: Super Lig", "Europe: Europa League - Qualification", "Europe: Europa League - League phase", "Europe: Champions League Women - Qualification - Second stage",
+   "Europe: Conference League - Qualification", "Germany: Bundesliga", "Portugal: Liga Portugal", "Italy: Serie A",
+   "France: Ligue 1", "South America: Copa Libertadores - Play Offs", "Brazil: Serie A Betano", "World: World Cup U20",
+   "South America: Copa Sudamericana - Play Offs", "Europe: Champions League - Qualification",
+   "Germany: DFB Pokal", "Africa: World Cup - Qualification", "Asia: World Cup - Qualification - Fourth stage",
+   "Asia: Asian Cup - Qualification - Third round", "Europe: World Cup - Qualification", 
+   "North & Central America: World Cup - Qualification - Third stage", "World: Club Friendly", "Spain: LaLiga", "USA: NWSL Women", "USA: MLS", "Mexico: Liga MX", "Mexico: Liga MX - Apertura", "Mexico: Liga MX - Clausura", "Saudi Arabia: Saudi Professional League",
+   // ✅ Newly added
+   "England: Championship", "World: World Cup U20 - Play Offs", "USA: USL Championship", "Europe: Champions League Women - League phase", "Scotland: Premiership", "England: WSL", "Netherlands: Eredivisie", "North & Central America: Campeones Cup", "Argentina: Torneo Betano - Clausura", "Argentina: Torneo Betano - Apertura", "Scotland: Scottish Cup"
+ ],
+ // Basketball-specific leagues
+ 'Basketball': [
+   "NBA", "USA: WNBA", "World: AmeriCup", "USA: NBA - Pre-season",
+   // ✅ Newly added
+   "USA: WNBA - Play Offs"
+ ],
+ // American Football-specific leagues
+ 'American Football': [
+   "NFL", "USA: NFL", "USA: NCAA", "USA: NFL - Pre-season", "Canada: CFL"
+ ],
+ // Tennis-specific leagues
+ 'Tennis': [
+   "USA: Cleveland WTA, hard",
+   "USA: US Open ATP, hard", "USA: US Open WTA, hard"
+ ],
+ // Auto Racing specific leagues
+ 'Auto Racing': [
+   "NASCAR Cup Series"
+ ],
+// Cricket-specific leagues
+ 'Cricket': [
+   "World: ICC World Cup Women", "World: Twenty20 International", "World: Test Series"
+ ],
+ // Hockey-specific leagues
+ 'Hockey': [
+   "USA: NHL", "USA: NHL - Pre-season", "Canada: OHL", "USA: NCAA"
+ ],
+ // Golf-specific leagues
+ 'Golf': [
+   // ✅ Newly added
+   "World: Ryder Cup"
+ ]
+};
+
+
+
+
+const sportsToFetch = [
+{ slug: 'soccer', id: 1, name: 'Soccer' },
+{ slug: 'tennis', id: 2, name: 'Tennis' },
+{ slug: 'basketball', id: 3, name: 'Basketball' },
+{ slug: 'hockey', id: 4, name: 'Hockey' },
+{ slug: 'football', id: 5, name: 'American Football' },
+{ slug: 'baseball', id: 6, name: 'Baseball' },
+{ slug: 'rugby_union', id: 8, name: 'Rugby Union' },
+{ slug: 'volleyball', id: 12, name: 'Volleyball' },
+{ slug: 'cricket', id: 13, name: 'Cricket' },
+{ slug: 'boxing', id: 16, name: 'Boxing' },
+{ slug: 'beach_volleyball', id: 17, name: 'Beach Volleyball' },
+{ slug: 'aussie_rules', id: 18, name: 'Aussie Rules' },
+{ slug: 'rugby_league', id: 19, name: 'Rugby League' },
+{ slug: 'water_polo', id: 22, name: 'Water Polo' },
+{ slug: 'golf', id: 23, name: 'Golf' },
+{ slug: 'mma', id: 28, name: 'MMA' },
+{ slug: 'motorsport', id: 31, name: 'Motorsport' },
+{ slug: 'autoracing', id: 32, name: 'Autoracing' },
+{ slug: 'motoracing', id: 33, name: 'Motoracing' },
+{ slug: 'cycling', id: 34, name: 'Cycling' },
+{ slug: 'horse_racing', id: 35, name: 'Horse Racing' },
+{ slug: 'winter_sports', id: 37, name: 'Winter Sports' },
+{ slug: 'ski_jumping', id: 38, name: 'Ski Jumping' },
+{ slug: 'alpine_skiing', id: 39, name: 'Alpine Skiing' },
+{ slug: 'cross_country', id: 40, name: 'Cross Country' }
+];
+
+
+
+
+// Mapping of leagues to their RapidAPI sport slug, sport ID, and league name for the new function
+const leaguesToFetch = [
+{ slug: 'golf', id: 23, leagueName: 'PGA Tour' },
+{ slug: 'tennis', id: 2, leagueName: 'ATP' },
+{ slug: 'tennis', id: 2, leagueName: 'WTA' },
+{ slug: 'football', id: 5, leagueName: 'USA: NCAA' },
+{ slug: 'soccer', id: 1, leagueName: 'NWSL Women' },
+{ slug: 'soccer', id: 1, leagueName: 'France: Ligue 1' },
+{ slug: 'soccer', id: 1, leagueName: 'Europe: Europa League' },
+{ slug: 'soccer', id: 1, leagueName: 'Europe: Conference League' }
+];
+
+
+
+
+let sheets;
+async function authenticateGoogleSheets() {
+if (sheets) return;
+const googleAuth = new google.auth.GoogleAuth({
+  scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+});
+const authClient = await googleAuth.getClient();
+sheets = google.sheets({ version: 'v4', auth: authClient });
+console.log('Google Sheets API authenticated.');
+}
+
+
+
+
+async function fetchRapidApiData(url, headers) {
+await new Promise(resolve => setTimeout(resolve, API_REQUEST_DELAY_MS));
+const response = await fetch(url, { headers });
+if (!response.ok) {
+  const errorText = await response.text();
+  throw new Error(`HTTP error! ${response.status}: ${errorText} @ ${url}`);
+}
+return await response.json();
+}
+
+
+
+
+async function writeGamesToFirestore(games) {
+const db = initializeFirebase();
+const gamesRef = db.collection(`artifacts/${FIREBASE_PROJECT_ID}/public/data/sportsGames`);
+
+
+
+
+const batch = db.batch();
+let gameCount = 0;
+for (const game of games) {
+  if (!game['Game ID']) {
+    console.warn('Skipping Firestore write for game with missing or empty "Game ID":', JSON.stringify(game));
+    continue;
+  }
+  const docRef = gamesRef.doc(String(game['Game ID']));
+  batch.set(docRef, game, { merge: true });
+  gameCount++;
+}
+
+
+
+
+try {
+  await batch.commit();
+  console.log(`Successfully wrote ${gameCount} games to Firestore.`);
+} catch (error) {
+  console.error('--- Firestore Batch Commit Failed ---');
+  console.error('Error during batch commit:', error);
+  if (error.message) console.error('Error Message:', error.message);
+  if (error.stack) console.error('Error Stack:', error.stack);
+  if (error.code) console.error('Firestore Error Code:', error.code);
+  if (error.details) console.error('Firestore Error Details:', error.details);
+  throw error;
+}
+}
+
+
+
+
+async function clearFirestoreCollection() {
+const db = initializeFirebase();
+const gamesRef = db.collection(`artifacts/${FIREBASE_PROJECT_ID}/public/data/sportsGames`);
+const snapshot = await gamesRef.get();
+
+
+
+
+if (snapshot.empty) {
+  console.log('No documents to clear in Firestore.');
+  return;
+}
+ const batch = db.batch();
+snapshot.forEach(doc => batch.delete(doc.ref));
+await batch.commit();
+console.log(`🧹 Cleared ${snapshot.size} docs from Firestore.`);
+}
+
+
+
+
+function createNoopRes() {
+return {
+  status() { return this; },
+  send() {},
+  json() {}
+};
+}
+
+
+
+
+// =================================================================
+// ORIGINAL FUNCTIONS (RETAINED)
+// =================================================================
+const initialScrapeAndStartPollingHandler = async (req, res) => {
+try {
+  console.log('--- initialScrapeAndStartPollingHandler started. ---');
+   // --- Step 1: Clear the sportsGames Collection ---
+  console.log('Clearing sportsGames collection for the new day...');
+  await clearFirestoreCollection();
+  console.log('sportsGames collection cleared.');
+
+
+
+
+  // --- Step 2: Populate with New Day's Games ---
+  console.log('Fetching new games for the upcoming day...');
+  await authenticateGoogleSheets();
+
+
+
+
+  const rapidApiHeaders = {
+    'X-RapidAPI-Key': RAPIDAPI_KEY,
+    'X-RapidAPI-Host': RAPIDAPI_HOST
+  };
+
+
+
+
+ const nowInMountain = DateTime.now().setZone('America/Denver');
+ const todayStr = nowInMountain.toISODate();
+  const allGames = [];
+
+
+
+
+  for (const sport of sportsToFetch) {
+    const url = `https://${RAPIDAPI_HOST}/v1/events/list?sport_slug=${sport.slug}&date=${todayStr}&locale=en_INT&sport_id=${sport.id}&timezone=-4&indent_days=0`;
+
+
+
+
+    try {
+      const data = await fetchRapidApiData(url, rapidApiHeaders);
+      const tournaments = data.DATA || [];
+
+
+
+
+      for (const tour of tournaments) {
+        const events = tour.EVENTS || [];
+        for (const event of events) {
+          const game = {
+            'Sport': tour.SPORT_NAME || sport.name,
+            'Game ID': event.EVENT_ID,
+            'League': tour.NAME,
+            'Matchup': `${event.HOME_NAME} vs ${event.AWAY_NAME}`,
+            'Start Time': admin.firestore.Timestamp.fromMillis(event.START_TIME * 1000),
+            'Home Team': event.HOME_NAME,
+            'Away Team': event.AWAY_NAME,
+            'Home Score': event.HOME_SCORE_CURRENT || '',
+            'Away Score': event.AWAY_SCORE_CURRENT || '',
+            'Status': event.STAGE || '',
+            'Current Lap': event.RACE_RESULTS_LAP_DISTANCE || '',
+            'Match Status': event.STAGE_TYPE || '',
+            'Stage': event.STAGE || '',
+            'GameTime': event.GAME_TIME || '',
+            'StageStartTime': event.STAGE_START_TIME || '',
+            'StartTime': event.START_TIME || '',
+           'StageType': event.STAGE_TYPE || '',
+           'Last Updated': new Date().toISOString(),
+           'gameDate': DateTime.fromMillis(event.START_TIME * 1000).setZone('America/Denver').toISODate()
+         };
+         allGames.push(game);
+        }
+      }
+    } catch (err) {
+      console.error(`Error fetching ${sport.name}: ${err.message}`);
+    }
+  }
+ console.log(`Fetched ${allGames.length} games from RapidAPI.`);
+
+
+
+
+ const sheetRows = allGames.map(g => [
+   g.Sport, g['Game ID'], g.League, g.Matchup,
+   g['Start Time'] ? g['Start Time'].toDate().toISOString() : '',
+   g['Home Team'], g['Away Team'],
+   g['Home Score'], g['Away Score'], g.Status,
+   g['Match Status'], g['Last Updated']
+ ]);
+
+
+
+
+ const sheetHeader = [
+   'Sport', 'Game ID', 'League', 'Matchup',
+   'Start Time', 'Home Team', 'Away Team',
+   'Home Score', 'Away Score', 'Status',
+   'Match Status', 'Last Updated'
+ ];
+
+
+
+
+ console.log('Attempting to write to Google Sheets...');
+ await sheets.spreadsheets.values.update({
+   spreadsheetId: SPREADSHEET_ID,
+   range: `${SHEET_NAME}!A1`,
+   valueInputOption: 'RAW',
+   requestBody: {
+     values: [sheetHeader, ...sheetRows]
+   }
+ });
+ console.log(`Successfully wrote ${sheetRows.length} rows to Google Sheet.`);
+
+
+
+
+ const gamesForFirestore = allGames.filter(g => {
+   const allowedLeaguesForSport = ALLOWED_LEAGUE_KEYWORDS[g.Sport] || [];
+   const isAllowedLeague = allowedLeaguesForSport.includes(g.League);
+   const hasValidTeams = g['Home Team'] && g['Away Team'];
+   const hasStartTime = g['Start Time'];
+   const hasGameId = g['Game ID'];
+  
+   // Filter out games with "U" followed by numbers (e.g., U20, U23, U19) for World: Friendly International
+   const isUTeamGame = g.League === 'World: Friendly International' &&
+     (/\bU\d+\b/.test(g['Home Team']) || /\bU\d+\b/.test(g['Away Team']));
+  
+   return isAllowedLeague && hasValidTeams && hasStartTime && hasGameId && !isUTeamGame;
+ });
+
+
+
+
+  console.log(`Filtered ${gamesForFirestore.length} games for Firestore based on sport-specific ALLOWED_LEAGUE_KEYWORDS.`);
+  await writeGamesToFirestore(gamesForFirestore);
+  console.log('Successfully completed Firestore write for initial scrape.');
+
+
+
+
+  if (res) {
+    res.status(200).send(`Wrote ${sheetRows.length} rows to Google Sheet and ${gamesForFirestore.length} games to Firestore.`);
+  }
+} catch (err) {
+  console.error('--- initialScrapeAndStartPollingHandler FAILED ---', err);
+  if (res) res.status(500).send('Scrape failed.');
+}
+};
+
+
+
+
+
+
+
+
+const pollLiveGamesHandler = async (req, res) => {
+try {
+  console.log('--- pollLiveGamesHandler started. ---');
+
+
+
+
+  const db = initializeFirebase();
+  const gamesRef = db.collection(`artifacts/${FIREBASE_PROJECT_ID}/public/data/sportsGames`);
+ const nowInMountain = DateTime.now().setZone('America/Denver');
+ const todayStr = nowInMountain.toISODate();
+  console.log(`[Backend] Current Eastern Time Date (todayStr): ${todayStr}`);
+
+
+
+
+  const snapshot = await gamesRef.get();
+  const deleteBatch = db.batch();
+  let deleteCount = 0;
+
+
+
+
+ snapshot.forEach(doc => {
+   const data = doc.data();
+   const matchStatus = (data['Match Status'] || '').toUpperCase();
+   const isLive = matchStatus.includes('IN PROGRESS') || matchStatus.includes('LIVE') || matchStatus === 'LIVE';
+  
+   // Only delete games that are from a different date AND not live
+   if (data.gameDate !== todayStr && !isLive) {
+     deleteBatch.delete(doc.ref);
+     deleteCount++;
+   }
+ });
+
+
+
+
+  if (deleteCount > 0) {
+    await deleteBatch.commit();
+    console.log(`🧹 Deleted ${deleteCount} old games from Firestore.`);
+  } else {
+    console.log('✅ No old games to delete.');
+  }
+
+
+
+
+  const rapidApiHeaders = {
+    'X-RapidAPI-Key': RAPIDAPI_KEY,
+    'X-RapidAPI-Host': RAPIDAPI_HOST
+  };
+
+
+
+
+  const allGames = [];
+  for (const sport of sportsToFetch) {
+    const url = `https://${RAPIDAPI_HOST}/v1/events/list?sport_slug=${sport.slug}&date=${todayStr}&locale=en_INT&sport_id=${sport.id}&timezone=-4&indent_days=0`;
+    try {
+      const data = await fetchRapidApiData(url, rapidApiHeaders);
+      const tournaments = data.DATA || [];
+      for (const tour of tournaments) {
+        for (const event of tour.EVENTS || []) {
+          allGames.push({
+            'Sport': tour.SPORT_NAME || sport.name,
+            'Game ID': event.EVENT_ID,
+            'League': tour.NAME,
+            'Matchup': `${event.HOME_NAME || ''} vs ${event.AWAY_NAME || ''}`,
+            'Start Time': admin.firestore.Timestamp.fromMillis(event.START_TIME * 1000),
+            'Home Team': event.HOME_NAME || '',
+            'Away Team': event.AWAY_NAME || '',
+            'Home Score': event.HOME_SCORE_CURRENT || '',
+            'Away Score': event.AWAY_SCORE_CURRENT || '',
+            'Status': event.STAGE || '',
+            'Match Status': event.STAGE_TYPE || '',
+            'Current Lap': event.RACE_RESULTS_LAP_DISTANCE || '',
+            'Stage': event.STAGE || '',
+            'GameTime': event.GAME_TIME || '',
+           'StageStartTime': event.STAGE_START_TIME || '',
+           'StartTime': event.START_TIME || '',
+           'StageType': event.STAGE_TYPE || '',
+           'Last Updated': new Date().toISOString(),
+           'gameDate': DateTime.fromMillis(event.START_TIME * 1000).setZone('America/Denver').toISODate()
+         });
+       }
+     }
+   } catch (err) {
+     console.error(`Error fetching ${sport.name}: ${err.message}`);
+   }
+ }
+ console.log(`Fetched ${allGames.length} games from RapidAPI.`);
+
+
+
+
+  // Debug: Log all unique leagues being fetched
+  const uniqueLeagues = [...new Set(allGames.map(g => g.League))];
+  console.log('All leagues being fetched:', uniqueLeagues);
+
+
+
+
+ const gamesForFirestore = allGames.filter(g => {
+   const allowedLeaguesForSport = ALLOWED_LEAGUE_KEYWORDS[g.Sport] || [];
+   const isAllowedLeague = allowedLeaguesForSport.includes(g.League);
+   const hasValidTeams = g['Home Team'] && g['Away Team'];
+   const hasStartTime = g['Start Time'];
+   const hasGameId = g['Game ID'];
+  
+   // Filter out games with "U" followed by numbers (e.g., U20, U23, U19) for World: Friendly International
+   const isUTeamGame = g.League === 'World: Friendly International' &&
+     (/\bU\d+\b/.test(g['Home Team']) || /\bU\d+\b/.test(g['Away Team']));
+  
+   return isAllowedLeague && hasValidTeams && hasStartTime && hasGameId && !isUTeamGame;
+ });
+ console.log(`Filtered ${gamesForFirestore.length} games for Firestore using exact matching.`);
+
+
+
+
+  if (gamesForFirestore.length > 0) {
+    await writeGamesToFirestore(gamesForFirestore);
+    console.log(`✅ Successfully updated ${gamesForFirestore.length} games in Firestore.`);
+  } else {
+    console.log('⚠️ No valid games to update.');
+  }
+
+
+
+
+  if (res) res.status(200).send(`Polling complete. Updated ${gamesForFirestore.length} games.`);
+} catch (err) {
+  console.error('--- pollLiveGamesHandler FAILED ---', err);
+  if (res) res.status(500).send('Polling failed.');
+}
+};
+
+
+
+
+const refreshAllHandler = async (req, res) => {
+try {
+  console.log('--- /refreshAll triggered ---');
+  await clearFirestoreCollection();
+  await initialScrapeAndStartPollingHandler(req, createNoopRes());
+  await pollLiveGamesHandler(req, createNoopRes());
+  res.status(200).send('refreshAll complete: wiped Firestore, scraped fresh data, updated Sheets, and polled live games.');
+} catch (err) {
+  console.error('--- /refreshAll FAILED ---', err);
+  res.status(500).send('refreshAll failed');
+}
+};
+
+
+
+
+// =================================================================
+// NEW FUNCTIONALITY ADDED HERE
+// =================================================================
+const FUTURE_GAMES_SHEET_NAME = "Future Games";
+
+
+
+
+/**
+* Checks if a sheet with a specific title exists and creates it if it doesn't.
+* Returns the title of the sheet that was found or created.
+* @param {string} spreadsheetId The ID of the Google Spreadsheet.
+* @param {string} sheetName The title of the sheet to find or create.
+* @returns {string} The title of the found or created sheet.
+*/
+async function createOrGetSheet(spreadsheetId, sheetName) {
+try {
+  // Check if the sheet already exists
+  const response = await sheets.spreadsheets.get({
+    spreadsheetId,
+    fields: 'sheets.properties.title'
+  });
+  const sheetsList = response.data.sheets;
+  const existingSheet = sheetsList.find(s => s.properties.title === sheetName);
+
+
+
+
+  if (existingSheet) {
+    console.log(`Sheet "${sheetName}" already exists. Using existing tab.`);
+    return sheetName;
+  }
+
+
+
+
+  // If the sheet doesn't exist, create it
+  console.log(`Sheet "${sheetName}" not found. Creating a new tab...`);
+  const request = {
+    spreadsheetId,
+    resource: {
+      requests: [{
+        addSheet: {
+          properties: {
+            title: sheetName
+          }
+        }
+      }]
+    }
+  };
+  await sheets.spreadsheets.batchUpdate(request);
+  console.log(`Successfully created new sheet with title "${sheetName}".`);
+  return sheetName;
+} catch (err) {
+  console.error(`Error in createOrGetSheet: ${err.message}`);
+  throw err;
+}
+}
+
+
+
+
+async function fetchUpcomingGamesHandler(req, res) {
+try {
+  console.log('--- fetchUpcomingGamesHandler started for the next 7 days. ---');
+
+
+
+
+  await authenticateGoogleSheets();
+  await createOrGetSheet(SPREADSHEET_ID, FUTURE_GAMES_SHEET_NAME);
+
+
+
+
+  const rapidApiHeaders = {
+    'X-RapidAPI-Key': RAPIDAPI_KEY,
+    'X-RapidAPI-Host': RAPIDAPI_HOST
+  };
+
+
+
+
+ const allGames = [];
+ const nowInMountain = DateTime.now().setZone('America/Denver');
+
+
+
+
+  // Loop for the next 7 days (including today)
+  for (let i = 0; i < 7; i++) {
+    const dateToFetch = nowInMountain.plus({ days: i }).toISODate();
+    console.log(`Fetching games for date: ${dateToFetch}`);
+
+
+
+
+    for (const league of leaguesToFetch) {
+      const url = `https://${RAPIDAPI_HOST}/v1/events/list?sport_slug=${league.slug}&date=${dateToFetch}&locale=en_INT&sport_id=${league.id}&timezone=-4&indent_days=0`;
+
+
+
+
+      try {
+        const data = await fetchRapidApiData(url, rapidApiHeaders);
+        const tournaments = data.DATA || [];
+
+
+
+
+        for (const tour of tournaments) {
+          // Check if the tournament name matches the desired league.
+          // Some leagues (like Europa League) might not match exactly, so check for inclusion instead.
+          if (tour.NAME.includes(league.leagueName) || (league.leagueName.includes(tour.NAME))) {
+            const events = tour.EVENTS || [];
+            for (const event of events) {
+              const game = {
+                'Date': dateToFetch,
+                'Sport': tour.SPORT_NAME || league.slug,
+                'Game ID': event.EVENT_ID,
+                'League': tour.NAME,
+                'Matchup': `${event.HOME_NAME} vs ${event.AWAY_NAME}`,
+                'Start Time': event.START_TIME ? new Date(event.START_TIME * 1000).toISOString() : '',
+                'Home Team': event.HOME_NAME,
+                'Away Team': event.AWAY_NAME,
+                'Home Score': event.HOME_SCORE_CURRENT || '',
+                'Away Score': event.AWAY_SCORE_CURRENT || '',
+                'Status': event.STAGE || '',
+                'Match Status': event.STAGE_TYPE || '',
+                'Last Updated': new Date().toISOString()
+              };
+              allGames.push(game);
+            }
+          }
+        }
+      } catch (err) {
+        console.error(`Error fetching ${league.leagueName} for ${dateToFetch}: ${err.message}`);
+      }
+    }
+  }
+
+
+
+
+  console.log(`Fetched a total of ${allGames.length} games for the upcoming week.`);
+
+
+
+
+  const sheetRows = allGames.map(g => [
+    g.Date, g.Sport, g['Game ID'], g.League, g.Matchup,
+    g['Start Time'], g['Home Team'], g['Away Team'],
+    g['Home Score'], g['Away Score'], g.Status,
+    g['Match Status'], g['Last Updated']
+  ]);
+
+
+
+
+  const sheetHeader = [
+    'Date', 'Sport', 'Game ID', 'League', 'Matchup',
+    'Start Time', 'Home Team', 'Away Team',
+    'Home Score', 'Away Score', 'Status',
+    'Match Status', 'Last Updated'
+  ];
+
+
+
+
+  console.log(`Attempting to write to Google Sheets on the "${FUTURE_GAMES_SHEET_NAME}" tab...`);
+  await sheets.spreadsheets.values.update({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `${FUTURE_GAMES_SHEET_NAME}!A1`,
+    valueInputOption: 'RAW',
+    requestBody: {
+      values: [sheetHeader, ...sheetRows]
+    }
+  });
+  console.log(`Successfully wrote ${sheetRows.length} rows to Google Sheet.`);
+
+
+
+
+  if (res) {
+    res.status(200).send(`Wrote ${sheetRows.length} rows to Google Sheet for the upcoming week.`);
+  }
+} catch (err) {
+  console.error('--- fetchUpcomingGamesHandler FAILED ---', err);
+  if (res) res.status(500).send('Weekly scrape and write failed.');
+}
+}
+
+
+
+
+// =================================================================
+// EXPRESS APP
+// =================================================================
+const app = express();
+app.use(express.json());
+
+
+
+
+app.post('/initialScrapeAndStartPolling', initialScrapeAndStartPollingHandler);
+app.get('/pollLiveGames', pollLiveGamesHandler);
+app.post('/pollLiveGames', pollLiveGamesHandler);
+app.post('/refreshAll', refreshAllHandler);
+
+
+
+
+// New endpoint for fetching weekly games
+app.get('/fetchUpcomingGames', fetchUpcomingGamesHandler);
+app.post('/fetchUpcomingGames', fetchUpcomingGamesHandler);
+
+
+
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+console.log(`Server listening on port ${PORT}`);
+});
+
+
+
+
+

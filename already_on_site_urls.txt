@@ -1,0 +1,104 @@
+https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs/mlb** 
+https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30&tags=fs/soccer,...** 
+https://bleacherreport.com/mlb** 
+https://bleacherreport.com/nba** 
+https://bleacherreport.com/nfl** 
+https://bulinews.com/rss.xml** 
+https://cultofcalcio.com/feed/** 
+https://en.as.com/soccer/** - Soccer news, scores, standings, stats and rumors from AS English - AS USA - ✅ **ALREADY ON SITE** (RSS.app feed: `UM3B0Vem8qh04dDU`)
+https://fieldlevelmedia.com/soccer/mls/** - Field Level Media - Professional sports content solutions 
+https://football-talk.co.uk/topics/premier-league/feed/** 
+https://news.google.com/search?q=LaLiga&hl=en-US&gl=US&ceid=US%3Aen** - Google News (La Liga)
+https://news.google.com/search?q=Major%20League%20Soccer&hl=en-US&gl=US&ceid=US%3Aen** - Google News (MLS)
+https://news.google.com/search?q=UEFA%20Champions%20League&hl=en-US&gl=US&ceid=US%3Aen** - Google News (Champions League)
+https://rss.app/rss-feed?keyword=NCAA%20Softball&region=US&lang=en** 
+https://rss.app/rss-feed?keyword=UEFA%20Conference%20League&region=US&lang=en** 
+https://sports.yahoo.com/** 
+https://sports.yahoo.com/mlb/** 
+https://sports.yahoo.com/soccer/premier-league/** 
+https://sports.yahoo.com/soccer/rss/** 
+https://talksport.com/football/premier-league/** - (no title) - talkSPORT Premier League - ✅ **ALREADY ON SITE** (RSS.app feed: `JSvDlnImnrDjDgsk`)
+https://www.autosport.com/f1/news/** 
+https://www.bbc.com/sport/football** 
+https://www.cbssports.com/** 
+https://www.cbssports.com/mlb/** 
+https://www.dailymail.co.uk/sport/premierleague/index.html** 
+https://www.formula1.com/en/latest** 
+https://www.fourfourtwo.com/us** 
+https://www.foxsports.com/** 
+https://www.mlssoccer.com/news/** 
+https://www.motorsport.com/f1/** 
+https://www.nbcsports.com/nfl/profootballtalk** 
+https://www.newsnow.com/us/Sports/MLB** 
+https://www.newsnow.com/us/Sports?type=ln** 
+https://www.nytimes.com/athletic/football/champions-league/** 
+https://www.nytimes.com/athletic/nhl/** 
+https://www.planetf1.com/news** 
+https://www.racefans.net/category/formula-1/** 
+https://www.reddit.com/r/CollegeBasketball/new/** 
+https://www.reddit.com/r/INDYCAR/new/** 
+https://www.reddit.com/r/sports/new/** 
+https://www.si.com/nba** 
+https://www.si.com/nfl** 
+https://www.si.com/soccer/champions-league** 
+https://www.si.com/soccer/la-liga** 
+https://www.si.com/soccer/premier-league** 
+https://www.skysports.com/football** 
+https://www.skysports.com/premier-league-news** 
+https://www.sportbible.com/premier-league** 
+https://www.sportingnews.com/us/premier-league** 
+https://www.sportsmole.co.uk/football/la-liga.xml** 
+https://www.sportsmole.co.uk/football/premier-league/** 
+https://www.sportsmole.co.uk/headlines/** - Headlines - Latest round the clock breaking sports news - Sports Mole
+https://www.teamtalk.com/english-premiership** 
+https://www.the-race.com** 
+https://www.theguardian.com/football** 
+https://www.youtube.com/@LIVGolf/videos** - LIV Golf - ❌ NOT on site
+https://www.youtube.com/@LPGA/videos** - LPGA - ❌ NOT on site
+https://www.youtube.com/@MarchMadness/videos** - March Madness - ❌ NOT on site
+https://www.youtube.com/@NASCAR/videos** - NASCAR - ❌ NOT on site
+https://www.youtube.com/@PGATOUR/videos** - PGA TOUR - ❌ NOT on site
+https://www.youtube.com/@WNBA/videos** - WNBA - ❌ NOT on site
+https://www.youtube.com/@WorldAthletics/videos** - World Athletics - ❌ NOT on site
+https://www.youtube.com/@indycar/videos** - NTT INDYCAR SERIES - ❌ NOT on site
+https://www.youtube.com/@ligabbvamx/videos** - LIGA BBVA MX - ✅ **ALREADY ON SITE** (in `soccer-videos` bundle)
+https://www.youtube.com/@motogp/videos** - MotoGP - ❌ NOT on site
+https://www.youtube.com/@thefacup/videos** - The Emirates FA Cup - ✅ **ALREADY ON SITE** (in `soccer-videos` bundle)
+https://www.youtube.com/@ufc/videos** - UFC - ❌ NOT on site
+https://x.com/i/lists/1403911740069384197** - Twitter List: @suchida84/UFC News
+https://x.com/i/lists/1427015536978890754** - Twitter List: @Droos_tweet/Ligue 1
+https://x.com/i/lists/1816936452271333700** - Twitter List: @averyvonjolly2/F1
+https://x.com/i/lists/1818674131614790128** - Twitter List: @averyvonjolly2/MLB
+https://x.com/i/lists/1831715329338159278** - Twitter List: (1) @averyvonjolly2/Boxing
+https://x.com/i/lists/1832099231647031678** - Twitter List: @averyvonjolly2/Premier League
+https://x.com/i/lists/1832162762618745176** - Twitter List: @averyvonjolly2/FA Cup
+https://x.com/i/lists/1832596711551676925** - Twitter List: @averyvonjolly2/IndyCar
+https://x.com/i/lists/1832797427226603560** - Twitter List: @averyvonjolly2/LALIGA
+https://x.com/i/lists/1833132455605187027** - Twitter List: @averyvonjolly2/Major League Soccer
+https://x.com/i/lists/1833309294562841078** - Twitter List: (1) @averyvonjolly2/Serie A
+https://x.com/i/lists/1833512718478745959** - Twitter List: @averyvonjolly2/UEFA Champions League
+https://x.com/i/lists/1833552880063688749** - Twitter List: @averyvonjolly2/NFL
+https://x.com/i/lists/1833927854616141904** - Twitter List: (1) @averyvonjolly2/LIV Golf
+https://x.com/i/lists/1833967150601834943** - Twitter List: @averyvonjolly2/PGA Tour
+https://x.com/i/lists/1834228848419836380** - Twitter List: @averyvonjolly2/LPGA Tour
+https://x.com/i/lists/1834269957053452378** - Twitter List: @averyvonjolly2/NASCAR Cup Series
+https://x.com/i/lists/1834291654783647888** - Twitter List: @averyvonjolly2/MotoGP
+https://x.com/i/lists/1834327044475572412** - Twitter List: @averyvonjolly2/NBA
+https://x.com/i/lists/1834701368700924161** - Twitter List: @averyvonjolly2/NCAA Football
+https://x.com/i/lists/1835073049726799945** - Twitter List: @averyvonjolly2/WNBA
+https://x.com/i/lists/1835685575161999421** - Twitter List: @averyvonjolly2/UEFA Europa League
+https://x.com/i/lists/1835702713104888255** - Twitter List: @averyvonjolly2/UEFA Conference League
+https://x.com/i/lists/1835754056792330652** - Twitter List: @averyvonjolly2/NHL
+https://x.com/i/lists/1835770949821681857** - Twitter List: @averyvonjolly2/NWSL
+https://x.com/i/lists/1835787062802518247** - Twitter List: @averyvonjolly2/Tennis
+https://x.com/i/lists/1836058689486156048** - Twitter List: @averyvonjolly2/NCAA Men's Basketball
+https://x.com/i/lists/1836082196131483861** - Twitter List: @averyvonjolly2/NCAA Women's Basketball
+https://x.com/i/lists/1836123586433556880** - Twitter List: @averyvonjolly2/NCAA Baseball
+https://x.com/i/lists/1836410383155728513** - Twitter List: @averyvonjolly2/NCAA Softball
+https://x.com/i/lists/1838567111032979668** - Twitter List: @averyvonjolly2/Liga MX
+https://x.com/i/lists/1841493439809982923** - Twitter List: @averyvonjolly2/Soccer
+https://x.com/i/lists/1930635686060695832** - Twitter List: (1) @averyvonjolly2/Home
+https://x.com/i/lists/1945841205008535863** - Twitter List: @averyvonjolly2/Home plus Leagues
+https://x.com/i/lists/1946273232086081917** - Twitter List: @averyvonjolly2/Home Plus Journalists
+https://x.com/i/lists/1956745545952768111** - Thporth_MLB
+https://x.com/i/lists/863436960395923458** - Twitter List: (1) @SantiagoOfDC/Track and Field

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPN Live Games Preview</title>
+    <script defer src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/luxon@3.x/build/global/luxon.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #151515;
+            color: white;
+            padding: 20px;
+        }
+        .league-section {
+            margin-bottom: 40px;
+        }
+        .league-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .games-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #1a1a1a;
+        }
+        .games-table th {
+            background-color: #2a2a2a;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #333;
+        }
+        .games-table td {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+        }
+        .games-table tr:hover {
+            background-color: #222;
+        }
+        .time-col {
+            width: 120px;
+        }
+        .teams-col {
+            width: 300px;
+        }
+        .score-col {
+            width: 100px;
+            text-align: center;
+        }
+        .channel-col {
+            width: 200px;
+        }
+        .team-home {
+            font-weight: bold;
+        }
+        .team-away {
+            color: #aaa;
+            margin-top: 5px;
+        }
+        .score {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #aaa;
+        }
+        .no-games {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESPN Live Games Preview - Today</h1>
+    <div id="games-container">
+        <div class="loading">Loading games...</div>
+    </div>
+
+    <script>
+        // Determine if league is soccer (for team order)
+        const SOCCER_LEAGUES = ['MLS', 'NWSL', 'Premier League', 'La Liga', 'Bundesliga', 'Serie A', 'Ligue 1', 
+                                 'UEFA Champions League', 'UEFA Europa League', 'UEFA Conference League',
+                                 'Copa Libertadores', 'Copa Sudamericana', 'Liga MX', 'EFL Championship',
+                                 'FA Cup', 'Copa del Rey', 'Coppa Italia', 'DFB-Pokal', 'Coupe de France'];
+
+        // Wait for Firebase and Luxon to load before initializing
+        function initializeApp() {
+            if (typeof firebase === 'undefined' || typeof luxon === 'undefined') {
+                console.log('Waiting for Firebase/Luxon to load...');
+                setTimeout(initializeApp, 100);
+                return;
+            }
+
+            console.log('Firebase and Luxon loaded, initializing...');
+
+            // Firebase configuration (from main site)
+            const firebaseConfig = {
+                apiKey: "AIzaSyD3bw8d4q2oO2qpbgGiUG6Qnlf4aABK3Bc",
+                authDomain: "flashlive-daily-scraper.firebaseapp.com",
+                projectId: "flashlive-daily-scraper",
+                storageBucket: "flashlive-daily-scraper.appspot.com",
+                messagingSenderId: "124291936014",
+                appId: "1:124291936014:web:acadcaa791d6046849315f"
+            };
+
+            // Initialize Firebase (check if already initialized)
+            if (!firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+            }
+            const db = firebase.firestore();
+
+            async function loadGames() {
+                const container = document.getElementById('games-container');
+                container.innerHTML = '<div class="loading">Loading games...</div>';
+
+                try {
+                    // Get today's date in Mountain Time
+                    const nowInMountain = luxon.DateTime.now().setZone('America/Denver');
+                    const todayStr = nowInMountain.toISODate();
+                    console.log('Looking for games with gameDate:', todayStr);
+
+                    // Fetch games from espnLiveGames collection
+                    const gamesRef = db.collection('artifacts/flashlive-daily-scraper/public/data/espnLiveGames');
+                    const snapshot = await gamesRef.where('gameDate', '==', todayStr).get();
+
+                    console.log(`Found ${snapshot.size} games for today`);
+
+                    if (snapshot.empty) {
+                        // Try to see if there are any games at all
+                        const allGamesSnapshot = await gamesRef.limit(5).get();
+                        if (!allGamesSnapshot.empty) {
+                            const sampleGame = allGamesSnapshot.docs[0].data();
+                            container.innerHTML = `<div class="no-games">No games found for today (${todayStr}).<br><br>Sample game date in collection: ${sampleGame.gameDate || 'N/A'}<br>Total games in collection: ${allGamesSnapshot.size}+</div>`;
+                        } else {
+                            container.innerHTML = '<div class="no-games">No games found for today. Collection appears to be empty.</div>';
+                        }
+                        return;
+                    }
+
+                    const games = [];
+                    snapshot.forEach(doc => {
+                        games.push(doc.data());
+                    });
+
+                    // Group games by league
+                    const gamesByLeague = {};
+                    games.forEach(game => {
+                        const league = game.League || 'Unknown';
+                        if (!gamesByLeague[league]) {
+                            gamesByLeague[league] = [];
+                        }
+                        gamesByLeague[league].push(game);
+                    });
+
+                    // Sort leagues alphabetically
+                    const sortedLeagues = Object.keys(gamesByLeague).sort();
+
+                    // Build HTML
+                    let html = '';
+                    for (const league of sortedLeagues) {
+                        const leagueGames = gamesByLeague[league];
+                        
+                        // Sort games by start time
+                        leagueGames.sort((a, b) => {
+                            const timeA = a['Start Time']?.toDate ? a['Start Time'].toDate().getTime() : 0;
+                            const timeB = b['Start Time']?.toDate ? b['Start Time'].toDate().getTime() : 0;
+                            return timeA - timeB;
+                        });
+
+                        html += `<div class="league-section">
+                            <div class="league-header">${league}</div>
+                            <table class="games-table">
+                                <thead>
+                                    <tr>
+                                        <th class="time-col">Start Time</th>
+                                        <th class="teams-col">Teams</th>
+                                        <th class="score-col">Score</th>
+                                        <th class="channel-col">Channel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>`;
+
+                        for (const game of leagueGames) {
+                            // Use displayTime if available (shows period/clock when in progress, start time otherwise)
+                            // Otherwise, format start time to user's local time
+                            let timeDisplay = game.displayTime || '';
+                            if (!timeDisplay && game['Start Time'] && game['Start Time'].toDate) {
+                                const gameTime = luxon.DateTime.fromJSDate(game['Start Time'].toDate());
+                                // Convert from UTC (as stored) to user's local timezone
+                                const localTime = gameTime.setZone('utc').toLocal();
+                                timeDisplay = localTime.toFormat('h:mm a');
+                            }
+
+                            // Determine team order (soccer: home on top, away on bottom; others: away on top, home on bottom)
+                            const isSoccer = SOCCER_LEAGUES.includes(league);
+                            const homeTeam = game['Home Team'] || '';
+                            const awayTeam = game['Away Team'] || '';
+                            const homeScore = game['Home Score'] || '';
+                            const awayScore = game['Away Score'] || '';
+                            const matchStatus = game['Match Status'] || 'SCHEDULED';
+
+                            // Get channel from game data (will be enhanced with Google Sheets lookup)
+                            const channel = game.Channel || game.channel || '';
+
+                            html += `<tr>
+                                <td class="time-col">${timeDisplay}</td>
+                                <td class="teams-col">`;
+
+                            if (isSoccer) {
+                                html += `<div class="team-home">${homeTeam}</div>
+                                        <div class="team-away">${awayTeam}</div>`;
+                            } else {
+                                html += `<div class="team-away">${awayTeam}</div>
+                                        <div class="team-home">${homeTeam}</div>`;
+                            }
+
+                            html += `</td>
+                                <td class="score-col">`;
+
+                            if (matchStatus === 'IN PROGRESS' || matchStatus === 'FINAL') {
+                                if (isSoccer) {
+                                    html += `<div class="score">${homeScore}</div><div class="score">${awayScore}</div>`;
+                                } else {
+                                    html += `<div class="score">${awayScore}</div><div class="score">${homeScore}</div>`;
+                                }
+                            } else {
+                                html += `<div class="score">-</div><div class="score">-</div>`;
+                            }
+
+                            html += `</td>
+                                <td class="channel-col">${channel || '-'}</td>
+                            </tr>`;
+                        }
+
+                        html += `</tbody></table></div>`;
+                    }
+
+                    container.innerHTML = html;
+
+                } catch (error) {
+                    console.error('Error loading games:', error);
+                    container.innerHTML = `<div class="no-games">Error loading games: ${error.message}<br><br>Check browser console (F12) for details.</div>`;
+                }
+            }
+
+            // Load games when page is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', () => {
+                    loadGames();
+                });
+            } else {
+                loadGames();
+            }
+        }
+
+        // Start initialization
+        initializeApp();
+    </script>
+</body>
+</html>

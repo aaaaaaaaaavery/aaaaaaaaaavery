@@ -1,0 +1,21 @@
+{
+  "mapping": {
+    "Kcftj40UrmoGhLBA": "mlb-com",
+    "HOpwhDoXxePVbZxP": "espn-mlb",
+    "Bv6N7qiA79eXbSl6": "cbs-mlb",
+    "BKInO41JsrUscMDQ": "yahoo-mlb",
+    "unWxzeL5zRi6VjgR": "fox-mlb",
+    "gpNdeo4WRun54WuS": "nba-com",
+    "pbw0uEDOop5lPZ1h": "espn-nba",
+    "XNu5yCjXjSTjFNuz": "cbs-nba",
+    "Xc90gEP7aCpQkKAc": "yahoo-nba",
+    "RzsFiWRkJWt232Z1": "nfl-com",
+    "cexYuRoRAMSoUAp8": "espn-nfl",
+    "PlvW7vqF4AaGbwcp": "cbs-nfl",
+    "tjqR23Xwa5us4EGS": "nhl-com",
+    "aEOH2tj5bfjq4oJd": "espn-nhl",
+    "xtqmDS6UnTyXSmXG": "cbs-nhl"
+  },
+  "notes": "This maps old RSS.app feed IDs to new source IDs. Use this to update your frontend URLs."
+}
+

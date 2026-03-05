@@ -1,0 +1,25 @@
+{
+  "name": "rss-feed-service",
+  "version": "1.0.0",
+  "description": "Custom RSS feed service to replace RSS.app",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2",
+    "firebase-admin": "^12.0.0",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.57.0",
+    "puppeteer": "^21.11.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "rss": "^1.2.2",
+    "xml": "^1.0.1"
+  }
+}

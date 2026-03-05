@@ -1,0 +1,11 @@
+node_modules/
+*.log
+.env
+logos/
+previews/
+*.png
+*.jpg
+*.jpeg
+.DS_Store
+!preview-html.html
+

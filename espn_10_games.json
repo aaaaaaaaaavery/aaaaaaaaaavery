@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "id": "401778308",
+      "name": "Washington State Cougars at Utah State Aggies",
+      "date": "2025-12-22T19:00Z",
+      "competitions_date": "2025-12-22T19:00Z"
+    },
+    {
+      "id": "401778329",
+      "name": "Arizona State Sun Devils at Duke Blue Devils",
+      "date": "2025-12-31T19:00Z",
+      "competitions_date": "2025-12-31T19:00Z"
+    },
+    {
+      "id": "401778328",
+      "name": "Iowa Hawkeyes at Vanderbilt Commodores",
+      "date": "2025-12-31T17:00Z",
+      "competitions_date": "2025-12-31T17:00Z"
+    },
+    {
+      "id": "401838053",
+      "name": "Missouri State Bears at Arkansas State Red Wolves",
+      "date": "2025-12-19T02:00Z",
+      "competitions_date": "2025-12-19T02:00Z"
+    },
+    {
+      "id": "401778318",
+      "name": "UConn Huskies at Army Black Knights",
+      "date": "2025-12-27T19:15Z",
+      "competitions_date": "2025-12-27T19:15Z"
+    },
+    {
+      "id": "401778319",
+      "name": "Georgia Tech Yellow Jackets at BYU Cougars",
+      "date": "2025-12-27T20:30Z",
+      "competitions_date": "2025-12-27T20:30Z"
+    },
+    {
+      "id": "401778310",
+      "name": "Western Kentucky Hilltoppers at Southern Miss Golden Eagles",
+      "date": "2025-12-23T22:30Z",
+      "competitions_date": "2025-12-23T22:30Z"
+    },
+    {
+      "id": "401779841",
+      "name": "Miami Hurricanes at Texas A&M Aggies",
+      "date": "2025-12-20T17:00Z",
+      "competitions_date": "2025-12-20T17:00Z"
+    },
+    {
+      "id": "401778315",
+      "name": "Florida International Panthers at UTSA Roadrunners",
+      "date": "2025-12-27T01:00Z",
+      "competitions_date": "2025-12-27T01:00Z"
+    },
+    {
+      "id": "401778307",
+      "name": "Memphis Tigers at NC State Wolfpack",
+      "date": "2025-12-19T19:30Z",
+      "competitions_date": "2025-12-19T19:30Z"
+    }
+  ]
+}
