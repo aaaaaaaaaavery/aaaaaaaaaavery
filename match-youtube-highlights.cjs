@@ -4,6 +4,11 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
+const DEFAULT_PLAYLISTS_BY_LEAGUE = {
+  NBA: 'PLlVlyGVtvuVlek5UOvwJaRDtuAI1FgGZf',
+  WBC: 'PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L',
+};
+
 function parseArgs(argv) {
   const args = {};
   for (let i = 2; i < argv.length; i += 1) {
@@ -21,6 +26,14 @@ function parseArgs(argv) {
   return args;
 }
 
+function tryParseJson(data) {
+  try {
+    return JSON.parse(data);
+  } catch {
+    return null;
+  }
+}
+
 function httpGetJson(url) {
   return new Promise((resolve, reject) => {
     https
@@ -33,15 +46,39 @@ function httpGetJson(url) {
           if (res.statusCode < 200 || res.statusCode >= 300) {
             return reject(new Error(`HTTP ${res.statusCode}: ${data.slice(0, 240)}`));
           }
-          try {
-            resolve(JSON.parse(data));
-          } catch (err) {
-            reject(err);
-          }
+          const parsed = tryParseJson(data);
+          if (!parsed) return reject(new Error('Invalid JSON response from API'));
+          resolve(parsed);
         });
       })
       .on('error', reject);
   });
+}
+
+function parseHandleFromUrl(input) {
+  const raw = String(input || '').trim();
+  if (!raw) return null;
+
+  const handleDirect = raw.match(/^@([A-Za-z0-9._-]+)$/);
+  if (handleDirect) return handleDirect[1];
+
+  const fromUrl = raw.match(/youtube\.com\/@([A-Za-z0-9._-]+)/i);
+  if (fromUrl) return fromUrl[1];
+
+  return null;
+}
+
+function parseChannelIdFromUrl(input) {
+  const raw = String(input || '').trim();
+  if (!raw) return null;
+
+  const channelDirect = raw.match(/^(UC[a-zA-Z0-9_-]{20,})$/);
+  if (channelDirect) return channelDirect[1];
+
+  const fromUrl = raw.match(/youtube\.com\/channel\/(UC[a-zA-Z0-9_-]{20,})/i);
+  if (fromUrl) return fromUrl[1];
+
+  return null;
 }
 
 function normalizeText(s) {
@@ -119,6 +156,32 @@ function parseTitleDate(title) {
   return parseDateToIso(title);
 }
 
+function parseGameDateIso(game) {
+  const fieldDate = parseDateToIso(game?.date || game?.gameDate || game?.matchDate || '');
+  if (fieldDate) return fieldDate;
+
+  const idRaw = String(game?.id || '');
+  const compact = idRaw.match(/(?:^|[^0-9])(20\d{2})(\d{2})(\d{2})(?:[^0-9]|$)/);
+  if (compact) {
+    return toIsoDate(Number(compact[1]), Number(compact[2]), Number(compact[3]));
+  }
+
+  return null;
+}
+
+function resolvePlaylistId(argsPlaylist, leagueKey) {
+  const raw = String(argsPlaylist || '').trim();
+  if (raw) {
+    const listFromUrl = raw.match(/[?&]list=([A-Za-z0-9_-]+)/);
+    return listFromUrl ? listFromUrl[1] : raw;
+  }
+
+  const byLeague = DEFAULT_PLAYLISTS_BY_LEAGUE[String(leagueKey || '').toUpperCase()];
+  if (byLeague) return byLeague;
+
+  return DEFAULT_PLAYLISTS_BY_LEAGUE.NBA;
+}
+
 function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm) {
   const titleNorm = normalizeText(video.title);
 
@@ -142,6 +205,12 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm) {
   if (targetDateIso && dateInTitleIso) {
     if (dateInTitleIso === targetDateIso) score += 20;
     else score -= 8;
+  }
+
+  const publishedDateIso = parseDateToIso(video.publishedAt || '');
+  if (targetDateIso && publishedDateIso) {
+    if (publishedDateIso === targetDateIso) score += 16;
+    else score -= 5;
   }
 
   return score;
@@ -204,6 +273,64 @@ async function fetchPlaylistVideos(apiKey, playlistId) {
   return out;
 }
 
+async function resolveChannelId(apiKey, rawChannelInput) {
+  const directId = parseChannelIdFromUrl(rawChannelInput);
+  if (directId) return directId;
+
+  const handle = parseHandleFromUrl(rawChannelInput);
+  if (!handle) {
+    throw new Error('Could not parse YouTube channel handle or channel ID from --channel input.');
+  }
+
+  const q = new URLSearchParams({
+    part: 'id',
+    forHandle: handle,
+    key: apiKey,
+  });
+  const url = `https://www.googleapis.com/youtube/v3/channels?${q.toString()}`;
+  const json = await httpGetJson(url);
+  const channelId = json?.items?.[0]?.id || null;
+  if (!channelId) {
+    throw new Error(`Could not resolve channel ID for handle @${handle}`);
+  }
+  return channelId;
+}
+
+async function fetchChannelVideos(apiKey, rawChannelInput) {
+  const out = [];
+  const channelId = await resolveChannelId(apiKey, rawChannelInput);
+  let pageToken = '';
+
+  while (true) {
+    const q = new URLSearchParams({
+      part: 'snippet',
+      channelId,
+      type: 'video',
+      order: 'date',
+      maxResults: '50',
+      key: apiKey,
+    });
+    if (pageToken) q.set('pageToken', pageToken);
+
+    const url = `https://www.googleapis.com/youtube/v3/search?${q.toString()}`;
+    const json = await httpGetJson(url);
+
+    const items = Array.isArray(json.items) ? json.items : [];
+    for (const item of items) {
+      const videoId = item?.id?.videoId;
+      const title = item?.snippet?.title;
+      const publishedAt = item?.snippet?.publishedAt || null;
+      if (!videoId || !title) continue;
+      out.push({ videoId, title, publishedAt });
+    }
+
+    pageToken = json.nextPageToken;
+    if (!pageToken) break;
+  }
+
+  return { channelId, videos: out };
+}
+
 function defaultDateString() {
   const d = new Date();
   return d.toLocaleDateString('en-US', {
@@ -218,11 +345,10 @@ async function main() {
   const args = parseArgs(process.argv);
 
   const jsonPathArg = args.json || args.file;
-  const playlist = args.playlist || 'PLlVlyGVtvuVlek5UOvwJaRDtuAI1FgGZf';
   const apiKey = args.apiKey || process.env.YOUTUBE_API_KEY;
   const dateInput = args.date || defaultDateString();
-  const usePerGameDate = String(args.usePerGameDate || 'false').toLowerCase() === 'true';
   const titleMustIncludeNorm = normalizeText(args.titleMustInclude || '');
+  const channelInput = args.channel || args.channelUrl || '';
 
   if (!jsonPathArg) {
     throw new Error('Missing --json path, e.g. --json recaps-manual/daily/nba.json');
@@ -239,12 +365,27 @@ async function main() {
     throw new Error('Expected top-level games[] array in JSON file.');
   }
 
+  const playlist = resolvePlaylistId(args.playlist, data.leagueKey);
+  const usePerGameDateArg = String(args.usePerGameDate || '').toLowerCase();
+  const usePerGameDate = usePerGameDateArg
+    ? usePerGameDateArg === 'true'
+    : String(data.leagueKey || '').toUpperCase() === 'WBC';
+
   const globalTargetDateIso = parseDateToIso(dateInput);
-  const videos = await fetchPlaylistVideos(apiKey, playlist);
+  let videos = [];
+  let sourceLabel = '';
+  if (channelInput) {
+    const channelResult = await fetchChannelVideos(apiKey, channelInput);
+    videos = channelResult.videos;
+    sourceLabel = `channel:${channelResult.channelId}`;
+  } else {
+    videos = await fetchPlaylistVideos(apiKey, playlist);
+    sourceLabel = `playlist:${playlist}`;
+  }
 
   let matched = 0;
   for (const game of data.games) {
-    const perGameDateIso = parseDateToIso(game.date || game.gameDate || game.matchDate || '');
+    const perGameDateIso = parseGameDateIso(game);
     const targetDateIso = usePerGameDate ? perGameDateIso : globalTargetDateIso;
     const best = pickBestVideo(game, videos, targetDateIso, titleMustIncludeNorm);
     if (best) {
@@ -260,6 +401,7 @@ async function main() {
   console.log(`Processed ${data.games.length} games in ${jsonPathArg}`);
   console.log(`Matched highlights: ${matched}`);
   console.log(`Unmatched: ${data.games.length - matched}`);
+  console.log(`Video source: ${sourceLabel}`);
   console.log(`Date filter: ${dateInput}`);
   console.log(`Date mode: ${usePerGameDate ? 'per-game' : 'global'}`);
   if (titleMustIncludeNorm) {

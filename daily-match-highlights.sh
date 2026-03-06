@@ -14,6 +14,8 @@ DATE_ARG="${1:-$DEFAULT_DATE}"
 NBA_PLAYLIST="PLlVlyGVtvuVlek5UOvwJaRDtuAI1FgGZf"
 NHL_PLAYLIST="PL1NbHSfosBuFyu867mbHHhB2G6fx7jtiH"
 PREMIER_LEAGUE_PLAYLIST="PLXEMPXZ3PY1hMzinDc1TvSm8U2NUyz-0E"
+WBC_PLAYLIST="PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L"
+WBC_CHANNEL_URL="https://www.youtube.com/@MLB/videos"
 
 if [[ ! -f "$MATCHER" ]]; then
   echo "Error: matcher script not found at $MATCHER"
@@ -57,12 +59,30 @@ run_match_per_game_date() {
     --titleMustInclude "$title_filter"
 }
 
+run_match_per_game_date_channel() {
+  local json_file="$1"
+  local channel_url="$2"
+  local league_name="$3"
+  local title_filter="$4"
+
+  echo ""
+  echo "[highlights] Matching $league_name videos from channel using per-game dates from JSON"
+
+  YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+    --json "$json_file" \
+    --channelUrl "$channel_url" \
+    --usePerGameDate true \
+    --titleMustInclude "$title_filter"
+}
+
 run_match "$ROOT_DIR/recaps-manual/daily/nba.json" "$NBA_PLAYLIST" "NBA"
 run_match "$ROOT_DIR/recaps-manual/daily/nhl.json" "$NHL_PLAYLIST" "NHL"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/premierleague.json" "$PREMIER_LEAGUE_PLAYLIST" "Premier League" "premier league highlights"
+run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/wbc.json" "$WBC_CHANNEL_URL" "WBC" "world baseball classic"
 
 echo ""
 echo "Done. Updated files:"
 echo "- recaps-manual/daily/nba.json"
 echo "- recaps-manual/daily/nhl.json"
 echo "- recaps-manual/daily/premierleague.json"
+echo "- recaps-manual/daily/wbc.json"

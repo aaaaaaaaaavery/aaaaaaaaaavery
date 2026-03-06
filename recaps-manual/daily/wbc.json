@@ -29,9 +29,11 @@
         {
           "provider": "youtube",
           "videoId": "ig2IBy1o2EE",
-          "title": "Japan vs Chinese Taipei | WBC Highlights",
+          "title": "Japan vs. Chinese Taipei 2026 World Baseball Classic | Game Highlights",
           "url": "https://www.youtube.com/watch?v=ig2IBy1o2EE",
-          "embedUrl": "https://www.youtube.com/embed/ig2IBy1o2EE"
+          "embedUrl": "https://www.youtube.com/embed/ig2IBy1o2EE",
+          "publishedAt": "2026-03-06T15:20:40Z",
+          "matchScore": 121
         }
       ]
     },
@@ -60,9 +62,11 @@
         {
           "provider": "youtube",
           "videoId": "302xEgnN8OI",
-          "title": "Australia vs Czechia | WBC Highlights",
+          "title": "Australia vs. Czechia 2026 World Baseball Classic | Game Highlights",
           "url": "https://www.youtube.com/watch?v=302xEgnN8OI",
-          "embedUrl": "https://www.youtube.com/embed/302xEgnN8OI"
+          "embedUrl": "https://www.youtube.com/embed/302xEgnN8OI",
+          "publishedAt": "2026-03-06T07:05:51Z",
+          "matchScore": 105
         }
       ]
     }
