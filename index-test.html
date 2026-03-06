@@ -63,8 +63,8 @@
     </aside>
 
     <div class="flex min-h-screen flex-1 flex-col">
-      <main class="flex-1 p-4 sm:p-6">
-        <div class="mx-auto grid max-w-7xl gap-4">
+      <main class="flex-1 p-2 sm:p-4 md:p-6">
+        <div class="mx-auto grid max-w-none gap-3 md:max-w-7xl md:gap-4">
           <section class="space-y-2 md:hidden">
             <div class="grid grid-cols-[minmax(0,1fr)_72px] gap-2">
               <div class="rounded-md border border-gray-200 bg-white p-1 shadow-sm">
@@ -80,9 +80,9 @@
             </div>
           </section>
 
-          <section class="overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm">
-            <div id="rightScroll" class="max-h-[calc(100vh-210px)] overflow-y-auto md:max-h-[calc(100vh-280px)]">
-              <div id="leagueStream" class="space-y-8 p-3 pb-24 sm:p-4 sm:pb-32 md:space-y-[250px] md:p-4 md:pb-[250px]"></div>
+          <section class="overflow-hidden rounded-none border-y border-gray-200 bg-white shadow-none md:rounded-md md:border md:shadow-sm">
+            <div id="rightScroll" class="max-h-[calc(100vh-190px)] overflow-y-auto md:max-h-[calc(100vh-280px)]">
+              <div id="leagueStream" class="space-y-8 p-2 pb-16 sm:p-4 sm:pb-32 md:space-y-[250px] md:p-4 md:pb-[250px]"></div>
             </div>
 
             <div id="emptyState" class="hidden p-6">
@@ -1260,7 +1260,7 @@
 
     function renderGameCard(g, gameIdx, leagueKey) {
       const card = document.createElement("article");
-      card.className = "game-card rounded-md border border-gray-200 bg-white p-5 shadow-sm";
+      card.className = "game-card rounded-md border border-gray-200 bg-white p-3 shadow-sm sm:p-5";
       card.dataset.leagueKey = leagueKey;
       card.dataset.gameIndex = String(gameIdx);
       card.dataset.gameId = String(g.id || `${leagueKey}-${gameIdx}`);
@@ -1319,7 +1319,7 @@
       const yt = getYouTubeVideoFromGame(g);
       if (yt?.embedUrl) {
         const mediaWrap = document.createElement("div");
-        mediaWrap.className = "float-right mb-3 ml-4 w-full sm:w-[280px]";
+        mediaWrap.className = "mb-3 w-full md:float-right md:ml-4 md:w-[280px]";
 
         const ratio = document.createElement("div");
         ratio.className = "overflow-hidden rounded-md border border-gray-200 bg-black";
@@ -1352,7 +1352,7 @@
       }
 
       const headline = document.createElement("div");
-      headline.className = "text-base sm:text-lg font-extrabold leading-snug";
+      headline.className = "text-[15px] font-extrabold leading-snug sm:text-lg";
       headline.textContent = g.headline ? String(g.headline) : "Recap";
       card.appendChild(headline);
 
@@ -1370,7 +1370,7 @@
       const leadText = g.lead || g.brief;
       if (leadText) {
         const lead = document.createElement("div");
-        lead.className = "mt-3 text-sm leading-relaxed text-gray-700";
+        lead.className = "mt-2 text-sm leading-relaxed text-gray-700";
         lead.textContent = String(leadText);
         card.appendChild(lead);
       }
@@ -1378,7 +1378,7 @@
       const bullets = Array.isArray(g.bullets) ? g.bullets : [];
       if (bullets.length) {
         const ul = document.createElement("ul");
-        ul.className = "mt-3 list-disc space-y-2 pl-5 text-sm text-gray-800";
+        ul.className = "mt-3 list-disc space-y-2 pl-5 text-[13px] text-gray-800 sm:text-sm";
         bullets.forEach((b) => {
           const li = document.createElement("li");
           li.className = "leading-relaxed";
@@ -1390,7 +1390,7 @@
 
       if (g.context) {
         const ctx = document.createElement("div");
-        ctx.className = "mt-4 border-t border-gray-200 pt-3 text-xs leading-relaxed text-gray-500";
+        ctx.className = "mt-3 border-t border-gray-200 pt-2 text-[11px] leading-relaxed text-gray-500 sm:mt-4 sm:pt-3 sm:text-xs";
         ctx.textContent = `Context: ${String(g.context)}`;
         card.appendChild(ctx);
       }
@@ -1411,11 +1411,11 @@
       const headerCard = document.createElement("div");
       headerCard.className = "rounded-md border border-gray-200 bg-white shadow-sm";
       const headerInner = document.createElement("div");
-      headerInner.className = "flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 px-4 py-3";
+      headerInner.className = "flex flex-wrap items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 sm:gap-3 sm:px-4 sm:py-3";
       const left = document.createElement("div");
       left.className = "min-w-0";
       const title = document.createElement("div");
-      title.className = "truncate text-lg font-semibold";
+      title.className = "truncate text-base font-semibold sm:text-lg";
       title.textContent = lg.leagueName || data.leagueName || "League";
       left.appendChild(title);
       // const src = document.createElement("div");
@@ -1428,7 +1428,7 @@
 
       const gameCount = Array.isArray(data.games) ? data.games.length : 0;
       const meta = document.createElement("span");
-      meta.className = "rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-xs text-gray-600";
+      meta.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-1 text-[11px] text-gray-600 sm:px-3 sm:py-2 sm:text-xs";
       meta.textContent = lg.leagueKey === "all"
         ? `${lg.leagueName} • ${gameCount} ranked storylines`
         : `${lg.leagueName} • ${gameCount} recaps • ${lg.fileUrl}`;
@@ -1436,11 +1436,11 @@
       headerCard.appendChild(headerInner);
 
       const briefing = document.createElement("div");
-      briefing.className = "border-b border-gray-200 px-4 py-4";
+      briefing.className = "border-b border-gray-200 px-3 py-3 sm:px-4 sm:py-4";
       const leagueBriefText = composeLeagueBriefText(data);
       if (leagueBriefText) {
         const h = document.createElement("div");
-        h.className = "mb-2 text-sm font-semibold";
+        h.className = "mb-2 text-xs font-semibold sm:text-sm";
         h.textContent = "News briefing";
 
         const p = document.createElement("div");
@@ -1490,7 +1490,7 @@
       const games = Array.isArray(data.games) ? data.games : [];
       if (!games.length) {
         const box = document.createElement("div");
-        box.className = "rounded-md border border-gray-200 bg-gray-50 p-5";
+        box.className = "rounded-md border border-gray-200 bg-gray-50 p-4 sm:p-5";
         const h = document.createElement("div");
         h.className = "mb-2 text-sm font-bold";
         h.textContent = "No recaps found for this league";
