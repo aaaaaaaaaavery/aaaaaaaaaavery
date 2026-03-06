@@ -169,17 +169,34 @@ function parseGameDateIso(game) {
   return null;
 }
 
-function resolvePlaylistId(argsPlaylist, leagueKey) {
+function extractPlaylistId(rawInput) {
+  const raw = String(rawInput || '').trim();
+  if (!raw) return null;
+
+  const listFromUrl = raw.match(/[?&]list=([A-Za-z0-9_-]+)/);
+  return listFromUrl ? listFromUrl[1] : raw;
+}
+
+function resolvePlaylistIds(argsPlaylist, leagueKey) {
   const raw = String(argsPlaylist || '').trim();
   if (raw) {
-    const listFromUrl = raw.match(/[?&]list=([A-Za-z0-9_-]+)/);
-    return listFromUrl ? listFromUrl[1] : raw;
+    const tokens = raw
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean);
+
+    const ids = [];
+    for (const token of tokens) {
+      const id = extractPlaylistId(token);
+      if (id) ids.push(id);
+    }
+    return [...new Set(ids)];
   }
 
   const byLeague = DEFAULT_PLAYLISTS_BY_LEAGUE[String(leagueKey || '').toUpperCase()];
-  if (byLeague) return byLeague;
+  if (byLeague) return [byLeague];
 
-  return DEFAULT_PLAYLISTS_BY_LEAGUE.NBA;
+  return [DEFAULT_PLAYLISTS_BY_LEAGUE.NBA];
 }
 
 function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm) {
@@ -271,6 +288,32 @@ async function fetchPlaylistVideos(apiKey, playlistId) {
   }
 
   return out;
+}
+
+async function fetchVideosFromPlaylists(apiKey, playlistIds) {
+  const merged = [];
+  for (const pid of playlistIds) {
+    const vids = await fetchPlaylistVideos(apiKey, pid);
+    merged.push(...vids);
+  }
+
+  // Same video can appear in multiple playlists; keep one record per videoId.
+  const byId = new Map();
+  for (const v of merged) {
+    if (!byId.has(v.videoId)) {
+      byId.set(v.videoId, v);
+      continue;
+    }
+    // Prefer record with an explicit contentDetails publish date when available.
+    const existing = byId.get(v.videoId);
+    const existingHasDate = Boolean(parseDateToIso(existing.publishedAt || ''));
+    const nextHasDate = Boolean(parseDateToIso(v.publishedAt || ''));
+    if (!existingHasDate && nextHasDate) {
+      byId.set(v.videoId, v);
+    }
+  }
+
+  return [...byId.values()];
 }
 
 async function resolveChannelId(apiKey, rawChannelInput) {
@@ -365,7 +408,7 @@ async function main() {
     throw new Error('Expected top-level games[] array in JSON file.');
   }
 
-  const playlist = resolvePlaylistId(args.playlist, data.leagueKey);
+  const playlistIds = resolvePlaylistIds(args.playlist, data.leagueKey);
   const usePerGameDateArg = String(args.usePerGameDate || '').toLowerCase();
   const usePerGameDate = usePerGameDateArg
     ? usePerGameDateArg === 'true'
@@ -379,8 +422,8 @@ async function main() {
     videos = channelResult.videos;
     sourceLabel = `channel:${channelResult.channelId}`;
   } else {
-    videos = await fetchPlaylistVideos(apiKey, playlist);
-    sourceLabel = `playlist:${playlist}`;
+    videos = await fetchVideosFromPlaylists(apiKey, playlistIds);
+    sourceLabel = `playlists:${playlistIds.join(',')}`;
   }
 
   let matched = 0;

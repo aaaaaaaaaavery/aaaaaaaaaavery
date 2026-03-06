@@ -24,7 +24,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825560/michigan-iowa"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "2U5Mtiy-LCU",
+          "title": "Michigan at Iowa | HIGHLIGHTS | Big Ten Men's Basketball | 03/05/2026",
+          "url": "https://www.youtube.com/watch?v=2U5Mtiy-LCU",
+          "embedUrl": "https://www.youtube.com/embed/2U5Mtiy-LCU",
+          "publishedAt": "2026-03-06T03:27:26Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401825561",
@@ -46,7 +56,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825561/rutgers-michigan-st"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "oI0Tlqm7hx8",
+          "title": "Rutgers at Michigan State | HIGHLIGHTS | Big Ten Men's Basketball | 03/05/2026",
+          "url": "https://www.youtube.com/watch?v=oI0Tlqm7hx8",
+          "embedUrl": "https://www.youtube.com/embed/oI0Tlqm7hx8",
+          "publishedAt": "2026-03-06T03:35:45Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401851485",
@@ -424,7 +444,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827106/grambling-alabama-st"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "oIyOGYjBg90",
+          "title": "Grambling vs. #16 Iowa State Game Highlights | 2025-26 Big 12 Men's Basketball",
+          "url": "https://www.youtube.com/watch?v=oIyOGYjBg90",
+          "embedUrl": "https://www.youtube.com/embed/oIyOGYjBg90",
+          "publishedAt": "2025-11-07T03:18:34Z",
+          "matchScore": 100
+        }
+      ]
     },
     {
       "id": "401827082",
@@ -519,7 +549,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851699/ga-southern-arkansas-st"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "RZTJ0Yx_4hs",
+          "title": "Southern Utah vs. Arizona State Game Highlights | 2025-26 Big 12 Men’s Basketball",
+          "url": "https://www.youtube.com/watch?v=RZTJ0Yx_4hs",
+          "embedUrl": "https://www.youtube.com/embed/RZTJ0Yx_4hs",
+          "publishedAt": "2025-11-05T04:06:40Z",
+          "matchScore": 100
+        }
+      ]
     },
     {
       "id": "401851456",
@@ -563,7 +603,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828670/miss-valley-st-jackson-st"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "UwHrk7dDcg4",
+          "title": "Mississippi Valley State vs. West Virginia Game Highlights | 2025-26 Big 12 Men’s Basketball",
+          "url": "https://www.youtube.com/watch?v=UwHrk7dDcg4",
+          "embedUrl": "https://www.youtube.com/embed/UwHrk7dDcg4",
+          "publishedAt": "2025-12-23T01:59:11Z",
+          "matchScore": 100
+        }
+      ]
     },
     {
       "id": "401822780",
@@ -585,7 +635,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401822780/coppin-st-morgan-st"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "EbKljF89HtM",
+          "title": "Florida State vs. Pitt Highlights | 2025-26 ACC Men's Basketball",
+          "url": "https://www.youtube.com/watch?v=EbKljF89HtM",
+          "embedUrl": "https://www.youtube.com/embed/EbKljF89HtM",
+          "publishedAt": "2026-03-05T04:40:45Z",
+          "matchScore": 121
+        }
+      ]
     },
     {
       "id": "401805213",
@@ -695,7 +755,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804959/jax-state-new-mexico-st"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "EbKljF89HtM",
+          "title": "Florida State vs. Pitt Highlights | 2025-26 ACC Men's Basketball",
+          "url": "https://www.youtube.com/watch?v=EbKljF89HtM",
+          "embedUrl": "https://www.youtube.com/embed/EbKljF89HtM",
+          "publishedAt": "2026-03-05T04:40:45Z",
+          "matchScore": 121
+        }
+      ]
     },
     {
       "id": "401828260",
@@ -717,7 +787,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828260/south-florida-memphis"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "IthllmEJQFM",
+          "title": "Memphis vs South Florida Highlights | Men's Basketball | College Basketball 2026",
+          "url": "https://www.youtube.com/watch?v=IthllmEJQFM",
+          "embedUrl": "https://www.youtube.com/embed/IthllmEJQFM",
+          "publishedAt": "2026-03-06T04:59:42Z",
+          "matchScore": 92
+        }
+      ]
     },
     {
       "id": "401827038",

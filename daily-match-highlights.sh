@@ -16,6 +16,7 @@ NHL_PLAYLIST="PL1NbHSfosBuFyu867mbHHhB2G6fx7jtiH"
 PREMIER_LEAGUE_PLAYLIST="PLXEMPXZ3PY1hMzinDc1TvSm8U2NUyz-0E"
 WBC_PLAYLIST="PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L"
 WBC_CHANNEL_URL="https://www.youtube.com/@MLB/videos"
+NCAAM_PLAYLISTS="https://www.youtube.com/playlist?list=PL2RRF9GtC9s1v7L7tO5Astcl4Z8xq3BqQ,https://youtube.com/playlist?list=PLn3nHXu50t5zIzgZhRCXRsZcRIfapIxEV,https://youtube.com/playlist?list=PLhh7fyF6r5qVV2_RonsHodwkwe-GGt_Jl,https://youtube.com/playlist?list=PLSrXjFYZsRuMeW1ttMkXz4cQy9bap9fIB,https://youtube.com/playlist?list=PLmkjXprBSRGMmLrdClEpgvhPQ2DijUXG6,https://youtube.com/playlist?list=PL1Vg1LQKb_yhAKOVNRK2hCBmYuDQdf1K6,https://youtube.com/playlist?list=PLSoN6Th-EepNAj-4G-KbtcJB4w3Q__KOb"
 
 if [[ ! -f "$MATCHER" ]]; then
   echo "Error: matcher script not found at $MATCHER"
@@ -41,6 +42,22 @@ run_match() {
     --json "$json_file" \
     --playlist "$playlist_id" \
     --date "$DATE_ARG"
+}
+
+run_match_with_filter() {
+  local json_file="$1"
+  local playlist_id="$2"
+  local league_name="$3"
+  local title_filter="$4"
+
+  echo ""
+  echo "[highlights] Matching $league_name videos for date: $DATE_ARG"
+
+  YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+    --json "$json_file" \
+    --playlist "$playlist_id" \
+    --date "$DATE_ARG" \
+    --titleMustInclude "$title_filter"
 }
 
 run_match_per_game_date() {
@@ -77,6 +94,7 @@ run_match_per_game_date_channel() {
 
 run_match "$ROOT_DIR/recaps-manual/daily/nba.json" "$NBA_PLAYLIST" "NBA"
 run_match "$ROOT_DIR/recaps-manual/daily/nhl.json" "$NHL_PLAYLIST" "NHL"
+run_match_with_filter "$ROOT_DIR/recaps-manual/daily/ncaam.json" "$NCAAM_PLAYLISTS" "NCAAM" "basketball"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/premierleague.json" "$PREMIER_LEAGUE_PLAYLIST" "Premier League" "premier league highlights"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/wbc.json" "$WBC_CHANNEL_URL" "WBC" "world baseball classic"
 
@@ -84,5 +102,6 @@ echo ""
 echo "Done. Updated files:"
 echo "- recaps-manual/daily/nba.json"
 echo "- recaps-manual/daily/nhl.json"
+echo "- recaps-manual/daily/ncaam.json"
 echo "- recaps-manual/daily/premierleague.json"
 echo "- recaps-manual/daily/wbc.json"
