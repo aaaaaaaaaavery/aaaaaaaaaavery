@@ -355,7 +355,7 @@
         const data = JSON.parse(raw);
         applyManualPicks(data?.picks || []);
         applyManualHeadlineOverrides(data?.picks || [], data?.top10 || []);
-        state.manualNewsBriefing = String(data?.newsBriefing || data?.leagueBriefing || "").trim();
+        state.manualNewsBriefing = String(data?.newsBriefing || "").trim();
         state.lastManualSavedAt = String(data?.updatedAt || "");
       } catch (e) {
         // Ignore malformed local storage entries.
@@ -376,7 +376,7 @@
         console.log(`[loadManualPicksFromFile] ✓ Successfully loaded ${picksCount} manual picks from file`);
         applyManualPicks(data?.picks || []);
         applyManualHeadlineOverrides(data?.picks || [], data?.top10 || []);
-        state.manualNewsBriefing = String(data?.newsBriefing || data?.leagueBriefing || "").trim();
+        state.manualNewsBriefing = String(data?.newsBriefing || "").trim();
         state.lastManualSavedAt = String(data?.updatedAt || "");
         return true;
       } catch (e) {
@@ -685,10 +685,7 @@
     }
 
     function composeLeagueBriefText(data) {
-      const news = String(data?.newsBriefing || "").trim();
-      const brief = String(data?.leagueBriefing || "").trim();
-      if (news && brief) return `${news}\n\n${brief}`;
-      return news || brief;
+      return String(data?.newsBriefing || "").trim();
     }
 
     function shouldSkipGame(game) {
@@ -778,7 +775,7 @@
       return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
     }
 
-    function scoreGame(game, leagueKey, leagueBriefing) {
+    function scoreGame(game, leagueKey, briefingText) {
       const headline = normalizeText(game?.headline);
       const brief = normalizeText(game?.brief || game?.lead);
       const context = normalizeText(game?.context);
@@ -813,7 +810,7 @@
         else if (n >= 10) score += 2;
       });
 
-      const briefing = normalizeText(leagueBriefing);
+      const briefing = normalizeText(briefingText);
       if (briefing) {
         const briefingTokens = briefing
           .split(/[^a-z0-9]+/)
@@ -848,7 +845,7 @@
         const games = Array.isArray(league.games) ? league.games : [];
         games.forEach((game, i) => {
           const gameId = game?.id != null ? String(game.id) : `${leagueKey}-${i + 1}`;
-          const score = scoreGame(game, leagueKey, league.leagueBriefing);
+          const score = scoreGame(game, leagueKey, league.newsBriefing);
           candidates.push({
             leagueKey,
             leagueName: league.leagueName || leagueKey.toUpperCase(),
@@ -932,8 +929,7 @@
       return {
         leagueName: "TOP 10",
         leagueKey: "all",
-        newsBriefing: manualBrief,
-        leagueBriefing: manualBrief ? "" : defaultBrief,
+        newsBriefing: manualBrief || defaultBrief,
         games,
       };
     }
@@ -999,7 +995,7 @@
               text: manualHeadline || sourceHeadline,
               scoreLine: String(game?.scoreLine || game?.score || ""),
               teams: game?.teams || null,
-              scoreValue: scoreGame(game, leagueKey, league.leagueBriefing),
+              scoreValue: scoreGame(game, leagueKey, league.newsBriefing),
               lead: String(game?.lead || ""),
               brief: String(game?.brief || game?.lead || ""),
               bullets: Array.isArray(game?.bullets) ? game.bullets : [],
@@ -1273,7 +1269,7 @@
       if (leagueBriefText) {
         const h = document.createElement("div");
         h.className = "mb-2 text-sm font-semibold";
-        h.textContent = "League brief";
+        h.textContent = "News briefing";
 
         const p = document.createElement("div");
         p.className = "brief-collapsed whitespace-pre-line text-sm leading-relaxed text-gray-700";

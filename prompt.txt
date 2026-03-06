@@ -129,14 +129,6 @@ Structure:
 ]
 }
 ---
-LEAGUE BRIEFING
-Write a 1-2 sentence briefing summarizing the biggest storylines across all games in this league tonight.
-Examples:
-- major win streaks
-- huge performances
-- playoff implications
-- division race changes
----
 IMPORTANT
 Return JSON ONLY.
 Do not include explanations.
