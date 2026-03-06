@@ -29,7 +29,7 @@
           alt="THPORTH"
           class="h-[25px] w-auto"
         />
-        <div id="leagueCount" class="rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600"></div>
+        <div id="leagueCount" class="text-sm font-medium text-gray-600"></div>
       </div>
 
       <div class="grid min-h-0 flex-1 grid-cols-[225px_minmax(0,1fr)]">
@@ -257,6 +257,16 @@
       const mm = String(d.getMonth() + 1).padStart(2, "0");
       const dd = String(d.getDate()).padStart(2, "0");
       return `${yyyy}-${mm}-${dd}`;
+    }
+
+    function getMorningBriefingLabel() {
+      const dateText = new Date().toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      });
+      return `Morning briefing for ${dateText}`;
     }
 
     function detectAdminMode() {
@@ -1394,7 +1404,7 @@
     function buildLeagueNav() {
       clear(leagueNav);
       const visibleLeagues = getVisibleLeagues();
-      leagueCount.textContent = String(visibleLeagues.length);
+      leagueCount.textContent = getMorningBriefingLabel();
 
       const indexByLeagueKey = new Map(visibleLeagues.map((lg, idx) => [lg.leagueKey, idx]));
       const top10League = visibleLeagues.find((lg) => lg.leagueKey === "all") || null;
@@ -1415,7 +1425,7 @@
           isActive
             ? "border-black bg-black text-white hover:bg-gray-800"
             : isNested
-              ? "border-transparent bg-gray-50 text-gray-700 hover:bg-white"
+              ? "border-transparent bg-white text-gray-700 hover:bg-gray-100"
               : "border-transparent bg-white text-gray-700 hover:bg-gray-100"
         );
         btn.addEventListener("click", async () => {
@@ -1458,7 +1468,7 @@
       const appendSoccerGroup = () => {
         if (!soccerLeagues.length) return;
         const soccerGroup = document.createElement("div");
-        soccerGroup.className = "mt-1 rounded-md border border-gray-200 bg-gray-50";
+        soccerGroup.className = "mt-1 rounded-md border border-gray-200 bg-white";
 
         const soccerHeader = document.createElement("div");
         soccerHeader.className = "border-b border-gray-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-gray-600";
