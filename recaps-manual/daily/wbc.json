@@ -25,7 +25,15 @@
       "source": {
         "recapUrl": "https://www.mlb.com/world-baseball-classic"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "ig2IBy1o2EE",
+          "title": "Japan vs Chinese Taipei | WBC Highlights",
+          "url": "https://www.youtube.com/watch?v=ig2IBy1o2EE",
+          "embedUrl": "https://www.youtube.com/embed/ig2IBy1o2EE"
+        }
+      ]
     },
     {
       "id": "788116",
@@ -48,7 +56,15 @@
       "source": {
         "recapUrl": "https://www.mlb.com/news/australia-vs-czechia-in-2026-world-baseball-classic?game_pk=788116"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "302xEgnN8OI",
+          "title": "Australia vs Czechia | WBC Highlights",
+          "url": "https://www.youtube.com/watch?v=302xEgnN8OI",
+          "embedUrl": "https://www.youtube.com/embed/302xEgnN8OI"
+        }
+      ]
     }
   ]
 }
