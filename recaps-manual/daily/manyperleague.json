@@ -4,7 +4,6 @@
     "leagueKey": "MLB",
     "sourceType": "morning_briefing",
     "newsBriefing": "",
-    "leagueBriefing": "",
     "games": []
   },
   {
@@ -12,7 +11,6 @@
     "leagueKey": "COLLEGE_BASEBALL",
     "sourceType": "morning_briefing",
     "newsBriefing": "",
-    "leagueBriefing": "Midweek college baseball delivered a little bit of everything across the country — statement wins from national contenders, a notable in-state upset, and several offense-heavy shootouts. Louisiana produced the headline result by knocking off LSU 7–2 in Lafayette, capitalizing on Tiger errors and timely hitting. Florida State posted the most explosive performance of the day with a 22-run eruption against Mercer, while Clemson and Tennessee rolled to run-rule victories behind dominant offenses. California piled up an eye-popping 21 hits in a rout of Cal State Bakersfield, showcasing one of the deepest lineups of the slate. A few games turned chaotic late, including Georgia’s 11–10 escape against Western Carolina and Old Dominion’s 12–10 slugfest win over VCU. With conference play approaching, the midweek slate offered an early signal of which contenders are heating up — and which powerhouse programs may still be vulnerable.",
     "games": []
   },
   {
@@ -20,7 +18,6 @@
     "leagueKey": "UEFA.CHAMPIONS.LEAGUE",
     "sourceType": "console_recaps",
     "newsBriefing": "",
-    "leagueBriefing": "Latest UEFA Champions League recaps for the day.",
     "games": []
   },
   {
@@ -28,7 +25,6 @@
     "leagueKey": "LIV",
     "sourceType": "plain_text",
     "newsBriefing": "",
-    "leagueBriefing": "Carlos Ortiz went nuclear with a career-best 10-under 60 to grab the early lead in Hong Kong, setting the tone on a softened Fanling track that saw scores pile up fast. Torque GC rode Ortiz's round into the team lead, while a packed chase group and a Victor Perez ace added to a wide-open Round 1 story.",
     "games": [
       {
         "id": null,
@@ -62,7 +58,6 @@
     "leagueKey": "Tennis",
     "sourceType": "web_summary",
     "newsBriefing": "",
-    "leagueBriefing": "The BNP Paribas Open at Indian Wells opened with a chaotic first day filled with comeback wins and early upsets across both the ATP and WTA draws. Matteo Berrettini's emotional return victory highlighted the day, while several seeded players were pushed or eliminated as the desert tournament began taking shape.",
     "games": [
       {
         "id": null,

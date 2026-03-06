@@ -1,66 +1,64 @@
 [
-	{
-		"leagueName": "LIV Golf",
-		"leagueKey": "LIV",
-		"sourceType": "plain_text",
-		"newsBriefing": "Dean Burmester and Carlos Ortiz are tied at 14-under midway through LIV Golf Hong Kong, with Thomas Detry and Jon Rahm close behind in a tightly packed board. Smash GC leads the team race at 35-under, but only five shots separate first and second with 36 holes left.",
-		"leagueBriefing": "Round 2 at Fanling set up an aggressive weekend chase, with co-leaders Burmester and Ortiz trying to hold off a deep group that includes Detry and Rahm. The team race is equally volatile, as Smash GC leads but Torque, Legion XIII and Southern Guards remain well within striking range.",
-		"games": [
-			{
-				"id": null,
-				"teams": {
-					"away": null,
-					"home": null
-				},
-				"headline": "Burmester and Ortiz share Hong Kong lead as Rahm and Detry charge into weekend hunt",
-				"score": null,
-				"brief": "The Hong Kong leaderboard tightened exactly how LIV wants it: Dean Burmester and Carlos Ortiz tied at the top, Jon Rahm surging with the low round of the day, and Thomas Detry turning a travel-disrupted week into a real win chance. Ortiz followed his opening 60 with a gritty 66, Burmester played through neck stiffness to post 64, and Rahm's 62 pushed him to 12-under as he chases his first win in 26 starts. With 22 players within seven shots and all four team scores counting, this event is set up for a volatile weekend.",
-				"bullets": [
-					"Dean Burmester and Carlos Ortiz are tied for first at 14-under through two rounds.",
-					"Thomas Detry shot 63 to move to solo third at 13-under; Jon Rahm fired 62 and sits fourth at 12-under.",
-					"Ortiz has 16 birdies through two rounds after opening with a 10-under 60.",
-					"Smash GC leads the team standings at 35-under, five clear of Torque, with Legion XIII and Southern Guards tied for third at 26-under.",
-					"Graeme McDowell recorded LIV's 14th all-time ace and moved into a tie for eighth at 10-under."
-				],
-				"context": "With 36 holes left and 22 players within seven shots, both the individual and team titles remain wide open entering the weekend.",
-				"recapStatus": "ok",
-				"source": {
-					"recapUrl": null
-				},
-				"highlights": []
-			}
-		]
-	},
-	{
-		"leagueName": "Tennis",
-		"leagueKey": "Tennis",
-		"sourceType": "web_summary",
-		"newsBriefing": "Day 2 at Indian Wells completed the round of 128 with a mix of tight three-set battles and major upsets, led by Aleksandar Kovacevic's tiebreak win over Hubert Hurkacz. American players also had a strong day, highlighted by Mackenzie McDonald's dominant 6-0, 6-1 performance.",
-		"leagueBriefing": "The top half of the men's draw came into focus with Grigor Dimitrov setting up a marquee meeting with Carlos Alcaraz and Sebastian Korda extending his hot form. The schedule now shifts to the round of 64, where several title contenders make their first appearance and the pressure level rises quickly.",
-		"games": [
-			{
-				"id": null,
-				"teams": {
-					"away": null,
-					"home": null
-				},
-				"headline": "Kovacevic stuns Hurkacz and Dimitrov sets Alcaraz clash as Indian Wells draw tightens",
-				"score": null,
-				"brief": "Indian Wells Day 2 delivered exactly the early-round volatility fans wait for: a major seeded upset, a revenge win, and a few Americans building real momentum. Aleksandar Kovacevic knocked out Hubert Hurkacz in back-to-back tiebreaks for his first desert win, while Grigor Dimitrov avenged his recent Acapulco loss to Terence Atmane and earned a headline second-round match with top seed Carlos Alcaraz. Sebastian Korda kept his run going, Mackenzie McDonald posted the most lopsided scoreline of the day, and Kamil Majchrzak earned the challenge of facing Novak Djokovic next.",
-				"bullets": [
-					"Aleksandar Kovacevic upset Hubert Hurkacz 7-6(6), 7-6(4), handing the Pole a fifth straight loss.",
-					"Grigor Dimitrov beat Terence Atmane 6-4, 5-7, 6-4 to set up a second-round meeting with Carlos Alcaraz.",
-					"Sebastian Korda defeated Francisco Comesana 7-5, 6-0 and extended his win streak to six matches.",
-					"Mackenzie McDonald produced a statement 6-0, 6-1 win over Matteo Arnaldi.",
-					"Kamil Majchrzak advanced in three sets and now draws Novak Djokovic in the round of 64."
-				],
-				"context": "With the round of 128 complete, the tournament now moves into a loaded round of 64 where top seeds begin their campaigns.",
-				"recapStatus": "ok",
-				"source": {
-					"recapUrl": null
-				},
-				"highlights": []
-			}
-		]
-	}
+  {
+    "leagueName": "LIV Golf",
+    "leagueKey": "LIV",
+    "sourceType": "plain_text",
+    "newsBriefing": "Dean Burmester and Carlos Ortiz are tied at 14-under midway through LIV Golf Hong Kong, with Thomas Detry and Jon Rahm close behind in a tightly packed board. Smash GC leads the team race at 35-under, but only five shots separate first and second with 36 holes left.",
+    "games": [
+      {
+        "id": null,
+        "teams": {
+          "away": null,
+          "home": null
+        },
+        "headline": "Burmester and Ortiz share Hong Kong lead as Rahm and Detry charge into weekend hunt",
+        "score": null,
+        "brief": "The Hong Kong leaderboard tightened exactly how LIV wants it: Dean Burmester and Carlos Ortiz tied at the top, Jon Rahm surging with the low round of the day, and Thomas Detry turning a travel-disrupted week into a real win chance. Ortiz followed his opening 60 with a gritty 66, Burmester played through neck stiffness to post 64, and Rahm's 62 pushed him to 12-under as he chases his first win in 26 starts. With 22 players within seven shots and all four team scores counting, this event is set up for a volatile weekend.",
+        "bullets": [
+          "Dean Burmester and Carlos Ortiz are tied for first at 14-under through two rounds.",
+          "Thomas Detry shot 63 to move to solo third at 13-under; Jon Rahm fired 62 and sits fourth at 12-under.",
+          "Ortiz has 16 birdies through two rounds after opening with a 10-under 60.",
+          "Smash GC leads the team standings at 35-under, five clear of Torque, with Legion XIII and Southern Guards tied for third at 26-under.",
+          "Graeme McDowell recorded LIV's 14th all-time ace and moved into a tie for eighth at 10-under."
+        ],
+        "context": "With 36 holes left and 22 players within seven shots, both the individual and team titles remain wide open entering the weekend.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": null
+        },
+        "highlights": []
+      }
+    ]
+  },
+  {
+    "leagueName": "Tennis",
+    "leagueKey": "Tennis",
+    "sourceType": "web_summary",
+    "newsBriefing": "Day 2 at Indian Wells completed the round of 128 with a mix of tight three-set battles and major upsets, led by Aleksandar Kovacevic's tiebreak win over Hubert Hurkacz. American players also had a strong day, highlighted by Mackenzie McDonald's dominant 6-0, 6-1 performance.",
+    "games": [
+      {
+        "id": null,
+        "teams": {
+          "away": null,
+          "home": null
+        },
+        "headline": "Kovacevic stuns Hurkacz and Dimitrov sets Alcaraz clash as Indian Wells draw tightens",
+        "score": null,
+        "brief": "Indian Wells Day 2 delivered exactly the early-round volatility fans wait for: a major seeded upset, a revenge win, and a few Americans building real momentum. Aleksandar Kovacevic knocked out Hubert Hurkacz in back-to-back tiebreaks for his first desert win, while Grigor Dimitrov avenged his recent Acapulco loss to Terence Atmane and earned a headline second-round match with top seed Carlos Alcaraz. Sebastian Korda kept his run going, Mackenzie McDonald posted the most lopsided scoreline of the day, and Kamil Majchrzak earned the challenge of facing Novak Djokovic next.",
+        "bullets": [
+          "Aleksandar Kovacevic upset Hubert Hurkacz 7-6(6), 7-6(4), handing the Pole a fifth straight loss.",
+          "Grigor Dimitrov beat Terence Atmane 6-4, 5-7, 6-4 to set up a second-round meeting with Carlos Alcaraz.",
+          "Sebastian Korda defeated Francisco Comesana 7-5, 6-0 and extended his win streak to six matches.",
+          "Mackenzie McDonald produced a statement 6-0, 6-1 win over Matteo Arnaldi.",
+          "Kamil Majchrzak advanced in three sets and now draws Novak Djokovic in the round of 64."
+        ],
+        "context": "With the round of 128 complete, the tournament now moves into a loaded round of 64 where top seeds begin their campaigns.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": null
+        },
+        "highlights": []
+      }
+    ]
+  }
 ]
