@@ -29,45 +29,13 @@
           alt="THPORTH"
           class="h-[25px] w-auto"
         />
-        <div id="leagueCount" class="rounded-md bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 whitespace-nowrap"></div>
       </div>
-
-      <div class="flex items-center gap-2">
-        <button id="prevLeagueBtn"
-          class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
-          Prev
-        </button>
-        <button id="nextLeagueBtn"
-          class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
-          Next
-        </button>
-        <button id="refreshBtn"
-          class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-sm font-medium text-gray-200 transition-colors hover:bg-gray-800 hover:text-white focus:outline-none">
-          Refresh
-        </button>
-        <button id="clearTop10Btn"
-          class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
-          Clear Top 10
-        </button>
-        <button id="downloadTop10Btn"
-          class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-purple-700 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-800 focus:outline-none">
-          Download JSON
-        </button>
-        <button id="saveTop10Btn"
-          class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-emerald-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-800 focus:outline-none">
-          Save Top 10
-        </button>
-      </div>
-    </div>
-
-    <div class="mx-auto mt-2 flex max-w-none items-center gap-3 text-[11px] text-gray-500">
-      <div id="modePill" class="inline-flex rounded-md border border-gray-200 bg-gray-50 px-2 py-1 font-semibold text-gray-600"></div>
-      <div id="manualStatus"></div>
+      <div id="leagueCount" class="rounded-md bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 whitespace-nowrap"></div>
     </div>
   </header>
 
   <div class="flex bg-white text-gray-800">
-    <aside class="sticky top-[92px] flex h-[calc(100vh-92px)] w-[34rem] shrink-0 flex-col overflow-hidden border-r border-gray-200 bg-white shadow-sm">
+    <aside class="sticky top-[58px] flex h-[calc(100vh-58px)] w-[34rem] shrink-0 flex-col overflow-hidden border-r border-gray-200 bg-white shadow-sm">
       <div class="grid min-h-0 flex-1 grid-cols-[225px_minmax(0,1fr)]">
         <section class="flex min-h-0 flex-col border-r border-gray-200">
           <div class="border-b border-gray-200 p-3">
@@ -497,25 +465,25 @@
 
     function updateModeAndStatus() {
       const modeText = state.isAdminMode ? "Admin Mode (/admin)" : "Public Mode";
-      modePill.textContent = modeText;
+      if (modePill) modePill.textContent = modeText;
 
       if (!state.isAdminMode) {
-        manualStatus.textContent = "Top 10 editing controls are hidden in public mode.";
-        saveTop10Btn.classList.add("hidden");
-        clearTop10Btn.classList.add("hidden");
-        downloadTop10Btn.classList.add("hidden");
+        if (manualStatus) manualStatus.textContent = "Top 10 editing controls are hidden in public mode.";
+        if (saveTop10Btn) saveTop10Btn.classList.add("hidden");
+        if (clearTop10Btn) clearTop10Btn.classList.add("hidden");
+        if (downloadTop10Btn) downloadTop10Btn.classList.add("hidden");
         return;
       }
 
-      saveTop10Btn.classList.remove("hidden");
-      clearTop10Btn.classList.remove("hidden");
-      downloadTop10Btn.classList.remove("hidden");
+      if (saveTop10Btn) saveTop10Btn.classList.remove("hidden");
+      if (clearTop10Btn) clearTop10Btn.classList.remove("hidden");
+      if (downloadTop10Btn) downloadTop10Btn.classList.remove("hidden");
       const count = collectManualPicksArray().length;
       const unsaved = state.hasUnsavedManualChanges ? " • Unsaved changes" : " • Saved";
       const savedAt = state.lastManualSavedAt
         ? ` • Last saved ${new Date(state.lastManualSavedAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`
         : "";
-      manualStatus.textContent = `Manual Top 10 slots filled: ${count}/10${unsaved}${savedAt}`;
+      if (manualStatus) manualStatus.textContent = `Manual Top 10 slots filled: ${count}/10${unsaved}${savedAt}`;
     }
 
     function composeFinalTop10() {
@@ -1809,34 +1777,42 @@
     }
 
     // ===== Events =====
-    refreshBtn.addEventListener("click", () => {
-      refreshCurrentLeague();
-    });
+    if (refreshBtn) {
+      refreshBtn.addEventListener("click", () => {
+        refreshCurrentLeague();
+      });
+    }
 
-    saveTop10Btn.addEventListener("click", async () => {
-      if (!state.isAdminMode) return;
-      saveManualPicksToStorage();
-      const downloaded = downloadManualPicksAsJSON();
-      if (!downloaded) return;
-      await refreshTop10();
-      buildLeagueNav();
-      await goToLeagueByIndex(0, { smooth: true, updateHash: true });
-      buildHeadlineNav();
-    });
+    if (saveTop10Btn) {
+      saveTop10Btn.addEventListener("click", async () => {
+        if (!state.isAdminMode) return;
+        saveManualPicksToStorage();
+        const downloaded = downloadManualPicksAsJSON();
+        if (!downloaded) return;
+        await refreshTop10();
+        buildLeagueNav();
+        await goToLeagueByIndex(0, { smooth: true, updateHash: true });
+        buildHeadlineNav();
+      });
+    }
 
-    clearTop10Btn.addEventListener("click", async () => {
-      if (!state.isAdminMode) return;
-      clearManualPicks();
-      syncAdminRankDropdownOptions();
-      await refreshTop10();
-      buildLeagueNav();
-      buildHeadlineNav();
-    });
+    if (clearTop10Btn) {
+      clearTop10Btn.addEventListener("click", async () => {
+        if (!state.isAdminMode) return;
+        clearManualPicks();
+        syncAdminRankDropdownOptions();
+        await refreshTop10();
+        buildLeagueNav();
+        buildHeadlineNav();
+      });
+    }
 
-    downloadTop10Btn.addEventListener("click", () => {
-      if (!state.isAdminMode) return;
-      downloadManualPicksAsJSON();
-    });
+    if (downloadTop10Btn) {
+      downloadTop10Btn.addEventListener("click", () => {
+        if (!state.isAdminMode) return;
+        downloadManualPicksAsJSON();
+      });
+    }
 
     leagueFilter.addEventListener("input", async () => {
       const q = leagueFilter.value.trim().toLowerCase();
@@ -1851,17 +1827,21 @@
       await rebuildStream();
     });
 
-    prevLeagueBtn.addEventListener("click", async () => {
-      const curIdx = getIndexByLeagueKey(state.currentLeagueKey);
-      if (curIdx <= 0) return;
-      await goToLeagueByIndex(curIdx - 1, { smooth: true, updateHash: true });
-    });
+    if (prevLeagueBtn) {
+      prevLeagueBtn.addEventListener("click", async () => {
+        const curIdx = getIndexByLeagueKey(state.currentLeagueKey);
+        if (curIdx <= 0) return;
+        await goToLeagueByIndex(curIdx - 1, { smooth: true, updateHash: true });
+      });
+    }
 
-    nextLeagueBtn.addEventListener("click", async () => {
-      const curIdx = getIndexByLeagueKey(state.currentLeagueKey);
-      if (curIdx < 0 || curIdx >= getVisibleLeagues().length - 1) return;
-      await goToLeagueByIndex(curIdx + 1, { smooth: true, updateHash: true });
-    });
+    if (nextLeagueBtn) {
+      nextLeagueBtn.addEventListener("click", async () => {
+        const curIdx = getIndexByLeagueKey(state.currentLeagueKey);
+        if (curIdx < 0 || curIdx >= getVisibleLeagues().length - 1) return;
+        await goToLeagueByIndex(curIdx + 1, { smooth: true, updateHash: true });
+      });
+    }
 
     window.addEventListener("hashchange", async () => {
       const name = getLeagueNameFromHash();
