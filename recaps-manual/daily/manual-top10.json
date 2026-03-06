@@ -1,93 +1,90 @@
 {
-  "date": "2026-03-05",
+  "date": "2026-03-06",
   "mode": "manual",
-  "leagueName": "Sports",
-  "leagueKey": "SPORTS",
-  "sourceType": "morning_briefing",
-  "newsBriefing": "A wide mix of headlines across the sports world highlights a day shaped by historic milestones, major roster moves and several developing controversies. In the NBA, LeBron James added yet another chapter to his legacy by surpassing Kareem Abdul-Jabbar for the most made field goals in league history, continuing a remarkable late-career run of record breaking. The NFL news cycle was dominated by personnel changes: the Buffalo Bills are reportedly acquiring wide receiver DJ Moore from the Chicago Bears in a significant trade, while Chicago is also moving on from veteran linebacker Tremaine Edmunds as part of a roster reset. The league also paused to remember longtime Packers president and team Hall of Famer Bob Harlan, who died at age 89 after decades shaping Green Bay's modern era. In hockey, Penguins star Evgeni Malkin was ejected for slashing during a heated game and could face supplemental discipline from the NHL. Off the court in basketball, free-agent guard Malik Beasley was ordered by a judge to pay $1 million to a former agency following a legal dispute. College football is also facing a developing eligibility battle as the NCAA challenges a ruling that granted Ole Miss quarterback Chambliss a sixth year of eligibility, a case that could influence future eligibility decisions across the sport. Meanwhile, global soccer made its way into the political spotlight as Lionel Messi and Inter Miami were honored at the White House following the club's recent achievements. Together, the day's headlines reflect a sports landscape where historic accomplishments, league discipline, roster shakeups and off-field decisions are all colliding at once.",
   "picks": [
     {
       "rank": 1,
       "leagueKey": "nba",
-      "gameId": "401810748",
-      "headline": "Chet Holmgren's career night carried Oklahoma City past New York",
-      "scoreLine": "OKC 103 - NYK 100"
+      "gameId": "401810759",
+      "headline": "Wembanyama dominates again as Spurs complete season sweep of Pistons",
+      "scoreLine": "SAS 121 - DET 106"
     },
     {
       "rank": 2,
       "leagueKey": "nhl",
-      "gameId": "401803321",
-      "headline": "Vegas erased a two-goal deficit and beat Detroit in overtime",
-      "scoreLine": "VGK 4 - DET 3"
+      "gameId": "401803333",
+      "headline": "Panarin's first Kings goal sparks needed win in Smith's early tenure",
+      "scoreLine": "LAK 5 - NYI 3"
     },
     {
       "rank": 3,
       "leagueKey": "nba",
-      "gameId": "401810749",
-      "headline": "Charlotte routed Boston to extend its winning streak to six games",
-      "scoreLine": "CHA 118 - BOS 89"
+      "gameId": "401810761",
+      "headline": "LeBron sets another record, but Jokic and Murray carry Denver past Lakers",
+      "scoreLine": "DEN 120 - LAL 113"
     },
     {
       "rank": 4,
       "leagueKey": "premierleague",
-      "gameId": "740883",
-      "headline": "Ten-man Newcastle beat Manchester United late, ending Michael Carrick's unbeaten start",
-      "scoreLine": "NEW 2 - MUN 1"
+      "gameId": "740884",
+      "headline": "Van de Ven red card sparks Spurs collapse as Palace pile on relegation pressure",
+      "scoreLine": "CRY 3 - TOT 1"
     },
     {
       "rank": 5,
-      "leagueKey": "nhl",
-      "gameId": "401803324",
-      "headline": "Ville Husso made 42 saves as Anaheim routed the Islanders",
-      "scoreLine": "ANA 5 - NYI 1"
+      "leagueKey": "nba",
+      "gameId": "401810755",
+      "headline": "Ace Bailey erupts for 32 as Jazz spoil Trae Young's Washington debut",
+      "scoreLine": "UTA 122 - WAS 112"
     },
     {
       "rank": 6,
-      "leagueKey": "nba",
-      "gameId": "401810752",
-      "headline": "Atlanta rallied from a big deficit and handed Milwaukee another lopsided loss",
-      "scoreLine": "ATL 131 - MIL 113"
+      "leagueKey": "ncaam",
+      "gameId": "401825560",
+      "headline": "Michigan vs Iowa: Morez Johnson leads the story as conference race pressure builds",
+      "scoreLine": "MIC 71 - IOW 68"
     },
     {
       "rank": 7,
-      "leagueKey": "nhl",
-      "gameId": "401803322",
-      "headline": "New Jersey rallied late and beat Toronto in a shootout, extending the Leafs' skid",
-      "scoreLine": "NJD 4 - TOR 3"
+      "leagueKey": "wbc",
+      "gameId": "788116",
+      "headline": "Australia moves to 2-0 as Curtis Mead's three-run shot sinks Czechia",
+      "scoreLine": "AUS 5 - CZE 1"
     },
     {
       "rank": 8,
-      "leagueKey": "premierleague",
-      "gameId": "740878",
-      "headline": "Arsenal ground out a win at Brighton to widen its lead in the title race",
-      "scoreLine": "ARS 1 - BHA 0"
+      "leagueKey": "nba",
+      "gameId": "401810758",
+      "headline": "Edwards powers Wolves to fifth straight as Minnesota grabs West positioning",
+      "scoreLine": "MIN 115 - TOR 107"
     },
     {
       "rank": 9,
-      "leagueKey": "premierleague",
-      "gameId": "740882",
-      "headline": "Nottingham Forest held Manchester City to a draw, costing City more title-chase points",
-      "scoreLine": "MCI 2 - NFO 2"
+      "leagueKey": "nhl",
+      "gameId": "401803331",
+      "headline": "Hellebuyck steadies Jets as Lightning drop fourth straight",
+      "scoreLine": "WPG 4 - TBL 1"
     },
     {
       "rank": 10,
-      "leagueKey": "premierleague",
-      "gameId": "740876",
-      "headline": "Joao Pedro scored a hat trick as Chelsea beat Aston Villa to strengthen its top-five push",
-      "scoreLine": "CHE 4 - AVL 1"
+      "leagueKey": "nhl",
+      "gameId": "401803332",
+      "headline": "Cozens breaks tie, and surging Senators keep East wild-card pressure on",
+      "scoreLine": "OTT 4 - CGY 1"
     }
   ],
   "top10": [
-    "Chet Holmgren's career night carried Oklahoma City past New York",
-    "Vegas erased a two-goal deficit and beat Detroit in overtime",
-    "Charlotte routed Boston to extend its winning streak to six games",
-    "Ten-man Newcastle beat Manchester United late, ending Michael Carrick's unbeaten start",
-    "Ville Husso made 42 saves as Anaheim routed the Islanders",
-    "Atlanta rallied from a big deficit and handed Milwaukee another lopsided loss",
-    "New Jersey rallied late and beat Toronto in a shootout, extending the Leafs' skid",
-    "Arsenal ground out a win at Brighton to widen its lead in the title race",
-    "Nottingham Forest held Manchester City to a draw, costing City more title-chase points",
-    "Joao Pedro scored a hat trick as Chelsea beat Aston Villa to strengthen its top-five push"
+    "Wembanyama dominates again as Spurs complete season sweep of Pistons",
+    "Panarin's first Kings goal sparks needed win in Smith's early tenure",
+    "LeBron sets another record, but Jokic and Murray carry Denver past Lakers",
+    "Van de Ven red card sparks Spurs collapse as Palace pile on relegation pressure",
+    "Ace Bailey erupts for 32 as Jazz spoil Trae Young's Washington debut",
+    "Michigan vs Iowa: Morez Johnson leads the story as conference race pressure builds",
+    "Australia moves to 2-0 as Curtis Mead's three-run shot sinks Czechia",
+    "Edwards powers Wolves to fifth straight as Minnesota grabs West positioning",
+    "Hellebuyck steadies Jets as Lightning drop fourth straight",
+    "Cozens breaks tie, and surging Senators keep East wild-card pressure on"
   ],
-  "updatedAt": "2026-03-05T21:28:10.246Z"
+  "newsBriefing": "A wide mix of headlines across the sports world highlights a day shaped by historic milestones, major roster moves and several developing controversies. In the NBA, LeBron James added yet another chapter to his legacy by surpassing Kareem Abdul-Jabbar for the most made field goals in league history, continuing a remarkable late-career run of record breaking. The NFL news cycle was dominated by personnel changes: the Buffalo Bills are reportedly acquiring wide receiver DJ Moore from the Chicago Bears in a significant trade, while Chicago is also moving on from veteran linebacker Tremaine Edmunds as part of a roster reset. The league also paused to remember longtime Packers president and team Hall of Famer Bob Harlan, who died at age 89 after decades shaping Green Bay's modern era. In hockey, Penguins star Evgeni Malkin was ejected for slashing during a heated game and could face supplemental discipline from the NHL. Off the court in basketball, free-agent guard Malik Beasley was ordered by a judge to pay $1 million to a former agency following a legal dispute. College football is also facing a developing eligibility battle as the NCAA challenges a ruling that granted Ole Miss quarterback Chambliss a sixth year of eligibility, a case that could influence future eligibility decisions across the sport. Meanwhile, global soccer made its way into the political spotlight as Lionel Messi and Inter Miami were honored at the White House following the club's recent achievements. Together, the day's headlines reflect a sports landscape where historic accomplishments, league discipline, roster shakeups and off-field decisions are all colliding at once.",
+  "updatedAt": "2026-03-06T15:58:05.160Z"
 }
