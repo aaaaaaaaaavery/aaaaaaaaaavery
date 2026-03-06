@@ -24,6 +24,10 @@
   <header class="sticky top-0 z-20 border-b border-gray-200 bg-white px-4 py-3 sm:px-6">
     <div class="mx-auto flex max-w-none items-center justify-between gap-3">
       <div class="flex min-w-0 items-center gap-3">
+        <button id="mobileMenuBtn" type="button" aria-label="Open navigation"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-200 text-gray-700 hover:bg-gray-100 md:hidden">
+          <span class="text-lg leading-none">☰</span>
+        </button>
         <img
           src="https://thporth.com/thporth-red-logo.png"
           alt="THPORTH"
@@ -34,8 +38,18 @@
     </div>
   </header>
 
+  <div id="mobileDrawerBackdrop" class="fixed inset-0 z-30 hidden bg-black/40 md:hidden"></div>
+
   <div class="flex bg-white text-gray-800">
-    <aside class="sticky top-[58px] flex h-[calc(100vh-58px)] w-[34rem] shrink-0 flex-col overflow-hidden border-r border-gray-200 bg-white shadow-sm">
+    <aside id="sidebarDrawer" class="fixed inset-y-0 left-0 z-40 flex h-screen w-[86%] max-w-sm -translate-x-full flex-col overflow-hidden border-r border-gray-200 bg-white shadow-xl transition-transform duration-200 ease-out md:sticky md:top-[58px] md:z-auto md:h-[calc(100vh-58px)] md:w-[34rem] md:max-w-none md:translate-x-0 md:shadow-sm">
+      <div class="flex items-center justify-between border-b border-gray-200 px-3 py-2 md:hidden">
+        <div class="text-xs font-semibold uppercase tracking-wide text-gray-500">Navigation</div>
+        <button id="mobileDrawerCloseBtn" type="button" aria-label="Close navigation"
+          class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-200 text-gray-700 hover:bg-gray-100">
+          <span class="text-lg leading-none">×</span>
+        </button>
+      </div>
+
       <div class="grid min-h-0 flex-1 grid-cols-[225px_minmax(0,1fr)]">
         <section class="flex min-h-0 flex-col border-r border-gray-200">
           <div class="border-b border-gray-200 p-3">
@@ -65,8 +79,19 @@
     <div class="flex min-h-screen flex-1 flex-col">
       <main class="flex-1 p-4 sm:p-6">
         <div class="mx-auto grid max-w-7xl gap-4">
+          <section class="grid grid-cols-1 gap-2 md:hidden">
+            <div>
+              <label for="mobileLeagueSelect" class="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-gray-500">League</label>
+              <select id="mobileLeagueSelect" class="h-11 w-full rounded-md border border-gray-300 bg-white px-3 text-sm text-gray-700 outline-none transition focus:border-black focus:ring-0"></select>
+            </div>
+            <div>
+              <label for="mobileHeadlineSelect" class="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-gray-500">Headline</label>
+              <select id="mobileHeadlineSelect" class="h-11 w-full rounded-md border border-gray-300 bg-white px-3 text-sm text-gray-700 outline-none transition focus:border-black focus:ring-0"></select>
+            </div>
+          </section>
+
           <section class="overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm">
-            <div id="rightScroll" class="max-h-[calc(100vh-280px)] overflow-y-auto">
+            <div id="rightScroll" class="max-h-[calc(100vh-210px)] overflow-y-auto md:max-h-[calc(100vh-280px)]">
               <div id="leagueStream" class="space-y-[250px] p-4 pb-[250px]"></div>
             </div>
 
@@ -207,6 +232,12 @@
     const leagueFilter = document.getElementById("leagueFilter");
     const leagueNav = document.getElementById("leagueNav");
     const headlineNav = document.getElementById("headlineNav");
+    const sidebarDrawer = document.getElementById("sidebarDrawer");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileDrawerBackdrop = document.getElementById("mobileDrawerBackdrop");
+    const mobileDrawerCloseBtn = document.getElementById("mobileDrawerCloseBtn");
+    const mobileLeagueSelect = document.getElementById("mobileLeagueSelect");
+    const mobileHeadlineSelect = document.getElementById("mobileHeadlineSelect");
     const prevLeagueBtn = document.getElementById("prevLeagueBtn");
     const nextLeagueBtn = document.getElementById("nextLeagueBtn");
     const rightScroll = document.getElementById("rightScroll");
@@ -241,6 +272,27 @@
       const path = String(location.pathname || "").toLowerCase();
       const params = new URLSearchParams(location.search || "");
       return path.endsWith("/admin") || params.get("admin") === "1";
+    }
+
+    function isMobileViewport() {
+      return window.matchMedia("(max-width: 767px)").matches;
+    }
+
+    function setMobileDrawerOpen(open) {
+      if (!sidebarDrawer || !mobileDrawerBackdrop) return;
+      if (open) {
+        sidebarDrawer.classList.remove("-translate-x-full");
+        mobileDrawerBackdrop.classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+      } else {
+        sidebarDrawer.classList.add("-translate-x-full");
+        mobileDrawerBackdrop.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      }
+    }
+
+    function closeMobileDrawerIfNeeded() {
+      if (isMobileViewport()) setMobileDrawerOpen(false);
     }
 
     function makeGameKey(leagueKey, gameId) {
@@ -673,6 +725,46 @@
     function getVisibleLeagues() {
       const visible = state.filteredLeagues.filter((lg) => hasRenderableGames(lg.leagueKey));
       return [ALL_LEAGUE, ...visible];
+    }
+
+    function syncMobileLeagueSelect(visibleLeagues) {
+      if (!mobileLeagueSelect) return;
+      clear(mobileLeagueSelect);
+
+      visibleLeagues.forEach((lg) => {
+        const opt = document.createElement("option");
+        opt.value = lg.leagueKey;
+        opt.textContent = lg.leagueName;
+        if (lg.leagueKey === state.currentLeagueKey) opt.selected = true;
+        mobileLeagueSelect.appendChild(opt);
+      });
+    }
+
+    function syncMobileHeadlineSelect(cards, currentKey) {
+      if (!mobileHeadlineSelect) return;
+      clear(mobileHeadlineSelect);
+
+      if (!cards.length) {
+        const opt = document.createElement("option");
+        opt.value = "";
+        opt.textContent = "No headlines available";
+        mobileHeadlineSelect.appendChild(opt);
+        mobileHeadlineSelect.disabled = true;
+        return;
+      }
+
+      mobileHeadlineSelect.disabled = false;
+      cards.forEach((card, i) => {
+        const gameId = card.dataset.gameId || `${currentKey}-${i}`;
+        const headline = card.dataset.headline || `Game ${i + 1}`;
+        const opt = document.createElement("option");
+        opt.value = gameId;
+        opt.textContent = headline;
+        mobileHeadlineSelect.appendChild(opt);
+      });
+
+      const activeId = state.activeGameByLeague.get(currentKey) || cards[0]?.dataset?.gameId;
+      if (activeId) mobileHeadlineSelect.value = activeId;
     }
 
     function isSoccerLeague(lg) {
@@ -1373,6 +1465,7 @@
       clear(leagueNav);
       const visibleLeagues = getVisibleLeagues();
       leagueCount.textContent = getMorningBriefingLabel();
+      syncMobileLeagueSelect(visibleLeagues);
 
       const indexByLeagueKey = new Map(visibleLeagues.map((lg, idx) => [lg.leagueKey, idx]));
       const top10League = visibleLeagues.find((lg) => lg.leagueKey === "all") || null;
@@ -1398,6 +1491,7 @@
         );
         btn.addEventListener("click", async () => {
           await goToLeagueByIndex(idx, { smooth: false, updateHash: true });
+          closeMobileDrawerIfNeeded();
         });
 
         const row = document.createElement("div");
@@ -1480,6 +1574,10 @@
           "w-full rounded-md px-2 py-2 text-left text-xs leading-snug transition-colors " +
           (on ? "bg-black text-white" : "text-gray-600 hover:bg-gray-100 hover:text-gray-900");
       });
+
+      if (mobileHeadlineSelect && activeId) {
+        mobileHeadlineSelect.value = activeId;
+      }
     }
 
     function normalizeTop10HeadlinePillWidths() {
@@ -1509,6 +1607,7 @@
         empty.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-2 text-xs text-gray-500";
         empty.textContent = "Select a league to view headlines.";
         headlineNav.appendChild(empty);
+        syncMobileHeadlineSelect([], currentKey);
         return;
       }
 
@@ -1519,6 +1618,7 @@
         empty.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-2 text-xs text-gray-500";
         empty.textContent = "No game headlines available.";
         headlineNav.appendChild(empty);
+        syncMobileHeadlineSelect([], currentKey);
         return;
       }
 
@@ -1556,6 +1656,7 @@
           scrollCardIntoView(card);
           state.activeGameByLeague.set(currentKey, gameId);
           highlightHeadlineButtons();
+          closeMobileDrawerIfNeeded();
         });
         headlineNav.appendChild(btn);
       });
@@ -1564,6 +1665,7 @@
         const firstId = cards[0]?.dataset?.gameId;
         if (firstId) state.activeGameByLeague.set(currentKey, firstId);
       }
+      syncMobileHeadlineSelect(cards, currentKey);
       normalizeTop10HeadlinePillWidths();
       highlightHeadlineButtons();
     }
@@ -1816,6 +1918,50 @@
       });
     }
 
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener("click", () => {
+        setMobileDrawerOpen(true);
+      });
+    }
+
+    if (mobileDrawerBackdrop) {
+      mobileDrawerBackdrop.addEventListener("click", () => {
+        setMobileDrawerOpen(false);
+      });
+    }
+
+    if (mobileDrawerCloseBtn) {
+      mobileDrawerCloseBtn.addEventListener("click", () => {
+        setMobileDrawerOpen(false);
+      });
+    }
+
+    if (mobileLeagueSelect) {
+      mobileLeagueSelect.addEventListener("change", async () => {
+        const targetKey = String(mobileLeagueSelect.value || "");
+        if (!targetKey) return;
+        const idx = getIndexByLeagueKey(targetKey);
+        if (idx < 0) return;
+        await goToLeagueByIndex(idx, { smooth: true, updateHash: true });
+        closeMobileDrawerIfNeeded();
+      });
+    }
+
+    if (mobileHeadlineSelect) {
+      mobileHeadlineSelect.addEventListener("change", () => {
+        const currentKey = state.currentLeagueKey;
+        const gameId = String(mobileHeadlineSelect.value || "");
+        if (!currentKey || !gameId) return;
+        const section = state.sectionByLeagueKey.get(currentKey);
+        if (!section) return;
+        const card = section.querySelector(`.game-card[data-game-id="${CSS.escape(gameId)}"]`);
+        if (!card) return;
+        scrollCardIntoView(card);
+        state.activeGameByLeague.set(currentKey, gameId);
+        highlightHeadlineButtons();
+      });
+    }
+
     leagueFilter.addEventListener("input", async () => {
       const q = leagueFilter.value.trim().toLowerCase();
       state.filteredLeagues = !q
@@ -1863,11 +2009,18 @@
       if (state.currentLeagueKey === "all") buildHeadlineNav();
     });
 
+    window.addEventListener("resize", () => {
+      if (!isMobileViewport()) {
+        setMobileDrawerOpen(false);
+      }
+    });
+
     rightScroll.addEventListener("scroll", onScroll, { passive: true });
 
     // ===== Start =====
     async function init() {
       state.isAdminMode = detectAdminMode();
+      setMobileDrawerOpen(false);
       const loadedFromFile = await loadManualPicksFromFile();
       if (!loadedFromFile) {
         loadManualPicksFromStorage();
