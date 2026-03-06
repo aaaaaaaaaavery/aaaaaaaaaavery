@@ -1,0 +1,55 @@
+{
+  "leagueName": "WBC",
+  "leagueKey": "WBC",
+  "sourceType": "console_recaps",
+  "newsBriefing": "Pool play in Tokyo opened with Korea powering past Czechia behind four home runs, then Australia improving to 2-0 by beating Czechia with timely power and clean bullpen work. Czechia showed fight in both games but now faces urgency in the standings.",
+  "leagueBriefing": "Czechia played two high-energy games in Tokyo but came away 0-2, first in an 11-4 loss to Korea and then a 5-1 loss to Australia. Korea set the tone early with a first-inning grand slam and never looked back, while Australia took control when Curtis Mead launched a three-run homer after a missed Czech double-play chance. Through two games, the Czech offense has produced competitive stretches, but power swings and key defensive moments have tilted results toward their opponents.",
+  "games": [
+    {
+      "id": "788115",
+      "teams": {
+        "away": "Czechia",
+        "home": "Korea"
+      },
+      "headline": "Korea launches four homers and opens WBC run with 11-4 win over Czechia",
+      "score": "KOR 11 - CZE 4",
+      "brief": "Korea opened its World Baseball Classic campaign with immediate thunder, jumping ahead 4-0 on Bo Gyeong Moon's first-inning grand slam and piling on behind a four-homer night at Tokyo Dome. Shay Whitcomb added two homers in his WBC debut, Jahmai Jones capped the barrage with a solo shot, and Korea's lineup looked every bit like a quarterfinal threat. Czechia battled back from 6-0 with a Terrin Vavra homer and kept pressing, but Korea's early damage and steady bullpen usage kept the game under control.",
+      "bullets": [
+        "Bo Gyeong Moon hit a first-inning grand slam to give Korea a 4-0 lead.",
+        "Korea hit four total home runs, including two by Shay Whitcomb in his WBC debut.",
+        "Jahmai Jones added a solo homer as Korea finished with an 11-4 win.",
+        "Czechia cut into the deficit with a three-run fifth that included a Terrin Vavra homer.",
+        "Korea used six relievers for one inning each after starter Hyeong Jun So threw three innings."
+      ],
+      "context": "The win gave Korea a strong opening result in Pool B, while Czechia was forced into a quick turnaround before facing Australia.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mlb.com/news/czechia-vs-korea-in-2026-world-baseball-classic?game_pk=788115"
+      },
+      "highlights": []
+    },
+    {
+      "id": "788116",
+      "teams": {
+        "away": "Australia",
+        "home": "Czechia"
+      },
+      "headline": "Australia moves to 2-0 as Curtis Mead's three-run shot sinks Czechia",
+      "score": "AUS 5 - CZE 1",
+      "brief": "Australia absorbed an early deficit and then flipped the game in the third when Curtis Mead crushed a three-run homer, giving the Aussies a lead they never gave back in a 5-1 win over Czechia. The inning turned after Czechia failed to complete a potential double play, and Australia capitalized immediately. Alex Hall added a ninth-inning homer and Robbie Perkins chipped in an RBI single as Australia improved to 2-0 and moved to the edge of a quarterfinal berth.",
+      "bullets": [
+        "Curtis Mead hit a go-ahead three-run homer in the third inning.",
+        "Czechia led 1-0 early on Vojtech Mensik's sacrifice fly.",
+        "A missed chance to complete an inning-ending double play preceded Mead's homer.",
+        "Alex Hall homered in the ninth and Robbie Perkins added an RBI single for insurance.",
+        "Australia improved to 2-0 and moved within one win of a quarterfinal spot."
+      ],
+      "context": "Australia stayed unbeaten in pool play, while Czechia fell to 0-2 despite another competitive effort against a favored opponent.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mlb.com/news/australia-vs-czechia-in-2026-world-baseball-classic?game_pk=788116"
+      },
+      "highlights": []
+    }
+  ]
+}

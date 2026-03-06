@@ -1,0 +1,347 @@
+Same exact thing here...
+
+NCAAW:
+
+{
+  "league": "WOMENS-COLLEGE-BASKETBALL",
+  "date": "2026-03-06",
+  "generatedAt": "2026-03-06T14:13:47.944Z",
+  "games": [
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851601/kentucky-georgia",
+      "articleText": "              GREENVILLE, S.C. -- — Clara Strack made a career-high five 3-pointers in matching her career best of 33 points and No. 17 Kentucky defeated No. 22 Georgia 76-61 in the second round of the SEC Tournament on Thursday.\n\n              Strack, a 6-foot-5 center, was 5 of 7 from the arc, 12 of 22 overall and grabbed eight rebounds for the ninth-seeded Wildcats (23-9), who will play top seed and third-ranked South Carolina in a Friday quarterfinal.\n\n              Teonni Key added 14 points and 12 rebounds and Tonie Morgan also scored 14 points and had seven assists for the Wildcats, who shot 50% and were 14 of 20 at the line to 6 of 8 for the Bulldogs.\n\n              Dani Carnegie scored 18 points, Trinity Turner 14 and Mia Woolfolk 11 for Georgia (22-9), which was just 5 of 26 on 3-pointers.\n\n              Strack and Amelia Hassett scored all the points in 13-2 run that left Kentucky ahead by 15 with under three minutes to go.\n\n              A Strack 3-pointer early in the third quarter gave Kentucky the lead for good. The Wildcats hit six straight shots in the period and Strack scored nine points for a 54-49 lead.\n\n              After Georgia scored the opening basket, Kentucky took and held the lead the remainder of the first quarter with Strack hitting a pair of 3-pointers and scoring 13 points. Carnegie hit a pair of 3s and scored the Bulldogs' first eight points of the second quarter to tie the game with Georgia leading 36-35 at the break. \n\n              Kentucky will get another shot at South Carolina, which took a 60-56 road win over the Wildcats on March 1.\n\n              Georgia will wait to see where it lands in the NCAA Tournament field.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here and here (AP News mobile app). AP college basketball: https://apnews.com/hub/ap-top-25-college-basketball-poll and https://apnews.com/hub/college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851284/kansas-st-texas-tech",
+      "articleText": "              KANSAS CITY, Mo. -- — Nastja Claessens had 14 points, eight rebounds and a key block in the closing seconds and Kansas State ended the game on a 21-0 run to beat No. 21 Texas Tech on Thursday in the second round of the Big 12 Tournament.\n\n              Kansas State (17-16), the No. 12 seed, advances to the quarterfinals against No. 4 seed Oklahoma State on Friday. The Wildcats opened the tournament by breaking an 18-year Big 12 women’s tournament record and tied the school record by sinking 17 3-pointers in a 91-66 victory over Cincinnati.\n\n              Kansas State trailed 51-37 with 7:43 left in the fourth quarter after Texas Tech's 10-0 run spanning the third-quarter break. But the Lady Raiders would not score against, missing 13 straight shots and not attempting a free throw in the fourth.\n\n              Tess Heal put Kansas State ahead 54-51 with 52.7 seconds left on a driving layup. Texas Tech grabbed an offensive rebound after a missed 3-pointer, but Claessens blocked the putback attempt and secured the ball before calling a timeout with 36.1 left.\n\n              Taryn Sides sealed it by making two free throws and Heal added two free throws with 19.2 seconds left.\n\n              Sides finished with 13 points, Aniya Foy added 12 and Heal had 10 for Kansas State, which did not have a double-digit scorer until the fourth quarter. The Wildcats were just 5 of 25 from 3-point range and shot 34% overall.\n\n              Snudda Collins was the lone double-digit scorer for the fifth-seeded Texas Tech (25-7) with 14 points. The Lady Raiders were 16 of 56 from the field (29%).\n\n              Earlier this year, Texas Tech's undefeated season came to an end at 19-0 on Jan. 17 after a 65-59 loss to Kansas State.\n\n              Kansas State beat Oklahoma State 70-61 in the only regular-season meeting on Feb. 10.\n\n              Texas Tech is hoping to make its first NCAA Tournament appearance since 2013. \n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851603/florida-oklahoma",
+      "articleText": "              GREENVILLE, S.C. -- — Raegan Beers had 18 points and seven rebounds, Aaliyah Chavez added 17 points and No. 7 Oklahoma used a dominant third quarter to rout Florida 82-64 on Thursday and advance to the Southeastern Conference Tournament quarterfinals.\n\n              Zya Vann scored 14 points and Brooklyn Stewart chipped in with 12 for the Sooners (24-6), who have won seven straight.\n\n              Liv McGill had 28 points on 13-of-17 shooting from the foul line to lead Florida (18-15), which defeated Mississippi State 86-68 in the first round.\n\n              Oklahoma will face No. 6 LSU in the quarterfinals on Friday at the Bon Secours Wellness Arena.\n\n              Despite their top-10 ranking, the Sooners need to win four games in four days to capture their first SEC title after finishing fifth in the conference and failing to claim a double bye in a loaded conference that features five teams ranked in the top seven in the country.\n\n              But the Sooners, who forced 24 turnovers and held Florida to 36% shooting from the field, are off to a good start.\n\n              Oklahoma was clinging to a 40-38 lead at halftime after Beers sat out the entire second quarter with foul trouble.\n\n              She returned in the third quarter and the Sooners immediately began to pull away, opening the half with a 14-2 run. Oklahoma outscored Florida 27-7 in the pivotal third with Vann providing a spark with eight points.\n\n              Oklahoma pushed the lead to 25 in the fourth with Beers drawing wide smiles and cheers from her teammates when the center, who typically does her damage in the paint, stepped out and drained a 3-pointer from the top of the key. Beers surpassed 2,000 points for her career in the win.\n\n              Florida: Awaits its NCAA Tournament fate.\n\n              Oklahoma: Will play No. 6 LSU, the tournament's fourth seed, on Friday.\n\n              Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851372/indiana-ohio-state",
+      "articleText": "              INDIANAPOLIS -- — Jaloni Cambridge had 19 points, eight rebounds and five assists, Chance Gray added 18 points, and No. 11 Ohio State eased past Indiana 83-59 on Thursday in the second round of the Big Ten Tournament. \n\n              Ohio State (25-6), a No. 5 seed, advances to play 19th-ranked Minnesota in the quarterfinals on Friday. The Buckeyes secured their fifth straight season with 25-plus wins.\n\n              Cambridge and Gray combined for 10 of Ohio State's points during a 12-0 run to take the first double-digit lead of the game at 24-14. The Buckeyes' lead did not drop below eight points the rest of the half and Gray's 3-pointer with 20 seconds left made it 36-24 at the break.\n\n              Ohio State added a 10-0 run early in the third quarter for a 17-point advantage. The Buckeyes led by as many as 30 points, 81-51, with three minutes remaining in the game. \n\n              Kennedy Cambridge had 14 points and Elsa Lemmilä grabbed 13 rebounds to go with six points, five assists and three blocks for Ohio State. Gray made four of Ohio State’s 10 3-pointers — a game after the Buckeyes sank a program-record 18 3s in an 87-68 win against then-No. 15 Michigan State on Sunday.\n\n              Maya Makalusky led Indiana (18-14) with 21 points and five 3-pointers. Shay Ciezki added 12 points and Nevaeh Caffey scored 10. \n\n              Ohio State: Looks to even the season series with Minnesota after a 74-61 loss on Feb. 18. \n\n              Indiana finished the regular season with a 6-12 record in Big Ten play.\n\n              Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851605/auburn-ole-miss",
+      "articleText": "              GREENVILLE, S.C. -- — Christeen Iwuala scored 18 points for No. 7 seed Mississippi in a 73-57 win over No. 15 seed Auburn in the second round of the SEC Tournament on Thursday.\n\n              Ole Miss (22-10) led the entire game, jumping out with a 12-1 run to open the game and had a double-digit lead heading into halftime, 48-20. \n\n              Iwuala shot a perfect 5 of 5 from the field in the first half for 10 points, and finished the day 8 of 8. She added nine rebounds, including the 250th of her career. Latasha Lattimore and Cotie McMahon both scored 13 for the Lady Rebels.\n\n              Auburn (15-17) was led by Khady Leye, with 17 points. Kaitlyn Duhon scored 14 for the Tigers. Auburn had a 10-0 run in the fourth quarter that lasted over three minutes, but it wasn't enough to swing the momentum in its favor.\n\n              Ole Miss will move on to face No. 2-seeded Vanderbilt. \n\n              Ole Miss: plays No. 2 seed Vanderbilt on March 6.\n\n              Auburn: awaits an invitation to play in a postseason tournament.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851373/illinois-michigan-st",
+      "articleText": "              INDIANAPOLIS -- — Cearah Parchment scored 15 points, and Destiny Jackson added 14 for No. 10-seeded Illinois in a 71-69 win over No. 10-seeded Michigan State in the Big Ten Tournament on Thursday night. \n\n              Maddie Webber added 13 for the Illini (21-10), Jasmine Brown-Hagger scored 12 and Berry Wallace finished with 11. Illinois will move on to the quarterfinals to play No. 2 seed Iowa. \n\n              The Spartans (22-8), who are ranked No. 18 in the country, were led by Kennedy Blair, who scored a career-high 30 points. Grace VanSlooten scored 13, and Jalyn Brown added 12. \n\n              Illinois turned over the ball on its first four possessions of the game, forcing a timeout to reset. An 8-0 run gave the Fighting Illini their first lead of the game at the end of the first quarter, and they led 36-29 heading into the break. \n\n              Michigan State had a 9-0 run after the break to regain the lead, 42-41, but a layup and a 3-pointer from Brown-Hagger gave the advantage back to Illinois. \n\n              On the Spartans’ final possession of the game, VanSlooten collected two rebounds from under the basket before kicking it back out to Blair in the midrange. Without a clear shot, she passed it out wide to Brown, who couldn't save the ball from going out of bounds with a second to go in the game. \n\n              Illinois: Will face No. 2 seed Iowa on March 6. The Hawkeyes are ranked No. 9 in the country. \n\n              Michigan: Will wait for an invitation to a postseason tournament.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851374/oregon-maryland",
+      "articleText": "              INDIANAPOLIS -- — Ehis Etute and Katie Fiso combined for 32 second-half points to lead Oregon 73-68 past No. 14 Maryland in the second round of the Big 10 Tournament on Thursday.\n\n              After two points from Etute in the first half and none from Fiso, Etute tallied 18 points, five rebounds and three blocks in the second half. Fiso had 14 on 7-of-13 shooting and four assists after halftime.\n\n              After a back-and-forth in the final three minutes that had Maryland within two points, Avary Cain hit a 3-pointer with five seconds to go to seal the result for the No. 11 seed Ducks (22-11). She had 13 points and two blocks.\n\n              Oluchi Okananwa scored 27 points — including 17 in the second half — going 10 of 18 from the field and 7 of 8 at the line to go with three steals for the Terrapins (23-8).\n\n              Isimenme Ozzy-Momodu added 10 points as the only other Terrapins player in double figures.\n\n              Neither team lead by double digits, with Maryland's eight-point lead in the first quarter the largest of the game. It's the second meeting and second time this season that the Ducks have upset the Terrapins.\n\n              Oregon will face No. 8 (and No. 3 seed) Michigan on Friday. \n\n              Maryland awaits a likely bid to the NCAA tournament. ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851623/w-carolina-chattanooga",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851254/st-bonaventure-loyola-chicago",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851187/clemson-virginia",
+      "articleText": "              DULUTH, Ga. -- — Mia Moore scored 10 of her 19 points in the fourth quarter, Taylor Johnson-Matthews finished with 10 points and Clemson beat Virginia 63-50 on Thursday in the second round of the ACC Tournament.\n\n              Clemson (21-10), which reached 21 wins in a season for the first time since 2000-01, advances to play top-seeded and 13th-ranked Duke on Friday in the quarterfinals.\n\n              Hannah Kohn and Johnson-Matthews each made a 3-pointer in the final 80 seconds of the third quarter to give Clemson a 43-39 lead. Then Moore made Clemson's 10th 3-pointer — on just 20 attempts — early in the fourth to make it 50-41.\n\n              Moore banked in a shot in traffic to extend Clemson's lead to 60-48 late in the fourth. She made all four of her shots in the fourth to help the Tigers shoot 85.7% in the frame. \n\n              Clemson's lead did not drop below nine points in the final five minutes despite going 7 of 13 from the free-throw line in the fourth. Virginia was just 5 of 15 from the field in the fourth with three turnovers.\n\n              Virginia (19-11) was looking to collect 20 wins for the first time since the 2016-17 season. \n\n              Paris Clark scored 15 points and Kymora Johnson added 12 for Virginia. Sa’Myah Smith had 11 rebounds and three blocks.\n\n              Clemson, the No. 9 seed, edged Duke 53-51 in the only regular-season meeting on Feb. 22. \n\n              Virginia, which had 11 ACC wins in a season for the first time since 1999-00, awaits an invitation to play in a postseason tournament. \n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812448/saint-francis-fdu",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851355/sc-upstate-high-point",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851453/marist-manhattan",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851371/usc-washington",
+      "articleText": "              INDIANAPOLIS -- — Elle Ladine scored a season-high 25 points, Avery Howell added 18 points and nine rebounds and Washington defeated USC 76-64 in the second round of Big Ten Tournament on Thursday.\n\n              The eighth-seeded Huskies (22-9) will take on top seed and second-ranked UCLA in a Friday quarterfinal.\n\n              Hannah Stines scored 12 points, Brynn McGaughy added 10 and Yulia Grabovskaia collected 10 rebounds for Washington. Leading scorer Sayvia Sellers (19.2) dealt with four fouls and had just four points on free throws in 28 minutes. Other Huskies filled the scoring gap with Washington shooting 50% and dominating the boards 44-27 in outscoring the Trojans 40-14 in the paint.\n\n              Londynn Jones scored 19 points, Kennedy Smith added 14 and Laura Williams had 13 rebounds to go with nine points for the Trojans (17-13).\n\n              Big Ten freshman of the year Jazzy Davidson, who leads the Trojans in scoring, rebounding and assists, scored eight points on 2-of-13 shooting over 29 minutes. Davidson, who appeared to hurt her shoulder early on, sat out the final seven minutes.\n\n              The Huskies led by double figures throughout the second half and by as many as 23. They shot 67% in the third quarter with Ladine scoring eight points to lead 56-36. USC got as close as 10 with two minutes left in the game.\n\n              After a first quarter when the teams combined for just 14 points, Ladine scored 13 points on 6-of-7 shooting in the second including the last six points for a 32-20 halftime edge.\n\n              USC won a home meeting with Washington 59-50 in the regular season.\n\n              Washington lost at UCLA 82-67 on Feb. 19.\n\n              USC waits to see where it will land in the NCAA Tournament field.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here and here (AP News mobile app). AP college basketball: https://apnews.com/hub/ap-top-25-college-basketball-poll and https://apnews.com/hub/college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851234/austin-peay-e-kentucky",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851743/south-alabama-texas-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851725/kansas-city-s-dakota-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851628/unc-greensboro-etsu",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851574/se-missouri-morehead-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851255/duquesne-saint-josephs",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851188/miami-notre-dame",
+      "articleText": "              DULUTH, Ga. -- — Hannah Hidalgo had 28 points, eight rebounds, five assists and five steals, Cassandre Prosper added 12 points and No. 5 seed Notre Dame beat 12th-seeded Miami 69-54 on Thursday in the second round of the ACC Tournament.\n\n              Notre Dame (21-9), which received 26 votes in the latest AP poll, moves on to play No. 4 seed NC State in the quarterfinals on Friday. The Fighting Irish have won six consecutive games and eight of the last nine, including downing then-No. 10 Louisville at home on Sunday. \n\n              Notre Dame led by 18 points entering the fourth quarter before Miami scored the opening 10 to get within 58-50. Gisela Sanchez made Notre Dame's first field goal of the fourth with 4:21 left for an 11-point lead and the Hurricanes missed their next four field goals. \n\n              Notre Dame's lead did not drop below 10 points over the final four minutes of the game.\n\n              Hidalgo, who was named ACC player of the year and ACC defensive player of the year on Tuesday, went 12 of 22 from the field to help Notre Dame shoot 46%. She also became the ACC single season steals leader with 166. Iyana Moore added 11 points and Malaya Cowles grabbed 12 rebounds. \n\n              Gal Raviv scored 15 points and Ahnay Adams added 13 for Miami (17-14). Ra Shaya Kyle, averaging a team-high 16.8 points per game, had 11 points, 15 rebounds and nine turnovers.\n\n              Miami, which defeating 13th-seeded Stanford 83-76 in overtime on Wednesday to begin the tournament, hopes to receive a postseason invite. \n\n              Notre Dame looks for its second victory against NC State this season after a 79-67 contest on Feb. 15.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851356/winthrop-gardner-webb",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401830088/sc-state-nc-central",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851455/saint-peters-sacred-heart",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851286/byu-utah",
+      "articleText": "              KANSAS CITY, Mo. -- — Delaney Gibb had 19 points, eight assists and four steals to lead BYU to a 70-52 win over rival Utah in the second round of the Big 12 Tournament on Thursday.\n\n              The ninth-seeded Cougars (22-10) won their fifth straight game and beat the eighth-seeded Utes (19-12) for the third time this season to advance to play top seed and No. 10-ranked TCU in a Friday quarterfinal.\n\n              Gibb made four 3-pointers as did Brinley Cannon, who scored 12 points. Lara Rohkohl scored all 12 of her points in the second half, including nine in a pivotal third quarter, and had eight rebounds. \n\n              Lani White scored 20 points, the only Ute in double figures.\n\n              Down 11 early in the third quarter, BYU shot 53% and outscored Utah 24-7 in the period to lead 51-43 after scoring the final 15 points. \n\n              Gibb's 3-pointer gave BYU a 12-point edge early in the fourth quarter while the Utes went scoreless for over five minutes. She heaved up another 3 to beat the shot clock for a 16-point edge with 1:18 remaining.\n\n              Cannon made three 3-pointers and BYU was 6 of 12 from the arc in the first quarter when it took a 22-17 lead. But the in the second quarter, the Cougars missed all six from the arc and were 2 of 12 overall. Utah took advantage, scoring 13 straight points and outscoring the Cougars 19-5 when White scored 11 of her 16 first-half points for a 36-27 lead.\n\n              Neither team reached 40% shooting but BYU made 11 of 30 from the arc and turned 19 turnovers into 18 points.\n\n              BYU lost at home to TCU 72-48 on Dec. 31.\n\n              Utah awaits its postseason fate.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here and here (AP News mobile app). AP college basketball: https://apnews.com/hub/ap-top-25-college-basketball-poll and https://apnews.com/hub/college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851235/fgcu-stetson",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851820/seattle-u-washington-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851744/ul-monroe-southern-miss",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851728/omaha-n-dakota-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851630/samford-wofford",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851575/siue-so-indiana",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851256/g-washington-dayton",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851189/california-syracuse",
+      "articleText": "              DULUTH, Ga. -- — Uche Izoje recorded 23 points and 10 rebounds to lead Syracuse to a 70-59 win over California on Thursday in the ACC Tournament.\n\n              It marked Syracuse’s first ACC Tournament win since 2021 and sent the Orange to the quarterfinals after doubling their conference win total from last season.\n\n              The Orange struck quickly, opening the game on a 9-0 run and never trailing. Syracuse extended the margin to 37-16 by halftime as California struggled offensively.\n\n              The Golden Bears shot 25% from the field in the first half and committed 10 turnovers, producing their lowest scoring half of the season.\n\n              California pushed back in the second half, trimming its deficit that had reached 21 points. A 3-pointer from Lulu Twidale pulled the Bears within 56-52 midway through the fourth quarter.\n\n              Syracuse answered behind Izoje, who scored during a decisive stretch late in the game. Laila Phelia connected with Izoje on an alley-oop that pushed the lead to 61-53 with just over three minutes remaining.\n\n              The Bears were unable to get closer, going the final two and a half minutes without a field goal as Syracuse closed the game at the free-throw line.\n\n              Phelia added 17 points for the Orange, while Sophie Burrows extended her streak to 16 straight games with a made 3-pointer. Izoje, the ACC rookie of the year, was 11 of 19 from the field. \n\n              Sakima Walker led California with 19 points. Twidale finished with 14 and Gisella Maul added 13.\n\n              Syracuse will play No. 2 seed Louisville on Friday in the quarterfinals.\n\n              California awaits an invitation to play in a postseason tournament.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401829535/bethune-florida-am",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851236/west-georgia-jacksonville",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851821/san-diego-saint-marys",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401827836/howard-norfolk-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401827819/delaware-st-md-eastern",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401822307/coppin-st-morgan-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851625/mercer-furman",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851357/charleston-so-radford",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851205/new-hampshire-maine",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851203/ualbany-vermont",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401825829/le-moyne-mercyhurst",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824561/drexel-hofstra",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824427/miss-valley-st-jackson-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824408/prairie-view-texas-southern",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824301/grambling-alabama-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812531/chicago-st-stonehill",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851207/bryant-binghamton",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851288/arizona-st-iowa-state",
+      "articleText": "              KANSAS CITY -- — Gabby Elliott had 22 points, 10 rebounds and eight assists, and No. 10 seed Arizona State beat No. 7 seed Iowa State 77-68 on Thursday in the second round of the Big 12 Tournament.\n\n              Arizona State (24-9) advances to face No. 2 seed West Virginia in the quarterfinals on Friday and strengthened its case for an NCAA Tournament berth. The Sun Devils improved their win total dramatically under first-year coach Molly Miller after finishing with 11 victories last season.\n\n              Arizona State set the tone early, jumping to a 17-2 lead behind Heloisa Carrera, who scored 12 of her 17 points in the opening stretch. The Sun Devils led 33-25 at halftime before Elliott ignited a decisive third-quarter run.\n\n              She opened the second half with eight straight points, including back-to-back 3-pointers, as Arizona State stretched the lead to double digits. The Sun Devils outscored Iowa State 27-21 in the third quarter and carried a 60-46 advantage into the fourth.\n\n              Iowa State pushed back late and trimmed the deficit to 68-62 on an Addy Brown 3-pointer with 1:41 remaining. Arizona State, however, did not allow the Cyclones to get closer than six points the rest of the way despite going nearly eight minutes without a field goal in the fourth quarter.\n\n              McKinna Brackens finished with 16 for the Sun Devils.\n\n              Audi Crooks led Iowa State (22-9) with 21 points, while Brown added 13 points and 12 rebounds.\n\n              Arizona State plays No. 2 seed West Virginia on Friday in the quarterfinals.\n\n              Iowa State awaits an invitation to play in a postseason tournament.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851208/njit-umbc",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824279/southern-alabama-am",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401831178/belmont-valparaiso",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401831176/northern-iowa-indiana-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401831175/illinois-st-drake",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401831174/evansville-bradley",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401830100/ar-pine-bluff-alcorn-st",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401825821/new-haven-c-connecticut",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824580/hampton-campbell",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824579/stony-brook-charleston",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824564/unc-wilmington-nc-at",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824563/elon-william-mary",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401824562/towson-monmouth",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812464/long-island-wagner",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401805146/ca-baptist-abilene-chrstn",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851257/saint-louis-la-salle",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851190/georgia-tech-virginia-tech",
+      "articleText": "              DULUTH, Ga. -- — Carleigh Wenzel scored 15 points, and Mackenzie Nelson added 14 as Virginia Tech rallied to beat Georgia Tech 62-54 on Thursday in the ACC Tournament.\n\n              Virginia Tech (22-8) overcame a slow start that saw the Hokies miss 15 of their first 16 shots. Georgia Tech capitalized early, building a 17-7 lead after the first quarter.\n\n              The Hokies flipped the game in the second quarter, closing the half on a 17-4 run to take a 29-23 lead into the break.\n\n              Georgia Tech (14-17) stayed within striking distance in the second half and pulled within 50-48 early in the fourth quarter on a layup by Talayah Walker.\n\n              Wenzel knocked down a 3-pointer for Virginia Tech with just over two minutes remaining to extend the lead back to double digits, and Samyha Suffren added a jumper with 1:04 left to help seal the win.\n\n              Nelson and Leila Wells each grabbed career-highs in rebounds for the Hokies with nine and six, respectively. Nelson also had six assists.\n\n              Walker finished with 20 points and eight rebounds for Georgia Tech. La’Nya Foster added 12 points.\n\n              Virginia Tech will face No. 3 seed North Carolina in the quarterfinals on Friday.\n\n              Georgia Tech awaits an invitation to play in a postseason tournament.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401805147/tarleton-st-ut-arlington",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401805070/utep-sam-houston",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401805069/new-mexico-st-louisiana-tech",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401805068/missouri-st-western-ky",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401805067/fiu-mtsu",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401831177/murray-st-uic",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401805148/southern-utah-utah-valley",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851237/north-alabama-c-arkansas",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851606/alabama-tennessee",
+      "articleText": "              GREENVILLE, S.C. -- — Jessica Timmons and Ta'Mia Scott combined for 43 points to lead Alabama 76-64 past Tennessee in the second round of the Southeastern Conference tournament on Thursday. \n\n              Timmons and Scott were both 3 of 5 from behind the arc. Timmons had 21 points on 8-of-16 shooting and Scott had 20 on 7-of-11 shooting to go with five rebounds. Scott fouled out with 3:46 to go. \n\n              Essence Cody scored 10 points. Karly Weathers had seven assists and six steals.\n\n              The No. 11 seed Crimson Tide (23-9) built up a 39-29 halftime lead after a 9-0 first quarter run, and a 12-5 run to end the half. Alabama never trailed in the contest and held the lead from the 3:16 mark in the first quarter.\n\n              The No. 6 seed Volunteers (16-13) were led by a 20-point, five-rebound performance from Janiah Barker. She turned the ball over seven times. Zee Spearman added 13 points, six rebounds and two blocks.\n\n              Tennessee leads the SEC with 17 conference titles.\n\n              Alabama will face No. 3 seed Texas in the quarterfinals on Friday.\n\n              Tennessee, after seven consecutive losses, will await to see if it will receive a bid to the NCAA tournament.\n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851358/unc-asheville-longwood",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812905/long-beach-st-uc-davis",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812904/bakersfield-csu-northridge",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812903/fullerton-uc-san-diego",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812902/uc-irvine-cal-poly",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401812901/hawai%E2%80%99i-uc-riverside",
+      "articleText": ""
+    },
+    {
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851290/kansas-colorado",
+      "articleText": "              KANSAS CITY, Mo. -- — Logyn Greer and Desiree Wooten both scored 10 points in No. 6 seed Colorado's 55-48 win over No. 11 seed Kansas on Thursday night to advance to the quarterfinals of the Big 12 Conference Tournament. \n\n              Greer shot 4 for 7 from the field and drained both her attempts from 3-point range from the Buffaloes (21-10). She had six rebounds and four blocks. Wooten added four assists. \n\n              Colorado was in foul trouble early, racking up seven fouls in the first quarter. A 9-0 run in the second quarter broke the game open for the Buffaloes and they entered halftime up 26-18. Their defense held Kansas to 36% (19 of 53) from the field and 15% (2 of 13) from 3-point range. \n\n              Kansas (19-13) was led in scoring by S'Mya Nichols, who put up 14. Her and Sania Copeland scored the only 3-pointers for the Jayhawks. \n\n              Colorado: Will play No. 3 seed Baylor on Friday. The Lady Bears are ranked No. 20 in the country.\n\n              Kansas: Will wait for an invitation into a postseason tournament. \n\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up here. AP women’s college basketball: https://apnews.com/hub/ap-top-25-womens-college-basketball-poll and https://apnews.com/hub/womens-college-basketball"
+    }
+  ]
+}

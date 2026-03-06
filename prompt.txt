@@ -1,0 +1,147 @@
+THPORTH Recap Generator (Console JSON Input)
+You will receive JSON containing sports recap article text that was extracted from a browser console.
+Use the article text to generate THPORTH-style morning briefing recaps.
+The JSON input will already contain the article text for each game.
+Do NOT attempt to fetch articles from the internet.
+Only use the text provided.
+---
+INPUT
+You will receive JSON structured like this:
+{
+"league": "NHL",
+"games": [
+{
+"recapUrl": "...",
+"articleText": "full article text..."
+}
+]
+}
+Each entry represents one game recap.
+Every game must produce one recap output.
+Do not skip entries.
+---
+WRITING STYLE
+Each recap must read like a sportswriter's morning briefing. And this rule overrides everything else: everything you write must focus on the most interesting things about each game so that the reader will know in 30 seconds (for each game) what mattered most and they will have something interesting to share in a watercooler conversation. Reading these recaps daily will allow the reader to keep up with this league as it goes through its season.
+The tone should be:
+- conversational
+- narrative-driven
+- human
+- focused on what fans will talk about the next morning
+Stats should support the story but should not dominate the writing.
+Avoid robotic stat summaries.
+---
+HEADLINE
+Write a new headline summarizing the single most important storyline of the game.
+The biggest takeaway from the game should be understandable just by reading the headline.
+Rules:
+- Do NOT copy or closely paraphrase the original headline.
+- Use sentence case (not title case).
+- Focus on the most interesting storyline such as:
+  - comeback
+  - huge performance
+  - record
+  - streak
+  - playoff impact
+  - milestone
+  - controversy
+Example style:
+"Kaprizov breaks Wild goals record as Minnesota rolls past Lightning"
+---
+SCORE
+Directly below the headline include the final score if the game has one.
+Format exactly:
+TEAM A X - TEAM B Y
+Examples:
+MIN 5 - TB 1
+LAL 110 - NO 101
+If the event does not have a score (golf, racing, tennis tournament recap, etc.), set:
+"score": null
+---
+MORNING BRIEF PARAGRAPH
+Write one paragraph summarizing the game in a sportswriter morning-brief style.
+The paragraph should:
+- explain the main storyline
+- feel conversational and human
+- explain why the game mattered
+Do not include play-by-play narration.
+---
+BULLETS
+Provide 3-5 bullet points highlighting the most interesting facts from the recap.
+These may include:
+- player performances
+- key statistics
+- streaks
+- standings impact
+- unusual moments
+- milestones or records
+Each bullet should include specific stats when available.
+---
+CONTEXT
+Provide one short sentence explaining the broader significance of the game.
+Examples:
+- playoff race impact
+- record milestone
+- major streak
+- injury impact
+If no meaningful context exists:
+"context": null
+---
+GAME ID
+Extract the gameId from the recap URL.
+Example:
+https://www.espn.com/nhl/recap/_/gameId/401803310
+"id": "401803310"
+---
+TEAMS
+Identify the away and home teams from the article text and populate:
+"teams": {
+"away": "",
+"home": ""
+}
+---
+OUTPUT FORMAT
+Return ONLY valid JSON.
+One file per league.
+Structure:
+{
+"leagueName": "",
+"leagueKey": "",
+"sourceType": "console_recaps",
+"leagueBriefing": "",
+"games": [
+{
+"id": "",
+"teams": {
+"away": "",
+"home": ""
+},
+"headline": "",
+"score": "",
+"brief": "",
+"bullets": [],
+"context": "",
+"recapStatus": "ok",
+"source": {
+"recapUrl": ""
+},
+"highlights": []
+}
+]
+}
+---
+LEAGUE BRIEFING
+Write a 1-2 sentence briefing summarizing the biggest storylines across all games in this league tonight.
+Examples:
+- major win streaks
+- huge performances
+- playoff implications
+- division race changes
+---
+IMPORTANT
+Return JSON ONLY.
+Do not include explanations.
+Do not include markdown.
+Do not include commentary.
+Important: Give results in JSON code block (so I can copy with one click)
+
+Here's the data for

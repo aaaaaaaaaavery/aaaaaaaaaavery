@@ -1,0 +1,141 @@
+{
+  "leagueName": "NCAAW",
+  "leagueKey": "NCAAW",
+  "sourceType": "recap_batch",
+  "newsBriefing": "",
+  "leagueBriefing": "Conference tournament play across women's college basketball produced blowouts, dramatic comebacks and a few buzzer-beater finishes as Championship Week intensified. Kentucky delivered the most dominant win of the day in the SEC Tournament, while Indiana erased a 20-point deficit in the Big Ten and Auburn stole a thriller in the final seconds against Texas A&M. Across the ACC, Big 12 and Big Ten tournaments, several double-digit seeds advanced as the postseason chaos of March officially began.",
+  "games": [
+    {
+      "headline": "Kentucky explodes in second half to rout Arkansas in SEC Tournament opener",
+      "brief": "Kentucky blew the game open with an 18-2 run after halftime and rolled to the largest SEC Tournament win in program history, overwhelming Arkansas with balanced scoring and relentless rebounding.",
+      "bullets": [
+        "Clara Strack posted 20 points, 13 rebounds and three blocks.",
+        "Amelia Hassett hit six 3-pointers and scored 18 points.",
+        "Kentucky opened the second half with an 18-2 run to seize control.",
+        "The Wildcats won 94-64 — the largest SEC Tournament victory in program history."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851597/arkansas-kentucky"
+    },
+    {
+      "headline": "Miami survives Stanford rally, wins ACC Tournament opener in overtime",
+      "brief": "Miami appeared in control before Stanford stormed back late, but the Hurricanes regrouped in overtime behind Amarachi Kimpson and Ra Shaya Kyle to secure the tournament win.",
+      "bullets": [
+        "Ra Shaya Kyle recorded 25 points and 11 rebounds.",
+        "Amarachi Kimpson scored 20 points including key overtime baskets.",
+        "Stanford erased a 13-point deficit to force overtime.",
+        "Miami pulled away in OT for an 83-76 win."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851184/stanford-miami"
+    },
+    {
+      "headline": "Kansas State rains tournament-record threes in Big 12 rout of Cincinnati",
+      "brief": "Kansas State turned the game into a three-point showcase, tying a program record and setting a Big 12 Tournament mark with a barrage from deep against Cincinnati.",
+      "bullets": [
+        "Kansas State hit 17 three-pointers, a Big 12 Tournament record.",
+        "Jordan Speiser and Taryn Sides scored 20 points each.",
+        "Nastja Claessens added 18 points and five 3-pointers.",
+        "Wildcats dominated 91-66 to advance."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851278/cincinnati-kansas-st"
+    },
+    {
+      "headline": "Florida cruises past Mississippi State behind McGill and O’Neal",
+      "brief": "Florida controlled the game from start to finish as Liv McGill and Me’Arah O’Neal powered the Gators to their largest SEC Tournament victory.",
+      "bullets": [
+        "Liv McGill posted 22 points, 10 assists and seven rebounds.",
+        "Me’Arah O’Neal added 22 points including three second-quarter threes.",
+        "Florida never trailed in the 86-68 victory.",
+        "Mississippi State dropped its fifth straight game."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851598/mississippi-st-florida"
+    },
+    {
+      "headline": "Indiana storms back from 20 down to stun Nebraska in Big Ten Tournament",
+      "brief": "Indiana pulled off one of the most dramatic comebacks of the day, erasing a massive deficit and finishing strong in the closing minutes to defeat Nebraska.",
+      "bullets": [
+        "Indiana rallied from a 20-point second-quarter deficit.",
+        "Shay Ciezki scored 22 points with seven assists.",
+        "Nevaeh Caffey scored nine of her 13 points in the fourth quarter.",
+        "The Hoosiers won 72-69 to extend their late-season surge."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851364/indiana-nebraska"
+    },
+    {
+      "headline": "Auburn edges Texas A&M with late layup in SEC thriller",
+      "brief": "Auburn grabbed the lead with just seconds left as Khady Leye drove for the decisive basket, sealing a dramatic one-point win in the SEC Tournament.",
+      "bullets": [
+        "Khady Leye scored the go-ahead layup with 5.2 seconds remaining.",
+        "Leye finished with 11 points and 15 rebounds.",
+        "Ny’Ceara Pryor led Texas A&M with 25 points.",
+        "Auburn held on for a 50-49 win."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851599/auburn-texas-am"
+    },
+    {
+      "headline": "Illinois pulls away from Wisconsin in Big Ten opener",
+      "brief": "Illinois used a big second-half run and strong free-throw shooting to put away Wisconsin and move forward in the Big Ten Tournament.",
+      "bullets": [
+        "Berry Wallace scored 22 points and Destiny Jackson added 21.",
+        "Illinois outscored Wisconsin 24-10 at the free-throw line.",
+        "The Illini used a 16-3 run in the third quarter to take control.",
+        "Illinois won 82-70."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851366/wisconsin-illinois"
+    },
+    {
+      "headline": "Georgia Tech controls Florida State in ACC Tournament opener",
+      "brief": "Georgia Tech led nearly the entire game and sealed the victory with a late run to eliminate Florida State in the ACC Tournament.",
+      "bullets": [
+        "La’Nya Foster scored 18 points with eight rebounds.",
+        "Erica Moon added 17 points.",
+        "Georgia Tech closed with a 9-2 run in the fourth quarter.",
+        "Yellow Jackets won 72-60."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851186/florida-st-georgia-tech"
+    },
+    {
+      "headline": "BYU holds off Houston to advance in Big 12 Tournament",
+      "brief": "BYU built a steady lead and survived a late push from Houston to secure the program’s first Big 12 Tournament victory.",
+      "bullets": [
+        "Olivia Hamlin led BYU with 16 points.",
+        "Delaney Gibb and Lara Rohkohl added 15 points each.",
+        "BYU shot 47% compared to Houston’s 31%.",
+        "Cougars won 76-66."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851279/houston-byu"
+    },
+    {
+      "headline": "Arizona State edges Arizona in tense rivalry matchup",
+      "brief": "A tight rivalry game came down to late jumpers as Arizona State held off Arizona in a defensive battle at the Big 12 Tournament.",
+      "bullets": [
+        "Heloisa Carrera scored 16 points including the go-ahead jumper.",
+        "Arizona State took the lead for good late in the fourth quarter.",
+        "Arizona’s final possession failed to produce a tying shot.",
+        "Sun Devils won 54-51."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851280/arizona-arizona-st"
+    },
+    {
+      "headline": "Oregon rolls past Purdue in Big Ten Tournament opener",
+      "brief": "Oregon built a huge halftime lead and never looked back, advancing comfortably past Purdue in Indianapolis.",
+      "bullets": [
+        "Katie Fiso scored 20 points for Oregon.",
+        "Ehis Etute added 16 points and 12 rebounds.",
+        "Ducks led 47-24 at halftime.",
+        "Oregon secured an 82-64 victory."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851368/purdue-oregon"
+    },
+    {
+      "headline": "Kansas defense overwhelms UCF in Big 12 opener",
+      "brief": "Kansas used a dominant defensive performance and a decisive scoring run to eliminate UCF in the first round of the Big 12 Tournament.",
+      "bullets": [
+        "Jaliya Davis posted a double-double with 10 points and 11 rebounds.",
+        "Kansas held UCF to just 35 points.",
+        "UCF shot 25% overall and 11% from three.",
+        "Jayhawks won 56-35."
+      ],
+      "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851281/ucf-kansas"
+    }
+  ]
+}

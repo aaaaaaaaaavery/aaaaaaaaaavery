@@ -10,7 +10,15 @@
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
   <meta name="robots" content="noindex,nofollow" />
-  <style></style>
+  <style>
+    .brief-collapsed {
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body class="min-h-screen bg-gray-100 font-sans text-gray-800 antialiased">
   <div class="flex bg-white text-gray-800">
@@ -24,7 +32,7 @@
         <div id="leagueCount" class="rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600"></div>
       </div>
 
-      <div class="grid min-h-0 flex-1 grid-cols-2">
+      <div class="grid min-h-0 flex-1 grid-cols-[225px_minmax(0,1fr)]">
         <section class="flex min-h-0 flex-col border-r border-gray-200">
           <div class="border-b border-gray-200 p-3">
             <label for="leagueFilter" class="mb-2 block text-xs font-semibold uppercase tracking-wide text-gray-500">Leagues</label>
@@ -44,7 +52,7 @@
       </div>
 
       <div class="border-t border-gray-200 p-3 text-xs text-gray-500">
-        League files: <span class="font-mono">/recaps-manual/daily/nba.json</span>, <span class="font-mono">/recaps-manual/daily/nhl.json</span>, <span class="font-mono">/recaps-manual/daily/premierleague.json</span>
+        League files: <span class="font-mono">/recaps-manual/daily/nba.json</span>, <span class="font-mono">/recaps-manual/daily/nhl.json</span>, <span class="font-mono">/recaps-manual/daily/mlb.json</span>, <span class="font-mono">/recaps-manual/daily/premierleague.json</span>, <span class="font-mono">/recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">/recaps-manual/daily/ncaam.json</span>, <span class="font-mono">/recaps-manual/daily/ncaaw.json</span>, <span class="font-mono">/recaps-manual/daily/ncaabaseball.json</span>
       </div>
     </aside>
 
@@ -75,6 +83,10 @@
               class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
               Clear Top 10
             </button>
+            <button id="downloadTop10Btn"
+              class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-purple-700 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-800 focus:outline-none">
+              Download JSON
+            </button>
             <button id="saveTop10Btn"
               class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-emerald-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-800 focus:outline-none">
               Save Top 10
@@ -94,7 +106,7 @@
               <div class="rounded-md border border-gray-200 bg-gray-50 p-5">
                 <div class="mb-2 text-sm font-semibold">No recaps loaded</div>
                 <div class="text-sm leading-relaxed text-gray-600">
-                  Make sure <span class="font-mono">recaps-manual/daily/nba.json</span>, <span class="font-mono">recaps-manual/daily/nhl.json</span>, and <span class="font-mono">recaps-manual/daily/premierleague.json</span> exist in your repo and contain
+                  Make sure <span class="font-mono">recaps-manual/daily/nba.json</span>, <span class="font-mono">recaps-manual/daily/nhl.json</span>, <span class="font-mono">recaps-manual/daily/mlb.json</span>, <span class="font-mono">recaps-manual/daily/premierleague.json</span>, <span class="font-mono">recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">recaps-manual/daily/ncaam.json</span>, <span class="font-mono">recaps-manual/daily/ncaaw.json</span>, and <span class="font-mono">recaps-manual/daily/ncaabaseball.json</span> exist in your repo and contain
                   <span class="font-mono">leagueName</span> and <span class="font-mono">games</span>.
                 </div>
               </div>
@@ -122,23 +134,52 @@
     const LEAGUE_FILES = [
       { leagueName: "NBA", leagueKey: "nba", fileUrl: "/recaps-manual/daily/nba.json" },
       { leagueName: "NHL", leagueKey: "nhl", fileUrl: "/recaps-manual/daily/nhl.json" },
-      { leagueName: "Premier League", leagueKey: "premierleague", fileUrl: "/recaps-manual/daily/premierleague.json" }
+      { leagueName: "MLB", leagueKey: "mlb", fileUrl: "/recaps-manual/daily/mlb.json" },
+      { leagueName: "NCAAM", leagueKey: "ncaam", fileUrl: "/recaps-manual/daily/ncaam.json" },
+      { leagueName: "NCAAW", leagueKey: "ncaaw", fileUrl: "/recaps-manual/daily/ncaaw.json" },
+      { leagueName: "NCAA Baseball", leagueKey: "ncaabaseball", fileUrl: "/recaps-manual/daily/ncaabaseball.json" },
+      { leagueName: "Premier League", leagueKey: "premierleague", fileUrl: "/recaps-manual/daily/premierleague.json" },
+      { leagueName: "WBC", leagueKey: "wbc", fileUrl: "/recaps-manual/daily/wbc.json" },
+      { leagueName: "UEFA Champions League", leagueKey: "uefachampionsleague", fileUrl: "/recaps-manual/daily/uefachampionsleague.json" },
+      { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "/recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LIV" },
+      { leagueName: "Tennis", leagueKey: "tennis", fileUrl: "/recaps-manual/daily/oneperleague.json", sourceLeagueKey: "Tennis" }
     ];
 
     const LEAGUE_DISPLAY_ORDER = [
       "NFL", "NBA", "MLB", "NHL", "Soccer", "Formula One", "NCAAM", "NCAAW", "PGA Tour", "UFC", "Boxing",
-      "NASCAR Cup Series", "Tennis", "NCAAF", "WNBA", "LIV Golf", "IndyCar", "LPGA Tour", "MotoGP"
+      "NASCAR Cup Series", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "IndyCar", "LPGA Tour", "MotoGP"
     ];
 
     const SOCCER_LEAGUE_DISPLAY_ORDER = [
-      "Premier League", "UEFA Champions League", "MLS", "LALiga", "Serie A", "Bundesliga", "FA Cup",
+      "Premier League", "WBC", "UEFA Champions League", "MLS", "LALiga", "Serie A", "Bundesliga", "FA Cup",
       "Liga MX", "NWSL", "Ligue 1", "UEFA Europa League", "UEFA Conference League"
     ];
 
     const LEAGUE_ORDER_INDEX = Object.fromEntries(LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_ORDER_INDEX = Object.fromEntries(SOCCER_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
-    const ALL_LEAGUE = { leagueName: "ALL", leagueKey: "all", fileUrl: "generated://top10" };
+    const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
     const MANUAL_TOP10_STORAGE_KEY = "thporth.manual-top10.v1";
+    const MANUAL_TOP10_FILE_URL = "/recaps-manual/daily/manual-top10.json";
+    const MASCOT_SCORE_LEAGUES = new Set(["nba", "nfl", "mlb", "nhl"]);
+    const COLLEGE_SCORE_LEAGUES = new Set(["ncaam", "ncaaw"]);
+    const TOP10_LEAGUE_PILL_LABELS = {
+      nhl: "NHL",
+      nba: "NBA",
+      premierleague: "EPL",
+      mlb: "MLB",
+      nfl: "NFL",
+      ncaam: "NCAAM",
+      ncaaw: "NCAAW",
+      wbc: "WBC",
+      uefachampionsleague: "UCL",
+      "uefa champions league": "UCL",
+      uefaeuropaleague: "UEL",
+      "uefa europa league": "UEL",
+      uefaconferenceleague: "UECL",
+      "uefa conference league": "UECL",
+      livgolf: "LIV",
+      liv: "LIV",
+    };
 
     // ===== State =====
     const state = {
@@ -156,11 +197,14 @@
       lastScrollTop: 0,
       top10Token: 0,
       top10Items: [],
+      top10GameKeys: new Set(),
       autoTop10Items: [],
       allGamesByKey: new Map(),
       isAdminMode: false,
       manualPicksByRank: new Map(),
       manualRankByGame: new Map(),
+      manualHeadlineByGame: new Map(),
+      manualNewsBriefing: "",
       hasUnsavedManualChanges: false,
       lastManualSavedAt: "",
     };
@@ -169,6 +213,7 @@
     const refreshBtn = document.getElementById("refreshBtn");
     const saveTop10Btn = document.getElementById("saveTop10Btn");
     const clearTop10Btn = document.getElementById("clearTop10Btn");
+    const downloadTop10Btn = document.getElementById("downloadTop10Btn");
     const modePill = document.getElementById("modePill");
     const manualStatus = document.getElementById("manualStatus");
     const leagueCount = document.getElementById("leagueCount");
@@ -188,7 +233,11 @@
     }
 
     function getTodayDateKey() {
-      return new Date().toISOString().slice(0, 10);
+      const d = new Date();
+      const yyyy = d.getFullYear();
+      const mm = String(d.getMonth() + 1).padStart(2, "0");
+      const dd = String(d.getDate()).padStart(2, "0");
+      return `${yyyy}-${mm}-${dd}`;
     }
 
     function detectAdminMode() {
@@ -201,6 +250,42 @@
       return `${String(leagueKey)}::${String(gameId)}`;
     }
 
+    function isTop10GameKey(leagueKey, gameId) {
+      return state.top10GameKeys.has(makeGameKey(leagueKey, gameId));
+    }
+
+    function syncCardTop10Style(card, isFeatured) {
+      if (!card) return;
+
+      const highlightClasses = [
+        "border-amber-300/60",
+        "bg-amber-50/20",
+        "ring-1",
+        "ring-amber-200/50",
+        "shadow-sm",
+      ];
+
+      if (isFeatured) {
+        card.classList.add(...highlightClasses);
+      } else {
+        card.classList.remove(...highlightClasses);
+      }
+
+      const badge = card.querySelector("[data-top10-badge='1']");
+      if (badge) badge.remove();
+    }
+
+    function syncLeagueSectionTop10Styles() {
+      const cards = [...document.querySelectorAll(".game-card[data-league-key]")];
+      cards.forEach((card) => {
+        const leagueKey = String(card.dataset.leagueKey || "");
+        if (!leagueKey || leagueKey === "all") return;
+        const gameId = String(card.dataset.gameId || "");
+        const isFeatured = isTop10GameKey(leagueKey, gameId);
+        syncCardTop10Style(card, isFeatured);
+      });
+    }
+
     function collectManualPicksArray() {
       const picks = [];
       for (let rank = 1; rank <= 10; rank += 1) {
@@ -211,6 +296,18 @@
         picks.push({ rank, leagueKey, gameId });
       }
       return picks;
+    }
+
+    function collectManualPicksForExport() {
+      return collectManualPicksArray().map((pick) => {
+        const key = makeGameKey(pick.leagueKey, pick.gameId);
+        const game = state.allGamesByKey.get(key);
+        return {
+          ...pick,
+          headline: String(game?.text || ""),
+          scoreLine: String(game?.scoreLine || ""),
+        };
+      });
     }
 
     function applyManualPicks(picks) {
@@ -228,18 +325,96 @@
       });
     }
 
+    function applyManualHeadlineOverrides(picks, top10) {
+      state.manualHeadlineByGame.clear();
+      const top10Lines = Array.isArray(top10) ? top10 : [];
+
+      (Array.isArray(picks) ? picks : []).forEach((p) => {
+        const rank = Number(p?.rank);
+        if (!Number.isInteger(rank) || rank < 1 || rank > 10) return;
+
+        const leagueKey = String(p?.leagueKey || "").trim();
+        const gameId = String(p?.gameId || "").trim();
+        if (!leagueKey || !gameId) return;
+
+        const pickHeadline = String(p?.headline || "").trim();
+        const fallbackHeadline = String(top10Lines[rank - 1] || "").trim();
+        const finalHeadline = pickHeadline || fallbackHeadline;
+        if (!finalHeadline) return;
+
+        state.manualHeadlineByGame.set(makeGameKey(leagueKey, gameId), finalHeadline);
+      });
+    }
+
     function loadManualPicksFromStorage() {
       try {
         const raw = localStorage.getItem(MANUAL_TOP10_STORAGE_KEY);
         if (!raw) return;
         const data = JSON.parse(raw);
-        const date = String(data?.date || "");
-        if (date !== getTodayDateKey()) return;
         applyManualPicks(data?.picks || []);
+        applyManualHeadlineOverrides(data?.picks || [], data?.top10 || []);
+        state.manualNewsBriefing = String(data?.newsBriefing || data?.leagueBriefing || "").trim();
         state.lastManualSavedAt = String(data?.updatedAt || "");
       } catch (e) {
         // Ignore malformed local storage entries.
       }
+    }
+
+    async function loadManualPicksFromFile() {
+      console.log(`[loadManualPicksFromFile] Attempting to fetch: ${MANUAL_TOP10_FILE_URL}`);
+      try {
+        const res = await fetch(`${MANUAL_TOP10_FILE_URL}?t=${Date.now()}`, { cache: "no-store" });
+        console.log(`[loadManualPicksFromFile] Fetch response status: ${res.status}`);
+        if (!res.ok) {
+          console.warn(`[loadManualPicksFromFile] File not found or fetch failed (${res.status})`);
+          return false;
+        }
+        const data = await res.json();
+        const picksCount = Array.isArray(data?.picks) ? data.picks.length : 0;
+        console.log(`[loadManualPicksFromFile] ✓ Successfully loaded ${picksCount} manual picks from file`);
+        applyManualPicks(data?.picks || []);
+        applyManualHeadlineOverrides(data?.picks || [], data?.top10 || []);
+        state.manualNewsBriefing = String(data?.newsBriefing || data?.leagueBriefing || "").trim();
+        state.lastManualSavedAt = String(data?.updatedAt || "");
+        return true;
+      } catch (e) {
+        console.error(`[loadManualPicksFromFile] Error loading file:`, e);
+        return false;
+      }
+    }
+
+    function downloadManualPicksAsJSON() {
+      const picks = collectManualPicksForExport();
+      console.log("Downloading manual picks:", picks);
+      
+      if (picks.length === 0) {
+        alert("No manual picks to download. Please rank at least one game first.");
+        return false;
+      }
+
+      const payload = {
+        date: getTodayDateKey(),
+        mode: "manual",
+        picks: picks,
+        top10: picks.map((p) => String(p.headline || "")).filter(Boolean),
+        newsBriefing: String(state.manualNewsBriefing || ""),
+        updatedAt: new Date().toISOString(),
+      };
+      
+      const jsonStr = JSON.stringify(payload, null, 2);
+      const blob = new Blob([jsonStr], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `manual-top10.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 100);
+      
+      console.log("Download triggered for manual-top10.json");
+      alert(`Downloaded manual-top10.json with ${picks.length} picks and headlines. Check your Downloads folder, then upload this file to /recaps-manual/daily/ in your repo.`);
+      return true;
     }
 
     function saveManualPicksToStorage() {
@@ -247,6 +422,7 @@
         date: getTodayDateKey(),
         mode: "manual",
         picks: collectManualPicksArray(),
+        newsBriefing: String(state.manualNewsBriefing || ""),
         updatedAt: new Date().toISOString(),
       };
       localStorage.setItem(MANUAL_TOP10_STORAGE_KEY, JSON.stringify(payload));
@@ -300,11 +476,13 @@
         manualStatus.textContent = "Top 10 editing controls are hidden in public mode.";
         saveTop10Btn.classList.add("hidden");
         clearTop10Btn.classList.add("hidden");
+        downloadTop10Btn.classList.add("hidden");
         return;
       }
 
       saveTop10Btn.classList.remove("hidden");
       clearTop10Btn.classList.remove("hidden");
+      downloadTop10Btn.classList.remove("hidden");
       const count = collectManualPicksArray().length;
       const unsaved = state.hasUnsavedManualChanges ? " • Unsaved changes" : " • Saved";
       const savedAt = state.lastManualSavedAt
@@ -318,11 +496,18 @@
       const used = new Set();
       const out = [];
 
+      const manualCount = state.manualPicksByRank.size;
+      console.log(`[composeFinalTop10] Building Top 10 with ${manualCount} manual picks`);
+
       for (let rank = 1; rank <= 10; rank += 1) {
         const key = state.manualPicksByRank.get(rank);
         if (!key) continue;
         const game = byKey.get(key);
-        if (!game) continue;
+        if (!game) {
+          console.warn(`[composeFinalTop10] Manual pick rank ${rank} references missing game: ${key}`);
+          continue;
+        }
+        console.log(`[composeFinalTop10] Rank ${rank}: ${game.text} (${game.leagueKey})`);
         out.push({ ...game, rank });
         used.add(key);
       }
@@ -335,6 +520,7 @@
         used.add(key);
       });
 
+      console.log(`[composeFinalTop10] Final Top 10 has ${out.length} items (${manualCount} manual, ${out.length - manualCount} auto-fill)`);
       return out.slice(0, 10).map((item, idx) => ({ ...item, rank: idx + 1 }));
     }
 
@@ -464,6 +650,16 @@
       return span;
     }
 
+    function getTop10LeaguePillLabel(leagueKey, leagueName) {
+      const key = String(leagueKey || "").trim().toLowerCase();
+      if (TOP10_LEAGUE_PILL_LABELS[key]) return TOP10_LEAGUE_PILL_LABELS[key];
+
+      const name = String(leagueName || "").trim().toLowerCase();
+      if (TOP10_LEAGUE_PILL_LABELS[name]) return TOP10_LEAGUE_PILL_LABELS[name];
+
+      return "";
+    }
+
     function findLeagueByKey(leagueKey) {
       return getVisibleLeagues().find((lg) => lg.leagueKey === leagueKey) || null;
     }
@@ -472,12 +668,30 @@
       return getVisibleLeagues().findIndex((lg) => lg.leagueKey === leagueKey);
     }
 
+    function hasRenderableGames(leagueKey) {
+      const data = state.cache.get(leagueKey);
+      return Array.isArray(data?.games) && data.games.length > 0;
+    }
+
     function getVisibleLeagues() {
-      return [ALL_LEAGUE, ...state.filteredLeagues];
+      const visible = state.filteredLeagues.filter((lg) => hasRenderableGames(lg.leagueKey));
+      return [ALL_LEAGUE, ...visible];
     }
 
     function normalizeText(s) {
       return String(s || "").toLowerCase();
+    }
+
+    function composeLeagueBriefText(data) {
+      const news = String(data?.newsBriefing || "").trim();
+      const brief = String(data?.leagueBriefing || "").trim();
+      if (news && brief) return `${news}\n\n${brief}`;
+      return news || brief;
+    }
+
+    function shouldSkipGame(game) {
+      const headline = String(game?.headline || "").trim().toLowerCase();
+      return headline === "recap text missing";
     }
 
     function extractBigNumbers(text) {
@@ -498,6 +712,68 @@
       const lk = slugifyIdPart(leagueKey) || "league";
       const gid = slugifyIdPart(gameId) || "game";
       return `game-${lk}-${gid}`;
+    }
+
+    function getTeamNameValue(team) {
+      if (typeof team === "string") return team;
+      if (team && typeof team === "object") {
+        return String(team.displayName || team.name || team.teamName || "");
+      }
+      return "";
+    }
+
+    function extractMascotName(team) {
+      const name = getTeamNameValue(team).trim();
+      if (!name) return "";
+      const parts = name.split(/\s+/).filter(Boolean);
+      if (!parts.length) return "";
+      if (parts.length === 1) return parts[0];
+
+      const secondLast = parts[parts.length - 2];
+      const last = parts[parts.length - 1];
+      const twoWordPrefixes = new Set(["Red", "White", "Blue", "Maple", "Golden", "Trail"]);
+      if (twoWordPrefixes.has(secondLast)) {
+        return `${secondLast} ${last}`;
+      }
+      return last;
+    }
+
+    function extractCollegeSchoolName(team) {
+      if (team && typeof team === "object") {
+        const preferred = [team.shortDisplayName, team.location, team.school, team.displayName, team.teamName, team.name];
+        for (const value of preferred) {
+          const text = String(value || "").trim();
+          if (text) return text;
+        }
+      }
+      return getTeamNameValue(team).trim();
+    }
+
+    function formatScoreLineWithMascots(game, leagueKey) {
+      const lk = String(leagueKey || "").toLowerCase();
+      const raw = String(game?.scoreLine || game?.score || "").trim();
+      if (!raw) return raw;
+
+      if (COLLEGE_SCORE_LEAGUES.has(lk)) {
+        const awaySchool = extractCollegeSchoolName(game?.teams?.away);
+        const homeSchool = extractCollegeSchoolName(game?.teams?.home);
+        if (!awaySchool || !homeSchool) return raw;
+
+        const collegeMatch = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
+        if (!collegeMatch) return raw;
+
+        return `${awaySchool} ${collegeMatch[2]} — ${homeSchool} ${collegeMatch[4]}`;
+      }
+
+      if (!MASCOT_SCORE_LEAGUES.has(lk)) return raw;
+
+      const awayMascot = extractMascotName(game?.teams?.away);
+      const homeMascot = extractMascotName(game?.teams?.home);
+      if (!awayMascot || !homeMascot) return raw;
+
+      const m = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
+      if (!m) return raw;
+      return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
     }
 
     function scoreGame(game, leagueKey, leagueBriefing) {
@@ -631,27 +907,31 @@
     }
 
     function buildAllLeagueData() {
+      const defaultBrief = "Top 10 ranked storylines across all available league recap JSON files for the current day.";
+      const manualBrief = String(state.manualNewsBriefing || "").trim();
       const games = state.top10Items.map((item) => {
-        const sourceTag = `${item.leagueName}${item.scoreLine ? ` • ${item.scoreLine}` : ""}`;
-        const bullets = [`Rank score: ${Math.round(item.scoreValue)} pts`, `Source league: ${item.leagueName}`];
-        if (Array.isArray(item.bullets) && item.bullets.length) {
-          bullets.push(...item.bullets.slice(0, 2).map((b) => String(b)));
-        }
+        const gameKey = makeGameKey(item.leagueKey, item.gameId);
+        const source = state.allGamesByKey.get(gameKey) || item;
         return {
           id: `top-${item.rank}-${item.leagueKey}-${item.gameId}`,
-          headline: `${item.rank}. ${item.text}`,
-          scoreLine: sourceTag,
-          brief: item.brief || "",
-          bullets,
-          context: item.context || "",
-          highlights: Array.isArray(item.highlights) ? item.highlights : [],
+          sourceLeagueKey: String(source.leagueKey || item.leagueKey || ""),
+          sourceLeagueName: String(source.leagueName || item.leagueName || ""),
+          headline: String(source.text || item.text || ""),
+          scoreLine: String(source.scoreLine || ""),
+          lead: String(source.lead || ""),
+          brief: String(source.brief || ""),
+          teams: source.teams || null,
+          bullets: Array.isArray(source.bullets) ? source.bullets : [],
+          context: String(source.context || ""),
+          highlights: Array.isArray(source.highlights) ? source.highlights : [],
         };
       });
 
       return {
-        leagueName: "ALL",
+        leagueName: "TOP 10",
         leagueKey: "all",
-        leagueBriefing: "Top 10 ranked storylines across all available league recap JSON files for the current day.",
+        newsBriefing: manualBrief,
+        leagueBriefing: manualBrief ? "" : defaultBrief,
         games,
       };
     }
@@ -665,7 +945,7 @@
             const data = await loadLeagueData(lg);
             return {
               ...data,
-              leagueKey: data.leagueKey || lg.leagueKey,
+              leagueKey: lg.leagueKey,
               leagueName: data.leagueName || lg.leagueName,
             };
           })
@@ -687,15 +967,21 @@
           games.forEach((game, i) => {
             const gameId = game?.id != null ? String(game.id) : `${leagueKey}-${i + 1}`;
             const key = makeGameKey(leagueKey, gameId);
+            const sourceHeadline = String(game?.headline || `Game ${i + 1}`);
+            const manualHeadline = state.manualRankByGame.has(key)
+              ? String(state.manualHeadlineByGame.get(key) || "").trim()
+              : "";
             allGamesByKey.set(key, {
               leagueKey,
               leagueName: league.leagueName || leagueKey.toUpperCase(),
               gameId,
-              text: String(game?.headline || `Game ${i + 1}`),
+              text: manualHeadline || sourceHeadline,
               scoreLine: String(game?.scoreLine || game?.score || ""),
+              teams: game?.teams || null,
               scoreValue: scoreGame(game, leagueKey, league.leagueBriefing),
+              lead: String(game?.lead || ""),
               brief: String(game?.brief || game?.lead || ""),
-              bullets: Array.isArray(game?.bullets) ? game.bullets.slice(0, 4) : [],
+              bullets: Array.isArray(game?.bullets) ? game.bullets : [],
               context: String(game?.context || ""),
               highlights: Array.isArray(game?.highlights) ? game.highlights : [],
             });
@@ -704,7 +990,9 @@
 
         state.allGamesByKey = allGamesByKey;
         state.top10Items = composeFinalTop10();
+        state.top10GameKeys = new Set(state.top10Items.map((item) => makeGameKey(item.leagueKey, item.gameId)));
         updateModeAndStatus();
+        syncLeagueSectionTop10Styles();
 
         if (state.sectionByLeagueKey.has("all")) {
           const oldSection = state.sectionByLeagueKey.get("all");
@@ -722,7 +1010,7 @@
         if (state.sectionByLeagueKey.has("all")) {
           const oldSection = state.sectionByLeagueKey.get("all");
           const errData = {
-            leagueName: "ALL",
+            leagueName: "TOP 10",
             leagueKey: "all",
             leagueBriefing: `Top 10 generation failed: ${String(e.message || e)}`,
             games: [],
@@ -743,11 +1031,34 @@
         const res = await fetch(`${lg.fileUrl}?t=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status} when fetching ${lg.fileUrl}`);
         const data = await res.json();
-        if (!data || typeof data !== "object" || Array.isArray(data)) {
+        let finalData = data;
+
+        // Supports shared source files that contain multiple league objects.
+        if (Array.isArray(data)) {
+          const targetKey = String(lg.sourceLeagueKey || lg.leagueKey || "").toLowerCase();
+          finalData = data.find((entry) => {
+            const entryLeagueKey = String(entry?.leagueKey || "").toLowerCase();
+            const entryLeagueName = String(entry?.leagueName || "").toLowerCase();
+            return entryLeagueKey === targetKey || entryLeagueName === targetKey;
+          });
+          if (!finalData) {
+            throw new Error(`No matching league found in ${lg.fileUrl} for ${lg.leagueName}`);
+          }
+        }
+
+        if (!finalData || typeof finalData !== "object" || Array.isArray(finalData)) {
           throw new Error(`Expected JSON object in ${lg.fileUrl}`);
         }
-        state.cache.set(key, data);
-        return data;
+
+        if (Array.isArray(finalData.games)) {
+          finalData = {
+            ...finalData,
+            games: finalData.games.filter((game) => !shouldSkipGame(game)),
+          };
+        }
+
+        state.cache.set(key, finalData);
+        return finalData;
       })();
 
       state.loading.set(key, p);
@@ -765,6 +1076,8 @@
       card.dataset.gameIndex = String(gameIdx);
       card.dataset.gameId = String(g.id || `${leagueKey}-${gameIdx}`);
       card.dataset.headline = String(g.headline || `Game ${gameIdx + 1}`);
+      card.dataset.sourceLeagueKey = String(g.sourceLeagueKey || "");
+      card.dataset.sourceLeagueName = String(g.sourceLeagueName || "");
       card.id = makeGameAnchorId(leagueKey, card.dataset.gameId);
 
       if (state.isAdminMode && leagueKey !== "all") {
@@ -836,12 +1149,28 @@
         card.appendChild(mediaWrap);
       }
 
+      if (leagueKey === "all") {
+        const sourceLeagueKey = String(g.sourceLeagueKey || "");
+        const sourceLeagueName = String(g.sourceLeagueName || "");
+        const pillText = getTop10LeaguePillLabel(sourceLeagueKey, sourceLeagueName);
+        if (pillText) {
+          const leaguePill = document.createElement("span");
+          // Subtle league context tag for top 10 only.
+          leaguePill.className = "mb-1 inline-flex items-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-xs font-medium text-gray-600";
+          leaguePill.textContent = pillText;
+          card.appendChild(leaguePill);
+        }
+      }
+
       const headline = document.createElement("div");
       headline.className = "text-base sm:text-lg font-extrabold leading-snug";
       headline.textContent = g.headline ? String(g.headline) : "Recap";
       card.appendChild(headline);
 
-      const scoreLine = g.scoreLine || g.score;
+      const scoreLeagueKey = leagueKey === "all"
+        ? String(g.sourceLeagueKey || "")
+        : String(leagueKey || "");
+      const scoreLine = formatScoreLineWithMascots(g, scoreLeagueKey);
       if (scoreLine) {
         const score = document.createElement("div");
         score.className = "mt-1 text-sm font-semibold text-gray-700";
@@ -877,6 +1206,11 @@
         card.appendChild(ctx);
       }
 
+      if (leagueKey !== "all") {
+        const isFeatured = isTop10GameKey(leagueKey, card.dataset.gameId);
+        syncCardTop10Style(card, isFeatured);
+      }
+
       return card;
     }
 
@@ -894,13 +1228,13 @@
       const title = document.createElement("div");
       title.className = "truncate text-lg font-semibold";
       title.textContent = lg.leagueName || data.leagueName || "League";
-      const src = document.createElement("div");
-      src.className = "truncate text-xs text-gray-500";
-      src.textContent = lg.leagueKey === "all"
-        ? "Generated from all loaded league JSON files"
-        : `File: ${lg.fileUrl}`;
       left.appendChild(title);
-      left.appendChild(src);
+      // const src = document.createElement("div");
+      // src.className = "truncate text-xs text-gray-500";
+      // src.textContent = lg.leagueKey === "all"
+      //   ? "Generated from all loaded league JSON files"
+      //   : `File: ${lg.fileUrl}`;
+      // left.appendChild(src);
       headerInner.appendChild(left);
 
       const gameCount = Array.isArray(data.games) ? data.games.length : 0;
@@ -914,15 +1248,47 @@
 
       const briefing = document.createElement("div");
       briefing.className = "border-b border-gray-200 px-4 py-4";
-      if (data.leagueBriefing) {
+      const leagueBriefText = composeLeagueBriefText(data);
+      if (leagueBriefText) {
         const h = document.createElement("div");
         h.className = "mb-2 text-sm font-semibold";
-        h.textContent = "League-wide briefing";
+        h.textContent = "League brief";
+
         const p = document.createElement("div");
-        p.className = "whitespace-pre-line text-sm leading-relaxed text-gray-700";
-        p.textContent = String(data.leagueBriefing);
+        p.className = "brief-collapsed whitespace-pre-line text-sm leading-relaxed text-gray-700";
+        p.textContent = leagueBriefText;
+
+        const toggle = document.createElement("button");
+        toggle.type = "button";
+        toggle.className = "mt-2 inline-flex items-center gap-1 text-xs font-medium text-gray-600 transition-colors hover:text-gray-900";
+        toggle.setAttribute("aria-expanded", "false");
+
+        const arrow = document.createElement("span");
+        arrow.textContent = "▾";
+
+        const label = document.createElement("span");
+        label.textContent = "Expand";
+
+        toggle.appendChild(arrow);
+        toggle.appendChild(label);
+        toggle.addEventListener("click", () => {
+          const expanded = toggle.getAttribute("aria-expanded") === "true";
+          if (expanded) {
+            p.classList.add("brief-collapsed");
+            toggle.setAttribute("aria-expanded", "false");
+            arrow.textContent = "▾";
+            label.textContent = "Expand";
+          } else {
+            p.classList.remove("brief-collapsed");
+            toggle.setAttribute("aria-expanded", "true");
+            arrow.textContent = "▴";
+            label.textContent = "Collapse";
+          }
+        });
+
         briefing.appendChild(h);
         briefing.appendChild(p);
+        briefing.appendChild(toggle);
       } else {
         briefing.classList.add("hidden");
       }
@@ -998,7 +1364,7 @@
             ? "border-black bg-black text-white hover:bg-gray-800"
             : "border-transparent bg-white text-gray-700 hover:bg-gray-100");
         btn.addEventListener("click", async () => {
-          await goToLeagueByIndex(idx, { smooth: true, updateHash: true });
+          await goToLeagueByIndex(idx, { smooth: false, updateHash: true });
         });
 
         const row = document.createElement("div");
@@ -1011,23 +1377,16 @@
         name.textContent = lg.leagueName;
 
         const sub = document.createElement("div");
-        sub.className = "truncate text-xs text-gray-500";
+        sub.className = "truncate text-xs text-gray-400";
         const recaps = lg.leagueKey === "all"
           ? state.top10Items.length
           : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
-        sub.textContent = lg.leagueKey === "all"
-          ? `key: ${lg.leagueKey} • ${recaps} headlines`
-          : `key: ${lg.leagueKey} • ${recaps} recaps`;
-
         left.appendChild(name);
+        sub.textContent = lg.leagueKey === "all"
+          ? "THE DAY IN SPORTS"
+          : `${recaps} games`;
         left.appendChild(sub);
-
-        const right = document.createElement("div");
-        right.className = "shrink-0";
-        right.appendChild(makePill(lg.leagueKey.toUpperCase()));
-
         row.appendChild(left);
-        row.appendChild(right);
         btn.appendChild(row);
         leagueNav.appendChild(btn);
       });
@@ -1068,10 +1427,32 @@
       cards.forEach((card, i) => {
         const gameId = card.dataset.gameId || `${currentKey}-${i}`;
         const headline = card.dataset.headline || `Game ${i + 1}`;
+        const sourceLeagueKey = String(card.dataset.sourceLeagueKey || "");
+        const sourceLeagueName = String(card.dataset.sourceLeagueName || "");
+        const pillText = currentKey === "all" ? getTop10LeaguePillLabel(sourceLeagueKey, sourceLeagueName) : "";
         const btn = document.createElement("button");
         btn.type = "button";
         btn.dataset.gameId = gameId;
-        btn.textContent = headline;
+
+        if (pillText) {
+          const row = document.createElement("div");
+          row.className = "flex items-start gap-1.5";
+
+          const pill = document.createElement("span");
+          pill.className = "inline-flex items-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-[10px] font-medium leading-snug text-gray-600";
+          pill.textContent = pillText;
+
+          const text = document.createElement("span");
+          text.className = "min-w-0 whitespace-normal break-words";
+          text.textContent = headline;
+
+          row.appendChild(pill);
+          row.appendChild(text);
+          btn.appendChild(row);
+        } else {
+          btn.textContent = headline;
+        }
+
         btn.addEventListener("click", () => {
           scrollCardIntoView(card);
           state.activeGameByLeague.set(currentKey, gameId);
@@ -1105,7 +1486,7 @@
         card.getBoundingClientRect().top -
         rightScroll.getBoundingClientRect().top +
         rightScroll.scrollTop;
-      rightScroll.scrollTo({ top: Math.max(0, targetTop - 16), behavior: "smooth" });
+      rightScroll.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
     }
 
     async function goToLeagueByIndex(idx, { smooth = true, updateHash = true } = {}) {
@@ -1305,6 +1686,8 @@
     saveTop10Btn.addEventListener("click", async () => {
       if (!state.isAdminMode) return;
       saveManualPicksToStorage();
+      const downloaded = downloadManualPicksAsJSON();
+      if (!downloaded) return;
       await refreshTop10();
       buildLeagueNav();
       await goToLeagueByIndex(0, { smooth: true, updateHash: true });
@@ -1318,6 +1701,11 @@
       await refreshTop10();
       buildLeagueNav();
       buildHeadlineNav();
+    });
+
+    downloadTop10Btn.addEventListener("click", () => {
+      if (!state.isAdminMode) return;
+      downloadManualPicksAsJSON();
     });
 
     leagueFilter.addEventListener("input", async () => {
@@ -1363,7 +1751,10 @@
     // ===== Start =====
     async function init() {
       state.isAdminMode = detectAdminMode();
-      loadManualPicksFromStorage();
+      const loadedFromFile = await loadManualPicksFromFile();
+      if (!loadedFromFile) {
+        loadManualPicksFromStorage();
+      }
       updateModeAndStatus();
       state.leagues = normalizeLeagues(LEAGUE_FILES);
       state.filteredLeagues = state.leagues.slice();
