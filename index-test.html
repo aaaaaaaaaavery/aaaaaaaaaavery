@@ -41,7 +41,7 @@
   <div id="mobileDrawerBackdrop" class="fixed inset-0 z-30 hidden bg-black/40 md:hidden"></div>
 
   <div class="flex bg-white text-gray-800">
-    <aside id="sidebarDrawer" class="fixed inset-y-0 left-0 z-40 flex h-screen w-[86%] max-w-sm -translate-x-full flex-col overflow-hidden border-r border-gray-200 bg-white shadow-xl transition-transform duration-200 ease-out md:sticky md:top-[58px] md:z-auto md:h-[calc(100vh-58px)] md:w-[34rem] md:max-w-none md:translate-x-0 md:shadow-sm">
+    <aside id="sidebarDrawer" class="fixed inset-y-0 left-0 z-40 flex h-screen w-[82%] max-w-[22rem] -translate-x-full flex-col overflow-hidden border-r border-gray-200 bg-white shadow-xl transition-transform duration-300 ease-in-out md:sticky md:top-[58px] md:z-auto md:h-[calc(100vh-58px)] md:w-[34rem] md:max-w-none md:translate-x-0 md:shadow-sm">
       <div class="flex items-center justify-between border-b border-gray-200 px-3 py-2 md:hidden">
         <div class="text-xs font-semibold uppercase tracking-wide text-gray-500">Navigation</div>
         <button id="mobileDrawerCloseBtn" type="button" aria-label="Close navigation"
@@ -92,7 +92,7 @@
 
           <section class="overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm">
             <div id="rightScroll" class="max-h-[calc(100vh-210px)] overflow-y-auto md:max-h-[calc(100vh-280px)]">
-              <div id="leagueStream" class="space-y-[250px] p-4 pb-[250px]"></div>
+              <div id="leagueStream" class="space-y-8 p-3 pb-24 sm:p-4 sm:pb-32 md:space-y-[250px] md:p-4 md:pb-[250px]"></div>
             </div>
 
             <div id="emptyState" class="hidden p-6">
@@ -1407,7 +1407,7 @@
       section.appendChild(headerCard);
 
       const gamesWrap = document.createElement("div");
-      gamesWrap.className = "space-y-[250px]";
+      gamesWrap.className = "space-y-8 md:space-y-[250px]";
 
       const games = Array.isArray(data.games) ? data.games : [];
       if (!games.length) {
