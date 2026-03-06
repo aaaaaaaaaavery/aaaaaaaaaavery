@@ -941,7 +941,7 @@
       const token = ++state.top10Token;
 
       try {
-        const leaguesData = await Promise.all(
+        const leagueResults = await Promise.allSettled(
           state.leagues.map(async (lg) => {
             const data = await loadLeagueData(lg);
             return {
@@ -951,6 +951,25 @@
             };
           })
         );
+
+        const leaguesData = [];
+        const failedLeagues = [];
+        leagueResults.forEach((result, idx) => {
+          if (result.status === "fulfilled") {
+            leaguesData.push(result.value);
+          } else {
+            const lg = state.leagues[idx];
+            failedLeagues.push(`${lg?.leagueName || lg?.leagueKey || "Unknown league"}: ${String(result.reason?.message || result.reason || "load failed")}`);
+          }
+        });
+
+        if (!leaguesData.length) {
+          throw new Error("Top 10 generation failed: all league files failed to load.");
+        }
+
+        if (failedLeagues.length) {
+          console.warn("[refreshTop10] Some leagues failed to load:", failedLeagues);
+        }
 
         if (token !== state.top10Token) return;
 
