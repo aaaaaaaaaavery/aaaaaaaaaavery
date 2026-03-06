@@ -5,6 +5,29 @@
   "newsBriefing": "Pool play in Tokyo opened with Korea powering past Czechia behind four home runs, then Australia improving to 2-0 by beating Czechia with timely power and clean bullpen work. Czechia showed fight in both games but now faces urgency in the standings.",
   "games": [
     {
+      "id": "wbc-20260306-jpn-tpe",
+      "teams": {
+        "away": "Japan",
+        "home": "Chinese Taipei"
+      },
+      "headline": "Ohtani's slam powers Japan to 13-0 rout over Chinese Taipei",
+      "score": "JPN 13 - TPE 0",
+      "brief": "Japan opened its WBC title defense with a statement blowout, burying Chinese Taipei behind a historic 10-run second inning and a monster night from Shohei Ohtani. Ohtani launched a grand slam in that inning, added an RBI single later in the frame, and finished with a WBC-record five RBIs in one inning as Japan rolled to a 13-0 win in Tokyo. Sosuke Genda and Kazuma Okamoto added key run production, while Yoshinobu Yamamoto and the bullpen escaped the only real traffic to preserve the shutout.",
+      "bullets": [
+        "Shohei Ohtani hit a second-inning grand slam and drove in five runs in the inning, a WBC record.",
+        "Japan scored 10 runs in the second, the most in a single inning in WBC history.",
+        "Fifteen batters came to the plate in the inning as Japan piled up seven hits, four walks and one hit-by-pitch.",
+        "Sosuke Genda and Kazuma Okamoto added RBI hits as Japan extended the margin to 13-0 by the third.",
+        "Japan opens pool play with a dominant shutout and now turns to a rivalry matchup against Korea."
+      ],
+      "context": "Japan erased any early tension with a record-setting inning and immediately looked every bit like a title favorite in Tokyo.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mlb.com/world-baseball-classic"
+      },
+      "highlights": []
+    },
+    {
       "id": "788116",
       "teams": {
         "away": "Australia",
