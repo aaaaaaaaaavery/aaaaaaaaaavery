@@ -26,7 +26,17 @@
         "source": {
           "recapUrl": null
         },
-        "highlights": []
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "OkzvjAD14nI",
+            "title": "FULL HIGHLIGHTS | LIV Golf Hong Kong Round 2 | 2026",
+            "url": "https://www.youtube.com/watch?v=OkzvjAD14nI",
+            "embedUrl": "https://www.youtube.com/embed/OkzvjAD14nI",
+            "publishedAt": "2026-03-06T11:13:08Z",
+            "matchScore": 113
+          }
+        ]
       }
     ]
   },

@@ -156,6 +156,52 @@ function parseTitleDate(title) {
   return parseDateToIso(title);
 }
 
+function parseRoundNumberFromText(input) {
+  const text = String(input || '');
+  if (!text) return null;
+
+  const direct = text.match(/\bround\s*([1-4])\b/i);
+  if (direct) return Number(direct[1]);
+
+  const words = {
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    first: 1,
+    second: 2,
+    third: 3,
+    fourth: 4,
+  };
+
+  const throughWord = text.match(/\bthrough\s+(one|two|three|four)\s+rounds?\b/i);
+  if (throughWord) return words[throughWord[1].toLowerCase()] || null;
+
+  const ordinalWord = text.match(/\b(first|second|third|fourth)\s+round\b/i);
+  if (ordinalWord) return words[ordinalWord[1].toLowerCase()] || null;
+
+  return null;
+}
+
+function parseGameRoundNumber(game, leagueEntry) {
+  const chunks = [
+    game?.headline,
+    game?.brief,
+    game?.context,
+    leagueEntry?.newsBriefing,
+  ];
+
+  const bullets = Array.isArray(game?.bullets) ? game.bullets : [];
+  chunks.push(...bullets);
+
+  for (const c of chunks) {
+    const round = parseRoundNumberFromText(c);
+    if (round) return round;
+  }
+
+  return null;
+}
+
 function parseGameDateIso(game) {
   const fieldDate = parseDateToIso(game?.date || game?.gameDate || game?.matchDate || '');
   if (fieldDate) return fieldDate;
@@ -199,8 +245,10 @@ function resolvePlaylistIds(argsPlaylist, leagueKey) {
   return [DEFAULT_PLAYLISTS_BY_LEAGUE.NBA];
 }
 
-function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm) {
+function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint) {
   const titleNorm = normalizeText(video.title);
+  const dateInTitleIso = parseTitleDate(video.title);
+  const publishedDateIso = parseDateToIso(video.publishedAt || '');
 
   if (titleMustIncludeNorm && !includesPhrase(titleNorm, titleMustIncludeNorm)) {
     return -1;
@@ -211,20 +259,31 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm) {
 
   const awayHit = awayKeys.some((k) => includesPhrase(titleNorm, k));
   const homeHit = homeKeys.some((k) => includesPhrase(titleNorm, k));
-  if (!awayHit || !homeHit) return -1;
 
   let score = 100;
+  if (!awayHit || !homeHit) {
+    // LIV/summary-style entries can lack teams; prefer date-based matching, use round as fallback.
+    if (targetDateIso && publishedDateIso && publishedDateIso === targetDateIso) {
+      score = 92;
+    } else if (targetDateIso && dateInTitleIso && dateInTitleIso === targetDateIso) {
+      score = 90;
+    } else if (roundHint) {
+      const titleRound = parseRoundNumberFromText(video.title);
+      if (!titleRound || titleRound !== roundHint) return -1;
+      score = 88;
+    } else {
+      return -1;
+    }
+  }
 
   if (includesPhrase(titleNorm, 'full game highlights')) score += 15;
   if (includesPhrase(titleNorm, 'highlights')) score += 5;
 
-  const dateInTitleIso = parseTitleDate(video.title);
   if (targetDateIso && dateInTitleIso) {
     if (dateInTitleIso === targetDateIso) score += 20;
     else score -= 8;
   }
 
-  const publishedDateIso = parseDateToIso(video.publishedAt || '');
   if (targetDateIso && publishedDateIso) {
     if (publishedDateIso === targetDateIso) score += 16;
     else score -= 5;
@@ -233,12 +292,12 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm) {
   return score;
 }
 
-function pickBestVideo(game, videos, targetDateIso, titleMustIncludeNorm) {
+function pickBestVideo(game, videos, targetDateIso, titleMustIncludeNorm, roundHint) {
   let best = null;
   let bestScore = -1;
 
   for (const video of videos) {
-    const s = scoreMatch(game, video, targetDateIso, titleMustIncludeNorm);
+    const s = scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint);
     if (s > bestScore) {
       bestScore = s;
       best = video;
@@ -404,15 +463,39 @@ async function main() {
   const raw = fs.readFileSync(jsonPath, 'utf8');
   const data = JSON.parse(raw);
 
-  if (!Array.isArray(data.games)) {
-    throw new Error('Expected top-level games[] array in JSON file.');
+  let leagueEntry = null;
+  let games = null;
+  let leagueKeyForDefaults = '';
+
+  if (Array.isArray(data)) {
+    const requestedLeagueKey = String(args.leagueKey || '').trim().toUpperCase();
+    if (!requestedLeagueKey) {
+      throw new Error('For array JSON files, pass --leagueKey (e.g. --leagueKey LIV).');
+    }
+
+    leagueEntry = data.find(
+      (entry) => String(entry?.leagueKey || '').trim().toUpperCase() === requestedLeagueKey
+    );
+    if (!leagueEntry) {
+      throw new Error(`Could not find league entry for --leagueKey ${requestedLeagueKey}.`);
+    }
+    games = leagueEntry.games;
+    leagueKeyForDefaults = String(leagueEntry.leagueKey || '');
+  } else {
+    leagueEntry = data;
+    games = data.games;
+    leagueKeyForDefaults = String(data.leagueKey || '');
   }
 
-  const playlistIds = resolvePlaylistIds(args.playlist, data.leagueKey);
+  if (!Array.isArray(games)) {
+    throw new Error('Expected games[] array for the selected league JSON entry.');
+  }
+
+  const playlistIds = resolvePlaylistIds(args.playlist, leagueKeyForDefaults);
   const usePerGameDateArg = String(args.usePerGameDate || '').toLowerCase();
   const usePerGameDate = usePerGameDateArg
     ? usePerGameDateArg === 'true'
-    : String(data.leagueKey || '').toUpperCase() === 'WBC';
+    : String(leagueKeyForDefaults || '').toUpperCase() === 'WBC';
 
   const globalTargetDateIso = parseDateToIso(dateInput);
   let videos = [];
@@ -427,10 +510,11 @@ async function main() {
   }
 
   let matched = 0;
-  for (const game of data.games) {
+  for (const game of games) {
     const perGameDateIso = parseGameDateIso(game);
     const targetDateIso = usePerGameDate ? perGameDateIso : globalTargetDateIso;
-    const best = pickBestVideo(game, videos, targetDateIso, titleMustIncludeNorm);
+    const roundHint = parseGameRoundNumber(game, leagueEntry);
+    const best = pickBestVideo(game, videos, targetDateIso, titleMustIncludeNorm, roundHint);
     if (best) {
       game.highlights = [best];
       matched += 1;
@@ -441,9 +525,9 @@ async function main() {
 
   fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2) + '\n', 'utf8');
 
-  console.log(`Processed ${data.games.length} games in ${jsonPathArg}`);
+  console.log(`Processed ${games.length} games in ${jsonPathArg}`);
   console.log(`Matched highlights: ${matched}`);
-  console.log(`Unmatched: ${data.games.length - matched}`);
+  console.log(`Unmatched: ${games.length - matched}`);
   console.log(`Video source: ${sourceLabel}`);
   console.log(`Date filter: ${dateInput}`);
   console.log(`Date mode: ${usePerGameDate ? 'per-game' : 'global'}`);
