@@ -21,9 +21,9 @@
   </style>
 </head>
 <body class="min-h-screen bg-gray-100 font-sans text-gray-800 antialiased">
-  <div class="flex bg-white text-gray-800">
-    <aside class="sticky top-0 flex h-screen w-[34rem] shrink-0 flex-col overflow-hidden border-r border-gray-200 bg-white shadow-sm">
-      <div class="flex shrink-0 items-center justify-between border-b border-gray-200 p-3">
+  <header class="sticky top-0 z-20 border-b border-gray-200 bg-white px-4 py-3 sm:px-6">
+    <div class="mx-auto flex max-w-none items-center justify-between gap-3">
+      <div class="flex min-w-0 items-center gap-3">
         <img
           src="https://thporth.com/thporth-red-logo.png"
           alt="THPORTH"
@@ -32,6 +32,42 @@
         <div id="leagueCount" class="rounded-md bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 whitespace-nowrap"></div>
       </div>
 
+      <div class="flex items-center gap-2">
+        <button id="prevLeagueBtn"
+          class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
+          Prev
+        </button>
+        <button id="nextLeagueBtn"
+          class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
+          Next
+        </button>
+        <button id="refreshBtn"
+          class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-sm font-medium text-gray-200 transition-colors hover:bg-gray-800 hover:text-white focus:outline-none">
+          Refresh
+        </button>
+        <button id="clearTop10Btn"
+          class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
+          Clear Top 10
+        </button>
+        <button id="downloadTop10Btn"
+          class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-purple-700 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-800 focus:outline-none">
+          Download JSON
+        </button>
+        <button id="saveTop10Btn"
+          class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-emerald-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-800 focus:outline-none">
+          Save Top 10
+        </button>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-2 flex max-w-none items-center gap-3 text-[11px] text-gray-500">
+      <div id="modePill" class="inline-flex rounded-md border border-gray-200 bg-gray-50 px-2 py-1 font-semibold text-gray-600"></div>
+      <div id="manualStatus"></div>
+    </div>
+  </header>
+
+  <div class="flex bg-white text-gray-800">
+    <aside class="sticky top-[92px] flex h-[calc(100vh-92px)] w-[34rem] shrink-0 flex-col overflow-hidden border-r border-gray-200 bg-white shadow-sm">
       <div class="grid min-h-0 flex-1 grid-cols-[225px_minmax(0,1fr)]">
         <section class="flex min-h-0 flex-col border-r border-gray-200">
           <div class="border-b border-gray-200 p-3">
@@ -57,44 +93,6 @@
     </aside>
 
     <div class="flex min-h-screen flex-1 flex-col">
-      <header class="sticky top-0 z-10 shrink-0 border-b border-gray-200 bg-white px-4 py-3 sm:px-6">
-        <div class="mx-auto flex max-w-7xl items-center justify-between gap-3">
-          <div>
-            <h1 class="text-xl font-semibold">Dashboard</h1>
-            <p class="text-xs text-gray-500">Manual daily recaps</p>
-            <div id="modePill" class="mt-1 inline-flex rounded-md border border-gray-200 bg-gray-50 px-2 py-1 text-[11px] font-semibold text-gray-600"></div>
-            <div id="manualStatus" class="mt-1 text-[11px] text-gray-500"></div>
-          </div>
-
-          <div class="flex items-center gap-2">
-            <button id="prevLeagueBtn"
-              class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
-              Prev
-            </button>
-            <button id="nextLeagueBtn"
-              class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
-              Next
-            </button>
-            <button id="refreshBtn"
-              class="inline-flex select-none items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-sm font-medium text-gray-200 transition-colors hover:bg-gray-800 hover:text-white focus:outline-none">
-              Refresh
-            </button>
-            <button id="clearTop10Btn"
-              class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 focus:outline-none">
-              Clear Top 10
-            </button>
-            <button id="downloadTop10Btn"
-              class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-purple-700 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-800 focus:outline-none">
-              Download JSON
-            </button>
-            <button id="saveTop10Btn"
-              class="hidden inline-flex select-none items-center justify-center gap-2 rounded-md bg-emerald-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-800 focus:outline-none">
-              Save Top 10
-            </button>
-          </div>
-        </div>
-      </header>
-
       <main class="flex-1 p-4 sm:p-6">
         <div class="mx-auto grid max-w-7xl gap-4">
           <section class="overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm">
