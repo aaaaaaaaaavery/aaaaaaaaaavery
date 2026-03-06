@@ -65,14 +65,18 @@
     <div class="flex min-h-screen flex-1 flex-col">
       <main class="flex-1 p-4 sm:p-6">
         <div class="mx-auto grid max-w-7xl gap-4">
-          <section class="grid grid-cols-1 gap-2 md:hidden">
-            <div>
-              <label for="mobileLeagueSelect" class="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-gray-500">League</label>
-              <select id="mobileLeagueSelect" class="h-11 w-full rounded-md border border-gray-300 bg-white px-3 text-sm text-gray-700 outline-none transition focus:border-black focus:ring-0"></select>
+          <section class="space-y-2 md:hidden">
+            <div class="grid grid-cols-[minmax(0,1fr)_72px] gap-2">
+              <div class="rounded-md border border-gray-200 bg-white p-1 shadow-sm">
+                <div id="mobileLeagueStrip" class="flex items-stretch gap-2 overflow-x-auto whitespace-nowrap pr-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"></div>
+              </div>
+              <button id="mobileShowAllLeaguesBtn" type="button" class="rounded-md border border-gray-200 bg-white px-2 text-[11px] font-semibold text-gray-600 shadow-sm transition-colors hover:bg-gray-100">
+                Show all
+              </button>
             </div>
-            <div>
-              <label for="mobileHeadlineSelect" class="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-gray-500">Headline</label>
-              <select id="mobileHeadlineSelect" class="h-11 w-full rounded-md border border-gray-300 bg-white px-3 text-sm text-gray-700 outline-none transition focus:border-black focus:ring-0"></select>
+
+            <div class="rounded-md border border-gray-200 bg-white p-1 shadow-sm">
+              <div id="mobileHeadlineStrip" class="flex items-stretch gap-2 overflow-x-auto whitespace-nowrap pr-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"></div>
             </div>
           </section>
 
@@ -105,6 +109,18 @@
           </footer>
         </div>
       </main>
+    </div>
+  </div>
+
+  <div id="mobileLeaguesModal" class="fixed inset-0 z-40 hidden bg-black/50 p-3 md:hidden">
+    <div class="mx-auto flex h-full w-full max-w-md flex-col overflow-hidden rounded-md border border-gray-200 bg-white shadow-xl">
+      <div class="flex items-center justify-end border-b border-gray-200 p-2">
+        <button id="mobileLeaguesModalClose" type="button" aria-label="Close leagues"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-200 text-lg leading-none text-gray-700 hover:bg-gray-100">
+          ×
+        </button>
+      </div>
+      <div id="mobileLeaguesModalList" class="flex-1 space-y-1 overflow-y-auto p-2"></div>
     </div>
   </div>
 
@@ -218,8 +234,12 @@
     const leagueFilter = document.getElementById("leagueFilter");
     const leagueNav = document.getElementById("leagueNav");
     const headlineNav = document.getElementById("headlineNav");
-    const mobileLeagueSelect = document.getElementById("mobileLeagueSelect");
-    const mobileHeadlineSelect = document.getElementById("mobileHeadlineSelect");
+    const mobileLeagueStrip = document.getElementById("mobileLeagueStrip");
+    const mobileHeadlineStrip = document.getElementById("mobileHeadlineStrip");
+    const mobileShowAllLeaguesBtn = document.getElementById("mobileShowAllLeaguesBtn");
+    const mobileLeaguesModal = document.getElementById("mobileLeaguesModal");
+    const mobileLeaguesModalList = document.getElementById("mobileLeaguesModalList");
+    const mobileLeaguesModalClose = document.getElementById("mobileLeaguesModalClose");
     const prevLeagueBtn = document.getElementById("prevLeagueBtn");
     const nextLeagueBtn = document.getElementById("nextLeagueBtn");
     const rightScroll = document.getElementById("rightScroll");
@@ -688,44 +708,141 @@
       return [ALL_LEAGUE, ...visible];
     }
 
-    function syncMobileLeagueSelect(visibleLeagues) {
-      if (!mobileLeagueSelect) return;
-      clear(mobileLeagueSelect);
+    function setMobileLeaguesModalOpen(open) {
+      if (!mobileLeaguesModal) return;
+      if (open) {
+        mobileLeaguesModal.classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+      } else {
+        mobileLeaguesModal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      }
+    }
+
+    function buildMobileLeagueStrip(visibleLeagues) {
+      if (!mobileLeagueStrip) return;
+      clear(mobileLeagueStrip);
 
       visibleLeagues.forEach((lg) => {
-        const opt = document.createElement("option");
-        opt.value = lg.leagueKey;
-        opt.textContent = lg.leagueName;
-        if (lg.leagueKey === state.currentLeagueKey) opt.selected = true;
-        mobileLeagueSelect.appendChild(opt);
+        const isActive = lg.leagueKey === state.currentLeagueKey;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.dataset.leagueKey = lg.leagueKey;
+        btn.className =
+          "min-w-[9.25rem] rounded-md border px-3 py-2 text-left transition-colors " +
+          (isActive
+            ? "border-black bg-black text-white hover:bg-gray-800"
+            : "border-gray-200 bg-white text-gray-700 hover:bg-gray-100");
+
+        const name = document.createElement("div");
+        name.className = "truncate text-sm font-bold";
+        name.textContent = lg.leagueName;
+
+        const sub = document.createElement("div");
+        sub.className = isActive ? "truncate text-[11px] text-gray-300" : "truncate text-[11px] text-gray-400";
+        const recaps = lg.leagueKey === "all"
+          ? state.top10Items.length
+          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
+        sub.textContent = lg.leagueKey === "all" ? "THE DAY IN SPORTS" : `${recaps} games`;
+
+        btn.appendChild(name);
+        btn.appendChild(sub);
+        btn.addEventListener("click", async () => {
+          const idx = getIndexByLeagueKey(lg.leagueKey);
+          if (idx < 0) return;
+          await goToLeagueByIndex(idx, { smooth: true, updateHash: true });
+        });
+
+        mobileLeagueStrip.appendChild(btn);
+      });
+
+      const active = mobileLeagueStrip.querySelector(`button[data-league-key="${CSS.escape(String(state.currentLeagueKey || ""))}"]`);
+      if (active) {
+        active.scrollIntoView({ behavior: "auto", block: "nearest", inline: "center" });
+      }
+    }
+
+    function buildMobileLeaguesModal(visibleLeagues) {
+      if (!mobileLeaguesModalList) return;
+      clear(mobileLeaguesModalList);
+
+      visibleLeagues.forEach((lg) => {
+        const isActive = lg.leagueKey === state.currentLeagueKey;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className =
+          "w-full rounded-md border px-3 py-2 text-left transition-colors " +
+          (isActive
+            ? "border-black bg-black text-white hover:bg-gray-800"
+            : "border-gray-200 bg-white text-gray-700 hover:bg-gray-100");
+
+        const name = document.createElement("div");
+        name.className = "truncate text-sm font-bold";
+        name.textContent = lg.leagueName;
+
+        const sub = document.createElement("div");
+        sub.className = isActive ? "truncate text-xs text-gray-300" : "truncate text-xs text-gray-400";
+        const recaps = lg.leagueKey === "all"
+          ? state.top10Items.length
+          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
+        sub.textContent = lg.leagueKey === "all" ? "THE DAY IN SPORTS" : `${recaps} games`;
+
+        btn.appendChild(name);
+        btn.appendChild(sub);
+        btn.addEventListener("click", async () => {
+          const idx = getIndexByLeagueKey(lg.leagueKey);
+          if (idx < 0) return;
+          await goToLeagueByIndex(idx, { smooth: true, updateHash: true });
+          setMobileLeaguesModalOpen(false);
+        });
+
+        mobileLeaguesModalList.appendChild(btn);
       });
     }
 
-    function syncMobileHeadlineSelect(cards, currentKey) {
-      if (!mobileHeadlineSelect) return;
-      clear(mobileHeadlineSelect);
+    function syncMobileHeadlineStrip(cards, currentKey) {
+      if (!mobileHeadlineStrip) return;
+      clear(mobileHeadlineStrip);
 
       if (!cards.length) {
-        const opt = document.createElement("option");
-        opt.value = "";
-        opt.textContent = "No headlines available";
-        mobileHeadlineSelect.appendChild(opt);
-        mobileHeadlineSelect.disabled = true;
+        const empty = document.createElement("div");
+        empty.className = "rounded-md border border-gray-200 bg-white px-3 py-2 text-xs text-gray-500";
+        empty.textContent = "No headlines available";
+        mobileHeadlineStrip.appendChild(empty);
         return;
       }
 
-      mobileHeadlineSelect.disabled = false;
       cards.forEach((card, i) => {
         const gameId = card.dataset.gameId || `${currentKey}-${i}`;
         const headline = card.dataset.headline || `Game ${i + 1}`;
-        const opt = document.createElement("option");
-        opt.value = gameId;
-        opt.textContent = headline;
-        mobileHeadlineSelect.appendChild(opt);
+        const isActive = state.activeGameByLeague.get(currentKey) === gameId;
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.dataset.gameId = gameId;
+        btn.className =
+          "min-w-[12rem] rounded-md border px-3 py-2 text-left text-xs leading-snug transition-colors " +
+          (isActive
+            ? "border-black bg-black text-white hover:bg-gray-800"
+            : "border-gray-200 bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-900");
+        btn.textContent = headline;
+
+        btn.addEventListener("click", () => {
+          scrollCardIntoView(card);
+          state.activeGameByLeague.set(currentKey, gameId);
+          highlightHeadlineButtons();
+        });
+
+        mobileHeadlineStrip.appendChild(btn);
       });
 
       const activeId = state.activeGameByLeague.get(currentKey) || cards[0]?.dataset?.gameId;
-      if (activeId) mobileHeadlineSelect.value = activeId;
+      if (activeId) {
+        const active = mobileHeadlineStrip.querySelector(`button[data-game-id="${CSS.escape(activeId)}"]`);
+        if (active) {
+          active.scrollIntoView({ behavior: "auto", block: "nearest", inline: "center" });
+        }
+      }
     }
 
     function isSoccerLeague(lg) {
@@ -1426,7 +1543,8 @@
       clear(leagueNav);
       const visibleLeagues = getVisibleLeagues();
       leagueCount.textContent = getMorningBriefingLabel();
-      syncMobileLeagueSelect(visibleLeagues);
+      buildMobileLeagueStrip(visibleLeagues);
+      buildMobileLeaguesModal(visibleLeagues);
 
       const indexByLeagueKey = new Map(visibleLeagues.map((lg, idx) => [lg.leagueKey, idx]));
       const top10League = visibleLeagues.find((lg) => lg.leagueKey === "all") || null;
@@ -1535,8 +1653,15 @@
           (on ? "bg-black text-white" : "text-gray-600 hover:bg-gray-100 hover:text-gray-900");
       });
 
-      if (mobileHeadlineSelect && activeId) {
-        mobileHeadlineSelect.value = activeId;
+      if (mobileHeadlineStrip) {
+        [...mobileHeadlineStrip.querySelectorAll("button[data-game-id]")].forEach((btn) => {
+          const on = btn.dataset.gameId === activeId;
+          btn.className =
+            "min-w-[12rem] rounded-md border px-3 py-2 text-left text-xs leading-snug transition-colors " +
+            (on
+              ? "border-black bg-black text-white hover:bg-gray-800"
+              : "border-gray-200 bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-900");
+        });
       }
     }
 
@@ -1567,7 +1692,7 @@
         empty.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-2 text-xs text-gray-500";
         empty.textContent = "Select a league to view headlines.";
         headlineNav.appendChild(empty);
-        syncMobileHeadlineSelect([], currentKey);
+        syncMobileHeadlineStrip([], currentKey);
         return;
       }
 
@@ -1578,7 +1703,7 @@
         empty.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-2 text-xs text-gray-500";
         empty.textContent = "No game headlines available.";
         headlineNav.appendChild(empty);
-        syncMobileHeadlineSelect([], currentKey);
+        syncMobileHeadlineStrip([], currentKey);
         return;
       }
 
@@ -1624,7 +1749,7 @@
         const firstId = cards[0]?.dataset?.gameId;
         if (firstId) state.activeGameByLeague.set(currentKey, firstId);
       }
-      syncMobileHeadlineSelect(cards, currentKey);
+      syncMobileHeadlineStrip(cards, currentKey);
       normalizeTop10HeadlinePillWidths();
       highlightHeadlineButtons();
     }
@@ -1877,28 +2002,23 @@
       });
     }
 
-    if (mobileLeagueSelect) {
-      mobileLeagueSelect.addEventListener("change", async () => {
-        const targetKey = String(mobileLeagueSelect.value || "");
-        if (!targetKey) return;
-        const idx = getIndexByLeagueKey(targetKey);
-        if (idx < 0) return;
-        await goToLeagueByIndex(idx, { smooth: true, updateHash: true });
+    if (mobileShowAllLeaguesBtn) {
+      mobileShowAllLeaguesBtn.addEventListener("click", () => {
+        setMobileLeaguesModalOpen(true);
       });
     }
 
-    if (mobileHeadlineSelect) {
-      mobileHeadlineSelect.addEventListener("change", () => {
-        const currentKey = state.currentLeagueKey;
-        const gameId = String(mobileHeadlineSelect.value || "");
-        if (!currentKey || !gameId) return;
-        const section = state.sectionByLeagueKey.get(currentKey);
-        if (!section) return;
-        const card = section.querySelector(`.game-card[data-game-id="${CSS.escape(gameId)}"]`);
-        if (!card) return;
-        scrollCardIntoView(card);
-        state.activeGameByLeague.set(currentKey, gameId);
-        highlightHeadlineButtons();
+    if (mobileLeaguesModalClose) {
+      mobileLeaguesModalClose.addEventListener("click", () => {
+        setMobileLeaguesModalOpen(false);
+      });
+    }
+
+    if (mobileLeaguesModal) {
+      mobileLeaguesModal.addEventListener("click", (ev) => {
+        if (ev.target === mobileLeaguesModal) {
+          setMobileLeaguesModalOpen(false);
+        }
       });
     }
 
