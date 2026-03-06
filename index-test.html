@@ -132,17 +132,17 @@
   <script>
     // ===== Config =====
     const LEAGUE_FILES = [
-      { leagueName: "NBA", leagueKey: "nba", fileUrl: "/recaps-manual/daily/nba.json" },
-      { leagueName: "NHL", leagueKey: "nhl", fileUrl: "/recaps-manual/daily/nhl.json" },
-      { leagueName: "MLB", leagueKey: "mlb", fileUrl: "/recaps-manual/daily/mlb.json" },
-      { leagueName: "NCAAM", leagueKey: "ncaam", fileUrl: "/recaps-manual/daily/ncaam.json" },
-      { leagueName: "NCAAW", leagueKey: "ncaaw", fileUrl: "/recaps-manual/daily/ncaaw.json" },
-      { leagueName: "NCAA Baseball", leagueKey: "ncaabaseball", fileUrl: "/recaps-manual/daily/ncaabaseball.json" },
-      { leagueName: "Premier League", leagueKey: "premierleague", fileUrl: "/recaps-manual/daily/premierleague.json" },
-      { leagueName: "WBC", leagueKey: "wbc", fileUrl: "/recaps-manual/daily/wbc.json" },
-      { leagueName: "UEFA Champions League", leagueKey: "uefachampionsleague", fileUrl: "/recaps-manual/daily/uefachampionsleague.json" },
-      { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "/recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LIV" },
-      { leagueName: "Tennis", leagueKey: "tennis", fileUrl: "/recaps-manual/daily/oneperleague.json", sourceLeagueKey: "Tennis" }
+      { leagueName: "NBA", leagueKey: "nba", fileUrl: "recaps-manual/daily/nba.json" },
+      { leagueName: "NHL", leagueKey: "nhl", fileUrl: "recaps-manual/daily/nhl.json" },
+      { leagueName: "MLB", leagueKey: "mlb", fileUrl: "recaps-manual/daily/mlb.json" },
+      { leagueName: "NCAAM", leagueKey: "ncaam", fileUrl: "recaps-manual/daily/ncaam.json" },
+      { leagueName: "NCAAW", leagueKey: "ncaaw", fileUrl: "recaps-manual/daily/ncaaw.json" },
+      { leagueName: "NCAA Baseball", leagueKey: "ncaabaseball", fileUrl: "recaps-manual/daily/ncaabaseball.json" },
+      { leagueName: "Premier League", leagueKey: "premierleague", fileUrl: "recaps-manual/daily/premierleague.json" },
+      { leagueName: "WBC", leagueKey: "wbc", fileUrl: "recaps-manual/daily/wbc.json" },
+      { leagueName: "UEFA Champions League", leagueKey: "uefachampionsleague", fileUrl: "recaps-manual/daily/uefachampionsleague.json" },
+      { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LIV" },
+      { leagueName: "Tennis", leagueKey: "tennis", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "Tennis" }
     ];
 
     const LEAGUE_DISPLAY_ORDER = [
@@ -159,7 +159,7 @@
     const SOCCER_ORDER_INDEX = Object.fromEntries(SOCCER_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
     const MANUAL_TOP10_STORAGE_KEY = "thporth.manual-top10.v1";
-    const MANUAL_TOP10_FILE_URL = "/recaps-manual/daily/manual-top10.json";
+    const MANUAL_TOP10_FILE_URL = "recaps-manual/daily/manual-top10.json";
     const MASCOT_SCORE_LEAGUES = new Set(["nba", "nfl", "mlb", "nhl"]);
     const COLLEGE_SCORE_LEAGUES = new Set(["ncaam", "ncaaw"]);
     const TOP10_LEAGUE_PILL_LABELS = {
