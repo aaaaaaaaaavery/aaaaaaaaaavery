@@ -1,4 +1,1 @@
-cd "/Users/avery/Downloads/Copy of THPORTHINDEX"
-git add -A
-git commit -m "your update message"
-git push origin main:master
+cd "/Users/avery/Downloads/Copy of THPORTHINDEX" && git add -A && git commit -m "live update" && git push origin main:master

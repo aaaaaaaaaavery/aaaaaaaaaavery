@@ -180,7 +180,7 @@
       livgolf: "LIV",
       liv: "LIV",
     };
-    const TOP10_PILL_CLASS = "inline-flex w-12 items-center justify-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-center text-[10px] font-medium leading-snug text-gray-600";
+    const TOP10_STREAM_PILL_CLASS = "inline-flex items-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-xs font-medium text-gray-600";
     const TOP10_HEADLINE_PILL_CLASS = "inline-flex shrink-0 items-center justify-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-center text-[10px] font-medium leading-snug text-gray-600 whitespace-nowrap";
 
     // ===== State =====
@@ -1176,8 +1176,8 @@
         const pillText = getTop10LeaguePillLabel(sourceLeagueKey, sourceLeagueName);
         if (pillText) {
           const leaguePill = document.createElement("span");
-          // Keep Top 10 league pills visually consistent regardless of label length.
-          leaguePill.className = `mb-1 ${TOP10_PILL_CLASS}`;
+          // Stream card pill uses natural width; headline nav pills are normalized separately.
+          leaguePill.className = `mb-1 ${TOP10_STREAM_PILL_CLASS}`;
           leaguePill.textContent = pillText;
           card.appendChild(leaguePill);
         }
