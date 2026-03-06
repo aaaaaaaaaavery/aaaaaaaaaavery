@@ -26,7 +26,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810762/pelicans-kings"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "kImeherwux0",
+          "title": "PELICANS at KINGS | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=kImeherwux0",
+          "embedUrl": "https://www.youtube.com/embed/kImeherwux0",
+          "publishedAt": "2026-03-06T05:40:05Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810754",
@@ -49,7 +59,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810754/mavericks-magic"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "67DtasKi130",
+          "title": "MAVERICKS at MAGIC | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=67DtasKi130",
+          "embedUrl": "https://www.youtube.com/embed/67DtasKi130",
+          "publishedAt": "2026-03-06T03:01:35Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810755",
@@ -72,7 +92,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810755/jazz-wizards"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "YWUXdQ-gm28",
+          "title": "JAZZ at WIZARDS | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=YWUXdQ-gm28",
+          "embedUrl": "https://www.youtube.com/embed/YWUXdQ-gm28",
+          "publishedAt": "2026-03-06T02:53:12Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810756",
@@ -95,7 +125,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810756/nets-heat"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "iFCEYnmSmCM",
+          "title": "NETS at HEAT | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=iFCEYnmSmCM",
+          "embedUrl": "https://www.youtube.com/embed/iFCEYnmSmCM",
+          "publishedAt": "2026-03-06T03:13:18Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810757",
@@ -118,7 +158,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810757/warriors-rockets"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "Ul3KohNPNIU",
+          "title": "WARRIORS at ROCKETS | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=Ul3KohNPNIU",
+          "embedUrl": "https://www.youtube.com/embed/Ul3KohNPNIU",
+          "publishedAt": "2026-03-06T03:44:08Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810758",
@@ -141,7 +191,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810758/raptors-timberwolves"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "WWr5loCQSGA",
+          "title": "RAPTORS at TIMBERWOLVES | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=WWr5loCQSGA",
+          "embedUrl": "https://www.youtube.com/embed/WWr5loCQSGA",
+          "publishedAt": "2026-03-06T03:47:38Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810759",
@@ -164,7 +224,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810759/pistons-spurs"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "NI3h__rxrPs",
+          "title": "PISTONS at SPURS | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=NI3h__rxrPs",
+          "embedUrl": "https://www.youtube.com/embed/NI3h__rxrPs",
+          "publishedAt": "2026-03-06T04:22:20Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810760",
@@ -187,7 +257,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810760/bulls-suns"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "4q4eAR1huFY",
+          "title": "BULLS at SUNS | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=4q4eAR1huFY",
+          "embedUrl": "https://www.youtube.com/embed/4q4eAR1huFY",
+          "publishedAt": "2026-03-06T05:01:02Z",
+          "matchScore": 140
+        }
+      ]
     },
     {
       "id": "401810761",
@@ -210,7 +290,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810761/lakers-nuggets"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "BiSlV8NFOmI",
+          "title": "LAKERS at NUGGETS | FULL GAME HIGHLIGHTS | March 5, 2026",
+          "url": "https://www.youtube.com/watch?v=BiSlV8NFOmI",
+          "embedUrl": "https://www.youtube.com/embed/BiSlV8NFOmI",
+          "publishedAt": "2026-03-06T05:52:34Z",
+          "matchScore": 140
+        }
+      ]
     }
   ]
 }

@@ -180,6 +180,7 @@
       livgolf: "LIV",
       liv: "LIV",
     };
+    const TOP10_PILL_CLASS = "inline-flex w-12 items-center justify-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-center text-[10px] font-medium leading-snug text-gray-600";
 
     // ===== State =====
     const state = {
@@ -1155,8 +1156,8 @@
         const pillText = getTop10LeaguePillLabel(sourceLeagueKey, sourceLeagueName);
         if (pillText) {
           const leaguePill = document.createElement("span");
-          // Subtle league context tag for top 10 only.
-          leaguePill.className = "mb-1 inline-flex items-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-xs font-medium text-gray-600";
+          // Keep Top 10 league pills visually consistent regardless of label length.
+          leaguePill.className = `mb-1 ${TOP10_PILL_CLASS}`;
           leaguePill.textContent = pillText;
           card.appendChild(leaguePill);
         }
@@ -1439,7 +1440,7 @@
           row.className = "flex items-start gap-1.5";
 
           const pill = document.createElement("span");
-          pill.className = "inline-flex items-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-[10px] font-medium leading-snug text-gray-600";
+          pill.className = TOP10_PILL_CLASS;
           pill.textContent = pillText;
 
           const text = document.createElement("span");
