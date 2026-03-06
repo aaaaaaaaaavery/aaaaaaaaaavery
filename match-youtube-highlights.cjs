@@ -256,13 +256,17 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint)
 
   const awayKeys = teamNameKeys(game.teams?.away);
   const homeKeys = teamNameKeys(game.teams?.home);
+  const hasTeamContext = awayKeys.length > 0 && homeKeys.length > 0;
 
   const awayHit = awayKeys.some((k) => includesPhrase(titleNorm, k));
   const homeHit = homeKeys.some((k) => includesPhrase(titleNorm, k));
 
   let score = 100;
   if (!awayHit || !homeHit) {
-    // LIV/summary-style entries can lack teams; prefer date-based matching, use round as fallback.
+    // Team-based entries must match both teams to avoid assigning one generic video to many games.
+    if (hasTeamContext) return -1;
+
+    // Teamless summary entries (e.g., LIV/Tennis) can use date/round fallback.
     if (targetDateIso && publishedDateIso && publishedDateIso === targetDateIso) {
       score = 92;
     } else if (targetDateIso && dateInTitleIso && dateInTitleIso === targetDateIso) {
