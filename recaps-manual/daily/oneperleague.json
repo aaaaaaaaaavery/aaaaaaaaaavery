@@ -67,7 +67,15 @@
         "source": {
           "recapUrl": null
         },
-        "highlights": []
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "yW6mwk2ZnSM",
+            "title": "Indian Wells Day 2 Highlights",
+            "url": "https://www.youtube.com/watch?v=yW6mwk2ZnSM",
+            "embedUrl": "https://www.youtube.com/embed/yW6mwk2ZnSM"
+          }
+        ]
       }
     ]
   }
