@@ -181,6 +181,7 @@
       liv: "LIV",
     };
     const TOP10_PILL_CLASS = "inline-flex w-12 items-center justify-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-center text-[10px] font-medium leading-snug text-gray-600";
+    const TOP10_HEADLINE_PILL_CLASS = "inline-flex shrink-0 items-center justify-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-center text-[10px] font-medium leading-snug text-gray-600 whitespace-nowrap";
 
     // ===== State =====
     const state = {
@@ -1423,6 +1424,25 @@
       });
     }
 
+    function normalizeTop10HeadlinePillWidths() {
+      const pills = [...headlineNav.querySelectorAll("[data-top10-headline-pill='1']")];
+      if (!pills.length) return;
+
+      // Reset to natural width before measuring the widest label.
+      pills.forEach((pill) => {
+        pill.style.width = "auto";
+      });
+
+      const maxWidth = Math.ceil(
+        pills.reduce((widest, pill) => Math.max(widest, pill.getBoundingClientRect().width), 0)
+      );
+      if (!Number.isFinite(maxWidth) || maxWidth <= 0) return;
+
+      pills.forEach((pill) => {
+        pill.style.width = `${maxWidth}px`;
+      });
+    }
+
     function buildHeadlineNav() {
       clear(headlineNav);
       const currentKey = state.currentLeagueKey;
@@ -1459,7 +1479,8 @@
           row.className = "flex items-start gap-1.5";
 
           const pill = document.createElement("span");
-          pill.className = TOP10_PILL_CLASS;
+          pill.className = TOP10_HEADLINE_PILL_CLASS;
+          pill.dataset.top10HeadlinePill = "1";
           pill.textContent = pillText;
 
           const text = document.createElement("span");
@@ -1485,6 +1506,7 @@
         const firstId = cards[0]?.dataset?.gameId;
         if (firstId) state.activeGameByLeague.set(currentKey, firstId);
       }
+      normalizeTop10HeadlinePillWidths();
       highlightHeadlineButtons();
     }
 
