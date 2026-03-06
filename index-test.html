@@ -52,7 +52,7 @@
       </div>
 
       <div class="border-t border-gray-200 p-3 text-xs text-gray-500">
-        League files: <span class="font-mono">/recaps-manual/daily/nba.json</span>, <span class="font-mono">/recaps-manual/daily/nhl.json</span>, <span class="font-mono">/recaps-manual/daily/mlb.json</span>, <span class="font-mono">/recaps-manual/daily/premierleague.json</span>, <span class="font-mono">/recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">/recaps-manual/daily/ncaam.json</span>, <span class="font-mono">/recaps-manual/daily/ncaaw.json</span>, <span class="font-mono">/recaps-manual/daily/ncaabaseball.json</span>
+        League files: <span class="font-mono">/recaps-manual/daily/nba.json</span>, <span class="font-mono">/recaps-manual/daily/nhl.json</span>, <span class="font-mono">/recaps-manual/daily/mlb.json</span>, <span class="font-mono">/recaps-manual/daily/premierleague.json</span>, <span class="font-mono">/recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">/recaps-manual/daily/coupedefrance.json</span>, <span class="font-mono">/recaps-manual/daily/ncaam.json</span>, <span class="font-mono">/recaps-manual/daily/ncaaw.json</span>, <span class="font-mono">/recaps-manual/daily/ncaabaseball.json</span>
       </div>
     </aside>
 
@@ -106,7 +106,7 @@
               <div class="rounded-md border border-gray-200 bg-gray-50 p-5">
                 <div class="mb-2 text-sm font-semibold">No recaps loaded</div>
                 <div class="text-sm leading-relaxed text-gray-600">
-                  Make sure <span class="font-mono">recaps-manual/daily/nba.json</span>, <span class="font-mono">recaps-manual/daily/nhl.json</span>, <span class="font-mono">recaps-manual/daily/mlb.json</span>, <span class="font-mono">recaps-manual/daily/premierleague.json</span>, <span class="font-mono">recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">recaps-manual/daily/ncaam.json</span>, <span class="font-mono">recaps-manual/daily/ncaaw.json</span>, and <span class="font-mono">recaps-manual/daily/ncaabaseball.json</span> exist in your repo and contain
+                  Make sure <span class="font-mono">recaps-manual/daily/nba.json</span>, <span class="font-mono">recaps-manual/daily/nhl.json</span>, <span class="font-mono">recaps-manual/daily/mlb.json</span>, <span class="font-mono">recaps-manual/daily/premierleague.json</span>, <span class="font-mono">recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">recaps-manual/daily/coupedefrance.json</span>, <span class="font-mono">recaps-manual/daily/ncaam.json</span>, <span class="font-mono">recaps-manual/daily/ncaaw.json</span>, and <span class="font-mono">recaps-manual/daily/ncaabaseball.json</span> exist in your repo and contain
                   <span class="font-mono">leagueName</span> and <span class="font-mono">games</span>.
                 </div>
               </div>
@@ -139,8 +139,20 @@
       { leagueName: "NCAAW", leagueKey: "ncaaw", fileUrl: "recaps-manual/daily/ncaaw.json" },
       { leagueName: "NCAA Baseball", leagueKey: "ncaabaseball", fileUrl: "recaps-manual/daily/ncaabaseball.json" },
       { leagueName: "Premier League", leagueKey: "premierleague", fileUrl: "recaps-manual/daily/premierleague.json" },
-      { leagueName: "WBC", leagueKey: "wbc", fileUrl: "recaps-manual/daily/wbc.json" },
       { leagueName: "UEFA Champions League", leagueKey: "uefachampionsleague", fileUrl: "recaps-manual/daily/uefachampionsleague.json" },
+      { leagueName: "MLS", leagueKey: "mls", fileUrl: "recaps-manual/daily/mls.json" },
+      { leagueName: "LaLiga", leagueKey: "laliga", fileUrl: "recaps-manual/daily/laliga.json" },
+      { leagueName: "Serie A", leagueKey: "seriea", fileUrl: "recaps-manual/daily/seriea.json" },
+      { leagueName: "Bundesliga", leagueKey: "bundesliga", fileUrl: "recaps-manual/daily/bundesliga.json" },
+      { leagueName: "Ligue 1", leagueKey: "ligue1", fileUrl: "recaps-manual/daily/ligue1.json" },
+      { leagueName: "Liga MX", leagueKey: "ligamx", fileUrl: "recaps-manual/daily/ligamx.json" },
+      { leagueName: "FA Cup", leagueKey: "facup", fileUrl: "recaps-manual/daily/facup.json" },
+      { leagueName: "NWSL", leagueKey: "nwsl", fileUrl: "recaps-manual/daily/nwsl.json" },
+      { leagueName: "UEFA Europa League", leagueKey: "uefaeuropaleague", fileUrl: "recaps-manual/daily/uefaeuropaleague.json" },
+      { leagueName: "UEFA Conference League", leagueKey: "uefaconferenceleague", fileUrl: "recaps-manual/daily/uefaconferenceleague.json" },
+      { leagueName: "Carabao Cup", leagueKey: "carabaocup", fileUrl: "recaps-manual/daily/carabaocup.json" },
+      { leagueName: "Coupe de France", leagueKey: "coupedefrance", fileUrl: "recaps-manual/daily/coupedefrance.json" },
+      { leagueName: "WBC", leagueKey: "wbc", fileUrl: "recaps-manual/daily/wbc.json" },
       { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LIV" },
       { leagueName: "Tennis", leagueKey: "tennis", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "Tennis" }
     ];
@@ -151,12 +163,16 @@
     ];
 
     const SOCCER_LEAGUE_DISPLAY_ORDER = [
-      "Premier League", "WBC", "UEFA Champions League", "MLS", "LALiga", "Serie A", "Bundesliga", "FA Cup",
-      "Liga MX", "NWSL", "Ligue 1", "UEFA Europa League", "UEFA Conference League"
+      "Premier League", "UEFA Champions League", "MLS", "LaLiga", "Serie A", "Bundesliga", "Ligue 1", "Liga MX",
+      "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France"
     ];
 
     const LEAGUE_ORDER_INDEX = Object.fromEntries(LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_ORDER_INDEX = Object.fromEntries(SOCCER_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
+    const SOCCER_LEAGUE_KEYS = new Set([
+      "premierleague", "uefachampionsleague", "mls", "laliga", "seriea", "bundesliga", "ligue1", "ligamx",
+      "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance"
+    ]);
     const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
     const MANUAL_TOP10_STORAGE_KEY = "thporth.manual-top10.v1";
     const MANUAL_TOP10_FILE_URL = "recaps-manual/daily/manual-top10.json";
@@ -171,6 +187,7 @@
       ncaam: "NCAAM",
       ncaaw: "NCAAW",
       wbc: "WBC",
+      coupedefrance: "CDF",
       uefachampionsleague: "UCL",
       "uefa champions league": "UCL",
       uefaeuropaleague: "UEL",
@@ -678,6 +695,13 @@
     function getVisibleLeagues() {
       const visible = state.filteredLeagues.filter((lg) => hasRenderableGames(lg.leagueKey));
       return [ALL_LEAGUE, ...visible];
+    }
+
+    function isSoccerLeague(lg) {
+      const key = String(lg?.leagueKey || "").trim().toLowerCase();
+      if (SOCCER_LEAGUE_KEYS.has(key)) return true;
+      const name = String(lg?.leagueName || "").trim().toLowerCase();
+      return Object.prototype.hasOwnProperty.call(SOCCER_ORDER_INDEX, name);
     }
 
     function normalizeText(s) {
@@ -1372,14 +1396,28 @@
       const visibleLeagues = getVisibleLeagues();
       leagueCount.textContent = String(visibleLeagues.length);
 
-      visibleLeagues.forEach((lg, idx) => {
+      const indexByLeagueKey = new Map(visibleLeagues.map((lg, idx) => [lg.leagueKey, idx]));
+      const top10League = visibleLeagues.find((lg) => lg.leagueKey === "all") || null;
+      const nonTop10Leagues = visibleLeagues.filter((lg) => lg.leagueKey !== "all");
+      const soccerLeagues = nonTop10Leagues.filter((lg) => isSoccerLeague(lg));
+
+      const appendLeagueButton = (lg, opts = {}) => {
+        const idx = indexByLeagueKey.get(lg.leagueKey);
+        if (typeof idx !== "number") return;
         const isActive = state.currentLeagueKey === lg.leagueKey;
         const btn = document.createElement("button");
-        btn.className =
-          "w-full rounded-md border px-3 py-2 text-left transition-colors " +
-          (isActive
+        const isNested = Boolean(opts.nested);
+        btn.className = (
+          isNested
+            ? "w-full rounded-md border px-3 py-2 text-left transition-colors "
+            : "w-full rounded-md border px-3 py-2 text-left transition-colors "
+        ) + (
+          isActive
             ? "border-black bg-black text-white hover:bg-gray-800"
-            : "border-transparent bg-white text-gray-700 hover:bg-gray-100");
+            : isNested
+              ? "border-transparent bg-gray-50 text-gray-700 hover:bg-white"
+              : "border-transparent bg-white text-gray-700 hover:bg-gray-100"
+        );
         btn.addEventListener("click", async () => {
           await goToLeagueByIndex(idx, { smooth: false, updateHash: true });
         });
@@ -1405,8 +1443,54 @@
         left.appendChild(sub);
         row.appendChild(left);
         btn.appendChild(row);
-        leagueNav.appendChild(btn);
+
+        if (isNested && opts.container) {
+          opts.container.appendChild(btn);
+        } else {
+          leagueNav.appendChild(btn);
+        }
+      };
+
+      if (top10League) {
+        appendLeagueButton(top10League);
+      }
+
+      const appendSoccerGroup = () => {
+        if (!soccerLeagues.length) return;
+        const soccerGroup = document.createElement("div");
+        soccerGroup.className = "mt-1 rounded-md border border-gray-200 bg-gray-50";
+
+        const soccerHeader = document.createElement("div");
+        soccerHeader.className = "border-b border-gray-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-gray-600";
+        soccerHeader.textContent = "Soccer";
+        soccerGroup.appendChild(soccerHeader);
+
+        const soccerItems = document.createElement("div");
+        soccerItems.className = "space-y-1 p-1";
+        soccerGroup.appendChild(soccerItems);
+
+        soccerLeagues.forEach((lg) => {
+          appendLeagueButton(lg, { nested: true, container: soccerItems });
+        });
+
+        leagueNav.appendChild(soccerGroup);
+      };
+
+      let insertedSoccerGroup = false;
+      nonTop10Leagues.forEach((lg) => {
+        if (isSoccerLeague(lg)) {
+          if (!insertedSoccerGroup) {
+            appendSoccerGroup();
+            insertedSoccerGroup = true;
+          }
+          return;
+        }
+        appendLeagueButton(lg);
       });
+
+      if (!insertedSoccerGroup && soccerLeagues.length) {
+        appendSoccerGroup();
+      }
     }
 
     function highlightHeadlineButtons() {
@@ -1750,7 +1834,12 @@
       const q = leagueFilter.value.trim().toLowerCase();
       state.filteredLeagues = !q
         ? state.leagues.slice()
-        : state.leagues.filter((lg) => String(lg.leagueName || "").toLowerCase().includes(q));
+        : state.leagues.filter((lg) => {
+            const leagueName = String(lg.leagueName || "").toLowerCase();
+            if (leagueName.includes(q)) return true;
+            if (isSoccerLeague(lg) && "soccer".includes(q)) return true;
+            return false;
+          });
       await rebuildStream();
     });
 
