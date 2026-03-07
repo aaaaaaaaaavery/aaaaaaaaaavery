@@ -36,6 +36,18 @@
       </div>
       <div id="leagueCount" class="max-w-[68vw] truncate rounded-md bg-gray-100 px-2 py-1 text-[10px] font-medium text-gray-600 text-right sm:max-w-none sm:px-3 sm:text-xs whitespace-nowrap"></div>
     </div>
+    <div id="adminToolsBar" class="mx-auto mt-2 hidden max-w-none items-center justify-between gap-2 rounded-md border border-amber-200 bg-amber-50 px-2 py-2 sm:px-3">
+      <div class="min-w-0">
+        <div id="modePill" class="text-[11px] font-semibold uppercase tracking-wide text-amber-800">Admin Mode</div>
+        <div id="manualStatus" class="truncate text-[11px] text-amber-700">Manual Top 10 editor</div>
+      </div>
+      <div class="flex shrink-0 items-center gap-1.5">
+        <button id="refreshBtn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Refresh</button>
+        <button id="saveTop10Btn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Save</button>
+        <button id="clearTop10Btn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Clear</button>
+        <button id="downloadTop10Btn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Download</button>
+      </div>
+    </div>
   </header>
 
   <div class="flex w-full max-w-full items-start overflow-x-hidden bg-white text-gray-800">
@@ -160,7 +172,7 @@
     ];
 
     const LEAGUE_DISPLAY_ORDER = [
-      "NFL", "NBA", "MLB", "NHL", "Soccer", "Formula One", "NCAAM", "NCAAW", "PGA Tour", "UFC", "Boxing",
+      "NFL", "NBA", "MLB", "NHL", "WBC", "Soccer", "Formula One", "NCAAM", "NCAAW", "PGA Tour", "UFC", "Boxing",
       "NASCAR Cup Series", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "IndyCar", "LPGA Tour", "MotoGP"
     ];
 
@@ -247,6 +259,7 @@
     const saveTop10Btn = document.getElementById("saveTop10Btn");
     const clearTop10Btn = document.getElementById("clearTop10Btn");
     const downloadTop10Btn = document.getElementById("downloadTop10Btn");
+    const adminToolsBar = document.getElementById("adminToolsBar");
     const modePill = document.getElementById("modePill");
     const manualStatus = document.getElementById("manualStatus");
     const leagueCount = document.getElementById("leagueCount");
@@ -614,6 +627,7 @@
       if (modePill) modePill.textContent = modeText;
 
       if (!state.isAdminMode) {
+        if (adminToolsBar) adminToolsBar.classList.add("hidden");
         if (manualStatus) manualStatus.textContent = "Top 10 editing controls are hidden in public mode.";
         if (saveTop10Btn) saveTop10Btn.classList.add("hidden");
         if (clearTop10Btn) clearTop10Btn.classList.add("hidden");
@@ -621,6 +635,7 @@
         return;
       }
 
+      if (adminToolsBar) adminToolsBar.classList.remove("hidden");
       if (saveTop10Btn) saveTop10Btn.classList.remove("hidden");
       if (clearTop10Btn) clearTop10Btn.classList.remove("hidden");
       if (downloadTop10Btn) downloadTop10Btn.classList.remove("hidden");
