@@ -1,0 +1,39 @@
+{
+  "leagueName": "IndyCar",
+  "leagueKey": "indycar",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Qualifying at Phoenix Raceway belonged to David Malukas and Team Penske, but the session was marred by more heartbreak for veteran Will Power. As the series returned to the high-speed oval, youth and experience clashed on the leaderboard, with rookie Mick Schumacher turning heads in his first-ever oval qualifying run to join the top five.",
+  "games": [
+    {
+      "id": "20260306-indy-phoenix-qual",
+      "teams": {
+        "away": "Phoenix Qualifying",
+        "home": "IndyCar Series"
+      },
+      "headline": "Malukas grabs first career pole as Power crashes out in Phoenix",
+      "score": null,
+      "brief": "David Malukas finally secured his first career IndyCar pole award, leading a dominant Penske performance at Phoenix. However, the celebration was tempered by teammate Will Power's disastrous session; the two-time champion's nightmare start to 2026 continued with a heavy crash during his qualifying run. Further down the grid, the Rahal Letterman Lanigan camp showed serious speed, putting both Graham Rahal and rookie Mick Schumacher in the top four.",
+      "bullets": [
+        "David Malukas earned his maiden pole position for Team Penske.",
+        "Will Power's session ended early after a crash in the No. 26 car, marking his second major incident of the year.",
+        "Graham Rahal qualified 3rd, his best start on an oval since 2012.",
+        "Rookie Mick Schumacher qualified a stunning 4th in his first-ever NTT IndyCar Series oval attempt.",
+        "Rahal Letterman Lanigan Racing led the way for Honda, taking two of the top four spots."
+      ],
+      "context": "The qualifying results set the grid for the Good Ranchers 250, emphasizing Penske's dominance and RLL's resurgence.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.indycar.com/videos/2026/03/03-06-will-power-s-tough-start-continues-with-crash"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "_Qx7mU1sPio",
+          "title": "IndyCar Phoenix Qualifying Highlights",
+          "url": "https://www.youtube.com/watch?v=_Qx7mU1sPio",
+          "embedUrl": "https://www.youtube.com/embed/_Qx7mU1sPio"
+        }
+      ]
+    }
+  ]
+}

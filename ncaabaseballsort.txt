@@ -1,0 +1,336 @@
+NCAA Baseball JSON Merge + Sort Instructions
+
+Use this whenever I paste multiple JSON blocks into `recaps-manual/daily/ncaabaseball.json`.
+
+Rules
+1. Merge all pasted JSON blocks into one valid JSON object/file.
+2. Fix all syntax issues (commas, brackets, braces, quotes, array/object nesting).
+3. Keep every valid game entry unless it is a true duplicate.
+4. Normalize each game's `highlights` to the required structure:
+   "highlights": [
+     {
+       "provider": "youtube",
+       "videoId": "",
+       "title": "",
+       "url": "https://www.youtube.com/watch?v=...",
+       "embedUrl": "https://www.youtube.com/embed/..."
+     }
+   ]
+5. Derive `videoId` from the YouTube URL when needed.
+6. Reorder games by team-priority mapping below.
+
+Sorting logic
+- Sort games by the first team in this priority list that appears in either `teams.away` or `teams.home`.
+- Earlier team in the list means higher priority (appears first in output).
+- If both teams are in the list, use the team with the higher priority (closest to top).
+- If no listed team matches, keep those games after all matched games (stable order).
+
+Team priority order (first to last)
+UCLA
+LSU
+Texas
+Mississippi State
+Georgia Tech
+Arkansas
+Auburn
+North Carolina
+Florida
+Southern Miss
+Georgia
+Oklahoma
+NC State
+Clemson
+Wake Forest
+Coastal Carolina
+TCU
+Oregon State
+Tennessee
+Florida State
+Kentucky
+Texas A&M
+West Virginia
+Miami
+UTSA
+Ole Miss
+Missouri
+Alabama
+South Carolina
+Vanderbilt
+Virginia
+Notre Dame
+Boston College
+California
+Duke
+Louisville
+Pittsburgh
+Virginia Tech
+Stanford
+Cincinnati
+Arizona State
+Kansas
+Kansas State
+Oklahoma State
+Texas Tech
+Houston
+UCF
+Utah
+Baylor
+BYU
+Arizona
+Southern California
+Oregon
+Nebraska
+Indiana
+Illinois
+Iowa
+Maryland
+Rutgers
+Michigan
+Michigan State
+Minnesota
+Northwestern
+Ohio State
+Penn State
+Purdue
+Washington
+Georgetown
+Connecticut
+Seton Hall
+Xavier
+Creighton
+Butler
+Villanova
+St. John's
+Jacksonville State
+Liberty
+Middle Tennessee
+Missouri State
+Dallas Baptist
+Louisiana Tech
+Western Kentucky
+Sam Houston
+Florida International
+New Mexico State
+Kennesaw State
+Delaware
+South Florida
+Wichita State
+Charlotte
+Rice
+Tulane
+UAB
+Florida Atlantic
+East Carolina
+Memphis
+Dayton
+La Salle
+Richmond
+George Mason
+VCU
+Davidson
+George Washington
+Saint Joseph's
+Saint Louis
+St. Bonaventure
+Fordham
+Rhode Island
+New Mexico
+UNLV
+San Diego State
+Fresno State
+Nevada
+Grand Canyon
+Washington State
+San Jose State
+Air Force
+New Jersey Tech
+UMBC
+Bryant
+Binghamton
+Maine
+UMass Lowell
+Albany
+Saint Mary's
+San Diego
+San Francisco
+Portland
+Pacific
+Santa Clara
+Loyola Marymount
+Gonzaga
+Pepperdine
+Seattle
+Florida Gulf Coast
+Jacksonville
+Central Arkansas
+North Florida
+Austin Peay
+North Alabama
+Lipscomb
+Stetson
+Queens (NC)
+Eastern Kentucky
+Bellarmine
+West Georgia
+Longwood
+Charleston Southern
+Winthrop
+Gardner-Webb
+Radford
+High Point
+UNC Asheville
+USC Upstate
+Presbyterian
+UC Santa Barbara
+Cal State Northridge
+UC Davis
+Cal State Fullerton
+Cal Poly
+UC Irvine
+CSU Bakersfield
+Hawaii
+Long Beach State
+UC Riverside
+UC San Diego
+Arkansas State
+South Alabama
+Texas State
+Louisiana
+Appalachian State
+Georgia State
+Old Dominion
+Marshall
+UL Monroe
+Troy
+James Madison
+Georgia Southern
+Navy
+Army
+Holy Cross
+Lehigh
+Bucknell
+Lafayette
+Southern Indiana
+Tennessee Tech
+Southeast Missouri State
+Little Rock
+Tennessee-Martin
+Eastern Illinois
+Morehead State
+Lindenwood
+SIU Edwardsville
+Western Illinois
+College of Charleston
+Campbell
+Northeastern
+Monmouth
+North Carolina A&T
+Towson
+Elon
+Stony Brook
+Hofstra
+UNC Wilmington
+William & Mary
+Northern Kentucky
+Wright State
+Milwaukee
+Youngstown State
+Oakland
+Oral Roberts
+South Dakota State
+Omaha
+St. Thomas
+North Dakota State
+Northern Colorado
+Murray State
+Illinois State
+Indiana State
+Valparaiso
+Southern Illinois
+Illinois-Chicago
+Belmont
+Bradley
+Evansville
+Kent State
+Miami (OH)
+Central Michigan
+Western Michigan
+Ohio
+Northern Illinois
+Ball State
+Eastern Michigan
+Bowling Green
+Massachusetts
+Toledo
+Akron
+Yale
+Dartmouth
+Columbia
+Princeton
+Brown
+Cornell
+Harvard
+Pennsylvania
+Lamar
+Southeastern Louisiana
+Stephen F. Austin
+McNeese
+Houston Christian
+Nicholls
+Incarnate Word
+Northwestern State
+New Orleans
+UT Rio Grande Valley
+Texas A&M-Corpus Christi
+Mercer
+VMI
+East Tennessee State
+Western Carolina
+Wofford
+The Citadel
+UNC Greensboro
+Samford
+Rider
+Manhattan
+Iona
+Siena
+Canisius
+Fairfield
+Marist
+Merrimack
+Mount St. Mary's
+Quinnipiac
+Niagara
+Sacred Heart
+Saint Peter's
+California Baptist
+Utah Tech
+Tarleton
+Abilene Christian
+Utah Valley
+UT Arlington
+Sacramento State
+Fairleigh Dickinson
+Coppin State
+Central Connecticut
+Norfolk State
+UMES
+Stonehill
+Delaware State
+Le Moyne
+Long Island
+Mercyhurst
+New Haven
+Wagner
+Bethune-Cookman
+Jackson State
+Alabama State
+Texas Southern
+Alabama A&M
+Arkansas-Pine Bluff
+Florida A&M
+Prairie View
+Southern
+Grambling
+Mississippi Valley State
+Alcorn State

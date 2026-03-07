@@ -193,155 +193,245 @@
     "leagueName": "WTA",
     "leagueKey": "wta",
     "sourceType": "console_recaps",
-    "leagueBriefing": "The heavy hitters officially arrived in Tennis Paradise on Friday as the top seeds opened their Indian Wells campaigns. World No. 1 Aryna Sabalenka celebrated a major milestone with a clinical win, while American stars Coco Gauff and Emma Raducanu navigated tricky tests to reach the third round. Naomi Osaka also made a triumphant return to the desert, proving she’s still a force to be reckoned with after an injury layoff.",
+    "leagueBriefing": "The drama in the California desert reached a fever pitch as the WTA's second round delivered a mix of heroic comebacks, stunning upsets, and emotional farewells. Alexandra Eala and Camila Osorio stole the show with epic, match-point-saving thrillers under the lights, while veterans like Sorana Cirstea turned back the clock to prolong their tournament runs. Meanwhile, rising stars Talia Gibson and Victoria Mboko proved the next generation is ready for the big stage with massive victories.",
     "games": [
       {
-        "id": "sabalenka-sakatsume-2026",
+        "id": "anisimova-blinkova-2026",
         "teams": {
-          "away": "Himeno Sakatsume",
-          "home": "Aryna Sabalenka"
+          "away": "Anna Blinkova",
+          "home": "Amanda Anisimova"
         },
-        "headline": "Sabalenka marks 100th match as world number one with clinical victory",
-        "score": "SAK 0 - SAB 2",
-        "brief": "Aryna Sabalenka couldn't have asked for a better way to celebrate her 100th career match as the world's top-ranked player. The Belarusian powerhouse was in total control from the first ball, using her signature aggressive baseline game to overwhelm Japanese qualifier Himeno Sakatsume. Aside from the milestone, the talk of the night was Sabalenka's new engagement ring—which she joked might be 'shiny enough' to distract her opponents—but it was her serve that did the real damage as she moved comfortably into the third round.",
+        "headline": "Anisimova rebounds from slow start to set up Raducanu showdown",
+        "score": "BLI 1 - ANI 2",
+        "brief": "After dropping a chaotic first set featuring seven breaks of serve, Amanda Anisimova locked in and delivered a masterclass. The American steamrolled through the rest of the match, winning the final nine games straight to book a highly anticipated third-round clash with Emma Raducanu. Anisimova's overpowering groundstrokes eventually overwhelmed Blinkova in a commanding finish, snapping a recent losing streak in the desert.",
         "bullets": [
-          "Sabalenka won 6-4, 6-2 in 72 minutes, never facing a single break point.",
-          "The win marks Sabalenka's 82nd victory in 100 matches played while ranked as World No. 1.",
-          "Sakatsume, ranked No. 136, was playing in just her 10th career tour-level main draw match.",
-          "Sabalenka hit 24 winners and recorded her first win since her runner-up finish at the Australian Open."
+          "Anisimova won 5-7, 6-1, 6-0 in one hour and 39 minutes.",
+          "The American won the final nine games of the match to emphatically close it out.",
+          "She won 69.2% of her first-serve points compared to Blinkova's 52.1%.",
+          "The victory snaps a three-match losing streak for Anisimova at the Indian Wells event."
         ],
-        "context": "Sabalenka solidifies her dominance at the top of the rankings while chasing her first Indian Wells title.",
+        "context": "Anisimova builds much-needed confidence as she prepares for a blockbuster matchup against former US Open champion Emma Raducanu.",
         "recapStatus": "ok",
         "source": {
-          "recapUrl": "https://www.wtatennis.com/news/4463766/aryna-sabalenka-defeats-himeno-sakatsume-in-100th-match-as-world-no-1-by-the-numbers"
+          "recapUrl": "https://www.wtatennis.com/news/4463974/anisimova-overcomes-blinkova-sets-up-raducanu-clash-at-indian-wells"
         },
         "highlights": [
           {
             "provider": "youtube",
-            "videoId": "IMyGoBp3vJg",
-            "title": "Aryna Sabalenka vs Himeno Sakatsume | WTA Match Highlights",
-            "url": "https://www.youtube.com/watch?v=IMyGoBp3vJg",
-            "embedUrl": "https://www.youtube.com/embed/IMyGoBp3vJg"
+            "videoId": "LB5CUnNbOwc",
+            "title": "Anisimova | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=LB5CUnNbOwc",
+            "embedUrl": "https://www.youtube.com/embed/LB5CUnNbOwc"
           }
         ]
       },
       {
-        "id": "gauff-rakhimova-2026",
+        "id": "eala-yastremska-2026",
         "teams": {
-          "away": "Kamilla Rakhimova",
-          "home": "Coco Gauff"
+          "away": "Dayana Yastremska",
+          "home": "Alexandra Eala"
         },
-        "headline": "Gauff fights back from second-set hole to survive opening test",
-        "score": "RAK 0 - GAU 2",
-        "brief": "It wasn't the straightforward opener the home crowd expected, but Coco Gauff found a way to win ugly. After a relatively smooth first set, the American found herself trailing 5-2 in the second as Kamilla Rakhimova began to find her range. Gauff had to dig deep into her defensive reserves, reeling off three straight games to force a tiebreak and eventually closing the door. It was a classic 'survive and advance' performance from the world No. 4, who admitted she had to find her rhythm under pressure.",
+        "headline": "Eala outlasts Yastremska in late-night three-set thriller",
+        "score": "YAS 1 - EAL 2",
+        "brief": "In a true test of grit and endurance, 18-year-old Filipina star Alexandra Eala showed immense poise to upset Ukraine's Dayana Yastremska. Trailing 5-4 in the deciding set and facing the prospect of Yastremska serving for the match, Eala found an extra gear. She broke back, survived a grueling final game that featured six deuces and four match points, and clinched the biggest win of her career to set up a clash with world No. 4 Coco Gauff.",
         "bullets": [
-          "Gauff triumphed 6-3, 7-6(5) in a match that lasted exactly two hours.",
-          "The American recovered from a 5-2 deficit in the second set to avoid a decider.",
-          "Rakhimova pushed Gauff to the limit in the tiebreak, but two costly unforced errors at 5-5 proved the difference.",
-          "Gauff moves on to face Philippine sensation Alexandra Eala in the third round."
+          "Eala triumphed 7-5, 4-6, 7-5 in a marathon match that lasted 2 hours and 43 minutes.",
+          "The 18-year-old broke Yastremska's serve when the Ukrainian was serving for the match at 5-4 in the third set.",
+          "Eala survived a massive test of nerves, navigating six deuces and four match points in the final game.",
+          "The win propels her to a third-round meeting against American star Coco Gauff."
         ],
-        "context": "The win keeps Gauff on a collision course for a deep run in her home-state tournament.",
+        "context": "Eala continues her rapid ascent on the WTA tour with a statement victory over an experienced Grand Slam semifinalist.",
         "recapStatus": "ok",
         "source": {
-          "recapUrl": "https://bnpparibasopen.com/scores/detail/wta:match:LS040"
+          "recapUrl": "https://www.wtatennis.com/videos/4464045/eala-denies-yastremska-in-late-night-indian-wells-second-round-thriller"
         },
         "highlights": [
           {
             "provider": "youtube",
-            "videoId": "uRac3rfJwcg",
-            "title": "Coco Gauff vs Kamilla Rakhimova | WTA Match Highlights",
-            "url": "https://www.youtube.com/watch?v=uRac3rfJwcg",
-            "embedUrl": "https://www.youtube.com/embed/uRac3rfJwcg"
+            "videoId": "_nenTInESDA",
+            "title": "Eala | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=_nenTInESDA",
+            "embedUrl": "https://www.youtube.com/embed/_nenTInESDA"
           }
         ]
       },
       {
-        "id": "osaka-jimenez-kasintseva-2026",
+        "id": "mboko-birrell-2026",
         "teams": {
-          "away": "Victoria Jimenez Kasintseva",
-          "home": "Naomi Osaka"
+          "away": "Kimberly Birrell",
+          "home": "Victoria Mboko"
         },
-        "headline": "Osaka makes 'grateful' return with sharp straight-sets win",
-        "score": "VJK 0 - OSA 2",
-        "brief": "Naomi Osaka looked remarkably sharp in her first match since an abdominal injury sidelined her from the Australian Open. Facing the rising teenage talent Victoria Jimenez Kasintseva, Osaka showed flashes of the power that earned her four Grand Slam titles. While the first set was a back-and-forth affair, Osaka found an extra gear in the second, breaking the qualifier twice to cruise to the finish line. The win was a massive confidence booster for Osaka, who is looking to climb back up the rankings in 2026.",
+        "headline": "Top 10 debutant Mboko stages double comeback to oust Birrell",
+        "score": "BIR 0 - MBO 2",
+        "brief": "Playing her first match as a newly minted Top 10 player, 19-year-old Canadian Victoria Mboko showed no signs of pressure against Kimberly Birrell. Despite falling behind 3-1 in both sets, the Toronto native kept her composure, relying on a potent serve and aggressive returning to flip the script each time. Mboko's ability to problem-solve mid-match highlights the maturity that has fueled her rapid rise up the rankings.",
         "bullets": [
-          "Osaka won 7-5, 6-2, securing the victory in just under 90 minutes.",
-          "This was Osaka's first competitive match since January following her injury withdrawal.",
-          "The Japanese star won 80% of her first-serve points and didn't drop serve in the second set.",
-          "She now sets up a high-stakes rematch with Colombia's Camila Osorio."
+          "Mboko secured a 6-4, 7-6(5) straight-sets victory over the Australian.",
+          "The Canadian rallied from a 3-1 deficit in both the first and second sets.",
+          "She fired seven aces and converted five of her seven break point opportunities.",
+          "Mboko won an impressive 69% of her first-serve points to control the tempo of the match."
         ],
-        "context": "Osaka's successful return from injury is a major storyline for a player looking to reclaim her spot in the top 10.",
+        "context": "Mboko proves she belongs among the game's elite, celebrating her Top 10 status with a gritty, hard-fought win.",
         "recapStatus": "ok",
         "source": {
-          "recapUrl": "https://english.ahram.org.eg/News/563535.aspx"
+          "recapUrl": "https://www.wtatennis.com/videos/4463726/mboko-comes-from-a-break-down-in-both-sets-to-best-birrell-in-indian-wells"
         },
         "highlights": [
           {
             "provider": "youtube",
-            "videoId": "4wl3N1nZmtk",
-            "title": "Naomi Osaka vs Victoria Jimenez Kasintseva | WTA Match Highlights",
-            "url": "https://www.youtube.com/watch?v=4wl3N1nZmtk",
-            "embedUrl": "https://www.youtube.com/embed/4wl3N1nZmtk"
+            "videoId": "QzMRdde8mnU",
+            "title": "Noskova | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=QzMRdde8mnU",
+            "embedUrl": "https://www.youtube.com/embed/QzMRdde8mnU"
           }
         ]
       },
       {
-        "id": "raducanu-zakharova-2026",
+        "id": "tauson-putintseva-2026",
         "teams": {
-          "away": "Anastasia Zakharova",
-          "home": "Emma Raducanu"
+          "away": "Yulia Putintseva",
+          "home": "Clara Tauson"
         },
-        "headline": "Ruthless Raducanu cruises into third round with serving clinic",
-        "score": "ZAK 0 - RAD 2",
-        "brief": "Emma Raducanu looked every bit the top-tier seed on Friday, dismantling Anastasia Zakharova with a masterclass in aggressive tennis. The Brit was dialed in from the start, breaking early in both sets and effectively taking the racquet out of Zakharova's hands. Most impressive was Raducanu's serve; she faced zero break points until the very end of the match and looked physically robust. For a player who has battled consistency, this was a statement win that has British fans buzzing.",
+        "headline": "Tauson survives marathon tiebreak to dispatch Putintseva",
+        "score": "PUT 0 - TAU 2",
+        "brief": "Clara Tauson had to dig deep to navigate a wild first set against the ever-crafty Yulia Putintseva. The No. 17 seed found herself trailing early but battled back to force a marathon tiebreak. Despite Putintseva pulling off back-to-back strokes of genius-a perfect drop shot followed by a pinpoint lob-Tauson held her nerve, saving two set points before finally converting her fifth to take control of the match and ultimately cruise through the second set.",
         "bullets": [
-          "Raducanu dominated 6-1, 6-3 in one hour and 22 minutes.",
-          "She won a staggering 75.8% of her first-serve points and fired three aces.",
-          "Raducanu is seeded at Indian Wells for the first time since 2022.",
-          "The win sets up a mouth-watering third-round clash against American Amanda Anisimova."
+          "Tauson advanced with a 7-6(9), 6-2 victory after an intense opening set.",
+          "The Danish star rallied from a 3-1 deficit early in the match.",
+          "She survived a dramatic first-set tiebreak, saving two set points before converting on her fifth opportunity.",
+          "Putintseva brought the crowd to its feet with spectacular shot-making, but couldn't sustain the momentum."
         ],
-        "context": "Raducanu is showing the form that made her a Grand Slam champion as she seeks her first WTA 1000 title.",
+        "context": "Tauson showcases her mental toughness in crucial moments to avoid an early upset trap.",
         "recapStatus": "ok",
         "source": {
-          "recapUrl": "https://www.beinsports.com/en-au/tennis/articles/raducanu-breezes-past-zakharova-into-indian-wells-third-round-2026-03-06"
+          "recapUrl": "https://www.wtatennis.com/videos/4463770/tauson-wins-marathon-tiebreak-defeats-putintseva-in-indian-wells"
         },
         "highlights": [
           {
             "provider": "youtube",
-            "videoId": "4n45BUxZrWw",
-            "title": "Emma Raducanu vs Anastasia Zakharova | WTA Match Highlights",
-            "url": "https://www.youtube.com/watch?v=4n45BUxZrWw",
-            "embedUrl": "https://www.youtube.com/embed/4n45BUxZrWw"
+            "videoId": "BlCi_pDgOII",
+            "title": "Tauson | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=BlCi_pDgOII",
+            "embedUrl": "https://www.youtube.com/embed/BlCi_pDgOII"
           }
         ]
       },
       {
-        "id": "paolini-potapova-2026",
+        "id": "gibson-alexandrova-2026",
         "teams": {
-          "away": "Anastasia Potapova",
-          "home": "Jasmine Paolini"
+          "away": "Ekaterina Alexandrova",
+          "home": "Talia Gibson"
         },
-        "headline": "Paolini survives 150-minute marathon to oust Potapova",
-        "score": "POT 1 - PAO 2",
-        "brief": "In the grit-and-grind match of the day, Jasmine Paolini proved why she's one of the toughest outs on tour. After dropping a razor-thin opening set in a tiebreak, the Italian No. 7 seed completely flipped the script. Paolini began to take the ball earlier and move Potapova side-to-side, eventually wearing down the newly-minted Austrian citizen. It was a physical, emotional battle that lasted two and a half hours, leaving Paolini exhausted but through to the next round.",
+        "headline": "Qualifier Gibson stuns Alexandrova for first career Top 20 win",
+        "score": "ALE 0 - GIB 2",
+        "brief": "Australian qualifier Talia Gibson delivered the upset of the day, stunning No. 11 seed Ekaterina Alexandrova to claim the biggest win of her young career. Gibson played fearless tennis from the start, refusing to be bullied by the Russian's flat, powerful groundstrokes. Her ability to absorb pace and counterpunch effectively frustrated Alexandrova, allowing the Aussie to secure a milestone victory and extend her dream run in the California desert.",
         "bullets": [
-          "Paolini rallied to win 6-7(5), 6-2, 6-3 in two hours and 30 minutes.",
-          "The Italian broke Potapova six times across the final two sets.",
-          "Potapova struggled with her serve late in the match, committing seven double faults in total.",
-          "This win snaps a difficult start to the 2026 season for Paolini."
+          "Gibson scored a massive 6-3, 7-5 straight-sets upset over the 11th-seeded Russian.",
+          "This marks the first Top 20 victory of the Australian qualifier's professional career.",
+          "Gibson capitalized on Alexandrova's unforced errors to keep the pressure on throughout the match.",
+          "The win caps off a stellar week for Gibson, who battled through qualifying just to reach the main draw."
         ],
-        "context": "Paolini advances as a dark horse contender in a wide-open bottom half of the draw.",
+        "context": "Gibson's breakthrough performance shakes up the draw and establishes her as a rising talent to watch.",
         "recapStatus": "ok",
         "source": {
-          "recapUrl": "https://ground.news/article/potapova-in-round-two-against-paolini-out_7b2c3f"
+          "recapUrl": "https://www.wtatennis.com/videos/4463724/qualifier-gibson-upsets-alexandrova-in-indian-wells-for-first-top-20-win"
         },
         "highlights": [
           {
             "provider": "youtube",
-            "videoId": "e4N8c56vfMA",
-            "title": "Jasmine Paolini vs Anastasia Potapova | WTA Match Highlights",
-            "url": "https://www.youtube.com/watch?v=e4N8c56vfMA",
-            "embedUrl": "https://www.youtube.com/embed/e4N8c56vfMA"
+            "videoId": "vdpilrhnxyU",
+            "title": "Gibson | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=vdpilrhnxyU",
+            "embedUrl": "https://www.youtube.com/embed/vdpilrhnxyU"
+          }
+        ]
+      },
+      {
+        "id": "cirstea-shnaider-2026",
+        "teams": {
+          "away": "Diana Shnaider",
+          "home": "Sorana Cirstea"
+        },
+        "headline": "Retiring Cirstea prolongs farewell tour with upset over Shnaider",
+        "score": "SHN 0 - CIR 2",
+        "brief": "Sorana Cirstea is making sure her final appearance at Indian Wells is a memorable one. The 34-year-old Romanian, who has announced her upcoming retirement, turned back the clock to deliver a brilliant 6-2, 7-6(0) upset over the highly-touted Diana Shnaider. Cirstea dominated the opening set and then played a flawless second-set tiebreak, blanking the young Russian to keep her desert farewell tour alive for at least one more round.",
+        "bullets": [
+          "Cirstea secured a 6-2, 7-6(0) straight-sets victory over the No. 21 seed.",
+          "The Romanian played a perfect second-set tiebreak, winning it 7-0 to slam the door on a comeback.",
+          "The 34-year-old veteran is playing her final season on tour before retiring.",
+          "She advances to face Czechia's Linda Noskova in the third round."
+        ],
+        "context": "Cirstea's vintage performance extends her emotional final run at one of tennis' most prestigious events.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.tennis.com/news/videos/sorana-cirstea-upsets-diana-shnaider-as-final-season-rolls-on-indian-wells"
+        },
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "Plu-3ZQiS8o",
+            "title": "Cirstea | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=Plu-3ZQiS8o",
+            "embedUrl": "https://www.youtube.com/embed/Plu-3ZQiS8o"
+          }
+        ]
+      },
+      {
+        "id": "kalinskaya-sonmez-2026",
+        "teams": {
+          "away": "Zeynep Sonmez",
+          "home": "Anna Kalinskaya"
+        },
+        "headline": "Kalinskaya edges Sonmez in tight straight-sets battle",
+        "score": "SON 0 - KAL 2",
+        "brief": "Anna Kalinskaya relied on her steady baseline game to navigate a tricky challenge from rising Turkish star Zeynep Sonmez. Coming off a quarterfinal run in Doha, the Russian maintained her impressive early-season consistency, breaking late in the first set and holding her nerve through a tense second-set tiebreak. Sonmez fought admirably on her main-draw debut at Indian Wells but couldn't quite crack Kalinskaya's reliable defense when it mattered most.",
+        "bullets": [
+          "Kalinskaya advanced with a hard-fought 6-4, 7-6(4) victory.",
+          "The Russian used her superior experience to dictate the crucial points in the second-set tiebreak.",
+          "Sonmez, fresh off an upset win over McCartney Kessler, exits after a strong showing in her tournament debut.",
+          "Kalinskaya has now won her opening-round matches in her last seven tournaments."
+        ],
+        "context": "Kalinskaya's steady climb towards the top 20 continues with a composed victory over a confident qualifier.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.flashscore.com/match/tennis/kalinskaya-anna-KGdcQnEf/sonmez-zeynep-vZ8lpjnM/"
+        },
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "fGuLCB0Nf6o",
+            "title": "Sonmez | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=fGuLCB0Nf6o",
+            "embedUrl": "https://www.youtube.com/embed/fGuLCB0Nf6o"
+          }
+        ]
+      },
+      {
+        "id": "osorio-jovic-2026",
+        "teams": {
+          "away": "Iva Jovic",
+          "home": "Camila Osorio"
+        },
+        "headline": "Osorio saves three match points in epic comeback over Jovic",
+        "score": "JOV 1 - OSO 2",
+        "brief": "Camila Osorio cemented her reputation as one of the tour's fiercest fighters with a stunning comeback victory over American teenager Iva Jovic. Playing in front of a heavily pro-Jovic crowd, the Colombian found herself down a break twice in the second set and faced three match points. Relying on her relentless hustle, Osorio clawed her way back to snatch the set in a tiebreak before dominating the decider, setting up a blockbuster rematch with Naomi Osaka.",
+        "bullets": [
+          "Osorio rallied from the brink to win 4-6, 7-6(4), 6-3 in a grueling 2-hour, 39-minute battle.",
+          "The Colombian saved three match points while trailing 5-4 in the second set.",
+          "Osorio faced 15 break points in the match, miraculously saving 11 of them with clutch serving and defense.",
+          "The victory earns her a third-round showdown with former world No. 1 Naomi Osaka, whom she upset here last year."
+        ],
+        "context": "Osorio's heroic comeback is a testament to her champion's mentality and resilience under extreme pressure.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.wtatennis.com/news/4463901/osorio-posts-epic-comeback-over-jovic-to-set-a-rematch-with-osaka-in-indian-wells"
+        },
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "KghlN97zg70",
+            "title": "Osorio | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=KghlN97zg70",
+            "embedUrl": "https://www.youtube.com/embed/KghlN97zg70"
           }
         ]
       }
@@ -353,28 +443,6 @@
     "sourceType": "console_recaps",
     "leagueBriefing": "The 2026 BNP Paribas Open is officially in full swing as the big seeds began their campaigns in the California desert. While favorites like Alexander Zverev and Jannik Sinner breezed through, the day was defined by emotional goodbyes and high-stakes American duels. Gael Monfils soaked in one last desert sunset in a vintage performance, while Ben Shelton and Learner Tien survived massive tests to keep the home fans cheering.",
     "games": [
-      {
-        "id": "monfils-auger-aliassime-2026",
-        "teams": {
-          "away": "Gael Monfils",
-          "home": "Felix Auger-Aliassime"
-        },
-        "headline": "Monfils bids emotional farewell to Tennis Paradise in three-set thriller",
-        "score": "MON 1 - FAA 2",
-        "brief": "In what he confirmed will be his final season on tour, 39-year-old Gael Monfils left everything on the court in an emotional second-round exit. The Frenchman took the opening set in a tiebreak and treated the crowd to his signature brand of showmanship before Auger-Aliassime's youth and steady baseline game eventually took over. The standing ovation Monfils received afterward was the moment of the tournament so far, marking the end of an era for one of the game's greatest entertainers at Indian Wells.",
-        "bullets": [
-          "Monfils fell 6-7(5), 6-3, 6-4 to the Canadian in a match that lasted over two hours.",
-          "The 39-year-old Frenchman confirmed this is his final appearance at Indian Wells before his planned retirement at the end of 2026.",
-          "Auger-Aliassime advances to the third round despite facing a vocal crowd pulling for the veteran wildcard.",
-          "Monfils leaves with 13 career ATP titles and a reputation as one of the most athletic players in tennis history."
-        ],
-        "context": "The loss marks the final Indian Wells appearance for Monfils, a former world No. 6 and fan favorite.",
-        "recapStatus": "ok",
-        "source": {
-          "recapUrl": "https://www.thestar.com.my/sport/tennis/2026/03/07/tennis-monfils-bids-emotional-farewell-to-indian-wells"
-        },
-        "highlights": []
-      },
       {
         "id": "shelton-opelka-2026",
         "teams": {
@@ -395,7 +463,15 @@
         "source": {
           "recapUrl": "https://bnpparibasopen.com/news/tien-nets-first-win-in-tennis-paradise"
         },
-        "highlights": []
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "p_pbwFi0bDE",
+            "title": "Shelton | ATP Match Highlights",
+            "url": "https://www.youtube.com/watch?v=p_pbwFi0bDE",
+            "embedUrl": "https://www.youtube.com/embed/p_pbwFi0bDE"
+          }
+        ]
       },
       {
         "id": "zverev-berrettini-2026",
@@ -417,7 +493,15 @@
         "source": {
           "recapUrl": "https://www.tennisworldusa.org/tennis/news/On_the_ATP_results_with/164902/alexander-zverev-tops-matteo-berrettini-in-indian-wells/"
         },
-        "highlights": []
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "AK2d44-Nouk",
+            "title": "Zverev | ATP Match Highlights",
+            "url": "https://www.youtube.com/watch?v=AK2d44-Nouk",
+            "embedUrl": "https://www.youtube.com/embed/AK2d44-Nouk"
+          }
+        ]
       },
       {
         "id": "tien-walton-2026",
@@ -460,6 +544,206 @@
         "recapStatus": "ok",
         "source": {
           "recapUrl": "https://bnpparibasopen.com/news/sinner-sparkles-in-opener"
+        },
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "jV3eblAQmOg",
+            "title": "Sinner | ATP Match Highlights",
+            "url": "https://www.youtube.com/watch?v=jV3eblAQmOg",
+            "embedUrl": "https://www.youtube.com/embed/jV3eblAQmOg"
+          }
+        ]
+      },
+      {
+        "id": "monfils-auger-aliassime-2026",
+        "teams": {
+          "away": "Gael Monfils",
+          "home": "Felix Auger-Aliassime"
+        },
+        "headline": "Monfils bids emotional farewell to Tennis Paradise in three-set thriller",
+        "score": "MON 1 - FAA 2",
+        "brief": "In what he confirmed will be his final season on tour, 39-year-old Gael Monfils left everything on the court in an emotional second-round exit. The Frenchman took the opening set in a tiebreak and treated the crowd to his signature brand of showmanship before Auger-Aliassime’s youth and steady baseline game eventually took over. The standing ovation Monfils received afterward was the moment of the tournament so far, marking the end of an era for one of the game's greatest entertainers at Indian Wells.",
+        "bullets": [
+          "Auger-Aliassime advanced with a 6-7(5), 6-3, 6-4 victory over the French veteran.",
+          "Monfils hit 31 winners but ultimately faded against the Canadian's superior stamina.",
+          "Auger-Aliassime was highly effective under pressure, saving the only two break points he faced in the entire match.",
+          "The 39-year-old Monfils confirmed this is his final appearance at Indian Wells before retiring at the end of the season."
+        ],
+        "context": "Auger-Aliassime survives a tricky opening test against a dangerous wildcard with a heavily pro-Monfils crowd.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://bnpparibasopen.com/scores/detail/atp:match:MS051"
+        },
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "Y8HUq7nSBUw",
+            "title": "Monfils | ATP Match Highlights",
+            "url": "https://www.youtube.com/watch?v=Y8HUq7nSBUw",
+            "embedUrl": "https://www.youtube.com/embed/Y8HUq7nSBUw"
+          }
+        ]
+      },
+      {
+        "id": "brooksby-tiafoe-2026",
+        "teams": {
+          "away": "Jenson Brooksby",
+          "home": "Frances Tiafoe"
+        },
+        "headline": "Tiafoe flips the script with composed straight-sets win over Brooksby",
+        "score": "BRO 0 - TIA 2",
+        "brief": "Frances Tiafoe usually relies on getting the crowd hyped, but he took a strictly business approach to dispatch fellow American Jenson Brooksby. Having lost all three of their previous meetings without winning a single set, Tiafoe played a much more disciplined match on Friday, keeping his emotions in check and picking his spots to attack rather than getting into long, scrappy rallies. The strategy worked flawlessly, as he rolled to a decisive victory to set the record straight and punch his ticket to the third round.",
+        "bullets": [
+          "Tiafoe won 6-4, 6-2, earning his first-ever set and match victories over Brooksby.",
+          "Tiafoe hit 22 winners to Brooksby's 16 and won nearly 72% of his service points.",
+          "Brooksby was unable to generate his usual frustrating defensive rhythm against Tiafoe's measured aggression.",
+          "Tiafoe deliberately avoided riling up the crowd, stating he wanted to stay 'under water' and play point-by-point."
+        ],
+        "context": "Tiafoe overcomes a difficult head-to-head matchup to maintain his momentum from a strong February hard-court swing.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://bnpparibasopen.com/news/tiafoe-indian-wells-momentum-monfils"
+        },
+        "highlights": []
+      },
+      {
+        "id": "etcheverry-shapovalov-2026",
+        "teams": {
+          "away": "Tomas Martin Etcheverry",
+          "home": "Denis Shapovalov"
+        },
+        "headline": "Shapovalov survives third-set tiebreak marathon to set up Sinner showdown",
+        "score": "ETC 1 - SHA 2",
+        "brief": "Denis Shapovalov gave his fans a classic rollercoaster ride on Friday, ultimately edging Tomas Martin Etcheverry in a dramatic third-set tiebreak. The Canadian looked to be in control early but completely lost his rhythm in the second set, leading to a tense decider filled with squandered break points and brilliant shot-making. Relying heavily on his lethal forehand in the closing moments, Shapovalov finally closed the door on his stubborn opponent, setting up a blockbuster clash against world No. 2 Jannik Sinner.",
+        "bullets": [
+          "Shapovalov prevailed 6-3, 2-6, 7-6(5) in a grueling match that lasted two hours and 39 minutes.",
+          "The Canadian fired 43 winners but also committed 49 unforced errors in typical high-risk, high-reward fashion.",
+          "Etcheverry proved to be a difficult wall to break down, committing only 25 unforced errors.",
+          "Shapovalov won five crucial return points in the decisive third-set tiebreaker to seal the victory."
+        ],
+        "context": "Shapovalov grinds out a massive confidence-boosting win, earning a shot at the tournament's second seed.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.tenniscanada.com/news/pro-tennis/2026/auger-aliassime-shapovalov-indian-wells-friday-1"
+        },
+        "highlights": [
+          {
+            "provider": "youtube",
+            "videoId": "jV3eblAQmOg",
+            "title": "Sinner | ATP Match Highlights",
+            "url": "https://www.youtube.com/watch?v=jV3eblAQmOg",
+            "embedUrl": "https://www.youtube.com/embed/jV3eblAQmOg"
+          }
+        ]
+      },
+      {
+        "id": "bergs-paul-2026",
+        "teams": {
+          "away": "Zizou Bergs",
+          "home": "Tommy Paul"
+        },
+        "headline": "Paul puts on a hard-court clinic to dismantle Bergs",
+        "score": "BER 0 - PAU 2",
+        "brief": "Tommy Paul showed exactly why he’s one of the most dangerous hard-court players in the world right now, completely dismantling Zizou Bergs in under an hour. The American dropped just three games in a flawless victory that felt more like a practice session than a Masters 1000 match. Paul's movement was electric, and he suffocated the Belgian from the baseline, never allowing Bergs a chance to breathe or settle into the match.",
+        "bullets": [
+          "Paul cruised to a 6-1, 6-2 victory in a shockingly lopsided affair.",
+          "The American dominated return games, constantly putting Bergs under pressure on his own serve.",
+          "Bergs was unable to find answers for Paul's exceptional court coverage and flat groundstrokes.",
+          "Paul advances to the third round as he looks to make another deep run in the California desert."
+        ],
+        "context": "Paul solidifies his status as a dark horse contender for the title with a ruthlessly efficient opening performance.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://bnpparibasopen.com/scores/detail/atp:match:MS054"
+        },
+        "highlights": []
+      },
+      {
+        "id": "giron-mensik-2026",
+        "teams": {
+          "away": "Marcos Giron",
+          "home": "Jakub Mensik"
+        },
+        "headline": "Rising teen Mensik powers past Giron in double-tiebreak duel",
+        "score": "GIR 0 - MEN 2",
+        "brief": "The Jakub Mensik hype train keeps rolling in the California desert after the young Czech sensation edged veteran Marcos Giron in two incredibly tight sets. In a match where break points were scarce and margins were razor-thin, Mensik relied on his booming serve and fearless aggressive hitting when it mattered most. The youngster held his nerve in both tiebreaks, overpowering the defensively-sound American to secure another impressive Masters 1000 victory.",
+        "bullets": [
+          "Mensik won 7-5, 7-6(7) in a tightly contested baseline battle.",
+          "The Czech teenager's power eventually broke through Giron's normally impenetrable defense in the crucial moments.",
+          "Giron fought hard to force a second-set tiebreak but couldn't withstand Mensik's heavy hitting at the end.",
+          "Mensik continues to climb the rankings with another statement win against an established tour veteran."
+        ],
+        "context": "Mensik proves he has the mental toughness to win tight matches on the biggest stages against seasoned opponents.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://bnpparibasopen.com/scores/detail/atp:match:MS055"
+        },
+        "highlights": []
+      },
+      {
+        "id": "cobolli-kecmanovic-2026",
+        "teams": {
+          "away": "Flavio Cobolli",
+          "home": "Miomir Kecmanovic"
+        },
+        "headline": "Cobolli shakes off slow start to overpower Kecmanovic in three",
+        "score": "COB 2 - KEC 1",
+        "brief": "Flavio Cobolli had to dig deep to keep his Indian Wells campaign alive, battling back from a set down to defeat Miomir Kecmanovic. After a sloppy opening set where the Italian sprayed unforced errors, Cobolli found his range, unleashing heavy forehands to push Kecmanovic deep behind the baseline. The momentum shifted entirely in the second set, and Cobolli rode that wave through the decider to secure a hard-fought comeback victory.",
+        "bullets": [
+          "Cobolli rallied to win 3-6, 6-3, 6-4 after a sluggish start.",
+          "The Italian dialed in his aggressive baseline game in the final two sets to dictate play.",
+          "Kecmanovic started strong but couldn't match Cobolli's intensity and power as the match dragged on.",
+          "Cobolli advances to the third round, building on his recent strong run of form on hard courts."
+        ],
+        "context": "Cobolli shows impressive resilience to avoid an early exit and continue his breakthrough season.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://bnpparibasopen.com/scores/detail/atp:match:MS056"
+        },
+        "highlights": []
+      },
+      {
+        "id": "nakashima-ugo-carabelli-2026",
+        "teams": {
+          "away": "Brandon Nakashima",
+          "home": "Camilo Ugo Carabelli"
+        },
+        "headline": "Nakashima stays red-hot with comfortable win over Ugo Carabelli",
+        "score": "NAK 2 - UGO 0",
+        "brief": "Brandon Nakashima continued his stellar run of form on North American hard courts with a clinical straight-sets victory over clay-court specialist Camilo Ugo Carabelli. The American never looked troubled, using his precise serving and flat, penetrating groundstrokes to dictate play from the opening game. Nakashima wrapped up the win efficiently, delighting the home crowd and solidifying his reputation as a formidable threat in this section of the draw.",
+        "bullets": [
+          "Nakashima won 6-3, 6-4 with very little drama on his side of the net.",
+          "The American's serve was virtually untouchable, giving Ugo Carabelli almost no looks at a break.",
+          "Ugo Carabelli struggled to adapt his heavy topspin game to the faster Indian Wells hard courts.",
+          "Nakashima moves cleanly into the next round without expending much physical energy."
+        ],
+        "context": "Nakashima handles a favorable matchup perfectly to set himself up for a deeper run in his home state.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://bnpparibasopen.com/scores/detail/atp:match:MS057"
+        },
+        "highlights": []
+      },
+      {
+        "id": "davidovich-fokina-svajda-2026",
+        "teams": {
+          "away": "Alejandro Davidovich Fokina",
+          "home": "Zachary Svajda"
+        },
+        "headline": "Davidovich Fokina fends off American wild card Svajda",
+        "score": "ADF 2 - SVA 0",
+        "brief": "Alejandro Davidovich Fokina had to survive a tricky opening set before putting his foot on the gas to eliminate American wild card Zachary Svajda. Svajda played inspired tennis early on, feeding off the home crowd and pushing the Spaniard into a tense first-set tiebreak. However, Davidovich Fokina's experience and superior shot tolerance eventually broke the young American's resistance, leading to a much more straightforward second set to seal the match.",
+        "bullets": [
+          "Davidovich Fokina triumphed 7-6(0), 6-2 over the 23-year-old American.",
+          "The Spaniard completely dominated the first-set tiebreak, winning it 7-0 to break Svajda's spirit.",
+          "Svajda showed flashes of brilliance but couldn't sustain the level required to upset the seeded Spaniard.",
+          "Davidovich Fokina advances with a solid performance as he looks to find consistency on hard courts."
+        ],
+        "context": "Davidovich Fokina avoids a potential upset trap against a dangerous local wild card.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://bnpparibasopen.com/scores/detail/atp:match:MS058"
         },
         "highlights": []
       }

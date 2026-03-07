@@ -145,48 +145,6 @@ IMPORTANT
 - Do not include explanations or commentary.
 - Ensure valid JSON (no trailing commas).
 
-LEAGUE NAME (STRICT)
-- The top-level `leagueName` field is REQUIRED and must never be missing.
-- `leagueName` must be a non-empty string.
-- `leagueName` must exactly match the value provided after `Do all games in these leagues:`.
-- Do not infer, shorten, or rename the league name.
-
-LEAGUE KEY (STRICT)
-- The top-level `leagueKey` field is REQUIRED and must never be missing.
-- `leagueKey` must be a non-empty lowercase slug string.
-- Derive `leagueKey` from `leagueName` using the soccer mapping table below.
-- If `leagueName` is in the mapping table, you MUST use the mapped `leagueKey` exactly.
-
-SOCCER LEAGUE NAME -> LEAGUE KEY MAPPING
-- Premier League -> `premierleague`
-- MLS -> `mls`
-- UEFA Champions League -> `uefachampionsleague`
-- UEFA Europa League -> `uefaeuropaleague`
-- LaLiga -> `laliga`
-- Serie A -> `seriea`
-- Bundesliga -> `bundesliga`
-- FA Cup -> `facup`
-- Liga MX -> `ligamx`
-- NWSL -> `nwsl`
-- Ligue 1 -> `ligue1`
-- UEFA Conference League -> `uefaconferenceleague`
-- SPFL -> `scottishpremiership`
-- Carabao Cup -> `carabaocup`
-
-HIGHLIGHTS FORMAT (STRICT)
-- Every game MUST include `highlights` as an array with at least 1 object.
-- Always use this exact object shape and key order:
-	{
-		"provider": "youtube",
-		"videoId": "",
-		"title": "",
-		"url": "",
-		"embedUrl": ""
-	}
-- If no highlight URL is available yet, DO NOT omit `highlights`, DO NOT use `null`, and DO NOT use `[]`.
-- In that case, keep `provider` as `"youtube"` and leave `videoId`, `title`, `url`, and `embedUrl` as empty strings.
-- Do not add extra keys to highlight objects.
-
 COMPLETENESS REQUIREMENTS (MANDATORY)
 - Process the full game list on the page, not just featured matchups.
 - Determine `EXPECTED_GAME_COUNT` from the page before writing output.
@@ -203,8 +161,94 @@ FINAL SELF-CHECK (SILENT, BEFORE OUTPUT)
 1. Did I attempt all listed games from the page?
 2. For each missing game, did I confirm no recap was available at all?
 3. Does every included game object contain all required schema fields?
-4. Is top-level `leagueName` present, non-empty, and exactly equal to the provided `Do all games in these leagues:` value?
-5. Is top-level `leagueKey` present, non-empty, and correctly mapped from `leagueName` per the mapping table?
-6. Is the output valid JSON in one fenced `json` code block with no extra text?
+4. Is the output valid JSON in one fenced `json` code block with no extra text?
 
-Do all games in these leagues:
+Only grab recaps for games that include at least one of these teams in each:
+
+UCLA
+LSU
+Texas
+Mississippi State
+Georgia Tech
+Arkansas
+Auburn
+North Carolina
+Florida
+Southern Miss
+Georgia
+Oklahoma
+NC State
+Clemson
+Wake Forest
+Coastal Carolina
+TCU
+Oregon State
+Tennessee
+Florida State
+Kentucky
+Texas A&M
+West Virginia
+Miami
+UTSA
+Ole Miss
+Missouri
+Alabama
+South Carolina
+Vanderbilt
+Cincinnati
+Arizona State
+Kansas
+Kansas State
+Oklahoma State
+Texas Tech
+Houston
+UCF
+Utah
+Baylor
+BYU
+Arizona
+Southern California
+Oregon
+Nebraska
+Indiana
+Illinois
+Iowa
+Maryland
+Rutgers
+Michigan
+Michigan State
+Minnesota
+Northwestern
+Ohio State
+Penn State
+Purdue
+Washington
+Virginia
+Notre Dame
+Boston College
+California
+Duke
+Louisville
+Pittsburgh
+Virginia Tech
+Stanford
+South Florida
+Wichita State
+Rice
+Tulane
+East Carolina
+Memphis
+Connecticut
+Creighton
+UC Santa Barbara
+UC Davis
+Cal State Fullerton
+UC Irvine
+Long Beach State
+Dallas Baptist
+Fresno State
+Washington State
+
+And list the recaps from start to finish using this order of teams from top to bottom.
+
+Use this league name: NCAA Baseball
