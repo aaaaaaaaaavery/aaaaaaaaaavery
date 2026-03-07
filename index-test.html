@@ -213,6 +213,24 @@
       ncaam: "NCAAM",
       ncaaw: "NCAAW",
       wbc: "WBC",
+      laliga: "LaLiga",
+      "la liga": "LaLiga",
+      ligue1: "Ligue 1",
+      "ligue 1": "Ligue 1",
+      seriea: "Serie A",
+      "serie a": "Serie A",
+      facup: "FA Cup",
+      "fa cup": "FA Cup",
+      pgatour: "PGA",
+      "pga tour": "PGA",
+      lpgatour: "LPGA",
+      "lpga tour": "LPGA",
+      dpworldtour: "DP",
+      "dp world tour": "DP",
+      atp: "ATP",
+      wta: "WTA",
+      ligamx: "MX",
+      "liga mx": "MX",
       coupedefrance: "CDF",
       uefachampionsleague: "UCL",
       "uefa champions league": "UCL",
@@ -825,7 +843,14 @@
       const name = String(leagueName || "").trim().toLowerCase();
       if (TOP10_LEAGUE_PILL_LABELS[name]) return TOP10_LEAGUE_PILL_LABELS[name];
 
-      return "";
+      // Always provide a pill label for Top 10 headline items.
+      const fallbackName = String(leagueName || "").trim();
+      if (fallbackName) return fallbackName;
+
+      const fallbackKey = String(leagueKey || "").trim();
+      if (fallbackKey) return fallbackKey.toUpperCase();
+
+      return "League";
     }
 
     function findLeagueByKey(leagueKey) {
