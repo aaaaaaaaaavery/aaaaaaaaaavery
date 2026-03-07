@@ -1,31 +1,39 @@
 {
-	"leagueName": "Bundesliga",
-	"leagueKey": "GER.1",
-	"sourceType": "console_recaps",
-	"newsBriefing": "Bayern Munich showed its depth without Harry Kane, rolling past Borussia Monchengladbach 4-1 to open a 14-point gap at the top while also keeping an eye on Manuel Neuer after his halftime withdrawal.",
-	"games": [
-		{
-			"id": "20260306-bayern-gladbach",
-			"teams": {
-				"away": "Borussia Monchengladbach",
-				"home": "Bayern Munich"
-			},
-			"headline": "Diaz sparks Kane-less Bayern as leaders stretch cushion to 14 points",
-			"score": "BAY 4 - BMG 1",
-			"brief": "No Harry Kane, no drop-off. Bayern Munich rotated heavily and still ran away from Borussia Monchengladbach 4-1, with Luis Diaz setting the tone through one goal and one assist before the game tilted fully in Bayern's favor. Once Gladbach went down to 10 men, Jamal Musiala converted the penalty for his first goal of the season and Nicolas Jackson capped his return with a late finish, turning a strong night into another title-race statement for the champions.",
-			"bullets": [
-				"Bayern beat Gladbach 4-1 and moved 14 points clear of Borussia Dortmund.",
-				"Luis Diaz opened the scoring with a volley in the 33rd minute and assisted Konrad Laimer for 2-0.",
-				"Rocco Reitz was sent off 10 minutes into the second half for bringing down Nicolas Jackson.",
-				"Jamal Musiala converted the resulting penalty for his first goal of the season.",
-				"Wael Mohya scored a late consolation at age 17, becoming Gladbach's youngest-ever goalscorer."
-			],
-			"context": "Bayern's lead is now commanding, though Manuel Neuer coming off at halftime adds a potential concern ahead of the run-in.",
-			"recapStatus": "ok",
-			"source": {
-				"recapUrl": "provided_text_only"
-			},
-			"highlights": []
-		}
-	]
+  "leagueName": "Bundesliga",
+  "leagueKey": "GER.1",
+  "sourceType": "console_recaps",
+  "newsBriefing": "Bayern Munich showed its depth without Harry Kane, rolling past Borussia Monchengladbach 4-1 to open a 14-point gap at the top while also keeping an eye on Manuel Neuer after his halftime withdrawal.",
+  "games": [
+    {
+      "id": "20260306-bayern-gladbach",
+      "teams": {
+        "away": "Borussia Monchengladbach",
+        "home": "Bayern Munich"
+      },
+      "headline": "Diaz sparks Kane-less Bayern as leaders stretch cushion to 14 points",
+      "score": "BAY 4 - BMG 1",
+      "brief": "No Harry Kane, no drop-off. Bayern Munich rotated heavily and still ran away from Borussia Monchengladbach 4-1, with Luis Diaz setting the tone through one goal and one assist before the game tilted fully in Bayern's favor. Once Gladbach went down to 10 men, Jamal Musiala converted the penalty for his first goal of the season and Nicolas Jackson capped his return with a late finish, turning a strong night into another title-race statement for the champions.",
+      "bullets": [
+        "Bayern beat Gladbach 4-1 and moved 14 points clear of Borussia Dortmund.",
+        "Luis Diaz opened the scoring with a volley in the 33rd minute and assisted Konrad Laimer for 2-0.",
+        "Rocco Reitz was sent off 10 minutes into the second half for bringing down Nicolas Jackson.",
+        "Jamal Musiala converted the resulting penalty for his first goal of the season.",
+        "Wael Mohya scored a late consolation at age 17, becoming Gladbach's youngest-ever goalscorer."
+      ],
+      "context": "Bayern's lead is now commanding, though Manuel Neuer coming off at halftime adds a potential concern ahead of the run-in.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "provided_text_only"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "ZE80PK7DarM",
+          "title": "Bayern Munich vs Borussia Monchengladbach highlights",
+          "url": "https://www.youtube.com/watch?v=ZE80PK7DarM",
+          "embedUrl": "https://www.youtube.com/embed/ZE80PK7DarM"
+        }
+      ]
+    }
+  ]
 }

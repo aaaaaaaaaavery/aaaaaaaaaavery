@@ -136,6 +136,101 @@ function includesPhrase(haystack, phrase) {
   return pattern.test(haystack);
 }
 
+// Common club/team aliases used in highlight titles.
+// Keep values human-readable; they are normalized before matching.
+const TEAM_NAME_VARIATIONS = {
+  'wolverhampton wanderers': ['wolves', 'wolverhampton'],
+  'tottenham hotspur': ['spurs', 'tottenham'],
+  'celta de vigo': ['celta', 'celta vigo'],
+  'borussia monchengladbach': ['gladbach', "m'gladbach", 'm gladbach', 'monchengladbach'],
+  'bayern munich': ['bayern', 'fc bayern', 'bayern munchen'],
+  'borussia dortmund': ['dortmund', 'bvb'],
+  'bayer leverkusen': ['leverkusen', 'b04'],
+  'eintracht frankfurt': ['frankfurt', 'eintracht'],
+  'rb leipzig': ['leipzig', 'rbl'],
+  'vfb stuttgart': ['stuttgart'],
+  'vfl wolfsburg': ['wolfsburg'],
+  'hoffenheim': ['tsg hoffenheim', 'tsg'],
+  'werder bremen': ['bremen', 'werder'],
+  'union berlin': ['fc union berlin', 'union'],
+  'sc freiburg': ['freiburg'],
+  'mainz 05': ['mainz', 'mainz05'],
+  'augsburg': ['fc augsburg'],
+  'bochum': ['vfl bochum'],
+  'st pauli': ['fc st pauli', 'st. pauli'],
+  'heidenheim': ['fc heidenheim'],
+  'holstein kiel': ['kiel'],
+  'juventus': ['juve'],
+  'internazionale': ['inter', 'inter milan'],
+  'ac milan': ['milan'],
+  'as roma': ['roma'],
+  'napoli': ['ssc napoli'],
+  'lazio': ['ss lazio'],
+  'atalanta': ['atalanta bc'],
+  'fiorentina': ['acf fiorentina'],
+  'torino': ['torino fc'],
+  'genoa': ['genoa cfc'],
+  'sampdoria': ['uc sampdoria'],
+  'real madrid': ['madrid', 'rm'],
+  'atletico madrid': ['atletico', 'atleti'],
+  'barcelona': ['fc barcelona', 'barca'],
+  'athletic club': ['athletic bilbao', 'bilbao'],
+  'real sociedad': ['sociedad', 'la real'],
+  'real betis': ['betis'],
+  'sevilla': ['sevilla fc'],
+  'valencia': ['valencia cf'],
+  'villarreal': ['villarreal cf'],
+  'girona': ['girona fc'],
+  'osasuna': ['ca osasuna'],
+  'espanyol': ['rcd espanyol'],
+  'rayo vallecano': ['rayo'],
+  'getafe': ['getafe cf'],
+  'mallorca': ['rcd mallorca'],
+  'leganes': ['cd leganes'],
+  'real valladolid': ['valladolid'],
+  'deportivo alaves': ['alaves', 'alaves'],
+  'paris saint germain': ['psg', 'paris sg'],
+  'manchester united': ['man utd', 'man united', 'utd'],
+  'manchester city': ['man city', 'city'],
+  'newcastle united': ['newcastle'],
+  'west ham united': ['west ham'],
+  'nottingham forest': ['forest'],
+  'brighton and hove albion': ['brighton'],
+  'wolverhampton': ['wolves'],
+  'liverpool': ['lfc'],
+  'arsenal': ['afc arsenal'],
+  'chelsea': ['chelsea fc'],
+  'aston villa': ['villa'],
+  'everton': ['everton fc'],
+  'fulham': ['fulham fc'],
+  'crystal palace': ['palace'],
+  'brentford': ['brentford fc'],
+  'bournemouth': ['afc bournemouth'],
+  'leicester city': ['leicester'],
+  'southampton': ['southampton fc'],
+  'ipswich town': ['ipswich'],
+};
+
+const TEAM_ALIAS_INDEX = (() => {
+  const map = new Map();
+  for (const [canonical, aliases] of Object.entries(TEAM_NAME_VARIATIONS)) {
+    const bucket = new Set();
+    bucket.add(normalizeText(canonical));
+    for (const alias of aliases) bucket.add(normalizeText(alias));
+    const final = [...bucket].filter(Boolean);
+    for (const key of final) {
+      map.set(key, final);
+    }
+  }
+  return map;
+})();
+
+function addAliasFamily(keys, key) {
+  const family = TEAM_ALIAS_INDEX.get(key);
+  if (!family) return;
+  for (const alt of family) keys.add(alt);
+}
+
 function teamNameKeys(teamName) {
   const normalized = normalizeText(teamName);
   if (!normalized) return [];
@@ -148,6 +243,11 @@ function teamNameKeys(teamName) {
 
   if (tokens.length >= 2) keys.add(tokens.slice(-2).join(' '));
   if (tokens.length >= 3) keys.add(tokens.slice(-3).join(' '));
+
+  // Add common shortened variants, e.g., Borussia Monchengladbach -> Gladbach.
+  for (const key of [...keys]) {
+    addAliasFamily(keys, key);
+  }
 
   return [...keys].filter(Boolean);
 }

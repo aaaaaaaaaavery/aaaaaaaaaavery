@@ -25,7 +25,15 @@
       "source": {
         "recapUrl": "provided_text_only"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "gxWCOsj8zbs",
+          "title": "Napoli vs Torino highlights",
+          "url": "https://www.youtube.com/watch?v=gxWCOsj8zbs",
+          "embedUrl": "https://www.youtube.com/embed/gxWCOsj8zbs"
+        }
+      ]
     }
   ]
 }

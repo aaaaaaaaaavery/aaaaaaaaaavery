@@ -36,6 +36,18 @@ if [[ -z "${YOUTUBE_API_KEY:-}" ]]; then
   exit 1
 fi
 
+FAILED_MATCHES=0
+
+run_matcher_cmd() {
+  local league_name="$1"
+  shift
+
+  if ! "$@"; then
+    echo "[highlights] Warning: $league_name match step failed; continuing."
+    FAILED_MATCHES=$((FAILED_MATCHES + 1))
+  fi
+}
+
 run_match() {
   local json_file="$1"
   local playlist_id="$2"
@@ -44,7 +56,12 @@ run_match() {
   echo ""
   echo "[highlights] Matching $league_name videos for date: $DATE_ARG"
 
-  YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+  if [[ ! -s "$json_file" ]]; then
+    echo "[highlights] Skipping $league_name: JSON file is missing or empty ($json_file)"
+    return 0
+  fi
+
+  run_matcher_cmd "$league_name" env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
     --json "$json_file" \
     --playlist "$playlist_id" \
     --date "$DATE_ARG"
@@ -59,7 +76,12 @@ run_match_with_filter() {
   echo ""
   echo "[highlights] Matching $league_name videos for date: $DATE_ARG"
 
-  YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+  if [[ ! -s "$json_file" ]]; then
+    echo "[highlights] Skipping $league_name: JSON file is missing or empty ($json_file)"
+    return 0
+  fi
+
+  run_matcher_cmd "$league_name" env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
     --json "$json_file" \
     --playlist "$playlist_id" \
     --date "$DATE_ARG" \
@@ -75,7 +97,12 @@ run_match_per_game_date() {
   echo ""
   echo "[highlights] Matching $league_name videos using per-game dates from JSON"
 
-  YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+  if [[ ! -s "$json_file" ]]; then
+    echo "[highlights] Skipping $league_name: JSON file is missing or empty ($json_file)"
+    return 0
+  fi
+
+  run_matcher_cmd "$league_name" env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
     --json "$json_file" \
     --playlist "$playlist_id" \
     --usePerGameDate true \
@@ -91,7 +118,12 @@ run_match_per_game_date_channel() {
   echo ""
   echo "[highlights] Matching $league_name videos from channel using per-game dates from JSON"
 
-  YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+  if [[ ! -s "$json_file" ]]; then
+    echo "[highlights] Skipping $league_name: JSON file is missing or empty ($json_file)"
+    return 0
+  fi
+
+  run_matcher_cmd "$league_name" env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
     --json "$json_file" \
     --channelUrl "$channel_url" \
     --usePerGameDate true \
@@ -109,7 +141,12 @@ run_match_array_league() {
   echo ""
   echo "[highlights] Matching $league_name videos from playlist for selected league entry"
 
-  YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+  if [[ ! -s "$json_file" ]]; then
+    echo "[highlights] Skipping $league_name: JSON file is missing or empty ($json_file)"
+    return 0
+  fi
+
+  run_matcher_cmd "$league_name" env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
     --json "$json_file" \
     --leagueKey "$league_key" \
     --playlist "$playlist_id" \
@@ -140,3 +177,8 @@ echo "- recaps-manual/daily/seriea.json"
 echo "- recaps-manual/daily/bundesliga.json"
 echo "- recaps-manual/daily/laliga.json"
 echo "- recaps-manual/daily/oneperleague.json (LIV entry)"
+
+if [[ "$FAILED_MATCHES" -gt 0 ]]; then
+  echo ""
+  echo "Completed with warnings: $FAILED_MATCHES league match step(s) failed."
+fi
