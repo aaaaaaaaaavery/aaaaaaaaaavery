@@ -89,6 +89,21 @@ function normalizeText(s) {
     .trim();
 }
 
+function isPlaceholderTeamName(teamName) {
+  const t = normalizeText(teamName);
+  if (!t) return true;
+  return (
+    t === 'n a' ||
+    t === 'na' ||
+    t === 'none' ||
+    t === 'null' ||
+    t === 'unknown' ||
+    t === 'tbd' ||
+    t === 'to be determined' ||
+    t === 'to be announced'
+  );
+}
+
 function toIsoDate(y, m, d) {
   const yy = String(y).padStart(4, '0');
   const mm = String(m).padStart(2, '0');
@@ -233,7 +248,7 @@ function addAliasFamily(keys, key) {
 
 function teamNameKeys(teamName) {
   const normalized = normalizeText(teamName);
-  if (!normalized) return [];
+  if (!normalized || isPlaceholderTeamName(normalized)) return [];
 
   const tokens = normalized.split(' ').filter(Boolean);
   const keys = new Set();

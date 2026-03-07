@@ -21,6 +21,7 @@ FACUP_CHANNEL_URL="https://www.youtube.com/@thefacup/videos"
 SERIEA_CHANNEL_URL="https://www.youtube.com/@seriea/videos"
 BUNDESLIGA_CHANNEL_URL="https://www.youtube.com/@bundesliga/videos"
 LALIGA_CHANNEL_URL="https://www.youtube.com/@laliga/videos"
+WTA_CHANNEL_URL="https://www.youtube.com/@WTA/videos"
 NCAAM_PLAYLISTS="https://www.youtube.com/playlist?list=PL2RRF9GtC9s1v7L7tO5Astcl4Z8xq3BqQ,https://youtube.com/playlist?list=PLn3nHXu50t5zIzgZhRCXRsZcRIfapIxEV,https://youtube.com/playlist?list=PLhh7fyF6r5qVV2_RonsHodwkwe-GGt_Jl,https://youtube.com/playlist?list=PLSrXjFYZsRuMeW1ttMkXz4cQy9bap9fIB,https://youtube.com/playlist?list=PLmkjXprBSRGMmLrdClEpgvhPQ2DijUXG6,https://youtube.com/playlist?list=PL1Vg1LQKb_yhAKOVNRK2hCBmYuDQdf1K6,https://youtube.com/playlist?list=PLSoN6Th-EepNAj-4G-KbtcJB4w3Q__KOb"
 LIV_PLAYLIST="https://www.youtube.com/playlist?list=PLoWyc6xDZR3XkJnpIwPJfcMeO9bThLvsV"
 
@@ -154,6 +155,30 @@ run_match_array_league() {
     --titleMustInclude "$title_filter"
 }
 
+run_match_array_league_channel() {
+  local json_file="$1"
+  local league_key="$2"
+  local channel_url="$3"
+  local league_name="$4"
+  local title_filter="$5"
+  local run_date="$6"
+
+  echo ""
+  echo "[highlights] Matching $league_name videos from channel for selected league entry"
+
+  if [[ ! -s "$json_file" ]]; then
+    echo "[highlights] Skipping $league_name: JSON file is missing or empty ($json_file)"
+    return 0
+  fi
+
+  run_matcher_cmd "$league_name" env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+    --json "$json_file" \
+    --leagueKey "$league_key" \
+    --channelUrl "$channel_url" \
+    --date "$run_date" \
+    --titleMustInclude "$title_filter"
+}
+
 run_match "$ROOT_DIR/recaps-manual/daily/nba.json" "$NBA_PLAYLIST" "NBA"
 run_match "$ROOT_DIR/recaps-manual/daily/nhl.json" "$NHL_PLAYLIST" "NHL"
 run_match_with_filter "$ROOT_DIR/recaps-manual/daily/ncaam.json" "$NCAAM_PLAYLISTS" "NCAAM" "basketball"
@@ -164,6 +189,7 @@ run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/seriea.json" "$SE
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/bundesliga.json" "$BUNDESLIGA_CHANNEL_URL" "Bundesliga" "bundesliga highlights"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/laliga.json" "$LALIGA_CHANNEL_URL" "LaLiga" "laliga highlights"
 run_match_array_league "$ROOT_DIR/recaps-manual/daily/oneperleague.json" "LIV" "$LIV_PLAYLIST" "LIV Golf" "liv golf" "$TODAY_DATE"
+run_match_array_league_channel "$ROOT_DIR/recaps-manual/daily/oneperleague.json" "WTA" "$WTA_CHANNEL_URL" "WTA" "wta" "$TODAY_DATE"
 
 echo ""
 echo "Done. Updated files:"
@@ -176,7 +202,7 @@ echo "- recaps-manual/daily/facup.json"
 echo "- recaps-manual/daily/seriea.json"
 echo "- recaps-manual/daily/bundesliga.json"
 echo "- recaps-manual/daily/laliga.json"
-echo "- recaps-manual/daily/oneperleague.json (LIV entry)"
+echo "- recaps-manual/daily/oneperleague.json (LIV and WTA entries)"
 
 if [[ "$FAILED_MATCHES" -gt 0 ]]; then
   echo ""
