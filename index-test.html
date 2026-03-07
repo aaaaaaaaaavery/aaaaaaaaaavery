@@ -11,6 +11,10 @@
 
   <meta name="robots" content="noindex,nofollow" />
   <style>
+    :root {
+      --header-h: 0px;
+    }
+
     .brief-collapsed {
       display: -webkit-box;
       line-clamp: 3;
@@ -21,7 +25,7 @@
   </style>
 </head>
 <body class="min-h-screen overflow-x-hidden bg-gray-100 font-sans text-gray-800 antialiased">
-  <header class="sticky top-0 z-20 border-b border-gray-200 bg-white px-2 py-2 sm:px-4 sm:py-3 md:px-6">
+  <header id="appHeader" class="sticky top-0 z-20 border-b border-gray-200 bg-white px-2 py-2 sm:px-4 sm:py-3 md:px-6">
     <div class="mx-auto flex max-w-none items-center justify-between gap-3">
       <div class="flex min-w-0 items-center gap-3">
         <img
@@ -34,9 +38,9 @@
     </div>
   </header>
 
-  <div class="flex w-full max-w-full overflow-x-hidden bg-white text-gray-800">
-    <aside class="hidden md:sticky md:top-[58px] md:flex md:h-[calc(100vh-58px)] md:w-[34rem] md:shrink-0 md:flex-col md:overflow-hidden md:border-r md:border-gray-200 md:bg-white md:shadow-sm">
-      <div class="grid min-h-0 flex-1 grid-cols-[225px_minmax(0,1fr)]">
+  <div class="flex w-full max-w-full items-start overflow-x-hidden bg-white text-gray-800">
+    <aside class="hidden md:sticky md:top-0 md:flex md:h-[calc(100vh-var(--header-h))] md:w-[34rem] md:shrink-0 md:self-start md:flex-col md:overflow-hidden md:border-r md:border-gray-200 md:bg-white md:shadow-sm">
+      <div class="grid min-h-0 flex-1 content-start items-stretch grid-cols-[225px_minmax(0,1fr)]">
         <section class="flex min-h-0 flex-col border-r border-gray-200">
           <div class="border-b border-gray-200 p-3">
             <label for="leagueFilter" class="mb-2 block text-xs font-semibold uppercase tracking-wide text-gray-500">Leagues</label>
@@ -252,9 +256,15 @@
     const emptyState = document.getElementById("emptyState");
     const errorState = document.getElementById("errorState");
     const errorText = document.getElementById("errorText");
+    const appHeader = document.getElementById("appHeader");
 
     function now() {
       return Date.now();
+    }
+
+    function syncHeaderHeightVar() {
+      const h = appHeader ? Math.ceil(appHeader.getBoundingClientRect().height || 0) : 0;
+      document.documentElement.style.setProperty("--header-h", `${h}px`);
     }
 
     function getTodayDateKey() {
@@ -2208,6 +2218,7 @@
 
     // ===== Start =====
     async function init() {
+      syncHeaderHeightVar();
       state.isAdminMode = detectAdminMode();
       const loadedFromFile = await loadManualPicksFromFile();
       if (!loadedFromFile) {
@@ -2223,6 +2234,7 @@
     }
 
     window.addEventListener("resize", () => {
+      syncHeaderHeightVar();
       syncMobileLeagueStripViewportWidth();
       runLayoutDebug();
     });
