@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-06",
+  "date": "2026-03-07",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "nba",
-      "gameId": "401810759",
-      "headline": "Wembanyama dominates again as Spurs complete season sweep of Pistons",
-      "scoreLine": "SAS 121 - DET 106"
+      "leagueKey": "wbc",
+      "gameId": "788128",
+      "headline": "USA's star power shows late after Brazil hangs around",
+      "scoreLine": "USA 15 - BRA 5"
     },
     {
       "rank": 2,
       "leagueKey": "nhl",
-      "gameId": "401803333",
-      "headline": "Panarin's first Kings goal sparks needed win in Smith's early tenure",
-      "scoreLine": "LAK 5 - NYI 3"
+      "gameId": "401803335",
+      "headline": "Colorado stuns Dallas late, then wins shootout to end Stars' 10-game heater",
+      "scoreLine": "COL 5 - DAL 4"
     },
     {
       "rank": 3,
-      "leagueKey": "nba",
-      "gameId": "401810761",
-      "headline": "LeBron sets another record, but Jokic and Murray carry Denver past Lakers",
-      "scoreLine": "DEN 120 - LAL 113"
+      "leagueKey": "facup",
+      "gameId": "20260307-wolves-liverpool",
+      "headline": "Robertson leads Liverpool's cup response as Reds knock out Wolves",
+      "scoreLine": "WOL 1 - LIV 3"
     },
     {
       "rank": 4,
-      "leagueKey": "premierleague",
-      "gameId": "740884",
-      "headline": "Van de Ven red card sparks Spurs collapse as Palace pile on relegation pressure",
-      "scoreLine": "CRY 3 - TOT 1"
+      "leagueKey": "nhl",
+      "gameId": "401803334",
+      "headline": "Tkachuk's hat trick halts Florida skid and keeps faint playoff hopes alive",
+      "scoreLine": "FLA 3 - DET 1"
     },
     {
       "rank": 5,
-      "leagueKey": "nba",
-      "gameId": "401810755",
-      "headline": "Ace Bailey erupts for 32 as Jazz spoil Trae Young's Washington debut",
-      "scoreLine": "UTA 122 - WAS 112"
+      "leagueKey": "ligue1",
+      "gameId": "20260306-psg-monaco",
+      "headline": "Monaco punish shaky PSG to win 3-1 before Chelsea showdown",
+      "scoreLine": "PSG 1 - MON 3"
     },
     {
       "rank": 6,
-      "leagueKey": "ncaam",
-      "gameId": "401825560",
-      "headline": "Michigan vs Iowa: Morez Johnson leads the story as conference race pressure builds",
-      "scoreLine": "MIC 71 - IOW 68"
+      "leagueKey": "nhl",
+      "gameId": "401803339",
+      "headline": "Wild blitz Vegas in a three-minute burst and ride Gustavsson to road win",
+      "scoreLine": "MIN 4 - VGK 2"
     },
     {
       "rank": 7,
-      "leagueKey": "wbc",
-      "gameId": "788116",
-      "headline": "Australia moves to 2-0 as Curtis Mead's three-run shot sinks Czechia",
-      "scoreLine": "AUS 5 - CZE 1"
+      "leagueKey": "laliga",
+      "gameId": "20260306-celta-realmadrid",
+      "headline": "Valverde's stoppage-time winner saves Madrid from another title-race slip",
+      "scoreLine": "CEL 1 - RMA 2"
     },
     {
       "rank": 8,
-      "leagueKey": "nba",
-      "gameId": "401810758",
-      "headline": "Edwards powers Wolves to fifth straight as Minnesota grabs West positioning",
-      "scoreLine": "MIN 115 - TOR 107"
+      "leagueKey": "ncaam",
+      "gameId": "401822972",
+      "headline": "St. John's grinds past Seton Hall to clinch share of Big East crown",
+      "scoreLine": "STJ 72 - SHU 65"
     },
     {
       "rank": 9,
-      "leagueKey": "nhl",
-      "gameId": "401803331",
-      "headline": "Hellebuyck steadies Jets as Lightning drop fourth straight",
-      "scoreLine": "WPG 4 - TBL 1"
+      "leagueKey": "ncaam",
+      "gameId": "401814601",
+      "headline": "Miami (Ohio) finishes perfect regular season at 31-0 after OT thriller",
+      "scoreLine": "M-OH 110 - OHIO 108"
     },
     {
       "rank": 10,
-      "leagueKey": "nhl",
-      "gameId": "401803332",
-      "headline": "Cozens breaks tie, and surging Senators keep East wild-card pressure on",
-      "scoreLine": "OTT 4 - CGY 1"
+      "leagueKey": "bundesliga",
+      "gameId": "20260306-bayern-gladbach",
+      "headline": "Diaz sparks Kane-less Bayern as leaders stretch cushion to 14 points",
+      "scoreLine": "BAY 4 - BMG 1"
     }
   ],
   "top10": [
-    "Wembanyama dominates again as Spurs complete season sweep of Pistons",
-    "Panarin's first Kings goal sparks needed win in Smith's early tenure",
-    "LeBron sets another record, but Jokic and Murray carry Denver past Lakers",
-    "Van de Ven red card sparks Spurs collapse as Palace pile on relegation pressure",
-    "Ace Bailey erupts for 32 as Jazz spoil Trae Young's Washington debut",
-    "Michigan vs Iowa: Morez Johnson leads the story as conference race pressure builds",
-    "Australia moves to 2-0 as Curtis Mead's three-run shot sinks Czechia",
-    "Edwards powers Wolves to fifth straight as Minnesota grabs West positioning",
-    "Hellebuyck steadies Jets as Lightning drop fourth straight",
-    "Cozens breaks tie, and surging Senators keep East wild-card pressure on"
+    "USA's star power shows late after Brazil hangs around",
+    "Colorado stuns Dallas late, then wins shootout to end Stars' 10-game heater",
+    "Robertson leads Liverpool's cup response as Reds knock out Wolves",
+    "Tkachuk's hat trick halts Florida skid and keeps faint playoff hopes alive",
+    "Monaco punish shaky PSG to win 3-1 before Chelsea showdown",
+    "Wild blitz Vegas in a three-minute burst and ride Gustavsson to road win",
+    "Valverde's stoppage-time winner saves Madrid from another title-race slip",
+    "St. John's grinds past Seton Hall to clinch share of Big East crown",
+    "Miami (Ohio) finishes perfect regular season at 31-0 after OT thriller",
+    "Diaz sparks Kane-less Bayern as leaders stretch cushion to 14 points"
   ],
   "newsBriefing": "Today's top stories span blockbuster NFL moves, standout performances and a major college-sports policy push. The Raiders agreed to send Maxx Crosby to the Ravens for 2026 and 2027 first-round picks, while the Bears also stayed active by agreeing to acquire center Garrett Bradbury from the Patriots for a 2027 fifth-rounder. In college hoops, No. 19 Miami (Ohio) finished the regular season as Division I men's lone unbeaten team at 31-0 after a 110-108 overtime win at Ohio, and Vanderbilt women's coach Shea Ralph was ejected in an 89-78 SEC quarterfinal loss to Ole Miss that likely dented the Commodores' No. 1 seed hopes. In basketball and baseball spotlight games, Jayson Tatum returned from his Achilles injury with 15 points in Boston's 120-100 win over Dallas, Victor Wembanyama led San Antonio's 25-point comeback over the Clippers and called it one of the best wins of his life, and Aaron Judge homered as Team USA opened the World Baseball Classic with a 15-5 rout of Brazil. Off the field, President Donald Trump said he plans to issue an executive order within a week after a White House roundtable on NIL, athlete status and the broader economics of college sports.",
-  "updatedAt": "2026-03-06T15:58:05.160Z"
+  "updatedAt": "2026-03-07T14:52:39.674Z"
 }
