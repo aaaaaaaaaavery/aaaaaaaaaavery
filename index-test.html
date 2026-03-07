@@ -64,19 +64,19 @@
 
     <div class="flex min-h-screen min-w-0 flex-1 flex-col overflow-x-hidden">
       <main class="min-w-0 flex-1 overflow-x-hidden p-1 sm:p-3 md:p-6">
-        <div class="mx-auto grid w-full min-w-0 max-w-none gap-2 overflow-x-hidden md:max-w-7xl md:gap-4">
-          <section class="space-y-2 md:hidden">
-            <div class="grid min-w-0 grid-cols-[minmax(0,1fr)_58px] gap-1.5">
-              <div class="min-w-0 max-w-full rounded-md border border-gray-200 bg-white p-1 shadow-sm">
-                <div id="mobileLeagueStrip" class="flex w-full max-w-full items-stretch gap-2 overflow-x-auto overflow-y-hidden whitespace-nowrap pr-1 touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"></div>
+        <div id="contentGrid" class="mx-auto grid w-full min-w-0 max-w-none gap-2 overflow-x-hidden md:max-w-7xl md:gap-4">
+          <section class="w-full min-w-0 max-w-full space-y-2 overflow-x-hidden md:hidden">
+            <div id="mobileLeagueRow" class="grid w-full min-w-0 max-w-full grid-cols-[minmax(0,1fr)_58px] items-stretch gap-1.5 overflow-hidden">
+              <div id="mobileLeagueStripWrap" class="min-w-0 max-w-full overflow-hidden rounded-md border border-gray-200 bg-white p-1 shadow-sm">
+                <div id="mobileLeagueStrip" data-intentional-x-scroll="1" class="w-full max-w-full min-w-0 overflow-x-auto overflow-y-hidden pr-1 touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"></div>
               </div>
-              <button id="mobileShowAllLeaguesBtn" type="button" class="rounded-md border border-gray-200 bg-white px-1 text-[9px] font-semibold text-gray-600 shadow-sm transition-colors hover:bg-gray-100">
+              <button id="mobileShowAllLeaguesBtn" type="button" class="w-[58px] shrink-0 rounded-md border border-gray-200 bg-white px-1 text-[9px] font-semibold text-gray-600 shadow-sm transition-colors hover:bg-gray-100">
                 Show all
               </button>
             </div>
 
-            <div class="min-w-0 max-w-full rounded-md border border-gray-200 bg-white p-1 shadow-sm">
-              <div id="mobileHeadlineStrip" class="flex w-full max-w-full items-stretch gap-2 overflow-x-auto overflow-y-hidden whitespace-nowrap pr-1 touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"></div>
+            <div class="w-full min-w-0 max-w-full overflow-hidden rounded-md border border-gray-200 bg-white p-1 shadow-sm">
+              <div id="mobileHeadlineStrip" data-intentional-x-scroll="1" class="w-full max-w-full min-w-0 overflow-x-auto overflow-y-hidden pr-1 touch-pan-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"></div>
             </div>
           </section>
 
@@ -236,6 +236,8 @@
     const leagueFilter = document.getElementById("leagueFilter");
     const leagueNav = document.getElementById("leagueNav");
     const headlineNav = document.getElementById("headlineNav");
+    const mobileLeagueRow = document.getElementById("mobileLeagueRow");
+    const mobileLeagueStripWrap = document.getElementById("mobileLeagueStripWrap");
     const mobileLeagueStrip = document.getElementById("mobileLeagueStrip");
     const mobileHeadlineStrip = document.getElementById("mobileHeadlineStrip");
     const mobileShowAllLeaguesBtn = document.getElementById("mobileShowAllLeaguesBtn");
@@ -306,6 +308,8 @@
         if (!(el instanceof HTMLElement)) continue;
         const style = window.getComputedStyle(el);
         if (style.display === "none") continue;
+        if (el.dataset.intentionalXScroll === "1") continue;
+        if (el.closest("[data-intentional-x-scroll='1']")) continue;
         if (el.scrollWidth > el.clientWidth + 2) {
           overflow.push(el);
         }
@@ -319,13 +323,33 @@
       const leagueStripClient = mobileLeagueStrip ? mobileLeagueStrip.clientWidth : 0;
       const leagueStripScroll = mobileLeagueStrip ? mobileLeagueStrip.scrollWidth : 0;
       const leagueCanScroll = leagueStripScroll > leagueStripClient + 2;
+      const leagueStripParentClient = mobileLeagueStrip?.parentElement ? mobileLeagueStrip.parentElement.clientWidth : 0;
+      const leagueStripParentScroll = mobileLeagueStrip?.parentElement ? mobileLeagueStrip.parentElement.scrollWidth : 0;
+      const leagueRowClient = mobileLeagueRow ? mobileLeagueRow.clientWidth : 0;
+      const leagueRowScroll = mobileLeagueRow ? mobileLeagueRow.scrollWidth : 0;
+
+      const firstOverflow = overflow[0] || null;
+      const firstOverflowLabel = firstOverflow
+        ? `${firstOverflow.tagName.toLowerCase()}#${firstOverflow.id || '-'}${firstOverflow.className ? `.${String(firstOverflow.className).replace(/\s+/g, '.')}` : ''}`
+        : 'none';
+      const firstOverflowDims = firstOverflow
+        ? `cw=${firstOverflow.clientWidth} sw=${firstOverflow.scrollWidth}`
+        : '';
+      const overflowList = overflow
+        .slice(0, 3)
+        .map((el) => `${el.tagName.toLowerCase()}#${el.id || '-'}(cw=${el.clientWidth},sw=${el.scrollWidth})`)
+        .join(", ");
 
       layoutDebugPanel.classList.remove("hidden");
       layoutDebugPanel.textContent = [
         `debugLayout=1`,
         `viewport=${viewport}px doc=${docWidth}px body=${bodyWidth}px`,
         `leagueStrip client=${leagueStripClient}px scroll=${leagueStripScroll}px canScroll=${leagueCanScroll}`,
+        `leagueStripParent client=${leagueStripParentClient}px scroll=${leagueStripParentScroll}px`,
+        `leagueRow client=${leagueRowClient}px scroll=${leagueRowScroll}px`,
         `overflowNodes=${overflow.length}`,
+        `firstOverflow=${firstOverflowLabel} ${firstOverflowDims}`,
+        `overflowTop=${overflowList || 'none'}`,
       ].join(" | ");
     }
 
@@ -772,9 +796,48 @@
       }
     }
 
+    function syncMobileLeagueStripViewportWidth() {
+      if (!mobileLeagueStrip) return;
+
+      const viewportWidth = Math.floor(document.documentElement.clientWidth || window.innerWidth || 0);
+      const showAllWidth = mobileShowAllLeaguesBtn
+        ? Math.ceil(mobileShowAllLeaguesBtn.getBoundingClientRect().width || 0)
+        : 58;
+      const rowParentWidth = mobileLeagueRow?.parentElement
+        ? Math.floor(mobileLeagueRow.parentElement.getBoundingClientRect().width || 0)
+        : 0;
+      const outerPadding = 16; // Main mobile gutters + row spacing safety.
+      const gap = 6; // Tailwind gap-1.5
+      const rowWidth = Math.max(
+        140,
+        Math.min(viewportWidth - outerPadding, rowParentWidth > 0 ? rowParentWidth : viewportWidth - outerPadding)
+      );
+      const wrapWidth = Math.max(72, rowWidth - showAllWidth - gap);
+      const stripWidth = Math.max(64, wrapWidth - 8); // stripWrap has p-1 (8px total)
+
+      if (mobileLeagueRow) {
+        mobileLeagueRow.style.width = `${rowWidth}px`;
+        mobileLeagueRow.style.maxWidth = `${rowWidth}px`;
+        mobileLeagueRow.style.gridTemplateColumns = `minmax(0, ${wrapWidth}px) ${showAllWidth}px`;
+      }
+
+      if (mobileLeagueStripWrap) {
+        mobileLeagueStripWrap.style.width = `${wrapWidth}px`;
+        mobileLeagueStripWrap.style.maxWidth = `${wrapWidth}px`;
+      }
+
+      mobileLeagueStrip.style.width = `${stripWidth}px`;
+      mobileLeagueStrip.style.maxWidth = `${stripWidth}px`;
+    }
+
     function buildMobileLeagueStrip(visibleLeagues) {
       if (!mobileLeagueStrip) return;
+      syncMobileLeagueStripViewportWidth();
       clear(mobileLeagueStrip);
+
+      const track = document.createElement("div");
+      track.className = "flex w-max min-w-full items-stretch gap-2 whitespace-nowrap";
+      mobileLeagueStrip.appendChild(track);
 
       visibleLeagues.forEach((lg) => {
         const isActive = lg.leagueKey === state.currentLeagueKey;
@@ -808,7 +871,7 @@
           await goToLeagueByIndex(idx, { smooth: true, updateHash: true });
         });
 
-        mobileLeagueStrip.appendChild(btn);
+        track.appendChild(btn);
       });
 
       const active = mobileLeagueStrip.querySelector(`button[data-league-key="${CSS.escape(String(state.currentLeagueKey || ""))}"]`);
@@ -816,6 +879,7 @@
         active.scrollIntoView({ behavior: "auto", block: "nearest", inline: "center" });
       }
 
+      syncMobileLeagueStripViewportWidth();
       runLayoutDebug();
     }
 
@@ -865,11 +929,15 @@
       if (!mobileHeadlineStrip) return;
       clear(mobileHeadlineStrip);
 
+      const track = document.createElement("div");
+      track.className = "flex w-max min-w-full items-stretch gap-2 whitespace-nowrap";
+      mobileHeadlineStrip.appendChild(track);
+
       if (!cards.length) {
         const empty = document.createElement("div");
         empty.className = "rounded-md border border-gray-200 bg-white px-3 py-2 text-xs text-gray-500";
         empty.textContent = "No headlines available";
-        mobileHeadlineStrip.appendChild(empty);
+        track.appendChild(empty);
         return;
       }
 
@@ -894,7 +962,7 @@
           highlightHeadlineButtons();
         });
 
-        mobileHeadlineStrip.appendChild(btn);
+        track.appendChild(btn);
       });
 
       const activeId = state.activeGameByLeague.get(currentKey) || cards[0]?.dataset?.gameId;
@@ -2150,10 +2218,12 @@
       state.filteredLeagues = state.leagues.slice();
       await rebuildStream();
       updateModeAndStatus();
+      syncMobileLeagueStripViewportWidth();
       runLayoutDebug();
     }
 
     window.addEventListener("resize", () => {
+      syncMobileLeagueStripViewportWidth();
       runLayoutDebug();
     });
 
