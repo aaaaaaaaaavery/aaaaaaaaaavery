@@ -2,1152 +2,848 @@
   "leagueName": "Men's college basketball",
   "leagueKey": "NCAAM",
   "sourceType": "console_recaps",
-  "newsBriefing": "",
+  "leagueBriefing": "Friday delivered conference-race stakes and tournament chaos across men's college hoops: St. John's locked up at least a share of the Big East title, Miami (Ohio) finished a perfect regular season, and multiple conference tournaments opened with upset pressure and late-game drama.",
   "games": [
     {
-      "id": "401825560",
+      "id": "401822972",
       "teams": {
-        "away": "Michigan",
-        "home": "Iowa"
+        "away": "St. John's",
+        "home": "Seton Hall"
       },
-      "headline": "Morez Johnson Jr",
-      "score": "MIC 71 - IOW 68",
-      "brief": "Morez Johnson Jr. and Yaxel Lendeborg scored 16 points apiece, and Aday Mara had two tiebreaking shots in the final 1:22 as No. 3 Michigan defeated Iowa 71-68 on Thursday night.",
+      "headline": "St. John's grinds past Seton Hall to clinch share of Big East crown",
+      "score": "STJ 72 - SHU 65",
+      "brief": "No. 18 St. John's had to win this one the hard way, but the Red Storm still got the job done and secured at least a share of a second straight Big East regular-season title. Zuby Ejiofor steadied the offense late after foul trouble, and Rick Pitino's group kept control in crunch time.",
       "bullets": [
-        "Morez Johnson Jr.",
-        "and Yaxel Lendeborg scored 16 points apiece, and Aday Mara had two tiebreaking shots in the final 1:22 as No. 3 Michigan defeated Iowa 71-68 on Thursday night.",
-        "The Wolverines (28-2, 18-1 Big Ten) were held 18 points below their season scoring average, but managed to hold off the Hawkeyes (20-10, 10-9) in the closing seconds.",
-        "Iowa went on an 11-1 run to tie the game at 64 with 1:56 to play before Mara banked in a shot before the shot clock expired, putting Michigan in front again."
+        "Zuby Ejiofor scored 21 points, including 12 in the second half.",
+        "St. John's improved to 25-6 overall and 18-2 in Big East play.",
+        "The Red Storm have back-to-back regular-season Big East titles for the first time in 40 years.",
+        "Seton Hall's Adam Clark scored 15 points; the Pirates fell to 0-6 against the league's top three teams.",
+        "St. John's shot 65.2% in the second half."
       ],
-      "context": null,
+      "context": "St. John's is locked in as the top seed in the Big East Tournament at Madison Square Garden and can still win the regular-season title outright.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825560/michigan-iowa"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401822972/st-johns-seton-hall"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "2U5Mtiy-LCU",
-          "title": "Michigan at Iowa | HIGHLIGHTS | Big Ten Men's Basketball | 03/05/2026",
-          "url": "https://www.youtube.com/watch?v=2U5Mtiy-LCU",
-          "embedUrl": "https://www.youtube.com/embed/2U5Mtiy-LCU",
-          "publishedAt": "2026-03-06T03:27:26Z",
-          "matchScore": 120
-        }
-      ]
-    },
-    {
-      "id": "401825561",
-      "teams": {
-        "away": "Rutgers",
-        "home": "Michigan State"
-      },
-      "headline": "Jeremy Fears had 21 points and eight assists and Coen Carr also scored 21, helping No",
-      "score": "RUT 91 - MS 87",
-      "brief": "Jeremy Fears had 21 points and eight assists and Coen Carr also scored 21, helping No. 8 Michigan State hold off Rutgers 91-87 on Thursday night. The Spartans (25-5, 15-4 Big Ten) will close the regular season on the road against rival and third-ranked Michigan on Sunday.",
-      "bullets": [
-        "Jeremy Fears had 21 points and eight assists and Coen Carr also scored 21, helping No. 8 Michigan State hold off Rutgers 91-87 on Thursday night.",
-        "The Spartans (25-5, 15-4 Big Ten) will close the regular season on the road against rival and third-ranked Michigan on Sunday.",
-        "Michigan State has won five straight games to secure a top-four seed in next week's Big Ten Tournament and a double-bye into the quarterfinals.",
-        "The Scarlet Knights (12-18, 5-14) have slumped toward the bottom of the 18-team conference."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825561/rutgers-michigan-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "oI0Tlqm7hx8",
-          "title": "Rutgers at Michigan State | HIGHLIGHTS | Big Ten Men's Basketball | 03/05/2026",
-          "url": "https://www.youtube.com/watch?v=oI0Tlqm7hx8",
-          "embedUrl": "https://www.youtube.com/embed/oI0Tlqm7hx8",
-          "publishedAt": "2026-03-06T03:35:45Z",
-          "matchScore": 120
-        }
-      ]
-    },
-    {
-      "id": "401851485",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851485/drake-s-illinois"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401829290",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401829290/sc-state-nc-central"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401851698",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851698/james-madison-southern-miss"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401851454",
-      "teams": {
-        "away": "Sacred",
-        "home": "Heart Iona"
-      },
-      "headline": "Nyle Ralph-Beyer had 26 points in Sacred Heart's 91-80 win against Iona on Thursday in the Metro Atlantic Athletic Conference Tournament",
-      "score": "SAC 91 - HI 80",
-      "brief": "Nyle Ralph-Beyer had 26 points in Sacred Heart's 91-80 win against Iona on Thursday in the Metro Atlantic Athletic Conference Tournament. Ralph-Beyer shot 8 of 10 from the field, including 6 for 7 from 3-point range, and went 4 for 5 from the line for the Pioneers (14-18).",
-      "bullets": [
-        "Nyle Ralph-Beyer had 26 points in Sacred Heart's 91-80 win against Iona on Thursday in the Metro Atlantic Athletic Conference Tournament.",
-        "Ralph-Beyer shot 8 of 10 from the field, including 6 for 7 from 3-point range, and went 4 for 5 from the line for the Pioneers (14-18).",
-        "Yann Farell scored 19 points and added 10 rebounds.",
-        "Anquan Hill shot 5 for 11 and 7 of 8 from the free-throw line for 19 points."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851454/sacred-heart-iona"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851620",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851620/oral-roberts-n-dakota-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401851546",
-      "teams": {
-        "away": "Holy",
-        "home": "Cross Lehigh"
-      },
-      "headline": "Nasir Whitlock scored the game-winning buzzer-beater from half court and racked up 29 total points to lead Lehigh past Holy Cross 69-66 on Thursday in the quarterfinals of the Patriot League Tournament",
-      "score": "TPTLL 69 - HC 66",
-      "brief": "Nasir Whitlock scored the game-winning buzzer-beater from half court and racked up 29 total points to lead Lehigh past Holy Cross 69-66 on Thursday in the quarterfinals of the Patriot League Tournament. Whitlock, who caught the inbound pass with 2.1 left on the clock, dribbled up two steps before releasing the game-winning buzzer beater.",
-      "bullets": [
-        "Nasir Whitlock scored the game-winning buzzer-beater from half court and racked up 29 total points to lead Lehigh past Holy Cross 69-66 on Thursday in the quarterfinals of the Patriot League Tournament.",
-        "Whitlock, who caught the inbound pass with 2.1 left on the clock, dribbled up two steps before releasing the game-winning buzzer beater.",
-        "He shot 11 of 24 from the field, including 4 for 6 from 3-point range, and went 3 for 6 from the line for the Mountain Hawks (16-16).",
-        "Hank Alvey finished 6 of 9 from the floor to add 14 points."
-      ],
-      "context": "move on to play No.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851546/holy-cross-lehigh"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851545",
-      "teams": {
-        "away": "Loyola",
-        "home": "Maryland Colgate"
-      },
-      "headline": "Ben Tweedy had 28 points in Colgate's 90-77 win against Loyola (MD) on Thursday in the Patriot League Tournament quarterfinals",
-      "score": "LOY 90 - MC 77",
-      "brief": "Ben Tweedy had 28 points in Colgate's 90-77 win against Loyola (MD) on Thursday in the Patriot League Tournament quarterfinals. Tweedy also contributed five rebounds for the Raiders (18-14).",
-      "bullets": [
-        "Ben Tweedy had 28 points in Colgate's 90-77 win against Loyola (MD) on Thursday in the Patriot League Tournament quarterfinals.",
-        "Tweedy also contributed five rebounds for the Raiders (18-14).",
-        "Jalen Cox scored 21 points and added 11 assists and five rebounds.",
-        "Andrew Alekseyenko shot 7 of 14 from the field for 17 points."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851545/loyola-md-colgate"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851544",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851544/american-boston-u"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401851543",
-      "teams": {
-        "away": "Bucknell",
-        "home": "Navy"
-      },
-      "headline": "Cam Cole led Navy past Bucknell on Thursday with 16 points off the bench in a 74-69 win in the quarterfinals of the Patriot League Tournament",
-      "score": "BUC 74 - NAV 69",
-      "brief": "Cam Cole led Navy past Bucknell on Thursday with 16 points off the bench in a 74-69 win in the quarterfinals of the Patriot League Tournament. Cole added five rebounds and three blocks for the Midshipmen (26-6).",
-      "bullets": [
-        "Cam Cole led Navy past Bucknell on Thursday with 16 points off the bench in a 74-69 win in the quarterfinals of the Patriot League Tournament.",
-        "Cole added five rebounds and three blocks for the Midshipmen (26-6).",
-        "Jinwoo Kim scored 14 points, going 5 of 8 (4 for 7 from 3-point range).",
-        "Austin Benigni had 14 points and shot 4 for 8 (2 for 3 from 3-point range) and 4 of 4 from the free-throw line."
-      ],
-      "context": "move on to play No.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851543/bucknell-navy"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851526",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851526/e-illinois-ut-martin"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401851486",
-      "teams": {
-        "away": "Indiana",
-        "home": "State Valparaiso"
-      },
-      "headline": "Rakim Chaney had 18 points in Valparaiso's 63-62 win over Indiana State on Thursday in the first round of the Missouri Valley Conference Tournament",
-      "score": "IND 63 - SV 62",
-      "brief": "Rakim Chaney had 18 points in Valparaiso's 63-62 win over Indiana State on Thursday in the first round of the Missouri Valley Conference Tournament. Chaney added five rebounds, five assists, and three steals for the Beacons (18-14).",
-      "bullets": [
-        "Rakim Chaney had 18 points in Valparaiso's 63-62 win over Indiana State on Thursday in the first round of the Missouri Valley Conference Tournament.",
-        "Chaney added five rebounds, five assists, and three steals for the Beacons (18-14).",
-        "JT Pettigrew added 14 points while going 5 of 8 and 3 of 6 from the free-throw line while they also had seven rebounds.",
-        "Brody Whitaker finished with 10 points."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851486/indiana-st-valparaiso"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401828259",
-      "teams": {
-        "away": "Tulane",
-        "home": "Temple"
-      },
-      "headline": "Aiden Tobiason had 21 points in Temple's 89-60 win against Tulane on Thursday",
-      "score": "TUL 89 - TEM 60",
-      "brief": "Aiden Tobiason had 21 points in Temple's 89-60 win against Tulane on Thursday. Tobiason also added seven rebounds for the Owls (16-14, 8-9 American Athletic Conference).",
-      "bullets": [
-        "Aiden Tobiason had 21 points in Temple's 89-60 win against Tulane on Thursday.",
-        "Tobiason also added seven rebounds for the Owls (16-14, 8-9 American Athletic Conference).",
-        "Derrian Ford added 16 points while going 6 of 11 from the floor, including 2 for 4 from 3-point range, and 2 for 3 from the line while they also had five assists.",
-        "Gavin Griffiths finished with 15 points."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828259/tulane-temple"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401828257",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828257/tulsa-east-carolina"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401804962",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804962/mtsu-fiu"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401804958",
-      "teams": {
-        "away": "Louisiana",
-        "home": "Tech Liberty"
-      },
-      "headline": "AJ Bates' 34 points led Louisiana Tech over Liberty 76-71 on Thursday",
-      "score": "LOU 76 - TL 71",
-      "brief": "AJ Bates' 34 points led Louisiana Tech over Liberty 76-71 on Thursday. Bates added three steals for the Bulldogs (17-13, 10-9 Conference USA).",
-      "bullets": [
-        "AJ Bates' 34 points led Louisiana Tech over Liberty 76-71 on Thursday.",
-        "Bates added three steals for the Bulldogs (17-13, 10-9 Conference USA).",
-        "Avery Thomas II scored 12 points while going 6 of 9 (0 for 3 from 3-point range), and added seven rebounds.",
-        "Jaylen Fenner shot 4 of 6 from the field and 3 of 3 from the free-throw line to finish with 11 points, eight rebounds and two steals."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804958/louisiana-tech-liberty"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401804957",
-      "teams": {
-        "away": "Sam",
-        "home": "Houston Delaware"
-      },
-      "headline": "Justyn Fernandez's 26 points helped Delaware defeat Sam Houston 83-80 on Thursday",
-      "score": "SAM 83 - HD 80",
-      "brief": "Justyn Fernandez's 26 points helped Delaware defeat Sam Houston 83-80 on Thursday. Fernandez went 9 of 20 from the field (6 for 11 from 3-point range) for the Blue Hens (10-20, 6-13 Conference USA).",
-      "bullets": [
-        "Justyn Fernandez's 26 points helped Delaware defeat Sam Houston 83-80 on Thursday.",
-        "Fernandez went 9 of 20 from the field (6 for 11 from 3-point range) for the Blue Hens (10-20, 6-13 Conference USA).",
-        "Christian Bliss scored 22 points and added 10 assists and four steals.",
-        "Jayden Taylor shot 6 of 7 from the field to finish with 12 points, while adding eight rebounds and four blocks."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804957/sam-houston-delaware"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401827126",
-      "teams": {
-        "away": "Bethune",
-        "home": "Florida Am"
-      },
-      "headline": "Jaquan Sanders' 18 points helped Florida A&M defeat Bethune-Cookman 81-77 on Thursday",
-      "score": "BET 81 - FA 77",
-      "brief": "Jaquan Sanders' 18 points helped Florida A&M defeat Bethune-Cookman 81-77 on Thursday. Sanders had seven rebounds for the Rattlers (14-15, 11-7 Southwestern Athletic Conference).",
-      "bullets": [
-        "Jaquan Sanders' 18 points helped Florida A&M defeat Bethune-Cookman 81-77 on Thursday.",
-        "Sanders had seven rebounds for the Rattlers (14-15, 11-7 Southwestern Athletic Conference).",
-        "Tyler Shirley shot 5 of 11 from the field and 7 for 8 from the line to add 17 points.",
-        "Antonio Baker finished with 14 points."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827126/bethune-florida-am"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401828732",
-      "teams": {
-        "away": "Howard",
-        "home": "Norfolk State"
-      },
-      "headline": "Cam Gillus had 22 points in Howard's 84-76 victory over Norfolk State on Thursday",
-      "score": "HOW 84 - NS 76",
-      "brief": "Cam Gillus had 22 points in Howard's 84-76 victory over Norfolk State on Thursday. Gillus shot 7 for 8 (4 for 4 from 3-point range) and 4 of 4 from the free-throw line for the Bison (21-10, 11-3 Mid-Eastern Athletic Conference).",
-      "bullets": [
-        "Cam Gillus had 22 points in Howard's 84-76 victory over Norfolk State on Thursday.",
-        "Gillus shot 7 for 8 (4 for 4 from 3-point range) and 4 of 4 from the free-throw line for the Bison (21-10, 11-3 Mid-Eastern Athletic Conference).",
-        "All five starters for the Bison scored in double figures in their sixth victory in a row.",
-        "Bryce Harris added 18 points while going 6 of 9 and 4 of 6 from the free-throw line while they also had seven rebounds."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828732/howard-norfolk-st"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401827106",
-      "teams": {
-        "away": "Grambling",
-        "home": "Alabama State"
-      },
-      "headline": "Jamil Muttilib had 27 points in Grambling's 65-63 victory against Alabama State on Thursday",
-      "score": "GRA 65 - AS 63",
-      "brief": "Jamil Muttilib had 27 points in Grambling's 65-63 victory against Alabama State on Thursday. Muttilib also contributed five rebounds for the Tigers (13-18, 7-11 Southwestern Athletic Conference).",
-      "bullets": [
-        "Jamil Muttilib had 27 points in Grambling's 65-63 victory against Alabama State on Thursday.",
-        "Muttilib also contributed five rebounds for the Tigers (13-18, 7-11 Southwestern Athletic Conference).",
-        "Roderick Coffee III scored 18 points while going 4 of 12 from the floor, including 2 for 5 from 3-point range, and 8 for 10 from the line, and added seven rebounds.",
-        "Coffee III hit a game-winning pair of free throws with 15 seconds left on the clock."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827106/grambling-alabama-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "oIyOGYjBg90",
-          "title": "Grambling vs. #16 Iowa State Game Highlights | 2025-26 Big 12 Men's Basketball",
-          "url": "https://www.youtube.com/watch?v=oIyOGYjBg90",
-          "embedUrl": "https://www.youtube.com/embed/oIyOGYjBg90",
-          "publishedAt": "2025-11-07T03:18:34Z",
+          "videoId": "Y2Ds3-zjQOg",
+          "title": "Seton Hall vs. Kansas State Game Highlights | 2025-26 Big 12 Men's Basketball",
+          "url": "https://www.youtube.com/watch?v=Y2Ds3-zjQOg",
+          "embedUrl": "https://www.youtube.com/embed/Y2Ds3-zjQOg",
+          "publishedAt": "2025-12-06T23:28:44Z",
           "matchScore": 100
         }
       ]
     },
     {
-      "id": "401827082",
+      "id": "401814601",
       "teams": {
-        "away": "",
-        "home": ""
+        "away": "Miami (Ohio)",
+        "home": "Ohio"
       },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827082/prairie-view-texas-southern"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401823056",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401823056/delaware-st-md-eastern"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401805212",
-      "teams": {
-        "away": "Utah Arlington",
-        "home": "Tarleton State"
-      },
-      "headline": "Cash Chavis' 18 points helped UT Arlington defeat Tarleton State 65-60 on Thursday",
-      "score": "UA 65 - TS 60",
-      "brief": "Cash Chavis' 18 points helped UT Arlington defeat Tarleton State 65-60 on Thursday. Chavis shot 8 for 13, including 2 for 3 from beyond the arc for the Mavericks (16-13, 8-9 Western Athletic Conference).",
+      "headline": "Miami (Ohio) finishes perfect regular season at 31-0 after OT thriller",
+      "score": "M-OH 110 - OHIO 108",
+      "brief": "Miami (Ohio) completed an unbeaten regular season, but it needed another clutch finish to do it. The RedHawks survived a wild overtime game in Athens and closed 31-0, giving the program a historic mark that now shifts pressure to March where the NCAA bid still may require a conference title.",
       "bullets": [
-        "Cash Chavis' 18 points helped UT Arlington defeat Tarleton State 65-60 on Thursday.",
-        "Chavis shot 8 for 13, including 2 for 3 from beyond the arc for the Mavericks (16-13, 8-9 Western Athletic Conference).",
-        "Jordan Lowery scored 16 points while shooting 5 for 11 (2 for 7 from 3-point range) and 4 of 6 from the free-throw line, and added three steals.",
-        "Bahsil Laster shot 11 of 12 from the free-throw line to finish with 11 points, while adding seven rebounds."
+        "Miami (Ohio) became the first unbeaten Division I men's regular-season team since Gonzaga in 2021.",
+        "Eian Elmer posted a career-high 32 points with 12 rebounds.",
+        "Peter Suder scored five points in overtime, including late free throws that put Miami ahead.",
+        "Ohio's Jackson Paveletzke scored a career-high 37 points in the loss.",
+        "Miami finished 18-0 in the MAC and is the top seed in the conference tournament."
       ],
-      "context": null,
+      "context": "The RedHawks have a perfect regular-season résumé, but conference tournament results still likely determine whether they are safely in the NCAA field.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401805212/ut-arlington-tarleton-st"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401804961",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804961/western-ky-missouri-st"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814601/miami-oh-ohio"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "ocwwxBC3ifo",
-          "title": "Baylor Bears vs. Houston Cougars | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=ocwwxBC3ifo",
-          "embedUrl": "https://www.youtube.com/embed/ocwwxBC3ifo",
-          "publishedAt": "2026-03-05T04:51:20Z",
-          "matchScore": 128
-        }
-      ]
-    },
-    {
-      "id": "401851699",
-      "teams": {
-        "away": "Georgia Southern",
-        "home": "Arkansas State"
-      },
-      "headline": "Tyren Moore had 25 points in Georgia Southern's 80-77 victory over Arkansas State on Thursday in the Sun Belt Conference Tournament",
-      "score": "GS 80 - AS 77",
-      "brief": "Tyren Moore had 25 points in Georgia Southern's 80-77 victory over Arkansas State on Thursday in the Sun Belt Conference Tournament. Moore also had four steals for the Eagles (18-15).",
-      "bullets": [
-        "Tyren Moore had 25 points in Georgia Southern's 80-77 victory over Arkansas State on Thursday in the Sun Belt Conference Tournament.",
-        "Moore also had four steals for the Eagles (18-15).",
-        "Alden Applewhite added 16 points while shooting 4 for 9 and 8 of 8 from the free-throw line while they also had six rebounds.",
-        "Tsvet Sotirov finished with 11 points off the bench."
-      ],
-      "context": "move on to play No.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851699/ga-southern-arkansas-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "RZTJ0Yx_4hs",
-          "title": "Southern Utah vs. Arizona State Game Highlights | 2025-26 Big 12 Men’s Basketball",
-          "url": "https://www.youtube.com/watch?v=RZTJ0Yx_4hs",
-          "embedUrl": "https://www.youtube.com/embed/RZTJ0Yx_4hs",
-          "publishedAt": "2025-11-05T04:06:40Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "401851456",
-      "teams": {
-        "away": "Manhattan",
-        "home": "Fairfield"
-      },
-      "headline": "Braden Sparks had 17 points in Fairfield's 71-60 victory against Manhattan on Thursday in the opening round of the Metro Atlantic Athletic Conference Tournament",
-      "score": "MAN 71 - FAI 60",
-      "brief": "Braden Sparks had 17 points in Fairfield's 71-60 victory against Manhattan on Thursday in the opening round of the Metro Atlantic Athletic Conference Tournament. Sparks had five assists for the No. 7 seed Stags (20-11).",
-      "bullets": [
-        "Braden Sparks had 17 points in Fairfield's 71-60 victory against Manhattan on Thursday in the opening round of the Metro Atlantic Athletic Conference Tournament.",
-        "Sparks had five assists for the No. 7 seed Stags (20-11).",
-        "Brandon Benjamin scored 15 points while shooting 6 of 9 from the field, and added nine rebounds and three blocks.",
-        "Tony Williams went 4 of 8 from the field (3 for 5 from 3-point range) to finish with 11 points."
-      ],
-      "context": "advances to face No.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851456/manhattan-fairfield"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401828670",
-      "teams": {
-        "away": "Miss Valley",
-        "home": "State Jackson State"
-      },
-      "headline": "Jayme Mitchell Jr.s 27 points helped Jackson State defeat Mississippi Valley State 85-77 on Thursday",
-      "score": "MV 85 - SJS 77",
-      "brief": "Jayme Mitchell Jr.s 27 points helped Jackson State defeat Mississippi Valley State 85-77 on Thursday. Mitchell added six rebounds for the Tigers (11-20, 10-8 Southwestern Athletic Conference).",
-      "bullets": [
-        "Jayme Mitchell Jr.s 27 points helped Jackson State defeat Mississippi Valley State 85-77 on Thursday.",
-        "Mitchell added six rebounds for the Tigers (11-20, 10-8 Southwestern Athletic Conference).",
-        "Devin Ree scored 17 points while going 4 of 8 from the floor, and 8 for 8 from the line.",
-        "Jalen Tatum shot 2 of 5 from the field and 8 of 9 from the free-throw line to finish with 12 points."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828670/miss-valley-st-jackson-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "UwHrk7dDcg4",
-          "title": "Mississippi Valley State vs. West Virginia Game Highlights | 2025-26 Big 12 Men’s Basketball",
-          "url": "https://www.youtube.com/watch?v=UwHrk7dDcg4",
-          "embedUrl": "https://www.youtube.com/embed/UwHrk7dDcg4",
-          "publishedAt": "2025-12-23T01:59:11Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "401822780",
-      "teams": {
-        "away": "Coppin State",
-        "home": "Morgan State"
-      },
-      "headline": "Alfred Worrell Jr.'s 20 points helped Morgan State defeat Coppin State 70-66 on Thursday",
-      "score": "CS 70 - MS 66",
-      "brief": "Alfred Worrell Jr.'s 20 points helped Morgan State defeat Coppin State 70-66 on Thursday. Worrell had five rebounds and two steals for the Bears (14-15, 10-4 Mid-Eastern Athletic Conference).",
-      "bullets": [
-        "Alfred Worrell Jr.'s 20 points helped Morgan State defeat Coppin State 70-66 on Thursday.",
-        "Worrell had five rebounds and two steals for the Bears (14-15, 10-4 Mid-Eastern Athletic Conference).",
-        "Eugene Alvin scored 14 points and added six rebounds and five blocks.",
-        "Walter Peggs Jr."
-      ],
-      "context": null,
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401822780/coppin-st-morgan-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "EbKljF89HtM",
-          "title": "Florida State vs. Pitt Highlights | 2025-26 ACC Men's Basketball",
-          "url": "https://www.youtube.com/watch?v=EbKljF89HtM",
-          "embedUrl": "https://www.youtube.com/embed/EbKljF89HtM",
-          "publishedAt": "2026-03-05T04:40:45Z",
+          "videoId": "vk45mGN_feE",
+          "title": "#11 Ohio State vs #19 Minnesota Highlights | Women's Basketball | College Basketball 2026",
+          "url": "https://www.youtube.com/watch?v=vk45mGN_feE",
+          "embedUrl": "https://www.youtube.com/embed/vk45mGN_feE",
+          "publishedAt": "2026-03-06T21:16:30Z",
           "matchScore": 121
         }
       ]
     },
     {
-      "id": "401805213",
+      "id": "401851347",
       "teams": {
-        "away": "Utah Valley",
-        "home": "Southern Utah"
+        "away": "Gardner-Webb",
+        "home": "High Point"
       },
-      "headline": "Isaac Davis had 28 points in Utah Valley's 92-88 victory over Southern Utah on Thursday",
-      "score": "UV 92 - SU 88",
-      "brief": "Isaac Davis had 28 points in Utah Valley's 92-88 victory over Southern Utah on Thursday. Davis shot 11 of 16 from the field and 6 for 9 from the line for the Wolverines (23-7, 13-4 Western Athletic Conference).",
-      "bullets": [
-        "Isaac Davis had 28 points in Utah Valley's 92-88 victory over Southern Utah on Thursday.",
-        "Davis shot 11 of 16 from the field and 6 for 9 from the line for the Wolverines (23-7, 13-4 Western Athletic Conference).",
-        "Trevan Leonhardt scored 18 points and added five rebounds and seven assists.",
-        "Jackson Holcombe went 7 of 14 from the field to finish with 14 points and eight rebounds."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
-      "recapStatus": "ok",
+      "recapStatus": "missing_article_text",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401805213/utah-valley-southern-utah"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851347/gardner-webb-high-point"
       },
       "highlights": []
     },
     {
-      "id": "401851745",
+      "id": "401851245",
       "teams": {
-        "away": "Pepperdine",
-        "home": "Portland"
+        "away": "Bellarmine",
+        "home": "Central Arkansas"
       },
-      "headline": "Jermaine Ballisager Webb had 22 points in Portland's 77-68 win against Pepperdine on Thursday in the opening round of the West Coast Conference Tournament",
-      "score": "PEP 77 - POR 68",
-      "brief": "Jermaine Ballisager Webb had 22 points in Portland's 77-68 win against Pepperdine on Thursday in the opening round of the West Coast Conference Tournament. Ballisager Webb also contributed seven rebounds and two blocks for the No. 9 seed Pilots (14-18).",
-      "bullets": [
-        "Jermaine Ballisager Webb had 22 points in Portland's 77-68 win against Pepperdine on Thursday in the opening round of the West Coast Conference Tournament.",
-        "Ballisager Webb also contributed seven rebounds and two blocks for the No. 9 seed Pilots (14-18).",
-        "James O'Donnell shot 8 of 10 from the field to add 16 points.",
-        "Garrett Nuckolls shot 3 of 9 from the field and 3 for 4 from the line to finish with nine points, while adding six rebounds and six assists."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
-      "recapStatus": "ok",
+      "recapStatus": "missing_article_text",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851745/pepperdine-portland"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851245/bellarmine-c-arkansas"
       },
       "highlights": []
     },
     {
-      "id": "401827152",
+      "id": "401851488",
       "teams": {
-        "away": "Arkansas Pine",
-        "home": "Bluff Alcorn State"
+        "away": "Drake",
+        "home": "Belmont"
       },
-      "headline": "Quion Williams had 18 points and 13 rebounds in UAPB's 83-48 victory over Alcorn State on Thursday",
-      "score": "AP 83 - BAS 48",
-      "brief": "Quion Williams had 18 points and 13 rebounds in UAPB's 83-48 victory over Alcorn State on Thursday. Williams added five assists and three steals for the Golden Lions (13-18, 10-8 Southwestern Athletic Conference).",
+      "headline": "No. 9 Drake shocks top-seeded Belmont in MVC tournament stunner",
+      "score": "DRA 100 - BEL 81",
+      "brief": "Drake ripped up the bracket with a historic upset, hammering No. 1 seed Belmont and becoming the first No. 9 seed to beat a top seed in Missouri Valley tournament history. Jalen Quinn's scoring burst and a huge second half turned this into a runaway.",
       "bullets": [
-        "Quion Williams had 18 points and 13 rebounds in UAPB's 83-48 victory over Alcorn State on Thursday.",
-        "Williams added five assists and three steals for the Golden Lions (13-18, 10-8 Southwestern Athletic Conference).",
-        "Jaquan Scott scored 17 points and added seven rebounds.",
-        "Milhan Charles had 15 points and finished 7 of 8 from the field."
+        "Jalen Quinn scored 31 points for Drake.",
+        "Drake became the first No. 9 seed to beat a No. 1 seed in MVC Tournament history.",
+        "Owen Larson added 25 points, 8 rebounds and 8 assists.",
+        "The Bulldogs outscored Belmont by 12 in the second half.",
+        "Belmont entered 26-6 but was overwhelmed after halftime."
       ],
-      "context": null,
+      "context": "After entering the tournament on an eight-game skid, Drake now has back-to-back wins and serious upset momentum.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827152/ar-pine-bluff-alcorn-st"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851488/drake-belmont"
       },
       "highlights": []
     },
     {
-      "id": "401804960",
+      "id": "401856422",
       "teams": {
-        "away": "Kennesaw",
-        "home": "State UTEP"
+        "away": "Northeastern",
+        "home": "NC A&T"
       },
-      "headline": "Jamal West had 28 points in UTEP's 78-71 victory against Kennesaw State on Thursday",
-      "score": "KEN 78 - SU 71",
-      "brief": "Jamal West had 28 points in UTEP's 78-71 victory against Kennesaw State on Thursday. West also contributed seven rebounds, two steals and two blocks for the Miners (11-19, 7-12 Conference USA).",
-      "bullets": [
-        "Jamal West had 28 points in UTEP's 78-71 victory against Kennesaw State on Thursday.",
-        "West also contributed seven rebounds, two steals and two blocks for the Miners (11-19, 7-12 Conference USA).",
-        "Kaseem Watson scored 15 points while shooting 4 for 8 (3 for 6 from 3-point range) and 4 of 4 from the free-throw line, and added five rebounds and two steals.",
-        "LA Hayes shot 5 for 9 (2 for 3 from 3-point range) to finish with 13 points."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
-      "recapStatus": "ok",
+      "recapStatus": "missing_article_text",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804960/kennesaw-st-utep"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856422/northeastern-nc-at"
       },
       "highlights": []
     },
     {
-      "id": "401804959",
+      "id": "401851348",
       "teams": {
-        "away": "Jax State",
-        "home": "New Mexico State"
+        "away": "Charleston Southern",
+        "home": "Winthrop"
       },
-      "headline": "Jemel Jones led New Mexico State with 29 points, and hit a lead-taking 3-pointer with 26 seconds left in overtime to take down Jacksonville State 77-75 on Thursday",
-      "score": "JS 77 - NMS 75",
-      "brief": "Jemel Jones led New Mexico State with 29 points, and hit a lead-taking 3-pointer with 26 seconds left in overtime to take down Jacksonville State 77-75 on Thursday. The game concluded with free throws after Jones' dagger 3-pointer.",
+      "headline": "Winthrop steals quarterfinal late with furious final-45-second finish",
+      "score": "CHSO 81 - WIN 86",
+      "brief": "Winthrop looked cooked late, then flipped the game in a blink. The Eagles closed the final 45 seconds with defensive pressure, a tying sequence and Logan Duncomb's go-ahead layup to survive Charleston Southern and move on in the Big South bracket.",
       "bullets": [
-        "Jemel Jones led New Mexico State with 29 points, and hit a lead-taking 3-pointer with 26 seconds left in overtime to take down Jacksonville State 77-75 on Thursday.",
-        "The game concluded with free throws after Jones' dagger 3-pointer.",
-        "Jones also contributed six rebounds and five assists for the Aggies (14-15, 7-12 Conference USA) on 9 of 18 shooting and 9 of 13 at the stripe.",
-        "Julius Mims scored 16 points while going 7 of 11 and 2 of 3 from the free-throw line, and added seven rebounds."
+        "Winthrop trailed 81-74 with 45 seconds left, then ended on a 12-0 closing run.",
+        "Logan Duncomb scored 20 points and hit the go-ahead layup with 16 seconds left.",
+        "Cody Clouet added 19 points and 9 rebounds, going 9-for-9 at the line.",
+        "A'lahn Sumler scored 22 for Charleston Southern.",
+        "No. 2 seed Winthrop advanced to the Big South semifinals."
       ],
-      "context": null,
+      "context": "This comeback keeps Winthrop's title path alive and reinforces how volatile one-possession conference tournament games can get.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804959/jax-state-new-mexico-st"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851348/charleston-so-winthrop"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401851246",
+      "teams": {
+        "away": "FGCU",
+        "home": "Lipscomb"
+      },
+      "headline": "FGCU controls Lipscomb from the jump to punch semifinal ticket",
+      "score": "FGCU 77 - LIP 53",
+      "brief": "FGCU never let this quarterfinal breathe. The Eagles grabbed the lead in the opening minute, built separation before halftime and then buried Lipscomb with a second-half run to advance with one of the more decisive tournament wins of the day.",
+      "bullets": [
+        "Rahmir Barno scored 18 points on 7-of-10 shooting.",
+        "Isaiah Malone added 17 points and 6 rebounds for FGCU.",
+        "FGCU used a 15-0 second-half run to turn a five-point margin into a 20-point lead.",
+        "Lipscomb was held to 53 points after entering at 19-13.",
+        "No. 5 seed FGCU advanced to face top-seeded Central Arkansas."
+      ],
+      "context": "FGCU's wire-to-wire win gives it real confidence heading into a semifinal against the tournament favorite.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851246/fgcu-lipscomb"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401851489",
+      "teams": {
+        "away": "UIC",
+        "home": "Murray State"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851489/uic-murray-st"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401851579",
+      "teams": {
+        "away": "The Citadel",
+        "home": "Chattanooga"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851579/the-citadel-chattanooga"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401851247",
+      "teams": {
+        "away": "Stetson",
+        "home": "Austin Peay"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851247/stetson-austin-peay"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401851700",
+      "teams": {
+        "away": "Southern Miss",
+        "home": "Texas State"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851700/southern-miss-texas-st"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "EbKljF89HtM",
-          "title": "Florida State vs. Pitt Highlights | 2025-26 ACC Men's Basketball",
-          "url": "https://www.youtube.com/watch?v=EbKljF89HtM",
-          "embedUrl": "https://www.youtube.com/embed/EbKljF89HtM",
-          "publishedAt": "2026-03-05T04:40:45Z",
-          "matchScore": 121
+          "videoId": "YCL-7EZDx_g",
+          "title": "Ole Miss vs. NC State Game Highlights | 2025-26 ACC Men's Basketball",
+          "url": "https://www.youtube.com/watch?v=YCL-7EZDx_g",
+          "embedUrl": "https://www.youtube.com/embed/YCL-7EZDx_g",
+          "publishedAt": "2025-12-21T23:31:28Z",
+          "matchScore": 100
         }
       ]
     },
     {
-      "id": "401828260",
+      "id": "401851457",
       "teams": {
-        "away": "South",
-        "home": "Florida Memphis"
+        "away": "Sacred Heart",
+        "home": "Merrimack"
       },
-      "headline": "Wes Enis had 29 points in South Florida's 96-89 win against Memphis on Thursday",
-      "score": "SOU 96 - FM 89",
-      "brief": "Wes Enis had 29 points in South Florida's 96-89 win against Memphis on Thursday. Enis shot 9 for 17 (2 for 9 from 3-point range) and 9 of 9 from the free-throw line for the Bulls (22-8, 14-3 American Athletic Conference).",
+      "headline": "Merrimack locks down Sacred Heart to advance in MAAC quarterfinal",
+      "score": "SHRT 48 - MERR 70",
+      "brief": "Merrimack turned this quarterfinal into a defensive clinic after taking the lead in the first half. Kevair Kennedy drove everything offensively, and the Warriors never let Sacred Heart generate enough clean offense to make this a game late.",
       "bullets": [
-        "Wes Enis had 29 points in South Florida's 96-89 win against Memphis on Thursday.",
-        "Enis shot 9 for 17 (2 for 9 from 3-point range) and 9 of 9 from the free-throw line for the Bulls (22-8, 14-3 American Athletic Conference).",
-        "Josh Omojafo shot 7 of 9 from the field, including 3 for 4 from 3-point range, and went 4 for 6 from the line to add 21 points.",
-        "Isaiah Jones had 14 points and five rebounds."
+        "Kevair Kennedy posted 24 points, 8 rebounds and 6 assists.",
+        "Merrimack led 39-25 at halftime and never trailed after the 11:20 mark of the first half.",
+        "Ernest Shelton added 18 points and 9 rebounds.",
+        "Sacred Heart was held to 48 points in a lopsided quarterfinal result.",
+        "Merrimack advanced to a Sunday MAAC semifinal."
       ],
-      "context": null,
+      "context": "Merrimack's balance and defensive control put it in strong position entering the semifinal round.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828260/south-florida-memphis"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851457/sacred-heart-merrimack"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401851349",
+      "teams": {
+        "away": "Longwood",
+        "home": "UNC Asheville"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851349/longwood-unc-asheville"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401814602",
+      "teams": {
+        "away": "Northern Illinois",
+        "home": "Akron"
+      },
+      "headline": "Akron routs Northern Illinois to close regular season on seven-game streak",
+      "score": "NIU 55 - AKR 94",
+      "brief": "Akron treated its regular-season finale like a statement game, jumping on Northern Illinois early and never relenting. The Zips' shot quality and defensive pressure separated this one quickly, extending their winning streak and reinforcing their form entering tournament play.",
+      "bullets": [
+        "Akron won 94-55 to push its winning streak to seven.",
+        "Bowen Hardman led the Zips with 20 points on 7-of-8 shooting (5-of-6 from 3).",
+        "Akron led 47-27 at halftime and never trailed after the opening 38 seconds.",
+        "Amani Lyles added 17 points on 6-of-7 shooting.",
+        "Northern Illinois fell to 9-21 overall and 4-14 in MAC play."
+      ],
+      "context": "Akron enters the MAC tournament with momentum and one of the league's strongest late-season profiles.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814602/n-illinois-akron"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401814598",
+      "teams": {
+        "away": "Bowling Green",
+        "home": "Eastern Michigan"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814598/bowling-green-e-michigan"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "IthllmEJQFM",
-          "title": "Memphis vs South Florida Highlights | Men's Basketball | College Basketball 2026",
-          "url": "https://www.youtube.com/watch?v=IthllmEJQFM",
-          "embedUrl": "https://www.youtube.com/embed/IthllmEJQFM",
-          "publishedAt": "2026-03-06T04:59:42Z",
+          "videoId": "hTsdlKW0hTs",
+          "title": "Bowling Green at Michigan State | Highlights | Big Ten Men's Basketball | 11/16/2024",
+          "url": "https://www.youtube.com/watch?v=hTsdlKW0hTs",
+          "embedUrl": "https://www.youtube.com/embed/hTsdlKW0hTs",
+          "publishedAt": "2024-11-17T01:35:57Z",
           "matchScore": 92
         }
       ]
     },
     {
-      "id": "401827038",
+      "id": "401851621",
       "teams": {
-        "away": "Southern",
-        "home": "Alabama Am"
+        "away": "Omaha",
+        "home": "South Dakota"
       },
-      "headline": "Terrance Dixon Jr.'s 19 points helped Southern defeat Alabama A&M 88-85 on Thursday",
-      "score": "SOU 88 - AA 85",
-      "brief": "Terrance Dixon Jr.'s 19 points helped Southern defeat Alabama A&M 88-85 on Thursday. Dixon shot 7 of 10 from the field and 5 of 6 from the free-throw line for the Jaguars (15-16, 11-7 Southwestern Athletic Conference).",
-      "bullets": [
-        "Terrance Dixon Jr.'s 19 points helped Southern defeat Alabama A&M 88-85 on Thursday.",
-        "Dixon shot 7 of 10 from the field and 5 of 6 from the free-throw line for the Jaguars (15-16, 11-7 Southwestern Athletic Conference).",
-        "Michael Jacobs scored 15 points while going 4 of 11 and 7 of 9 from the free-throw line, and added five rebounds.",
-        "AJ Barnes shot 3 for 7 (1 for 3 from 3-point range) and 7 of 8 from the free-throw line to finish with 14 points, while adding six rebounds."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
-      "recapStatus": "ok",
+      "recapStatus": "missing_article_text",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827038/southern-alabama-am"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851621/omaha-south-dakota"
       },
       "highlights": []
     },
     {
-      "id": "401851622",
+      "id": "401851490",
       "teams": {
-        "away": "South Dakota State",
-        "home": "State Thomas Mn"
+        "away": "Valparaiso",
+        "home": "Bradley"
       },
-      "headline": "Ben Oosterbaan and Nolan Minessale combined for 45 points in St",
-      "score": "SDS 80 - STM 67",
-      "brief": "Ben Oosterbaan and Nolan Minessale combined for 45 points in St. Thomas' 80-67 win against South Dakota State on Thursday in the Summit League Tournament.",
+      "headline": "Bradley survives Valparaiso in double overtime behind Johnson and Jonovic",
+      "score": "VAL 84 - BRAD 90",
+      "brief": "Bradley needed extra basketball and then more of it, but the Braves eventually outlasted Valparaiso in a double-overtime grinder. Jaquan Johnson took over at the right time, and Bradley's depth of shot-makers held up through the chaos of late possessions.",
       "bullets": [
-        "Ben Oosterbaan and Nolan Minessale combined for 45 points in St.",
-        "Thomas' 80-67 win against South Dakota State on Thursday in the Summit League Tournament.",
-        "Oosterbaan went 8 of 13 from the field (5 for 8 from 3-point range) for the No. 2 seed Tommies (24-8) to finish with 23 points.",
-        "Minessale added 22 points while shooting 7 for 12 (4 for 6 from 3-point range) and 4 of 5 from the free-throw line along with eight rebounds and six assists."
+        "Bradley beat Valparaiso 90-84 in double overtime.",
+        "Jaquan Johnson scored 18 points, with 6 coming in the second OT.",
+        "Ahmet Jonovic also scored 18 while adding 7 rebounds.",
+        "Alex Huibregtse hit a tying 3 with 25 seconds left in the first overtime.",
+        "JT Pettigrew had 24 points, 13 rebounds and 9 assists for Valparaiso in the loss."
       ],
-      "context": null,
+      "context": "The Braves advanced, but the workload and minutes from a double-OT game become a real factor with quick turnaround tournament scheduling.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851622/s-dakota-st-st-thomas-mn"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851490/valparaiso-bradley"
       },
       "highlights": []
     },
     {
-      "id": "401851528",
+      "id": "401828462",
       "teams": {
-        "away": "Lindenwood",
-        "home": "Se Missouri"
+        "away": "VCU",
+        "home": "Dayton"
       },
-      "headline": "Braxton Stacker scored the game-winning jump shot with three seconds left and racked up 16 total points to lead Southeast Missouri State past Lindenwood 68-66 on Thursday in the quarterfinals of the Ohio Valley Conference Tournament",
-      "score": "TPTLSMS 68 - LIN 66",
-      "brief": "Braxton Stacker scored the game-winning jump shot with three seconds left and racked up 16 total points to lead Southeast Missouri State past Lindenwood 68-66 on Thursday in the quarterfinals of the Ohio Valley Conference Tournament. Stacker shot 5 for 10 (2 for 4 from 3-point range) and 4 of 4 from the free-throw line for the Redhawks (20-12).",
+      "headline": "VCU snaps Dayton's six-game streak with late second-half control",
+      "score": "VCU 68 - DAY 62",
+      "brief": "VCU walked into a tough road environment and controlled the key middle stretch of the second half to end Dayton's momentum. Lazar Djokovic set the tone early and the Rams' 11-3 run gave them separation they protected the rest of the way.",
       "bullets": [
-        "Braxton Stacker scored the game-winning jump shot with three seconds left and racked up 16 total points to lead Southeast Missouri State past Lindenwood 68-66 on Thursday in the quarterfinals of the Ohio Valley Conference Tournament.",
-        "Stacker shot 5 for 10 (2 for 4 from 3-point range) and 4 of 4 from the free-throw line for the Redhawks (20-12).",
-        "Marqueas Bell added 14 points while shooting 6 for 12, including 2 for 4 from beyond the arc while they also had five rebounds.",
-        "Luke Almodovar and Brendan Terry each scored 12 points."
+        "VCU beat Dayton 68-62 and ended the Flyers' six-game winning streak.",
+        "Lazar Djokovic scored 16 points and grabbed 6 rebounds.",
+        "VCU used an 11-3 second-half run to flip a two-point deficit into a 58-52 lead.",
+        "Javon Bennett led Dayton with 17 points.",
+        "The Rams improved to 24-7 overall and 15-3 in Atlantic 10 play."
       ],
-      "context": null,
+      "context": "This win helps VCU's postseason positioning and gives it a high-quality road result entering conference tournament week.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851528/lindenwood-se-missouri"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828462/vcu-dayton"
       },
       "highlights": []
     },
     {
-      "id": "401851487",
+      "id": "401818565",
       "teams": {
-        "away": "Evansville",
-        "home": "Northern Iowa"
+        "away": "Pennsylvania",
+        "home": "Brown"
       },
-      "headline": "Trey Campbell had 23 points in Northern Iowa's 68-59 victory over Evansville on Thursday in the first round of the Missouri Valley Conference Tournament",
-      "score": "EVA 68 - NI 59",
-      "brief": "Trey Campbell had 23 points in Northern Iowa's 68-59 victory over Evansville on Thursday in the first round of the Missouri Valley Conference Tournament. Campbell added three blocks for the Panthers (20-12).",
+      "headline": "Penn powers past Brown behind Roberts and balanced two-way effort",
+      "score": "PENN 82 - BROWN 61",
+      "brief": "Penn controlled this game with steadier half-court offense and cleaner execution over 40 minutes. Ethan Roberts and TJ Power led a balanced Quakers attack, while Brown never found enough perimeter rhythm to make a serious second-half push.",
       "bullets": [
-        "Trey Campbell had 23 points in Northern Iowa's 68-59 victory over Evansville on Thursday in the first round of the Missouri Valley Conference Tournament.",
-        "Campbell added three blocks for the Panthers (20-12).",
-        "Will Hornseth scored 13 points while going 5 of 11 and 3 of 6 from the free-throw line, and added eight rebounds.",
-        "Tristan Smith had 10 points, 13 rebounds and four assists."
+        "Ethan Roberts scored 18 points for Penn.",
+        "TJ Power added 17 points, 8 rebounds and 4 steals.",
+        "Penn won by 21 points on the road in Ivy League play.",
+        "Brown's Landon Lewis finished with 12 points and 11 rebounds.",
+        "The Quakers improved to 16-11 overall and 9-5 in conference."
       ],
-      "context": null,
+      "context": "Penn keeps itself in stronger Ivy positioning heading into the final stretch of league play.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851487/evansville-northern-iowa"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401818565/penn-brown"
       },
       "highlights": []
     },
     {
-      "id": "401823271",
+      "id": "401814603",
       "teams": {
-        "away": "Csu",
-        "home": "Northridge Bakersfield"
+        "away": "Western Michigan",
+        "home": "Kent State"
       },
-      "headline": "Josh O'Garro scored 25 points and Josiah Davis scored a game-winning layup with five seconds remaining as CSU Northridge beat CSU Bakersfield 86-84 on Thursday",
-      "score": "PJDSAGLWFSRACN 86 - CB 84",
-      "brief": "Josh O'Garro scored 25 points and Josiah Davis scored a game-winning layup with five seconds remaining as CSU Northridge beat CSU Bakersfield 86-84 on Thursday. O'Garro added 11 rebounds for the Matadors (19-12, 12-7 Big West Conference).",
-      "bullets": [
-        "Josh O'Garro scored 25 points and Josiah Davis scored a game-winning layup with five seconds remaining as CSU Northridge beat CSU Bakersfield 86-84 on Thursday.",
-        "O'Garro added 11 rebounds for the Matadors (19-12, 12-7 Big West Conference).",
-        "Mahmoud Fofana scored 15 points and added eight rebounds.",
-        "Davis finished 6 of 11 from the field to finish with 14 points."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814603/w-michigan-kent-state"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "4uFhHM7i5IE",
+          "title": "#8 Michigan State vs Rutgers Highlights | Men's Basketball | College Basketball 2026",
+          "url": "https://www.youtube.com/watch?v=4uFhHM7i5IE",
+          "embedUrl": "https://www.youtube.com/embed/4uFhHM7i5IE",
+          "publishedAt": "2026-03-06T03:30:04Z",
+          "matchScore": 121
+        }
+      ]
+    },
+    {
+      "id": "401814600",
+      "teams": {
+        "away": "Central Michigan",
+        "home": "Ball State"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814600/c-michigan-ball-state"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "4uFhHM7i5IE",
+          "title": "#8 Michigan State vs Rutgers Highlights | Men's Basketball | College Basketball 2026",
+          "url": "https://www.youtube.com/watch?v=4uFhHM7i5IE",
+          "embedUrl": "https://www.youtube.com/embed/4uFhHM7i5IE",
+          "publishedAt": "2026-03-06T03:30:04Z",
+          "matchScore": 121
+        }
+      ]
+    },
+    {
+      "id": "401814599",
+      "teams": {
+        "away": "Buffalo",
+        "home": "Toledo"
+      },
+      "headline": "Toledo's offense explodes as Blyden Jr. delivers 20-13 masterclass",
+      "score": "BUF 78 - TOL 98",
+      "brief": "Toledo put on an offensive clinic, carving Buffalo with pace and shot-making while piling up nearly 100 points. Sonny Wilson scored efficiently, but Leroy Blyden Jr.'s all-around creation was the real tone-setter in one of the league's best individual orchestrations of the night.",
+      "bullets": [
+        "Toledo won 98-78 behind Sonny Wilson's 24 points.",
+        "Leroy Blyden Jr. had 20 points, 13 assists and 7 rebounds.",
+        "Mynor Strong added 18 points, including four made 3s.",
+        "Buffalo got 26 points from Ryan Sabol and 21 from Angelo Brizzi.",
+        "Toledo shot efficiently across its top scorers and kept control throughout."
+      ],
+      "context": "Toledo's late-season offensive rhythm gives it upset potential in a conference tournament setting where guard play matters most.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401823271/csu-northridge-bakersfield"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814599/buffalo-toledo"
       },
       "highlights": []
     },
     {
-      "id": "401809138",
+      "id": "401812624",
       "teams": {
-        "away": "Uc Davis",
-        "home": "Long Beach State"
+        "away": "Columbia",
+        "home": "Harvard"
       },
-      "headline": "Marcus Wilson put up 30 points as UC Davis beat Long Beach State 76-70 in overtime on Thursday",
-      "score": "PAUD 76 - LBS 70",
-      "brief": "Marcus Wilson put up 30 points as UC Davis beat Long Beach State 76-70 in overtime on Thursday. Wilson added five rebounds for the Aggies (18-12, 11-8 Big West Conference).",
+      "headline": "Harvard handles Columbia behind Pigge's 26 and steady interior control",
+      "score": "COL 71 - HARV 81",
+      "brief": "Harvard's frontcourt pressure and efficient scoring carried it to a comfortable home win over Columbia. Chandler Pigge set the tone with a high-usage scoring night, and the Crimson kept enough defensive structure to hold off every Columbia response.",
       "bullets": [
-        "Marcus Wilson put up 30 points as UC Davis beat Long Beach State 76-70 in overtime on Thursday.",
-        "Wilson added five rebounds for the Aggies (18-12, 11-8 Big West Conference).",
-        "Omer Suljanovic scored 11 points while going 4 of 7 (1 for 3 from 3-point range), and added six rebounds.",
-        "Brayden Fagbemi went 4 of 7 from the field to finish with 11 points."
+        "Chandler Pigge scored 26 points and added 7 rebounds.",
+        "Robert Hinton contributed 17 points for Harvard.",
+        "Tey Barbour added 14 points, including three made 3s.",
+        "Columbia's Blair Thompson had 18 points and 8 rebounds in defeat.",
+        "Harvard improved to 17-11 overall and 10-4 in Ivy League play."
       ],
-      "context": null,
+      "context": "Harvard strengthened its Ivy tournament positioning with a result that was controlled from the middle stages onward.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401809138/uc-davis-long-beach-st"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401812624/columbia-harvard"
       },
       "highlights": []
     },
     {
-      "id": "401809121",
+      "id": "401851580",
       "teams": {
-        "away": "Cal Poly",
-        "home": "Uc Irvine"
+        "away": "VMI",
+        "home": "UNC Greensboro"
       },
-      "headline": "Jurian Dixon had 22 points in UC Irvine's 107-85 victory against Cal Poly on Thursday",
-      "score": "CP 107 - UI 85",
-      "brief": "Jurian Dixon had 22 points in UC Irvine's 107-85 victory against Cal Poly on Thursday. Dixon also added six rebounds and five assists for the Anteaters (21-10, 14-5 Big West Conference).",
-      "bullets": [
-        "Jurian Dixon had 22 points in UC Irvine's 107-85 victory against Cal Poly on Thursday.",
-        "Dixon also added six rebounds and five assists for the Anteaters (21-10, 14-5 Big West Conference).",
-        "Kyle Evans added 17 points while shooting 7 of 11 from the field to go with eight rebounds and five blocks.",
-        "Andre Henry shot 6 of 14 from the field, including 1 for 6 from 3-point range, and went 3 for 4 from the line to finish with 16 points."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
-      "recapStatus": "ok",
+      "recapStatus": "missing_article_text",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401809121/cal-poly-uc-irvine"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851580/vmi-unc-greensboro"
       },
       "highlights": []
     },
     {
-      "id": "401809103",
+      "id": "401851248",
       "teams": {
-        "away": "Uc San",
-        "home": "Diego Fullerton"
+        "away": "West Georgia",
+        "home": "Queens"
       },
-      "headline": "Joshua Ward's 20 points helped CSU Fullerton defeat UCSD 75-71 on Thursday",
-      "score": "US 75 - DF 71",
-      "brief": "Joshua Ward's 20 points helped CSU Fullerton defeat UCSD 75-71 on Thursday. Ward shot 7 for 14 (2 for 8 from 3-point range) and 4 of 4 from the free-throw line for the Titans (16-15, 11-8 Big West Conference).",
-      "bullets": [
-        "Joshua Ward's 20 points helped CSU Fullerton defeat UCSD 75-71 on Thursday.",
-        "Ward shot 7 for 14 (2 for 8 from 3-point range) and 4 of 4 from the free-throw line for the Titans (16-15, 11-8 Big West Conference).",
-        "Jefferson Monegro scored 14 points while shooting 5 for 11, including 4 for 7 from beyond the arc, and added eight rebounds and five assists.",
-        "Jaden Henderson went 5 of 7 from the field (2 for 3 from 3-point range) to finish with 12 points."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
-      "recapStatus": "ok",
+      "recapStatus": "missing_article_text",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401809103/uc-san-diego-fullerton"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851248/west-georgia-queens"
       },
       "highlights": []
     },
     {
-      "id": "401805211",
+      "id": "401851530",
       "teams": {
-        "away": "Abilene Chrstn",
-        "home": "California Baptist"
+        "away": "UT Martin",
+        "home": "Tennessee State"
       },
-      "headline": "Dominique Daniels Jr",
-      "score": "AC 87 - CB 48",
-      "brief": "Dominique Daniels Jr. had 22 points in Cal Baptist's 87-48 victory over Abilene Christian on Thursday.",
-      "bullets": [
-        "Dominique Daniels Jr.",
-        "had 22 points in Cal Baptist's 87-48 victory over Abilene Christian on Thursday.",
-        "Daniels had three steals for the Lancers (22-8, 12-5 Western Athletic Conference).",
-        "Martel Williams scored 10 points while finishing 4 of 8 from the floor."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851530/ut-martin-tennessee-st"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "kOfVzrqJt2o",
+          "title": "UT Martin vs Florida State Game Highlights | 2025-26 ACC Men's Basketball",
+          "url": "https://www.youtube.com/watch?v=kOfVzrqJt2o",
+          "embedUrl": "https://www.youtube.com/embed/kOfVzrqJt2o",
+          "publishedAt": "2025-11-19T02:48:24Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "401827722",
+      "teams": {
+        "away": "UCF",
+        "home": "West Virginia"
+      },
+      "headline": "West Virginia finishes UCF sweep behind Huff's 24-point close",
+      "score": "UCF 62 - WVU 77",
+      "brief": "West Virginia closed its Big 12 regular season with a workmanlike win, pulling away after UCF made a second-half push. Honor Huff took over late with free throws and a key deep make, helping the Mountaineers create separation and complete the season sweep.",
+      "bullets": [
+        "Honor Huff scored 24 points and went 10-for-10 at the free-throw line.",
+        "West Virginia completed a regular-season sweep of UCF.",
+        "UCF got within 44-40 with 12 minutes left, but a 9-1 West Virginia burst put the game away.",
+        "The Knights lost their third straight after a strong late-February stretch.",
+        "West Virginia finished 18-13 overall and 9-9 in Big 12 play."
+      ],
+      "context": "The Mountaineers head into the Big 12 tournament with a stabilizing finish and momentum from a complete home win.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401805211/abilene-chrstn-ca-baptist"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827722/ucf-west-virginia"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "UrNUJu9aYXE",
+          "title": "UCF vs. West Virginia Game Highlights | 2025-26 Big 12 Men’s Basketball",
+          "url": "https://www.youtube.com/watch?v=UrNUJu9aYXE",
+          "embedUrl": "https://www.youtube.com/embed/UrNUJu9aYXE",
+          "publishedAt": "2026-03-07T03:17:03Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "401851460",
+      "teams": {
+        "away": "Fairfield",
+        "home": "Saint Peter's"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851460/fairfield-saint-peters"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "Dvoqpil_-UY",
+          "title": "Fairfield at Penn State | HIGHLIGHTS | Big Ten Men's Basketball | 11/3/2025",
+          "url": "https://www.youtube.com/watch?v=Dvoqpil_-UY",
+          "embedUrl": "https://www.youtube.com/embed/Dvoqpil_-UY",
+          "publishedAt": "2025-11-04T02:09:09Z",
+          "matchScore": 92
+        }
+      ]
+    },
+    {
+      "id": "401851701",
+      "teams": {
+        "away": "Georgia Southern",
+        "home": "South Alabama"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851701/ga-southern-south-alabama"
       },
       "highlights": []
     },
     {
-      "id": "401851746",
+      "id": "401851749",
       "teams": {
-        "away": "San",
-        "home": "Diego Loyola Marymount"
+        "away": "Portland",
+        "home": "Washington State"
       },
-      "headline": "Adrian McIntyre had 17 points in San Diego's 66-62 win against Loyola Marymount on Thursday in the first round of the West Coast Conference Tournament",
-      "score": "SAN 66 - DLM 62",
-      "brief": "Adrian McIntyre had 17 points in San Diego's 66-62 win against Loyola Marymount on Thursday in the first round of the West Coast Conference Tournament. McIntyre also contributed six rebounds and five assists for the Toreros (12-20).",
-      "bullets": [
-        "Adrian McIntyre had 17 points in San Diego's 66-62 win against Loyola Marymount on Thursday in the first round of the West Coast Conference Tournament.",
-        "McIntyre also contributed six rebounds and five assists for the Toreros (12-20).",
-        "Juan Sebastian Gorosito scored 14 points while shooting 4 for 11, including 4 for 9 from beyond the arc.",
-        "Toneari Lane had 13 points and shot 3 of 10 from the field, including 2 for 6 from 3-point range, and went 5 for 6 from the line."
-      ],
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
       "context": null,
-      "recapStatus": "ok",
+      "recapStatus": "missing_article_text",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851746/san-diego-lmu"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851749/portland-washington-st"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "1Q3suEnY-fI",
+          "title": "Portland State vs. Colorado Game Highlights | 2025-26 Big 12 Men’s Basketball",
+          "url": "https://www.youtube.com/watch?v=1Q3suEnY-fI",
+          "embedUrl": "https://www.youtube.com/embed/1Q3suEnY-fI",
+          "publishedAt": "2025-12-18T04:12:13Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "401851624",
+      "teams": {
+        "away": "Denver",
+        "home": "North Dakota"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851624/denver-north-dakota"
       },
       "highlights": []
     },
     {
-      "id": "401809151",
+      "id": "401851350",
       "teams": {
-        "away": "Uc Riverside",
-        "home": "Hawai%e2%80%99i"
+        "away": "Presbyterian",
+        "home": "Radford"
       },
-      "headline": "Gytis Nemeiksa's 19 points helped Hawaii defeat UC Riverside 93-74 on Friday",
-      "score": "UR 93 - HAW 74",
-      "brief": "Gytis Nemeiksa's 19 points helped Hawaii defeat UC Riverside 93-74 on Friday. Nemeiksa also had five rebounds for the Rainbow Warriors (22-7, 14-5 Big West Conference) off the bench.",
+      "headline": "Presbyterian forces OT at the horn, then upsets Radford in quarterfinals",
+      "score": "PRES 91 - RAD 85",
+      "brief": "Presbyterian looked headed home late, then authored one of the night's best tournament escapes. A buzzer-beating heave forced overtime, and the Blue Hose carried that momentum through the extra period to knock off Radford and keep their run alive.",
       "bullets": [
-        "Gytis Nemeiksa's 19 points helped Hawaii defeat UC Riverside 93-74 on Friday.",
-        "Nemeiksa also had five rebounds for the Rainbow Warriors (22-7, 14-5 Big West Conference) off the bench.",
-        "Quandre Bullock scored 17 points and added six rebounds.",
-        "Isaac Finlinson shot 5 of 8 from the field and 7 for 9 from the line to finish with 17 points."
+        "Carl Parrish scored 23 points, including 6 in overtime.",
+        "Presbyterian forced OT on Parrish's 30-footer at the buzzer after Josh Pickett's late 3.",
+        "Jaylen Peterson added 20 points and 13 rebounds.",
+        "Chidi Chiakwelu was perfect from the field (8-of-8) and scored 18.",
+        "No. 6 seed Presbyterian advanced by upsetting No. 3 seed Radford."
       ],
-      "context": null,
+      "context": "In single-elimination conference play, this kind of late-game survival can completely reshape the bracket.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401809151/uc-riverside-hawai%E2%80%99i"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851350/presbyterian-radford"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401823787",
+      "teams": {
+        "away": "UNLV",
+        "home": "San Diego State"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401823787/unlv-san-diego-st"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "eYiURgBQAG8",
+          "title": "UNLV vs. Arizona State Game Highlights | 2025-26 Big 12 Women’s Basketball",
+          "url": "https://www.youtube.com/watch?v=eYiURgBQAG8",
+          "embedUrl": "https://www.youtube.com/embed/eYiURgBQAG8",
+          "publishedAt": "2025-11-22T23:00:49Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "401851491",
+      "teams": {
+        "away": "Northern Iowa",
+        "home": "Illinois State"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851491/northern-iowa-illinois-st"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "65Z8OGJ6D4c",
+          "title": "Iowa State Cyclones vs. Arizona Wildcats | Full Game Highlights | ESPN College Basketball",
+          "url": "https://www.youtube.com/watch?v=65Z8OGJ6D4c",
+          "embedUrl": "https://www.youtube.com/embed/65Z8OGJ6D4c",
+          "publishedAt": "2026-03-03T04:29:29Z",
+          "matchScore": 115
+        }
+      ]
+    },
+    {
+      "id": "401851532",
+      "teams": {
+        "away": "SE Missouri",
+        "home": "Morehead State"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851532/se-missouri-morehead-st"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "SYOAOBonfY8",
+          "title": "Florida State vs. Missouri State Game Highlights | 2025-26 ACC Women's Basketball",
+          "url": "https://www.youtube.com/watch?v=SYOAOBonfY8",
+          "embedUrl": "https://www.youtube.com/embed/SYOAOBonfY8",
+          "publishedAt": "2025-11-28T23:11:35Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "401851750",
+      "teams": {
+        "away": "San Diego",
+        "home": "Seattle U"
+      },
+      "headline": "recap text missing",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": null,
+      "recapStatus": "missing_article_text",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851750/san-diego-seattle-u"
       },
       "highlights": []
     }

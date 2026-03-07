@@ -134,6 +134,8 @@ Return JSON ONLY.
 Do not include explanations.
 Do not include markdown.
 Do not include commentary.
-Important: Give results in JSON code block (so I can copy with one click)
 
-Here's the data for
+Important: Give results in JSON, add them directly to the .json document I tell you below...
+Note: if your output shows an entry that says "recap text missing" for headline, don't write that entry to the document.
+
+Here's the data for 

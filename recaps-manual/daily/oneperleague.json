@@ -2,80 +2,338 @@
   {
     "leagueName": "LIV Golf",
     "leagueKey": "LIV",
-    "sourceType": "plain_text",
-    "newsBriefing": "Dean Burmester and Carlos Ortiz are tied at 14-under midway through LIV Golf Hong Kong, with Thomas Detry and Jon Rahm close behind in a tightly packed board. Smash GC leads the team race at 35-under, but only five shots separate first and second with 36 holes left.",
+    "sourceType": "console_recaps",
+    "newsBriefing": "A dramatic leaderboard logjam in Hong Kong sees Jon Rahm chasing his first 2026 win against a friend he personally rescued from a travel nightmare.",
     "games": [
       {
-        "id": null,
+        "id": "401803310",
         "teams": {
-          "away": null,
-          "home": null
+          "away": "N/A",
+          "home": "N/A"
         },
-        "headline": "Burmester and Ortiz share Hong Kong lead as Rahm and Detry charge into weekend hunt",
+        "headline": "Rahm battles friend and rescuee Detry in star-studded three-way tie for Hong Kong lead",
         "score": null,
-        "brief": "The Hong Kong leaderboard tightened exactly how LIV wants it: Dean Burmester and Carlos Ortiz tied at the top, Jon Rahm surging with the low round of the day, and Thomas Detry turning a travel-disrupted week into a real win chance. Ortiz followed his opening 60 with a gritty 66, Burmester played through neck stiffness to post 64, and Rahm's 62 pushed him to 12-under as he chases his first win in 26 starts. With 22 players within seven shots and all four team scores counting, this event is set up for a volatile weekend.",
+        "brief": "The storyline in Hong Kong feels like a movie script: Jon Rahm, who personally organized a private charter to rescue fellow players stranded in Dubai earlier this week, now has to beat one of them to trophy. Rahm sits in a three-way tie at 17 under alongside Thomas Detry-the man he helped save-and a surging Harold Varner III. After two consecutive runner-up finishes to start the 2026 season, Rahm is hunting for his first win of the year, but he'll have to navigate a leaderboard packed with heavy hitters like Carlos Ortiz and Dean Burmester lurking just two strokes back.",
         "bullets": [
-          "Dean Burmester and Carlos Ortiz are tied for first at 14-under through two rounds.",
-          "Thomas Detry shot 63 to move to solo third at 13-under; Jon Rahm fired 62 and sits fourth at 12-under.",
-          "Ortiz has 16 birdies through two rounds after opening with a 10-under 60.",
-          "Smash GC leads the team standings at 35-under, five clear of Torque, with Legion XIII and Southern Guards tied for third at 26-under.",
-          "Graeme McDowell recorded LIV's 14th all-time ace and moved into a tie for eighth at 10-under."
+          "Jon Rahm, Thomas Detry, and Harold Varner III share the lead at 17 under heading into the final round.",
+          "Thomas Pieters delivered the round of the tournament so far, a blistering 9-under 61, to climb within two shots of the lead.",
+          "Harold Varner III vaulted into contention by going 7-under 63, marking the first time he has held a lead entering a LIV final round.",
+          "Jon Rahm extended his streak of rounds under par to 20, just one shy of his own LIV Golf record.",
+          "Smash GC holds a narrow two-stroke lead in the team standings over 4Aces GC and Legion XIII."
         ],
-        "context": "With 36 holes left and 22 players within seven shots, both the individual and team titles remain wide open entering the weekend.",
+        "context": "Jon Rahm is looking to break a string of second-place finishes while Smash GC aims for its first team title under new captain Talor Gooch.",
         "recapStatus": "ok",
         "source": {
-          "recapUrl": null
+          "recapUrl": "https://www.livgolf.com/news/round-3-recap-rahm-tied-for-lead-entering-sunday-hsbc-liv-golf-hong-kong-2026"
         },
         "highlights": [
           {
-            "provider": "youtube",
-            "videoId": "OkzvjAD14nI",
-            "title": "FULL HIGHLIGHTS | LIV Golf Hong Kong Round 2 | 2026",
-            "url": "https://www.youtube.com/watch?v=OkzvjAD14nI",
-            "embedUrl": "https://www.youtube.com/embed/OkzvjAD14nI",
-            "publishedAt": "2026-03-06T11:13:08Z",
-            "matchScore": 113
+            "title": "LIV Golf Highlights",
+            "videoId": "Nq1_dIL3SuI",
+            "url": "https://www.youtube.com/watch?v=Nq1_dIL3SuI",
+            "embedUrl": "https://www.youtube.com/embed/Nq1_dIL3SuI"
           }
         ]
       }
     ]
   },
   {
-    "leagueName": "Tennis",
-    "leagueKey": "Tennis",
-    "sourceType": "web_summary",
-    "newsBriefing": "Day 2 at Indian Wells completed the round of 128 with a mix of tight three-set battles and major upsets, led by Aleksandar Kovacevic's tiebreak win over Hubert Hurkacz. American players also had a strong day, highlighted by Mackenzie McDonald's dominant 6-0, 6-1 performance.",
+    "leagueName": "PGA Tour",
+    "leagueKey": "PGA_TOUR",
+    "sourceType": "console_recaps",
+    "newsBriefing": "Daniel Berger is turning Bay Hill into a personal playground, building a massive cushion while the world's best scramble to keep pace in Orlando.",
     "games": [
       {
-        "id": null,
+        "id": "ckg3xpx83lpo",
         "teams": {
-          "away": null,
-          "home": null
+          "away": "N/A",
+          "home": "N/A"
         },
-        "headline": "Kovacevic stuns Hurkacz and Dimitrov sets Alcaraz clash as Indian Wells draw tightens",
+        "headline": "Berger builds massive five-shot cushion at Bay Hill as McIlroy finds his stride",
         "score": null,
-        "brief": "Indian Wells Day 2 delivered exactly the early-round volatility fans wait for: a major seeded upset, a revenge win, and a few Americans building real momentum. Aleksandar Kovacevic knocked out Hubert Hurkacz in back-to-back tiebreaks for his first desert win, while Grigor Dimitrov avenged his recent Acapulco loss to Terence Atmane and earned a headline second-round match with top seed Carlos Alcaraz. Sebastian Korda kept his run going, Mackenzie McDonald posted the most lopsided scoreline of the day, and Kamil Majchrzak earned the challenge of facing Novak Djokovic next.",
+        "brief": "Daniel Berger is making one of the PGA Tour's most daunting tests look easy. After flirtation with the course record on Thursday, Berger backed it up with a composed 68 to reach 13 under, stretching his lead to five strokes. While the leader pulled away, Rory McIlroy finally found the controlled and patient golf he's been looking for, surging into the top ten with a strong back-nine rally. With firm conditions and a leaderboard featuring names like Morikawa and Aberg, the weekend at Arnie's Place is shaping up to be a chase to see if anyone can reel in a dialed-in Berger.",
         "bullets": [
-          "Aleksandar Kovacevic upset Hubert Hurkacz 7-6(6), 7-6(4), handing the Pole a fifth straight loss.",
-          "Grigor Dimitrov beat Terence Atmane 6-4, 5-7, 6-4 to set up a second-round meeting with Carlos Alcaraz.",
-          "Sebastian Korda defeated Francisco Comesana 7-5, 6-0 and extended his win streak to six matches.",
-          "Mackenzie McDonald produced a statement 6-0, 6-1 win over Matteo Arnaldi.",
-          "Kamil Majchrzak advanced in three sets and now draws Novak Djokovic in the round of 64."
+          "Daniel Berger sits at 13 under par, holding a commanding five-stroke lead after 36 holes.",
+          "Akshay Bhatia vaulted into second place alone with a 66, the lowest round recorded during Friday's play.",
+          "Rory McIlroy moved into a tie for ninth at 4 under par after birdying four of his first seven holes on the back nine.",
+          "World number one Scottie Scheffler struggled to a 71, ending his day 10 shots back of the lead after a bogey on the 18th.",
+          "The cut claimed several victims, but Tommy Fleetwood survived on the number (+1) after a gritty second-round 69."
         ],
-        "context": "With the round of 128 complete, the tournament now moves into a loaded round of 64 where top seeds begin their campaigns.",
+        "context": "Daniel Berger is seeking his first PGA Tour victory since 2021 at one of the tour's most prestigious Signature Events.",
         "recapStatus": "ok",
         "source": {
-          "recapUrl": null
+          "recapUrl": "https://www.bbc.com/sport/golf/articles/ckg3xpx83lpo"
         },
         "highlights": [
           {
-            "provider": "youtube",
-            "videoId": "yW6mwk2ZnSM",
-            "title": "Indian Wells Day 2 Highlights",
-            "url": "https://www.youtube.com/watch?v=yW6mwk2ZnSM",
-            "embedUrl": "https://www.youtube.com/embed/yW6mwk2ZnSM"
+            "title": "PGA Tour Highlights",
+            "videoId": "yTrjQvj8D_o",
+            "url": "https://www.youtube.com/watch?v=yTrjQvj8D_o",
+            "embedUrl": "https://www.youtube.com/embed/yTrjQvj8D_o"
           }
         ]
+      }
+    ]
+  },
+  {
+    "leagueName": "DP World Tour",
+    "leagueKey": "DP_WORLD_TOUR",
+    "sourceType": "console_recaps",
+    "newsBriefing": "Weather delays forced a marathon Friday in Johannesburg, but Brandon Robinson Thompson turned the grind into a masterclass to seize control at Houghton.",
+    "games": [
+      {
+        "id": "2026-joburg-open-day-two-digest",
+        "teams": {
+          "away": "N/A",
+          "home": "N/A"
+        },
+        "headline": "Robinson Thompson conquers 23-hole marathon to tie course record and lead Joburg Open",
+        "score": null,
+        "brief": "Brandon Robinson Thompson turned a grueling 3:45 AM wake-up call into a career-defining day at Houghton Golf Club. After finishing his weather-delayed first round, the Englishman immediately pivoted into a spectacular second-round 62, matching the course record and vaulting into a three-shot lead. While storm clouds eventually halted play for the rest of the field, Robinson Thompson's day was highlighted by his first-ever hole-out eagle on Tour. Meanwhile, local favorite Casey Jarvis remains a serious threat as he chases a historic third consecutive victory, sitting six shots back of the red-hot leader.",
+        "bullets": [
+          "Brandon Robinson Thompson played 23 holes on Friday, finishing at 12 under par with a record-equalling round of 62.",
+          "Robinson Thompson recorded his first DP World Tour hole-out eagle on the par-four 13th hole using a 100-yard draw spin shot.",
+          "South African Casey Jarvis shot a 67 to stay in the hunt, looking to join Nick Faldo and Seve Ballesteros as the only players to win three straight DP World Tour events.",
+          "Play was officially abandoned at 4:59 PM local time due to persistent thunder and lightning, marking the second straight day of weather disruptions.",
+          "Former winner Justin Rose took to social media to cheer on the field, reminiscing about his first professional win at this venue back in 2002."
+        ],
+        "context": "Brandon Robinson Thompson is chasing his maiden DP World Tour title while Casey Jarvis attempts a rare historic hat-trick of consecutive wins.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.europeantour.com/dpworld-tour/news/articles/detail/2026-joburg-open-day-two-digest/"
+        },
+        "highlights": [
+          {
+            "title": "DP World Tour Highlights",
+            "videoId": "3I24PyJWeG8",
+            "url": "https://www.youtube.com/watch?v=3I24PyJWeG8",
+            "embedUrl": "https://www.youtube.com/embed/3I24PyJWeG8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "leagueName": "LPGA Tour",
+    "leagueKey": "LPGA_TOUR",
+    "sourceType": "console_recaps",
+    "newsBriefing": "Mi Hyang Lee is on the doorstep of ending a seven-year win drought after navigating a chaotic third round in Hainan Island.",
+    "games": [
+      {
+        "id": "2026-mi-hyang-lee-maintains-advantage-at-blue-bay-lpga-after-54-holes",
+        "teams": {
+          "away": "N/A",
+          "home": "N/A"
+        },
+        "headline": "Lee overcomes seven-bogey rollercoaster to hold three-shot lead at Blue Bay",
+        "score": null,
+        "brief": "Mi Hyang Lee stayed in the driver's seat at the Blue Bay LPGA, but it wasn't exactly a smooth ride. On a day where the course played tough, Lee balanced out six bogeys with a resilient seven birdies to post a 1-under 71. She heads into the final round with a three-stroke cushion, looking to secure her first victory since 2017. With local favorite Yu Liu and a charging Hye-Jin Choi breathing down her neck, the final 18 holes in China will be a test of nerves for a leader who has proven she can handle the up and down nature of championship golf.",
+        "bullets": [
+          "Mi Hyang Lee sits at 12-under par overall, holding a three-stroke lead heading into Sunday.",
+          "Hye-Jin Choi moved into a tie for second place after carding a 4-under 68, the second-best round of the day.",
+          "Home-country favorite Yu Liu struggled to a 73 but remains in contention, three shots back of Lee.",
+          "Defending champion Rio Takeda remains within striking distance at 8-under par, four strokes off the lead.",
+          "Lucy Li was the day's biggest mover, jumping 19 spots into the top 10 after firing a 5-under 67."
+        ],
+        "context": "Mi Hyang Lee is seeking her first LPGA Tour title in nine years, while Yu Liu aims to become only the second Chinese player to win the Blue Bay title.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.lpga.com/news/2026/mi-hyang-lee-maintains-advantage-at-blue-bay-lpga-after-54-holes"
+        },
+        "highlights": [
+          {
+            "title": "LPGA Tour Highlights",
+            "videoId": "_uShptH-Uos",
+            "url": "https://www.youtube.com/watch?v=_uShptH-Uos",
+            "embedUrl": "https://www.youtube.com/embed/_uShptH-Uos"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "leagueName": "Formula One",
+    "leagueKey": "F1",
+    "sourceType": "console_recaps",
+    "newsBriefing": "The 2026 era began with a statement of intent from Mercedes, while the reigning champion's season started in the barriers.",
+    "games": [
+      {
+        "id": "13516116",
+        "teams": {
+          "away": "N/A",
+          "home": "N/A"
+        },
+        "headline": "Russell takes season-opening pole as Verstappen crashes out of Q1 nightmare",
+        "score": null,
+        "brief": "Mercedes silenced the doubters at Albert Park, proving that the new 2026 regulations might just belong to them. George Russell delivered a clinical lap to secure pole, leading a Silver Arrows front-row lockout alongside teenage sensation Kimi Antonelli-who remarkably recovered from a heavy practice crash to take second. The real shocker, however, was Max Verstappen; the four-time champ's title defense started with a thud as he crashed out in Q1, leaving him at the back of the grid for Sunday's main event.",
+        "bullets": [
+          "George Russell claimed pole position with a time of 1:18.518, nearly three-tenths clear of his teammate.",
+          "Kimi Antonelli secured P2 despite a massive crash in final practice that nearly kept him out of qualifying entirely.",
+          "Max Verstappen will start P20 after crashing into the barriers during Q1; he was cleared by medics following precautionary X-rays.",
+          "Red Bull rookie Isack Hadjar impressed on debut, taking P3 to beat out Ferrari's Charles Leclerc.",
+          "Lewis Hamilton's first qualifying with Ferrari ended in a disappointing P7 as the Scuderia struggled to match Mercedes' one-lap pace."
+        ],
+        "context": "Mercedes establishes itself as the early team to beat under the new 2026 regulations, while Verstappen faces a massive recovery drive to save his weekend.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.skysports.com/f1/news/12433/13516116/australian-gp-qualifying-george-russell-claims-pole-as-kimi-antonelli-seals-dominant-mercedes-one-two-after-max-verstappen-crashes-out"
+        },
+        "highlights": [
+          {
+            "title": "Formula One Highlights",
+            "videoId": "QztBs3IZBHk",
+            "url": "https://www.youtube.com/watch?v=QztBs3IZBHk",
+            "embedUrl": "https://www.youtube.com/embed/QztBs3IZBHk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "leagueName": "WTA",
+    "leagueKey": "WTA",
+    "sourceType": "console_recaps",
+    "newsBriefing": "The desert sun is heating up at Indian Wells as heavy hitters like Sabalenka and Gauff assert their dominance, while a new generation of talent led by Victoria Mboko continues to shake up the rankings.",
+    "games": [
+      {
+        "id": "35",
+        "teams": {
+          "away": "Camila Osorio",
+          "home": "Iva Jovic"
+        },
+        "headline": "Osorio stages gritty comeback against teenage phenom Jovic to earn Osaka rematch",
+        "score": null,
+        "brief": "In a match that felt like a marathon of wills, Camila Osorio showed why veteran experience matters in the desert. After falling behind early to the surging 18-year-old Iva Jovic, Osorio dug deep to flip the script, saving match points with aggressive 'genius' play. This win isn't just a survival story; it sets the stage for a highly anticipated second-round showdown against Naomi Osaka, a rematch that has the tennis world buzzing.",
+        "bullets": [
+          "Camila Osorio saved multiple match points to secure the three-set victory over the rising American star.",
+          "Iva Jovic entered the match following a rapid ascent into the Top 20 and a disciplined long-term developmental plan.",
+          "Osorio's defensive scrambling was highlighted by a match-point save that commentators labeled as pure genius.",
+          "The win secures Osorio a primetime slot against former World No. 1 Naomi Osaka."
+        ],
+        "context": "The victory sets up a high-profile rematch with Naomi Osaka and halts the immediate momentum of one of America's brightest young prospects.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.wtatennis.com/news/35"
+        },
+        "highlights": []
+      },
+      {
+        "id": "38",
+        "teams": {
+          "away": "Himeno Sakatsume",
+          "home": "Aryna Sabalenka"
+        },
+        "headline": "Sabalenka marks century as World No. 1 with dominant display over Sakatsume",
+        "score": null,
+        "brief": "Aryna Sabalenka treated her 100th match as the world's top-ranked player like just another day at the office, dispatching Himeno Sakatsume with trademark power. While Sakatsume earned roars from the crowd for some unbelievable court coverage and defensive gets, Sabalenka's weight of shot eventually wore the underdog down. It was a clinical performance that reminded everyone why she is the heavy favorite to hoist the trophy in Tennis Paradise.",
+        "bullets": [
+          "This victory marked Aryna Sabalenka's 100th match played as the WTA World No. 1.",
+          "Himeno Sakatsume reached the main draw through qualifying and showcased elite defensive speed throughout the match.",
+          "Sabalenka remains on a collision course for a potential quarterfinal clash with Amanda Anisimova.",
+          "The match was attended by Novak Djokovic, who was seen congratulating Sabalenka courtside afterward."
+        ],
+        "context": "Sabalenka solidifies her status as the tournament favorite while celebrating a major career milestone of 100 matches at the top of the rankings.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.wtatennis.com/news/38"
+        },
+        "highlights": []
+      },
+      {
+        "id": "39",
+        "teams": {
+          "away": "Victoria Mboko",
+          "home": "N/A"
+        },
+        "headline": "Teenage sensation Mboko continues historic rise with third-round berth at Indian Wells",
+        "score": null,
+        "brief": "The Victoria Mboko era is officially here. The Canadian teenager continued her meteoric rise through the rankings by booking a spot in the Indian Wells third round, showing poise far beyond her years. After a deep run in Doha that saw her break into the Top 10, Mboko is proving that her success isn't a fluke. She's playing with a level of confidence that has the rest of the locker room on high alert as she targets even higher ranking milestones this week.",
+        "bullets": [
+          "Victoria Mboko recently made her Top 10 debut following a dominant title run in Doha.",
+          "Mboko is one of several teenagers, alongside Iva Jovic and Mirra Andreeva, currently surging up the WTA rankings.",
+          "With this win, Mboko keeps her hopes alive of climbing even higher within the Top 10 by the end of the Sunshine Double.",
+          "The victory sets up a high-stakes encounter against seasoned veterans in the next round."
+        ],
+        "context": "Mboko's win further cements her status as a new powerhouse in the women's game and continues her streak of deep tournament runs.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.wtatennis.com/news/39"
+        },
+        "highlights": []
+      }
+    ]
+  },
+  {
+    "leagueName": "ATP",
+    "leagueKey": "ATP",
+    "sourceType": "console_recaps",
+    "newsBriefing": "The heavy hitters are making quick work of the early rounds at Indian Wells, with Jannik Sinner and Alexander Zverev looking untouchable while the next generation of American talent continues to show plenty of grit.",
+    "games": [
+      {
+        "id": "401803310",
+        "teams": {
+          "away": "Dalibor Svrcina",
+          "home": "Jannik Sinner"
+        },
+        "headline": "Sinner surrenders just two games in ruthless Indian Wells opening statement",
+        "score": "SINNER 6 6 - SVRCINA 1 1",
+        "brief": "Jannik Sinner didn't just win his opening match in the desert; he conducted a masterclass in efficiency. Facing Dalibor Svrcina, the World No. 2 looked every bit the dominant force that has taken the tour by storm over the last year, moving through his gears with terrifying ease. It was a clinical performance that sent a clear message to the rest of the draw: the path to the title still runs directly through him.",
+        "bullets": [
+          "Jannik Sinner needed just over an hour to dismantle Svrcina in a 6-1, 6-1 rout.",
+          "The Italian won a staggering 85% of his first-serve points throughout the match.",
+          "Sinner moves into the third round having spent minimal energy, a key factor for the long Indian Wells fortnight.",
+          "This victory extends Sinner's impressive winning streak against opponents ranked outside the Top 50."
+        ],
+        "context": "Sinner solidifies his position as the tournament co-favorite alongside Alcaraz with a flawless start to his campaign.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.atptour.com/en/scores/archive/indian-wells/404/2026/recap/gameId/401803310"
+        },
+        "highlights": []
+      },
+      {
+        "id": "401803311",
+        "teams": {
+          "away": "Matteo Berrettini",
+          "home": "Alexander Zverev"
+        },
+        "headline": "Zverev claims 'I feel different' after overpowering Berrettini in heavyweight clash",
+        "score": "ZVEREV 6 6 - BERRETTINI 3 4",
+        "brief": "In a battle of two of the tour's biggest servers, Alexander Zverev proved he has found another level of consistency this season. Zverev navigated a tricky opening set against the dangerous Matteo Berrettini before taking full control of the baseline exchanges. After the match, Zverev noted a change in his mental approach this year, and his ability to neutralize Berrettini's massive forehand suggested he might be right.",
+        "bullets": [
+          "Alexander Zverev secured the straight-sets win behind a dominant serving display, never facing a break point.",
+          "Matteo Berrettini showed flashes of his former Top 10 form but struggled to keep pace with Zverev's backhand depth.",
+          "Zverev has now won three consecutive matches against Berrettini on hard courts.",
+          "The win moves Zverev into a potential showdown with Felix Auger-Aliassime in the next round."
+        ],
+        "context": "Zverev's confident performance marks him as a serious threat to reach the final weekend in the desert.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.atptour.com/en/scores/archive/indian-wells/404/2026/recap/gameId/401803311"
+        },
+        "highlights": []
+      },
+      {
+        "id": "401803312",
+        "teams": {
+          "away": "Reilly Opelka",
+          "home": "Ben Shelton"
+        },
+        "headline": "Shelton survives major scare and spectacular tumble to outlast Opelka in all-American thriller",
+        "score": "SHELTON 6 7 6 - OPELKA 7 6 3",
+        "brief": "Ben Shelton and Reilly Opelka turned Stadium 2 into a high-octane serve-fest that kept the crowd on the edge of their seats for over two hours. Despite taking a scary-looking tumble mid-match that briefly hushed the stadium, Shelton's youthful energy and superior movement in the third set finally cracked Opelka's serve. It was a gritty, emotional win for the young American, who proved he can win even when he isn't playing his cleanest tennis.",
+        "bullets": [
+          "Ben Shelton overcame a first-set tiebreak loss to win two consecutive sets against his fellow countryman.",
+          "The match featured over 35 combined aces, with Opelka consistently clocking serves north of 140 mph.",
+          "Shelton recovered from a heavy fall behind the baseline that saw him tumble into the signage.",
+          "The victory marks Shelton's first career win over Opelka, moving him into the third round."
+        ],
+        "context": "Shelton's survival keeps American hopes high for a deep run from one of the local fan favorites.",
+        "recapStatus": "ok",
+        "source": {
+          "recapUrl": "https://www.atptour.com/en/scores/archive/indian-wells/404/2026/recap/gameId/401803312"
+        },
+        "highlights": []
       }
     ]
   }

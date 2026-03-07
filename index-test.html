@@ -39,9 +39,10 @@
   </header>
 
   <div class="flex w-full max-w-full items-start overflow-x-hidden bg-white text-gray-800">
-    <aside class="hidden md:sticky md:top-0 md:flex md:h-[calc(100vh-var(--header-h))] md:w-[34rem] md:shrink-0 md:self-start md:flex-col md:overflow-hidden md:border-r md:border-gray-200 md:bg-white md:shadow-sm">
+    <aside class="relative hidden md:sticky md:top-0 md:flex md:h-[calc(100vh-var(--header-h))] md:w-[34rem] md:shrink-0 md:self-start md:flex-col md:overflow-hidden md:border-r md:border-gray-200 md:bg-white md:shadow-sm">
+      <div class="pointer-events-none absolute inset-y-0 left-[225px] hidden border-l border-gray-200 md:block"></div>
       <div class="grid min-h-0 flex-1 content-start items-stretch grid-cols-[225px_minmax(0,1fr)]">
-        <section class="flex min-h-0 flex-col border-r border-gray-200">
+        <section class="flex min-h-0 flex-col">
           <div class="border-b border-gray-200 p-3">
             <label for="leagueFilter" class="mb-2 block text-xs font-semibold uppercase tracking-wide text-gray-500">Leagues</label>
             <input id="leagueFilter" type="text" placeholder="Filter leagues..."
@@ -85,7 +86,7 @@
           </section>
 
           <section class="min-w-0 overflow-hidden rounded-none border-y border-gray-200 bg-white shadow-none md:rounded-md md:border md:shadow-sm">
-            <div id="rightScroll" class="max-h-[calc(100vh-190px)] overflow-y-auto md:max-h-[calc(100vh-280px)]">
+            <div id="rightScroll" class="max-h-[calc(100vh-190px)] overflow-y-auto md:h-[calc(100vh-var(--header-h)-3rem)] md:max-h-none">
               <div id="leagueStream" class="space-y-6 p-2 pb-14 sm:p-4 sm:pb-32 md:space-y-[250px] md:p-4 md:pb-[250px]"></div>
             </div>
 
@@ -107,10 +108,6 @@
             </div>
           </section>
 
-          <footer class="rounded-md border border-gray-200 bg-white px-4 py-3 text-xs text-gray-500">
-            Tip: after you paste new JSON and push to GitHub, hard refresh if needed (Cmd+Shift+R). Deep-link with
-            <span class="font-mono">#ALL</span>, <span class="font-mono">#NBA</span>, <span class="font-mono">#NHL</span>, or <span class="font-mono">#Premier%20League</span>.
-          </footer>
         </div>
       </main>
     </div>
@@ -154,8 +151,12 @@
       { leagueName: "Carabao Cup", leagueKey: "carabaocup", fileUrl: "recaps-manual/daily/carabaocup.json" },
       { leagueName: "Coupe de France", leagueKey: "coupedefrance", fileUrl: "recaps-manual/daily/coupedefrance.json" },
       { leagueName: "WBC", leagueKey: "wbc", fileUrl: "recaps-manual/daily/wbc.json" },
+      { leagueName: "PGA Tour", leagueKey: "pgatour", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "PGA_TOUR" },
+      { leagueName: "DP World Tour", leagueKey: "dpworldtour", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "DP_WORLD_TOUR" },
+      { leagueName: "LPGA Tour", leagueKey: "lpgatour", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LPGA_TOUR" },
       { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LIV" },
-      { leagueName: "Tennis", leagueKey: "tennis", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "Tennis" }
+      { leagueName: "ATP", leagueKey: "atp", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "ATP" },
+      { leagueName: "WTA", leagueKey: "wta", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "WTA" }
     ];
 
     const LEAGUE_DISPLAY_ORDER = [
@@ -168,12 +169,24 @@
       "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France"
     ];
 
+    const GOLF_LEAGUE_DISPLAY_ORDER = [
+      "PGA Tour", "DP World Tour", "LPGA Tour", "LIV Golf"
+    ];
+
+    const TENNIS_LEAGUE_DISPLAY_ORDER = [
+      "ATP", "WTA"
+    ];
+
     const LEAGUE_ORDER_INDEX = Object.fromEntries(LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_ORDER_INDEX = Object.fromEntries(SOCCER_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
+    const GOLF_ORDER_INDEX = Object.fromEntries(GOLF_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
+    const TENNIS_ORDER_INDEX = Object.fromEntries(TENNIS_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_LEAGUE_KEYS = new Set([
       "premierleague", "uefachampionsleague", "mls", "laliga", "seriea", "bundesliga", "ligue1", "ligamx",
       "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance"
     ]);
+    const GOLF_LEAGUE_KEYS = new Set(["pgatour", "dpworldtour", "lpgatour", "livgolf"]);
+    const TENNIS_LEAGUE_KEYS = new Set(["atp", "wta"]);
     const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
     const MANUAL_TOP10_STORAGE_KEY = "thporth.manual-top10.v1";
     const MANUAL_TOP10_FILE_URL = "recaps-manual/daily/manual-top10.json";
@@ -350,6 +363,16 @@
         .map((el) => `${el.tagName.toLowerCase()}#${el.id || '-'}(cw=${el.clientWidth},sw=${el.scrollWidth})`)
         .join(", ");
 
+      const leagueLabelEl = mobileLeagueStrip?.querySelector("button[data-league-key] > div") || null;
+      const headlineBtnEl = mobileHeadlineStrip?.querySelector("button[data-game-id]") || null;
+      const briefingChipEl = document.querySelector(".league-section span.rounded-md.border.border-gray-200.bg-gray-50") || null;
+
+      const fontMetrics = (el) => {
+        if (!el) return "n/a";
+        const cs = window.getComputedStyle(el);
+        return `${cs.fontSize}/${cs.lineHeight}/w${cs.fontWeight}`;
+      };
+
       layoutDebugPanel.classList.remove("hidden");
       layoutDebugPanel.textContent = [
         `debugLayout=1`,
@@ -360,6 +383,7 @@
         `overflowNodes=${overflow.length}`,
         `firstOverflow=${firstOverflowLabel} ${firstOverflowDims}`,
         `overflowTop=${overflowList || 'none'}`,
+        `fonts league=${fontMetrics(leagueLabelEl)} headline=${fontMetrics(headlineBtnEl)} chip=${fontMetrics(briefingChipEl)}`,
       ].join(" | ");
     }
 
@@ -714,14 +738,26 @@
 
     function getLeagueSortRank(league) {
       const name = String(league?.leagueName || "").trim().toLowerCase();
-      if (Object.prototype.hasOwnProperty.call(LEAGUE_ORDER_INDEX, name)) {
-        return LEAGUE_ORDER_INDEX[name] * 1000;
-      }
       if (Object.prototype.hasOwnProperty.call(SOCCER_ORDER_INDEX, name)) {
         const soccerBase = Object.prototype.hasOwnProperty.call(LEAGUE_ORDER_INDEX, "soccer")
           ? LEAGUE_ORDER_INDEX.soccer
           : 100000;
         return soccerBase * 1000 + SOCCER_ORDER_INDEX[name] + 1;
+      }
+      if (Object.prototype.hasOwnProperty.call(GOLF_ORDER_INDEX, name)) {
+        const golfBase = Object.prototype.hasOwnProperty.call(LEAGUE_ORDER_INDEX, "pga tour")
+          ? LEAGUE_ORDER_INDEX["pga tour"]
+          : 100001;
+        return golfBase * 1000 + GOLF_ORDER_INDEX[name] + 1;
+      }
+      if (Object.prototype.hasOwnProperty.call(TENNIS_ORDER_INDEX, name)) {
+        const tennisBase = Object.prototype.hasOwnProperty.call(LEAGUE_ORDER_INDEX, "tennis")
+          ? LEAGUE_ORDER_INDEX.tennis
+          : 100002;
+        return tennisBase * 1000 + TENNIS_ORDER_INDEX[name] + 1;
+      }
+      if (Object.prototype.hasOwnProperty.call(LEAGUE_ORDER_INDEX, name)) {
+        return LEAGUE_ORDER_INDEX[name] * 1000;
       }
       return Number.MAX_SAFE_INTEGER;
     }
@@ -840,6 +876,22 @@
       mobileLeagueStrip.style.maxWidth = `${stripWidth}px`;
     }
 
+    function enforceTopStripFontSize() {
+      const px = "14px";
+      if (mobileLeagueStrip) {
+        [...mobileLeagueStrip.querySelectorAll("button[data-league-key] > div:first-child")].forEach((el) => {
+          el.style.setProperty("font-size", px, "important");
+          el.style.setProperty("line-height", "1.2", "important");
+        });
+      }
+      if (mobileHeadlineStrip) {
+        [...mobileHeadlineStrip.querySelectorAll("button[data-game-id]")].forEach((el) => {
+          el.style.setProperty("font-size", px, "important");
+          el.style.setProperty("line-height", "1.2", "important");
+        });
+      }
+    }
+
     function buildMobileLeagueStrip(visibleLeagues) {
       if (!mobileLeagueStrip) return;
       syncMobileLeagueStripViewportWidth();
@@ -861,7 +913,7 @@
             : "border-gray-200 bg-white text-gray-700 hover:bg-gray-100");
 
         const name = document.createElement("div");
-        name.className = "truncate text-[11px] font-bold sm:text-sm";
+        name.className = "truncate text-[14px] font-normal leading-normal";
         name.textContent = lg.leagueName;
 
         const sub = document.createElement("div");
@@ -889,6 +941,7 @@
         active.scrollIntoView({ behavior: "auto", block: "nearest", inline: "center" });
       }
 
+      enforceTopStripFontSize();
       syncMobileLeagueStripViewportWidth();
       runLayoutDebug();
     }
@@ -940,7 +993,7 @@
       clear(mobileHeadlineStrip);
 
       const track = document.createElement("div");
-      track.className = "flex w-max min-w-full items-stretch gap-2 whitespace-nowrap";
+      track.className = "flex w-max min-w-full items-stretch gap-2";
       mobileHeadlineStrip.appendChild(track);
 
       if (!cards.length) {
@@ -960,7 +1013,7 @@
         btn.type = "button";
         btn.dataset.gameId = gameId;
         btn.className =
-          "min-w-[8.5rem] rounded-md border px-1.5 py-1 text-left text-[10px] leading-snug transition-colors sm:min-w-[12rem] sm:px-3 sm:py-2 sm:text-xs " +
+          "rounded-md border px-1.5 py-1 text-left text-[14px] font-normal leading-normal whitespace-normal break-words transition-colors sm:px-3 sm:py-2 " +
           (isActive
             ? "border-black bg-black text-white hover:bg-gray-800"
             : "border-gray-200 bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-900");
@@ -974,6 +1027,24 @@
 
         track.appendChild(btn);
       });
+
+      const stripWidth = Math.floor(mobileHeadlineStrip.clientWidth || document.documentElement.clientWidth || 0);
+      const headlineWidth = Math.max(180, Math.floor(stripWidth * 0.75));
+      const leagueBtn = mobileLeagueStrip ? mobileLeagueStrip.querySelector("button[data-league-key]") : null;
+      const leagueHeight = leagueBtn ? Math.ceil(leagueBtn.getBoundingClientRect().height || 0) : 0;
+
+      [...track.querySelectorAll("button[data-game-id]")].forEach((btn) => {
+        btn.style.width = `${headlineWidth}px`;
+        btn.style.minWidth = `${headlineWidth}px`;
+        btn.style.maxWidth = `${headlineWidth}px`;
+        if (leagueHeight > 0) {
+          btn.style.minHeight = `${leagueHeight}px`;
+          btn.style.height = "auto";
+          btn.style.maxHeight = "none";
+        }
+      });
+
+      enforceTopStripFontSize();
 
       const activeId = state.activeGameByLeague.get(currentKey) || cards[0]?.dataset?.gameId;
       if (activeId) {
@@ -993,6 +1064,20 @@
       return Object.prototype.hasOwnProperty.call(SOCCER_ORDER_INDEX, name);
     }
 
+    function isGolfLeague(lg) {
+      const key = String(lg?.leagueKey || "").trim().toLowerCase();
+      if (GOLF_LEAGUE_KEYS.has(key)) return true;
+      const name = String(lg?.leagueName || "").trim().toLowerCase();
+      return Object.prototype.hasOwnProperty.call(GOLF_ORDER_INDEX, name);
+    }
+
+    function isTennisLeague(lg) {
+      const key = String(lg?.leagueKey || "").trim().toLowerCase();
+      if (TENNIS_LEAGUE_KEYS.has(key)) return true;
+      const name = String(lg?.leagueName || "").trim().toLowerCase();
+      return Object.prototype.hasOwnProperty.call(TENNIS_ORDER_INDEX, name);
+    }
+
     function normalizeText(s) {
       return String(s || "").toLowerCase();
     }
@@ -1002,8 +1087,15 @@
     }
 
     function shouldSkipGame(game) {
+      const recapStatus = String(game?.recapStatus || "").trim().toLowerCase();
       const headline = String(game?.headline || "").trim().toLowerCase();
-      return headline === "recap text missing";
+      const brief = String(game?.brief || game?.lead || "").trim();
+
+      // Hide entries where recap text is unavailable, even if a custom placeholder headline exists.
+      if (!brief) return true;
+      if (recapStatus && recapStatus !== "ok") return true;
+      if (headline === "recap text missing") return true;
+      return false;
     }
 
     function extractBigNumbers(text) {
@@ -1571,10 +1663,10 @@
       const meta = document.createElement("span");
       meta.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-1 text-[11px] text-gray-600 sm:px-3 sm:py-2 sm:text-xs";
       const mobileMeta = lg.leagueKey === "all"
-        ? `${gameCount} storylines`
+        ? "News briefing"
         : `${gameCount} recaps`;
       const desktopMeta = lg.leagueKey === "all"
-        ? `${lg.leagueName} • ${gameCount} ranked storylines`
+        ? "News briefing"
         : `${lg.leagueName} • ${gameCount} recaps • ${lg.fileUrl}`;
       meta.textContent = window.matchMedia("(max-width: 767px)").matches ? mobileMeta : desktopMeta;
       headerInner.appendChild(meta);
@@ -1584,10 +1676,6 @@
       briefing.className = "border-b border-gray-200 px-3 py-3 sm:px-4 sm:py-4";
       const leagueBriefText = composeLeagueBriefText(data);
       if (leagueBriefText) {
-        const h = document.createElement("div");
-        h.className = "mb-2 text-xs font-semibold sm:text-sm";
-        h.textContent = "News briefing";
-
         const p = document.createElement("div");
         p.className = "brief-collapsed whitespace-pre-line text-sm leading-relaxed text-gray-700";
         p.textContent = leagueBriefText;
@@ -1620,7 +1708,6 @@
           }
         });
 
-        briefing.appendChild(h);
         briefing.appendChild(p);
         briefing.appendChild(toggle);
       } else {
@@ -1695,6 +1782,8 @@
       const top10League = visibleLeagues.find((lg) => lg.leagueKey === "all") || null;
       const nonTop10Leagues = visibleLeagues.filter((lg) => lg.leagueKey !== "all");
       const soccerLeagues = nonTop10Leagues.filter((lg) => isSoccerLeague(lg));
+      const golfLeagues = nonTop10Leagues.filter((lg) => isGolfLeague(lg));
+      const tennisLeagues = nonTop10Leagues.filter((lg) => isTennisLeague(lg));
 
       const appendLeagueButton = (lg, opts = {}) => {
         const idx = indexByLeagueKey.get(lg.leagueKey);
@@ -1771,7 +1860,51 @@
         leagueNav.appendChild(soccerGroup);
       };
 
+      const appendGolfGroup = () => {
+        if (!golfLeagues.length) return;
+        const golfGroup = document.createElement("div");
+        golfGroup.className = "mt-1 rounded-md border border-gray-200 bg-white";
+
+        const golfHeader = document.createElement("div");
+        golfHeader.className = "border-b border-gray-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-gray-600";
+        golfHeader.textContent = "Golf";
+        golfGroup.appendChild(golfHeader);
+
+        const golfItems = document.createElement("div");
+        golfItems.className = "space-y-1 p-1";
+        golfGroup.appendChild(golfItems);
+
+        golfLeagues.forEach((lg) => {
+          appendLeagueButton(lg, { nested: true, container: golfItems });
+        });
+
+        leagueNav.appendChild(golfGroup);
+      };
+
+      const appendTennisGroup = () => {
+        if (!tennisLeagues.length) return;
+        const tennisGroup = document.createElement("div");
+        tennisGroup.className = "mt-1 rounded-md border border-gray-200 bg-white";
+
+        const tennisHeader = document.createElement("div");
+        tennisHeader.className = "border-b border-gray-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-gray-600";
+        tennisHeader.textContent = "Tennis";
+        tennisGroup.appendChild(tennisHeader);
+
+        const tennisItems = document.createElement("div");
+        tennisItems.className = "space-y-1 p-1";
+        tennisGroup.appendChild(tennisItems);
+
+        tennisLeagues.forEach((lg) => {
+          appendLeagueButton(lg, { nested: true, container: tennisItems });
+        });
+
+        leagueNav.appendChild(tennisGroup);
+      };
+
       let insertedSoccerGroup = false;
+      let insertedGolfGroup = false;
+      let insertedTennisGroup = false;
       nonTop10Leagues.forEach((lg) => {
         if (isSoccerLeague(lg)) {
           if (!insertedSoccerGroup) {
@@ -1780,11 +1913,31 @@
           }
           return;
         }
+        if (isGolfLeague(lg)) {
+          if (!insertedGolfGroup) {
+            appendGolfGroup();
+            insertedGolfGroup = true;
+          }
+          return;
+        }
+        if (isTennisLeague(lg)) {
+          if (!insertedTennisGroup) {
+            appendTennisGroup();
+            insertedTennisGroup = true;
+          }
+          return;
+        }
         appendLeagueButton(lg);
       });
 
       if (!insertedSoccerGroup && soccerLeagues.length) {
         appendSoccerGroup();
+      }
+      if (!insertedGolfGroup && golfLeagues.length) {
+        appendGolfGroup();
+      }
+      if (!insertedTennisGroup && tennisLeagues.length) {
+        appendTennisGroup();
       }
     }
 
@@ -2175,6 +2328,8 @@
             const leagueName = String(lg.leagueName || "").toLowerCase();
             if (leagueName.includes(q)) return true;
             if (isSoccerLeague(lg) && "soccer".includes(q)) return true;
+            if (isGolfLeague(lg) && "golf".includes(q)) return true;
+            if (isTennisLeague(lg) && "tennis".includes(q)) return true;
             return false;
           });
       await rebuildStream();
@@ -2230,12 +2385,15 @@
       await rebuildStream();
       updateModeAndStatus();
       syncMobileLeagueStripViewportWidth();
+      enforceTopStripFontSize();
       runLayoutDebug();
     }
 
     window.addEventListener("resize", () => {
       syncHeaderHeightVar();
       syncMobileLeagueStripViewportWidth();
+      enforceTopStripFontSize();
+      if (state.currentLeagueKey) buildHeadlineNav();
       runLayoutDebug();
     });
 

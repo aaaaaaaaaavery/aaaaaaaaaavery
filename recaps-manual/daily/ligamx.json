@@ -1,7 +1,54 @@
 {
-  "leagueName": "Liga MX",
-  "leagueKey": "MEX.1",
-  "sourceType": "console_recaps",
-  "newsBriefing": "",
-  "games": []
+"leagueName": "Liga MX",
+"leagueKey": "LIGA_MX",
+"sourceType": "console_recaps",
+"leagueBriefing": "Pumas continues to solidify its status as a title contender, while Necaxa's struggles deepen following a heartbreaking last-minute collapse at home.",
+"games": [
+{
+"id": "20260306-0076",
+"teams": {
+"away": "Pumas",
+"home": "Necaxa"
+},
+"headline": "Memote Martínez delivers late heroics as Pumas cements title credentials in Aguascalientes",
+"score": "PUMAS 1 - NECAXA 0",
+"brief": "Pumas dominated possession from the opening whistle but struggled to find the clinical touch required to break down a resilient Necaxa defense. The match seemed destined for a frustrating draw after a disallowed Necaxa goal and several heroic saves from Ezequiel Unsain, but Guillermo 'Memote' Martínez proved to be the difference-maker. Coming off the bench, Martínez buried a 84th-minute header to secure three vital points, moving the university side into the upper echelon of the Clausura standings while leaving the Rayos to rue a nightmare evening that included an early injury to their captain.",
+"bullets": [
+"Guillermo 'Memote' Martínez scored the game-winner in the 84th minute shortly after entering the match as a substitute.",
+"Necaxa captain Alexis Peña was forced off in tears due to an injury only 16 minutes into the first half.",
+"Keylor Navas maintained a clean sheet for Pumas, further fueling rumors of an impending contract renewal.",
+"Necaxa had a potential opening goal by Tomás Badaloni overturned by VAR due to a handball early in the second half.",
+"Goalkeeper Ezequiel Unsain kept Necaxa in the fight with several high-profile saves, including a long-range blast from Jordan Carrillo."
+],
+"context": "The victory moves Pumas into the top tier of the table as title favorites while Necaxa remains mired in a difficult slump.",
+"recapStatus": "ok",
+"source": {
+"recapUrl": "[https://www.soyfutbol.com/en/leagues/title-favorites-pumas-defeats-necaxa-with-memote-martinezs-stunning-goal-in-matchday-10-of-the-2026-liga-mx-clausura-20260306-0076.html](https://www.soyfutbol.com/en/leagues/title-favorites-pumas-defeats-necaxa-with-memote-martinezs-stunning-goal-in-matchday-10-of-the-2026-liga-mx-clausura-20260306-0076.html)"
+},
+"highlights": []
+},
+{
+"id": "20260306-0073",
+"teams": {
+"away": "León",
+"home": "Mazatlán FC"
+},
+"headline": "Rubio brace leads Mazatlán's four-goal explosion in dominant rout of struggling León",
+"score": "MAZ 4 - LEO 2",
+"brief": "Mazatlán FC bounced back from a recent slump with an emphatic offensive performance, dismantling a vulnerable León side at El Encanto Stadium. After surviving an early scare, the Cannoners took control through Édgar Yoel Bárcenas before Brian Rubio took over the spotlight with a clinical brace. Despite a brief response from León before halftime and a late consolation goal from Diber Cambindo, Mazatlán never looked in danger, sealing the result with a Josué Ovalle header. The win marks a significant turning point for Sergio Bueno's squad, while 'La Fiera' leaves Sinaloa searching for answers after their fifth loss of the semester.",
+"bullets": [
+"Brian Rubio was the man of the match, netting goals in the 38th and 47th minutes to lead the Cannoners' attack.",
+"Édgar Yoel Bárcenas opened the scoring with a stunning left-footed strike in the 24th minute.",
+"León's Diber Cambindo had a mixed night, missing a clear one-on-one in the first minute but scoring a long-range goal in the 75th.",
+"Josué Ovalle effectively ended any hope of a comeback with a powerful header in the 69th minute to make it 4-1.",
+"The victory moves Mazatlán to 10 points in the standings, while León continues to slide down the table."
+],
+"context": "Mazatlán revitalizes its bid for a playoff spot while León falls into a deep mid-season slump with its fifth defeat.",
+"recapStatus": "ok",
+"source": {
+"recapUrl": "https://www.soyfutbol.com/en/leagues/another-embarrassment-for-leon-mazatlan-fc-scores-4-goals-against-la-fiera-20260306-0073.html"
+},
+"highlights": []
+}
+]
 }

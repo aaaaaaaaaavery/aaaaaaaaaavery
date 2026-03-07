@@ -1,7 +1,31 @@
 {
-  "leagueName": "LaLiga",
-  "leagueKey": "ESP.1",
-  "sourceType": "console_recaps",
-  "newsBriefing": "",
-  "games": []
+	"leagueName": "LaLiga",
+	"leagueKey": "ESP.1",
+	"sourceType": "console_recaps",
+	"newsBriefing": "Real Madrid avoided a third straight league stumble when Federico Valverde's stoppage-time strike secured a 2-1 win at Celta Vigo, keeping their title hopes alive before a key Champions League week.",
+	"games": [
+		{
+			"id": "20260306-celta-realmadrid",
+			"teams": {
+				"away": "Real Madrid",
+				"home": "Celta Vigo"
+			},
+			"headline": "Valverde's stoppage-time winner saves Madrid from another title-race slip",
+			"score": "CEL 1 - RMA 2",
+			"brief": "Real Madrid badly needed a response and got one at the last possible moment, edging Celta Vigo 2-1 thanks to Federico Valverde's deflected winner deep into stoppage time. Madrid started fast through Aurelien Tchouameni but lost control after Borja Iglesias equalized, and for long stretches looked vulnerable again with key absences still biting. Just when another damaging draw seemed inevitable, Valverde pounced on a loose ball and delivered the break they needed to keep pressure on Barcelona.",
+			"bullets": [
+				"Federico Valverde scored the winner four minutes into stoppage time as Madrid beat Celta 2-1.",
+				"Aurelien Tchouameni opened the scoring in the 11th minute for his first LaLiga goal since April 2024.",
+				"Borja Iglesias equalized in the 25th minute after Williot Swedberg's run and cutback.",
+				"Thibaut Courtois made key saves, including stops against Borja and Swedberg in dangerous moments.",
+				"Iago Aspas nearly won it for Celta late, but his low shot hit the post before Madrid's stoppage-time twist."
+			],
+			"context": "The late win stops Madrid's mini-slide after back-to-back defeats and gives them momentum heading into the Champions League clash with Manchester City.",
+			"recapStatus": "ok",
+			"source": {
+				"recapUrl": "provided_text_only"
+			},
+			"highlights": []
+		}
+	]
 }

@@ -1,7 +1,39 @@
 {
   "leagueName": "Ligue 1",
-  "leagueKey": "FRA.1",
+  "leagueKey": "LIGUE1",
   "sourceType": "console_recaps",
-  "newsBriefing": "",
-  "games": []
+  "newsBriefing": "Monaco landed a statement 3-1 win at PSG, tightening the title race and handing the reigning European champions a damaging result days before their Champions League showdown with Chelsea.",
+  "games": [
+    {
+      "id": "20260306-psg-monaco",
+      "teams": {
+        "away": "Monaco",
+        "home": "Paris Saint-Germain"
+      },
+      "headline": "Monaco punish shaky PSG to win 3-1 before Chelsea showdown",
+      "score": "PSG 1 - MON 3",
+      "brief": "Monaco took full advantage of PSG mistakes and poor defensive transitions, winning 3-1 in Paris and exposing real fragility in Luis Enrique's side ahead of a season-defining Champions League tie with Chelsea. PSG briefly threatened a comeback after Bradley Barcola made it 2-1, but Folarin Balogun struck quickly to kill the momentum and seal a major away result for Monaco.",
+      "bullets": [
+        "Monaco won 3-1 at the Parc des Princes, with goals from Maghnes Akliouche, Aleksandr Golovin and Folarin Balogun.",
+        "Balogun scored his fifth goal in his last five games and now has 13 goals in all competitions this season.",
+        "PSG cut it to 2-1 through Bradley Barcola's 10th goal of the season, but conceded again shortly after.",
+        "PSG have now lost four Ligue 1 matches in 25 games this season and seven matches in all competitions in 2025-26.",
+        "Monaco are unbeaten in seven league matches (5 wins, 2 draws) and climbed to fifth in the table."
+      ],
+      "context": "The defeat could shrink PSG's title lead to one point and raises pressure before the Champions League last-16 first leg against Chelsea.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "provided_text_only"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "XHASxPuudPc",
+          "title": "PSG vs Monaco highlights",
+          "url": "https://www.youtube.com/watch?v=XHASxPuudPc",
+          "embedUrl": "https://www.youtube.com/embed/XHASxPuudPc"
+        }
+      ]
+    }
+  ]
 }

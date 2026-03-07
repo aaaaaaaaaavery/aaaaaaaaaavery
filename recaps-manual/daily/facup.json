@@ -1,7 +1,31 @@
 {
-  "leagueName": "FA Cup",
-  "leagueKey": "ENG.FA",
-  "sourceType": "console_recaps",
-  "newsBriefing": "",
-  "games": []
+	"leagueName": "FA Cup",
+	"leagueKey": "ENG.FA",
+	"sourceType": "console_recaps",
+	"newsBriefing": "Liverpool answered their recent league stumble at Molineux with a decisive 3-1 FA Cup win over Wolves, powered by Andy Robertson's goal-and-assist performance to book a quarter-final spot.",
+	"games": [
+		{
+			"id": "20260307-wolves-liverpool",
+			"teams": {
+				"away": "Liverpool",
+				"home": "Wolves"
+			},
+			"headline": "Robertson leads Liverpool's cup response as Reds knock out Wolves",
+			"score": "WOL 1 - LIV 3",
+			"brief": "Liverpool got the exact response they needed, beating Wolves 3-1 at Molineux to reach the FA Cup quarter-finals just days after losing to the same opponent in the league. Andy Robertson changed the tie with a rocket from range and then set up Mohamed Salah moments later, flipping a cagey game into Liverpool's control. Curtis Jones added a classy third to finish it off before a late Hee-Chan Hwang consolation, giving Arne Slot's side momentum ahead of a busy week in Europe.",
+			"bullets": [
+				"Liverpool won 3-1 away to Wolves to advance to the FA Cup quarter-finals.",
+				"Andy Robertson scored and assisted within the early second-half burst that decided the tie.",
+				"Mohamed Salah's goal was initially flagged offside before VAR awarded it.",
+				"Curtis Jones scored Liverpool's third after Slot's side controlled the second half.",
+				"Wolves had only one big late payoff chance and scored through Hee-Chan Hwang, but never recovered from conceding twice in quick succession."
+			],
+			"context": "The win avenges Tuesday's stoppage-time league defeat at Molineux and sends Liverpool into the last-eight draw with confidence restored.",
+			"recapStatus": "ok",
+			"source": {
+				"recapUrl": "provided_text_only"
+			},
+			"highlights": []
+		}
+	]
 }
