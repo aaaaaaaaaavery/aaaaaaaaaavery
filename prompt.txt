@@ -124,7 +124,15 @@ Structure:
 "source": {
 "recapUrl": ""
 },
-"highlights": []
+"highlights": [
+{
+"provider": "",
+"videoId": "",
+"title": "",
+"url": "",
+"embedUrl": ""
+}
+]
 }
 ]
 }
@@ -139,3 +147,5 @@ Important: Give results in JSON, add them directly to the .json document I tell 
 Note: if your output shows an entry that says "recap text missing" for headline, don't write that entry to the document.
 
 Here's the data for 
+
+
