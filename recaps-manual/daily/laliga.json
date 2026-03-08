@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "xHSYTEu9B0g",
-          "title": "RCD MALLORCA 2 - 2 CA OSASUNA | HIGHLIGHTS LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=xHSYTEu9B0g",
-          "embedUrl": "https://www.youtube.com/embed/xHSYTEu9B0g"
+          "videoId": "8akfA36c254",
+          "title": "CA OSASUNA 2 - 2 RCD MALLORCA | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=8akfA36c254",
+          "embedUrl": "https://www.youtube.com/embed/8akfA36c254",
+          "publishedAt": "2026-03-07T15:15:30Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "yOOJFuT6Nek",
-          "title": "Levante vs. Girona | LALIGA Highlights | ESPN FC",
-          "url": "https://www.youtube.com/watch?v=yOOJFuT6Nek",
-          "embedUrl": "https://www.youtube.com/embed/yOOJFuT6Nek"
+          "videoId": "i-qkf2cdPTQ",
+          "title": "LEVANTE UD 1 - 1 GIRONA FC | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=i-qkf2cdPTQ",
+          "embedUrl": "https://www.youtube.com/embed/i-qkf2cdPTQ",
+          "publishedAt": "2026-03-07T17:25:08Z",
+          "matchScore": 100
         }
       ]
     },
@@ -90,10 +94,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "EHjGFXY2NwE",
-          "title": "Real Sociedad vs. Atletico Madrid | LALIGA Highlights | ESPN FC",
-          "url": "https://www.youtube.com/watch?v=EHjGFXY2NwE",
-          "embedUrl": "https://www.youtube.com/embed/EHjGFXY2NwE"
+          "videoId": "7PATWAwB82s",
+          "title": "ATLÉTICO DE MADRID 3 - 2 REAL SOCIEDAD | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=7PATWAwB82s",
+          "embedUrl": "https://www.youtube.com/embed/7PATWAwB82s",
+          "publishedAt": "2026-03-07T19:51:22Z",
+          "matchScore": 100
         }
       ]
     },

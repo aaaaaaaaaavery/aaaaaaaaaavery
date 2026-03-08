@@ -27,10 +27,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "lK3q8rXtVms",
+          "title": "TIGRES 1-0 MONTERREY | ¡La U es dueña del Clásico Regio! | J10 Con México C26",
+          "url": "https://www.youtube.com/watch?v=lK3q8rXtVms",
+          "embedUrl": "https://www.youtube.com/embed/lK3q8rXtVms",
+          "publishedAt": "2026-03-08T06:06:47Z",
+          "matchScore": 100
         }
       ]
     },
@@ -57,10 +59,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "m27xVLEOXao",
+          "title": "ATLAS 1-2 CHIVAS | Guadalajara y el Clásico Tapatío se pintan de rojiblancos | J10 Con México C26",
+          "url": "https://www.youtube.com/watch?v=m27xVLEOXao",
+          "embedUrl": "https://www.youtube.com/embed/m27xVLEOXao",
+          "publishedAt": "2026-03-08T05:00:59Z",
+          "matchScore": 100
         }
       ]
     },
@@ -87,10 +91,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "XX4RE4_ynds",
+          "title": "CRUZ AZUL 3-0 ATLÉTICO DE SAN LUIS | La Máquina sigue pitando en lo alto | J10 Con México C26",
+          "url": "https://www.youtube.com/watch?v=XX4RE4_ynds",
+          "embedUrl": "https://www.youtube.com/embed/XX4RE4_ynds",
+          "publishedAt": "2026-03-08T03:00:40Z",
+          "matchScore": 100
         }
       ]
     },
@@ -117,10 +123,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "g7RiLsGUERw",
+          "title": "QUERÉTARO 1-2 AMÉRICA | Las Águilas vuelan en La Corregidora con muchos cambios | J10 Con México C26",
+          "url": "https://www.youtube.com/watch?v=g7RiLsGUERw",
+          "embedUrl": "https://www.youtube.com/embed/g7RiLsGUERw",
+          "publishedAt": "2026-03-08T03:00:48Z",
+          "matchScore": 100
         }
       ]
     },
@@ -147,10 +155,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "U5BgH70cIB4",
+          "title": "PACHUCA 2-1 PUEBLA | La Bella Airosa vio triunfar a los Tuzos | J10 Con México C26",
+          "url": "https://www.youtube.com/watch?v=U5BgH70cIB4",
+          "embedUrl": "https://www.youtube.com/embed/U5BgH70cIB4",
+          "publishedAt": "2026-03-08T05:20:55Z",
+          "matchScore": 100
         }
       ]
     }

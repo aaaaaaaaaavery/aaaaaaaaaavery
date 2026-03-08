@@ -28,11 +28,11 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "Q7d3CMSOxys",
-          "title": "Massive Point At Home Secured! | SC FREIBURG - BAYER 04 LEVERKUSEN | Highlights | MD 25 – Bundesliga",
-          "url": "https://www.youtube.com/watch?v=Q7d3CMSOxys",
-          "embedUrl": "https://www.youtube.com/embed/Q7d3CMSOxys",
-          "publishedAt": "2026-03-07T16:41:02Z",
+          "videoId": "3fA6Z8ME-fo",
+          "title": "Late Equalizer Earns Point! | SC FREIBURG - BAYER 04 LEVERKUSEN | Highlights | MD 25 – Bundesliga",
+          "url": "https://www.youtube.com/watch?v=3fA6Z8ME-fo",
+          "embedUrl": "https://www.youtube.com/embed/3fA6Z8ME-fo",
+          "publishedAt": "2026-03-08T23:00:00Z",
           "matchScore": 100
         }
       ]
@@ -61,11 +61,11 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "KuT0IVcxLg8",
-          "title": "Guirassy & Beier Score At Close Win! | 1. FC KÖLN - BORUSSIA DORTMUND | Highlights | Bundesliga",
-          "url": "https://www.youtube.com/watch?v=KuT0IVcxLg8",
-          "embedUrl": "https://www.youtube.com/embed/KuT0IVcxLg8",
-          "publishedAt": "2026-03-07T19:41:16Z",
+          "videoId": "tB4Pfw9Te9c",
+          "title": "VAR-DRAMA And Red Card! | 1. FC KÖLN - BORUSSIA DORTMUND | Highlights | Bundesliga",
+          "url": "https://www.youtube.com/watch?v=tB4Pfw9Te9c",
+          "embedUrl": "https://www.youtube.com/embed/tB4Pfw9Te9c",
+          "publishedAt": "2026-03-08T23:00:00Z",
           "matchScore": 100
         }
       ]
@@ -94,10 +94,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "RB Leipzig 2-1 FC Augsburg Highlights",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "ws0MTqfmaKw",
+          "title": "Own Goal in Added Time! | RB LEIPZIG - FC AUGSBURG | Highlights | Matchday 25 – Bundesliga 2025/26",
+          "url": "https://www.youtube.com/watch?v=ws0MTqfmaKw",
+          "embedUrl": "https://www.youtube.com/embed/ws0MTqfmaKw",
+          "publishedAt": "2026-03-08T23:00:00Z",
+          "matchScore": 100
         }
       ]
     },
@@ -125,10 +127,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "1. FSV Mainz 05 2-2 VfB Stuttgart Highlights",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "HGvw3-N9AYY",
+          "title": "Crunch-Time Comeback! | MAINZ 05 - VFB STUTTGART | Highlights | Matchday 25 – Bundesliga 2025/26",
+          "url": "https://www.youtube.com/watch?v=HGvw3-N9AYY",
+          "embedUrl": "https://www.youtube.com/embed/HGvw3-N9AYY",
+          "publishedAt": "2026-03-08T23:00:00Z",
+          "matchScore": 100
         }
       ]
     },
@@ -156,10 +160,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "1. FC Heidenheim 2-4 TSG Hoffenheim Highlights",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "72Xn6-jW0Z8",
+          "title": "First-Half Brace Sets Up The Win! | HEIDENHEIM - HOFFENHEIM | Highlights | Matchday 25 – Bundesliga",
+          "url": "https://www.youtube.com/watch?v=72Xn6-jW0Z8",
+          "embedUrl": "https://www.youtube.com/embed/72Xn6-jW0Z8",
+          "publishedAt": "2026-03-08T23:00:00Z",
+          "matchScore": 100
         }
       ]
     },
@@ -187,10 +193,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "VfL Wolfsburg 1-2 Hamburger SV Highlights",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "ZnfQz-wjB-o",
+          "title": "Three Goals, Three Penalties! | VFL WOLFSBURG - HAMBURGER SV | Highlights | Matchday 25 – Bundesliga",
+          "url": "https://www.youtube.com/watch?v=ZnfQz-wjB-o",
+          "embedUrl": "https://www.youtube.com/embed/ZnfQz-wjB-o",
+          "publishedAt": "2026-03-08T23:00:00Z",
+          "matchScore": 100
         }
       ]
     }

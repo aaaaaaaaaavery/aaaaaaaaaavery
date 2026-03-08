@@ -16,7 +16,7 @@ NBA_PLAYLIST="PLlVlyGVtvuVlek5UOvwJaRDtuAI1FgGZf"
 NHL_PLAYLIST="PL1NbHSfosBuFyu867mbHHhB2G6fx7jtiH"
 PREMIER_LEAGUE_PLAYLIST="PLXEMPXZ3PY1hMzinDc1TvSm8U2NUyz-0E"
 MLS_PLAYLIST="PLcj4z4KsbIoXrLpj2pOVr_maRaxhW902-"
-LIGAMX_PLAYLIST="PLKl0099ohpvFhKdBahSmbt2fvMMK2lNFw"
+LIGAMX_PLAYLIST="PL5MdN4O9NWTWAqny6JWloIRfS4DNAdb3U"
 SERIEA_PLAYLIST="PLFTjYT0jsEKzS9FjcjjoKjihaqZ0uEyKP"
 BUNDESLIGA_PLAYLIST="PL3uJGozO1imdWwTzbnNXTuiXbLJhFb83r"
 LIGUE1_PLAYLIST="PL5dXR9bHuKvnWwEHClY5GL3QDzKEn4av_"
@@ -97,8 +97,9 @@ run_match_per_game_date() {
   local json_file="$1"
   local playlist_id="$2"
   local league_name="$3"
-  local title_filter="$4"
+  local title_filter="${4:-}"
   local max_date_drift_days="${5:-}"
+  local max_video_age_hours="${6:-}"
 
   echo ""
   echo "[highlights] Matching $league_name videos using per-game dates from JSON"
@@ -111,11 +112,18 @@ run_match_per_game_date() {
   local cmd=(env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
     --json "$json_file" \
     --playlist "$playlist_id" \
-    --usePerGameDate true \
-    --titleMustInclude "$title_filter")
+    --usePerGameDate true)
+
+  if [[ -n "$title_filter" ]]; then
+    cmd+=(--titleMustInclude "$title_filter")
+  fi
 
   if [[ -n "$max_date_drift_days" ]]; then
     cmd+=(--maxDateDriftDays "$max_date_drift_days")
+  fi
+
+  if [[ -n "$max_video_age_hours" ]]; then
+    cmd+=(--maxVideoAgeHours "$max_video_age_hours")
   fi
 
   run_matcher_cmd "$league_name" "${cmd[@]}"
@@ -194,7 +202,7 @@ run_match "$ROOT_DIR/recaps-manual/daily/nba.json" "$NBA_PLAYLIST" "NBA"
 run_match "$ROOT_DIR/recaps-manual/daily/nhl.json" "$NHL_PLAYLIST" "NHL"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/premierleague.json" "$PREMIER_LEAGUE_PLAYLIST" "Premier League" "premier league highlights"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/mls.json" "$MLS_PLAYLIST" "MLS" "highlights"
-run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligamx.json" "$LIGAMX_PLAYLIST" "Liga MX" "liga mx"
+run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligamx.json" "$LIGAMX_PLAYLIST" "Liga MX" "" "" "48"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/seriea.json" "$SERIEA_PLAYLIST" "Serie A" "serie a"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/bundesliga.json" "$BUNDESLIGA_PLAYLIST" "Bundesliga" "bundesliga"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligue1.json" "$LIGUE1_PLAYLIST" "Ligue 1" "ligue 1" "2"

@@ -249,6 +249,24 @@ const TEAM_NAME_VARIATIONS = {
   'stade rennais': ['rennes'],
   'stade brestois': ['brest'],
   'fc nantes': ['nantes'],
+  'guadalajara': ['chivas', 'cd guadalajara', 'club deportivo guadalajara', 'gua'],
+  'atlas': ['atlas fc', 'rojinegros', 'rojinegros del atlas', 'ats'],
+  'club america': ['america', 'aguilas', 'las aguilas', 'ame'],
+  'cruz azul': ['la maquina', 'caz'],
+  'pumas unam': ['pumas', 'unam', 'pum'],
+  'tigres uanl': ['tigres', 'tig'],
+  'monterrey': ['rayados', 'cf monterrey', 'mon'],
+  'toluca': ['deportivo toluca', 'diablos rojos'],
+  'leon': ['club leon', 'leo'],
+  'pachuca': ['tuzos', 'pac'],
+  'santos laguna': ['santos'],
+  'necaxa': ['club necaxa'],
+  'queretaro': ['gallos blancos', 'qro'],
+  'mazatlan fc': ['mazatlan'],
+  'juarez': ['fc juarez', 'bravos'],
+  'club tijuana': ['tijuana', 'xolos'],
+  'atletico san luis': ['atl san luis', 'san luis', 'asl'],
+  'puebla': ['club puebla', 'pue'],
   'atlanta united fc': ['atlanta united'],
   'charlotte fc': ['charlotte'],
   'chicago fire fc': ['chicago fire'],
@@ -306,10 +324,48 @@ const TEAM_ALIAS_INDEX = (() => {
   return map;
 })();
 
+// Liga MX full-name to scoreboard-abbreviation mapping.
+// Used to bridge title team names to abbreviated team codes present in JSON.
+const LIGAMX_FULL_TO_ABBR = {
+  'america': 'AME',
+  'atlas': 'ATS',
+  'atletico de san luis': 'ASL',
+  'chivas': 'GUA',
+  'cruz azul': 'CAZ',
+  'juarez': 'JUA',
+  'leon': 'LEO',
+  'mazatlan': 'MAZ',
+  'monterrey': 'MON',
+  'necaxa': 'NEC',
+  'pachuca': 'PAC',
+  'puebla': 'PUE',
+  'pumas': 'PUM',
+  'queretaro': 'QRO',
+  'santos': 'SAN',
+  'tigres': 'TIG',
+  'tijuana': 'TIJ',
+  'toluca': 'TOL',
+};
+
+const LIGAMX_ABBR_INDEX = (() => {
+  const map = new Map();
+  for (const [fullName, abbr] of Object.entries(LIGAMX_FULL_TO_ABBR)) {
+    const key = normalizeText(fullName);
+    const val = normalizeText(abbr);
+    if (key && val) map.set(key, val);
+  }
+  return map;
+})();
+
 function addAliasFamily(keys, key) {
   const family = TEAM_ALIAS_INDEX.get(key);
   if (!family) return;
   for (const alt of family) keys.add(alt);
+}
+
+function addLigaMxAbbreviation(keys, key) {
+  const abbr = LIGAMX_ABBR_INDEX.get(normalizeText(key));
+  if (abbr) keys.add(abbr);
 }
 
 function isWeakTeamKey(key) {
@@ -343,6 +399,14 @@ function dateWithinDays(isoA, isoB, maxDays) {
   return d !== null && d <= maxDays;
 }
 
+function withinLastHours(publishedAt, maxHours) {
+  if (!Number.isFinite(maxHours) || maxHours < 0) return true;
+  const ts = Date.parse(String(publishedAt || ''));
+  if (Number.isNaN(ts)) return false;
+  const ageMs = Date.now() - ts;
+  return ageMs >= 0 && ageMs <= maxHours * 60 * 60 * 1000;
+}
+
 function teamNameKeys(teamName) {
   const normalized = normalizeText(teamName);
   if (!normalized || isPlaceholderTeamName(normalized)) return [];
@@ -359,6 +423,11 @@ function teamNameKeys(teamName) {
   // Add common shortened variants, e.g., Borussia Monchengladbach -> Gladbach.
   for (const key of [...keys]) {
     addAliasFamily(keys, key);
+    addLigaMxAbbreviation(keys, key);
+  }
+
+  for (const key of [...keys]) {
+    addLigaMxAbbreviation(keys, key);
   }
 
   return [...keys].filter((k) => k && !isWeakTeamKey(k));
@@ -509,7 +578,7 @@ function scoreMatch(
     // Team-based entries: require both teams in title and a tight date window.
     if (!awayHit || !homeHit) return -1;
 
-    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'FACUP', 'LALIGA']);
+    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'FACUP', 'LALIGA', 'LIGAMX']);
     if (teamOnlyLeagues.has(leagueKeyNorm)) {
       // These playlists are matched by teams + league phrase, without hard date gating.
       return score;
@@ -787,6 +856,11 @@ async function main() {
     Number.isFinite(maxDateDriftDaysRaw) && maxDateDriftDaysRaw >= 0
       ? Math.floor(maxDateDriftDaysRaw)
       : null;
+  const maxVideoAgeHoursRaw = Number(args.maxVideoAgeHours);
+  const maxVideoAgeHours =
+    Number.isFinite(maxVideoAgeHoursRaw) && maxVideoAgeHoursRaw >= 0
+      ? maxVideoAgeHoursRaw
+      : null;
   let videos = [];
   let sourceLabel = '';
   if (channelInput) {
@@ -796,6 +870,10 @@ async function main() {
   } else {
     videos = await fetchVideosFromPlaylists(apiKey, playlistIds);
     sourceLabel = `playlists:${playlistIds.join(',')}`;
+  }
+
+  if (maxVideoAgeHours !== null) {
+    videos = videos.filter((v) => withinLastHours(v.publishedAt, maxVideoAgeHours));
   }
 
   let matched = 0;
@@ -831,6 +909,9 @@ async function main() {
   console.log(`Date mode: ${usePerGameDate ? 'per-game' : 'global'}`);
   if (titleMustIncludeNorm) {
     console.log(`Title include filter: ${titleMustIncludeNorm}`);
+  }
+  if (maxVideoAgeHours !== null) {
+    console.log(`Max video age (hours): ${maxVideoAgeHours}`);
   }
 }
 

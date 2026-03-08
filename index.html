@@ -210,8 +210,20 @@
     const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
     const MANUAL_TOP10_STORAGE_KEY = "thporth.manual-top10.v1";
     const MANUAL_TOP10_FILE_URL = "recaps-manual/daily/manual-top10.json";
-    const MASCOT_SCORE_LEAGUES = new Set(["nba", "nfl", "mlb", "nhl"]);
-    const COLLEGE_SCORE_LEAGUES = new Set(["ncaam", "ncaaw"]);
+    const MASCOT_SCORE_LEAGUES = new Set(["nba", "mlb", "nhl"]);
+    const COLLEGE_SCORE_LEAGUES = new Set(["ncaam", "ncaaw", "ncaabaseball", "ncaasoftball"]);
+    const LIGAMX_TEAM_ABBR_TO_FULL = {
+      AME: "America",
+      ASL: "Atletico de San Luis",
+      ATS: "Atlas",
+      CAZ: "Cruz Azul",
+      GUA: "Guadalajara",
+      MON: "Monterrey",
+      PAC: "Pachuca",
+      PUE: "Puebla",
+      QRO: "Queretaro",
+      TIG: "Tigres UANL",
+    };
     const TOP10_LEAGUE_PILL_LABELS = {
       nhl: "NHL",
       nba: "NBA",
@@ -1244,31 +1256,45 @@
       return getTeamNameValue(team).trim();
     }
 
+    function extractFullTeamName(team, leagueKey) {
+      const raw = getTeamNameValue(team).trim();
+      if (!raw) return "";
+
+      const lk = String(leagueKey || "").toLowerCase();
+      if (lk === "ligamx") {
+        const mapped = LIGAMX_TEAM_ABBR_TO_FULL[String(raw).toUpperCase()];
+        if (mapped) return mapped;
+      }
+
+      return raw;
+    }
+
     function formatScoreLineWithMascots(game, leagueKey) {
       const lk = String(leagueKey || "").toLowerCase();
       const raw = String(game?.scoreLine || game?.score || "").trim();
       if (!raw) return raw;
 
+      const m = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
+      if (!m) return raw;
+
       if (COLLEGE_SCORE_LEAGUES.has(lk)) {
         const awaySchool = extractCollegeSchoolName(game?.teams?.away);
         const homeSchool = extractCollegeSchoolName(game?.teams?.home);
         if (!awaySchool || !homeSchool) return raw;
-
-        const collegeMatch = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
-        if (!collegeMatch) return raw;
-
-        return `${awaySchool} ${collegeMatch[2]} — ${homeSchool} ${collegeMatch[4]}`;
+        return `${awaySchool} ${m[2]} — ${homeSchool} ${m[4]}`;
       }
 
-      if (!MASCOT_SCORE_LEAGUES.has(lk)) return raw;
+      if (MASCOT_SCORE_LEAGUES.has(lk)) {
+        const awayMascot = extractMascotName(game?.teams?.away);
+        const homeMascot = extractMascotName(game?.teams?.home);
+        if (!awayMascot || !homeMascot) return raw;
+        return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
+      }
 
-      const awayMascot = extractMascotName(game?.teams?.away);
-      const homeMascot = extractMascotName(game?.teams?.home);
-      if (!awayMascot || !homeMascot) return raw;
-
-      const m = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
-      if (!m) return raw;
-      return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
+      const awayFull = extractFullTeamName(game?.teams?.away, lk);
+      const homeFull = extractFullTeamName(game?.teams?.home, lk);
+      if (!awayFull || !homeFull) return raw;
+      return `${awayFull} ${m[2]} — ${homeFull} ${m[4]}`;
     }
 
     function scoreGame(game, leagueKey, briefingText) {
