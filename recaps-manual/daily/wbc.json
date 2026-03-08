@@ -57,10 +57,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "ABoIJ9dhgcg",
           "title": "Canada vs. Colombia Highlights",
-          "url": "https://www.sportsnet.ca/mlb/article/hyped-up-canadians-play-their-game-to-beat-colombia-in-wbc-opener/",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=ABoIJ9dhgcg&pp=ygUeY29sb21iaWEgY2FuYWRhIGhpZ2hsaWdodHMgd2Jj",
+          "embedUrl": "https://www.youtube.com/embed/ABoIJ9dhgcg"
         }
       ]
     },
@@ -147,10 +147,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "GKe3kLFDKIo",
           "title": "Puerto Rico vs. Panama Highlights",
-          "url": "https://www.wbsc.org/en/news/world-baseball-classic-2026-day-3",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=GKe3kLFDKIo",
+          "embedUrl": "https://www.youtube.com/embed/GKe3kLFDKIo"
         }
       ]
     },
@@ -177,10 +177,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "ihCcs-Mdy_I",
           "title": "Venezuela vs. Israel Game Highlights",
-          "url": "https://www.timesofisrael.com/liveblog_entry/israels-baseball-team-loses-11-3-to-venezuela-in-world-baseball-classic-opener/",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=ihCcs-Mdy_I",
+          "embedUrl": "https://www.youtube.com/embed/ihCcs-Mdy_I"
         }
       ]
     },
@@ -207,10 +207,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "HfLgvGzK-_g",
           "title": "Team USA vs. Great Britain Highlights",
-          "url": "https://www.usabaseball.com/news/live-recap-of-team-usa-vs-great-britain",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=HfLgvGzK-_g",
+          "embedUrl": "https://www.youtube.com/embed/HfLgvGzK-_g"
         }
       ]
     },
@@ -237,10 +237,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "pVdMYR9hXbw",
           "title": "Taiwan vs. Korea Game Highlights",
-          "url": "https://focustaiwan.tw/sports/202603080009",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=pVdMYR9hXbw",
+          "embedUrl": "https://www.youtube.com/embed/pVdMYR9hXbw"
         }
       ]
     }
