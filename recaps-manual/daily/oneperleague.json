@@ -1,44 +1,5 @@
 [
   {
-    "leagueName": "IndyCar",
-    "leagueKey": "INDYCAR",
-    "sourceType": "console_recaps",
-    "leagueBriefing": "Team Penske owned the spotlight at Phoenix as Josef Newgarden capped a perfect team weekend with a furious late charge to victory, while strategy swings and cautions kept the field in constant flux.",
-    "games": [
-      {
-        "id": "2026_phoenix_good_ranchers_250",
-        "teams": {
-          "away": "IndyCar Field",
-          "home": "Phoenix Raceway"
-        },
-        "headline": "Newgarden storms from 10th on late restart to win thriller at Phoenix",
-        "score": null,
-        "brief": "Josef Newgarden delivered one of the drives of the season at Phoenix Raceway, slicing from 10th on a late restart to take the lead with seven laps remaining and secure his 33rd IndyCar career win. Team Penske's pace was evident all weekend, with pole-sitter David Malukas completing a double-podium day in third, while Kyle Kirkwood chased Newgarden home in second. Multiple cautions, strategy pivots, and late-race contact reshuffled the order repeatedly before Newgarden's fresh-tire charge settled the Good Ranchers 250.",
-        "bullets": [
-          "Josef Newgarden won by 1.77937s over Kyle Kirkwood after taking the lead with seven laps to go.",
-          "Pole-sitter David Malukas finished third to complete a strong Team Penske result.",
-          "Christian Rasmussen briefly led late but faded to 14th after contact and damage concerns.",
-          "Will Power and Rasmussen collided on Lap 206, triggering a decisive late caution.",
-          "Pato O'Ward recovered to fourth after a late stop, while Marcus Armstrong rounded out the top five."
-        ],
-        "context": "Newgarden's first win of 2026 reinforces Penske as the early benchmark and adds momentum heading into the next oval stretch.",
-        "recapStatus": "ok",
-        "source": {
-          "recapUrl": "provided_text_only"
-        },
-        "highlights": [
-          {
-            "provider": "youtube",
-            "videoId": "QdVC4iQWxyY",
-            "title": "",
-            "url": "https://www.youtube.com/watch?v=QdVC4iQWxyY&list=PLa-ay5I2YHZscVOwu9uHXe8sJMe--UQMz&index=16&pp=iAQBsAgC",
-            "embedUrl": "https://www.youtube.com/embed/QdVC4iQWxyY"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "leagueName": "SheBelieves Cup",
     "leagueKey": "SHEBELIEVES_CUP",
     "sourceType": "console_recaps",

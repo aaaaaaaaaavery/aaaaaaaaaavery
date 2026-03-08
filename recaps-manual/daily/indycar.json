@@ -1,39 +1,39 @@
 {
-  "leagueName": "IndyCar",
-  "leagueKey": "indycar",
-  "sourceType": "console_recaps",
-  "leagueBriefing": "Qualifying at Phoenix Raceway belonged to David Malukas and Team Penske, but the session was marred by more heartbreak for veteran Will Power. As the series returned to the high-speed oval, youth and experience clashed on the leaderboard, with rookie Mick Schumacher turning heads in his first-ever oval qualifying run to join the top five.",
-  "games": [
-    {
-      "id": "20260306-indy-phoenix-qual",
-      "teams": {
-        "away": "Phoenix Qualifying",
-        "home": "IndyCar Series"
-      },
-      "headline": "Malukas grabs first career pole as Power crashes out in Phoenix",
-      "score": null,
-      "brief": "David Malukas finally secured his first career IndyCar pole award, leading a dominant Penske performance at Phoenix. However, the celebration was tempered by teammate Will Power's disastrous session; the two-time champion's nightmare start to 2026 continued with a heavy crash during his qualifying run. Further down the grid, the Rahal Letterman Lanigan camp showed serious speed, putting both Graham Rahal and rookie Mick Schumacher in the top four.",
-      "bullets": [
-        "David Malukas earned his maiden pole position for Team Penske.",
-        "Will Power's session ended early after a crash in the No. 26 car, marking his second major incident of the year.",
-        "Graham Rahal qualified 3rd, his best start on an oval since 2012.",
-        "Rookie Mick Schumacher qualified a stunning 4th in his first-ever NTT IndyCar Series oval attempt.",
-        "Rahal Letterman Lanigan Racing led the way for Honda, taking two of the top four spots."
-      ],
-      "context": "The qualifying results set the grid for the Good Ranchers 250, emphasizing Penske's dominance and RLL's resurgence.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.indycar.com/videos/2026/03/03-06-will-power-s-tough-start-continues-with-crash"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "_Qx7mU1sPio",
-          "title": "IndyCar Phoenix Qualifying Highlights",
-          "url": "https://www.youtube.com/watch?v=_Qx7mU1sPio",
-          "embedUrl": "https://www.youtube.com/embed/_Qx7mU1sPio"
-        }
-      ]
-    }
-  ]
+	"leagueName": "IndyCar",
+	"leagueKey": "INDYCAR",
+	"sourceType": "console_recaps",
+	"leagueBriefing": "Team Penske owned the spotlight at Phoenix as Josef Newgarden capped a perfect team weekend with a furious late charge to victory, while strategy swings and cautions kept the field in constant flux.",
+	"games": [
+		{
+			"id": "2026_phoenix_good_ranchers_250",
+			"teams": {
+				"away": "IndyCar Field",
+				"home": "Phoenix Raceway"
+			},
+			"headline": "Newgarden storms from 10th on late restart to win thriller at Phoenix",
+			"score": null,
+			"brief": "Josef Newgarden delivered one of the drives of the season at Phoenix Raceway, slicing from 10th on a late restart to take the lead with seven laps remaining and secure his 33rd IndyCar career win. Team Penske's pace was evident all weekend, with pole-sitter David Malukas completing a double-podium day in third, while Kyle Kirkwood chased Newgarden home in second. Multiple cautions, strategy pivots, and late-race contact reshuffled the order repeatedly before Newgarden's fresh-tire charge settled the Good Ranchers 250.",
+			"bullets": [
+				"Josef Newgarden won by 1.77937s over Kyle Kirkwood after taking the lead with seven laps to go.",
+				"Pole-sitter David Malukas finished third to complete a strong Team Penske result.",
+				"Christian Rasmussen briefly led late but faded to 14th after contact and damage concerns.",
+				"Will Power and Rasmussen collided on Lap 206, triggering a decisive late caution.",
+				"Pato O'Ward recovered to fourth after a late stop, while Marcus Armstrong rounded out the top five."
+			],
+			"context": "Newgarden's first win of 2026 reinforces Penske as the early benchmark and adds momentum heading into the next oval stretch.",
+			"recapStatus": "ok",
+			"source": {
+				"recapUrl": "provided_text_only"
+			},
+			"highlights": [
+				{
+					"provider": "youtube",
+					"videoId": "QdVC4iQWxyY",
+					"title": "",
+					"url": "https://www.youtube.com/watch?v=QdVC4iQWxyY&list=PLa-ay5I2YHZscVOwu9uHXe8sJMe--UQMz&index=16&pp=iAQBsAgC",
+					"embedUrl": "https://www.youtube.com/embed/QdVC4iQWxyY"
+				}
+			]
+		}
+	]
 }
