@@ -27,10 +27,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "yfH06iSUOl4",
-          "title": "Nantes vs Angers | HIGHLIGHTS Ligue 1 | 03/07/2026",
-          "url": "https://www.youtube.com/watch?v=yfH06iSUOl4",
-          "embedUrl": "https://www.youtube.com/embed/yfH06iSUOl4"
+          "videoId": "o2syFruj5xg",
+          "title": "Nantes vs Angers | HIGHLIGHTS Ligue 1 | 03/07/2026 | beIN SPORTS USA",
+          "url": "https://www.youtube.com/watch?v=o2syFruj5xg",
+          "embedUrl": "https://www.youtube.com/embed/o2syFruj5xg",
+          "publishedAt": "2026-03-07T19:10:36Z",
+          "matchScore": 141
         }
       ]
     },
@@ -57,10 +59,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "-HTflV5oZos",
-          "title": "AJ AUXERRE vs RC STRASBOURG | Ligue 1 Full Match Highlights",
-          "url": "https://www.youtube.com/watch?v=-HTflV5oZos",
-          "embedUrl": "https://www.youtube.com/embed/-HTflV5oZos"
+          "videoId": "H2zKcZggs1I",
+          "title": "Auxerre vs Strasbourg | HIGHLIGHTS Ligue 1 | 03/07/2026 | bien SPORTS USA",
+          "url": "https://www.youtube.com/watch?v=H2zKcZggs1I",
+          "embedUrl": "https://www.youtube.com/embed/H2zKcZggs1I",
+          "publishedAt": "2026-03-07T20:23:19Z",
+          "matchScore": 141
         }
       ]
     },
@@ -88,9 +92,11 @@
         {
           "provider": "youtube",
           "videoId": "joZgD3kh8wg",
-          "title": "Toulouse vs Marseille | HIGHLIGHTS Ligue 1 | 03/07/2026",
+          "title": "Toulouse vs Marseille | HIGHLIGHTS Ligue 1 | 03/07/2026 | bien SPORTS USA",
           "url": "https://www.youtube.com/watch?v=joZgD3kh8wg",
-          "embedUrl": "https://www.youtube.com/embed/joZgD3kh8wg"
+          "embedUrl": "https://www.youtube.com/embed/joZgD3kh8wg",
+          "publishedAt": "2026-03-07T22:40:23Z",
+          "matchScore": 141
         }
       ]
     }

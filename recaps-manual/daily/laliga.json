@@ -1,39 +1,130 @@
 {
   "leagueName": "LaLiga",
-  "leagueKey": "ESP.1",
+  "leagueKey": "laliga",
   "sourceType": "console_recaps",
-  "newsBriefing": "Real Madrid avoided a third straight league stumble when Federico Valverde's stoppage-time strike secured a 2-1 win at Celta Vigo, keeping their title hopes alive before a key Champions League week.",
+  "leagueBriefing": "Saturday in LaLiga was defined by late-game heroics and teenage brilliance. Barcelona maintained their cushion at the top thanks to a wonder strike from Lamine Yamal at San Mamés, while Atlético Madrid snatched a vital victory in the dying minutes against Real Sociedad. Elsewhere, Girona's European push hit a minor snag as they were forced to settle for a dramatic point at Levante.",
   "games": [
     {
-      "id": "20260306-celta-realmadrid",
+      "id": "osasuna-vs-mallorca-20260307",
       "teams": {
-        "away": "Real Madrid",
-        "home": "Celta Vigo"
+        "away": "Mallorca",
+        "home": "Osasuna"
       },
-      "headline": "Valverde's stoppage-time winner saves Madrid from another title-race slip",
-      "score": "CEL 1 - RMA 2",
-      "brief": "Real Madrid badly needed a response and got one at the last possible moment, edging Celta Vigo 2-1 thanks to Federico Valverde's deflected winner deep into stoppage time. Madrid started fast through Aurelien Tchouameni but lost control after Borja Iglesias equalized, and for long stretches looked vulnerable again with key absences still biting. Just when another damaging draw seemed inevitable, Valverde pounced on a loose ball and delivered the break they needed to keep pressure on Barcelona.",
+      "headline": "Budimir rescues point for Osasuna in chaotic 10-man stalemate",
+      "score": "OSA 2 - MLL 2",
+      "brief": "Osasuna and Mallorca played out a breathless draw at El Sadar that saw both teams finish with 10 men and a flurry of late goals. Vedat Muriqi looked to have secured a massive road win for Mallorca with a clinical brace, but Osasuna refused to go quietly. Ante Budimir turned into the local hero, nodding home a dramatic equalizer deep in stoppage time to ensure the spoils were shared in a match that felt more like a street fight than a football game.",
       "bullets": [
-        "Federico Valverde scored the winner four minutes into stoppage time as Madrid beat Celta 2-1.",
-        "Aurelien Tchouameni opened the scoring in the 11th minute for his first LaLiga goal since April 2024.",
-        "Borja Iglesias equalized in the 25th minute after Williot Swedberg's run and cutback.",
-        "Thibaut Courtois made key saves, including stops against Borja and Swedberg in dangerous moments.",
-        "Iago Aspas nearly won it for Celta late, but his low shot hit the post before Madrid's stoppage-time twist."
+        "Vedat Muriqi scored twice (35', 61') to put Mallorca in a commanding position.",
+        "Kike Barja ignited the comeback with a strike in the 89th minute.",
+        "Ante Budimir headed in the equalizer in the 4th minute of added time.",
+        "Both sides saw red cards in a high-tension affair that featured 7 bookings.",
+        "Osasuna dominated the shot count 22-8 but struggled with clinical finishing until the death."
       ],
-      "context": "The late win stops Madrid's mini-slide after back-to-back defeats and gives them momentum heading into the Champions League clash with Manchester City.",
+      "context": "The draw keeps both teams entrenched in the mid-table battle, separated by just a few points.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "provided_text_only"
+        "recapUrl": "https://www.foxsports.com/soccer/la-liga-osasuna-vs-mallorca-mar-07-2026-game-boxscore-632344?tab=boxscore"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "00GpY-BeqaA",
-          "title": "CELTA 1 - 2 REAL MADRID | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=00GpY-BeqaA",
-          "embedUrl": "https://www.youtube.com/embed/00GpY-BeqaA",
-          "publishedAt": "2026-03-06T22:11:46Z",
-          "matchScore": 116
+          "videoId": "xHSYTEu9B0g",
+          "title": "RCD MALLORCA 2 - 2 CA OSASUNA | HIGHLIGHTS LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=xHSYTEu9B0g",
+          "embedUrl": "https://www.youtube.com/embed/xHSYTEu9B0g"
+        }
+      ]
+    },
+    {
+      "id": "levante-vs-girona-20260307",
+      "teams": {
+        "away": "Girona",
+        "home": "Levante"
+      },
+      "headline": "Girona salvages late point at Levante after VAR drama",
+      "score": "LEV 1 - LÉV 1",
+      "brief": "Girona’s high-flying season faced a stern test in Valencia as they narrowly avoided defeat against a gritty Levante side. The match looked set for a home victory until the 93rd minute when Joel Roca unleashed a strike from distance that required a lengthy VAR review to stand. It was a cruel blow for Levante, who had defended heroically, but a vital point for a Girona side that refused to stop knocking on the door.",
+      "bullets": [
+        "Joel Roca scored the dramatic 93rd-minute equalizer from outside the box.",
+        "Girona's Axel Witsel rattled the crossbar from close range just minutes before the goal.",
+        "Levante goalkeeper Mathew Ryan made several world-class saves to keep his side ahead for 90 minutes.",
+        "The match ended in a yellow card flurry as Levante's Kervin Arriaga was booked in the final seconds.",
+        "Girona controlled 62% of the ball but struggled to break down Levante's low block."
+      ],
+      "context": "Girona remains in the hunt for a Champions League spot despite the dropped points.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mykhel.com/football/la-liga-levante-vs-girona-match-2572198/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "yOOJFuT6Nek",
+          "title": "Levante vs. Girona | LALIGA Highlights | ESPN FC",
+          "url": "https://www.youtube.com/watch?v=yOOJFuT6Nek",
+          "embedUrl": "https://www.youtube.com/embed/yOOJFuT6Nek"
+        }
+      ]
+    },
+    {
+      "id": "atletico-madrid-vs-real-sociedad-20260307",
+      "teams": {
+        "away": "Real Sociedad",
+        "home": "Atlético Madrid"
+      },
+      "headline": "Nico González header seals dramatic late win for Atleti",
+      "score": "ATM 3 - RSO 2",
+      "brief": "In a preview of the upcoming Copa del Rey final, Atlético Madrid and Real Sociedad delivered a classic at the Metropolitano. The lead changed hands in a back-and-forth thriller that saw world-class strikes from Mikel Oyarzabal and Alexander Sørloth. However, it was young midfielder Nico González who had the final word, rising highest in the 81st minute to power home a header that kept Diego Simeone’s side firmly in the title conversation.",
+      "bullets": [
+        "Nico González scored twice, including the 81st-minute game-winner.",
+        "Alexander Sørloth opened the scoring just 5 minutes into the match.",
+        "Mikel Oyarzabal leveled the score with a 'guided missile' of a long-range strike in the 68th minute.",
+        "Antoine Griezmann provided a 'magical' assist for Atleti’s second goal.",
+        "The victory served as a psychological boost ahead of their April 18th cup final meeting."
+      ],
+      "context": "The win solidifies Atleti's position in the top three as they turn focus to the Champions League.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-us/soccer/la-liga/articles/-video-all-the-goals-from-atl%C3%A9tico-madrid-vs-real-sociedad-in-la-liga-2026-03-07"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "EHjGFXY2NwE",
+          "title": "Real Sociedad vs. Atletico Madrid | LALIGA Highlights | ESPN FC",
+          "url": "https://www.youtube.com/watch?v=EHjGFXY2NwE",
+          "embedUrl": "https://www.youtube.com/embed/EHjGFXY2NwE"
+        }
+      ]
+    },
+    {
+      "id": "athletic-club-vs-barcelona-20260307",
+      "teams": {
+        "away": "Barcelona",
+        "home": "Athletic Club"
+      },
+      "headline": "Lamine Yamal wonder goal restores Barcelona's four-point lead",
+      "score": "ATH 0 - BAR 1",
+      "brief": "Lamine Yamal continues to prove he is the crown jewel of world football. In a hostile San Mamés, the 18-year-old produced a moment of pure magic, cutting inside and curling a left-footed strike into the top corner to break a scoreless deadlock. Hansi Flick’s tactical substitutions in the second half turned the tide, allowing the league leaders to survive an aerial barrage from Athletic and maintain their gap over Real Madrid.",
+      "bullets": [
+        "Lamine Yamal scored the winner in the 68th minute, his 50th career goal.",
+        "Goalkeeper Joan Garcia was vital, making a string of point-blank saves to preserve the clean sheet.",
+        "Athletic Club hit the woodwork inside the first minute through a deflected cross.",
+        "Hansi Flick rotated his squad ahead of a midweek Champions League clash with Newcastle.",
+        "Barcelona now sits at 67 points, four clear of rivals Real Madrid."
+      ],
+      "context": "The win maintains Barcelona's momentum heading into the business end of the season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.fotmob.com/news/16h93dnw99ol31qxt8b0yacvk8-athletic-club-0-1-barcelona-yamal-helps-leaders-restore-four-point-lead"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "Lamine Yamal scores winner as Barça escape San Mamés",
+          "url": "https://www.beinsports.com/en-nz/football/laliga/articles-video/stunning-yamal-strike-earns-barca-a-win-in-bilbao-2026-03-07",
+          "embedUrl": ""
         }
       ]
     }

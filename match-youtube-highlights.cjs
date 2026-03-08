@@ -237,6 +237,18 @@ const TEAM_NAME_VARIATIONS = {
   'leicester city': ['leicester'],
   'southampton': ['southampton fc'],
   'ipswich town': ['ipswich'],
+  'angers sco': ['angers'],
+  'olympique marseille': ['marseille', 'om'],
+  'aj auxerre': ['auxerre'],
+  'rc strasbourg': ['strasbourg'],
+  'le havre ac': ['le havre', 'havre', 'havre ac'],
+  'toulouse fc': ['toulouse'],
+  'as monaco': ['monaco'],
+  'olympique lyonnais': ['lyon', 'ol'],
+  'losc lille': ['lille'],
+  'stade rennais': ['rennes'],
+  'stade brestois': ['brest'],
+  'fc nantes': ['nantes'],
   'atlanta united fc': ['atlanta united'],
   'charlotte fc': ['charlotte'],
   'chicago fire fc': ['chicago fire'],
@@ -421,6 +433,11 @@ function parseGameDateIso(game) {
   if (fieldDate) return fieldDate;
 
   const idRaw = String(game?.id || '');
+  const dashed = idRaw.match(/(?:^|[^0-9])(20\d{2})-(\d{2})-(\d{2})(?:[^0-9]|$)/);
+  if (dashed) {
+    return toIsoDate(Number(dashed[1]), Number(dashed[2]), Number(dashed[3]));
+  }
+
   const compact = idRaw.match(/(?:^|[^0-9])(20\d{2})(\d{2})(\d{2})(?:[^0-9]|$)/);
   if (compact) {
     return toIsoDate(Number(compact[1]), Number(compact[2]), Number(compact[3]));
@@ -459,7 +476,16 @@ function resolvePlaylistIds(argsPlaylist, leagueKey) {
   return [DEFAULT_PLAYLISTS_BY_LEAGUE.NBA];
 }
 
-function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint, leagueKeyNorm, leagueNameNorm) {
+function scoreMatch(
+  game,
+  video,
+  targetDateIso,
+  titleMustIncludeNorm,
+  roundHint,
+  leagueKeyNorm,
+  leagueNameNorm,
+  maxDateDriftDaysOverride
+) {
   const titleNorm = normalizeText(video.title);
   const dateInTitleIso = parseTitleDate(video.title);
   const publishedDateIso = parseDateToIso(video.publishedAt || '');
@@ -483,13 +509,16 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint,
     // Team-based entries: require both teams in title and a tight date window.
     if (!awayHit || !homeHit) return -1;
 
-    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'LIGUE1', 'FACUP', 'LALIGA']);
+    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'FACUP', 'LALIGA']);
     if (teamOnlyLeagues.has(leagueKeyNorm)) {
       // These playlists are matched by teams + league phrase, without hard date gating.
       return score;
     }
 
-    const maxDateDriftDays = leagueKeyNorm === 'MLS' ? 1 : 0;
+    const defaultMaxDateDriftDays = leagueKeyNorm === 'MLS' ? 1 : 0;
+    const maxDateDriftDays = Number.isInteger(maxDateDriftDaysOverride)
+      ? maxDateDriftDaysOverride
+      : defaultMaxDateDriftDays;
     const dateMatches =
       targetDateIso &&
       (dateWithinDays(publishedDateIso, targetDateIso, maxDateDriftDays) ||
@@ -534,7 +563,8 @@ function pickBestVideo(
   titleMustIncludeNorm,
   roundHint,
   leagueKeyNorm,
-  leagueNameNorm
+  leagueNameNorm,
+  maxDateDriftDaysOverride
 ) {
   let best = null;
   let bestScore = -1;
@@ -547,7 +577,8 @@ function pickBestVideo(
       titleMustIncludeNorm,
       roundHint,
       leagueKeyNorm,
-      leagueNameNorm
+      leagueNameNorm,
+      maxDateDriftDaysOverride
     );
     if (s > bestScore) {
       bestScore = s;
@@ -751,6 +782,11 @@ async function main() {
   const globalTargetDateIso = parseDateToIso(dateInput);
   const leagueKeyNorm = String(leagueKeyForDefaults || '').toUpperCase();
   const leagueNameNorm = normalizeText(leagueEntry?.leagueName || '');
+  const maxDateDriftDaysRaw = Number(args.maxDateDriftDays);
+  const maxDateDriftDaysOverride =
+    Number.isFinite(maxDateDriftDaysRaw) && maxDateDriftDaysRaw >= 0
+      ? Math.floor(maxDateDriftDaysRaw)
+      : null;
   let videos = [];
   let sourceLabel = '';
   if (channelInput) {
@@ -774,7 +810,8 @@ async function main() {
       titleMustIncludeNorm,
       roundHint,
       leagueKeyNorm,
-      leagueNameNorm
+      leagueNameNorm,
+      maxDateDriftDaysOverride
     );
     if (best) {
       game.highlights = [best];

@@ -19,7 +19,7 @@ MLS_PLAYLIST="PLcj4z4KsbIoXrLpj2pOVr_maRaxhW902-"
 LIGAMX_PLAYLIST="PLKl0099ohpvFhKdBahSmbt2fvMMK2lNFw"
 SERIEA_PLAYLIST="PLFTjYT0jsEKzS9FjcjjoKjihaqZ0uEyKP"
 BUNDESLIGA_PLAYLIST="PL3uJGozO1imdWwTzbnNXTuiXbLJhFb83r"
-LIGUE1_PLAYLIST="PLIN0y6TbDGWwRHgMQc-Ce4xqM7L6dW_i6"
+LIGUE1_PLAYLIST="PL5dXR9bHuKvnWwEHClY5GL3QDzKEn4av_"
 FACUP_PLAYLIST="PLvnfVnc10KYh8PapZ5DXB-xy0Q8yH0Qay"
 LALIGA_PLAYLIST="PLKj1QUtwqLN-i1rzwTy60ukT1vxHOyrEe"
 WBC_PLAYLIST="PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L"
@@ -98,6 +98,7 @@ run_match_per_game_date() {
   local playlist_id="$2"
   local league_name="$3"
   local title_filter="$4"
+  local max_date_drift_days="${5:-}"
 
   echo ""
   echo "[highlights] Matching $league_name videos using per-game dates from JSON"
@@ -107,11 +108,17 @@ run_match_per_game_date() {
     return 0
   fi
 
-  run_matcher_cmd "$league_name" env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
+  local cmd=(env YOUTUBE_API_KEY="$YOUTUBE_API_KEY" node "$MATCHER" \
     --json "$json_file" \
     --playlist "$playlist_id" \
     --usePerGameDate true \
-    --titleMustInclude "$title_filter"
+    --titleMustInclude "$title_filter")
+
+  if [[ -n "$max_date_drift_days" ]]; then
+    cmd+=(--maxDateDriftDays "$max_date_drift_days")
+  fi
+
+  run_matcher_cmd "$league_name" "${cmd[@]}"
 }
 
 run_match_per_game_date_channel() {
@@ -190,7 +197,7 @@ run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/mls.json" "$MLS_PLAYLIST"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligamx.json" "$LIGAMX_PLAYLIST" "Liga MX" "liga mx"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/seriea.json" "$SERIEA_PLAYLIST" "Serie A" "serie a"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/bundesliga.json" "$BUNDESLIGA_PLAYLIST" "Bundesliga" "bundesliga"
-run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligue1.json" "$LIGUE1_PLAYLIST" "Ligue 1" "ligue 1"
+run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligue1.json" "$LIGUE1_PLAYLIST" "Ligue 1" "ligue 1" "2"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/facup.json" "$FACUP_PLAYLIST" "FA Cup" "fa cup"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/laliga.json" "$LALIGA_PLAYLIST" "LaLiga" "laliga"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/wbc.json" "$WBC_CHANNEL_URL" "WBC" "world baseball classic"
