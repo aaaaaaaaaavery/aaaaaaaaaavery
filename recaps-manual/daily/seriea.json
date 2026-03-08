@@ -29,9 +29,11 @@
         {
           "provider": "youtube",
           "videoId": "sxhwQdpTVlY",
-          "title": "Cagliari vs. Como | Serie A Highlights",
+          "title": "CAGLIARI-COMO | HIGHLIGHTS | Da Cunha The Hero For Como! | Serie A 2025/26",
           "url": "https://www.youtube.com/watch?v=sxhwQdpTVlY",
-          "embedUrl": "https://www.youtube.com/embed/sxhwQdpTVlY"
+          "embedUrl": "https://www.youtube.com/embed/sxhwQdpTVlY",
+          "publishedAt": "2026-03-07T16:40:30Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "JVqK6BpwItw",
-          "title": "Atalanta vs. Udinese | Serie A Highlights",
-          "url": "https://www.youtube.com/watch?v=JVqK6BpwItw",
-          "embedUrl": "https://www.youtube.com/embed/JVqK6BpwItw"
+          "videoId": "LC95Zw3EVdw",
+          "title": "ATALANTA-UDINESE | HIGHLIGHTS | Incredible Comeback In Bergamo! | Serie A 2025/26",
+          "url": "https://www.youtube.com/watch?v=LC95Zw3EVdw",
+          "embedUrl": "https://www.youtube.com/embed/LC95Zw3EVdw",
+          "publishedAt": "2026-03-07T19:44:48Z",
+          "matchScore": 100
         }
       ]
     },
@@ -90,10 +94,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "WlFssApYWuI",
-          "title": "Juventus vs. Pisa | Serie A Highlights",
-          "url": "https://www.youtube.com/watch?v=WlFssApYWuI",
-          "embedUrl": "https://www.youtube.com/embed/WlFssApYWuI"
+          "videoId": "A8M27BjjUnU",
+          "title": "JUVENTUS-PISA 4-0 | HIGHLIGHTS | Juventus Firing On All Cylinders | Serie A 2025/26",
+          "url": "https://www.youtube.com/watch?v=A8M27BjjUnU",
+          "embedUrl": "https://www.youtube.com/embed/A8M27BjjUnU",
+          "publishedAt": "2026-03-07T22:27:40Z",
+          "matchScore": 100
         }
       ]
     }

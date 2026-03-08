@@ -1,0 +1,39 @@
+{
+  "leagueName": "Formula One",
+  "leagueKey": "F1",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Mercedes dominated the dawn of F1's new hybrid era in Melbourne, while the field grappled with complex battery management and high-profile retirements.",
+  "games": [
+    {
+      "id": "2026_australian_gp",
+      "teams": {
+        "away": "Mercedes/Ferrari/Red Bull",
+        "home": "Australian Grand Prix"
+      },
+      "headline": "Russell masters new hybrid rules as Mercedes secures 1-2 in Melbourne opener",
+      "score": null,
+      "brief": "George Russell kicked off his 2026 title charge with a clinical victory at Albert Park, leading a dominant Mercedes 1-2 finish. The race marked the debut of F1's controversial new regulations, which split power 50/50 between combustion and battery. Russell and teammate Kimi Antonelli seized the win by pitting early under a Virtual Safety Car, a tactical gamble that forced them into a massive tire-saving effort to hold off the Ferraris of Charles Leclerc and Lewis Hamilton. While the new rules provided plenty of 'video game' style overtaking, the heavy reliance on energy management left some fans questioning the purity of the racing.",
+      "bullets": [
+        "George Russell won from pole, successfully managing a long final stint after a lap 12 pit stop.",
+        "Kimi Antonelli finished P2 in his Mercedes debut, securing a perfect start for the Silver Arrows.",
+        "Charles Leclerc (P3) and Lewis Hamilton (P4) lost out on strategy by staying out during the VSC.",
+        "Max Verstappen recovered to P6 after starting dead last (P20) due to a qualifying crash.",
+        "Hometown hero Oscar Piastri suffered a nightmare DNF, crashing on the reconnaissance lap before the start."
+      ],
+      "context": "The season opener confirms Mercedes and Ferrari as the early teams to beat under the 2026 technical regulations.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/f1/recap/_/gameId/2026030801"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "lL_d84cN1UY",
+          "title": "",
+          "url": "https://youtu.be/lL_d84cN1UY?si=0bGvs2x0PlKMOVaU",
+          "embedUrl": "https://www.youtube.com/embed/lL_d84cN1UY"
+        }
+      ]
+    }
+  ]
+}

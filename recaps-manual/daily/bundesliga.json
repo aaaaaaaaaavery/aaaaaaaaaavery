@@ -29,9 +29,11 @@
         {
           "provider": "youtube",
           "videoId": "Q7d3CMSOxys",
-          "title": "SC Freiburg 3-3 Bayer Leverkusen Highlights",
-          "url": "https://www.youtube.com/watch?v=Q7d3CMSOxys&pp=0gcJCa4KAYcqIYzv",
-          "embedUrl": "https://www.youtube.com/embed/Q7d3CMSOxys"
+          "title": "Massive Point At Home Secured! | SC FREIBURG - BAYER 04 LEVERKUSEN | Highlights | MD 25 – Bundesliga",
+          "url": "https://www.youtube.com/watch?v=Q7d3CMSOxys",
+          "embedUrl": "https://www.youtube.com/embed/Q7d3CMSOxys",
+          "publishedAt": "2026-03-07T16:41:02Z",
+          "matchScore": 100
         }
       ]
     },
@@ -60,9 +62,11 @@
         {
           "provider": "youtube",
           "videoId": "KuT0IVcxLg8",
-          "title": "1. FC Köln 1-2 Borussia Dortmund Highlights",
+          "title": "Guirassy & Beier Score At Close Win! | 1. FC KÖLN - BORUSSIA DORTMUND | Highlights | Bundesliga",
           "url": "https://www.youtube.com/watch?v=KuT0IVcxLg8",
-          "embedUrl": "https://www.youtube.com/embed/KuT0IVcxLg8"
+          "embedUrl": "https://www.youtube.com/embed/KuT0IVcxLg8",
+          "publishedAt": "2026-03-07T19:41:16Z",
+          "matchScore": 100
         }
       ]
     },

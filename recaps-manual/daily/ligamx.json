@@ -1,0 +1,158 @@
+{
+  "leagueName": "Liga MX",
+  "leagueKey": "ligamx",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "A dramatic Saturday in Liga MX saw massive shifts at the top of the table as Guadalajara snatched bragging rights in a come-from-behind Clásico Tapatío victory, while André-Pierre Gignac reminded everyone why he's a legend with a last-gasp winner in the Clásico Regio. Cruz Azul and América also took care of business, keeping the race for the Liguilla positions incredibly tight as we enter the final stretch of the Clausura.",
+  "games": [
+    {
+      "id": "647995",
+      "teams": {
+        "away": "MON",
+        "home": "TIG"
+      },
+      "headline": "Gignac strikes in 90th minute to settle Clásico Regio for Tigres",
+      "score": "TIG 1 - MON 0",
+      "brief": "In a match that seemed destined for a goalless stalemate, the king of Monterrey delivered. André-Pierre Gignac, coming off the bench as a second-half substitute, popped up in the 90th minute to fire home the winner and send the Volcán into a frenzy. It was a typical high-stakes Clásico Regio—heavy on tactical discipline and short on clear-cut chances—until the Frenchman found the decisive touch to edge out their fiercest rivals.",
+      "bullets": [
+        "André-Pierre Gignac scored the game-winner in the 90th minute after entering as a substitute in the 80th.",
+        "Tigres held Monterrey to zero shots on goal despite the visitors having several dangerous attacking sequences.",
+        "Stefan Medina and Luca Orellano both received yellow cards for Monterrey as they tried to contain Tigres' late pressure.",
+        "The win gives Tigres a major boost in the table and bragging rights over their city rivals for the remainder of the Clausura."
+      ],
+      "context": "Tigres moves ahead of Monterrey in the standings, significantly improving their seeding for the upcoming Liguilla.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.foxsports.com/soccer/liga-mx-tigres-vs-monterrey-mar-07-2026-game-boxscore-647995"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "42522388",
+      "teams": {
+        "away": "GUA",
+        "home": "ATS"
+      },
+      "headline": "Chivas roar back at Estadio Jalisco to claim Clásico Tapatío",
+      "score": "ATS 1 - GUA 2",
+      "brief": "Guadalajara proved they are the kings of the city once again, recovering from an early setback to stun Atlas at the Jalisco. After Paulo Ramírez gave the home side an early lead, Chivas played with a composure that belied the hostile atmosphere. A long-range screamer from Armando 'Hormiga' González leveled things up before Ángel Sepúlveda silenced the crowd from the penalty spot, completing a comeback that keeps Chivas in the hunt for the top seed.",
+      "bullets": [
+        "Ángel Sepúlveda secured the win with an 83rd-minute penalty, coolly chipping the ball over Camilo Vargas.",
+        "Armando González equalized just after halftime with a powerful strike from outside the box.",
+        "Atlas took an early lead in the 12th minute through Paulo Ramírez but failed to capitalize on further first-half pressure.",
+        "The match was physically intense, with seven yellow cards issued, including four for Atlas defenders trying to slow down the Chivas attack."
+      ],
+      "context": "Guadalajara remains firmly in the race for the top spot in the tournament, moving to 21 points with this victory.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://onefootball.com/fr/news/a-thrilling-comeback-and-lets-call-it-what-it-is-guadalajara-belongs-to-guadalajara-42522388"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "242840",
+      "teams": {
+        "away": "ASL",
+        "home": "CAZ"
+      },
+      "headline": "Clinical Cruz Azul dismantles 10-man San Luis in dominant display",
+      "score": "CAZ 3 - ASL 0",
+      "brief": "Cruz Azul continued their impressive run with a professional demolition of Atlético San Luis. The game shifted decisively just before halftime when San Luis defender Eduardo Águila was sent off, leaving the visitors with an impossible mountain to climb. La Máquina took full advantage in the second half, with Gabriel Fernández and Andrés Montaño adding to Agustín Palavecino’s early opener to ensure a comfortable night for the home fans at Estadio Cuauhtémoc.",
+      "bullets": [
+        "Agustín Palavecino opened the scoring in the 16th minute to set the tone for the home side.",
+        "Atlético San Luis was forced to play with 10 men for the entire second half after Eduardo Águila received a red card in first-half stoppage time.",
+        "Cruz Azul dominated possession with 61% and outshot their opponents 23 to 8.",
+        "Gabriel Fernández and Andrés Montaño scored within four minutes of each other to put the game out of reach."
+      ],
+      "context": "Cruz Azul's win consolidates their position in the top four, making them a clear favorite for a direct playoff spot.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.flashscore.com/match/football/atletico-san-luis-OYSN90J0/cruz-azul-G8PFBMll/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "1253127",
+      "teams": {
+        "away": "AME",
+        "home": "QRO"
+      },
+      "headline": "América hangs on at La Corregidora to snap losing streak",
+      "score": "QRO 1 - AME 2",
+      "brief": "Club América got their season back on track with a gritty away win against a stubborn Querétaro side. After Brian Rodríguez gave the Águilas an early lead, Querétaro fought back to level things up just before the break. However, young talent Patricio Salas proved to be the hero, finding the net in the second half to restore the lead. América had to survive some intense late pressure, but their defensive discipline held firm to secure three vital points.",
+      "bullets": [
+        "Patricio Salas scored the winning goal in the 62nd minute, rewarding André Jardine's faith in the young forward.",
+        "Alí Ávila scored for Querétaro in the 45th minute, briefly giving the home fans hope of an upset.",
+        "Querétaro threw everything forward in the final 10 minutes, forcing several desperate clearances from the América backline.",
+        "The victory snaps a two-game losing skid for the Águilas, moving them back into the upper-middle section of the table."
+      ],
+      "context": "This win provides much-needed stability for América as they aim to avoid the Play-In tournament and secure a top-six finish.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.vavel.com/en-us/mexican-soccer/2026/03/07/1253127-queretaro-vs-america-live-liga-mx.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "647993",
+      "teams": {
+        "away": "PUE",
+        "home": "PAC"
+      },
+      "headline": "10-man Pachuca shows grit in narrow victory over Puebla",
+      "score": "PAC 2 - PUE 1",
+      "brief": "Pachuca overcame a nightmare start to secure a hard-fought win against Puebla at Estadio Hidalgo. Playing a man down for 70 minutes following Carlos Sánchez's early red card, Los Tuzos relied on veteran leadership and efficiency. Víctor Guzmán broke the deadlock late in the second half, and while Puebla briefly equalized, Enner Valencia popped up in the 87th minute to secure the three points in a display of pure resilience.",
+      "bullets": [
+        "Carlos Sánchez was sent off for Pachuca in the 20th minute, forcing them to play the majority of the match with 10 men.",
+        "Enner Valencia scored the decisive goal in the 87th minute, just minutes after Puebla had equalized.",
+        "Víctor Guzmán opened the scoring for Pachuca in the 74th minute during a rare second-half foray forward.",
+        "Puebla dominated possession due to the man advantage but struggled to break down a compact Pachuca defense until Rodrigo Pachuca's 78th-minute strike."
+      ],
+      "context": "Despite the red card, Pachuca's ability to win short-handed keeps them in the conversation for a high playoff seed.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.foxsports.com/soccer/liga-mx-pachuca-vs-puebla-mar-07-2026-game-boxscore-647993"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
+}

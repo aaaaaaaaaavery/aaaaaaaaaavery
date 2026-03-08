@@ -483,6 +483,12 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint,
     // Team-based entries: require both teams in title and a tight date window.
     if (!awayHit || !homeHit) return -1;
 
+    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'LIGUE1', 'FACUP', 'LALIGA']);
+    if (teamOnlyLeagues.has(leagueKeyNorm)) {
+      // These playlists are matched by teams + league phrase, without hard date gating.
+      return score;
+    }
+
     const maxDateDriftDays = leagueKeyNorm === 'MLS' ? 1 : 0;
     const dateMatches =
       targetDateIso &&

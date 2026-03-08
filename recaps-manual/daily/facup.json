@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "Newcastle 1-3 City: Brief highlights",
-          "url": "https://www.mancity.com/news/mens/newcastle-united-v-manchester-city-fa-cup-report-march-2026-63908508",
-          "embedUrl": ""
+          "videoId": "9pRYe7qXiFY",
+          "title": "Marmoush's incredible DOUBLE ✌️ | Newcastle United (1-3) Manchester City | Emirates FA Cup 2025-26",
+          "url": "https://www.youtube.com/watch?v=9pRYe7qXiFY",
+          "embedUrl": "https://www.youtube.com/embed/9pRYe7qXiFY",
+          "publishedAt": "2026-03-08T12:00:16Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "Wrexham 2-4 Chelsea: Full Match Highlights",
-          "url": "https://www.tntsports.co.uk/football/the-emirates-fa-cup/2025-2026/live-wrexham-chelsea_mtc1648186/live-commentary.shtml",
-          "embedUrl": ""
+          "videoId": "qgJlRZMLQOQ",
+          "title": "Garnacho grabs extra-time WINNER for Blues 🔵 | Wrexham AFC (2-3) Chelsea | Emirates FA Cup 2025-26",
+          "url": "https://www.youtube.com/watch?v=qgJlRZMLQOQ",
+          "embedUrl": "https://www.youtube.com/embed/qgJlRZMLQOQ",
+          "publishedAt": "2026-03-08T12:01:29Z",
+          "matchScore": 100
         }
       ]
     },
@@ -90,10 +94,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "Highlights: Mansfield Town 1-2 Arsenal | Bitesize",
-          "url": "https://www.arsenal.com/news/highlights-mansfield-town-1-2-arsenal",
-          "embedUrl": ""
+          "videoId": "C2fihT35IrU",
+          "title": "Eberechi Eze POWERS Gunners through 💪 | Mansfield Town (1-2) Arsenal | Emirates FA Cup 2025-26",
+          "url": "https://www.youtube.com/watch?v=C2fihT35IrU",
+          "embedUrl": "https://www.youtube.com/embed/C2fihT35IrU",
+          "publishedAt": "2026-03-08T12:00:27Z",
+          "matchScore": 100
         }
       ]
     }

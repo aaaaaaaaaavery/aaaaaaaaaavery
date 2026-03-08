@@ -25,7 +25,17 @@
       "source": {
         "recapUrl": "provided_text_only"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "00GpY-BeqaA",
+          "title": "CELTA 1 - 2 REAL MADRID | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=00GpY-BeqaA",
+          "embedUrl": "https://www.youtube.com/embed/00GpY-BeqaA",
+          "publishedAt": "2026-03-06T22:11:46Z",
+          "matchScore": 116
+        }
+      ]
     }
   ]
 }
