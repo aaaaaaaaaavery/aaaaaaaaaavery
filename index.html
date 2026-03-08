@@ -968,13 +968,14 @@
         sub.className = isActive
           ? "hidden truncate text-[9px] text-gray-300 sm:block"
           : "hidden truncate text-[9px] text-gray-400 sm:block";
-        const recaps = lg.leagueKey === "all"
-          ? state.top10Items.length
-          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
-        sub.textContent = lg.leagueKey === "all" ? "THE DAY IN SPORTS" : `${recaps} games`;
+        if (lg.leagueKey === "all") {
+          sub.textContent = "THE DAY IN SPORTS";
+        }
 
         btn.appendChild(name);
-        btn.appendChild(sub);
+        if (lg.leagueKey === "all") {
+          btn.appendChild(sub);
+        }
         btn.addEventListener("click", async () => {
           const idx = getIndexByLeagueKey(lg.leagueKey);
           if (idx < 0) return;
@@ -1016,13 +1017,14 @@
         sub.className = isActive
           ? "hidden truncate text-[10px] text-gray-300 sm:block"
           : "hidden truncate text-[10px] text-gray-400 sm:block";
-        const recaps = lg.leagueKey === "all"
-          ? state.top10Items.length
-          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
-        sub.textContent = lg.leagueKey === "all" ? "THE DAY IN SPORTS" : `${recaps} games`;
+        if (lg.leagueKey === "all") {
+          sub.textContent = "THE DAY IN SPORTS";
+        }
 
         btn.appendChild(name);
-        btn.appendChild(sub);
+        if (lg.leagueKey === "all") {
+          btn.appendChild(sub);
+        }
         btn.addEventListener("click", async () => {
           const idx = getIndexByLeagueKey(lg.leagueKey);
           if (idx < 0) return;
@@ -1865,14 +1867,11 @@
 
         const sub = document.createElement("div");
         sub.className = "truncate text-xs text-gray-400";
-        const recaps = lg.leagueKey === "all"
-          ? state.top10Items.length
-          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
         left.appendChild(name);
-        sub.textContent = lg.leagueKey === "all"
-          ? "THE DAY IN SPORTS"
-          : `${recaps} games`;
-        left.appendChild(sub);
+        if (lg.leagueKey === "all") {
+          sub.textContent = "THE DAY IN SPORTS";
+          left.appendChild(sub);
+        }
         row.appendChild(left);
         btn.appendChild(row);
 

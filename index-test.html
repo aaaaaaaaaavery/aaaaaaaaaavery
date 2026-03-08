@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>THPORTH — index-test (manual daily recaps)</title>
+  <link rel="icon" type="image/png" href="https://thporth.com/thporth-red-logo.png" />
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -967,13 +968,14 @@
         sub.className = isActive
           ? "hidden truncate text-[9px] text-gray-300 sm:block"
           : "hidden truncate text-[9px] text-gray-400 sm:block";
-        const recaps = lg.leagueKey === "all"
-          ? state.top10Items.length
-          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
-        sub.textContent = lg.leagueKey === "all" ? "THE DAY IN SPORTS" : `${recaps} games`;
+        if (lg.leagueKey === "all") {
+          sub.textContent = "THE DAY IN SPORTS";
+        }
 
         btn.appendChild(name);
-        btn.appendChild(sub);
+        if (lg.leagueKey === "all") {
+          btn.appendChild(sub);
+        }
         btn.addEventListener("click", async () => {
           const idx = getIndexByLeagueKey(lg.leagueKey);
           if (idx < 0) return;
@@ -1015,13 +1017,14 @@
         sub.className = isActive
           ? "hidden truncate text-[10px] text-gray-300 sm:block"
           : "hidden truncate text-[10px] text-gray-400 sm:block";
-        const recaps = lg.leagueKey === "all"
-          ? state.top10Items.length
-          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
-        sub.textContent = lg.leagueKey === "all" ? "THE DAY IN SPORTS" : `${recaps} games`;
+        if (lg.leagueKey === "all") {
+          sub.textContent = "THE DAY IN SPORTS";
+        }
 
         btn.appendChild(name);
-        btn.appendChild(sub);
+        if (lg.leagueKey === "all") {
+          btn.appendChild(sub);
+        }
         btn.addEventListener("click", async () => {
           const idx = getIndexByLeagueKey(lg.leagueKey);
           if (idx < 0) return;
@@ -1689,7 +1692,7 @@
       section.dataset.leagueKey = lg.leagueKey;
 
       const headerCard = document.createElement("div");
-      headerCard.className = "rounded-md border border-gray-200 bg-white shadow-sm";
+      headerCard.className = "sticky top-0 z-10 rounded-md border border-gray-200 bg-white shadow-sm";
       const headerInner = document.createElement("div");
       headerInner.className = "flex flex-wrap items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 sm:gap-3 sm:px-4 sm:py-3";
       const left = document.createElement("div");
@@ -1864,14 +1867,11 @@
 
         const sub = document.createElement("div");
         sub.className = "truncate text-xs text-gray-400";
-        const recaps = lg.leagueKey === "all"
-          ? state.top10Items.length
-          : (Array.isArray(state.cache.get(lg.leagueKey)?.games) ? state.cache.get(lg.leagueKey).games.length : "?");
         left.appendChild(name);
-        sub.textContent = lg.leagueKey === "all"
-          ? "THE DAY IN SPORTS"
-          : `${recaps} games`;
-        left.appendChild(sub);
+        if (lg.leagueKey === "all") {
+          sub.textContent = "THE DAY IN SPORTS";
+          left.appendChild(sub);
+        }
         row.appendChild(left);
         btn.appendChild(row);
 
