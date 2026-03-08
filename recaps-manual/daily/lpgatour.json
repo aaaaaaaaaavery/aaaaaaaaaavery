@@ -1,0 +1,39 @@
+{
+  "leagueName": "LPGA Tour",
+  "leagueKey": "lpgatour",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Mi Hyang Lee returned to the winner's circle at Blue Bay, capturing her third LPGA Tour title with a composed closing performance that held up under Sunday pressure.",
+  "games": [
+    {
+      "id": "20260308-blue-bay-lpga",
+      "teams": {
+        "away": "LPGA Field",
+        "home": "Mi Hyang Lee"
+      },
+      "headline": "Mi Hyang Lee captures Blue Bay title for third LPGA Tour win",
+      "score": null,
+      "brief": "Mi Hyang Lee completed a statement week at Blue Bay by closing out the tournament and securing the third LPGA Tour title of her career. Lee stayed steady through the final round while challengers tried to apply pressure, leaning on disciplined ball-striking and timely scoring to keep control of the event. The victory marks a major momentum boost early in the season and re-establishes Lee as a serious factor on difficult setups.",
+      "bullets": [
+        "Mi Hyang Lee won the Blue Bay LPGA for her third career LPGA Tour title.",
+        "Lee maintained composure in the final round to finish off the victory.",
+        "The win represents a significant early-season result in a high-quality field.",
+        "Blue Bay's demanding layout rewarded consistent tee-to-green execution.",
+        "Lee's form this week positions her as a contender heading into upcoming events."
+      ],
+      "context": "Lee's win adds experience and momentum to the LPGA title race as the tour moves deeper into the spring schedule.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.lpga.com/news/2026/mi-hyang-lee-wins-blue-bay-lpga-for-third-lpga-tour-title"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "gVdLJgIfEcQ",
+          "title": "",
+          "url": "https://youtu.be/gVdLJgIfEcQ?si=JhZHixpjn1JuV5y6",
+          "embedUrl": "https://www.youtube.com/embed/gVdLJgIfEcQ"
+        }
+      ]
+    }
+  ]
+}

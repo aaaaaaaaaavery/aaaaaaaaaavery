@@ -1,0 +1,39 @@
+{
+  "leagueName": "LIV Golf",
+  "leagueKey": "livgolf",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Jon Rahm ended a lengthy individual drought with a clinical closing 64 at LIV Golf Hong Kong, while Dustin Johnson's retooled 4Aces finally broke through for their first team win in nearly three years.",
+  "games": [
+    {
+      "id": "2026_liv_golf_hong_kong",
+      "teams": {
+        "away": "LIV Golf Field",
+        "home": "Jon Rahm"
+      },
+      "headline": "Rahm closes with 64 to win Hong Kong as 4Aces snap team title drought",
+      "score": null,
+      "brief": "Jon Rahm returned to the winner's circle at HSBC LIV Golf Hong Kong with a composed final-round 6-under 64, finishing at 23-under to beat Thomas Detry by three shots and claim his first individual win in 539 days. Rahm seized control down the stretch with a crucial birdie at the 14th, then separated as Thomas Pieters faltered, turning a tight race into a comfortable closing margin. In the team race, Dustin Johnson's 4Aces GC posted a dominant final-day 16-under aggregate and won by six, ending a 974-day wait for a team victory and validating their rebuilt lineup featuring Detry and Anthony Kim.",
+      "bullets": [
+        "Rahm won the individual title at 23-under (66-62-65-64), three clear of runner-up Thomas Detry at 20-under.",
+        "Thomas Pieters finished solo third at 19-under, his first LIV individual podium.",
+        "4Aces GC won the team title at 58-under, six ahead of Smash GC (52-under).",
+        "Dustin Johnson led the 4Aces on Sunday with a 5-under 65; Kim and Pieters shot 66, Detry shot 67.",
+        "Rahm called the win 'very relieving' after consecutive runner-up finishes to start the season."
+      ],
+      "context": "The Hong Kong result tightens the early season race and reinforces both Rahm's individual consistency and 4Aces' renewed status as a team contender.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.livgolf.com/news/jon-rahm-wins-hsbc-liv-golf-hong-kong-4aces-gc-top-team-2026"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "f3mUmgRJoxM",
+          "title": "",
+          "url": "https://www.youtube.com/watch?v=f3mUmgRJoxM&pp=ygUIbGl2IGdvbGY%3D",
+          "embedUrl": "https://www.youtube.com/embed/f3mUmgRJoxM"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "leagueName": "Six Nations",
+  "leagueKey": "sixnations",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Round 4 delivered major storyline shifts, from Scotland's 50-40 thriller over France to Italy's historic win over England and emotional post-match fallout.",
+  "games": [
+    {
+      "id": "scotland-vs-france-20260307",
+      "date": "2026-03-07",
+      "teams": {
+        "away": "France",
+        "home": "Scotland"
+      },
+      "headline": "Sensational Scots dent French title hopes in 90-point thriller",
+      "score": "SCO 50 - FRA 40",
+      "brief": "Scotland produced one of the performances of the championship, racing out to a huge lead before surviving a furious late French rally in Edinburgh.",
+      "bullets": [
+        "Scotland beat France 50-40 in a Round 4 classic at Murrayfield.",
+        "The hosts led 19-14 at halftime before exploding in the second half.",
+        "Scotland reached 50 points for the first time in this fixture.",
+        "France's late surge recovered two bonus points but could not close the gap."
+      ],
+      "context": "The result blew open the title race heading into the final round.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.sixnationsrugby.com/en/m6n/fixtures/202600/scotland-v-france-07032026-1410/report"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "V3qxP7pLTOQ",
+          "title": "HIGHLIGHTS | Round 4 | Scotland v France | A 90-point thriller that shakes up the standing!",
+          "url": "https://www.youtube.com/watch?v=V3qxP7pLTOQ",
+          "embedUrl": "https://www.youtube.com/embed/V3qxP7pLTOQ"
+        }
+      ]
+    },
+    {
+      "id": "italy-vs-england-reactions-20260308",
+      "date": "2026-03-08",
+      "teams": {
+        "away": "England",
+        "home": "Italy"
+      },
+      "headline": "A victory for everyone who has ever worn this jersey",
+      "score": "ITA def. ENG",
+      "brief": "Italy reflected on a historic result against England, with coach Gonzalo Quesada and key players emphasizing composure, bench impact, and the significance of the win for Italian rugby.",
+      "bullets": [
+        "The piece captures post-match reaction after Italy's landmark victory over England.",
+        "Quesada highlighted game-management and mental control in tense moments.",
+        "Italy legend Diego Dominguez praised the squad's unity and progress.",
+        "Attention now turns to a potential three-win campaign finish on Super Saturday."
+      ],
+      "context": "Published the day after the win, the feature frames the result as a milestone moment for Italy in the championship.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.sixnationsrugby.com/en/m6n/news/a-victory-for-everyone-who-has-ever-worn-this-jersey"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "bQ6It1P3KZI",
+          "title": "Italy vs England Highlights",
+          "url": "https://www.youtube.com/watch?v=bQ6It1P3KZI",
+          "embedUrl": "https://www.youtube.com/embed/bQ6It1P3KZI"
+        }
+      ]
+    }
+  ]
+}

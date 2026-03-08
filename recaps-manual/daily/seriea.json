@@ -1,37 +1,99 @@
 {
   "leagueName": "Serie A",
-  "leagueKey": "ITA.1",
+  "leagueKey": "seriea",
   "sourceType": "console_recaps",
-  "newsBriefing": "Napoli protected home ground in a tense 2-1 win over Torino, with early and late scoring moments setting up a valuable three-point result in the final third of the Serie A season.",
+  "leagueBriefing": "Saturday in Serie A was all about the 'old guard' reasserting dominance and a gritty fightback in Bergamo. Juventus emphatically snapped a month-long slump by putting four past Pisa, while Atalanta relied on a Gianluca Scamacca rescue mission to avoid a shock home defeat. Meanwhile, Como continues to be the league's most dangerous dark horse, securing their third straight win to keep the pressure on the Champions League places.",
   "games": [
     {
-      "id": "20260307-napoli-torino",
+      "id": "20260307-cagliari-como",
       "teams": {
-        "away": "Torino",
-        "home": "Napoli"
+        "away": "Como",
+        "home": "Cagliari"
       },
-      "headline": "Napoli hold off Torino after Santos and Elmas build cushion",
-      "score": "NAP 2 - TOR 1",
-      "brief": "Napoli controlled long stretches and did enough in both boxes to edge Torino 2-1 in a match that stayed alive until the final whistle. Alisson Santos gave Napoli an early lift with a strike from outside the area, and Eljif Elmas doubled the lead in the 68th minute after smart setup work from Matteo Politano. Torino's late header from Cesare Casadei created real late tension, but Napoli managed the final minutes and closed out an important home win.",
+      "headline": "Baturina and Da Cunha keep Como's European dream alive in Sardinia",
+      "score": "CAG 1 - COM 2",
+      "brief": "Como's remarkable surge up the table continued with a clinical display at the Unipol Domus. Martin Baturina set the tone with an early strike, and though Cagliari found a second-half equalizer through Sebastiano Esposito, the visitors showed superior composure. Lucas Da Cunha’s stunning 76th-minute winner proved the difference, securing a third consecutive victory for a Como side that looks increasingly like a top-four contender.",
       "bullets": [
-        "Napoli won 2-1 at the Stadio Diego Armando Maradona in Round 28.",
-        "Alisson Santos scored in the 7th minute from outside the box, his second league goal this season.",
-        "Eljif Elmas made it 2-0 in the 68th minute for his first Serie A goal of the campaign.",
-        "Matteo Politano assisted the winner with a headed setup in the box.",
-        "Cesare Casadei scored in the 87th minute for Torino, but Napoli held on through stoppage time."
+        "Martin Baturina opened the scoring in the 14th minute for the visitors.",
+        "Lucas Da Cunha netted the match-winner with a 'superb' strike in the 76th minute.",
+        "Sebastiano Esposito briefly leveled for Cagliari in the 56th minute.",
+        "Como has now won three straight matches, their best run in the top flight this season.",
+        "Cagliari remains winless in their last four league outings."
       ],
-      "context": "The result keeps Napoli's momentum intact heading into the final stretch of the Serie A table race.",
+      "context": "The win keeps Como in 5th place, just points away from the Champions League spots.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "provided_text_only"
+        "recapUrl": "https://www.livesoccertv.com/match/4944431/cagliari-vs-como/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "gxWCOsj8zbs",
-          "title": "Napoli vs Torino highlights",
-          "url": "https://www.youtube.com/watch?v=gxWCOsj8zbs",
-          "embedUrl": "https://www.youtube.com/embed/gxWCOsj8zbs"
+          "videoId": "sxhwQdpTVlY",
+          "title": "Cagliari vs. Como | Serie A Highlights",
+          "url": "https://www.youtube.com/watch?v=sxhwQdpTVlY",
+          "embedUrl": "https://www.youtube.com/embed/sxhwQdpTVlY"
+        }
+      ]
+    },
+    {
+      "id": "20260307-atalanta-udinese",
+      "teams": {
+        "away": "Udinese",
+        "home": "Atalanta"
+      },
+      "headline": "Scamacca brace rescues Atalanta after Udinese's first-half blitz",
+      "score": "ATA 2 - UDI 2",
+      "brief": "It looked like a disaster for Atalanta in Bergamo as Udinese raced into a 2-0 lead behind goals from Kristensen and Davis. However, Gianluca Scamacca reminded everyone why he's one of Italy's top marksmen, scoring twice in just four minutes late in the second half to pull the hosts back from the brink. While a point saves face, Gian Piero Gasperini will be frustrated by a defensive display that nearly cost them dearly.",
+      "bullets": [
+        "Gianluca Scamacca scored twice in quick succession (75', 79') to earn the draw.",
+        "Thomas Thiesson Kristensen and Keinan Davis had given Udinese a shock 2-0 lead.",
+        "Atalanta dominated possession with 64% but struggled to break Udinese's low block until the final quarter.",
+        "Udinese has now drawn three of their last four away matches against top-six opposition.",
+        "Scamacca has scored 5 goals in his last 4 appearances for club and country."
+      ],
+      "context": "The draw keeps Atalanta in the hunt for European places but represents a missed opportunity at home.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.livesoccertv.com/match/4944430/atalanta-vs-udinese/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "JVqK6BpwItw",
+          "title": "Atalanta vs. Udinese | Serie A Highlights",
+          "url": "https://www.youtube.com/watch?v=JVqK6BpwItw",
+          "embedUrl": "https://www.youtube.com/embed/JVqK6BpwItw"
+        }
+      ]
+    },
+    {
+      "id": "20260307-juventus-pisa",
+      "teams": {
+        "away": "Pisa",
+        "home": "Juventus"
+      },
+      "headline": "Yildiz shines as Juventus crushes Pisa to end winless drought",
+      "score": "JUV 4 - PIS 0",
+      "brief": "The pressure on Thiago Motta finally lifted as Juventus returned to winning ways in style at the Allianz Stadium. After a tense, goalless first half, the floodgates opened following Andrea Cambiaso's breakthrough. Kenan Yıldız was the architect-in-chief, scoring a magnificent third and providing an assist in a performance that reconfirmed his status as the club's new golden boy. The 4-0 scoreline was a fair reflection of a dominant second half that had the Turin faithful back in full voice.",
+      "bullets": [
+        "Kenan Yıldız recorded a goal and an assist in a Man of the Match performance.",
+        "Andrea Cambiaso, Khéphren Thuram, and Jeremie Boga also found the net for the Bianconeri.",
+        "Juventus kept their first clean sheet in five matches.",
+        "The win snaps a four-match winless streak in Serie A for the Old Lady.",
+        "Pisa remains rooted in the relegation battle after managing zero shots on target."
+      ],
+      "context": "Juventus moves back into 2nd place, staying within striking distance of the leaders.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.livesoccertv.com/match/4944432/juventus-vs-pisa/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "WlFssApYWuI",
+          "title": "Juventus vs. Pisa | Serie A Highlights",
+          "url": "https://www.youtube.com/watch?v=WlFssApYWuI",
+          "embedUrl": "https://www.youtube.com/embed/WlFssApYWuI"
         }
       ]
     }

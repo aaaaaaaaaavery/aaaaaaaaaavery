@@ -1,37 +1,96 @@
 {
   "leagueName": "Ligue 1",
-  "leagueKey": "LIGUE1",
+  "leagueKey": "ligue1",
   "sourceType": "console_recaps",
-  "newsBriefing": "Monaco landed a statement 3-1 win at PSG, tightening the title race and handing the reigning European champions a damaging result days before their Champions League showdown with Chelsea.",
+  "leagueBriefing": "Saturday's Ligue 1 action was a masterclass in defensive resilience and clinical finishing on the road. Both Angers SCO and Olympique Marseille secured vital 1-0 away victories, while Auxerre and Strasbourg played out a tense tactical stalemate. Marseille's victory was particularly sweet, as they leapfrogged into third place while avenging a recent cup exit, while Angers proved they can grind out results in the most hostile environments.",
   "games": [
     {
-      "id": "20260306-psg-monaco",
+      "id": "2026-03-07-nantes-angers-sco",
       "teams": {
-        "away": "Monaco",
-        "home": "Paris Saint-Germain"
+        "away": "Angers SCO",
+        "home": "Nantes"
       },
-      "headline": "Monaco punish shaky PSG to win 3-1 before Chelsea showdown",
-      "score": "PSG 1 - MON 3",
-      "brief": "Monaco took full advantage of PSG mistakes and poor defensive transitions, winning 3-1 in Paris and exposing real fragility in Luis Enrique's side ahead of a season-defining Champions League tie with Chelsea. PSG briefly threatened a comeback after Bradley Barcola made it 2-1, but Folarin Balogun struck quickly to kill the momentum and seal a major away result for Monaco.",
+      "headline": "Sbaï strike helps Angers silence the Beaujoire in gritty away win",
+      "score": "NAN 0 - ANG 1",
+      "brief": "In a match where chances were at a premium, Angers SCO showed exactly why they are a tough nut to crack on the road. Amine Sbaï provided the game's only moment of true quality shortly after the break, slotting home to stun the Nantes faithful. Despite a late barrage from the hosts, Angers' backline held firm to secure three points that feel massive in the mid-table scramble.",
       "bullets": [
-        "Monaco won 3-1 at the Parc des Princes, with goals from Maghnes Akliouche, Aleksandr Golovin and Folarin Balogun.",
-        "Balogun scored his fifth goal in his last five games and now has 13 goals in all competitions this season.",
-        "PSG cut it to 2-1 through Bradley Barcola's 10th goal of the season, but conceded again shortly after.",
-        "PSG have now lost four Ligue 1 matches in 25 games this season and seven matches in all competitions in 2025-26.",
-        "Monaco are unbeaten in seven league matches (5 wins, 2 draws) and climbed to fifth in the table."
+        "Amine Sbaï scored the match-winner in the 52nd minute.",
+        "Nantes dominated the shot count 13-11 but managed only 3 on target.",
+        "Angers maintained a disciplined 52% possession to frustrate the hosts.",
+        "The victory marks a significant upward trend for Angers in the second half of the season."
       ],
-      "context": "The defeat could shrink PSG's title lead to one point and raises pressure before the Champions League last-16 first leg against Chelsea.",
+      "context": "Angers' victory keeps them clear of the relegation scrap while dampening Nantes' European hopes.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "provided_text_only"
+        "recapUrl": "https://www.365scores.com/en-us/football/match/ligue-1-35/angers-nantes-486-493-35"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "XHASxPuudPc",
-          "title": "PSG vs Monaco highlights",
-          "url": "https://www.youtube.com/watch?v=XHASxPuudPc",
-          "embedUrl": "https://www.youtube.com/embed/XHASxPuudPc"
+          "videoId": "yfH06iSUOl4",
+          "title": "Nantes vs Angers | HIGHLIGHTS Ligue 1 | 03/07/2026",
+          "url": "https://www.youtube.com/watch?v=yfH06iSUOl4",
+          "embedUrl": "https://www.youtube.com/embed/yfH06iSUOl4"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-07-auxerre-strasbourg",
+      "teams": {
+        "away": "Strasbourg",
+        "home": "Auxerre"
+      },
+      "headline": "Strasbourg held by resilient Auxerre despite possession dominance",
+      "score": "AUX 0 - STR 0",
+      "brief": "Strasbourg will leave the Abbé-Deschamps wondering how they didn't take all three points after controlling nearly three-quarters of the ball. Auxerre set up in a deep block and dared the visitors to break them down, a gamble that paid off as the match ended in a tactical 0-0 draw. It wasn't one for the neutrals, but for Auxerre, it's a hard-earned point against a top-half side.",
+      "bullets": [
+        "Strasbourg dominated the match with a staggering 72% possession.",
+        "Auxerre's defense forced Strasbourg into mostly long-range efforts, allowing only 5 shots on target.",
+        "The match was a physical affair, with both sides receiving multiple bookings for tactical fouls.",
+        "Strasbourg has now drawn three of their last five matches."
+      ],
+      "context": "The point is vital for Auxerre's survival bid, while Strasbourg misses a chance to close the gap on the top five.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.365scores.com/en-us/football/match/ligue-1-35/auxerre-strasbourg-476-479-35"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "-HTflV5oZos",
+          "title": "AJ AUXERRE vs RC STRASBOURG | Ligue 1 Full Match Highlights",
+          "url": "https://www.youtube.com/watch?v=-HTflV5oZos",
+          "embedUrl": "https://www.youtube.com/embed/-HTflV5oZos"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-07-toulouse-olympique-marseille",
+      "teams": {
+        "away": "Olympique Marseille",
+        "home": "Toulouse"
+      },
+      "headline": "Greenwood fires Marseille into third with revenge win at Toulouse",
+      "score": "TOU 0 - MAR 1",
+      "brief": "Olympique Marseille exacted the perfect revenge on Toulouse following their recent cup exit. An early goal from Mason Greenwood—his 15th of the season—was all Roberto De Zerbi's side needed to secure a clinical 1-0 victory. Toulouse threw everything at the visitors in the second half, even rattling the woodwork, but Marseille showed a defensive grit that has been their hallmark during this surge up the table.",
+      "bullets": [
+        "Mason Greenwood scored the game's only goal in the 18th minute.",
+        "Greenwood's strike takes him to 15 league goals for the campaign.",
+        "Toulouse hit the crossbar late in the second half during a frantic push for an equalizer.",
+        "The win officially moves Marseille into third place in the Ligue 1 standings."
+      ],
+      "context": "Marseille moves into the Champions League places, trailing only PSG and Monaco.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-mena/football/ligue-1/articles-video/marseille-take-revenge-on-toulouse-and-rise-to-third-in-ligue-1-2026-03-07"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "joZgD3kh8wg",
+          "title": "Toulouse vs Marseille | HIGHLIGHTS Ligue 1 | 03/07/2026",
+          "url": "https://www.youtube.com/watch?v=joZgD3kh8wg",
+          "embedUrl": "https://www.youtube.com/embed/joZgD3kh8wg"
         }
       ]
     }

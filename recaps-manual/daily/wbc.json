@@ -1,237 +1,246 @@
 {
   "leagueName": "WBC",
-  "leagueKey": "WBC",
+  "leagueKey": "wbc",
   "sourceType": "console_recaps",
-  "newsBriefing": "Opening-day WBC pool games were defined by statement wins and momentum swings. Cuba and Puerto Rico leaned on pitching in San Juan, Venezuela and the Dominican Republic grabbed key Pool D wins in Miami, and Mexico plus Team USA opened strongly in Houston behind late offense. In Tokyo, Chinese Taipei finally broke out in a must-win blowout that kept its survival hopes alive.",
+  "leagueBriefing": "Day 3 of the 2026 World Baseball Classic was defined by dramatic late-game heroics and dominant debuts. Ozzie Albies and Darell Hernaiz both delivered walk-off home runs for the Netherlands and Puerto Rico, respectively, while Team USA and Japan continued their perfect starts to the tournament with high-scoring victories. Italy also made a statement in their opener with a combined shutout of Brazil.",
   "games": [
     {
-      "id": "788139",
+      "id": "788114",
       "teams": {
-        "away": "Cuba",
-        "home": "Panama"
+        "away": "KOR",
+        "home": "JPN"
       },
-      "headline": "Moncada's bat and Cuba's arms set early Pool A tone",
-      "score": "CUB 3 - PAN 1",
-      "brief": "Cuba looked composed from the jump in a game it could not afford to drop, using two early homers and layered pitching to beat Panama 3-1 in San Juan. Yoelkis Guibert sparked it first, then Yoan Moncada delivered the game-defining two-run shot while making highlight plays at third. From there, Cuba's staff controlled traffic long enough to protect the lead and open Pool A with exactly the kind of clean, pressure win that keeps a quarterfinal path in front of them.",
+      "headline": "Japan powers past Korea in Tokyo Dome slugfest to stay unbeaten",
+      "score": "KOR 6 - JPN 8",
+      "brief": "In a back-and-forth rivalry showdown, Japan used a massive third-inning power surge to hold off a resilient South Korean squad. Shohei Ohtani and Masataka Yoshida anchored a lineup that traded blows with Korea all night, eventually securing the victory in front of a raucous home crowd to move to 2-0 in Pool Play.",
       "bullets": [
-        "Cuba opened Pool A with a 3-1 win over Panama.",
-        "Yoelkis Guibert hit an early solo homer to give Cuba a 1-0 lead.",
-        "Yoan Moncada added a two-run homer and was a defensive standout at third base.",
-        "Livan Moinelo threw 3 2/3 scoreless innings with four strikeouts.",
-        "Raidel Martinez closed with a scoreless ninth and struck out the final batter."
+        "Japan erupted for three home runs in the 3rd inning alone, courtesy of Shohei Ohtani, Seiya Suzuki, and Masataka Yoshida.",
+        "Seiya Suzuki finished the night with two home runs, leading the Samurai Japan offensive onslaught.",
+        "Japan's bullpen held firm in the final frames, with Taisei Ota earning the save to preserve the narrow lead.",
+        "The win marks Japan's second straight victory, putting them in the driver's seat for the Pool C top seed."
       ],
-      "context": "Cuba stayed on track to extend its streak of advancing out of group play by starting 1-0 in a wide-open pool.",
+      "context": "Japan remains unbeaten and well-positioned to advance to the quarterfinals as the top seed in Pool C.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/news/cuba-vs-panama-in-2026-world-baseball-classic?game_pk=788139"
+        "recapUrl": "https://www.mlb.com/video/team-japan-hits-three-home-runs-in-the-3rd-inning"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "SrNBxW85984",
-          "title": "Cuba vs. Panama 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=SrNBxW85984",
-          "embedUrl": "https://www.youtube.com/embed/SrNBxW85984",
-          "publishedAt": "2026-03-06T20:48:54Z",
-          "matchScore": 105
+          "videoId": "",
+          "title": "Japan vs. Korea Game Highlights",
+          "url": "https://www.mlb.com/video/team-japan-hits-three-home-runs-in-the-3rd-inning",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "788110",
+      "id": "401803310",
       "teams": {
-        "away": "Netherlands",
-        "home": "Venezuela"
+        "away": "COL",
+        "home": "CAN"
       },
-      "headline": "Venezuela's four-run fifth delivers a high-value opener",
-      "score": "NED 2 - VEN 6",
-      "brief": "In what felt like one of Pool D's leverage games from day one, Venezuela handled the key middle innings and took down the Netherlands 6-2. Javier Sanoja's early homer gave Venezuela the edge, then a four-run fifth broke the game open and changed the mood in Miami. Luis Arraez and Willson Contreras kept the pressure on, and Venezuela's relief group slammed the door to bank the kind of opening win that can decide who advances.",
+      "headline": "Soroka shines in return as Canada thumps Colombia in opener",
+      "score": "COL 2 - CAN 8",
+      "brief": "Michael Soroka made a triumphant return to the national team, pitching three effective innings and touching 97 mph to set the tone for Canada's dominant opening win. The Canadian offense provided relentless pressure, breaking the game open late to secure a comfortable victory in San Juan.",
       "bullets": [
-        "Venezuela beat the Netherlands 6-2 in the Pool D opener.",
-        "Javier Sanoja hit a go-ahead solo homer in the second inning.",
-        "Venezuela scored four runs in the fifth to turn a tight game into a cushion.",
-        "Luis Arraez and Willson Contreras drove in two runs each.",
-        "Five Venezuela relievers combined for seven innings and allowed one run."
+        "Owen Caissie delivered the early spark with a towering two-run home run in the third inning.",
+        "Michael Soroka allowed only one run over three innings, striking out three in his long-awaited WBC debut.",
+        "The Naylor brothers, Bo and Josh, combined for several key defensive plays and multiple RBIs to fuel the offense.",
+        "Canada’s lineup forced the issue late, scoring four runs in the eighth inning to put the game out of reach."
       ],
-      "context": "With the Dominican Republic considered the pool favorite, this head-to-head opener could be one of the results that decides quarterfinal qualification.",
+      "context": "Canada opens Pool A with a statement win, boosting their chances in a competitive group featuring Puerto Rico and Panama.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/news/netherlands-vs-venezuela-in-2026-world-baseball-classic?game_pk=788110"
+        "recapUrl": "https://www.sportsnet.ca/mlb/article/hyped-up-canadians-play-their-game-to-beat-colombia-in-wbc-opener/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "2RrhTyD54gk",
-          "title": "Netherlands vs. Venezuela 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=2RrhTyD54gk",
-          "embedUrl": "https://www.youtube.com/embed/2RrhTyD54gk",
-          "publishedAt": "2026-03-06T21:13:27Z",
-          "matchScore": 105
+          "videoId": "",
+          "title": "Canada vs. Colombia Highlights",
+          "url": "https://www.sportsnet.ca/mlb/article/hyped-up-canadians-play-their-game-to-beat-colombia-in-wbc-opener/",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "788129",
+      "id": "788108",
       "teams": {
-        "away": "Mexico",
-        "home": "Great Britain"
+        "away": "NIC",
+        "home": "NED"
       },
-      "headline": "Aranda's eighth-inning blast lifts Mexico in late breakaway",
-      "score": "MEX 8 - GBR 2",
-      "brief": "For seven innings this looked like a grind, then Mexico finally found the swing that changed everything. Jonathan Aranda launched a three-run homer in the eighth to break a 1-1 tie, and Mexico piled on in the ninth to finish an 8-2 opener over Great Britain. The game had tension all night, but Mexico's late surge and composure in key spots gave it a strong first step in Pool B.",
+      "headline": "Albies makes history with first-ever WBC walk-off home run",
+      "score": "NIC 3 - NED 4",
+      "brief": "Ozzie Albies etched his name into the record books, blasting a three-run, walk-off home run in the bottom of the ninth to rescue the Netherlands from a late deficit. It was a historic moment for the Dutch, who appeared headed for an upset before Albies' heroics turned the game on its head.",
       "bullets": [
-        "Mexico defeated Great Britain 8-2 to open Pool B.",
-        "The game was tied 1-1 through seven innings.",
-        "Jonathan Aranda hit the decisive three-run homer in the eighth.",
-        "Mexico added four more runs in the ninth to put the game away.",
-        "Nacho Alvarez Jr. hit Mexico's first run of the tournament with a solo homer in the second."
+        "Ozzie Albies' ninth-inning blast was the first walk-off home run in World Baseball Classic history.",
+        "Nicaragua took a 3-1 lead in the 8th inning behind a go-ahead two-run home run from Jeter Downs.",
+        "Lars Huijer earned the win in relief after the Dutch offense rallied with two outs in the final frame.",
+        "The victory is the 10th walk-off win in WBC history and a record fourth for the Netherlands program."
       ],
-      "context": "Mexico had never won its first game in prior WBC appearances, so this opener immediately changed its early tournament profile.",
+      "context": "The Netherlands bounces back from an earlier loss to stay relevant in the Pool D standings.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/news/mexico-vs-great-britain-in-2026-world-baseball-classic?game_pk=788129"
+        "recapUrl": "https://www.mlb.com/gameday/nicaragua-vs-netherlands/2026/03/07/788108/final/wrap"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "vWneNoYiqWE",
-          "title": "Mexico vs. Great Britain 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=vWneNoYiqWE",
-          "embedUrl": "https://www.youtube.com/embed/vWneNoYiqWE",
-          "publishedAt": "2026-03-06T23:59:43Z",
-          "matchScore": 105
+          "videoId": "",
+          "title": "Netherlands vs. Nicaragua Highlights",
+          "url": "https://www.foxsports.com/stories/world-baseball-classic/wbc-daily-shohei-ohtani-japan-home-run-ozzie-albies-netherlands-walk-off",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "788105",
+      "id": "788126",
       "teams": {
-        "away": "Nicaragua",
-        "home": "Dominican Republic"
+        "away": "BRA",
+        "home": "ITA"
       },
-      "headline": "Caminero ignites late Dominican power surge after Nicaragua's early punch",
-      "score": "NCA 3 - DOM 12",
-      "brief": "Nicaragua landed the first blows and made this uncomfortable early, but the Dominican Republic stayed patient until its big bats took over. Julio Rodriguez's RBI single tied it in the third, Junior Caminero crushed the go-ahead two-run homer in the sixth, and the Dominicans detonated for a six-run eighth to turn a tight game into a 12-3 rout. Oneil Cruz's 450-foot three-run blast became the exclamation point, while seven Dominican relievers combined for 7 2/3 scoreless innings to lock down everything after the early chaos.",
+      "headline": "Azzurri arms and Nori's power lead Italy to dominant shutout",
+      "score": "BRA 0 - ITA 8",
+      "brief": "Italy opened their WBC campaign with a defensive masterclass, shutting out Brazil behind a brilliant start from Samuel Aldegheri and a balanced power attack. Dante Nori provided the fireworks with two home runs as the Italians cruised to a lopsided victory in Houston.",
       "bullets": [
-        "Dominican Republic beat Nicaragua 12-3 after Nicaragua jumped ahead early.",
-        "Cristopher Sanchez became the first pitcher in WBC history with a four-strikeout inning.",
-        "Julio Rodriguez tied the game 3-3 with an RBI single in the third, then homered during the six-run eighth.",
-        "Junior Caminero launched a 414-foot two-run homer in the sixth that gave the Dominicans the lead for good.",
-        "Oneil Cruz added a 450-foot three-run homer in the eighth as the Dominican lineup slammed the door."
+        "Dante Nori finished 3-for-3 with two home runs and a double, driving in two runs and scoring twice.",
+        "Samuel Aldegheri struck out eight batters while allowing only one hit over 4.2 dominant innings.",
+        "Dominic Canzone broke the game open with a three-run home run in the seventh inning to make it 6-0.",
+        "Italian pitchers combined for 15 strikeouts while surrendering just four hits in the shutout performance."
       ],
-      "context": "The comeback-from-pressure start gives the Dominican Republic early control in a razor-thin Pool D race where run swings can decide advancement.",
+      "context": "Italy joins Team USA at the top of Pool B after a perfect start to their tournament run.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/news/nicaragua-vs-dominican-republic-in-2026-world-baseball-classic?game_pk=788105"
+        "recapUrl": "https://www.mlb.com/gameday/brazil-vs-italy/2026/03/07/788126/final/wrap"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "5ZrfX-QjYTg",
-          "title": "Nicaragua vs. Dominican Republic 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=5ZrfX-QjYTg",
-          "embedUrl": "https://www.youtube.com/embed/5ZrfX-QjYTg",
-          "publishedAt": "2026-03-07T05:22:26Z",
-          "matchScore": 105
+          "videoId": "",
+          "title": "Italy vs. Brazil Game Highlights",
+          "url": "https://mlbforlife.com/2026/03/07/team-italy-powers-to-8-0-shutout-over-brazil-in-2026-world-baseball-classic-debut/",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "788136",
+      "id": "788137",
       "teams": {
-        "away": "Puerto Rico",
-        "home": "Colombia"
+        "away": "PAN",
+        "home": "PUR"
       },
-      "headline": "Puerto Rico feeds off home crowd and breaks game open in the fifth",
-      "score": "PUR 5 - COL 0",
-      "brief": "Puerto Rico spent four innings searching for offense, then turned one loud inning into a complete win. A five-run fifth ignited Hiram Bithorn Stadium and carried Puerto Rico past Colombia 5-0 behind strong pitching from start to finish. Seth Lugo matched Colombia's early zeroes, the lineup finally cashed in with traffic, and Edwin Diaz closed with a strikeout-heavy finish that felt like a signature tournament moment in front of a home crowd.",
+      "headline": "Hernaiz's extra-inning blast keeps Puerto Rico perfect",
+      "score": "PAN 3 - PUR 4",
+      "brief": "Puerto Rico survived a scare from Panama, winning in walk-off fashion thanks to a 10th-inning solo shot from Darell Hernaiz. In a classic pitcher's duel that turned into a late-inning grind, the hosts found just enough magic to stay unbeaten in front of an electric San Juan crowd.",
       "bullets": [
-        "Puerto Rico shut out Colombia 5-0 in Pool A play.",
-        "After no hits through four innings, Puerto Rico scored all five runs in the fifth.",
-        "Seth Lugo threw four scoreless innings and allowed three hits with three strikeouts.",
-        "Willi Castro and Eddie Rosario delivered key RBI hits in the decisive inning.",
-        "Edwin Diaz struck out the side in the ninth to finish the win."
+        "Darell Hernaiz ended the game in the 10th inning with a towering home run to break a 3-3 tie.",
+        "Panama's Ariel Jurado was nearly untouchable early, tossing five scoreless innings with four strikeouts.",
+        "Puerto Rico rallied for two runs in the bottom of the 10th after Panama had taken a brief one-run lead.",
+        "The win improves Puerto Rico to 2-0, securing their spot at the top of the Pool A leaderboard."
       ],
-      "context": "A home opening win gives Puerto Rico immediate control over its pool positioning and confidence heading into the weekend slate.",
+      "context": "Puerto Rico moves into a tie for first in Pool A, setting up a high-stakes clash with Canada.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/news/puerto-rico-vs-colombia-in-2026-world-baseball-classic?game_pk=788136"
+        "recapUrl": "https://www.mlb.com/gameday/panama-vs-puerto-rico/2026/03/07/788137/final/wrap"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "mUHRiRuQZXs",
-          "title": "Puerto Rico vs. Colombia 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=mUHRiRuQZXs",
-          "embedUrl": "https://www.youtube.com/embed/mUHRiRuQZXs",
-          "publishedAt": "2026-03-07T04:02:09Z",
-          "matchScore": 105
+          "videoId": "",
+          "title": "Puerto Rico vs. Panama Highlights",
+          "url": "https://www.wbsc.org/en/news/world-baseball-classic-2026-day-3",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "788128",
+      "id": "20260307-ISR-VEN",
       "teams": {
-        "away": "USA",
-        "home": "Brazil"
+        "away": "ISR",
+        "home": "VEN"
       },
-      "headline": "USA's star power shows late after Brazil hangs around",
-      "score": "USA 15 - BRA 5",
-      "brief": "Team USA got the expected fireworks from Aaron Judge, but this was more of a fight than the final score suggests until a chaotic ninth inning blew it wide open. Judge's early homer set the tone, Brazil kept answering, and then the U.S. piled up a seven-run ninth to win 15-5 in Houston. Brice Turang's run production and relentless pressure on Brazil's pitching eventually broke the game, while Brazil still left with proof it can threaten good teams when it throws strikes.",
+      "headline": "Venezuela pounces early to overwhelm Israel in Miami",
+      "score": "ISR 3 - VEN 11",
+      "brief": "Venezuela showcased why they are tournament favorites, using an aggressive four-run first inning to bury Israel early. Luis Arraez and Eugenio Suarez led a relentless offensive attack that gave the Venezuelan pitching staff plenty of cushion to work with throughout the night.",
       "bullets": [
-        "Team USA beat Brazil 15-5 in its World Baseball Classic opener.",
-        "Aaron Judge hit a two-run homer in the first inning.",
-        "Brice Turang delivered a bases-clearing double and drove in four runs.",
-        "Brazil issued 17 walks, including five in a seven-run ninth inning by the USA.",
-        "Lucas Ramirez hit two home runs for Brazil, including a leadoff blast."
+        "Luis Arraez set the tone early with an RBI double in the first and finished with two home runs on the night.",
+        "Eugenio Suarez provided the first-inning exclamation point with a 386-foot two-run home run.",
+        "Venezuelan starter Enmanuel De Jesus retired the first 14 Israeli batters in a row to start the game.",
+        "Israel's Harrison Bader and Matt Mervis drove in late runs, but the game was already out of reach."
       ],
-      "context": "The U.S. got the opening win it needed before marquee Pool B matchups, while Brazil showed enough offense to remain a dangerous spoiler.",
+      "context": "Venezuela moves to 2-0 in Pool D and remains a heavy favorite to win the group.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/news/usa-vs-brazil-in-2026-world-baseball-classic?game_pk=788128"
+        "recapUrl": "https://umdmitzpeh.com/2026/03/07/visual-composer-49911/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "E2_wqPsyALU",
-          "title": "USA vs. Brazil 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=E2_wqPsyALU",
-          "embedUrl": "https://www.youtube.com/embed/E2_wqPsyALU",
-          "publishedAt": "2026-03-07T06:53:43Z",
-          "matchScore": 105
+          "videoId": "",
+          "title": "Venezuela vs. Israel Game Highlights",
+          "url": "https://www.timesofisrael.com/liveblog_entry/israels-baseball-team-loses-11-3-to-venezuela-in-world-baseball-classic-opener/",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "788117",
+      "id": "WIXUqZw9",
       "teams": {
-        "away": "Chinese Taipei",
-        "home": "Czechia"
+        "away": "GBR",
+        "home": "USA"
       },
-      "headline": "Chinese Taipei erupts for mercy-rule win to stay alive",
-      "score": "TPE 14 - CZE 0",
-      "brief": "After two scoreless losses put their tournament hopes on the brink, Chinese Taipei answered with urgency and overwhelmed Czechia 14-0 in seven innings. The offense mixed small ball early and power later, then never let up once momentum turned. Stuart Fairchild's grand slam and Yu Chang's big night headlined the breakout, and strong pitching made sure this one ended quickly and decisively.",
+      "headline": "Schwarber and Henderson lead Team USA to record-breaking win",
+      "score": "GBR 1 - USA 9",
+      "brief": "After a slow start, Team USA’s bats woke up in a five-run fifth inning to dismantle Great Britain in Houston. The American pitching staff was equally dominant, setting a new WBC record for strikeouts to keep the British offense completely grounded for the final eight innings.",
       "bullets": [
-        "Chinese Taipei beat Czechia 14-0 in a seven-inning mercy-rule game.",
-        "Stuart Fairchild hit a grand slam as part of the offensive outburst.",
-        "Yu Chang had three hits and four RBIs.",
-        "Chen-Wei Chen drove in three runs.",
-        "Starter Chen Zhong-Ao Zhuang threw 2 2/3 innings and struck out four."
+        "Kyle Schwarber ignited the crowd with a 427-foot 'Schwarbomb' that gave the USA its first lead of the game.",
+        "The USA pitching staff recorded 17 strikeouts, a new single-game record for the United States in the WBC.",
+        "Gunnar Henderson was a force at the plate, going 4-for-5 with two RBIs and a double.",
+        "Great Britain's Nate Eaton hit a home run on the very first pitch of the game, which stood as their only highlight."
       ],
-      "context": "The blowout kept Chinese Taipei's quarterfinal hopes alive and pushed Czechia toward likely relegation pressure before its final pool game.",
+      "context": "Team USA improves to 2-0, outscoring opponents 24-6 in their first two games of the tournament.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/news/chinese-taipei-vs-czechia-in-2026-world-baseball-classic?game_pk=788117"
+        "recapUrl": "https://www.flashscore.com/news/usa-vs-britain-recap/WIXUqZw9/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "S-XawZKXyzs",
-          "title": "Chinese Taipei vs. Czechia 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=S-XawZKXyzs",
-          "embedUrl": "https://www.youtube.com/embed/S-XawZKXyzs",
-          "publishedAt": "2026-03-07T07:19:19Z",
-          "matchScore": 105
+          "videoId": "",
+          "title": "Team USA vs. Great Britain Highlights",
+          "url": "https://www.usabaseball.com/news/live-recap-of-team-usa-vs-great-britain",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-TPE-KOR",
+      "teams": {
+        "away": "TPE",
+        "home": "KOR"
+      },
+      "headline": "Taiwan stuns Korea in extra innings for historic first WBC win",
+      "score": "TPE 5 - KOR 4",
+      "brief": "In a marathon battle at the Tokyo Dome, Chinese Taipei (Taiwan) overcame a late Korean surge to secure their first-ever WBC victory over their rivals. An extra-inning bunt strategy in the 10th proved to be the difference, breathing new life into Taiwan's hopes of advancing to the knockout round.",
+      "bullets": [
+        "Taiwan utilized two consecutive bunts in the 10th inning to score the winning run, scored by captain Chen Chieh-hsien.",
+        "Yu Chang and Stuart Fairchild both homered for the second consecutive game to lead the offense.",
+        "Ace Gu Lin Ruei-yang delivered four scoreless innings to start the game, neutralizing the Korean bats early.",
+        "Closer Tseng Jyun-yue retired Korea in order in the bottom of the 10th to seal the historic victory."
+      ],
+      "context": "Taiwan's victory keeps them in the hunt for a quarterfinal spot and marks their first win against South Korea in WBC history.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://focustaiwan.tw/sports/202603080009"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "Taiwan vs. Korea Game Highlights",
+          "url": "https://focustaiwan.tw/sports/202603080009",
+          "embedUrl": ""
         }
       ]
     }

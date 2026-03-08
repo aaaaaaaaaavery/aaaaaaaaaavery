@@ -237,7 +237,48 @@ const TEAM_NAME_VARIATIONS = {
   'leicester city': ['leicester'],
   'southampton': ['southampton fc'],
   'ipswich town': ['ipswich'],
+  'atlanta united fc': ['atlanta united'],
+  'charlotte fc': ['charlotte'],
+  'chicago fire fc': ['chicago fire'],
+  'columbus crew': ['columbus', 'crew'],
+  'd c united': ['dc united', 'd c united'],
+  'fc cincinnati': ['cincinnati'],
+  'houston dynamo fc': ['houston dynamo', 'houston'],
+  'inter miami cf': ['inter miami', 'miami'],
+  'los angeles fc': ['lafc', 'los angeles fc'],
+  'la galaxy': ['los angeles galaxy', 'galaxy'],
+  'minnesota united fc': ['minnesota united', 'minnesota'],
+  'nashville sc': ['nashville'],
+  'new england revolution': ['new england', 'revolution'],
+  'new york city fc': ['nycfc', 'new york city'],
+  'new york red bulls': ['ny red bulls', 'red bulls'],
+  'orlando city sc': ['orlando city', 'orlando'],
+  'philadelphia union': ['philadelphia'],
+  'portland timbers': ['portland'],
+  'real salt lake': ['rsl', 'salt lake'],
+  'san diego fc': ['san diego'],
+  'san jose earthquakes': ['sj earthquakes', 'san jose', 'quakes'],
+  'seattle sounders fc': ['seattle sounders', 'seattle'],
+  'sporting kansas city': ['sporting kc', 'kansas city', 'skc'],
+  'st louis city sc': ['st louis city', 'st louis city sc', 'st louis', 'stl city'],
+  'toronto fc': ['toronto'],
+  'vancouver whitecaps fc': ['vancouver whitecaps', 'vancouver'],
 };
+
+const GENERIC_TEAM_TOKENS = new Set([
+  'fc',
+  'sc',
+  'cf',
+  'ac',
+  'afc',
+  'club',
+  'city',
+  'united',
+  'sporting',
+  'athletic',
+  'real',
+  'inter',
+]);
 
 const TEAM_ALIAS_INDEX = (() => {
   const map = new Map();
@@ -259,6 +300,37 @@ function addAliasFamily(keys, key) {
   for (const alt of family) keys.add(alt);
 }
 
+function isWeakTeamKey(key) {
+  const k = normalizeText(key);
+  if (!k) return true;
+
+  const parts = k.split(' ').filter(Boolean);
+  if (parts.length === 1) {
+    if (GENERIC_TEAM_TOKENS.has(parts[0])) return true;
+    if (parts[0].length <= 2) return true;
+  }
+
+  if (parts.length >= 2 && parts.every((p) => GENERIC_TEAM_TOKENS.has(p))) {
+    return true;
+  }
+
+  return false;
+}
+
+function dateDiffDays(isoA, isoB) {
+  if (!isoA || !isoB) return null;
+  const a = new Date(`${isoA}T00:00:00Z`);
+  const b = new Date(`${isoB}T00:00:00Z`);
+  if (Number.isNaN(a.getTime()) || Number.isNaN(b.getTime())) return null;
+  const ms = Math.abs(a.getTime() - b.getTime());
+  return Math.round(ms / (24 * 60 * 60 * 1000));
+}
+
+function dateWithinDays(isoA, isoB, maxDays) {
+  const d = dateDiffDays(isoA, isoB);
+  return d !== null && d <= maxDays;
+}
+
 function teamNameKeys(teamName) {
   const normalized = normalizeText(teamName);
   if (!normalized || isPlaceholderTeamName(normalized)) return [];
@@ -277,7 +349,7 @@ function teamNameKeys(teamName) {
     addAliasFamily(keys, key);
   }
 
-  return [...keys].filter(Boolean);
+  return [...keys].filter((k) => k && !isWeakTeamKey(k));
 }
 
 function parseScoreTeamCodes(score) {
@@ -408,10 +480,14 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint,
 
   let score = 100;
   if (hasTeamContext) {
-    // Team-based entries: require both teams in title and exact same date.
+    // Team-based entries: require both teams in title and a tight date window.
     if (!awayHit || !homeHit) return -1;
+
+    const maxDateDriftDays = leagueKeyNorm === 'MLS' ? 1 : 0;
     const dateMatches =
-      targetDateIso && (publishedDateIso === targetDateIso || dateInTitleIso === targetDateIso);
+      targetDateIso &&
+      (dateWithinDays(publishedDateIso, targetDateIso, maxDateDriftDays) ||
+        dateWithinDays(dateInTitleIso, targetDateIso, maxDateDriftDays));
     if (!dateMatches) return -1;
   } else if (!awayHit || !homeHit) {
 

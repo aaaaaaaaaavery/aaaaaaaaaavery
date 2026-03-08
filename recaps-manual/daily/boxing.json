@@ -1,0 +1,125 @@
+{
+  "leagueName": "Misfits Boxing",
+  "leagueKey": "misfitsboxing",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Misfits Boxing returned to Derby for MF Duel 2, where local hero Ty Mitchell successfully defended his MF Pro light heavyweight title against seasoned veteran Gabriel Rosado. The card featured a mix of dominant finishes and hard-fought decisions, further solidifying the promotion's pro-stakes crossover division.",
+  "games": [
+    {
+      "id": "20260307-ty-mitchell-gabriel-rosado",
+      "teams": {
+        "away": "Gabriel Rosado",
+        "home": "Ty Mitchell"
+      },
+      "headline": "Mitchell outpoints veteran Rosado to retain Misfits light heavyweight crown",
+      "score": "MITCHELL def. ROSADO (UD)",
+      "brief": "Ty Mitchell proved he belongs at the top of the Misfits Pro division with a composed and dominant performance against the vastly more experienced Gabriel Rosado. Fighting in his hometown of Derby, Mitchell controlled the distance for most of the six rounds, nearly stopping the 'King' in the fifth round with a flurry against the ropes. While Rosado showed flashes of his veteran craft in the final frame, it wasn't enough to overcome Mitchell's youth and activity, leading to a clean sweep on the judges' scorecards.",
+      "bullets": [
+        "All three judges scored the contest 59-55 in favor of Ty Mitchell.",
+        "Mitchell nearly found a finish in the fifth round, staggering Rosado with a heavy volley against the ropes.",
+        "The victory marks Mitchell's first successful defense of the MF Pro light heavyweight title he won in 2025.",
+        "Following the win, Mitchell immediately called out Matchroom Boxing's Ben Whittaker for a potential crossover clash."
+      ],
+      "context": "Mitchell solidifies his status as the face of Misfits' professional-tier boxing following his win over a former world title challenger.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.dazn.com/en-US/news/boxing/ty-mitchell-vs-gabriel-rosado-fight-highlights-watch-dazn/dgy6gmbh6frw17dub9fxvvgv8"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "jsz95vXg_l4",
+          "title": "Ty Mitchell vs Gabriel Rosado | FIGHT HIGHLIGHTS",
+          "url": "https://www.youtube.com/watch?v=jsz95vXg_l4",
+          "embedUrl": "https://www.youtube.com/embed/jsz95vXg_l4"
+        }
+      ]
+    },
+    {
+      "id": "20260307-walid-sharks-argentinian-king",
+      "teams": {
+        "away": "Argentinian King",
+        "home": "Walid Sharks"
+      },
+      "headline": "Walid Sharks settles rivalry with clinical second-round knockout of Argentinian King",
+      "score": "SHARKS def. KING (KO2)",
+      "brief": "In a grudge match that had been building all week, Walid Sharks left no doubt by putting Argentinian King away early in the second round. After a dominant opening frame where Sharks worked the body effectively, he found the opening he needed in the second, landing a crisp right hand that sent King to the canvas. The referee didn't need to finish the count as Sharks secured his revenge in spectacular fashion.",
+      "bullets": [
+        "The fight was ended at 1:05 of the second round via a one-punch knockout.",
+        "Sharks credited his victory to body work in the first round that set up the headshot in the second.",
+        "The win settles a heated personal rivalry that dominated the pre-fight press conferences."
+      ],
+      "context": "Sharks bounces back from previous losses to re-establish himself as a top lightweight contender in the Misfits circuit.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mirror.co.uk/sport/boxing/misfits-boxing-live-results-start-36832815"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "JOwl84eKEEc",
+          "title": "",
+          "url": "https://youtu.be/JOwl84eKEEc",
+          "embedUrl": "https://www.youtube.com/embed/JOwl84eKEEc"
+        }
+      ]
+    },
+    {
+      "id": "20260307-pearl-gonzalez-carla-jade",
+      "teams": {
+        "away": "Carla Jade",
+        "home": "Pearl Gonzalez"
+      },
+      "headline": "Pearl Gonzalez survives late scare to retain middleweight title against Carla Jade",
+      "score": "GONZALEZ 48 - JADE 47",
+      "brief": "Pearl Gonzalez successfully defended her MFB women's middleweight title in a gritty encounter that went right to the wire. Gonzalez started strong, using her combat sports experience to dictate the pace, but Carla Jade surged late in the fight to make it a one-point game on all three scorecards. Despite the late pressure, Gonzalez did enough early work to leave Derby with her belt still around her waist.",
+      "bullets": [
+        "All three judges scored the bout 48-47 for Gonzalez.",
+        "The loss marks the first professional defeat for Carla Jade in the Misfits promotion.",
+        "Gonzalez maintains her unbeaten streak in crossover boxing with this successful defense."
+      ],
+      "context": "Pearl Gonzalez continues her reign as one of the most prominent female stars in the crossover boxing space.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mirror.co.uk/sport/boxing/misfits-boxing-live-results-start-36832815"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "JOwl84eKEEc",
+          "title": "",
+          "url": "https://youtu.be/JOwl84eKEEc",
+          "embedUrl": "https://www.youtube.com/embed/JOwl84eKEEc"
+        }
+      ]
+    },
+    {
+      "id": "20260307-jordan-banjo-tempo-arts",
+      "teams": {
+        "away": "Tempo Arts",
+        "home": "Jordan Banjo"
+      },
+      "headline": "Jordan Banjo stops Tempo Arts in heavyweight slugfest",
+      "score": "BANJO def. TEMPO ARTS (TKO4)",
+      "brief": "Diversity star Jordan Banjo proved his boxing training is paying off with a fourth-round TKO victory over Tempo Arts. In a fight characterized by heavy exchanges, Banjo's conditioning and superior accuracy eventually wore down the larger Tempo Arts, leading the referee to step in and save the fighter from further punishment late in the final round.",
+      "bullets": [
+        "The stoppage occurred at 2:54 of the fourth and final round.",
+        "Banjo utilized a high-volume jab to break through Tempo Arts' guard throughout the middle rounds.",
+        "The win moves Banjo further up the Misfits heavyweight rankings."
+      ],
+      "context": "Banjo continues to transition from entertainment to a legitimate threat in the Misfits heavyweight division.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://en.wikipedia.org/wiki/2026_in_Misfits_Boxing"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "JOwl84eKEEc",
+          "title": "",
+          "url": "https://youtu.be/JOwl84eKEEc",
+          "embedUrl": "https://www.youtube.com/embed/JOwl84eKEEc"
+        }
+      ]
+    }
+  ]
+}

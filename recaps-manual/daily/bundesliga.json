@@ -1,37 +1,192 @@
 {
   "leagueName": "Bundesliga",
-  "leagueKey": "GER.1",
+  "leagueKey": "bundesliga",
   "sourceType": "console_recaps",
-  "newsBriefing": "Bayern Munich showed its depth without Harry Kane, rolling past Borussia Monchengladbach 4-1 to open a 14-point gap at the top while also keeping an eye on Manuel Neuer after his halftime withdrawal.",
+  "leagueBriefing": "Saturday's Bundesliga action was a masterclass in late-game drama, featuring a combined 23 goals across six matches. While Borussia Dortmund tightened their grip on a Champions League spot with a clinical road win, the rest of the top-four contenders struggled to find separation. Most notably, a six-goal thriller in Freiburg and a dramatic comeback in Leipzig kept fans on the edge of their seats until the final whistles.",
   "games": [
     {
-      "id": "20260306-bayern-gladbach",
+      "id": "freiburg-vs-leverkusen-20260307",
       "teams": {
-        "away": "Borussia Monchengladbach",
-        "home": "Bayern Munich"
+        "away": "Bayer Leverkusen",
+        "home": "SC Freiburg"
       },
-      "headline": "Diaz sparks Kane-less Bayern as leaders stretch cushion to 14 points",
-      "score": "BAY 4 - BMG 1",
-      "brief": "No Harry Kane, no drop-off. Bayern Munich rotated heavily and still ran away from Borussia Monchengladbach 4-1, with Luis Diaz setting the tone through one goal and one assist before the game tilted fully in Bayern's favor. Once Gladbach went down to 10 men, Jamal Musiala converted the penalty for his first goal of the season and Nicolas Jackson capped his return with a late finish, turning a strong night into another title-race statement for the champions.",
+      "headline": "Ginter's late header denies Leverkusen comeback in six-goal thriller",
+      "score": "FRE 3 - LEV 3",
+      "brief": "In a match that swung back and forth like a pendulum, SC Freiburg and Bayer Leverkusen shared the points in a chaotic 3-3 draw. Leverkusen looked to have completed a spirited comeback when Martin Terrier put them ahead early in the second half, but a late Matthias Ginter header salvaged a point for the hosts. The result leaves Leverkusen still chasing the pack in a crowded race for the top four.",
       "bullets": [
-        "Bayern beat Gladbach 4-1 and moved 14 points clear of Borussia Dortmund.",
-        "Luis Diaz opened the scoring with a volley in the 33rd minute and assisted Konrad Laimer for 2-0.",
-        "Rocco Reitz was sent off 10 minutes into the second half for bringing down Nicolas Jackson.",
-        "Jamal Musiala converted the resulting penalty for his first goal of the season.",
-        "Wael Mohya scored a late consolation at age 17, becoming Gladbach's youngest-ever goalscorer."
+        "Matthias Ginter scored the equalizer in the 86th minute and had a potential winner ruled out for offside moments later.",
+        "Alejandro Grimaldo netted his fifth direct free-kick of the season, a high across Europe's top leagues.",
+        "Freiburg's Yuito Suzuki and Vincenzo Grifo both found the net in a dominant first half for the hosts.",
+        "Christian Kofane and Martin Terrier spearheaded the Leverkusen attack, briefly turning a 2-1 deficit into a 3-2 lead.",
+        "Freiburg generated 22 shots compared to Leverkusen's 17 in one of the season's most offensive displays."
       ],
-      "context": "Bayern's lead is now commanding, though Manuel Neuer coming off at halftime adds a potential concern ahead of the run-in.",
+      "context": "Leverkusen remains two points behind Stuttgart in the battle for the final Champions League spot.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "provided_text_only"
+        "recapUrl": "https://www.beinsports.com/en-au/football/bundesliga/articles-video/freiburg-3-3-bayer-leverkusen-ginter-snatches-late-point-to-deny-visitors-comeback-win-2026-03-07?videopage=true"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "ZE80PK7DarM",
-          "title": "Bayern Munich vs Borussia Monchengladbach highlights",
-          "url": "https://www.youtube.com/watch?v=ZE80PK7DarM",
-          "embedUrl": "https://www.youtube.com/embed/ZE80PK7DarM"
+          "videoId": "Q7d3CMSOxys",
+          "title": "SC Freiburg 3-3 Bayer Leverkusen Highlights",
+          "url": "https://www.youtube.com/watch?v=Q7d3CMSOxys&pp=0gcJCa4KAYcqIYzv",
+          "embedUrl": "https://www.youtube.com/embed/Q7d3CMSOxys"
+        }
+      ]
+    },
+    {
+      "id": "koeln-vs-dortmund-20260307",
+      "teams": {
+        "away": "Borussia Dortmund",
+        "home": "1. FC Köln"
+      },
+      "headline": "Dortmund punishes 10-man Cologne to solidify top-four standing",
+      "score": "KOE 1 - DOR 2",
+      "brief": "Borussia Dortmund bounced back from their Der Klassiker heartbreak with a gritty, if unspectacular, victory in Cologne. Serhou Guirassy and Maximilian Beier provided the goals, but the match turned on a first-half red card for Cologne's Jahmai Simpson-Pusey. Despite a late scare, Dortmund held on to move eight points clear of the fifth-place spot, all but securing their return to Europe's elite competition.",
+      "bullets": [
+        "Serhou Guirassy scored his 12th goal of the campaign in the 16th minute.",
+        "Jahmai Simpson-Pusey was sent off just before halftime after a VAR review upgraded his booking to a red.",
+        "Julian Brandt provided a key assist in what was confirmed to be his final season with the club.",
+        "Maximilian Beier doubled the lead on the hour mark before Jakub Kaminski pulled one back for the 10-man hosts.",
+        "The win marks Dortmund's first league victory since mid-February."
+      ],
+      "context": "Dortmund is now eight points clear of fifth-place RB Leipzig in the standings.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-mena/football/bundesliga/articles-video/dortmund-beat-10-man-cologne-to-tighten grip-on-top-four-spot-2026-03-07"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "KuT0IVcxLg8",
+          "title": "1. FC Köln 1-2 Borussia Dortmund Highlights",
+          "url": "https://www.youtube.com/watch?v=KuT0IVcxLg8",
+          "embedUrl": "https://www.youtube.com/embed/KuT0IVcxLg8"
+        }
+      ]
+    },
+    {
+      "id": "leipzig-vs-augsburg-20260307",
+      "teams": {
+        "away": "FC Augsburg",
+        "home": "RB Leipzig"
+      },
+      "headline": "Stoppage-time own goal gifts Leipzig dramatic comeback win",
+      "score": "RBL 2 - AUG 1",
+      "brief": "RB Leipzig avoided a major slip-up at home, needing a stroke of luck in the dying seconds to overcome a resilient Augsburg. After falling behind to a Robin Fellhauer strike, Leipzig huffed and puffed until Yan Diomande leveled the score late. Just as it looked like they would drop points, a scuffed cross from David Raum was turned into his own net by Arthur Chaves, sending the Red Bull Arena into a frenzy.",
+      "bullets": [
+        "Augsburg's Keven Schlotterbeck missed an early penalty before Robin Fellhauer opened the scoring in the 39th minute.",
+        "Teenager Yan Diomande scored the equalizer in the 76th minute, continuing his breakout season.",
+        "The winner was an own goal by Arthur Chaves in the 90th minute following a David Raum cross.",
+        "Leipzig dominated the statistics with 17 shots and 86% pass accuracy.",
+        "Willi Orbán was a standout for the hosts, winning a match-high 9.9 rating for his defensive display."
+      ],
+      "context": "Leipzig moves level on points with fourth-place Stuttgart in the hunt for Champions League football.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.whoscored.com/matches/1910764/live/germany-bundesliga-2025-2026-rb-leipzig-augsburg"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "RB Leipzig 2-1 FC Augsburg Highlights",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "mainz-vs-stuttgart-20260307",
+      "teams": {
+        "away": "VfB Stuttgart",
+        "home": "1. FSV Mainz 05"
+      },
+      "headline": "Da Costa's stoppage-time header stuns Stuttgart in Mainz",
+      "score": "MAI 2 - SGA 2",
+      "brief": "VfB Stuttgart's grip on fourth place loosened slightly after a wild 2-2 draw in Mainz. Stuttgart appeared to have the game won after scoring twice in 61 seconds to overturn a halftime deficit, but they couldn't close the door. In the first minute of added time, Danny da Costa reacted quickest to a rebound off the crossbar to head home an equalizer, leaving the visitors frustrated and the home crowd in raptures.",
+      "bullets": [
+        "Danny da Costa scored the equalizer in the 91st minute after Phillipp Mwene hit the woodwork.",
+        "Ermedin Demirovic and Deniz Undav scored within a minute of each other (76', 77') to briefly lead the game.",
+        "Lee Jae-sung opened the scoring for Mainz in the 39th minute with a close-range header.",
+        "Stuttgart dominated the early stages, forcing goalkeeper Daniel Batz into several high-difficulty saves.",
+        "The draw prevents Stuttgart from pulling away in the race for the top four."
+      ],
+      "context": "Stuttgart is now level on points with fifth-place RB Leipzig with nine games remaining.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.vfb.de/en/vfb/team/saison/bundesliga/2526/25-1--fsv-mainz-05----vfb-stuttgart--/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "1. FSV Mainz 05 2-2 VfB Stuttgart Highlights",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "heidenheim-vs-hoffenheim-20260307",
+      "teams": {
+        "away": "TSG Hoffenheim",
+        "home": "1. FC Heidenheim"
+      },
+      "headline": "Prass brace keeps Hoffenheim's Champions League dream alive",
+      "score": "HEI 2 - HOF 4",
+      "brief": "Hoffenheim took a significant step toward a historic Champions League berth by dispatching last-placed Heidenheim in a clinical 4-2 display. Alexander Prass was the star of the show, bagging two goals before the break to put the visitors in total control. While Heidenheim's Luca Kerber fought back with a brace of his own, the gap in quality was evident as Hoffenheim stayed firmly in third place.",
+      "bullets": [
+        "Alexander Prass scored twice in the first half (26', 45') to set the tone for Hoffenheim.",
+        "Fisnik Asllani and Tim Lemperle added second-half goals to put the match out of reach.",
+        "Luca Kerber provided the silver lining for Heidenheim with a two-goal performance.",
+        "Hoffenheim outshot the hosts 16-8 and maintained 54% of the possession.",
+        "The win keeps Hoffenheim in pole position for a top-three finish this season."
+      ],
+      "context": "Hoffenheim remains in third place, strengthening their bid for European football next season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.whoscored.com/matches/1910760/live/germany-bundesliga-2025-2026-fc-heidenheim-hoffenheim"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "1. FC Heidenheim 2-4 TSG Hoffenheim Highlights",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "wolfsburg-vs-hamburg-20260307",
+      "teams": {
+        "away": "Hamburger SV",
+        "home": "VfL Wolfsburg"
+      },
+      "headline": "Hamburg penalty clinicality pushes Wolfsburg closer to the brink",
+      "score": "WOL 1 - HSV 2",
+      "brief": "In a match dominated by the referee's whistle, Hamburger SV came from behind to pile the misery on a sinking Wolfsburg. All three goals came from the penalty spot, with Hamburg remaining perfect from 12 yards to secure a vital road win. The defeat sparked angry protests at the Volkswagen Arena, as fans threw flaming scarves onto the pitch to voice their frustration at the club's impending relegation battle.",
+      "bullets": [
+        "Every goal in the match was scored from a penalty kick.",
+        "Christian Eriksen gave Wolfsburg an early lead before Luka Vušković and Jean-Luc Dompé converted for Hamburg.",
+        "The match was interrupted by fan protests as Wolfsburg fell into the automatic relegation zone.",
+        "Wolfsburg has now gone eight games without a victory.",
+        "Hamburg moves into a comfortable mid-table position with 29 points."
+      ],
+      "context": "Wolfsburg drops into 17th place, facing their first relegation since 1997.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-mena/football/bundesliga/articles-video/dortmund-beat-10-man-cologne-to-tighten-grip-on-top-four-spot-2026-03-07"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "VfL Wolfsburg 1-2 Hamburger SV Highlights",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }

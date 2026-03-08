@@ -1,0 +1,39 @@
+{
+  "leagueName": "DP World Tour",
+  "leagueKey": "dpworldtour",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "A tight moving day on the DP World Tour saw South African contender Hennie du Plessis surge to the top after Round 3, setting up a tense final-round chase with multiple players still in striking distance.",
+  "games": [
+    {
+      "id": "20260307-dpworldtour-round3-duplessis-leads",
+      "teams": {
+        "away": "DP World Tour Field",
+        "home": "Hennie du Plessis"
+      },
+      "headline": "Du Plessis grabs Round 3 lead as Sunday shootout looms",
+      "score": null,
+      "brief": "Hennie du Plessis put himself in command on moving day with a composed third-round performance that elevated him to the top of the leaderboard heading into Sunday. On a day where momentum swung repeatedly across the field, du Plessis managed risk better than most, converting key opportunities while avoiding the kind of late mistakes that derailed several challengers. With the cushion still slim and conditions expected to stay demanding, the final round shapes up as a pressure-packed test rather than a runaway.",
+      "bullets": [
+        "Du Plessis exited Round 3 in first place after a steady, low-error card.",
+        "Several contenders remained within reach, keeping the title race open entering Sunday.",
+        "The lead changed hands during the round before du Plessis seized control late.",
+        "Strong approach play and disciplined course management were the difference on moving day.",
+        "Final-round pressure now shifts to the chasing pack to attack early."
+      ],
+      "context": "The event remains wide open, but du Plessis now controls the pace and pairing advantage heading into the final round.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://supersport.com/golf/news/55165106-dc81-48c6-a1e7-5367886aad4c/open-round-3-bushveld-bomber-du-plessis-leads"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "02VX_UBQInQ",
+          "title": "",
+          "url": "https://youtu.be/02VX_UBQInQ?si=5-ZLv7D-QAoPSwzy",
+          "embedUrl": "https://www.youtube.com/embed/02VX_UBQInQ"
+        }
+      ]
+    }
+  ]
+}

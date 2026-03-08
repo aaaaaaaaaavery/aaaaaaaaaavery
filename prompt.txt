@@ -207,4 +207,4 @@ FINAL SELF-CHECK (SILENT, BEFORE OUTPUT)
 5. Is top-level `leagueKey` present, non-empty, and correctly mapped from `leagueName` per the mapping table?
 6. Is the output valid JSON in one fenced `json` code block with no extra text?
 
-Do all games in these leagues:
+Do all games in these leagues: NBA

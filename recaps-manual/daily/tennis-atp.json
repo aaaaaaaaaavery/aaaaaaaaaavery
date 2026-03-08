@@ -1,0 +1,518 @@
+{
+  "leagueName": "ATP",
+  "leagueKey": "atp",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "The action was fast and furious on the ATP tour today, highlighted by a pair of massive upsets that sent shockwaves through the draw. Rising Brazilian star Joao Fonseca and Canadian powerhouse Gabriel Diallo both notched career-defining victories over top-tier opponents in Karen Khachanov and Andrey Rublev. Meanwhile, heavyweights like Novak Djokovic, Carlos Alcaraz, and Daniil Medvedev took care of business to safely advance to the next round.",
+  "games": [
+    {
+      "id": "20260308-bautista-agut-draper",
+      "teams": {
+        "away": "Roberto Bautista Agut",
+        "home": "Jack Draper"
+      },
+      "headline": "Draper outlasts veteran Bautista Agut in physical three-set battle",
+      "score": "BAU 1 - DRA 2",
+      "brief": "Jack Draper showcased his growing physical resilience by grinding out a tough three-set victory over the always-stubborn Roberto Bautista Agut. After dropping the second set to the crafty Spaniard, the young Brit recalibrated his booming serve and aggressive forehand to take complete control of the decider. It was the kind of mature, problem-solving performance that proves Draper is ready to consistently challenge the tour's upper echelon.",
+      "bullets": [
+        "Draper advanced with a 6-3, 3-6, 6-2 victory.",
+        "The Brit found another gear in the final set, breaking Bautista Agut twice to pull away.",
+        "Bautista Agut used his typical flat groundstrokes to disrupt Draper's rhythm in the middle frame.",
+        "Draper improves his record in three-set matches this season, showing improved stamina."
+      ],
+      "context": "Draper continues his steady climb up the rankings with a gritty win over a seasoned tour veteran.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-kovacevic-moutet",
+      "teams": {
+        "away": "Aleksandar Kovacevic",
+        "home": "Corentin Moutet"
+      },
+      "headline": "Kovacevic overwhelms Moutet with dominant serving display",
+      "score": "KOV 2 - MOU 0",
+      "brief": "Aleksandar Kovacevic made quick work of Corentin Moutet, overpowering the fiery Frenchman in straight sets. The American was completely dialed in on serve from the opening toss, never giving Moutet a chance to employ his tricky, slice-heavy game style. Kovacevic raced through the first set in a blur and held his nerve in a slightly tighter second set to punch his ticket to the next round.",
+      "bullets": [
+        "Kovacevic cruised to a 6-1, 6-4 victory in just under 80 minutes.",
+        "The American dictated play with heavy groundstrokes, keeping Moutet pinned behind the baseline.",
+        "Moutet grew visibly frustrated in the first set, unable to find an answer for Kovacevic's power.",
+        "Kovacevic advances smoothly, preserving plenty of energy for his next matchup."
+      ],
+      "context": "Kovacevic secures a confidence-boosting win to build momentum for the rest of the tournament.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-shevchenko-ruud",
+      "teams": {
+        "away": "Alexander Shevchenko",
+        "home": "Casper Ruud"
+      },
+      "headline": "Ruud finds his groove to dispatch Shevchenko in straight sets",
+      "score": "SHE 0 - RUU 2",
+      "brief": "Casper Ruud looked every bit a top contender today, easily handling the aggressive ball-striking of Alexander Shevchenko. The Norwegian completely dominated the opening set, moving effortlessly and dictating with his heavy topspin forehand. While Shevchenko mounted a much stronger challenge in the second set to force a tiebreak, Ruud's experience and unmatched shot tolerance shone through in the clutch moments.",
+      "bullets": [
+        "Ruud secured the win 6-1, 7-6(4).",
+        "The former world No. 2 committed very few unforced errors, playing incredibly clean tennis.",
+        "Shevchenko pushed hard in the second set, finding range on his flat backhand.",
+        "Ruud clutched up in the tiebreak, hitting two crucial passing shots to seal the victory."
+      ],
+      "context": "Ruud reaffirms his status as a tournament threat with a professional, drama-free performance.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-cerundolo-bonzi",
+      "teams": {
+        "away": "Francisco Cerundolo",
+        "home": "Benjamin Bonzi"
+      },
+      "headline": "Cerundolo survives major scare from Bonzi in deciding tiebreak",
+      "score": "CER 2 - BON 1",
+      "brief": "Francisco Cerundolo had to dig deep into his reserves to edge past Benjamin Bonzi in a wildly entertaining three-set rollercoaster. The Argentine seemed to be in the driver's seat after taking the first set, but Bonzi stormed back to steal the second and force a tense decider. In a final set defined by razor-thin margins, Cerundolo's booming forehand ultimately made the difference in a nail-biting closing tiebreak.",
+      "bullets": [
+        "Cerundolo survived with a 6-4, 5-7, 7-6(5) victory.",
+        "The match featured extended, grueling baseline rallies that tested both players' conditioning.",
+        "Bonzi showed incredible fighting spirit to force a third set after looking outmatched early.",
+        "Cerundolo threaded a stunning forehand winner down the line at 5-5 in the final tiebreak."
+      ],
+      "context": "Cerundolo avoids an early exit with a gritty performance that should sharpen his match toughness.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-khachanov-fonseca",
+      "teams": {
+        "away": "Karen Khachanov",
+        "home": "Joao Fonseca"
+      },
+      "headline": "Teenage sensation Fonseca stuns Khachanov in signature victory",
+      "score": "KHA 1 - FON 2",
+      "brief": "The Joao Fonseca hype train has officially left the station. The Brazilian teenager pulled off a massive upset, knocking out established veteran Karen Khachanov in a thrilling three-set clash. Fonseca showed zero fear against the heavy-hitting Russian, matching him blow-for-blow from the baseline and executing brilliantly under immense pressure in the final set. It was a true coming-of-age moment for one of the sport's brightest young prospects.",
+      "bullets": [
+        "Fonseca triumphed 4-6, 7-6(7), 6-4 in the match of the day.",
+        "The teenager fought off match points in the dramatic second-set tiebreak.",
+        "Khachanov relied on his massive serve, but Fonseca's return game neutralized the advantage late in the match.",
+        "This marks one of the biggest wins of Fonseca's young career against a top-tier opponent."
+      ],
+      "context": "Fonseca's breakthrough victory signals his arrival as a legitimate threat on the main ATP Tour.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-rublev-diallo",
+      "teams": {
+        "away": "Andrey Rublev",
+        "home": "Gabriel Diallo"
+      },
+      "headline": "Diallo sends shockwaves with massive upset over Rublev",
+      "score": "RUB 1 - DIA 2",
+      "brief": "In a result few saw coming, Canadian giant Gabriel Diallo utilized his booming serve and aggressive net play to stun top seed Andrey Rublev. The match was defined by tiebreaks, with Diallo showing remarkable composure to edge the volatile Russian in both the first and third sets. Rublev fought back valiantly with a lopsided second set, but Diallo's fearless ball-striking in the final moments secured a monumental career milestone.",
+      "bullets": [
+        "Diallo recorded the huge upset 7-6(4), 1-6, 7-6(3).",
+        "The 6-foot-8 Canadian rained down unreturnable serves in both critical tiebreaks.",
+        "Rublev displayed typical flashes of frustration as Diallo consistently rushed his timing.",
+        "This is a signature top-10 victory for Diallo, proving his massive game translates to the highest level."
+      ],
+      "context": "Diallo busts the bracket wide open, eliminating one of the heavy favorites in a stunning upset.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-djokovic-majchrzak",
+      "teams": {
+        "away": "Novak Djokovic",
+        "home": "Kamil Majchrzak"
+      },
+      "headline": "Djokovic shakes off slow start to roll past Majchrzak",
+      "score": "DJO 2 - MAJ 1",
+      "brief": "For a moment, Kamil Majchrzak had the crowd dreaming of the unthinkable after ambushing Novak Djokovic to take the first set. But the all-time great simply flipped a switch. Djokovic completely recalibrated his return game, suffocating the Polish challenger over the final two sets. Losing just three games the rest of the way, Djokovic turned a potential upset alert into a routine masterclass, reminding everyone why he is the ultimate problem-solver in tennis.",
+      "bullets": [
+        "Djokovic prevailed 4-6, 6-1, 6-2 after a sluggish opening frame.",
+        "Majchrzak played flawless, red-line tennis in the first set before his level inevitably dropped.",
+        "Djokovic tightened his baseline defense, completely removing unforced errors from his game.",
+        "The Serbian champion continues his quest for another title, looking sharp after the early wake-up call."
+      ],
+      "context": "Djokovic navigates a tricky opening test, using the match to play himself into prime tournament form.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-vacherot-borges",
+      "teams": {
+        "away": "Valentin Vacherot",
+        "home": "Nuno Borges"
+      },
+      "headline": "Vacherot edges Borges in tight straight-sets duel",
+      "score": "VAC 2 - BOR 0",
+      "brief": "Valentin Vacherot delivered a masterclass in clutch tennis, winning the big points to dismiss Nuno Borges in straight sets. The match was an incredibly tight affair, devoid of many break opportunities, but Vacherot found an extra gear precisely when it mattered at the end of both sets. His ability to hit through the court in pressure moments ultimately separated him from the steady Portuguese baseliner.",
+      "bullets": [
+        "Vacherot won 7-5, 7-5 in a match decided by incredibly thin margins.",
+        "Both players served exceptionally well, turning the match into a battle of first-strike tennis.",
+        "Vacherot secured crucial breaks of serve in the 11th game of both the first and second sets.",
+        "Borges fought hard but couldn't summon the return magic needed to extend the match."
+      ],
+      "context": "Vacherot earns a hard-fought victory to continue his impressive recent run of form on the tour.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-korda-deminaur",
+      "teams": {
+        "away": "Sebastian Korda",
+        "home": "Alex De Minaur"
+      },
+      "headline": "De Minaur's relentless defense wears down Korda in three sets",
+      "score": "KOR 1 - DEM 2",
+      "brief": "Alex De Minaur put on a clinic in defensive tennis, outlasting the pure ball-striking of Sebastian Korda in a highly anticipated clash. Korda came out firing, using his smooth, flat groundstrokes to take the first set. However, De Minaur simply refused to go away. Using his world-class speed to extend rallies and force Korda to hit extra shots, the Australian slowly broke down the American's game, securing the final two sets with gritty determination.",
+      "bullets": [
+        "De Minaur rallied for a 4-6, 6-4, 6-4 victory over Korda.",
+        "The Australian tracked down seemingly impossible balls, frustrating Korda into an increasing number of unforced errors.",
+        "Korda hit more winners but ultimately couldn't match De Minaur's consistency over the long haul.",
+        "De Minaur's fitness proved to be the ultimate difference-maker in the grueling final set."
+      ],
+      "context": "De Minaur scores a significant win over a highly touted rival, proving his physical style is perfectly suited for deep tournament runs.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-hijikata-darderi",
+      "teams": {
+        "away": "Rinky Hijikata",
+        "home": "Luciano Darderi"
+      },
+      "headline": "Hijikata battles back to extinguish Darderi's fast start",
+      "score": "HIJ 2 - DAR 1",
+      "brief": "Rinky Hijikata showed tremendous heart, bouncing back from a first-set deficit to overcome Luciano Darderi. Darderi came out swinging freely, using heavy topspin to push the Australian around the court early on. But Hijikata adjusted his court positioning, stepping into the court to take the ball earlier and rush Darderi's swings. The tactical shift worked perfectly, allowing Hijikata to comfortably control the final two sets.",
+      "bullets": [
+        "Hijikata turned the tide to win 4-6, 6-2, 6-4.",
+        "The Australian's return game drastically improved in the second set, allowing him to dictate the tempo.",
+        "Darderi's first-serve percentage dipped late in the match, opening the door for Hijikata's aggressive returns.",
+        "Hijikata advances, showcasing his tactical adaptability and physical endurance."
+      ],
+      "context": "Hijikata earns a gritty comeback victory to keep his tournament hopes alive.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-norrie-mcdonald",
+      "teams": {
+        "away": "Cameron Norrie",
+        "home": "Mackenzie McDonald"
+      },
+      "headline": "Norrie delivers clinical performance to dispatch McDonald",
+      "score": "NOR 2 - MCD 0",
+      "brief": "Cameron Norrie was in absolute cruise control, delivering a tactical masterclass to dismiss Mackenzie McDonald in straight sets. The British No. 1 used his heavy, looping forehand to completely dismantle McDonald's rhythm, continuously finding awkward angles that left the American scrambling. It was a highly efficient day at the office for Norrie, who never looked in danger of dropping his serve.",
+      "bullets": [
+        "Norrie sailed to a comfortable 6-2, 6-3 victory.",
+        "The Brit won a massive percentage of his first-serve points, facing zero pressure on his own delivery.",
+        "McDonald struggled to generate any pace off of Norrie's heavy, spin-loaded balls.",
+        "Norrie wraps up the win quickly, saving valuable energy for the tougher matches ahead."
+      ],
+      "context": "Norrie looked razor-sharp in his opener, cementing his status as a dark horse for a deep run.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-alcaraz-dimitrov",
+      "teams": {
+        "away": "Carlos Alcaraz",
+        "home": "Grigor Dimitrov"
+      },
+      "headline": "Alcaraz dazzles with flawless victory over Dimitrov",
+      "score": "ALC 2 - DIM 0",
+      "brief": "Carlos Alcaraz brought his usual brand of magic to the court, easily brushing aside the elegant Grigor Dimitrov in straight sets. The Spanish phenom was firing on all cylinders, mixing crushing forehands with his trademark perfectly disguised drop shots. Dimitrov, despite playing decently, simply couldn't find a way through Alcaraz's otherworldly court coverage and relentless offensive pressure.",
+      "bullets": [
+        "Alcaraz completely controlled the match, winning 6-2, 6-3.",
+        "The Spaniard hit double-digit winners off both wings, overwhelming Dimitrov's defense.",
+        "Dimitrov attempted to serve-and-volley to disrupt the rhythm, but Alcaraz's passing shots were dialed in.",
+        "Alcaraz continues his dominant form, firmly establishing himself as the man to beat."
+      ],
+      "context": "Alcaraz puts the rest of the field on notice with a near-perfect display against a highly dangerous opponent.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-fearnley-fritz",
+      "teams": {
+        "away": "Jacob Fearnley",
+        "home": "Taylor Fritz"
+      },
+      "headline": "Fritz survives stern test from Fearnley to advance",
+      "score": "FEA 1 - FRI 2",
+      "brief": "Taylor Fritz had to work significantly harder than expected to put away rising British talent Jacob Fearnley. After taking the first set smoothly, Fritz saw his level momentarily dip, and Fearnley capitalized by playing a brilliant second-set tiebreak to level the match. However, the top-ranked American quickly reset, bringing his massive serve to bear in the deciding set to blow Fearnley off the court and avoid the upset.",
+      "bullets": [
+        "Fritz secured the win 6-3, 6-7(8), 6-1.",
+        "Fearnley showed immense promise, saving match points in the thrilling second-set tiebreak.",
+        "Fritz completely dominated the final set, breaking the Brit twice in rapid succession.",
+        "The American hit nearly 20 aces to keep Fearnley at bay in the crucial moments."
+      ],
+      "context": "Fritz survives an early scare, ultimately using his vast experience to overpower a dangerous underdog.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-baez-lehecka",
+      "teams": {
+        "away": "Sebastian Baez",
+        "home": "Jiri Lehecka"
+      },
+      "headline": "Baez puts on a returning clinic to upset Lehecka",
+      "score": "BAE 2 - LEH 0",
+      "brief": "Sebastian Baez completely neutralized Jiri Lehecka's massive power game to score a highly impressive straight-sets victory. The fiery Argentine was a brick wall on the baseline, returning Lehecka's thunderous serves with depth and precision. As the match wore on, Lehecka's frustration mounted, leading to a flurry of unforced errors that allowed Baez to run away with the second set.",
+      "bullets": [
+        "Baez dominated the matchup, winning 6-4, 6-1.",
+        "The Argentine broke Lehecka's normally reliable serve four times throughout the match.",
+        "Lehecka struggled to hit through Baez's defense, spraying groundstrokes long when pressed.",
+        "Baez proves his game translates beautifully to hard courts with a signature victory over a highly-ranked opponent."
+      ],
+      "context": "Baez pulls off a mild upset, showcasing incredible defensive skills to outclass a dangerous power hitter.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-bublik-kopriva",
+      "teams": {
+        "away": "Alexander Bublik",
+        "home": "Vit Kopriva"
+      },
+      "headline": "Bublik rallies past Kopriva in typical rollercoaster fashion",
+      "score": "BUB 2 - KOP 1",
+      "brief": "It wouldn't be an Alexander Bublik match without a healthy dose of drama. The mercurial Kazakh dropped the opening set to a steady Vit Kopriva before deciding it was time to put on a show. Bublik dialed up his massive first serve and sprinkled in his usual array of underarm serves and drop shots, frustrating Kopriva in a tight second-set tiebreak before cruising to victory in the decider.",
+      "bullets": [
+        "Bublik completed the comeback to win 3-6, 7-6(3), 6-2.",
+        "After a sloppy first set, Bublik hit over 15 aces to take control of the match.",
+        "Kopriva played disciplined tennis early but couldn't handle the unpredictability of Bublik's game late.",
+        "The crowd was highly entertained by Bublik's unique, high-risk, high-reward style."
+      ],
+      "context": "Bublik survives his own inconsistency to advance, remaining one of the most unpredictable threats in the draw.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-humbert-michelsen",
+      "teams": {
+        "away": "Ugo Humbert",
+        "home": "Alex Michelsen"
+      },
+      "headline": "Michelsen edges Humbert in heart-stopping final set tiebreak",
+      "score": "HUM 1 - MIC 2",
+      "brief": "In arguably the match of the tournament so far, rising American star Alex Michelsen survived a brutal three-set war against Ugo Humbert. The match was a pure display of explosive baseline hitting, with neither player giving an inch. After splitting two incredibly tight sets, it all came down to a dramatic final-set tiebreak, where Michelsen showed ice in his veins, saving match points before finally putting the Frenchman away.",
+      "bullets": [
+        "Michelsen prevailed 5-7, 7-6(5), 7-6(8) in an absolute marathon.",
+        "The American teenager saved multiple match points in the final deciding tiebreak.",
+        "Humbert's lefty serve was highly effective, but Michelsen's clutch returning ultimately made the difference.",
+        "The crowd was entirely on its feet for the final ten minutes of the dramatic clash."
+      ],
+      "context": "Michelsen secures a career-defining, character-building victory that will catapult his confidence moving forward.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-medvedev-tabilo",
+      "teams": {
+        "away": "Daniil Medvedev",
+        "home": "Alejandro Tabilo"
+      },
+      "headline": "Medvedev forms human wall to smother Tabilo",
+      "score": "MED 2 - TAB 0",
+      "brief": "Daniil Medvedev was in his absolute element today, forming an impenetrable wall at the back of the court to suffocate Alejandro Tabilo in straight sets. The Chilean threw everything he had at Medvedev, mixing heavy topspin with drop shots, but the former US Open champion seemingly tracked down every single ball. Medvedev's relentless consistency forced Tabilo to overplay, resulting in a comfortable and highly professional victory.",
+      "bullets": [
+        "Medvedev cruised to a routine 6-4, 6-2 victory.",
+        "The Russian neutralized Tabilo's lefty serve by standing incredibly deep on the return.",
+        "Tabilo hit a high number of unforced errors while trying to hit through Medvedev's world-class defense.",
+        "Medvedev moves on quickly, cementing his status as one of the heavy favorites to take the title."
+      ],
+      "context": "Medvedev sends a strong message to the rest of the field with a defensively flawless opening performance.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,37 +1,99 @@
 {
   "leagueName": "FA Cup",
-  "leagueKey": "ENG.FA",
+  "leagueKey": "facup",
   "sourceType": "console_recaps",
-  "newsBriefing": "Liverpool answered their recent league stumble at Molineux with a decisive 3-1 FA Cup win over Wolves, powered by Andy Robertson's goal-and-assist performance to book a quarter-final spot.",
+  "leagueBriefing": "The FA Cup fifth round delivered high drama on Saturday as the Premier League's heavyweights narrowly avoided massive upsets. While Manchester City flexed their squad depth to overcome an early deficit at St James' Park, Arsenal and Chelsea were pushed to the absolute limit by lower-league opposition. Wrexham, in particular, came agonizingly close to a 'Hollywood' penalty shootout before Chelsea's extra-time quality finally told.",
   "games": [
     {
-      "id": "20260307-wolves-liverpool",
+      "id": "63908508",
       "teams": {
-        "away": "Liverpool",
-        "home": "Wolves"
+        "away": "Manchester City",
+        "home": "Newcastle United"
       },
-      "headline": "Robertson leads Liverpool's cup response as Reds knock out Wolves",
-      "score": "WOL 1 - LIV 3",
-      "brief": "Liverpool got the exact response they needed, beating Wolves 3-1 at Molineux to reach the FA Cup quarter-finals just days after losing to the same opponent in the league. Andy Robertson changed the tie with a rocket from range and then set up Mohamed Salah moments later, flipping a cagey game into Liverpool's control. Curtis Jones added a classy third to finish it off before a late Hee-Chan Hwang consolation, giving Arne Slot's side momentum ahead of a busy week in Europe.",
+      "headline": "Marmoush double seals City comeback as Guardiola's men march on",
+      "score": "NEW 1 - MCI 3",
+      "brief": "Manchester City's quest for another trophy remains on track after a clinical second-half display on Tyneside. Despite Pep Guardiola making ten changes to his lineup and falling behind to an early Harvey Barnes strike, City never panicked. A fortunate Savinho equalizer before the break set the stage for Omar Marmoush to take over; the Egyptian forward continued his incredible scoring record against the Magpies with two sharp finishes to deflate the St James' Park crowd.",
       "bullets": [
-        "Liverpool won 3-1 away to Wolves to advance to the FA Cup quarter-finals.",
-        "Andy Robertson scored and assisted within the early second-half burst that decided the tie.",
-        "Mohamed Salah's goal was initially flagged offside before VAR awarded it.",
-        "Curtis Jones scored Liverpool's third after Slot's side controlled the second half.",
-        "Wolves had only one big late payoff chance and scored through Hee-Chan Hwang, but never recovered from conceding twice in quick succession."
+        "Omar Marmoush scored twice (47', 65') to bring his tally to 7 goals in 13 months against Newcastle.",
+        "Savinho scored a bizarre equalizer in the 39th minute when the ball deflected in off his standing leg.",
+        "Harvey Barnes had briefly given Newcastle hope with a clinical 18th-minute opener.",
+        "Man City dominated the stats with 63% possession and 3.2 expected goals (xG).",
+        "Tino Livramento made his 100th appearance for Newcastle as a late substitute."
       ],
-      "context": "The win avenges Tuesday's stoppage-time league defeat at Molineux and sends Liverpool into the last-eight draw with confidence restored.",
+      "context": "City advances to the quarter-finals as they continue to juggle four active competitions.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "provided_text_only"
+        "recapUrl": "https://www.mancity.com/news/mens/newcastle-united-v-manchester-city-fa-cup-report-march-2026-63908508"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "bEek934QOQ8",
-          "title": "Wolves vs Liverpool FA Cup highlights",
-          "url": "https://www.youtube.com/watch?v=bEek934QOQ8",
-          "embedUrl": "https://www.youtube.com/embed/bEek934QOQ8"
+          "videoId": "",
+          "title": "Newcastle 1-3 City: Brief highlights",
+          "url": "https://www.mancity.com/news/mens/newcastle-united-v-manchester-city-fa-cup-report-march-2026-63908508",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260307-wrexham-chelsea",
+      "teams": {
+        "away": "Chelsea",
+        "home": "Wrexham"
+      },
+      "headline": "Chelsea survive Wrexham scare in extra-time thriller at the Racecourse",
+      "score": "WRE 2 - CHE 4",
+      "brief": "Hollywood-owned Wrexham came inches away from a historic upset, pushing a much-changed Chelsea side all the way to extra time. The Red Dragons led twice through Sam Smith and Callum Doyle, but their dream was undone by a late red card to George Dobson and the clinical finishing of Chelsea's second-half substitutes. A late Lewis Brunt equalizer for Wrexham was ruled out by VAR for a marginal offside, finally allowing the Blues to breathe easy and secure their spot in the final eight.",
+      "bullets": [
+        "Alejandro Garnacho and Joao Pedro scored in extra time to break Wrexham hearts.",
+        "Wrexham's George Dobson was sent off in stoppage time following a VAR review for a reckless challenge.",
+        "Sam Smith opened the scoring in the 18th minute to ignite hopes of a massive upset.",
+        "Lewis Brunt thought he had forced penalties in the 114th minute, but his header was ruled offside by an ankle.",
+        "Chelsea manager Liam Rosenior made nine changes to his side ahead of a midweek Champions League clash."
+      ],
+      "context": "Chelsea barely avoids a giant-killing to keep their sole domestic trophy hope alive.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nbcsports.com/soccer/news/wrexham-vs-chelsea-recap-final-score-fa-cup-extra-time-video-highlights-analysis"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "Wrexham 2-4 Chelsea: Full Match Highlights",
+          "url": "https://www.tntsports.co.uk/football/the-emirates-fa-cup/2025-2026/live-wrexham-chelsea_mtc1648186/live-commentary.shtml",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260307-mansfield-arsenal",
+      "teams": {
+        "away": "Arsenal",
+        "home": "Mansfield Town"
+      },
+      "headline": "Eze thunderbolt rescues Arsenal from Mansfield upset bid",
+      "score": "MAN 1 - ARS 2",
+      "brief": "Arsenal kept their quadruple dreams alive, but only just. Facing a raucous atmosphere at Field Mill, the Premier League leaders struggled to impose themselves on third-tier Mansfield Town. Noni Madueke's opener was canceled out by a spirited Will Evans strike, leaving the match on a knife-edge. It took a moment of individual brilliance from substitute Eberechi Eze, who smashed home a winner just minutes after coming on, to prevent a demoralizing fifth-round exit for Mikel Arteta's squad.",
+      "bullets": [
+        "Eberechi Eze scored the match-winner in the 66th minute with a strike from the edge of the box.",
+        "Will Evans leveled for Mansfield in the 50th minute after a loose pass from Arsenal's backline.",
+        "Arsenal boss Mikel Arteta made nine changes, resting stars like Bukayo Saka and Martin Odegaard.",
+        "Mansfield matched Arsenal's 19 shots and created nearly 2.0 expected goals (xG).",
+        "Teenager Max Dowman made an impressive appearance for the Gunners in the midfield."
+      ],
+      "context": "Arsenal reaches the quarter-finals for the first time since their 2020 triumph.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-mena/football/fa-cup/articles-video/arsenal-survive-fa-cup-scare-to-keep-quadruple-dream-alive-2026-03-07"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "Highlights: Mansfield Town 1-2 Arsenal | Bitesize",
+          "url": "https://www.arsenal.com/news/highlights-mansfield-town-1-2-arsenal",
+          "embedUrl": ""
         }
       ]
     }

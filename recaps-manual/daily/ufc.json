@@ -1,0 +1,39 @@
+{
+  "leagueName": "UFC",
+  "leagueKey": "ufc",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "UFC 326 at T-Mobile Arena delivered a sharp tonal shift from steady prelims to a main card packed with violence, momentum swings, and divisional implications, capped by Charles Oliveira's one-sided BMF title win over Max Holloway.",
+  "games": [
+    {
+      "id": "ufc-326-oliveira-vs-holloway-20260307",
+      "teams": {
+        "away": "Max Holloway",
+        "home": "Charles Oliveira"
+      },
+      "headline": "Oliveira smothers Holloway to claim BMF title in grappling clinic",
+      "score": null,
+      "brief": "Charles Oliveira closed UFC 326 with a dominant, methodical performance, repeatedly taking Max Holloway down and controlling the fight from top position to earn a clean unanimous decision and the BMF belt. Holloway defended submission threats with toughness and savvy, but Oliveira's pace, positional control, and steady damage left little doubt on the cards. The win makes Oliveira the first fighter to hold both the BMF title and an undisputed lightweight title in his career, and keeps him central to the lightweight title picture as the division moves toward its next marquee bout.",
+      "bullets": [
+        "Oliveira defeated Holloway by unanimous decision (50-45, 50-45, 50-45) in the main event.",
+        "Raul Rosas Jr. beat Rob Font by unanimous decision and extended his winning streak to five.",
+        "Caio Borralho outpointed Reinier de Ridder (30-27 x3) in a key middleweight clash.",
+        "Drew Dober stopped Michael Johnson by second-round TKO to add to his lightweight KO record.",
+        "Gregory Rodrigues knocked out Brunno Ferreira in Round 1 to score a third straight win."
+      ],
+      "context": "Oliveira's BMF win reshapes the lightweight conversation and raises immediate questions about whether his next fight can double as a title-path eliminator.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "provided_text_only"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "yyJFST4cYm8",
+          "title": "",
+          "url": "https://youtu.be/yyJFST4cYm8?si=DJVFSydPSiLvOG-u",
+          "embedUrl": "https://www.youtube.com/embed/yyJFST4cYm8"
+        }
+      ]
+    }
+  ]
+}

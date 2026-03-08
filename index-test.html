@@ -74,7 +74,7 @@
 
       <!--
       <div class="border-t border-gray-200 p-3 text-xs text-gray-500">
-        League files: <span class="font-mono">/recaps-manual/daily/nba.json</span>, <span class="font-mono">/recaps-manual/daily/nhl.json</span>, <span class="font-mono">/recaps-manual/daily/mlb.json</span>, <span class="font-mono">/recaps-manual/daily/premierleague.json</span>, <span class="font-mono">/recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">/recaps-manual/daily/coupedefrance.json</span>, <span class="font-mono">/recaps-manual/daily/ncaam.json</span>, <span class="font-mono">/recaps-manual/daily/ncaaw.json</span>, <span class="font-mono">/recaps-manual/daily/ncaabaseball.json</span>, <span class="font-mono">/recaps-manual/daily/indycar.json</span>
+        League files: <span class="font-mono">/recaps-manual/daily/nba.json</span>, <span class="font-mono">/recaps-manual/daily/nhl.json</span>, <span class="font-mono">/recaps-manual/daily/mlb.json</span>, <span class="font-mono">/recaps-manual/daily/premierleague.json</span>, <span class="font-mono">/recaps-manual/daily/mls.json</span>, <span class="font-mono">/recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">/recaps-manual/daily/coupedefrance.json</span>, <span class="font-mono">/recaps-manual/daily/ncaam.json</span>, <span class="font-mono">/recaps-manual/daily/ncaaw.json</span>, <span class="font-mono">/recaps-manual/daily/ncaabaseball.json</span>, <span class="font-mono">/recaps-manual/daily/indycar.json</span>
       </div>
       -->
     </aside>
@@ -106,7 +106,7 @@
               <div class="rounded-md border border-gray-200 bg-gray-50 p-5">
                 <div class="mb-2 text-sm font-semibold">No recaps loaded</div>
                 <div class="text-sm leading-relaxed text-gray-600">
-                  Make sure <span class="font-mono">recaps-manual/daily/nba.json</span>, <span class="font-mono">recaps-manual/daily/nhl.json</span>, <span class="font-mono">recaps-manual/daily/mlb.json</span>, <span class="font-mono">recaps-manual/daily/premierleague.json</span>, <span class="font-mono">recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">recaps-manual/daily/coupedefrance.json</span>, <span class="font-mono">recaps-manual/daily/ncaam.json</span>, <span class="font-mono">recaps-manual/daily/ncaaw.json</span>, <span class="font-mono">recaps-manual/daily/ncaabaseball.json</span>, and <span class="font-mono">recaps-manual/daily/indycar.json</span> exist in your repo and contain
+                  Make sure <span class="font-mono">recaps-manual/daily/nba.json</span>, <span class="font-mono">recaps-manual/daily/nhl.json</span>, <span class="font-mono">recaps-manual/daily/mlb.json</span>, <span class="font-mono">recaps-manual/daily/premierleague.json</span>, <span class="font-mono">recaps-manual/daily/mls.json</span>, <span class="font-mono">recaps-manual/daily/uefachampionsleague.json</span>, <span class="font-mono">recaps-manual/daily/coupedefrance.json</span>, <span class="font-mono">recaps-manual/daily/ncaam.json</span>, <span class="font-mono">recaps-manual/daily/ncaaw.json</span>, <span class="font-mono">recaps-manual/daily/ncaabaseball.json</span>, and <span class="font-mono">recaps-manual/daily/indycar.json</span> exist in your repo and contain
                   <span class="font-mono">leagueName</span> and <span class="font-mono">games</span>.
                 </div>
               </div>
@@ -148,6 +148,7 @@
       { leagueName: "NCAAM", leagueKey: "ncaam", fileUrl: "recaps-manual/daily/ncaam.json" },
       { leagueName: "NCAAW", leagueKey: "ncaaw", fileUrl: "recaps-manual/daily/ncaaw.json" },
       { leagueName: "NCAA Baseball", leagueKey: "ncaabaseball", fileUrl: "recaps-manual/daily/ncaabaseball.json" },
+      { leagueName: "NCAA Softball", leagueKey: "ncaasoftball", fileUrl: "recaps-manual/daily/ncaasoftball.json" },
       { leagueName: "IndyCar", leagueKey: "indycar", fileUrl: "recaps-manual/daily/indycar.json" },
       { leagueName: "Premier League", leagueKey: "premierleague", fileUrl: "recaps-manual/daily/premierleague.json" },
       { leagueName: "UEFA Champions League", leagueKey: "uefachampionsleague", fileUrl: "recaps-manual/daily/uefachampionsleague.json" },
@@ -163,27 +164,31 @@
       { leagueName: "UEFA Conference League", leagueKey: "uefaconferenceleague", fileUrl: "recaps-manual/daily/uefaconferenceleague.json" },
       { leagueName: "Carabao Cup", leagueKey: "carabaocup", fileUrl: "recaps-manual/daily/carabaocup.json" },
       { leagueName: "Coupe de France", leagueKey: "coupedefrance", fileUrl: "recaps-manual/daily/coupedefrance.json" },
+      { leagueName: "SheBelieves Cup", leagueKey: "shebelievescup", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "SHEBELIEVES_CUP" },
+      { leagueName: "Six Nations", leagueKey: "sixnations", fileUrl: "recaps-manual/daily/sixnations.json" },
       { leagueName: "WBC", leagueKey: "wbc", fileUrl: "recaps-manual/daily/wbc.json" },
+      { leagueName: "UFC", leagueKey: "ufc", fileUrl: "recaps-manual/daily/ufc.json" },
+      { leagueName: "Boxing", leagueKey: "boxing", fileUrl: "recaps-manual/daily/boxing.json" },
       { leagueName: "PGA Tour", leagueKey: "pgatour", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "PGA_TOUR" },
-      { leagueName: "DP World Tour", leagueKey: "dpworldtour", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "DP_WORLD_TOUR" },
-      { leagueName: "LPGA Tour", leagueKey: "lpgatour", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LPGA_TOUR" },
-      { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "LIV" },
-      { leagueName: "ATP", leagueKey: "atp", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "ATP" },
+      { leagueName: "DP World Tour", leagueKey: "dpworldtour", fileUrl: "recaps-manual/daily/dpworldtour.json" },
+      { leagueName: "LPGA Tour", leagueKey: "lpgatour", fileUrl: "recaps-manual/daily/lpgatour.json" },
+      { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/livgolf.json" },
+      { leagueName: "ATP", leagueKey: "atp", fileUrl: "recaps-manual/daily/tennis-atp.json" },
       { leagueName: "WTA", leagueKey: "wta", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "WTA" }
     ];
 
     const LEAGUE_DISPLAY_ORDER = [
       "NFL", "NBA", "MLB", "NHL", "WBC", "Soccer", "Formula One", "NCAAM", "NCAAW", "PGA Tour", "UFC", "Boxing",
-      "NASCAR Cup Series", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "IndyCar", "LPGA Tour", "MotoGP"
+      "NASCAR Cup Series", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "NCAA Softball", "IndyCar", "LPGA Tour", "MotoGP", "Six Nations"
     ];
 
     const SOCCER_LEAGUE_DISPLAY_ORDER = [
       "Premier League", "UEFA Champions League", "MLS", "LaLiga", "Serie A", "Bundesliga", "Ligue 1", "Liga MX",
-      "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France"
+      "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France", "SheBelieves Cup"
     ];
 
     const GOLF_LEAGUE_DISPLAY_ORDER = [
-      "PGA Tour", "DP World Tour", "LPGA Tour", "LIV Golf"
+      "PGA Tour", "LPGA Tour", "DP World Tour", "LIV Golf"
     ];
 
     const TENNIS_LEAGUE_DISPLAY_ORDER = [
@@ -196,7 +201,7 @@
     const TENNIS_ORDER_INDEX = Object.fromEntries(TENNIS_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_LEAGUE_KEYS = new Set([
       "premierleague", "uefachampionsleague", "mls", "laliga", "seriea", "bundesliga", "ligue1", "ligamx",
-      "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance"
+      "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance", "shebelievescup"
     ]);
     const GOLF_LEAGUE_KEYS = new Set(["pgatour", "dpworldtour", "lpgatour", "livgolf"]);
     const TENNIS_LEAGUE_KEYS = new Set(["atp", "wta"]);
