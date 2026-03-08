@@ -752,6 +752,47 @@
       errorState.classList.add("hidden");
     }
 
+    function isDesktopViewport() {
+      return window.matchMedia("(min-width: 768px)").matches;
+    }
+
+    function ensureChildVisibleInContainer(container, child, behavior = "auto") {
+      if (!container || !child) return;
+      const cTop = container.scrollTop;
+      const cBottom = cTop + container.clientHeight;
+      const elTop = child.offsetTop;
+      const elBottom = elTop + child.offsetHeight;
+
+      if (elTop < cTop) {
+        container.scrollTo({ top: elTop, behavior });
+        return;
+      }
+
+      if (elBottom > cBottom) {
+        container.scrollTo({ top: elBottom - container.clientHeight, behavior });
+      }
+    }
+
+    function syncDesktopActiveLeagueIntoView() {
+      if (!isDesktopViewport()) return;
+      const key = String(state.currentLeagueKey || "");
+      if (!key) return;
+      const btn = leagueNav.querySelector(`button[data-league-key="${CSS.escape(key)}"]`);
+      if (!btn) return;
+      ensureChildVisibleInContainer(leagueNav, btn, "auto");
+    }
+
+    function syncDesktopActiveHeadlineIntoView() {
+      if (!isDesktopViewport()) return;
+      const key = String(state.currentLeagueKey || "");
+      if (!key) return;
+      const activeId = String(state.activeGameByLeague.get(key) || "");
+      if (!activeId) return;
+      const btn = headlineNav.querySelector(`button[data-game-id="${CSS.escape(activeId)}"]`);
+      if (!btn) return;
+      ensureChildVisibleInContainer(headlineNav, btn, "auto");
+    }
+
     function showEmpty(msg) {
       hideStates();
       if (msg) {
@@ -1840,6 +1881,7 @@
         if (typeof idx !== "number") return;
         const isActive = state.currentLeagueKey === lg.leagueKey;
         const btn = document.createElement("button");
+        btn.dataset.leagueKey = lg.leagueKey;
         const isNested = Boolean(opts.nested);
         btn.className = (
           isNested
@@ -1986,6 +2028,8 @@
       if (!insertedTennisGroup && tennisLeagues.length) {
         appendTennisGroup();
       }
+
+      syncDesktopActiveLeagueIntoView();
     }
 
     function highlightHeadlineButtons() {
@@ -1997,6 +2041,8 @@
           "w-full rounded-md px-2 py-2 text-left text-xs leading-snug transition-colors " +
           (on ? "bg-black text-white" : "text-gray-600 hover:bg-gray-100 hover:text-gray-900");
       });
+
+          syncDesktopActiveHeadlineIntoView();
 
       if (mobileHeadlineStrip) {
         [...mobileHeadlineStrip.querySelectorAll("button[data-game-id]")].forEach((btn) => {
