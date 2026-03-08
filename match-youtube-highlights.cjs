@@ -83,6 +83,9 @@ function parseChannelIdFromUrl(input) {
 
 function normalizeText(s) {
   return String(s || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ß/g, 'ss')
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
@@ -157,9 +160,19 @@ const TEAM_NAME_VARIATIONS = {
   'wolverhampton wanderers': ['wolves', 'wolverhampton'],
   'tottenham hotspur': ['spurs', 'tottenham'],
   'celta de vigo': ['celta', 'celta vigo'],
-  'borussia monchengladbach': ['gladbach', "m'gladbach", 'm gladbach', 'monchengladbach'],
-  'bayern munich': ['bayern', 'fc bayern', 'bayern munchen'],
-  'borussia dortmund': ['dortmund', 'bvb'],
+  'borussia monchengladbach': [
+    'gladbach',
+    "m'gladbach",
+    'm gladbach',
+    'monchengladbach',
+    'borussia m gladbach',
+    "borussia m'gladbach",
+    'borussia mgladbach',
+    'bmg',
+  ],
+  'bayern munich': ['bayern', 'fc bayern', 'bayern munchen', 'fc bayern munchen', 'fc bayern munich', 'fcb', 'bay'],
+  'borussia dortmund': ['dortmund', 'bvb', 'bvb09'],
+  'fc koln': ['fc koln', '1 fc koln', '1. fc koln', 'koln', 'koeln', 'fc cologne'],
   'bayer leverkusen': ['leverkusen', 'b04'],
   'eintracht frankfurt': ['frankfurt', 'eintracht'],
   'rb leipzig': ['leipzig', 'rbl'],
@@ -267,6 +280,20 @@ function teamNameKeys(teamName) {
   return [...keys].filter(Boolean);
 }
 
+function parseScoreTeamCodes(score) {
+  const raw = String(score || '').toUpperCase();
+  if (!raw) return [];
+
+  // Capture common scoreboard abbreviations around numeric scores, e.g. BAY 4 - BMG 1.
+  const re = /\b([A-Z]{2,5})\b\s*\d{1,3}\s*[-:]\s*\b([A-Z]{2,5})\b\s*\d{1,3}\b/;
+  const m = raw.match(re);
+  if (!m) return [];
+
+  return [m[1], m[2]]
+    .map((s) => normalizeText(s))
+    .filter((s) => s && s.length >= 2 && s.length <= 5);
+}
+
 function parseTitleDate(title) {
   return parseDateToIso(title);
 }
@@ -360,7 +387,7 @@ function resolvePlaylistIds(argsPlaylist, leagueKey) {
   return [DEFAULT_PLAYLISTS_BY_LEAGUE.NBA];
 }
 
-function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint) {
+function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint, leagueKeyNorm, leagueNameNorm) {
   const titleNorm = normalizeText(video.title);
   const dateInTitleIso = parseTitleDate(video.title);
   const publishedDateIso = parseDateToIso(video.publishedAt || '');
@@ -371,15 +398,22 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint)
 
   const awayKeys = teamNameKeys(game.teams?.away);
   const homeKeys = teamNameKeys(game.teams?.home);
+  const scoreCodes = parseScoreTeamCodes(game.score);
+  if (scoreCodes[0]) awayKeys.push(scoreCodes[0]);
+  if (scoreCodes[1]) homeKeys.push(scoreCodes[1]);
   const hasTeamContext = awayKeys.length > 0 && homeKeys.length > 0;
 
   const awayHit = awayKeys.some((k) => includesPhrase(titleNorm, k));
   const homeHit = homeKeys.some((k) => includesPhrase(titleNorm, k));
 
   let score = 100;
-  if (!awayHit || !homeHit) {
-    // Team-based entries must match both teams to avoid assigning one generic video to many games.
-    if (hasTeamContext) return -1;
+  if (hasTeamContext) {
+    // Team-based entries: require both teams in title and exact same date.
+    if (!awayHit || !homeHit) return -1;
+    const dateMatches =
+      targetDateIso && (publishedDateIso === targetDateIso || dateInTitleIso === targetDateIso);
+    if (!dateMatches) return -1;
+  } else if (!awayHit || !homeHit) {
 
     // Teamless summary entries (e.g., LIV/Tennis) can use date/round fallback.
     if (targetDateIso && publishedDateIso && publishedDateIso === targetDateIso) {
@@ -411,12 +445,28 @@ function scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint)
   return score;
 }
 
-function pickBestVideo(game, videos, targetDateIso, titleMustIncludeNorm, roundHint) {
+function pickBestVideo(
+  game,
+  videos,
+  targetDateIso,
+  titleMustIncludeNorm,
+  roundHint,
+  leagueKeyNorm,
+  leagueNameNorm
+) {
   let best = null;
   let bestScore = -1;
 
   for (const video of videos) {
-    const s = scoreMatch(game, video, targetDateIso, titleMustIncludeNorm, roundHint);
+    const s = scoreMatch(
+      game,
+      video,
+      targetDateIso,
+      titleMustIncludeNorm,
+      roundHint,
+      leagueKeyNorm,
+      leagueNameNorm
+    );
     if (s > bestScore) {
       bestScore = s;
       best = video;
@@ -617,6 +667,8 @@ async function main() {
     : String(leagueKeyForDefaults || '').toUpperCase() === 'WBC';
 
   const globalTargetDateIso = parseDateToIso(dateInput);
+  const leagueKeyNorm = String(leagueKeyForDefaults || '').toUpperCase();
+  const leagueNameNorm = normalizeText(leagueEntry?.leagueName || '');
   let videos = [];
   let sourceLabel = '';
   if (channelInput) {
@@ -633,7 +685,15 @@ async function main() {
     const perGameDateIso = parseGameDateIso(game);
     const targetDateIso = usePerGameDate ? perGameDateIso : globalTargetDateIso;
     const roundHint = parseGameRoundNumber(game, leagueEntry);
-    const best = pickBestVideo(game, videos, targetDateIso, titleMustIncludeNorm, roundHint);
+    const best = pickBestVideo(
+      game,
+      videos,
+      targetDateIso,
+      titleMustIncludeNorm,
+      roundHint,
+      leagueKeyNorm,
+      leagueNameNorm
+    );
     if (best) {
       game.highlights = [best];
       matched += 1;

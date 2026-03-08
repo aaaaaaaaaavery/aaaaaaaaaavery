@@ -219,9 +219,11 @@
           {
             "provider": "youtube",
             "videoId": "LB5CUnNbOwc",
-            "title": "Anisimova | WTA Match Highlights",
+            "title": "Anna Blinkova vs. Amanda Anisimova | 2026 Indian Wells Round 2 | WTA Match Highlights",
             "url": "https://www.youtube.com/watch?v=LB5CUnNbOwc",
-            "embedUrl": "https://www.youtube.com/embed/LB5CUnNbOwc"
+            "embedUrl": "https://www.youtube.com/embed/LB5CUnNbOwc",
+            "publishedAt": "2026-03-07T07:16:34Z",
+            "matchScore": 121
           }
         ]
       },
@@ -249,9 +251,11 @@
           {
             "provider": "youtube",
             "videoId": "_nenTInESDA",
-            "title": "Eala | WTA Match Highlights",
+            "title": "Dayana Yastremska vs. Alexandra Eala | 2026 Indian Wells Round 2 | WTA Match Highlights",
             "url": "https://www.youtube.com/watch?v=_nenTInESDA",
-            "embedUrl": "https://www.youtube.com/embed/_nenTInESDA"
+            "embedUrl": "https://www.youtube.com/embed/_nenTInESDA",
+            "publishedAt": "2026-03-07T08:18:44Z",
+            "matchScore": 121
           }
         ]
       },
@@ -278,10 +282,12 @@
         "highlights": [
           {
             "provider": "youtube",
-            "videoId": "QzMRdde8mnU",
-            "title": "Noskova | WTA Match Highlights",
-            "url": "https://www.youtube.com/watch?v=QzMRdde8mnU",
-            "embedUrl": "https://www.youtube.com/embed/QzMRdde8mnU"
+            "videoId": "i4vy7phdLYw",
+            "title": "Victoria Mboko vs. Kimberly Birrell | 2026 Indian Wells Round 2 | WTA Match Highlights",
+            "url": "https://www.youtube.com/watch?v=i4vy7phdLYw",
+            "embedUrl": "https://www.youtube.com/embed/i4vy7phdLYw",
+            "publishedAt": "2026-03-06T21:10:32Z",
+            "matchScore": 100
           }
         ]
       },
@@ -309,9 +315,11 @@
           {
             "provider": "youtube",
             "videoId": "BlCi_pDgOII",
-            "title": "Tauson | WTA Match Highlights",
+            "title": "Yulia Putintseva vs. Clara Tauson | 2026 Indian Wells Round 2 | WTA Match Highlights",
             "url": "https://www.youtube.com/watch?v=BlCi_pDgOII",
-            "embedUrl": "https://www.youtube.com/embed/BlCi_pDgOII"
+            "embedUrl": "https://www.youtube.com/embed/BlCi_pDgOII",
+            "publishedAt": "2026-03-06T22:52:55Z",
+            "matchScore": 100
           }
         ]
       },
@@ -339,9 +347,11 @@
           {
             "provider": "youtube",
             "videoId": "vdpilrhnxyU",
-            "title": "Gibson | WTA Match Highlights",
+            "title": "Ekaterina Alexandrova vs. Talia Gibson | 2026 Indian Wells Round 2 | WTA Match Highlights",
             "url": "https://www.youtube.com/watch?v=vdpilrhnxyU",
-            "embedUrl": "https://www.youtube.com/embed/vdpilrhnxyU"
+            "embedUrl": "https://www.youtube.com/embed/vdpilrhnxyU",
+            "publishedAt": "2026-03-06T21:12:11Z",
+            "matchScore": 100
           }
         ]
       },
@@ -369,9 +379,11 @@
           {
             "provider": "youtube",
             "videoId": "Plu-3ZQiS8o",
-            "title": "Cirstea | WTA Match Highlights",
+            "title": "Diana Shnaider vs. Sorana Cirstea | 2026 Indian Wells Round 2 | WTA Match Highlights",
             "url": "https://www.youtube.com/watch?v=Plu-3ZQiS8o",
-            "embedUrl": "https://www.youtube.com/embed/Plu-3ZQiS8o"
+            "embedUrl": "https://www.youtube.com/embed/Plu-3ZQiS8o",
+            "publishedAt": "2026-03-06T23:27:19Z",
+            "matchScore": 100
           }
         ]
       },
@@ -399,9 +411,11 @@
           {
             "provider": "youtube",
             "videoId": "fGuLCB0Nf6o",
-            "title": "Sonmez | WTA Match Highlights",
+            "title": "Zeynep Sonmez vs. Anna Kalinskaya | 2026 Indian Wells Round 2 | WTA Match Highlights",
             "url": "https://www.youtube.com/watch?v=fGuLCB0Nf6o",
-            "embedUrl": "https://www.youtube.com/embed/fGuLCB0Nf6o"
+            "embedUrl": "https://www.youtube.com/embed/fGuLCB0Nf6o",
+            "publishedAt": "2026-03-06T23:24:47Z",
+            "matchScore": 100
           }
         ]
       },
@@ -429,9 +443,11 @@
           {
             "provider": "youtube",
             "videoId": "KghlN97zg70",
-            "title": "Osorio | WTA Match Highlights",
+            "title": "Iva Jovic vs. Camila Osorio | 2026 Indian Wells Round 2 | WTA Match Highlights",
             "url": "https://www.youtube.com/watch?v=KghlN97zg70",
-            "embedUrl": "https://www.youtube.com/embed/KghlN97zg70"
+            "embedUrl": "https://www.youtube.com/embed/KghlN97zg70",
+            "publishedAt": "2026-03-07T05:21:34Z",
+            "matchScore": 121
           }
         ]
       }

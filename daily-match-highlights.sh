@@ -181,28 +181,17 @@ run_match_array_league_channel() {
 
 run_match "$ROOT_DIR/recaps-manual/daily/nba.json" "$NBA_PLAYLIST" "NBA"
 run_match "$ROOT_DIR/recaps-manual/daily/nhl.json" "$NHL_PLAYLIST" "NHL"
-run_match_with_filter "$ROOT_DIR/recaps-manual/daily/ncaam.json" "$NCAAM_PLAYLISTS" "NCAAM" "basketball"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/premierleague.json" "$PREMIER_LEAGUE_PLAYLIST" "Premier League" "premier league highlights"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/wbc.json" "$WBC_CHANNEL_URL" "WBC" "world baseball classic"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/facup.json" "$FACUP_CHANNEL_URL" "FA Cup" "fa cup highlights"
-run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/seriea.json" "$SERIEA_CHANNEL_URL" "Serie A" "serie a highlights"
-run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/bundesliga.json" "$BUNDESLIGA_CHANNEL_URL" "Bundesliga" "bundesliga highlights"
-run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/laliga.json" "$LALIGA_CHANNEL_URL" "LaLiga" "laliga highlights"
-run_match_array_league "$ROOT_DIR/recaps-manual/daily/oneperleague.json" "LIV" "$LIV_PLAYLIST" "LIV Golf" "liv golf" "$TODAY_DATE"
-run_match_array_league_channel "$ROOT_DIR/recaps-manual/daily/oneperleague.json" "WTA" "$WTA_CHANNEL_URL" "WTA" "wta" "$TODAY_DATE"
 
 echo ""
 echo "Done. Updated files:"
 echo "- recaps-manual/daily/nba.json"
 echo "- recaps-manual/daily/nhl.json"
-echo "- recaps-manual/daily/ncaam.json"
 echo "- recaps-manual/daily/premierleague.json"
 echo "- recaps-manual/daily/wbc.json"
 echo "- recaps-manual/daily/facup.json"
-echo "- recaps-manual/daily/seriea.json"
-echo "- recaps-manual/daily/bundesliga.json"
-echo "- recaps-manual/daily/laliga.json"
-echo "- recaps-manual/daily/oneperleague.json (LIV and WTA entries)"
 
 if [[ "$FAILED_MATCHES" -gt 0 ]]; then
   echo ""

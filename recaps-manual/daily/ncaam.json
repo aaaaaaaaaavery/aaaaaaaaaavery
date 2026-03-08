@@ -1,850 +1,1087 @@
 {
-  "leagueName": "Men's college basketball",
+  "leagueName": "NCAAM",
   "leagueKey": "NCAAM",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Friday delivered conference-race stakes and tournament chaos across men's college hoops: St. John's locked up at least a share of the Big East title, Miami (Ohio) finished a perfect regular season, and multiple conference tournaments opened with upset pressure and late-game drama.",
+  "leagueBriefing": "Duke swept the season series over North Carolina to highlight a wild final Saturday, while coaching legends John Calipari and Scott Drew hit the 900 and 500 career win milestones, respectively.",
   "games": [
     {
-      "id": "401822972",
-      "teams": {
-        "away": "St. John's",
-        "home": "Seton Hall"
-      },
-      "headline": "St. John's grinds past Seton Hall to clinch share of Big East crown",
-      "score": "STJ 72 - SHU 65",
-      "brief": "No. 18 St. John's had to win this one the hard way, but the Red Storm still got the job done and secured at least a share of a second straight Big East regular-season title. Zuby Ejiofor steadied the offense late after foul trouble, and Rick Pitino's group kept control in crunch time.",
+      "id": "401827728",
+      "teams": { "away": "Houston", "home": "Oklahoma State" },
+      "headline": "McCarty’s second-half surge clinches No. 2 seed for Houston",
+      "score": "HOU 82 — OKST 75",
+      "brief": "Houston overcame a sluggish start and a 13-point first-half deficit to rally past Oklahoma State in Stillwater. Redshirt freshman Chase McCarty was the catalyst, exploding for 20 points—including six triples—to silence the Cowboys' crowd. The victory officially locks the Cougars into the No. 2 seed and a double-bye for the Big 12 Tournament.",
       "bullets": [
-        "Zuby Ejiofor scored 21 points, including 12 in the second half.",
-        "St. John's improved to 25-6 overall and 18-2 in Big East play.",
-        "The Red Storm have back-to-back regular-season Big East titles for the first time in 40 years.",
-        "Seton Hall's Adam Clark scored 15 points; the Pirates fell to 0-6 against the league's top three teams.",
-        "St. John's shot 65.2% in the second half."
+        "Chase McCarty scored 14 of his game-high 20 points in the second half.",
+        "Kingston Flemings neared a triple-double with 13 points, 5 rebounds, and 9 assists.",
+        "Houston secured the No. 2 seed and a quarterfinal spot in the Big 12 Tournament.",
+        "Oklahoma State's Anthony Roy led the Cowboys with 18 points.",
+        "The Cougars outscored the Cowboys 45-34 across the final 20 minutes."
       ],
-      "context": "St. John's is locked in as the top seed in the Big East Tournament at Madison Square Garden and can still win the regular-season title outright.",
+      "context": "Houston secures a double-bye in the Big 12 Tournament, while Oklahoma State falls to the first round.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401822972/st-johns-seton-hall"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "Y2Ds3-zjQOg",
-          "title": "Seton Hall vs. Kansas State Game Highlights | 2025-26 Big 12 Men's Basketball",
-          "url": "https://www.youtube.com/watch?v=Y2Ds3-zjQOg",
-          "embedUrl": "https://www.youtube.com/embed/Y2Ds3-zjQOg",
-          "publishedAt": "2025-12-06T23:28:44Z",
-          "matchScore": 100
-        }
-      ]
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827728/houston-oklahoma-st" },
+      "highlights": []
     },
     {
-      "id": "401814601",
-      "teams": {
-        "away": "Miami (Ohio)",
-        "home": "Ohio"
-      },
-      "headline": "Miami (Ohio) finishes perfect regular season at 31-0 after OT thriller",
-      "score": "M-OH 110 - OHIO 108",
-      "brief": "Miami (Ohio) completed an unbeaten regular season, but it needed another clutch finish to do it. The RedHawks survived a wild overtime game in Athens and closed 31-0, giving the program a historic mark that now shifts pressure to March where the NCAA bid still may require a conference title.",
+      "id": "401820794",
+      "teams": { "away": "Virginia Tech", "home": "Virginia" },
+      "headline": "No. 13 Virginia fends off rival Hokies to protect home court",
+      "score": "VT 72 — UVA 76",
+      "brief": "Virginia utilized a suffocating first-half defense and clinical free-throw shooting to hold off a late Virginia Tech charge. After jumping out to a 12-0 lead, the Cavaliers maintained control despite the Hokies tying the game midway through the second half. For Virginia Tech, the loss is a significant blow to their NCAA Tournament bubble hopes on the final day of the regular season.",
       "bullets": [
-        "Miami (Ohio) became the first unbeaten Division I men's regular-season team since Gonzaga in 2021.",
-        "Eian Elmer posted a career-high 32 points with 12 rebounds.",
-        "Peter Suder scored five points in overtime, including late free throws that put Miami ahead.",
-        "Ohio's Jackson Paveletzke scored a career-high 37 points in the loss.",
-        "Miami finished 18-0 in the MAC and is the top seed in the conference tournament."
+        "Ugo Onyenso and Malik Thomas led the Cavaliers with 16 points each.",
+        "Virginia shot a near-perfect 15-of-17 (88.2%) from the free-throw line.",
+        "Ben Hammond led the Hokies with 21 points but missed two late free throws.",
+        "Virginia Tech missed 8 of their first 9 attempts from 3-point range.",
+        "The Cavaliers had already clinched the No. 2 seed in the ACC Tournament."
       ],
-      "context": "The RedHawks have a perfect regular-season résumé, but conference tournament results still likely determine whether they are safely in the NCAA field.",
+      "context": "Virginia enters the postseason as a top-2 seed while Virginia Tech's bubble status becomes precarious.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814601/miami-oh-ohio"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "vk45mGN_feE",
-          "title": "#11 Ohio State vs #19 Minnesota Highlights | Women's Basketball | College Basketball 2026",
-          "url": "https://www.youtube.com/watch?v=vk45mGN_feE",
-          "embedUrl": "https://www.youtube.com/embed/vk45mGN_feE",
-          "publishedAt": "2026-03-06T21:16:30Z",
-          "matchScore": 121
-        }
-      ]
-    },
-    {
-      "id": "401851347",
-      "teams": {
-        "away": "Gardner-Webb",
-        "home": "High Point"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851347/gardner-webb-high-point"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820794/virginia-tech-virginia" },
       "highlights": []
     },
     {
-      "id": "401851245",
-      "teams": {
-        "away": "Bellarmine",
-        "home": "Central Arkansas"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851245/bellarmine-c-arkansas"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851488",
-      "teams": {
-        "away": "Drake",
-        "home": "Belmont"
-      },
-      "headline": "No. 9 Drake shocks top-seeded Belmont in MVC tournament stunner",
-      "score": "DRA 100 - BEL 81",
-      "brief": "Drake ripped up the bracket with a historic upset, hammering No. 1 seed Belmont and becoming the first No. 9 seed to beat a top seed in Missouri Valley tournament history. Jalen Quinn's scoring burst and a huge second half turned this into a runaway.",
+      "id": "401808285",
+      "teams": { "away": "Arkansas", "home": "Missouri" },
+      "headline": "Calipari hits 900 wins as Arkansas survives overtime thriller in Columbia",
+      "score": "ARK 88 — MIZ 84",
+      "brief": "John Calipari became just the fifth D-I men’s coach to reach 900 career wins as his Razorbacks outlasted Missouri in overtime. Despite missing scoring leader Darius Acuff Jr., Meleek Thomas stepped up with 28 points. Trevon Brazile provided the ultimate heartbreak for his former team, draining the go-ahead 3-pointer with 22 seconds left in the extra period.",
       "bullets": [
-        "Jalen Quinn scored 31 points for Drake.",
-        "Drake became the first No. 9 seed to beat a No. 1 seed in MVC Tournament history.",
-        "Owen Larson added 25 points, 8 rebounds and 8 assists.",
-        "The Bulldogs outscored Belmont by 12 in the second half.",
-        "Belmont entered 26-6 but was overwhelmed after halftime."
+        "John Calipari reaches the 900-win milestone with the overtime victory.",
+        "Meleek Thomas led all scorers with 28 points.",
+        "Missouri’s Mark Mitchell scored a career-high 32 points in the loss.",
+        "Trevon Brazile hit the deciding 3-pointer against his former school.",
+        "Malique Ewin sealed the game with four straight free throws in the final 12 seconds."
       ],
-      "context": "After entering the tournament on an eight-game skid, Drake now has back-to-back wins and serious upset momentum.",
+      "context": "A historic night for Calipari while Arkansas clinches an SEC Tournament quarterfinal bye.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851488/drake-belmont"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808285/arkansas-missouri" },
       "highlights": []
     },
     {
-      "id": "401856422",
-      "teams": {
-        "away": "Northeastern",
-        "home": "NC A&T"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856422/northeastern-nc-at"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851348",
-      "teams": {
-        "away": "Charleston Southern",
-        "home": "Winthrop"
-      },
-      "headline": "Winthrop steals quarterfinal late with furious final-45-second finish",
-      "score": "CHSO 81 - WIN 86",
-      "brief": "Winthrop looked cooked late, then flipped the game in a blink. The Eagles closed the final 45 seconds with defensive pressure, a tying sequence and Logan Duncomb's go-ahead layup to survive Charleston Southern and move on in the Big South bracket.",
+      "id": "401822973",
+      "teams": { "away": "UConn", "home": "Marquette" },
+      "headline": "Hurley ejected in final second as Marquette denies UConn title share",
+      "score": "UCONN 62 — MARQ 68",
+      "brief": "Marquette pulled off a defensive masterpiece in Milwaukee, holding No. 4 UConn to just 12.5% from deep. The game ended in high drama when Dan Hurley was ejected after arguing a non-foul call on the final play. The win secures Marquette's momentum heading into the Big East Tournament and keeps UConn from grabbing a share of the regular-season crown.",
       "bullets": [
-        "Winthrop trailed 81-74 with 45 seconds left, then ended on a 12-0 closing run.",
-        "Logan Duncomb scored 20 points and hit the go-ahead layup with 16 seconds left.",
-        "Cody Clouet added 19 points and 9 rebounds, going 9-for-9 at the line.",
-        "A'lahn Sumler scored 22 for Charleston Southern.",
-        "No. 2 seed Winthrop advanced to the Big South semifinals."
+        "Dan Hurley was ejected with 1.0 seconds left and later fined $25,000.",
+        "UConn shot a dismal 3-of-24 from 3-point range.",
+        "Nigel James Jr. led the Golden Eagles with 19 points.",
+        "UConn's Silas Demary Jr. scored 17 in the losing effort.",
+        "The loss hands the outright Big East No. 1 seed to St. John's."
       ],
-      "context": "This comeback keeps Winthrop's title path alive and reinforces how volatile one-possession conference tournament games can get.",
+      "context": "St. John's wins the Big East outright as UConn settles for the No. 2 seed.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851348/charleston-so-winthrop"
-      },
+      "source": { "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401822973/uconn-marquette" },
       "highlights": []
     },
     {
-      "id": "401851246",
-      "teams": {
-        "away": "FGCU",
-        "home": "Lipscomb"
-      },
-      "headline": "FGCU controls Lipscomb from the jump to punch semifinal ticket",
-      "score": "FGCU 77 - LIP 53",
-      "brief": "FGCU never let this quarterfinal breathe. The Eagles grabbed the lead in the opening minute, built separation before halftime and then buried Lipscomb with a second-half run to advance with one of the more decisive tournament wins of the day.",
+      "id": "401827726",
+      "teams": { "away": "Arizona State", "home": "Iowa State" },
+      "headline": "Cyclones use massive 24-0 second-half run to bury Arizona State",
+      "score": "ASU 65 — ISU 86",
+      "brief": "Iowa State turned a four-point deficit into a blowout in the blink of an eye, unleashing a 24-0 run that left Arizona State shell-shocked. The Cyclones’ high-pressure defense forced a season-high 23 turnovers, while the offense hummed with three players reaching 16 points. It was the largest single run in the TJ Otzelberger era and a reminder of how dangerous Hilton Coliseum is for visitors.",
       "bullets": [
-        "Rahmir Barno scored 18 points on 7-of-10 shooting.",
-        "Isaiah Malone added 17 points and 6 rebounds for FGCU.",
-        "FGCU used a 15-0 second-half run to turn a five-point margin into a 20-point lead.",
-        "Lipscomb was held to 53 points after entering at 19-13.",
-        "No. 5 seed FGCU advanced to face top-seeded Central Arkansas."
+        "Iowa State's 24-0 run lasted nearly nine minutes of game time.",
+        "Joshua Jefferson, Tamin Lipsey, and Milan Momcilovic all scored 16 points.",
+        "The Cyclones forced Arizona State into a season-high 23 turnovers.",
+        "ASU went nearly 11 minutes without a made field goal in the second half.",
+        "Iowa State finished with 49 second-half points to ASU's 24."
       ],
-      "context": "FGCU's wire-to-wire win gives it real confidence heading into a semifinal against the tournament favorite.",
+      "context": "Iowa State enters the Big 12 Tournament as a dangerous No. 5 seed.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851246/fgcu-lipscomb"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827726/arizona-st-iowa-state" },
       "highlights": []
     },
     {
-      "id": "401851489",
-      "teams": {
-        "away": "UIC",
-        "home": "Murray State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851489/uic-murray-st"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851579",
-      "teams": {
-        "away": "The Citadel",
-        "home": "Chattanooga"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851579/the-citadel-chattanooga"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851247",
-      "teams": {
-        "away": "Stetson",
-        "home": "Austin Peay"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851247/stetson-austin-peay"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851700",
-      "teams": {
-        "away": "Southern Miss",
-        "home": "Texas State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851700/southern-miss-texas-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "YCL-7EZDx_g",
-          "title": "Ole Miss vs. NC State Game Highlights | 2025-26 ACC Men's Basketball",
-          "url": "https://www.youtube.com/watch?v=YCL-7EZDx_g",
-          "embedUrl": "https://www.youtube.com/embed/YCL-7EZDx_g",
-          "publishedAt": "2025-12-21T23:31:28Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "401851457",
-      "teams": {
-        "away": "Sacred Heart",
-        "home": "Merrimack"
-      },
-      "headline": "Merrimack locks down Sacred Heart to advance in MAAC quarterfinal",
-      "score": "SHRT 48 - MERR 70",
-      "brief": "Merrimack turned this quarterfinal into a defensive clinic after taking the lead in the first half. Kevair Kennedy drove everything offensively, and the Warriors never let Sacred Heart generate enough clean offense to make this a game late.",
+      "id": "401827727",
+      "teams": { "away": "Kansas State", "home": "Kansas" },
+      "headline": "Darryn Peterson dominates in Allen Fieldhouse finale as Jayhawks roll",
+      "score": "KSU 85 — KU 104",
+      "brief": "No. 14 Kansas celebrated Senior Day in style, crushing in-state rival Kansas State behind 27 points from freshman phenom Darryn Peterson. The Jayhawks showcased an offensive clinic to clinch a double-bye in the Big 12 Tournament, extending their home winning streak over the Wildcats to 20 years. For a team that had struggled lately, the 104-point explosion was a loud message to the rest of the conference.",
       "bullets": [
-        "Kevair Kennedy posted 24 points, 8 rebounds and 6 assists.",
-        "Merrimack led 39-25 at halftime and never trailed after the 11:20 mark of the first half.",
-        "Ernest Shelton added 18 points and 9 rebounds.",
-        "Sacred Heart was held to 48 points in a lopsided quarterfinal result.",
-        "Merrimack advanced to a Sunday MAAC semifinal."
+        "Freshman Darryn Peterson scored 27 points on efficient 10-of-15 shooting.",
+        "Kansas secured their 43rd consecutive Senior Day victory.",
+        "Melvin Council Jr. flirted with a triple-double (17 pts, 8 reb, 10 ast).",
+        "The Jayhawks clinched a double-bye for next week’s conference tournament.",
+        "P.J. Haggerty and Nate Johnson combined for 42 points for the Wildcats."
       ],
-      "context": "Merrimack's balance and defensive control put it in strong position entering the semifinal round.",
+      "context": "Kansas clinches a double-bye while K-State falls to the No. 15 seed.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851457/sacred-heart-merrimack"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827727/kansas-st-kansas" },
       "highlights": []
     },
     {
-      "id": "401851349",
-      "teams": {
-        "away": "Longwood",
-        "home": "UNC Asheville"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851349/longwood-unc-asheville"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401814602",
-      "teams": {
-        "away": "Northern Illinois",
-        "home": "Akron"
-      },
-      "headline": "Akron routs Northern Illinois to close regular season on seven-game streak",
-      "score": "NIU 55 - AKR 94",
-      "brief": "Akron treated its regular-season finale like a statement game, jumping on Northern Illinois early and never relenting. The Zips' shot quality and defensive pressure separated this one quickly, extending their winning streak and reinforcing their form entering tournament play.",
+      "id": "401820790",
+      "teams": { "away": "Louisville", "home": "Miami" },
+      "headline": "Wooley’s late triple stuns No. 22 Miami as Louisville ends road drought",
+      "score": "LOU 92 — MIA 89",
+      "brief": "Louisville pulled off a stunner in Coral Gables, snapping a 14-game road losing streak against ranked opponents. Adrian Wooley knocked down the go-ahead 3-pointer with 18 seconds left to salvage a win after the Cardinals blew a 12-point lead. Miami’s bid for a school-record 25th regular-season win fell short when a last-second heave rimmed out.",
       "bullets": [
-        "Akron won 94-55 to push its winning streak to seven.",
-        "Bowen Hardman led the Zips with 20 points on 7-of-8 shooting (5-of-6 from 3).",
-        "Akron led 47-27 at halftime and never trailed after the opening 38 seconds.",
-        "Amani Lyles added 17 points on 6-of-7 shooting.",
-        "Northern Illinois fell to 9-21 overall and 4-14 in MAC play."
+        "Louisville snapped a road losing streak vs. ranked teams dating back to 2020.",
+        "Ryan Conwell paced the Cardinals with 24 points.",
+        "Adrian Wooley hit the game-winning 3-pointer with 18.4 seconds remaining.",
+        "Tre Donaldson scored a game-high 25 points for the Hurricanes.",
+        "Miami had already secured the No. 3 seed in the ACC Tournament."
       ],
-      "context": "Akron enters the MAC tournament with momentum and one of the league's strongest late-season profiles.",
+      "context": "Louisville gains major momentum heading into the ACC Tournament's second round.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814602/n-illinois-akron"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820790/louisville-miami" },
       "highlights": []
     },
     {
-      "id": "401814598",
-      "teams": {
-        "away": "Bowling Green",
-        "home": "Eastern Michigan"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814598/bowling-green-e-michigan"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "hTsdlKW0hTs",
-          "title": "Bowling Green at Michigan State | Highlights | Big Ten Men's Basketball | 11/16/2024",
-          "url": "https://www.youtube.com/watch?v=hTsdlKW0hTs",
-          "embedUrl": "https://www.youtube.com/embed/hTsdlKW0hTs",
-          "publishedAt": "2024-11-17T01:35:57Z",
-          "matchScore": 92
-        }
-      ]
-    },
-    {
-      "id": "401851621",
-      "teams": {
-        "away": "Omaha",
-        "home": "South Dakota"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851621/omaha-south-dakota"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851490",
-      "teams": {
-        "away": "Valparaiso",
-        "home": "Bradley"
-      },
-      "headline": "Bradley survives Valparaiso in double overtime behind Johnson and Jonovic",
-      "score": "VAL 84 - BRAD 90",
-      "brief": "Bradley needed extra basketball and then more of it, but the Braves eventually outlasted Valparaiso in a double-overtime grinder. Jaquan Johnson took over at the right time, and Bradley's depth of shot-makers held up through the chaos of late possessions.",
+      "id": "401808286",
+      "teams": { "away": "Vanderbilt", "home": "Tennessee" },
+      "headline": "Vanderbilt controls rivalry clash to sweep No. 23 Tennessee",
+      "score": "VANDY 86 — TENN 82",
+      "brief": "Vanderbilt jumped out to a 15-2 lead and never looked back, fending off a furious 60-point second-half surge from the Volunteers. Tyler Tanner’s 25 points kept the Commodores ahead as they completed a crucial regular-season sweep of their rivals. Tennessee struggled with early turnovers and played without star Nate Ament, falling just short despite a late rally.",
       "bullets": [
-        "Bradley beat Valparaiso 90-84 in double overtime.",
-        "Jaquan Johnson scored 18 points, with 6 coming in the second OT.",
-        "Ahmet Jonovic also scored 18 while adding 7 rebounds.",
-        "Alex Huibregtse hit a tying 3 with 25 seconds left in the first overtime.",
-        "JT Pettigrew had 24 points, 13 rebounds and 9 assists for Valparaiso in the loss."
+        "Tyler Tanner led the Commodores with 25 points.",
+        "Tennessee scored 60 points in the second half but couldn't erase the early deficit.",
+        "The Volunteers committed 9 turnovers in the first half alone.",
+        "Vanderbilt won despite not making a single 3-pointer in the game.",
+        "Nate Ament missed the game for Tennessee with a high ankle sprain."
       ],
-      "context": "The Braves advanced, but the workload and minutes from a double-OT game become a real factor with quick turnaround tournament scheduling.",
+      "context": "Both teams finish 11-7 in SEC play heading into the tournament in Nashville.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851490/valparaiso-bradley"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808286/vanderbilt-tennessee" },
       "highlights": []
     },
     {
-      "id": "401828462",
-      "teams": {
-        "away": "VCU",
-        "home": "Dayton"
-      },
-      "headline": "VCU snaps Dayton's six-game streak with late second-half control",
-      "score": "VCU 68 - DAY 62",
-      "brief": "VCU walked into a tough road environment and controlled the key middle stretch of the second half to end Dayton's momentum. Lazar Djokovic set the tone early and the Rams' 11-3 run gave them separation they protected the rest of the way.",
+      "id": "401808281",
+      "teams": { "away": "Florida", "home": "Kentucky" },
+      "headline": "No. 5 Florida sweeps Kentucky to finish regular season on 11-game win streak",
+      "score": "FLA 84 — UK 77",
+      "brief": "The defending national champion Florida Gators showed no signs of slowing down, walking into Rupp Arena and never trailing. Behind 20 points from Thomas Haugh, the Gators secured an 11th straight victory and a regular-season sweep of the Wildcats. Florida enters the SEC Tournament as the No. 1 seed, winning the conference by a massive three-game margin.",
       "bullets": [
-        "VCU beat Dayton 68-62 and ended the Flyers' six-game winning streak.",
-        "Lazar Djokovic scored 16 points and grabbed 6 rebounds.",
-        "VCU used an 11-3 second-half run to flip a two-point deficit into a 58-52 lead.",
-        "Javon Bennett led Dayton with 17 points.",
-        "The Rams improved to 24-7 overall and 15-3 in Atlantic 10 play."
+        "Thomas Haugh led the Gators with 20 points and 9 rebounds.",
+        "Florida opened the game with an 11-0 run and never surrendered the lead.",
+        "The Gators won the SEC regular-season title by three games.",
+        "Otega Oweh scored 28 points for Kentucky in his Senior Day finale.",
+        "Florida has now won 11 straight games heading into the postseason."
       ],
-      "context": "This win helps VCU's postseason positioning and gives it a high-quality road result entering conference tournament week.",
+      "context": "Florida enters the SEC Tournament as the clear No. 1 seed and title favorite.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828462/vcu-dayton"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808281/florida-kentucky" },
       "highlights": []
     },
     {
-      "id": "401818565",
-      "teams": {
-        "away": "Pennsylvania",
-        "home": "Brown"
-      },
-      "headline": "Penn powers past Brown behind Roberts and balanced two-way effort",
-      "score": "PENN 82 - BROWN 61",
-      "brief": "Penn controlled this game with steadier half-court offense and cleaner execution over 40 minutes. Ethan Roberts and TJ Power led a balanced Quakers attack, while Brown never found enough perimeter rhythm to make a serious second-half push.",
+      "id": "401825565",
+      "teams": { "away": "Wisconsin", "home": "Purdue" },
+      "headline": "Wisconsin sets school record for 3s to stun Purdue at home",
+      "score": "WIS 97 — PUR 93",
+      "brief": "In a game for the ages, Wisconsin set a school road record with 18 three-pointers to outgun No. 15 Purdue. John Blackwell and Nick Boyd combined for 48 points as the Badgers thwarted every Boilermaker run. The loss was a historic anomaly for Purdue, who hadn't lost a game while scoring 90+ points since 1987.",
       "bullets": [
-        "Ethan Roberts scored 18 points for Penn.",
-        "TJ Power added 17 points, 8 rebounds and 4 steals.",
-        "Penn won by 21 points on the road in Ivy League play.",
-        "Brown's Landon Lewis finished with 12 points and 11 rebounds.",
-        "The Quakers improved to 16-11 overall and 9-5 in conference."
+        "Wisconsin made a school-record 18 three-pointers on 34 attempts.",
+        "John Blackwell scored 25 points; Nick Boyd added 23.",
+        "Fletcher Loyer broke Carsen Edwards' Purdue record for career 3-pointers.",
+        "The Badgers led by 5 at halftime and never let Purdue take a permanent second-half lead.",
+        "Purdue shot over 50% but couldn't match Wisconsin's perimeter volume."
       ],
-      "context": "Penn keeps itself in stronger Ivy positioning heading into the final stretch of league play.",
+      "context": "Wisconsin clinches its 22nd win and momentum for the Big Ten Tournament.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401818565/penn-brown"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825565/wisconsin-purdue" },
       "highlights": []
     },
     {
-      "id": "401814603",
-      "teams": {
-        "away": "Western Michigan",
-        "home": "Kent State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814603/w-michigan-kent-state"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "4uFhHM7i5IE",
-          "title": "#8 Michigan State vs Rutgers Highlights | Men's Basketball | College Basketball 2026",
-          "url": "https://www.youtube.com/watch?v=4uFhHM7i5IE",
-          "embedUrl": "https://www.youtube.com/embed/4uFhHM7i5IE",
-          "publishedAt": "2026-03-06T03:30:04Z",
-          "matchScore": 121
-        }
-      ]
-    },
-    {
-      "id": "401814600",
-      "teams": {
-        "away": "Central Michigan",
-        "home": "Ball State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814600/c-michigan-ball-state"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "4uFhHM7i5IE",
-          "title": "#8 Michigan State vs Rutgers Highlights | Men's Basketball | College Basketball 2026",
-          "url": "https://www.youtube.com/watch?v=4uFhHM7i5IE",
-          "embedUrl": "https://www.youtube.com/embed/4uFhHM7i5IE",
-          "publishedAt": "2026-03-06T03:30:04Z",
-          "matchScore": 121
-        }
-      ]
-    },
-    {
-      "id": "401814599",
-      "teams": {
-        "away": "Buffalo",
-        "home": "Toledo"
-      },
-      "headline": "Toledo's offense explodes as Blyden Jr. delivers 20-13 masterclass",
-      "score": "BUF 78 - TOL 98",
-      "brief": "Toledo put on an offensive clinic, carving Buffalo with pace and shot-making while piling up nearly 100 points. Sonny Wilson scored efficiently, but Leroy Blyden Jr.'s all-around creation was the real tone-setter in one of the league's best individual orchestrations of the night.",
+      "id": "401828466",
+      "teams": { "away": "Saint Louis", "home": "George Mason" },
+      "headline": "George Mason dismantles No. 25 Saint Louis in stunning upset",
+      "score": "SLU 57 — GMU 86",
+      "brief": "George Mason saved their best for last, routing first-place Saint Louis by nearly 30 points. The Billikens were hampered early when star center Robbie Avila landed in foul trouble, and the Patriots capitalized with a 17-0 second-half run. It was a statement win for George Mason, who hadn't beaten a ranked opponent in over two years.",
       "bullets": [
-        "Toledo won 98-78 behind Sonny Wilson's 24 points.",
-        "Leroy Blyden Jr. had 20 points, 13 assists and 7 rebounds.",
-        "Mynor Strong added 18 points, including four made 3s.",
-        "Buffalo got 26 points from Ryan Sabol and 21 from Angelo Brizzi.",
-        "Toledo shot efficiently across its top scorers and kept control throughout."
+        "Jahari Long led the Patriots with 21 points and 9 assists.",
+        "George Mason shot a scorching 73.1% from the field in the second half.",
+        "Saint Louis star Robbie Avila was held to just 2 points in 12 minutes due to fouls.",
+        "The Patriots' 17-0 run in the second half put the game out of reach.",
+        "Saint Louis had already clinched the No. 1 seed in the A-10 Tournament."
       ],
-      "context": "Toledo's late-season offensive rhythm gives it upset potential in a conference tournament setting where guard play matters most.",
+      "context": "George Mason secures a confidence-boosting win while SLU enters the A-10 tourney on a flat note.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401814599/buffalo-toledo"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828466/saint-louis-george-mason" },
       "highlights": []
     },
     {
-      "id": "401812624",
-      "teams": {
-        "away": "Columbia",
-        "home": "Harvard"
-      },
-      "headline": "Harvard handles Columbia behind Pigge's 26 and steady interior control",
-      "score": "COL 71 - HARV 81",
-      "brief": "Harvard's frontcourt pressure and efficient scoring carried it to a comfortable home win over Columbia. Chandler Pigge set the tone with a high-usage scoring night, and the Crimson kept enough defensive structure to hold off every Columbia response.",
+      "id": "401820788",
+      "teams": { "away": "North Carolina", "home": "Duke" },
+      "headline": "Duke overwhelms short-handed Heels with 24-2 second-half blast",
+      "score": "UNC 61 — DUKE 76",
+      "brief": "No. 1 Duke completed the season sweep of North Carolina, but the victory was bittersweet as both teams saw key players exit with injuries. Cameron Boozer was unstoppable with a 26-point double-double, anchoring a massive second-half run that turned a one-possession game into a blowout. UNC played without Caleb Wilson, who was lost for the season to a thumb injury just 48 hours prior.",
       "bullets": [
-        "Chandler Pigge scored 26 points and added 7 rebounds.",
-        "Robert Hinton contributed 17 points for Harvard.",
-        "Tey Barbour added 14 points, including three made 3s.",
-        "Columbia's Blair Thompson had 18 points and 8 rebounds in defeat.",
-        "Harvard improved to 17-11 overall and 10-4 in Ivy League play."
+        "Cameron Boozer recorded 26 points, 15 rebounds, and 5 assists.",
+        "Duke used a 24-2 run to seal the victory in the second half.",
+        "UNC's Caleb Wilson is officially out for the season with a broken thumb.",
+        "Duke starting guard Caleb Foster left the game with a foot injury.",
+        "The Blue Devils finished the ACC regular season with 17-1 record."
       ],
-      "context": "Harvard strengthened its Ivy tournament positioning with a result that was controlled from the middle stages onward.",
+      "context": "Duke takes the top overall seed into the ACC Tournament as title favorites.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401812624/columbia-harvard"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820788/north-carolina-duke" },
       "highlights": []
     },
     {
-      "id": "401851580",
-      "teams": {
-        "away": "VMI",
-        "home": "UNC Greensboro"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851580/vmi-unc-greensboro"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851248",
-      "teams": {
-        "away": "West Georgia",
-        "home": "Queens"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851248/west-georgia-queens"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851530",
-      "teams": {
-        "away": "UT Martin",
-        "home": "Tennessee State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851530/ut-martin-tennessee-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "kOfVzrqJt2o",
-          "title": "UT Martin vs Florida State Game Highlights | 2025-26 ACC Men's Basketball",
-          "url": "https://www.youtube.com/watch?v=kOfVzrqJt2o",
-          "embedUrl": "https://www.youtube.com/embed/kOfVzrqJt2o",
-          "publishedAt": "2025-11-19T02:48:24Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "401827722",
-      "teams": {
-        "away": "UCF",
-        "home": "West Virginia"
-      },
-      "headline": "West Virginia finishes UCF sweep behind Huff's 24-point close",
-      "score": "UCF 62 - WVU 77",
-      "brief": "West Virginia closed its Big 12 regular season with a workmanlike win, pulling away after UCF made a second-half push. Honor Huff took over late with free throws and a key deep make, helping the Mountaineers create separation and complete the season sweep.",
+      "id": "401808288",
+      "teams": { "away": "Auburn", "home": "Alabama" },
+      "headline": "Alabama secures No. 2 seed with wire-to-wire rivalry win over Auburn",
+      "score": "AUB 84 — BAMA 96",
+      "brief": "Alabama left no doubt in their regular-season finale, jumping out to a fast start and never trailing against rival Auburn. Labaron Philon and Aden Holloway each poured in 21 points to lead a Tide offense that built a lead as large as 28. The win locks Alabama into the double-bye as the SEC's No. 2 seed, while Auburn's late-season slide continues.",
       "bullets": [
-        "Honor Huff scored 24 points and went 10-for-10 at the free-throw line.",
-        "West Virginia completed a regular-season sweep of UCF.",
-        "UCF got within 44-40 with 12 minutes left, but a 9-1 West Virginia burst put the game away.",
-        "The Knights lost their third straight after a strong late-February stretch.",
-        "West Virginia finished 18-13 overall and 9-9 in Big 12 play."
+        "Labaron Philon reached his 1,000th career point during his 21-point night.",
+        "Alabama opened the game making their first six consecutive shots.",
+        "The Crimson Tide outscored the Tigers by double digits in the second-half run.",
+        "Kevin Overton led Auburn with 24 points in a losing effort.",
+        "Alabama clinches the No. 2 seed in next week's SEC Tournament."
       ],
-      "context": "The Mountaineers head into the Big 12 tournament with a stabilizing finish and momentum from a complete home win.",
+      "context": "Alabama locks in a double-bye while Auburn falls to 7-11 in conference play.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827722/ucf-west-virginia"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "UrNUJu9aYXE",
-          "title": "UCF vs. West Virginia Game Highlights | 2025-26 Big 12 Men’s Basketball",
-          "url": "https://www.youtube.com/watch?v=UrNUJu9aYXE",
-          "embedUrl": "https://www.youtube.com/embed/UrNUJu9aYXE",
-          "publishedAt": "2026-03-07T03:17:03Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "401851460",
-      "teams": {
-        "away": "Fairfield",
-        "home": "Saint Peter's"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851460/fairfield-saint-peters"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "Dvoqpil_-UY",
-          "title": "Fairfield at Penn State | HIGHLIGHTS | Big Ten Men's Basketball | 11/3/2025",
-          "url": "https://www.youtube.com/watch?v=Dvoqpil_-UY",
-          "embedUrl": "https://www.youtube.com/embed/Dvoqpil_-UY",
-          "publishedAt": "2025-11-04T02:09:09Z",
-          "matchScore": 92
-        }
-      ]
-    },
-    {
-      "id": "401851701",
-      "teams": {
-        "away": "Georgia Southern",
-        "home": "South Alabama"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851701/ga-southern-south-alabama"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808288/auburn-alabama" },
       "highlights": []
     },
     {
-      "id": "401851749",
-      "teams": {
-        "away": "Portland",
-        "home": "Washington State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851749/portland-washington-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "1Q3suEnY-fI",
-          "title": "Portland State vs. Colorado Game Highlights | 2025-26 Big 12 Men’s Basketball",
-          "url": "https://www.youtube.com/watch?v=1Q3suEnY-fI",
-          "embedUrl": "https://www.youtube.com/embed/1Q3suEnY-fI",
-          "publishedAt": "2025-12-18T04:12:13Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "401851624",
-      "teams": {
-        "away": "Denver",
-        "home": "North Dakota"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851624/denver-north-dakota"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851350",
-      "teams": {
-        "away": "Presbyterian",
-        "home": "Radford"
-      },
-      "headline": "Presbyterian forces OT at the horn, then upsets Radford in quarterfinals",
-      "score": "PRES 91 - RAD 85",
-      "brief": "Presbyterian looked headed home late, then authored one of the night's best tournament escapes. A buzzer-beating heave forced overtime, and the Blue Hose carried that momentum through the extra period to knock off Radford and keep their run alive.",
+      "id": "401827724",
+      "teams": { "away": "Texas Tech", "home": "BYU" },
+      "headline": "Robert Wright III rallies BYU to top-10 upset of Texas Tech",
+      "score": "TTU 76 — BYU 82",
+      "brief": "BYU snapped a three-game skid in spectacular fashion, riding a massive second half from freshman Robert Wright III to stun No. 10 Texas Tech. Wright scored 23 of his 27 points after the break, leading a Cougar attack that dominated the paint. Texas Tech had scorched the nets with 12 first-half triples but couldn't keep pace once BYU’s interior game took over late.",
       "bullets": [
-        "Carl Parrish scored 23 points, including 6 in overtime.",
-        "Presbyterian forced OT on Parrish's 30-footer at the buzzer after Josh Pickett's late 3.",
-        "Jaylen Peterson added 20 points and 13 rebounds.",
-        "Chidi Chiakwelu was perfect from the field (8-of-8) and scored 18.",
-        "No. 6 seed Presbyterian advanced by upsetting No. 3 seed Radford."
+        "Robert Wright III scored 23 of his 27 points in the second half.",
+        "BYU outscored Texas Tech 48-14 in points in the paint.",
+        "Texas Tech made 12 of 19 from 3-point range in the first half alone.",
+        "AJ Dybantsa added 21 points and 6 rebounds for the Cougars.",
+        "BYU snapped a three-game losing streak with the victory."
       ],
-      "context": "In single-elimination conference play, this kind of late-game survival can completely reshape the bracket.",
+      "context": "BYU secures a momentum-shifting win; Texas Tech retains the No. 4 seed and a double-bye.",
       "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851350/presbyterian-radford"
-      },
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827724/texas-tech-byu" },
       "highlights": []
     },
     {
-      "id": "401823787",
-      "teams": {
-        "away": "UNLV",
-        "home": "San Diego State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401823787/unlv-san-diego-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "eYiURgBQAG8",
-          "title": "UNLV vs. Arizona State Game Highlights | 2025-26 Big 12 Women’s Basketball",
-          "url": "https://www.youtube.com/watch?v=eYiURgBQAG8",
-          "embedUrl": "https://www.youtube.com/embed/eYiURgBQAG8",
-          "publishedAt": "2025-11-22T23:00:49Z",
-          "matchScore": 100
-        }
-      ]
+      "id": "401827725",
+      "teams": { "away": "Arizona", "home": "Colorado" },
+      "headline": "No. 2 Arizona sets school record for wins in comeback over Colorado",
+      "score": "ARIZ 89 — COLO 79",
+      "brief": "Arizona cemented its place as a national title contender by setting a program record with 29 regular-season wins. After trailing by 11 early, freshmen Brayden Burries and Koa Peat took over, combining for 56 points to spoil Colorado's upset bid. The Wildcats entered the night having already clinched the Big 12 title, but the comeback win in Boulder showed they have no plans of slowing down.",
+      "bullets": [
+        "Brayden Burries scored 22 of his 31 points in the second half.",
+        "Koa Peat shot 12-of-15 from the field to finish with 25 points.",
+        "Arizona’s 29 regular-season wins are the most in program history.",
+        "Colorado freshman Isaiah Johnson set a school record with 28 points.",
+        "The Wildcats rallied from a 36-25 deficit late in the first half."
+      ],
+      "context": "Arizona enters the Big 12 Tournament as the No. 1 seed and national title favorite.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827725/arizona-colorado" },
+      "highlights": []
     },
     {
-      "id": "401851491",
-      "teams": {
-        "away": "Northern Iowa",
-        "home": "Illinois State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851491/northern-iowa-illinois-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "65Z8OGJ6D4c",
-          "title": "Iowa State Cyclones vs. Arizona Wildcats | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=65Z8OGJ6D4c",
-          "embedUrl": "https://www.youtube.com/embed/65Z8OGJ6D4c",
-          "publishedAt": "2026-03-03T04:29:29Z",
-          "matchScore": 115
-        }
-      ]
+      "id": "401808282",
+      "teams": { "away": "Texas A&M", "home": "LSU" },
+      "headline": "Aggies outlast LSU in triple-overtime marathon to close SEC play",
+      "score": "TAMU 94 — LSU 91",
+      "brief": "In one of the longest games of the season, Texas A&M survived a three-overtime battle in Baton Rouge to secure the No. 6 seed in the SEC. Rashaun Agee and Rylan Griffen both went the distance, combining for 50 points and 18 rebounds in a game that saw LSU lead by as many as 15. The Tigers fought to the end despite their place at the bottom of the standings, but the Aggies' clutch shooting in the third extra period proved the difference.",
+      "bullets": [
+        "Rashaun Agee posted 26 points and 11 rebounds in 47 minutes of play.",
+        "Rylan Griffen added 24 points and a game-high 6 steals.",
+        "The game featured three overtimes after being tied at 70 at the end of regulation.",
+        "LSU's Mike Nwoko recorded a double-double (16 pts, 13 reb).",
+        "Texas A&M clinched the No. 6 seed for the SEC Tournament."
+      ],
+      "context": "Texas A&M secures a Thursday start in Nashville; LSU finishes last in the SEC.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808282/texas-am-lsu" },
+      "highlights": []
     },
     {
-      "id": "401851532",
-      "teams": {
-        "away": "SE Missouri",
-        "home": "Morehead State"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851532/se-missouri-morehead-st"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "SYOAOBonfY8",
-          "title": "Florida State vs. Missouri State Game Highlights | 2025-26 ACC Women's Basketball",
-          "url": "https://www.youtube.com/watch?v=SYOAOBonfY8",
-          "embedUrl": "https://www.youtube.com/embed/SYOAOBonfY8",
-          "publishedAt": "2025-11-28T23:11:35Z",
-          "matchScore": 100
-        }
-      ]
+      "id": "401851517",
+      "teams": { "away": "Stonehill", "home": "Mercyhurst" },
+      "headline": "Mercyhurst advances to NEC final despite NCAA ineligibility",
+      "score": "STO 51 — MERCY 56",
+      "brief": "Mercyhurst continued its improbable postseason run, holding off Stonehill to reach the NEC Tournament final. However, due to NCAA reclassification rules, the Lakers are ineligible for the Big Dance, meaning the auto-bid was decided in the other semifinal. Cameron Johnson paced the Lakers with 17 points in a game that was a defensive struggle from start to finish.",
+      "bullets": [
+        "Cameron Johnson led Mercyhurst with 17 points.",
+        "The Lakers are ineligible for the NCAA Tournament due to D-I transition rules.",
+        "Stonehill’s Davante Hackett scored a game-high 21 points.",
+        "Mercyhurst held Stonehill to just 51 points in the victory.",
+        "The NEC auto-bid was awarded to the LIU-Wagner winner as a result of the Lakers' status."
+      ],
+      "context": "Mercyhurst reaches a title game they cannot use to enter the NCAA Tournament.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851517/stonehill-mercyhurst" },
+      "highlights": []
     },
     {
-      "id": "401851750",
-      "teams": {
-        "away": "San Diego",
-        "home": "Seattle U"
-      },
-      "headline": "recap text missing",
-      "score": "",
-      "brief": "",
-      "bullets": [],
-      "context": null,
-      "recapStatus": "missing_article_text",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851750/san-diego-seattle-u"
-      },
+      "id": "401822975",
+      "teams": { "away": "Butler", "home": "DePaul" },
+      "headline": "Bizjack’s 19 points lead Butler to road win over Blue Demons",
+      "score": "BUT 81 — DEP 71",
+      "brief": "Butler leaned on balanced scoring and a strong performance from Finley Bizjack to take down DePaul in Chicago. The Bulldogs overcame a monster 24-point double-double from N.J. Benson by forcing turnovers and executing late. Both teams now head to the Big East Tournament looking for a fresh start after finishing the regular season at .500 overall.",
+      "bullets": [
+        "Finley Bizjack led Butler with 19 points.",
+        "Efeosa Oliogu-Elabor added 15 points and 4 steals for the Bulldogs.",
+        "DePaul's N.J. Benson had a massive line of 24 points, 10 rebounds, and 3 blocks.",
+        "Butler shot nearly 50% from the floor to secure the road victory.",
+        "Both teams finished the regular season with 16-15 overall records."
+      ],
+      "context": "Both teams prepare for the Big East Tournament opening round in New York.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401822975/butler-depaul" },
+      "highlights": []
+    },
+    {
+      "id": "401822974",
+      "teams": { "away": "Xavier", "home": "Villanova" },
+      "headline": "Brennan’s double-double anchors Villanova's wire-to-wire win over Xavier",
+      "score": "XAV 78 — VILLA 91",
+      "brief": "Villanova controlled the pace from the opening tip, never trailing in a double-digit win over Xavier. Duke Brennan was a force inside, tallying 20 points and 13 rebounds to lead the Wildcats. Xavier’s Jovan Milicevic tried to keep the Musketeers close with 21 points, but Villanova’s hot shooting from the perimeter (including six 3s from Tyler Perkins) kept the game out of reach.",
+      "bullets": [
+        "Duke Brennan posted 20 points and 13 rebounds.",
+        "Tyler Perkins made 6 of 9 attempts from 3-point range.",
+        "Villanova took the lead 16 minutes into the first half and never looked back.",
+        "Jovan Milicevic led Xavier with 21 points in the loss.",
+        "The Wildcats shot 44 points in the first half to establish a 12-point cushion."
+      ],
+      "context": "Villanova finishes the Big East schedule at 15-5, heading into the tourney as a top contender.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401822974/xavier-villanova" },
+      "highlights": []
+    },
+    {
+      "id": "401820793",
+      "teams": { "away": "Notre Dame", "home": "Boston College" },
+      "headline": "Payne’s 24 points spark Boston College comeback over Irish",
+      "score": "ND 69 — BC 77",
+      "brief": "Boston College closed out the ACC regular season with a gritty comeback win, riding a career night from Fred Payne. The Eagles struggled early, going scoreless for the final nine minutes of the first half, but exploded for an 11-0 run late in the game to take control. Despite the win, the Eagles were denied a spot in the conference tournament after tiebreakers fell in favor of Pittsburgh.",
+      "bullets": [
+        "Fred Payne led the Eagles with 24 points.",
+        "Boston College made 31 of 41 free-throw attempts in the victory.",
+        "The Eagles went nearly 11 minutes (including the half) without a made field goal.",
+        "Notre Dame's Jalen Haralson scored 21 points in his freshman finale.",
+        "Both teams finished tied for 16th in the ACC standings."
+      ],
+      "context": "The win wasn't enough to save BC's season as they miss the ACC Tournament field.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820793/notre-dame-boston-college" },
+      "highlights": []
+    },
+    {
+      "id": "401820787",
+      "teams": { "away": "Georgia Tech", "home": "Clemson" },
+      "headline": "Clemson rallies late to hand Georgia Tech 12th straight loss",
+      "score": "GT 76 — CLEM 79",
+      "brief": "Clemson avoided a regular-season finale disaster, rallying from a halftime deficit to fend off a winless-in-weeks Georgia Tech squad. Butta Johnson and Nick Davidson hit timely buckets down the stretch to secure the No. 5 seed for the Tigers. The Yellow Jackets fought hard behind Jaeden Mustaf’s 28 points, but ultimately couldn't snap their double-digit losing streak before their season came to an end.",
+      "bullets": [
+        "Butta Johnson and Nick Davidson each scored 15 points for Clemson.",
+        "Georgia Tech finishes the season on a 12-game losing streak.",
+        "Jaeden Mustaf led all scorers with 28 points for the Jackets.",
+        "Clemson outscored Georgia Tech 46-37 in the second half.",
+        "The Tigers secured the No. 5 seed in the ACC Tournament."
+      ],
+      "context": "Clemson gains momentum for Charlotte while Georgia Tech heads into the offseason.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820787/georgia-tech-clemson" },
+      "highlights": []
+    },
+    {
+      "id": "401804964",
+      "teams": { "away": "Louisiana Tech", "home": "Delaware" },
+      "headline": "Bulldogs use monstrous 34-2 second-half run to embarrass Delaware",
+      "score": "LT 81 — DEL 38",
+      "brief": "Louisiana Tech turned a competitive game into a laugher with a jaw-dropping 34-2 run in the second half. The Bulldogs' defense completely suffocated Delaware, holding them to just 13 points after the break. Avery Thomas and Kaden Cooper led the charge as Louisiana Tech built a lead that peaked at 45 points on the Blue Hens' home court.",
+      "bullets": [
+        "Louisiana Tech outscored Delaware 44-13 in the second half.",
+        "Avery Thomas led the Bulldogs with 20 points and 6 rebounds.",
+        "Kaden Cooper provided 17 points and 6 steals off the bench.",
+        "The Bulldogs' 34-2 run was one of the largest in C-USA history.",
+        "Delaware was held to just 38 points total for the game."
+      ],
+      "context": "Louisiana Tech enters the C-USA tourney with significant defensive momentum.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804964/louisiana-tech-delaware" },
+      "highlights": []
+    },
+    {
+      "id": "401851198",
+      "teams": { "away": "New Hampshire", "home": "UMBC" },
+      "headline": "Valentine’s 23 points power UMBC into America East semifinals",
+      "score": "UNH 69 — UMBC 84",
+      "brief": "UMBC controlled their America East quarterfinal matchup from the jump, never trailing against New Hampshire. Anthony Valentine was the star of the show, pouring in 23 points to lead the Retrievers into the next round. UNH got a double-double from Belal El Shakery, but they couldn't overcome a UMBC squad that seemed to have an answer for every run.",
+      "bullets": [
+        "Anthony Valentine scored a team-high 23 points.",
+        "UMBC led for 39:44 of the 40-minute contest.",
+        "Belal El Shakery led UNH with 20 points and 10 rebounds.",
+        "The Retrievers outscored the Wildcats by 11 in the second half.",
+        "UMBC advances to face UMass Lowell in the semifinals."
+      ],
+      "context": "UMBC moves one step closer to an America East title and NCAA berth.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851198/new-hampshire-umbc" },
+      "highlights": []
+    },
+    {
+      "id": "401828468",
+      "teams": { "away": "La Salle", "home": "Saint Joseph's" },
+      "headline": "Ajogbor’s perfect shooting night leads St. Joe’s to sixth straight win",
+      "score": "LAS 76 — STJ 88",
+      "brief": "Justice Ajogbor was an immovable force in Philadelphia, going a perfect 8-for-8 from the field to lead Saint Joseph's past rival La Salle. The Hawks used a 9-0 second-half run to break open a close game and secure their sixth consecutive victory. Derek Simpson added a near triple-double as the Hawks solidified their status as the hottest team in the Atlantic 10.",
+      "bullets": [
+        "Justice Ajogbor scored 20 points on a perfect 8-of-8 shooting performance.",
+        "Derek Simpson tallied 16 points, 7 rebounds, and 9 assists.",
+        "The Hawks have now won six straight games heading into the postseason.",
+        "La Salle’s Rob Dockery led all scorers with 25 points.",
+        "St. Joe's outscored La Salle 43-30 in the final 20 minutes."
+      ],
+      "context": "St. Joe's enters the A-10 tournament as the league's most dangerous dark horse.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828468/la-salle-saint-josephs" },
+      "highlights": []
+    },
+    {
+      "id": "401808283",
+      "teams": { "away": "South Carolina", "home": "Ole Miss" },
+      "headline": "Meechie Johnson’s deep buzzer-beater stuns Ole Miss",
+      "score": "SC 64 — MISS 61",
+      "brief": "In a finish that will live in Gamecocks lore, Meechie Johnson drained a massive 3-pointer from well beyond the arc as the buzzer sounded to break a late tie in Oxford. South Carolina had led for most of the second half before a Rebels rally tied it in the final minute. The shot ended a five-minute field goal drought for the Gamecocks and handed Ole Miss their 12th loss in 13 games.",
+      "bullets": [
+        "Meechie Johnson hit the game-winning 3-pointer as time expired.",
+        "South Carolina led 34-28 at the half.",
+        "Ole Miss struggled mightily from deep, shooting just 1-of-14 from 3-point range.",
+        "Malik Dia led the Rebels with 22 points.",
+        "The win gives South Carolina momentum heading into a Wednesday SEC tourney start."
+      ],
+      "context": "The Gamecocks get a highlight-reel finish to end a difficult regular season.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808283/south-carolina-ole-miss" },
+      "highlights": []
+    },
+    {
+      "id": "401851519",
+      "teams": { "away": "Wagner", "home": "Long Island" },
+      "headline": "LIU punches first ticket to the Big Dance with NEC semifinal win",
+      "score": "WAG 56 — LIU 64",
+      "brief": "The LIU Sharks are going to the NCAA Tournament. Despite having to play in the NEC final on Tuesday, LIU secured the conference's automatic bid because their final opponent, Mercyhurst, is currently ineligible for the D-I postseason. Greg Gordon and Jamal Fuller led the way in a physical semifinal that was tied at the half before the Sharks' defense took over late.",
+      "bullets": [
+        "LIU clinches the NEC automatic bid to the NCAA Tournament.",
+        "Greg Gordon led the Sharks with 19 points and 4 steals.",
+        "Jamal Fuller added 17 points and a dominant 5 blocks.",
+        "The game was tied 23-23 at halftime before LIU pulled away.",
+        "Wagner’s Nick Jones led all scorers with 27 points."
+      ],
+      "context": "LIU becomes the first team in the nation to officially secure a 2026 NCAA Tournament berth.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851519/wagner-long-island" },
+      "highlights": []
+    },
+    {
+      "id": "401851199",
+      "teams": { "away": "Bryant", "home": "Vermont" },
+      "headline": "Hurley’s 29-point outburst sends Vermont to America East semis",
+      "score": "BRY 57 — VERM 77",
+      "brief": "Vermont showed why they are the perennial power of the America East, dismantling Bryant to reach the conference semifinals. TJ Hurley was unstoppable, scoring 24 of his 29 points in a dominant second half. Bryant kept it close early, but a 12-0 Catamounts run after the break turned the game into a comfortable victory for the home side.",
+      "bullets": [
+        "TJ Hurley scored a game-high 29 points on 9-of-12 shooting.",
+        "Vermont used a 12-0 second-half run to break the game open.",
+        "Keegan Harvey led Bryant with 21 points in the loss.",
+        "The Catamounts held Bryant to just 27 points in the first half.",
+        "Vermont advances to play NJIT in the semifinals on Tuesday."
+      ],
+      "context": "The Catamounts continue their march toward another potential NCAA bid.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851199/bryant-vermont" },
+      "highlights": []
+    },
+    {
+      "id": "401830012",
+      "teams": { "away": "Cornell", "home": "Dartmouth" },
+      "headline": "Cornell explodes for 111 points in track-meet win over Dartmouth",
+      "score": "COR 111 — DART 90",
+      "brief": "In a game that felt more like an NBA All-Star contest, Cornell reached the 111-point mark to overwhelm Dartmouth in Hanover. Jake Fiegen was clinical from deep, leading an offense that saw three players reach double figures. The Big Green tried to keep pace behind 21-point nights from McNamee and Williams, but they simply couldn't stop the Big Red's transition attack.",
+      "bullets": [
+        "Cornell scored 111 points, one of the highest totals in Ivy League play this year.",
+        "Jake Fiegen scored 22 points, hitting 5 of 7 from 3-point range.",
+        "Dartmouth had two players score 21 points each (McNamee and Williams).",
+        "The Big Red finished the regular season with an 8-6 Ivy League record.",
+        "Cornell shot over 50% from the field in the high-scoring affair."
+      ],
+      "context": "Cornell finishes with a winning Ivy record as they head into the conference tournament.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401830012/cornell-dartmouth" },
+      "highlights": []
+    },
+    {
+      "id": "401828467",
+      "teams": { "away": "George Washington", "home": "Loyola Chicago" },
+      "headline": "Dotson carries Loyola Chicago past Revolutionaries",
+      "score": "GW 62 — LOY 68",
+      "brief": "Loyola Chicago ground out a hard-fought Atlantic 10 win behind a stellar second half from Kayde Dotson. The Ramblers led by four at the break and relied on Dotson’s 17 points and playmaking to fend off George Washington’s comeback attempts. The win provides a needed boost for a Ramblers squad that has struggled to find consistency in conference play.",
+      "bullets": [
+        "Kayde Dotson scored 12 of his 17 points in the second half.",
+        "Xavier Amos added 15 points and 8 rebounds for the Ramblers.",
+        "Garrett Johnson led George Washington with 17 points.",
+        "Loyola Chicago outscored GW in both halves to secure the win.",
+        "The Ramblers improved to 4-14 in A-10 play to end the regular season."
+      ],
+      "context": "Both teams head to Pittsburgh for the A-10 Tournament starting Wednesday.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828467/g-washington-loyola-chicago" },
+      "highlights": []
+    },
+    {
+      "id": "401828465",
+      "teams": { "away": "Rhode Island", "home": "Fordham" },
+      "headline": "Fordham shuts down Rhode Island with stifling second-half defense",
+      "score": "URI 49 — FORD 61",
+      "brief": "Fordham overcame a halftime deficit by locking down defensively in the second half, holding Rhode Island to just 21 points after the break. Dejour Reaves led the way with 17 points, but it was Rikus Schulte’s double-double and second-half scoring that truly turned the tide. The win marks a positive end to the regular season for the Rams as they prepare for the A-10 Tournament.",
+      "bullets": [
+        "Dejour Reaves led Fordham with 17 points, going 8-for-8 from the line.",
+        "Rikus Schulte recorded 14 points and 13 rebounds.",
+        "Fordham held Rhode Island to 21 points in the second half.",
+        "Jahmere Tripp paced URI with 18 points.",
+        "The game saw five lead changes in the second half before Fordham pulled away."
+      ],
+      "context": "Fordham earns the No. 8 seed for the conference tournament.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828465/rhode-island-fordham" },
+      "highlights": []
+    },
+    {
+      "id": "401828464",
+      "teams": { "away": "Richmond", "home": "Duquesne" },
+      "headline": "Duquesne erases 21-point halftime deficit to stun Richmond at the buzzer",
+      "score": "RICH 77 — DUQ 79",
+      "brief": "In the comeback of the year in the Atlantic 10, Duquesne rallied from 21 points down at halftime to beat Richmond. Alex Williams ignited the second-half surge with 13 points, but the hero was David Dixon, who crashed the glass for a game-winning putback with just one second remaining. The Dukes outscored the Spiders by 23 in the second half to complete the miraculous turnaround.",
+      "bullets": [
+        "Duquesne trailed 49-28 at halftime before rallying.",
+        "David Dixon scored the game-winning putback with 1.0 seconds left.",
+        "Alex Williams led the Dukes with 22 points.",
+        "The Dukes outscored the Spiders 51-28 in the second half.",
+        "Richmond’s AJ Lopez led the Spiders with 15 points in the loss."
+      ],
+      "context": "Duquesne enters the postseason with ultimate momentum after an all-time comeback.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828464/richmond-duquesne" },
+      "highlights": []
+    },
+    {
+      "id": "401827729",
+      "teams": { "away": "Cincinnati", "home": "TCU" },
+      "headline": "TCU finishes with program-record 11 Big 12 wins by fending off Bearcats",
+      "score": "CIN 63 — TCU 73",
+      "brief": "TCU made history in Fort Worth, securing their fifth straight win and setting a new program high for conference victories. Jayden Pierre led a balanced Horned Frogs attack that pulled away in the second half with a 9-0 run. Cincinnati fought hard on the boards behind Baba Miller’s 14 rebounds, but they couldn't overcome TCU's efficient transition game and late-game free-throw accuracy.",
+      "bullets": [
+        "TCU set a program record with 11 Big 12 Conference wins.",
+        "Jayden Pierre scored a team-high 18 points.",
+        "The Horned Frogs have won five consecutive games heading into the postseason.",
+        "Cincinnati’s Day Day Thomas led all scorers with 19 points.",
+        "TCU secured the No. 6 seed in the Big 12 Tournament."
+      ],
+      "context": "TCU enters the Big 12 Tournament as one of the hottest teams in the conference.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827729/cincinnati-tcu" },
+      "highlights": []
+    },
+    {
+      "id": "401820789",
+      "teams": { "away": "SMU", "home": "Florida State" },
+      "headline": "Wiggins’ career night leads FSU past SMU to end regular season",
+      "score": "SMU 78 — FSU 91",
+      "brief": "Florida State closed the regular season on a high note, leading wire-to-wire in the second half to sink SMU. Chauncey Wiggins was unstoppable, dropping a career-high 31 points and connecting on six triples. SMU’s Boopie Miller tried to match him with a 32-point career high of his own, but the Mustangs’ foul trouble and FSU’s 52% shooting proved too much to overcome.",
+      "bullets": [
+        "Chauncey Wiggins scored a career-high 31 points and 9 rebounds.",
+        "Boopie Miller scored a career-high 32 points for SMU in the loss.",
+        "FSU used a 16-6 run to close the first half with a 45-27 lead.",
+        "Two SMU players (Yigitoglu and Washington) fouled out in the second half.",
+        "The Seminoles have won three straight games heading into the ACC Tournament."
+      ],
+      "context": "FSU earns the No. 8 seed and a first-round bye in the ACC Tournament.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820789/smu-florida-st" },
+      "highlights": []
+    },
+    {
+      "id": "401818337",
+      "teams": { "away": "Princeton", "home": "Yale" },
+      "headline": "Yale crushes Princeton to finish 11-3 in Ivy League play",
+      "score": "PRIN 53 — YALE 78",
+      "brief": "Yale made a loud statement in New Haven, routing Princeton to finish the regular season at 23-5. Nick Townsend led a balanced Bulldogs attack with 17 points as Yale dominated nearly every facet of the game. Princeton struggled to find any rhythm offensively, finishing with only 53 points as they dropped to 9-20 on the year.",
+      "bullets": [
+        "Nick Townsend paced Yale with 17 points and 7 rebounds.",
+        "Yale finished the Ivy League regular season with an 11-3 record.",
+        "Princeton was held to just 53 points, their lowest total in several weeks.",
+        "The Bulldogs outscored the Tigers by double digits in both halves.",
+        "Yale enters the postseason with 23 total wins on the year."
+      ],
+      "context": "Yale enters the Ivy League Tournament as a heavy favorite.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401818337/princeton-yale" },
+      "highlights": []
+    },
+    {
+      "id": "401804963",
+      "teams": { "away": "Sam Houston", "home": "Liberty" },
+      "headline": "Cleveland’s all-around brilliance leads Liberty over Bearkats",
+      "score": "SHSU 72 — LIB 79",
+      "brief": "Liberty fended off a tough Sam Houston squad behind a masterpiece from Zach Cleveland, who flirted with a triple-double. The Flames led by 10 at the break and regained control late after the Bearkats pulled even in the second half. Sam Houston dominated the boards behind Kashie Natt’s 16 rebounds, but Liberty’s efficient offense proved more consistent down the stretch.",
+      "bullets": [
+        "Zach Cleveland finished with 19 points, 9 rebounds, and 9 assists.",
+        "Liberty finished the C-USA regular season with a 17-3 record.",
+        "Kashie Natt grabbed 16 rebounds and scored 11 points for Sam Houston.",
+        "The Flames used an early 41-31 lead to set the tone.",
+        "Liberty's Zach Cleveland scored the go-ahead layup with 1:39 remaining."
+      ],
+      "context": "Liberty finishes as a top-tier contender in Conference USA.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401804963/sam-houston-liberty" },
+      "highlights": []
+    },
+    {
+      "id": "401820791",
+      "teams": { "away": "Stanford", "home": "NC State" },
+      "headline": "Okorie’s historic 33 points lead Stanford to upset of NC State",
+      "score": "STAN 85 — NCSU 84",
+      "brief": "Stanford freshman Ebuka Okorie made ACC history, dropping 33 points to match an all-time freshman record in a thrilling win over NC State. The Cardinal shot a blistering 62% in the second half to erase a deficit and fend off the Wolfpack’s late comeback attempt. For NC State, the loss is their fourth straight, sending them into the postseason trending in the wrong direction.",
+      "bullets": [
+        "Ebuka Okorie scored a career-high 33 points, matching the ACC freshman record for 30-point games.",
+        "Stanford has won four consecutive games heading into the ACC Tournament.",
+        "NC State’s Paul McNeil Jr. hit a 3-pointer at the buzzer to make it a one-point game.",
+        "The Cardinal shot 18-of-29 (62%) in the second half.",
+        "Ven-Allen Lubin led NC State with 17 points and 11 rebounds."
+      ],
+      "context": "Stanford enters the ACC tourney on a heater, while NC State faces a crisis of momentum.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820791/stanford-nc-state" },
+      "highlights": []
+    },
+    {
+      "id": "401856424",
+      "teams": { "away": "Northeastern", "home": "Drexel" },
+      "headline": "Drexel wire-to-wire win sends Northeastern to 12th straight loss",
+      "score": "NE 77 — DREX 84",
+      "brief": "Drexel took control of their CAA Tournament matchup from the opening minutes, never trailing against a struggling Northeastern team. Eli Beard paced the Dragons with 21 points, while a 39-22 halftime lead provided enough cushion to survive a late Huskies rally. Northeastern’s Mike Loughnane put up a heroic 29 points, but it wasn't enough to end their double-digit losing streak.",
+      "bullets": [
+        "Eli Beard led the Dragons with 21 points and 7 rebounds.",
+        "Drexel outscored Northeastern 39-22 in the first half.",
+        "Northeastern’s Mike Loughnane scored 29 points in his season finale.",
+        "The Huskies have now lost 12 consecutive games.",
+        "Drexel advances to play No. 4 seed Monmouth on Sunday."
+      ],
+      "context": "Drexel advances to the CAA quarterfinals.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856424/northeastern-drexel" },
+      "highlights": []
+    },
+    {
+      "id": "401851583",
+      "teams": { "away": "UNC Greensboro", "home": "Wofford" },
+      "headline": "Neely’s record-breaking 24 rebounds lead UNCG in SoCon upset",
+      "score": "UNCG 75 — WOFF 72",
+      "brief": "In an absolute battle on the glass, UNC Greensboro pulled off a major upset of No. 2 seed Wofford in the SoCon quarterfinals. Justin Neely was a force of nature, breaking his own school record with 24 rebounds to go along with 22 points. Wofford had a chance to tie it at the buzzer, but a late triple missed the mark, sending the Spartans to the semifinals.",
+      "bullets": [
+        "Justin Neely set a school record with 24 rebounds in the victory.",
+        "UNC Greensboro pulled off the upset as the No. 7 seed.",
+        "Wofford’s Kahmare Holmes led all scorers with 24 points.",
+        "Noah Norgaard hit five 3-pointers for the Spartans.",
+        "The Terriers missed a game-tying 3-pointer as time expired."
+      ],
+      "context": "UNCG continues its Cinderella run as the 7-seed in the SoCon.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851583/unc-greensboro-wofford" },
+      "highlights": []
+    },
+    {
+      "id": "401851352",
+      "teams": { "away": "Presbyterian", "home": "Winthrop" },
+      "headline": "Winthrop survives late Presbyterian scare to reach Big South final",
+      "score": "PRES 71 — WIN 73",
+      "brief": "Winthrop punched their ticket to the Big South Championship, but they had to sweat until the final second to do it. After leading by eight late, the Eagles watched Presbyterian roar back to within two, only to survive a potential game-winning miss at the buzzer. Kody Clouet provided the offensive punch for Winthrop as they move one win away from the Big Dance.",
+      "bullets": [
+        "Kody Clouet led the Eagles with 17 points and 4 steals.",
+        "Winthrop led 32-25 at the half.",
+        "Presbyterian’s Triston Wilson scored a game-high 26 points.",
+        "The Eagles survived a last-second shot from Presbyterian's Carl Parrish.",
+        "Winthrop will play High Point in the championship game on Sunday."
+      ],
+      "context": "Winthrop is one win away from an automatic bid to the NCAA Tournament.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851352/presbyterian-winthrop" },
+      "highlights": []
+    },
+    {
+      "id": "401851492",
+      "teams": { "away": "Drake", "home": "UIC" },
+      "headline": "UIC destroys Drake to reach Missouri Valley final",
+      "score": "DRAKE 51 — UIC 72",
+      "brief": "UIC is headed to the Missouri Valley title game after a comprehensive blowout of Drake in St. Louis. Rashund Washington Jr. dominated the Bulldogs, scoring 23 points to lead an offense that outscored Drake by 14 in the second half. The loss is the ninth straight for a Drake squad that completely lost its identity down the stretch of the season.",
+      "bullets": [
+        "Rashund Washington Jr. scored a game-high 23 points.",
+        "Mekhi Lowery recorded 12 points, 12 rebounds, and 5 assists.",
+        "Drake has lost nine consecutive games to end their season.",
+        "UIC took the lead 4 minutes into the game and never looked back.",
+        "The Flames outscored the Bulldogs 38-24 in the second half."
+      ],
+      "context": "UIC will play for an automatic NCAA bid on Sunday.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851492/drake-uic" },
+      "highlights": []
+    },
+    {
+      "id": "401808284",
+      "teams": { "away": "Georgia", "home": "Mississippi State" },
+      "headline": "Georgia explodes for 60 second-half points to set program wins record",
+      "score": "UGA 102 — MSST 96",
+      "brief": "Georgia made history in Starkville, securing the most wins in a single season in program history with a high-octane victory over Mississippi State. The Bulldogs trailed at the half but erupted for 60 points in the final 20 minutes, fueled by a relentless 17-of-29 performance from 3-point range. Not even a 42-point masterpiece from Mississippi State's Josh Hubbard could stop Georgia’s historic night.",
+      "bullets": [
+        "Georgia set a program record for most regular-season wins (22).",
+        "The Bulldogs shot a blistering 17-of-29 (58.6%) from 3-point range.",
+        "Josh Hubbard scored 42 points for Mississippi State, his 7th game over 30.",
+        "Kanon Catchings led Georgia with 23 points.",
+        "Georgia is now 8-0 this season when scoring 100+ points."
+      ],
+      "context": "A historic regular season for Georgia as they look toward a deep SEC run.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808284/georgia-mississippi-st" },
+      "highlights": []
+    },
+    {
+      "id": "401851201",
+      "teams": { "away": "Maine", "home": "NJIT" },
+      "headline": "Fulton’s buzzer-beater sends NJIT to America East semifinals",
+      "score": "MAINE 58 — NJIT 60",
+      "brief": "In a heart-stopping finish in Newark, Ari Fulton played the hero for NJIT. After a gritty back-and-forth affair, Fulton drained a bucket with just one second remaining to eliminate Maine and send the Highlanders to the America East semifinals. Sebastian Robinson provided the bulk of the offense, but it was Fulton’s late-game poise that kept NJIT’s season alive.",
+      "bullets": [
+        "Ari Fulton scored the game-winning bucket with 1.0 seconds left.",
+        "Sebastian Robinson led NJIT with 21 points.",
+        "Maine's Ace Flagg had 14 points and 8 rebounds in the loss.",
+        "NJIT led 32-29 at the half.",
+        "The Highlanders advance to face No. 2 seed Vermont on Tuesday."
+      ],
+      "context": "NJIT keeps their tournament dreams alive with a clutch victory.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851201/maine-njit" },
+      "highlights": []
+    },
+    {
+      "id": "401820795",
+      "teams": { "away": "California", "home": "Wake Forest" },
+      "headline": "Harris dominates on the glass to lead Wake Forest's comeback over Cal",
+      "score": "CAL 73 — WAKE 80",
+      "brief": "Wake Forest closed out the ACC regular season with a signature win, rallying from a double-digit deficit to top Cal. Juke Harris was the engine for the Demon Deacons, posting a massive 31-point, 15-rebound double-double. Cal jumped out to an early 13-point lead, but a 14-0 second-half run by Wake Forest flipped the momentum and secured the win for the home crowd.",
+      "bullets": [
+        "Juke Harris tallied 31 points and a career-high 15 rebounds.",
+        "Wake Forest out-rebounded Cal 45-29 in the victory.",
+        "Cal’s Dai Dai Ames matched the high score with 31 points of his own.",
+        "The Demon Deacons used a 14-0 run midway through the second half to take control.",
+        "Cal led by as many as 13 points in the first half."
+      ],
+      "context": "Wake Forest earns the No. 12 seed and faces Virginia Tech in the ACC first round.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820795/california-wake-forest" },
+      "highlights": []
+    },
+    {
+      "id": "401820792",
+      "teams": { "away": "Pittsburgh", "home": "Syracuse" },
+      "headline": "Pitt clinches ACC tournament spot with overtime thriller at Syracuse",
+      "score": "PITT 71 — SYR 69",
+      "brief": "Pittsburgh secured their postseason life in the most dramatic way possible, winning a defensive overtime grind at the Carrier Dome. Nojus Indrusaitis provided the deciding basket via a goaltending call with just 4 seconds left in the extra period. The win officially punches Pitt’s ticket to the ACC Tournament, while Syracuse enters the postseason on a concerning five-game losing streak.",
+      "bullets": [
+        "Nojus Indrusaitis scored the winning bucket with 4.3 seconds left in OT.",
+        "Cameron Corhen led Pitt with 21 points.",
+        "The win clinches the final spot in the ACC Tournament for Pittsburgh.",
+        "Syracuse guard Naithan George scored a season-high 26 points.",
+        "The game was tied 65-65 at the end of regulation."
+      ],
+      "context": "Pitt clinches the 15-seed and will face Stanford in the opening round.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820792/pitt-syracuse" },
+      "highlights": []
+    },
+    {
+      "id": "401827723",
+      "teams": { "away": "Utah", "home": "Baylor" },
+      "headline": "Scott Drew collects 500th win as Baylor routs Utah",
+      "score": "UTAH 75 — BAY 101",
+      "brief": "Baylor coach Scott Drew joined an elite club, securing his 500th career victory as the Bears dismantled Utah. The game was a total offensive showcase for Baylor, who shot over 61% from the field and forced 16 turnovers. Freshman Tounde Yessoufou led the way with 26 points as the Bears built a 20-point halftime lead and never looked back, celebrating their coach's historic milestone in style.",
+      "bullets": [
+        "Scott Drew becomes one of only 25 active D-I coaches with 500 career wins.",
+        "Baylor shot a blistering 61.5% as a team.",
+        "Tounde Yessoufou led all scorers with 26 points.",
+        "Baylor forced 16 turnovers which led to 31 points.",
+        "Utah has now lost five consecutive games."
+      ],
+      "context": "A milestone win for Scott Drew as Baylor heads into the Big 12 Tournament.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401827723/utah-baylor" },
+      "highlights": []
+    },
+    {
+      "id": "401825563",
+      "teams": { "away": "Indiana", "home": "Ohio State" },
+      "headline": "Thornton becomes Ohio State’s all-time leading scorer in blowout of Indiana",
+      "score": "IND 78 — OSU 91",
+      "brief": "Bruce Thornton etched his name into Ohio State lore, passing Dennis Hopson to become the Buckeyes’ all-time leading scorer during a dominant Senior Night win. Ohio State’s offense was nearly unstoppable, shooting 59% from the field and building a 17-point lead by halftime. Indiana had no answer for the Buckeyes' perimeter attack as Ohio State locked in a double-bye for the Big Ten Tournament.",
+      "bullets": [
+        "Bruce Thornton became Ohio State’s all-time leading scorer with a 25-point night.",
+        "Ohio State shot 59% from the field and 46% from deep.",
+        "The Buckeyes led by 17 points at the half and never trailed after the early minutes.",
+        "Lamar Wilkerson led the Hoosiers with 18 points.",
+        "Ohio State clinched a double-bye for the Big Ten Tournament."
+      ],
+      "context": "A historic night in Columbus as Ohio State cements its status as a Big Ten power.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825563/indiana-ohio-state" },
+      "highlights": []
+    },
+    {
+      "id": "401856425",
+      "teams": { "away": "Hampton", "home": "Towson" },
+      "headline": "Tejada’s 35-point explosion carries Towson past Hampton",
+      "score": "HAMP 68 — TOW 74",
+      "brief": "Tyler Tejada put on a clinic in the CAA second round, dropping 35 points to carry Towson past a resilient Hampton squad. The Tigers took a double-digit lead into the half and leaned on Tejada's scoring whenever Hampton threatened to close the gap. The win moves the 7th-seeded Tigers into a Sunday matchup against the conference powerhouse, Charleston.",
+      "bullets": [
+        "Tyler Tejada scored a game-high 35 points.",
+        "Towson led 30-17 at the half.",
+        "Hampton’s Michael Eley led his team with 23 points.",
+        "The Tigers shot a strong percentage to hold off the late Hampton surge.",
+        "Towson advances to face second-seeded Charleston."
+      ],
+      "context": "Towson keeps its CAA tournament run alive behind a career performance from Tejada.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856425/hampton-towson" },
+      "highlights": []
+    },
+    {
+      "id": "401851586",
+      "teams": { "away": "Furman", "home": "Samford" },
+      "headline": "Furman upsets Samford as House provides spark off the bench",
+      "score": "FUR 86 — SAM 81",
+      "brief": "Furman pulled off one of the biggest upsets of the SoCon second round, toppling 3rd-seeded Samford behind a massive effort from reserve Tom House. The game was a shootout that saw the teams tied at the break before House’s 15 second-half points helped the Paladins pull away. Samford’s Jadin Booth put up a heroic 34 points, but it wasn't enough to stop the balanced Paladin attack.",
+      "bullets": [
+        "Tom House scored 20 points off the bench for Furman.",
+        "Samford’s Jadin Booth led all scorers with 34 points.",
+        "The teams were tied 46-46 at halftime.",
+        "Furman shot a near-perfect 7-of-7 from the line late to seal it.",
+        "Alex Wilkins added 19 points for the victorious Paladins."
+      ],
+      "context": "Furman advances to the SoCon semifinals with major upset momentum.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851586/furman-samford" },
+      "highlights": []
+    },
+    {
+      "id": "401851493",
+      "teams": { "away": "Northern Iowa", "home": "Bradley" },
+      "headline": "Northern Iowa upsets Bradley to reach Missouri Valley final",
+      "score": "UNI 73 — BRAD 69",
+      "brief": "Northern Iowa is one win away from the NCAA Tournament after a gritty upset victory over No. 2 seed Bradley. Leon Bond III was the difference-maker, missing only one shot all night on his way to 19 points. The Panthers led by double digits at the half and maintained their composure as Bradley threw everything they had at them in the closing minutes.",
+      "bullets": [
+        "Leon Bond III scored 19 points on an efficient 7-of-8 shooting.",
+        "Northern Iowa led 45-32 at the half.",
+        "The Panthers forced several late turnovers to preserve the lead.",
+        "Northern Iowa advances to face UIC in the championship game.",
+        "Bradley was held to just 21 total field goals in the loss."
+      ],
+      "context": "Northern Iowa and UIC will face off on Sunday for an automatic NCAA berth.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851493/northern-iowa-bradley" },
+      "highlights": []
+    },
+    {
+      "id": "401851462",
+      "teams": { "away": "Marist", "home": "Quinnipiac" },
+      "headline": "Menard’s late triple sends Marist to MAAC semifinals",
+      "score": "MAR 77 — QUIN 75",
+      "brief": "In a back-and-forth MAAC quarterfinal, Marist’s Justin Menard provided the definitive blow with a clutch 3-pointer in the final minutes. Menard’s 26 points paced a Red Fox offense that surrendered a double-digit halftime lead before digging deep late. Quinnipiac got a massive 28-point, 15-rebound game from Grant Randall, but his late efforts couldn't prevent the Bobcats' early exit.",
+      "bullets": [
+        "Justin Menard led Marist with 26 points and 6 assists.",
+        "The Red Foxes used a late 3-pointer with 2:07 left to take the lead for good.",
+        "Quinnipiac’s Grant Randall had a dominant 28-point, 15-rebound double-double.",
+        "Marist led 42-32 at the half.",
+        "The Red Foxes advance to the MAAC semifinals in Atlantic City."
+      ],
+      "context": "Marist continues its push for a MAAC title and NCAA berth.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851462/marist-quinnipiac" },
+      "highlights": []
+    },
+    {
+      "id": "401822976",
+      "teams": { "away": "Providence", "home": "Georgetown" },
+      "headline": "Iwuchukwu’s double-double helps Georgetown snap seven-game skid",
+      "score": "PROV 79 — GEO 80",
+      "brief": "Georgetown finally found the win column on the final day of the Big East regular season, edging Providence in a one-point thriller. Vincent Iwuchukwu was dominant in the paint, posting 25 points and 10 rebounds while providing the go-ahead dunk late in the second half. The Hoyas' defense held firm in the final minute to end a frustrating seven-game losing streak.",
+      "bullets": [
+        "Vincent Iwuchukwu tallied 25 points and 10 rebounds.",
+        "Georgetown snapped a season-worst seven-game losing streak.",
+        "Providence’s Jaylin Sellers led the Friars with 21 points.",
+        "The Hoyas outscored the Friars by 9 points in the first half.",
+        "The win gives Georgetown much-needed momentum for the Big East Tournament."
+      ],
+      "context": "Georgetown picks up their 14th win of the year to end the regular season.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401822976/providence-georgetown" },
+      "highlights": []
+    },
+    {
+      "id": "401851582",
+      "teams": { "away": "Western Carolina", "home": "Mercer" },
+      "headline": "Western Carolina wins seventh straight to reach SoCon semifinals",
+      "score": "WCU 77 — MER 73",
+      "brief": "Western Carolina is the hottest team in the Southern Conference, extending their winning streak to seven games by fending off Mercer. Tidjiane Dioumassi paced the Catamounts with 21 points, while Marcus Kell provided the steady hand at the free-throw line to seal it in the final 30 seconds. The win sets up a heavyweight semifinal matchup against top-seeded East Tennessee State.",
+      "bullets": [
+        "Tidjiane Dioumassi led WCU with 21 points and 4 triples.",
+        "The Catamounts have won seven consecutive games.",
+        "Mercer’s Baraka Okojie led all scorers with 26 points.",
+        "Marcus Kell scored 13 of his 15 points in the second half.",
+        "WCU advances to play No. 1 seed ETSU on Sunday."
+      ],
+      "context": "WCU looks to continue their heater against the SoCon's top seed.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851582/w-carolina-mercer" },
+      "highlights": []
+    },
+    {
+      "id": "401808287",
+      "teams": { "away": "Oklahoma", "home": "Texas" },
+      "headline": "Oklahoma outlasts Texas in overtime shootout in Austin",
+      "score": "OU 88 — UT 85",
+      "brief": "The final installment of the Red River Rivalry for the regular season required extra time, with Oklahoma prevailing in a high-octane overtime battle. Nijel Pack and Xzayvier Brown combined for 44 points to lead the Sooners, who fended off a late Texas rally that saw the Longhorns tie the game with three late free throws. Derrion Reid’s late 3-pointer in overtime finally put the game out of reach for Texas.",
+      "bullets": [
+        "Nijel Pack led the Sooners with 23 points.",
+        "Texas’ Jordan Pope scored 30 points on 8-of-25 shooting.",
+        "The game went to overtime after Pope hit three free throws to tie it in regulation.",
+        "Derrion Reid hit the game-deciding 3-pointer with 11 seconds left in OT.",
+        "Texas has lost four of their final five games heading into the postseason."
+      ],
+      "context": "The Sooners earn the 11-seed while Texas settles for the 10-seed in the SEC.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401808287/oklahoma-texas" },
+      "highlights": []
+    },
+    {
+      "id": "401851464",
+      "teams": { "away": "Mount St. Mary's", "home": "Siena" },
+      "headline": "Siena coasts to MAAC semifinal berth behind Coyle’s double-double",
+      "score": "MSM 58 — SIENA 63",
+      "brief": "Siena controlled their MAAC quarterfinal from the opening tip, building a 14-point halftime lead and never allowing Mount St. Mary's to seriously threaten. Brendan Coyle was the standout for the Saints, recording 17 points and 9 rebounds to anchor the victory. The Saints' defense held firm late as they advance to face Fairfield in the conference semifinals.",
+      "bullets": [
+        "Brendan Coyle led Siena with 17 points and 9 rebounds.",
+        "Siena led 35-21 at the half.",
+        "Gavin Doty added 17 points, including a perfect 10-of-10 from the line.",
+        "Mount St. Mary's Luke McEldon scored 18 points in the loss.",
+        "The Saints advance to a Sunday semifinal against Fairfield."
+      ],
+      "context": "Siena continues their push for a MAAC title in Atlantic City.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851464/mount-st-marys-siena" },
+      "highlights": []
+    },
+    {
+      "id": "401851753",
+      "teams": { "away": "Portland", "home": "San Francisco" },
+      "headline": "Fuchs’ monster double-double powers San Francisco past Portland",
+      "score": "PORT 65 — USF 82",
+      "brief": "San Francisco used a dominant second-half performance to roll past Portland and advance in the WCC Tournament. David Fuchs was a force on both ends, tallying 23 points and a massive 16 rebounds to lead the Dons. After a tied first half, USF’s defense clamped down and Tyrone Riley IV took over the scoring duties to secure a 17-point margin of victory.",
+      "bullets": [
+        "David Fuchs recorded 23 points and 16 rebounds.",
+        "San Francisco outscored Portland by 17 points in the second half.",
+        "The game was tied 29-29 at the half.",
+        "Tyrone Riley IV scored all 18 of his points in the second half.",
+        "The Dons advance to play No. 4 seed Oregon State on Sunday."
+      ],
+      "context": "San Francisco advances to the WCC quarterfinals in Paradise.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851753/portland-san-francisco" },
+      "highlights": []
+    },
+    {
+      "id": "401825566",
+      "teams": { "away": "UCLA", "home": "USC" },
+      "headline": "UCLA sets Galen Center scoring record in blowout of rival Trojans",
+      "score": "UCLA 89 — USC 68",
+      "brief": "UCLA continued its dominance of the crosstown rivalry, routing USC for the second time in 11 days. Donovan Dent was the star once again, following up a 30-point performance last week with 25 points and 7 assists to lead the Bruins to their highest-ever point total at Galen Center. For the Trojans, the loss is their seventh in a row to end a disappointing regular season characterized by late-season collapses and roster departures.",
+      "bullets": [
+        "UCLA set a school record for points scored at the Galen Center (89).",
+        "Donovan Dent led the Bruins with 25 points on 11-of-15 shooting.",
+        "USC ended the regular season with seven consecutive losses.",
+        "The Bruins outscored the Trojans by 15 points in the second half.",
+        "This was UCLA's largest road win in the rivalry since 1974."
+      ],
+      "context": "UCLA enters the Big Ten Tournament with momentum, while USC's season spirals.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825566/ucla-usc" },
+      "highlights": []
+    },
+    {
+      "id": "401825562",
+      "teams": { "away": "Northwestern", "home": "Minnesota" },
+      "headline": "Reynolds’ late-game heroics lead Minnesota past Wildcats",
+      "score": "NU 66 — MINN 67",
+      "brief": "Langston Reynolds played the hero for the Golden Gophers, scoring the final four points in the closing seconds to snatch a win from Northwestern. After trailing by three late, Reynolds converted a clutch layup with 11 seconds left to seal the comeback. The Wildcats were led by Nick Martinelli’s 23 points, but they couldn't overcome Minnesota’s balanced attack and Reynolds’ 17-point second half.",
+      "bullets": [
+        "Langston Reynolds led the Gophers with 21 points, including 17 in the second half.",
+        "Minnesota opened the game on a dominant 18-2 run.",
+        "Northwestern’s Nick Martinelli scored a game-high 23 points.",
+        "Reynolds scored the final four points of the game in the last 26 seconds.",
+        "Minnesota secured the No. 11 seed in the Big Ten Tournament."
+      ],
+      "context": "Minnesota builds momentum for a Wednesday conference tournament start.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825562/northwestern-minnesota" },
+      "highlights": []
+    },
+    {
+      "id": "401851326",
+      "teams": { "away": "Sacramento State", "home": "Idaho" },
+      "headline": "Idaho cruises past Sacramento State to reach Big Sky quarterfinals",
+      "score": "SAC 45 — IDHO 68",
+      "brief": "Idaho left no room for doubt in their Big Sky Tournament opener, taking a lead early and never looking back. Jackson Rasmussen led the Vandals with 19 points as they dismantled a Sacramento State offense that struggled to find any rhythm. The Hornets' season ends on a difficult eight-game losing streak, while the Vandals advance to face No. 2 seed Montana State.",
+      "bullets": [
+        "Jackson Rasmussen led Idaho with 19 points.",
+        "Sacramento State was held to just 13 points in the first half.",
+        "Idaho used a dominant 11-0 run early in the second half to seal it.",
+        "The Vandals out-rebounded the Hornets 35-24.",
+        "Sacramento State finishes the season with eight consecutive losses."
+      ],
+      "context": "Idaho advances to a Sunday quarterfinal matchup.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851326/sacramento-st-idaho" },
+      "highlights": []
+    },
+    {
+      "id": "401820576",
+      "teams": { "away": "Air Force", "home": "Nevada" },
+      "headline": "Nevada hands Air Force its 24th consecutive loss in wire-to-wire rout",
+      "score": "AFA 59 — NEV 74",
+      "brief": "Nevada dominated from the opening tip, never trailing in a comfortable win over Air Force. Corey Camper Jr. led the Wolf Pack with 18 points as they pulled away with a decisive 12-2 second-half run. For the Falcons, the loss extends the nation's longest-active losing streak to a staggering 24 games, ending a winless Mountain West campaign on a low note.",
+      "bullets": [
+        "Air Force has now lost 24 consecutive games.",
+        "Corey Camper Jr. scored a team-high 18 points.",
+        "Nevada took the lead 23 seconds into the game and never surrendered it.",
+        "The Wolf Pack finished the Mountain West regular season at 12-8.",
+        "Air Force was held to just 25 points in the first half."
+      ],
+      "context": "Nevada finishes with a 20-win season while Air Force's record slide continues.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401820576/air-force-nevada" },
+      "highlights": []
+    },
+    {
+      "id": "401825564",
+      "teams": { "away": "Washington", "home": "Oregon" },
+      "headline": "Evans’ late-game heroics lead Oregon to miraculous comeback over Huskies",
+      "score": "WASH 79 — ORE 85",
+      "brief": "Oregon looked dead in the water after blowing a 21-point lead, but Kwame Evans Jr. had other plans. Evans scored the game’s final nine points, including a clutch and-1 to take the lead with 11 seconds left. The finish was marred by chaos as Washington coach Danny Sprinkle was ejected following a controversial non-call, allowing Evans to seal the victory at the free-throw line.",
+      "bullets": [
+        "Kwame Evans Jr. scored 20 points, including the game's final nine points.",
+        "Washington coach Danny Sprinkle was ejected with five seconds remaining.",
+        "Oregon blew a 21-point first-half lead before rallying late.",
+        "Hannes Steinbach led the Huskies with 26 points and 13 rebounds.",
+        "The Ducks shot 7-of-7 from 3-point range to start the game."
+      ],
+      "context": "Oregon survives a scare to end the regular season with a win.",
+      "recapStatus": "ok",
+      "source": { "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825564/washington-oregon" },
       "highlights": []
     }
   ]
