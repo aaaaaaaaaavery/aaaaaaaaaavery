@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-08",
+  "date": "2026-03-09",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "f1",
-      "gameId": "2026_australian_gp",
-      "headline": "Russell masters new hybrid rules as Mercedes secures 1-2 in Melbourne opener",
-      "scoreLine": ""
+      "leagueKey": "seriea",
+      "gameId": "625477",
+      "headline": "Estupinan strike decides Derby della Madonnina as Milan stun Inter",
+      "scoreLine": "Milan 1 - 0 Internazionale"
     },
     {
       "rank": 2,
-      "leagueKey": "shebelievescup",
-      "gameId": "sbc-usa-col-20260307",
-      "headline": "Alyssa Thompson's late blast seals USA's eighth SheBelieves Cup title",
-      "scoreLine": "USA 1 - COL 0"
+      "leagueKey": "nba",
+      "gameId": "401810776",
+      "headline": "Celtics sweep season series with Cavs as Tatum finds his rhythm",
+      "scoreLine": "Celtics 109 — Cavaliers 98"
     },
     {
       "rank": 3,
-      "leagueKey": "indycar",
-      "gameId": "2026_phoenix_good_ranchers_250",
-      "headline": "Newgarden storms from 10th on late restart to win thriller at Phoenix",
-      "scoreLine": ""
+      "leagueKey": "ncaaw",
+      "gameId": "401815152",
+      "headline": "Texas ends South Carolina’s reign to claim SEC crown",
+      "scoreLine": "TEX 78 - SC 61"
     },
     {
       "rank": 4,
-      "leagueKey": "facup",
-      "gameId": "20260307-wrexham-chelsea",
-      "headline": "Chelsea survive Wrexham scare in extra-time thriller at the Racecourse",
-      "scoreLine": "WRE 2 - CHE 4"
+      "leagueKey": "ncaam",
+      "gameId": "401825568",
+      "headline": "Lendeborg leads No. 3 Michigan to rivalry sweep and 15th straight win",
+      "scoreLine": "Michigan State 80 — Michigan 90"
     },
     {
       "rank": 5,
-      "leagueKey": "facup",
-      "gameId": "63908508",
-      "headline": "Marmoush double seals City comeback as Guardiola's men march on",
-      "scoreLine": "NEW 1 - MCI 3"
+      "leagueKey": "nba",
+      "gameId": "401810782",
+      "headline": "Wembanyama and Spurs dismantle Rockets in offensive masterclass",
+      "scoreLine": "Rockets 120 — Spurs 145"
     },
     {
       "rank": 6,
-      "leagueKey": "livgolf",
-      "gameId": "2026_liv_golf_hong_kong",
-      "headline": "Rahm closes with 64 to win Hong Kong as 4Aces snap team title drought",
+      "leagueKey": "nascarcupseries",
+      "gameId": "2026-straight-talk-wireless-500",
+      "headline": "Blaney rallies from early penalties to complete Penske's Phoenix sweep",
       "scoreLine": ""
     },
     {
       "rank": 7,
-      "leagueKey": "ufc",
-      "gameId": "ufc-326-oliveira-vs-holloway-20260307",
-      "headline": "Oliveira smothers Holloway to claim BMF title in grappling clinic",
-      "scoreLine": ""
+      "leagueKey": "nhl",
+      "gameId": "401803352",
+      "headline": "MacKinnon nets league-leading 43rd goal and shootout winner to edge Wild",
+      "scoreLine": "Wild 2 — Avalanche 3"
     },
     {
       "rank": 8,
-      "leagueKey": "mls",
-      "gameId": "401803310",
-      "headline": "Messi chip seals gritty road win for Miami in Baltimore",
-      "scoreLine": "MIA 2 - DC 1"
+      "leagueKey": "pgatour",
+      "gameId": "akshay-bhatia-has-a-charge-that-would-make-arnie-proud-as-he-rallies-from-5-down-to-win-bay-hill",
+      "headline": "Bhatia channels Arnold Palmer with stunning back-nine charge to win at Bay Hill",
+      "scoreLine": ""
     },
     {
       "rank": 9,
-      "leagueKey": "nba",
-      "gameId": "401810775",
-      "headline": "Thunder reach 50-win mark as Gilgeous-Alexander eyes Chamberlain's record",
-      "scoreLine": "GS 97 — OKC 104"
+      "leagueKey": "scottishcup",
+      "gameId": "20260308-rangers-celtic",
+      "headline": "Celtic edge out Rangers on penalties after Ibrox stalemate",
+      "scoreLine": "Rangers 0 - 0 Celtic (4-5 on penalties)"
     },
     {
       "rank": 10,
-      "leagueKey": "laliga",
-      "gameId": "athletic-club-vs-barcelona-20260307",
-      "headline": "Lamine Yamal wonder goal restores Barcelona's four-point lead",
-      "scoreLine": "ATH 0 - BAR 1"
+      "leagueKey": "nba",
+      "gameId": "401810783",
+      "headline": "Booker's perfect night at the line snaps Hornets' road streak",
+      "scoreLine": "Hornets 99 — Suns 111"
     }
   ],
   "top10": [
-    "Russell masters new hybrid rules as Mercedes secures 1-2 in Melbourne opener",
-    "Alyssa Thompson's late blast seals USA's eighth SheBelieves Cup title",
-    "Newgarden storms from 10th on late restart to win thriller at Phoenix",
-    "Chelsea survive Wrexham scare in extra-time thriller at the Racecourse",
-    "Marmoush double seals City comeback as Guardiola's men march on",
-    "Rahm closes with 64 to win Hong Kong as 4Aces snap team title drought",
-    "Oliveira smothers Holloway to claim BMF title in grappling clinic",
-    "Messi chip seals gritty road win for Miami in Baltimore",
-    "Thunder reach 50-win mark as Gilgeous-Alexander eyes Chamberlain's record",
-    "Lamine Yamal wonder goal restores Barcelona's four-point lead"
+    "Estupinan strike decides Derby della Madonnina as Milan stun Inter",
+    "Celtics sweep season series with Cavs as Tatum finds his rhythm",
+    "Texas ends South Carolina’s reign to claim SEC crown",
+    "Lendeborg leads No. 3 Michigan to rivalry sweep and 15th straight win",
+    "Wembanyama and Spurs dismantle Rockets in offensive masterclass",
+    "Blaney rallies from early penalties to complete Penske's Phoenix sweep",
+    "MacKinnon nets league-leading 43rd goal and shootout winner to edge Wild",
+    "Bhatia channels Arnold Palmer with stunning back-nine charge to win at Bay Hill",
+    "Celtic edge out Rangers on penalties after Ibrox stalemate",
+    "Booker's perfect night at the line snaps Hornets' road streak"
   ],
-  "newsBriefing": "Today's headline cycle crossed college hoops, baseball, MMA, soccer, golf and NFL roster news. Georgia Tech moved on from coach Damon Stoudamire after an ACC last-place finish, while UConn coach Dan Hurley was ejected in the final second of a loss to Marquette and later drew a $25,000 Big East fine. In the World Baseball Classic, Japan rallied late to beat Australia behind Masataka Yoshida's key homer, and Tigers ace Tarik Skubal said he is reconsidering his long-term U.S. WBC plans despite how hard it is to walk away. In football, the Packers re-signed offensive lineman Sean Rhyan to a three-year, $33 million deal, and in global star business Inter Miami owner Jorge Mas said Lionel Messi's total annual compensation lands in the $70 million to $80 million range. On the golf side, Jon Rahm captured LIV Hong Kong for his first individual title since 2024, while UFC president Dana White said Jon Jones and Conor McGregor are not expected on the proposed White House fight card.",
-  "updatedAt": "2026-03-08T17:15:59.755Z"
+  "newsBriefing": "NFL free agency chaos dominated Monday: Miami moved on from Tua Tagovailoa with a post-June 1 release that brings a record dead-cap hit, then dealt safety Minkah Fitzpatrick to the Jets, while the Packers sent pass rusher Rashan Gary to Dallas as teams kept reshaping rosters. Houston kept guard Ed Ingram on a three-year deal, Pittsburgh re-signed Asante Samuel Jr. for one year, and league-wide business tension rose as owners were briefed on increasingly strained labor talks with the referees union ahead of the current CBA deadline. Outside the NFL, Brazilian football erupted when Cruzeiro's state final win over Atletico-MG ended in a mass brawl and 23 red cards, and MMA got a marquee update with Francis Ngannou set to return May 16 against Philipe Lins on Most Valuable Promotions' inaugural MMA card streaming on Netflix.",
+  "updatedAt": "2026-03-09T14:55:44.064Z"
 }
