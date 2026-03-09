@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "N16ZBxJ82to",
-          "title": "Toluca vs Juárez | Liga MX - Jornada 10 Clausura 2026 | TUDN",
-          "url": "https://www.youtube.com/watch?v=N16ZBxJ82to",
-          "embedUrl": "https://www.youtube.com/embed/N16ZBxJ82to"
+          "videoId": "9b-dBLohXEY",
+          "title": "TOLUCA 3-1 JUÁREZ | Triunfo del Diablo en casa | J10 Con México C26",
+          "url": "https://www.youtube.com/watch?v=9b-dBLohXEY",
+          "embedUrl": "https://www.youtube.com/embed/9b-dBLohXEY",
+          "publishedAt": "2026-03-09T03:06:00Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "wt5GXl-NF0g",
+          "title": "TIJUANA 1-2 SANTOS LAGUNA | Santos vuelve a ganar de visita después de dos años | J10 Con México C26",
+          "url": "https://www.youtube.com/watch?v=wt5GXl-NF0g",
+          "embedUrl": "https://www.youtube.com/embed/wt5GXl-NF0g",
+          "publishedAt": "2026-03-09T08:00:54Z",
+          "matchScore": 100
         }
       ]
     }

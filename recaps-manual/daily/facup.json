@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "yTBpCh7J4kA",
+          "title": "LATE PENALTY WINER! 😱 | Fulham (0-1) Southampton | Emirates FA Cup 2025-26",
+          "url": "https://www.youtube.com/watch?v=yTBpCh7J4kA",
+          "embedUrl": "https://www.youtube.com/embed/yTBpCh7J4kA",
+          "publishedAt": "2026-03-09T12:01:38Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "StoB04RVUkk",
-          "title": "Port Vale 1-0 Sunderland | FA Cup Highlights",
-          "url": "https://www.youtube.com/watch?v=StoB04RVUkk",
-          "embedUrl": "https://www.youtube.com/embed/StoB04RVUkk"
+          "videoId": "Iiv3CeflU68",
+          "title": "Port Vale's DREAM run continues! 🤩 | Port Vale (1-0) Sunderland | Emirates FA Cup 2025-26",
+          "url": "https://www.youtube.com/watch?v=Iiv3CeflU68",
+          "embedUrl": "https://www.youtube.com/embed/Iiv3CeflU68",
+          "publishedAt": "2026-03-09T12:00:34Z",
+          "matchScore": 100
         }
       ]
     },
@@ -90,10 +94,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "S3QNBITqJEY",
-          "title": "Leeds United v Norwich City | Match Highlights | Emirates FA Cup",
-          "url": "https://www.youtube.com/watch?v=S3QNBITqJEY",
-          "embedUrl": "https://www.youtube.com/embed/S3QNBITqJEY"
+          "videoId": "dGnJidG0veA",
+          "title": "PERFECT Leeds at home! 👏 | Leeds United (3-0) Norwich City | Emirates FA Cup 2025-26",
+          "url": "https://www.youtube.com/watch?v=dGnJidG0veA",
+          "embedUrl": "https://www.youtube.com/embed/dGnJidG0veA",
+          "publishedAt": "2026-03-09T12:01:06Z",
+          "matchScore": 100
         }
       ]
     }

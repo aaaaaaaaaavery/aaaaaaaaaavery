@@ -24,7 +24,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810780/wizards-pelicans"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "gWEvk46WR0E",
+          "title": "WIZARDS at PELICANS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=gWEvk46WR0E",
+          "embedUrl": "https://www.youtube.com/embed/gWEvk46WR0E",
+          "publishedAt": "2026-03-09T02:09:17Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810776",
@@ -46,7 +56,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810776/celtics-cavaliers"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "vRZjW81xA68",
+          "title": "CELTICS at CAVALIERS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=vRZjW81xA68",
+          "embedUrl": "https://www.youtube.com/embed/vRZjW81xA68",
+          "publishedAt": "2026-03-08T19:49:02Z",
+          "matchScore": 156
+        }
+      ]
     },
     {
       "id": "401810777",
@@ -68,7 +88,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810777/knicks-lakers"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "KQkN5-uwdT0",
+          "title": "KNICKS at LAKERS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=KQkN5-uwdT0",
+          "embedUrl": "https://www.youtube.com/embed/KQkN5-uwdT0",
+          "publishedAt": "2026-03-08T22:45:16Z",
+          "matchScore": 156
+        }
+      ]
     },
     {
       "id": "401810778",
@@ -90,7 +120,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810778/pistons-heat"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "44lumWnp7Nc",
+          "title": "PISTONS at HEAT | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=44lumWnp7Nc",
+          "embedUrl": "https://www.youtube.com/embed/44lumWnp7Nc",
+          "publishedAt": "2026-03-09T00:43:53Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810779",
@@ -112,7 +152,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810779/mavericks-raptors"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "uuiUJytF8tk",
+          "title": "MAVERICKS at RAPTORS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=uuiUJytF8tk",
+          "embedUrl": "https://www.youtube.com/embed/uuiUJytF8tk",
+          "publishedAt": "2026-03-09T00:31:25Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810781",
@@ -134,7 +184,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810781/magic-bucks"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "ouhH1hNYo90",
+          "title": "MAGIC at BUCKS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=ouhH1hNYo90",
+          "embedUrl": "https://www.youtube.com/embed/ouhH1hNYo90",
+          "publishedAt": "2026-03-09T02:40:10Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810782",
@@ -156,7 +216,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810782/rockets-spurs"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "y4GwlBnsMGw",
+          "title": "ROCKETS at SPURS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=y4GwlBnsMGw",
+          "embedUrl": "https://www.youtube.com/embed/y4GwlBnsMGw",
+          "publishedAt": "2026-03-09T02:59:16Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810784",
@@ -178,7 +248,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810784/pacers-trail-blazers"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "lxuOvoWjOCI",
+          "title": "PACERS at TRAIL BLAZERS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=lxuOvoWjOCI",
+          "embedUrl": "https://www.youtube.com/embed/lxuOvoWjOCI",
+          "publishedAt": "2026-03-09T03:49:54Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810785",
@@ -200,7 +280,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810785/bulls-kings"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "mDBnNbYrHHQ",
+          "title": "BULLS at KINGS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=mDBnNbYrHHQ",
+          "embedUrl": "https://www.youtube.com/embed/mDBnNbYrHHQ",
+          "publishedAt": "2026-03-09T03:45:14Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810783",
@@ -222,7 +312,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810783/hornets-suns"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "hL6Wee9dBzs",
+          "title": "HORNETS at SUNS | FULL GAME HIGHLIGHTS | March 8, 2026",
+          "url": "https://www.youtube.com/watch?v=hL6Wee9dBzs",
+          "embedUrl": "https://www.youtube.com/embed/hL6Wee9dBzs",
+          "publishedAt": "2026-03-09T04:50:03Z",
+          "matchScore": 135
+        }
+      ]
     }
   ]
 }

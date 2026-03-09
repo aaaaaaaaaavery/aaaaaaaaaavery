@@ -59,10 +59,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "UaucHfOnTBU",
+          "title": "GENOA-ROMA | HIGHLIGHTS | De Rossi Stuns Roma | Serie A 2025/26",
+          "url": "https://www.youtube.com/watch?v=UaucHfOnTBU",
+          "embedUrl": "https://www.youtube.com/embed/UaucHfOnTBU",
+          "publishedAt": "2026-03-08T19:41:48Z",
+          "matchScore": 100
         }
       ]
     },
@@ -90,10 +92,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "bV7mQXD7YsE",
+          "title": "BOLOGNA-VERONA | HIGHLIGHTS | Underdogs Deliver Blow To Bologna! | Serie A 2025/26",
+          "url": "https://www.youtube.com/watch?v=bV7mQXD7YsE",
+          "embedUrl": "https://www.youtube.com/embed/bV7mQXD7YsE",
+          "publishedAt": "2026-03-08T16:47:58Z",
+          "matchScore": 100
         }
       ]
     },
@@ -121,10 +125,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "f8vEOJ8qF4w",
+          "title": "LECCE-CREMONESE | HIGHLIGHTS | Tough Fight At The Bottom | Serie A 2025/26",
+          "url": "https://www.youtube.com/watch?v=f8vEOJ8qF4w",
+          "embedUrl": "https://www.youtube.com/embed/f8vEOJ8qF4w",
+          "publishedAt": "2026-03-08T14:33:03Z",
+          "matchScore": 100
         }
       ]
     },
@@ -152,10 +158,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "lObIRqcsu18",
+          "title": "FIORENTINA-PARMA | HIGHLIGHTS | Points Shared in Florence | Serie A 2025/26",
+          "url": "https://www.youtube.com/watch?v=lObIRqcsu18",
+          "embedUrl": "https://www.youtube.com/embed/lObIRqcsu18",
+          "publishedAt": "2026-03-08T16:45:17Z",
+          "matchScore": 100
         }
       ]
     }

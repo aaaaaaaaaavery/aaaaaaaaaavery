@@ -57,10 +57,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "G1VHN6a5c3s",
+          "title": "Colombia vs. Cuba 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=G1VHN6a5c3s",
+          "embedUrl": "https://www.youtube.com/embed/G1VHN6a5c3s",
+          "publishedAt": "2026-03-08T20:12:47Z",
+          "matchScore": 121
         }
       ]
     },
@@ -117,10 +119,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "3IVuLFmc9qc",
+          "title": "Great Britain vs. Italy 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=3IVuLFmc9qc",
+          "embedUrl": "https://www.youtube.com/embed/3IVuLFmc9qc",
+          "publishedAt": "2026-03-08T22:28:32Z",
+          "matchScore": 121
         }
       ]
     },

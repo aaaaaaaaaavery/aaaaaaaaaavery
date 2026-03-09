@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "lqQkMoRrxPQ",
+          "title": "Bremen Leaves Relegation Zone! | UNION BERLIN - WERDER BREMEN | Highlights | Bundesliga",
+          "url": "https://www.youtube.com/watch?v=lqQkMoRrxPQ",
+          "embedUrl": "https://www.youtube.com/embed/lqQkMoRrxPQ",
+          "publishedAt": "2026-03-08T18:50:19Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "jdiP9dCZzag",
-          "title": "St. Pauli v Eintracht Frankfurt | Bundesliga 25/26 | Match Highlights",
-          "url": "https://www.youtube.com/watch?v=jdiP9dCZzag",
-          "embedUrl": "https://www.youtube.com/embed/jdiP9dCZzag"
+          "videoId": "jRmMVSfYg3A",
+          "title": "ST. PAULI - EINTRACHT FRANKFURT | Highlights | Matchday 25 – Bundesliga 2025/26",
+          "url": "https://www.youtube.com/watch?v=jRmMVSfYg3A",
+          "embedUrl": "https://www.youtube.com/embed/jRmMVSfYg3A",
+          "publishedAt": "2026-03-08T16:45:53Z",
+          "matchScore": 100
         }
       ]
     }

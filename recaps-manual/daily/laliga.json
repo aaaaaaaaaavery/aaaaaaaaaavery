@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "mNoZZDlgRps",
-          "title": "Villarreal vs. Elche | LALIGA Highlights",
-          "url": "https://www.youtube.com/watch?v=mNoZZDlgRps",
-          "embedUrl": "https://www.youtube.com/embed/mNoZZDlgRps"
+          "videoId": "tR1JUokJYCk",
+          "title": "VILLARREAL CF 2 - 1 ELCHE CF | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=tR1JUokJYCk",
+          "embedUrl": "https://www.youtube.com/embed/tR1JUokJYCk",
+          "publishedAt": "2026-03-08T15:05:22Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "UBetRuKFwTc",
-          "title": "Getafe v Real Betis | LaLiga 25/26 | Match Highlights",
-          "url": "https://www.youtube.com/watch?v=UBetRuKFwTc",
-          "embedUrl": "https://www.youtube.com/embed/UBetRuKFwTc"
+          "videoId": "PosKSBaqgPY",
+          "title": "GETAFE CF 2 - 0 REAL BETIS | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=PosKSBaqgPY",
+          "embedUrl": "https://www.youtube.com/embed/PosKSBaqgPY",
+          "publishedAt": "2026-03-08T17:27:28Z",
+          "matchScore": 100
         }
       ]
     },
@@ -90,10 +94,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "cjd_9o1K14Y",
-          "title": "Sevilla 1-1 Rayo Vallecano | LaLiga 25/26 Match Highlights",
-          "url": "https://www.youtube.com/watch?v=cjd_9o1K14Y",
-          "embedUrl": "https://www.youtube.com/embed/cjd_9o1K14Y"
+          "videoId": "NABr4rOz3Dk",
+          "title": "SEVILLA FC 1 - 1 RAYO VALLECANO | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=NABr4rOz3Dk",
+          "embedUrl": "https://www.youtube.com/embed/NABr4rOz3Dk",
+          "publishedAt": "2026-03-08T19:39:49Z",
+          "matchScore": 100
         }
       ]
     },
@@ -121,10 +127,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "li91VmPGks0",
-          "title": "Valencia vs Deportivo Alavés 3-2 Resumen | La Liga - 2025/2026",
-          "url": "https://www.youtube.com/watch?v=li91VmPGks0",
-          "embedUrl": "https://www.youtube.com/embed/li91VmPGks0"
+          "videoId": "43g1HSZs9BI",
+          "title": "VALENCIA CF 3 - 2 DEPORTIVO ALAVÉS | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=43g1HSZs9BI",
+          "embedUrl": "https://www.youtube.com/embed/43g1HSZs9BI",
+          "publishedAt": "2026-03-08T22:16:14Z",
+          "matchScore": 100
         }
       ]
     }

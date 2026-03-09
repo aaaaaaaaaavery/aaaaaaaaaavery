@@ -24,7 +24,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803352/wild-avalanche"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "9AxrDejFlmA",
+          "title": "Wild vs. Avalanche | NHL Highlights | March 08, 2026",
+          "url": "https://www.youtube.com/watch?v=9AxrDejFlmA",
+          "embedUrl": "https://www.youtube.com/embed/9AxrDejFlmA",
+          "publishedAt": "2026-03-08T21:17:47Z",
+          "matchScore": 141
+        }
+      ]
     },
     {
       "id": "401803353",
@@ -46,7 +56,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803353/bruins-penguins"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "YbnaOjOPazg",
+          "title": "Bruins vs. Penguins | NHL Highlights | March 08, 2026",
+          "url": "https://www.youtube.com/watch?v=YbnaOjOPazg",
+          "embedUrl": "https://www.youtube.com/embed/YbnaOjOPazg",
+          "publishedAt": "2026-03-09T00:00:23Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803354",
@@ -68,7 +88,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803354/lightning-sabres"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "PfimdziVn0M",
+          "title": "Lightning vs. Sabres | NHL Highlights | March 08, 2026",
+          "url": "https://www.youtube.com/watch?v=PfimdziVn0M",
+          "embedUrl": "https://www.youtube.com/embed/PfimdziVn0M",
+          "publishedAt": "2026-03-09T01:37:03Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803355",
@@ -90,7 +120,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803355/blackhawks-stars"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "MuUwz8L7jZ0",
+          "title": "Blackhawks vs. Stars | NHL Highlights | March 08, 2026",
+          "url": "https://www.youtube.com/watch?v=MuUwz8L7jZ0",
+          "embedUrl": "https://www.youtube.com/embed/MuUwz8L7jZ0",
+          "publishedAt": "2026-03-09T01:13:56Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803356",
@@ -112,7 +152,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803356/red-wings-devils"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "J9cOfCOkRv4",
+          "title": "Red Wings vs. Devils | NHL Highlights | March 08, 2026",
+          "url": "https://www.youtube.com/watch?v=J9cOfCOkRv4",
+          "embedUrl": "https://www.youtube.com/embed/J9cOfCOkRv4",
+          "publishedAt": "2026-03-09T02:01:25Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803357",
@@ -134,7 +184,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803357/blues-ducks"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "USAFyBMIkrM",
+          "title": "Blues vs. Ducks | NHL Highlights | March 08, 2026",
+          "url": "https://www.youtube.com/watch?v=USAFyBMIkrM",
+          "embedUrl": "https://www.youtube.com/embed/USAFyBMIkrM",
+          "publishedAt": "2026-03-09T04:33:48Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803358",
@@ -156,7 +216,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803358/oilers-golden-knights"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "AR57CAjYM7o",
+          "title": "Oilers vs. Golden Knights | NHL Highlights | March 08, 2026",
+          "url": "https://www.youtube.com/watch?v=AR57CAjYM7o",
+          "embedUrl": "https://www.youtube.com/embed/AR57CAjYM7o",
+          "publishedAt": "2026-03-09T04:47:20Z",
+          "matchScore": 120
+        }
+      ]
     }
   ]
 }
