@@ -2,205 +2,227 @@
   "leagueName": "NBA",
   "leagueKey": "NBA",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The Thunder became the first team to 50 wins as Shai Gilgeous-Alexander nears a historic scoring record, while the Hawks extended the league's longest active winning streak to six games.",
+  "leagueBriefing": "Russell Westbrook made history with his 208th career triple-double in a Kings win, while the Celtics swept their season series against the Cavaliers as Jayson Tatum continues his comeback from an Achilles injury.",
   "games": [
     {
-      "id": "401810770",
+      "id": "401810780",
+      "teams": {
+        "away": "Washington Wizards",
+        "home": "New Orleans Pelicans"
+      },
+      "headline": "Murphy and Bey power Pelicans as Wizards drop eighth straight",
+      "score": "Wizards 118 — Pelicans 138",
+      "brief": "The New Orleans Pelicans dominated the paint to pull away from the Washington Wizards, extending the capital city's losing skid to eight games. Despite a competitive first half where Washington rained in three-pointers, New Orleans exerted their will inside behind a balanced scoring attack and a poised performance from rookie Jeremiah Fears off the bench.",
+      "bullets": [
+        "Trey Murphy III led the Pelicans with 24 points, while Saddiq Bey added 23 against his former team.",
+        "New Orleans dominated the interior, outscoring Washington 72-44 in the paint.",
+        "Wizards rookie Tre Johnson reached the 20-point mark for the fourth time this season.",
+        "Pelicans rookie Jeremiah Fears tallied 18 points and 7 assists in just 24 minutes of action."
+      ],
+      "context": "The Pelicans have now won 11 of their last 20 games to reach 21 wins, matching their total from all of last season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810780/wizards-pelicans"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401810776",
+      "teams": {
+        "away": "Boston Celtics",
+        "home": "Cleveland Cavaliers"
+      },
+      "headline": "Celtics sweep season series with Cavs as Tatum finds his rhythm",
+      "score": "Celtics 109 — Cavaliers 98",
+      "brief": "In a heavy-hitting Eastern Conference clash, the Boston Celtics proved they still have Cleveland's number by completing a season sweep. Playing in just his second game back from a torn Achilles, Jayson Tatum showed flashes of his elite self, helping Boston build a massive 26-point lead that the Cavaliers simply couldn't overcome despite a late surge.",
+      "bullets": [
+        "Jaylen Brown stuffed the stat sheet with 23 points, 9 rebounds, and 8 assists.",
+        "Jayson Tatum finished with 20 points in 27 minutes during his second game back from a torn right Achilles.",
+        "Donovan Mitchell returned from a groin injury to lead all scorers with 30 points for Cleveland.",
+        "The Cavaliers struggled mightily from deep, starting the game shooting just 2-of-22 on three-pointers in the first half."
+      ],
+      "context": "Boston moves within three games of Detroit for the top seed in the East and secures the tiebreaker over Cleveland.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810776/celtics-cavaliers"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401810777",
+      "teams": {
+        "away": "New York Knicks",
+        "home": "Los Angeles Lakers"
+      },
+      "headline": "Doncic carries Lakers past Knicks while LeBron remains sidelined",
+      "score": "Knicks 97 — Lakers 110",
+      "brief": "Luka Doncic continued his scorching scoring run to help the Lakers weather the absence of LeBron James. Los Angeles jumped out to a huge lead and held firm during a cold shooting stretch in the fourth quarter, stifling a Knicks team that struggled to find its rhythm from beyond the arc all night.",
+      "bullets": [
+        "Luka Doncic followed up a 44-point performance with 35 points and 8 rebounds against New York.",
+        "Austin Reaves provided a secondary spark with 25 points as LeBron James missed his second straight game.",
+        "Karl-Anthony Towns anchored the Knicks with 25 points and 16 rebounds in the loss.",
+        "The Knicks shot a dismal 8-of-34 (23.5%) from three-point range and committed 8 turnovers in the final quarter."
+      ],
+      "context": "The Lakers have won four straight games despite injuries to LeBron James.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810777/knicks-lakers"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401810778",
+      "teams": {
+        "away": "Detroit Pistons",
+        "home": "Miami Heat"
+      },
+      "headline": "Adebayo joins 10,000-point club as Heat cool off first-place Pistons",
+      "score": "Pistons 110 — Heat 121",
+      "brief": "It was a historic night in Miami as Bam Adebayo reached the 10,000-career point milestone while leading the Heat to their fifth consecutive victory. Miami took advantage of a sluggish Detroit start, building a 25-point first-half lead and never looking back, marking the first time an Eastern Conference team has won a season series against the top-seeded Pistons this year.",
+      "bullets": [
+        "Bam Adebayo scored 24 points to become just the second player (joining Dwyane Wade) to score 10,000 points in a Heat uniform.",
+        "Tyler Herro led Miami with 25 points, including a personal 9-0 run in the third quarter.",
+        "Cade Cunningham paced the Pistons with 26 points and 10 assists in their fourth straight loss.",
+        "Miami held a double-digit lead for the final 38 minutes and 27 seconds of the game."
+      ],
+      "context": "Detroit's lead at the top of the Eastern Conference has shrunk to just 2.5 games over Boston.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810778/pistons-heat"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401810779",
+      "teams": {
+        "away": "Dallas Mavericks",
+        "home": "Toronto Raptors"
+      },
+      "headline": "Barrett reaches milestone as Raptors hand Mavs seventh straight loss",
+      "score": "Mavericks 92 — Raptors 122",
+      "brief": "The Dallas Mavericks' mid-season nightmare continued in Toronto as RJ Barrett celebrated a career milestone with a season-high scoring performance. The Raptors took advantage of 20 Dallas turnovers and a poor shooting night from the Mavs to snap their own losing streak, leaving Dallas with 17 losses in their last 19 games.",
+      "bullets": [
+        "RJ Barrett scored 31 points and became the youngest Canadian player to reach 8,000 career points.",
+        "Daniel Gafford was a perfect 10-for-10 from the field for a season-high 21 points in the loss.",
+        "Top pick Cooper Flagg scored 17 points but earned his first career technical foul for arguing a non-call.",
+        "Toronto dominated the open floor, outscoring Dallas 21-4 in fast-break points."
+      ],
+      "context": "The Mavericks continue to slide down the standings, having lost 17 of their last 19 games.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810779/mavericks-raptors"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401810781",
       "teams": {
         "away": "Orlando Magic",
-        "home": "Minnesota Timberwolves"
-      },
-      "headline": "Bane and Banchero power Magic past Timberwolves to claim division lead",
-      "score": "ORL 119 — MIN 92",
-      "brief": "The Orlando Magic made a loud statement in Minneapolis, using a dominant 19-2 first-half closing run to dismantle the Timberwolves and snap Minnesota's five-game winning streak. Desmond Bane and Paolo Banchero combined for 55 points, overwhelming a Wolves squad that struggled to find any offensive rhythm outside of Anthony Edwards. The victory is particularly significant for Orlando as it vaults them to the top of the Southeast Division standings.",
-      "bullets": [
-        "Desmond Bane led all scorers with 30 points on 10-of-17 shooting.",
-        "Paolo Banchero dominated the glass with 25 points and 15 rebounds.",
-        "Anthony Edwards provided the bulk of Minnesota's offense with 34 points.",
-        "Minnesota shot a season-low 35.7% from the field in the loss.",
-        "The Magic moved into first place in the Southeast Division with the win."
-      ],
-      "context": "Orlando takes over the lead in the Southeast Division while snapping Minnesota's five-game winning streak.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "[https://www.espn.com/nba/recap/_/gameId/401810770/magic-timberwolves](https://www.espn.com/nba/recap/_/gameId/401810770/magic-timberwolves)"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "vq8MSYKjZE4",
-          "title": "MAGIC at TIMBERWOLVES | FULL GAME HIGHLIGHTS | March 7, 2026",
-          "url": "https://www.youtube.com/watch?v=vq8MSYKjZE4",
-          "embedUrl": "https://www.youtube.com/embed/vq8MSYKjZE4",
-          "publishedAt": "2026-03-07T22:54:55Z",
-          "matchScore": 156
-        }
-      ]
-    },
-    {
-      "id": "401810771",
-      "teams": {
-        "away": "Brooklyn Nets",
-        "home": "Detroit Pistons"
-      },
-      "headline": "Nets erase 23-point deficit in Detroit to snap 10-game slide",
-      "score": "BKN 107 — DET 105",
-      "brief": "Brooklyn finally found the win column in dramatic fashion, pulling off a massive comeback after trailing by as many as 23 points in the third quarter. Ziaire Williams emerged as the hero, knocking down two clutch triples in the final minutes to stun the Pistons. Despite a double-double from Michael Porter Jr., this game was defined by Brooklyn's grit down the stretch as they outscored Detroit 18-6 in the closing minutes to end their double-digit losing streak.",
-      "bullets": [
-        "Michael Porter Jr. powered the offense with 30 points and 13 rebounds.",
-        "Ziaire Williams scored 23 points, including the go-ahead 3-pointer with 25 seconds left.",
-        "Detroit's Tobias Harris recorded 18 points and 10 rebounds in the loss.",
-        "The Nets forced a crucial shot-clock violation in the final minute to set up the winning shot.",
-        "The win ends a 10-game losing streak for Brooklyn."
-      ],
-      "context": "Brooklyn snaps a 10-game losing streak with their largest comeback of the season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "[https://www.espn.com/nba/recap/_/gameId/401810771/nets-pistons](https://www.espn.com/nba/recap/_/gameId/401810771/nets-pistons)"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "6zC45XNUSJ0",
-          "title": "NETS at PISTONS | FULL GAME HIGHLIGHTS | March 7, 2026",
-          "url": "https://www.youtube.com/watch?v=6zC45XNUSJ0",
-          "embedUrl": "https://www.youtube.com/embed/6zC45XNUSJ0",
-          "publishedAt": "2026-03-08T01:56:20Z",
-          "matchScore": 135
-        }
-      ]
-    },
-    {
-      "id": "401810772",
-      "teams": {
-        "away": "Philadelphia 76ers",
-        "home": "Atlanta Hawks"
-      },
-      "headline": "Hawks soar to sixth straight win as Maxey exits with hand injury",
-      "score": "PHI 116 — ATL 126",
-      "brief": "The Atlanta Hawks are officially the hottest team in the league after securing their sixth consecutive win behind a stellar all-around performance from Jalen Johnson. Atlanta erased a halftime deficit to pull away from a depleted Sixers squad, but the real story for Philadelphia is the health of Tyrese Maxey. The All-Star guard left the game in the final seconds with a right hand injury, adding more concern to a Philly roster already missing Embiid and George.",
-      "bullets": [
-        "Jalen Johnson nearly notched a triple-double with 35 points, 10 rebounds, and 7 assists.",
-        "Nickeil Alexander-Walker provided a major spark with 24 points for Atlanta.",
-        "Tyrese Maxey scored 31 points before exiting with a hand injury late in the fourth.",
-        "Atlanta has now won 7 of their last 8 games to move two games over .500.",
-        "The 76ers played without starters Joel Embiid and Paul George."
-      ],
-      "context": "Atlanta extends the league's longest active winning streak to six games while Philadelphia awaits X-ray results on Tyrese Maxey.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "[https://www.espn.com/nba/recap/_/gameId/401810772/76ers-hawks](https://www.espn.com/nba/recap/_/gameId/401810772/76ers-hawks)"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "XycYGleLRic",
-          "title": "76ERS at HAWKS | FULL GAME HIGHLIGHTS | March 7, 2026",
-          "url": "https://www.youtube.com/watch?v=XycYGleLRic",
-          "embedUrl": "https://www.youtube.com/embed/XycYGleLRic",
-          "publishedAt": "2026-03-08T01:56:39Z",
-          "matchScore": 135
-        }
-      ]
-    },
-    {
-      "id": "401810773",
-      "teams": {
-        "away": "Los Angeles Clippers",
-        "home": "Memphis Grizzlies"
-      },
-      "headline": "Leonard and Garland lead Clippers' late surge past shorthanded Grizzlies",
-      "score": "LAC 123 — MEM 120",
-      "brief": "Kawhi Leonard and Darius Garland took over late to help the Clippers survive a scare in Memphis. Despite trailing by 19 early and hitting a season-low four 3-pointers, Los Angeles found a way to win by grinding it out at the free-throw line. The Grizzlies fought valiantly without Ja Morant, but their short-handed rotation couldn't close the door in the final two minutes as the Clippers continued their climb back toward playoff relevance.",
-      "bullets": [
-        "Kawhi Leonard led the Clippers with 28 points.",
-        "Darius Garland scored 11 of his 21 points in the decisive fourth quarter.",
-        "The Clippers won despite shooting a season-low 4-for-17 from 3-point range.",
-        "Ty Jerome led Memphis with 23 points and 7 assists in a starting role.",
-        "The Clippers have won 4 of their last 5 games to reach 31-32 on the season."
-      ],
-      "context": "The Clippers move within one game of .500 as they battle for a Western Conference playoff spot.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "[https://www.espn.com/nba/recap/_/gameId/401810773/clippers-grizzlies](https://www.espn.com/nba/recap/_/gameId/401810773/clippers-grizzlies)"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "HtAQgv-NhMQ",
-          "title": "CLIPPERS at GRIZZLIES | FULL GAME HIGHLIGHTS | March 7, 2026",
-          "url": "https://www.youtube.com/watch?v=HtAQgv-NhMQ",
-          "embedUrl": "https://www.youtube.com/embed/HtAQgv-NhMQ",
-          "publishedAt": "2026-03-08T04:01:34Z",
-          "matchScore": 135
-        }
-      ]
-    },
-    {
-      "id": "401810774",
-      "teams": {
-        "away": "Utah Jazz",
         "home": "Milwaukee Bucks"
       },
-      "headline": "Antetokounmpo sparkles in limited minutes to end Bucks' skid",
-      "score": "UTA 99 — MIL 113",
-      "brief": "Giannis Antetokounmpo didn't need much time to make an impact, nearly posting a triple-double in just 27 minutes to help Milwaukee snap a four-game losing streak. The Bucks used a late 13-2 run, sparked by Kyle Kuzma’s perimeter shooting, to pull away from a struggling Jazz team. With Utah missing several key players including Lauri Markkanen, Milwaukee’s depth was on full display as Ryan Rollins and Ousmane Dieng both stepped up with versatile stat lines.",
+      "headline": "Banchero dominates as Magic exploit Giannis-less Bucks",
+      "score": "Magic 130 — Bucks 91",
+      "brief": "The Orlando Magic took full advantage of Giannis Antetokounmpo’s absence, coasting to a blowout victory in Milwaukee. Paolo Banchero was unstoppable early, leading a balanced Orlando attack that never trailed and eventually built a lead as large as 31 points, keeping the Magic firmly in the hunt for a top-five seed in the East.",
       "bullets": [
-        "Giannis Antetokounmpo tallied 27 points, 9 rebounds, and 8 assists in just 27 minutes.",
-        "Kyle Kuzma scored 18 points, including 9 during the game-clinching run.",
-        "Ryan Rollins recorded a double-double with 13 points and 11 rebounds.",
-        "Utah was held to 34.4% shooting from the field and 12-of-49 from deep.",
-        "The win snaps a four-game losing streak for the Bucks."
+        "Paolo Banchero poured in 33 points before resting for the entire fourth quarter.",
+        "The Bucks played without Giannis Antetokounmpo, who has now missed 30 games this season due to injury and rest.",
+        "Jalen Suggs sparked a 12-0 run in the fourth quarter to put the game completely out of reach.",
+        "The Bucks have now lost five of their last six games and sit 4.5 games out of the play-in tournament."
       ],
-      "context": "Milwaukee halts their slide while monitoring Giannis' workload following his return from injury.",
+      "context": "Orlando wins its fourth straight to stay sixth in the East, while Milwaukee's playoff hopes continue to fade.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "[https://www.espn.com/nba/recap/_/gameId/401810774/jazz-bucks](https://www.espn.com/nba/recap/_/gameId/401810774/jazz-bucks)"
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810781/magic-bucks"
       },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "KNbbkyWzL9M",
-          "title": "JAZZ at BUCKS | FULL GAME HIGHLIGHTS | March 7, 2026",
-          "url": "https://www.youtube.com/watch?v=KNbbkyWzL9M",
-          "embedUrl": "https://www.youtube.com/embed/KNbbkyWzL9M",
-          "publishedAt": "2026-03-08T04:00:35Z",
-          "matchScore": 135
-        }
-      ]
+      "highlights": []
     },
     {
-      "id": "401810775",
+      "id": "401810782",
       "teams": {
-        "away": "Golden State Warriors",
-        "home": "Oklahoma City Thunder"
+        "away": "Houston Rockets",
+        "home": "San Antonio Spurs"
       },
-      "headline": "Thunder reach 50-win mark as Gilgeous-Alexander eyes Chamberlain's record",
-      "score": "GS 97 — OKC 104",
-      "brief": "The Oklahoma City Thunder became the first team in the NBA to reach 50 wins this season, holding off a scrappy Warriors squad in a game of runs. Shai Gilgeous-Alexander struggled from the floor but lived at the free-throw line to keep his historic 20-point scoring streak alive. A massive step-back three by SGA in the final minute iced the game, moving him within one game of tying Wilt Chamberlain’s all-time record for consecutive 20-point performances.",
+      "headline": "Wembanyama and Spurs dismantle Rockets in offensive masterclass",
+      "score": "Rockets 120 — Spurs 145",
+      "brief": "The San Antonio Spurs put on an offensive clinic against their Texas rivals, shooting a blistering 58% from the floor to blow past the Rockets. Victor Wembanyama set the tone early with a mix of perimeter shooting and interior dominance, helping San Antonio secure the season series and tighten their grip on the Western Conference's No. 2 seed.",
       "bullets": [
-        "SGA scored 27 points, marking his 125th consecutive game with 20+ points.",
-        "The Thunder are the first team in the league to reach 50 wins this season.",
-        "Oklahoma City is 5-0 since Gilgeous-Alexander returned from an abdominal strain.",
-        "Gui Santos led the short-handed Warriors with 22 points and 11 rebounds.",
-        "Stephen Curry missed his 13th straight game for Golden State."
+        "Victor Wembanyama led the way with 29 points on 9-of-13 shooting in just three quarters of play.",
+        "The Spurs recorded 38 assists and made 21 three-pointers (53%) in their highest-scoring game of the season.",
+        "De'Aaron Fox orchestrated the offense with 20 points and 10 assists.",
+        "Houston allowed a season-high 145 points and a season-most 56 points in the paint."
       ],
-      "context": "The Thunder maintain the league's best record while SGA moves one game away from tying Wilt Chamberlain's record of 126 straight 20-point games.",
+      "context": "The Spurs have won 15 of their last 16 games to move within 2.5 games of first place in the West.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "[https://www.espn.com/nba/recap/_/gameId/401810775/warriors-thunder](https://www.espn.com/nba/recap/_/gameId/401810775/warriors-thunder)"
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810782/rockets-spurs"
       },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "87R3OK-a6Us",
-          "title": "WARRIORS at THUNDER | FULL GAME HIGHLIGHTS | March 7, 2026",
-          "url": "https://www.youtube.com/watch?v=87R3OK-a6Us",
-          "embedUrl": "https://www.youtube.com/embed/87R3OK-a6Us",
-          "publishedAt": "2026-03-08T04:17:43Z",
-          "matchScore": 135
-        }
-      ]
+      "highlights": []
+    },
+    {
+      "id": "401810784",
+      "teams": {
+        "away": "Indiana Pacers",
+        "home": "Portland Trail Blazers"
+      },
+      "headline": "Scoot Henderson hits season high as Pacers losing streak hits nine",
+      "score": "Pacers 111 — Trail Blazers 131",
+      "brief": "Scoot Henderson delivered his best performance of the season to lead the Trail Blazers past a struggling Pacers squad. Portland blew the game open with a massive run late in the second quarter, leaving Indiana to ponder their ninth consecutive loss—a stretch defined by defensive struggles and double-digit defeats.",
+      "bullets": [
+        "Scoot Henderson scored a season-high 28 points on efficient 10-of-15 shooting with zero turnovers.",
+        "The Blazers used a 25-7 run over the final five minutes of the first half to seize control.",
+        "Indiana's Jay Huff recorded 5 blocks, bringing his NBA-leading total of multi-block games to 39.",
+        "Deni Avdija returned from a six-game injury absence to contribute 18 points and 8 assists."
+      ],
+      "context": "The Pacers' ninth straight loss is their third streak of at least eight losses this season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810784/pacers-trail-blazers"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401810785",
+      "teams": {
+        "away": "Chicago Bulls",
+        "home": "Sacramento Kings"
+      },
+      "headline": "Westbrook extends triple-double record in rare Kings victory",
+      "score": "Bulls 110 — Kings 126",
+      "brief": "Russell Westbrook continues to defy Father Time, recording his 208th career triple-double to lead the Sacramento Kings to a much-needed home win. The Kings dominated the Bulls in the paint and led from start to finish, providing a bright spot in what has otherwise been a difficult stretch for the franchise.",
+      "bullets": [
+        "Russell Westbrook tallied 23 points, 12 assists, and 11 rebounds for his 208th triple-double.",
+        "Westbrook is now just one assist away from passing Mark Jackson for 6th on the all-time list.",
+        "Rookie Maxine Raynaud had a standout night with 26 points and 11 rebounds.",
+        "The Kings outscored the Bulls 68-36 in the paint, while Chicago's Josh Giddey also notched a triple-double."
+      ],
+      "context": "This was just the third win in the last 23 games for the Sacramento Kings.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810785/bulls-kings"
+      },
+      "highlights": []
+    },
+    {
+      "id": "401810783",
+      "teams": {
+        "away": "Charlotte Hornets",
+        "home": "Phoenix Suns"
+      },
+      "headline": "Booker's perfect night at the line snaps Hornets' road streak",
+      "score": "Hornets 99 — Suns 111",
+      "brief": "The Charlotte Hornets' impressive two-month run of road dominance finally came to an end in the desert. Devin Booker utilized a veteran's touch to get to the free-throw line 15 times without a miss, leading a shorthanded Suns team to victory and halting Charlotte's away winning streak at 10 games.",
+      "bullets": [
+        "Devin Booker scored 30 points, shooting a perfect 15-of-15 from the free-throw line.",
+        "The loss snapped Charlotte's 10-game road winning streak, the longest in the NBA this season.",
+        "Hornets rookie Kon Knueppel made two 3-pointers, extending his league-leading total to 224 on the season.",
+        "Jalen Green and Collin Gillespie both chipped in 24 points for the Suns."
+      ],
+      "context": "The Suns have won four of five as they head out for a six-game road trip.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810783/hornets-suns"
+      },
+      "highlights": []
     }
   ]
 }

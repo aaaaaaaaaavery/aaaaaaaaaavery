@@ -1,0 +1,39 @@
+{
+  "leagueName": "NHRA",
+  "leagueKey": "nhra",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Josh Hart made a thunderous debut for John Force Racing at the Gatornationals, leading a sweep of winners that included back-to-back Funny Car champ Chad Green and a birthday victory for Richard Gadson.",
+  "games": [
+    {
+      "id": "harts-hometown-win-victories-by-green-hartford-gadson-kick-off-2026-season",
+      "teams": {
+        "away": "Josh Hart",
+        "home": "Doug Kalitta"
+      },
+      "headline": "Hart dominates Gatornationals debut with John Force Racing to end winless drought",
+      "score": "3.733 - 3.877",
+      "brief": "Josh Hart couldn't have scripted a better start to his tenure with John Force Racing, securing a hometown victory at Gainesville Raceway by taking down reigning champion Doug Kalitta. After qualifying No. 1 for the first time in his career, Hart delivered a blistering 3.733-second pass at 337 mph in the final to claim his first Top Fuel Wally in nearly five years. The win marks a significant turning point for Hart, who looks like an immediate championship threat in his new seat.",
+      "bullets": [
+        "Josh Hart swept the weekend at Gainesville, securing his first career No. 1 qualifier and a track speed record of 337.83 mph.",
+        "Chad Green went back-to-back in Funny Car at the Gatornationals, recording his eighth straight round win at the historic Florida track.",
+        "Matt Hartford snapped a 40-race winless streak in Pro Stock, defeating six-time world champion Greg Anderson in the final round.",
+        "Pro Stock Motorcycle champion Richard Gadson celebrated his birthday with a wire-to-wire final round victory over John Hall.",
+        "Alexis DeJoria reached her first final round in two years during her debut with a new team, ultimately finishing runner-up to Green."
+      ],
+      "context": "The event kicked off NHRA's 75th anniversary season and the quest for the inaugural Diamond Wally trophies.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhra.com/news/2026/hart-s-hometown-win-victories-green-hartford-gadson-kick-2026-season"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "2026 NHRA Gatornationals Sunday Highlights",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
+}

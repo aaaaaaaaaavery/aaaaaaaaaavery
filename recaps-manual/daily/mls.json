@@ -2,399 +2,67 @@
   "leagueName": "MLS",
   "leagueKey": "mls",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Saturday's MLS slate was defined by lopsided home openers and individual masterclasses. New York City FC and Colorado Rapids both put four or more goals past their opponents, while Lionel Messi and Sam Surridge continued their early-season goal-scoring tears. Meanwhile, expansion side San Diego FC remains the talk of the league after securing a perfect 3-0-0 start with another gritty road win.",
+  "leagueBriefing": "It was a night of spoilers in the Eastern Conference as two road teams pulled off clean-sheet upsets. CF Montréal silenced the Red Bulls with a clinical performance led by a former New York man, while Toronto FC found a late spark in Cincinnati to secure their first three points of the season. For both home sides, it was a frustrating lesson in efficiency as they failed to turn possession and shot volume into results.",
   "games": [
     {
-      "id": "nycfc-vs-orlando-20260307",
+      "id": "match-recap-pres-by-provident-bank-red-bulls-fall-to-montreal",
       "teams": {
-        "away": "Orlando City SC",
-        "home": "New York City FC"
+        "away": "CF Montréal",
+        "home": "New York Red Bulls"
       },
-      "headline": "New York City crushes 10-man Orlando in home opener masterclass",
-      "score": "NYC 5 - ORL 0",
-      "brief": "Yankee Stadium was rocking as New York City FC turned their home opener into a statement win. Helped by an early Orlando red card, the Pigeons dominated every facet of the game, led by a vintage performance from Maxi Moralez and a quick-fire second-half brace from Keaton Parks. It was the kind of complete attacking display fans have been waiting for under Pascal Jansen.",
+      "headline": "Wiki Carmona haunts former club as Montréal stuns Red Bulls in Harrison",
+      "score": "New York Red Bulls 0 - 3 CF Montréal",
+      "brief": "CF Montréal pulled off the shock of the weekend, walking into Red Bull Arena and dismantling a New York side that had started the season perfect. The story was all about Wiki Carmona, the former Red Bull midfielder who looked right at home on his old stomping grounds, netting twice to lead the rout. Montréal had struggled mightily in their first two matches, but they found their rhythm early with a Prince Owusu penalty and never looked back, handing New York their first loss of the 2026 campaign.",
       "bullets": [
-        "Maxi Moralez converted a penalty and orchestrated the attack in a 'masterclass' showing.",
-        "Keaton Parks scored twice in five minutes (49', 54') to turn the game into a rout.",
-        "Orlando City played with 10 men for over 70 minutes after an 18th-minute red card.",
-        "NYCFC held 71% possession and limited Orlando to just one shot on target.",
-        "Agustin Ojeda and Nico Fernandez Mercau also found the net in the first half."
+        "Wiki Carmona scored a brace against his former team, including a 44th-minute free kick that caught Ethan Horvath off guard.",
+        "Prince Owusu opened the scoring in the 8th minute with a penalty, marking Montréal's first goal of the 2026 season.",
+        "New York dominated the ball with 67.1% possession in the first half but failed to convert 17-year-old Julian Hall's chances.",
+        "The victory ended a 17-match streak without a clean sheet for CF Montréal, dating back to June 2025.",
+        "Thomas Gillier stood tall for the visitors, making five saves to preserve the shutout."
       ],
-      "context": "The win marks NYCFC's ninth victory in 12 all-time home openers.",
+      "context": "The result marks New York Red Bulls' first loss of the season and snaps Montréal's winless start.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.hudsonriverblue.com/nycfc-vs-orlando-recap-new-york-city-fc-win-2026-home-opener/"
+        "recapUrl": "https://www.newyorkredbulls.com/news/match-recap-pres-by-provident-bank-red-bulls-fall-to-montreal"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "NoNgPsPK9C0",
-          "title": "New York City FC vs. Orlando City | Full Match Highlights | BIZARRE RED CARD!",
-          "url": "https://www.youtube.com/watch?v=NoNgPsPK9C0",
-          "embedUrl": "https://www.youtube.com/embed/NoNgPsPK9C0",
-          "publishedAt": "2026-03-07T22:15:53Z",
-          "matchScore": 121
+          "videoId": "lJRBP93J9SE",
+          "title": "New York Red Bulls vs. CF Montréal | Full Match Highlights",
+          "url": "https://www.youtube.com/watch?v=lJRBP93J9SE",
+          "embedUrl": "https://www.youtube.com/embed/lJRBP93J9SE"
         }
       ]
     },
     {
-      "id": "401803310",
+      "id": "canadian-invasion-fc-cincinnati-falls-at-home-to-toronto",
       "teams": {
-        "away": "Inter Miami CF",
-        "home": "DC United"
+        "away": "Toronto FC",
+        "home": "Cincinnati"
       },
-      "headline": "Messi chip seals gritty road win for Miami in Baltimore",
-      "score": "MIA 2 - DC 1",
-      "brief": "Inter Miami took their talents to Baltimore and walked away with a hard-earned three points against D.C. United. Lionel Messi provided the magic with a signature chip to double the lead in the first half, while Rodrigo De Paul's engine in midfield kept the Herons in control. D.C. United threw the kitchen sink at Miami late, but the visitors held firm to secure their second win of the campaign.",
+      "headline": "Sallói strikes late to give Toronto FC gritty road win in Cincinnati",
+      "score": "Cincinnati 0 - 1 Toronto FC",
+      "brief": "Toronto FC finally found the win column in 2026, using a smash-and-grab strategy to take down FC Cincinnati at TQL Stadium. In a match defined by physical play and defensive grit, Hungarian international Dániel Sallói proved to be the difference-maker, slotting home a rebound in the 86th minute. Cincinnati will be left wondering how they came away empty-handed after firing 15 shots, but Toronto’s backline held firm to earn a vital three points on the road.",
       "bullets": [
-        "Lionel Messi scored his third goal of the season with a tidy chip in the 27th minute.",
-        "Rodrigo De Paul opened the scoring for Miami early in the first half.",
-        "Tai Baribo gave D.C. hope with a 75th-minute strike off a rebound.",
-        "Miami goalkeeper Dayne St. Clair made crucial stops to preserve the narrow lead.",
-        "The match was played in front of a record crowd at M&T Bank Stadium in Baltimore."
+        "Dániel Sallói scored his first goal of the season in the 86th minute, pouncing on a loose ball after a Richie Laryea run.",
+        "Toronto FC’s defense recorded 19 clearances to withstand a heavy Cincinnati attack that held 55.8% possession.",
+        "Luka Gavran earned the clean sheet for Toronto, highlighted by a crucial 67th-minute save on Pavel Bucha.",
+        "The match was a physical affair featuring 25 total fouls and four yellow cards.",
+        "This win marks Toronto's first goal and victory in Cincinnati since the 2020 season."
       ],
-      "context": "Inter Miami moves to 2W-1L-0D, keeping pace at the top of the Eastern Conference.",
+      "context": "Toronto FC secures its first points of the year while Cincinnati suffers a second consecutive scoreless outing.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.intermiamicf.com/news/match-recap-inter-miami-cf-defeats-d-c-united-1-2-on-the-road"
+        "recapUrl": "https://cincinnatisoccertalk.com/2026/03/09/canadian-invasion-fc-cincinnati-falls-at-home-to-toronto/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "ZseyCFmesAM",
+          "videoId": "",
           "title": "",
-          "url": "https://youtu.be/ZseyCFmesAM?si=imlNybYjIe4efUiF",
-          "embedUrl": "https://www.youtube.com/embed/ZseyCFmesAM"
-        }
-      ]
-    },
-    {
-      "id": "atl-vs-rsl-20260307",
-      "teams": {
-        "away": "Real Salt Lake",
-        "home": "Atlanta United"
-      },
-      "headline": "Real Salt Lake's first-half blitz stuns Atlanta at the Benz",
-      "score": "RSL 3 - ATL 2",
-      "brief": "Real Salt Lake proved they can be road warriors, exploding for three goals in a 20-minute first-half window to down Atlanta United. Sergi Solans and Aiden Hezarkhani spearheaded the youth-led charge, while the RSL defense weathered a late storm in Georgia to secure a massive three points. For Atlanta, the slow start to 2026 continues as they remain winless through three matches.",
-      "bullets": [
-        "Sergi Solans scored his first career MLS goal in the 24th minute.",
-        "Aiden Hezarkhani and Zavier Gozo added goals to give RSL a 3-1 halftime lead.",
-        "Alexey Miranchuk and a 74th-minute strike provided the scoring for Atlanta.",
-        "RSL goalkeeper Rafael Cabral made several key saves to deny Atlanta an equalizer.",
-        "Griffin Dillon became the eighth RSL player to make his club debut this season."
-      ],
-      "context": "Atlanta United drops to 0-3-0, while RSL climbs into the top five in the West.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.rsl.com/news/three-goals-in-a-20-minute-span-rsl-dominates-first-half-takes-three-road-points-at-atlanta"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "syj2zrCOaAY",
-          "title": "Atlanta United vs. Real Salt Lake | Full Match Highlights | 5-GOAL THRILLER!",
-          "url": "https://www.youtube.com/watch?v=syj2zrCOaAY",
-          "embedUrl": "https://www.youtube.com/embed/syj2zrCOaAY",
-          "publishedAt": "2026-03-08T03:20:40Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "clt-vs-atx-20260307",
-      "teams": {
-        "away": "Austin FC",
-        "home": "Charlotte FC"
-      },
-      "headline": "Pep Biel brace powers Charlotte past short-handed Austin",
-      "score": "CLT 3 - ATX 1",
-      "brief": "Austin FC's night went south quickly in North Carolina after an early red card forced them to play with 10 men for over an hour. Charlotte FC eventually made the advantage count, with Pep Biel scoring twice in the second half to break a 1-1 deadlock. Despite a freak own goal keeping Austin in the hunt for a while, the pressure from Charlotte's star-studded attack proved too much to handle.",
-      "bullets": [
-        "Pep Biel scored the game-winner in the 68th minute and added a stoppage-time insurance goal.",
-        "Austin FC was reduced to 10 men in just the 25th minute.",
-        "Idan Toklomati opened the scoring for Charlotte in the 29th minute.",
-        "A Morris Agyemang own goal briefly leveled the score for Austin in the 31st minute.",
-        "Charlotte's win featured assists from high-profile names Liel Abada and Wilfried Zaha."
-      ],
-      "context": "The loss marks Austin's first away defeat of the 2026 season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.austinfc.com/news/match-report-charlotte-fc-vs-austin-fc-march-7-2026"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "dRUuY4unR4Y",
-          "title": "Charlotte FC vs. Austin FC | Full Match Highlights | 4-GOAL BATTLE!",
-          "url": "https://www.youtube.com/watch?v=dRUuY4unR4Y",
-          "embedUrl": "https://www.youtube.com/embed/dRUuY4unR4Y",
-          "publishedAt": "2026-03-08T03:27:04Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "skc-vs-sdfc-20260307",
-      "teams": {
-        "away": "San Diego FC",
-        "home": "Sporting KC"
-      },
-      "headline": "Perfect San Diego FC stays atop MLS with gritty win in KC",
-      "score": "SDFC 1 - SKC 0",
-      "brief": "San Diego FC's dream start to life in MLS shows no signs of slowing down. The expansion side traveled to Kansas City and ground out a 1-0 victory thanks to a sensational first-half strike from Anders Dreyer. The 'Chrome-and-Azul' defense was once again impenetrable, securing their third straight win to open the season and proving they belong among the league's early elite.",
-      "bullets": [
-        "Anders Dreyer scored the lone goal in the 39th minute with a long-range 'banger'.",
-        "San Diego FC moves to a perfect 3-0-0 record to start their inaugural season.",
-        "This was SDFC's first-ever road victory in franchise history.",
-        "Sporting KC dominated large stretches of play but couldn't find a way past the SDFC backline.",
-        "The win sets up a high-stakes Champions Cup matchup for San Diego later this week."
-      ],
-      "context": "SDFC becomes one of the few expansion teams to ever win their first three MLS matches.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.sandiegofc.com/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "8RJWqEkiqHU",
-          "title": "Sporting Kansas City vs. San Diego FC | Full Match Highlights",
-          "url": "https://www.youtube.com/watch?v=8RJWqEkiqHU",
-          "embedUrl": "https://www.youtube.com/embed/8RJWqEkiqHU",
-          "publishedAt": "2026-03-08T03:52:32Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "nsh-vs-min-20260307",
-      "teams": {
-        "away": "Minnesota United",
-        "home": "Nashville SC"
-      },
-      "headline": "Surridge brace keeps Nashville singing in dominant home win",
-      "score": "NSH 3 - MIN 1",
-      "brief": "Sam Surridge is making an early case for the Golden Boot, bagging a brace at GEODIS Park to lead Nashville SC past Minnesota United. After missing time with illness, Surridge returned with a vengeance, scoring twice to reach a league-leading four goals on the season. Winter signing Cristian Espinoza also got in on the act with his first goal for the club, as Nashville maintained their unbeaten start.",
-      "bullets": [
-        "Sam Surridge scored twice, marking his second brace in just three games.",
-        "Cristian Espinoza scored his first goal in Nashville colors.",
-        "Nashville has now scored 17 home goals since the start of 2025, a league high.",
-        "Minnesota United struggled to handle Nashville's high-pressing front three.",
-        "Nashville remains unbeaten through the first three weeks of the 2026 season."
-      ],
-      "context": "Surridge leads the early Golden Boot race with 4 goals in 2 league matches.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.mlssoccer.com/news/nashville-sc-stars-power-unbeaten-start-with-relentless-mentality"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "oglsRsEL-fs",
-          "title": "Nashville SC vs. Minnesota United | Full Match Highlights | Surridge BRACE and Triantis BANGER!",
-          "url": "https://www.youtube.com/watch?v=oglsRsEL-fs",
-          "embedUrl": "https://www.youtube.com/embed/oglsRsEL-fs",
-          "publishedAt": "2026-03-08T04:17:07Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "col-vs-lax-20260307",
-      "teams": {
-        "away": "LA Galaxy",
-        "home": "Colorado Rapids"
-      },
-      "headline": "Navarro brace leads Colorado's second-half rout of 10-man Galaxy",
-      "score": "COL 4 - LA 1",
-      "brief": "The Colorado Rapids turned a tight game into a blowout, scoring three times in the final 15 minutes to crush the 10-man LA Galaxy. Rafael Navarro was the hero of the night, bagging a late brace to open his 2026 account, while Alexis Manyoma netted his first goal for the club. The Galaxy had fought back to level the score early in the second half but crumbled under pressure following a red card.",
-      "bullets": [
-        "Rafael Navarro scored in the 85th and 89th minutes to seal the rout.",
-        "Alexis Manyoma scored his first Rapids goal in the 75th minute to break the tie.",
-        "The LA Galaxy played with 10 men for a significant portion of the second half.",
-        "Joao Klauss scored the lone goal for the Galaxy in the 56th minute.",
-        "Colorado remains unbeaten at home, moving to 2-0-1 on the season."
-      ],
-      "context": "The loss was the LA Galaxy's first defeat of the 2026 season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.coloradorapids.com/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "XNrtuo7q2es",
-          "title": "Colorado Rapids vs. LA Galaxy | Full Match Highlights | 5-GOALS!",
-          "url": "https://www.youtube.com/watch?v=XNrtuo7q2es",
-          "embedUrl": "https://www.youtube.com/embed/XNrtuo7q2es",
-          "publishedAt": "2026-03-08T05:01:39Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "lafc-vs-dal-20260307",
-      "teams": {
-        "away": "FC Dallas",
-        "home": "Los Angeles FC"
-      },
-      "headline": "Martinez strike and Lloris heroics keep LAFC perfect at home",
-      "score": "LAFC 1 - DAL 0",
-      "brief": "It wasn't the most high-scoring affair at BMO Stadium, but LAFC got the job done with a narrow 1-0 win over FC Dallas. David Martinez provided the breakthrough early in the second half, and veteran keeper Hugo Lloris ensured the points stayed in Los Angeles with a massive stoppage-time save. LAFC continues to look like a fortress at home, while Dallas leaves frustrated after failing to capitalize on their chances.",
-      "bullets": [
-        "David Martinez scored the game's only goal in the 55th minute.",
-        "Hugo Lloris made a game-saving stop in the 96th minute to preserve the clean sheet.",
-        "LAFC held the majority of possession but struggled to beat Dallas keeper Collodi.",
-        "The win keeps LAFC among the top teams in the Western Conference.",
-        "Dallas has now lost back-to-back games after an opening day win."
-      ],
-      "context": "LAFC maintains a 100% home record so far in the 2026 season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.lafc.com/video/highlights-lafc-1-0-fc-dallas-march-7-2026"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "_B7hiq1PoXY",
-          "title": "LAFC vs. FC Dallas | Full Match Highlights | TIGHT BATTLE!",
-          "url": "https://www.youtube.com/watch?v=_B7hiq1PoXY",
-          "embedUrl": "https://www.youtube.com/embed/_B7hiq1PoXY",
-          "publishedAt": "2026-03-08T06:11:04Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "por-vs-van-20260307",
-      "teams": {
-        "away": "Vancouver Whitecaps",
-        "home": "Portland Timbers"
-      },
-      "headline": "Whitecaps spoil Timbers' night in Cascadia Cup opener",
-      "score": "VAN 4 - POR 1",
-      "brief": "The Vancouver Whitecaps dominated the first installment of the 2026 Cascadia Cup, putting four past a struggling Portland Timbers side. Brian White led the charge with a goal in each half, while the Whitecaps' clinical finishing made the difference at Providence Park. The only bright spot for Portland was a debut goal from 18-year-old academy product Eric Izoita, who became the youngest scorer in club history.",
-      "bullets": [
-        "Brian White scored twice (21', 87') to lead the Vancouver attack.",
-        "Eric Izoita (18 years, 180 days) became Portland's youngest-ever goal scorer.",
-        "Tristan Blackmon and Sebastian Berhalter also scored for the visitors.",
-        "Vancouver has won three straight matches to start the 2026 season.",
-        "Portland falls to 1-2-0 after a disappointing showing in their rivalry match."
-      ],
-      "context": "Vancouver takes an early lead in the Cascadia Cup standings with 9 points from 3 games.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.timbers.com/news/recap-timbers-lose-to-rival-whitecaps-fc"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "zXqJv6MzhuM",
-          "title": "Portland Timbers vs. Vancouver Whitecaps FC | Full Match Highlights | Brian White BRACE!",
-          "url": "https://www.youtube.com/watch?v=zXqJv6MzhuM",
-          "embedUrl": "https://www.youtube.com/embed/zXqJv6MzhuM",
-          "publishedAt": "2026-03-08T06:08:24Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "stl-vs-sea-20260307",
-      "teams": {
-        "away": "Seattle Sounders FC",
-        "home": "St. Louis City SC"
-      },
-      "headline": "Seattle snaps road drought with defensive masterclass in St. Louis",
-      "score": "SEA 1 - STL 0",
-      "brief": "The Seattle Sounders found their road legs in St. Louis, grinding out a 1-0 win behind a stellar performance from goalkeeper Andrew Thomas. A second-half strike from Kalani Kossa-Rienzi was all the Rave Green needed, but the story was the defense, which faced 16 shots and held firm to secure a clean sheet. It's a vital three points for Seattle as they head into a busy stretch of Champions Cup play.",
-      "bullets": [
-        "Kalani Kossa-Rienzi scored the winning goal in the 47th minute.",
-        "Goalkeeper Andrew Thomas finished with 5 saves and his second clean sheet of 2026.",
-        "The Sounders defense recorded 23 tackles and 37 clearances in the match.",
-        "St. Louis City outshot Seattle 16-7 but couldn't find the back of the net.",
-        "The win is Seattle's first road victory of the 2026 MLS season."
-      ],
-      "context": "Seattle carries momentum into their CCC Round of 16 match vs. Vancouver.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.soundersfc.com/news/recap-sounders-secure-first-road-match-win-of-the-season"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "2cIrIOH3nC8",
-          "title": "St. Louis CITY SC vs. Seattle Sounders FC | Full Match Highlights",
-          "url": "https://www.youtube.com/watch?v=2cIrIOH3nC8",
-          "embedUrl": "https://www.youtube.com/embed/2cIrIOH3nC8",
-          "publishedAt": "2026-03-08T04:18:23Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "clb-vs-chi-20260307",
-      "teams": {
-        "away": "Chicago Fire FC",
-        "home": "Columbus Crew"
-      },
-      "headline": "Chicago Fire frustrate Crew in scoreless home opener at Lower.com Field",
-      "score": "CLB 0 - CHI 0",
-      "brief": "The Columbus Crew's home opener didn't go quite as planned, as the Chicago Fire put on a defensive clinic to escape with a 0-0 draw. Fire goalkeeper Chris Brady was the standout, earning his second straight clean sheet with a series of crucial saves. The Crew dominated possession but lacked the clinical edge needed to break down a resilient Chicago backline in a match that saw tempers flare late.",
-      "bullets": [
-        "Chris Brady recorded his second consecutive shutout with 3 saves.",
-        "Columbus falls to 0-1-2 on the season after failing to score at home.",
-        "Five yellow cards were issued in the final 13 minutes of a physical match.",
-        "This was the 24th draw in the 80th meeting between these long-time rivals.",
-        "Columbus Crew held a significant edge in possession but only put 2 shots on target."
-      ],
-      "context": "Chicago remains unbeaten in their last two matches with consecutive shutouts.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.chicagofirefc.com/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "0wquHky5IOo",
-          "title": "Columbus Crew vs. Chicago Fire FC | Full Match Highlights | TIGHT Walmart Saturday Showdown!",
-          "url": "https://www.youtube.com/watch?v=0wquHky5IOo",
-          "embedUrl": "https://www.youtube.com/embed/0wquHky5IOo",
-          "publishedAt": "2026-03-08T03:24:09Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "phi-vs-sj-20260307",
-      "teams": {
-        "away": "SJ Earthquakes",
-        "home": "Philadelphia Union"
-      },
-      "headline": "Quakes stay unbeaten as Union fall in frustrating home showing",
-      "score": "PHI 0 - SJ 1",
-      "brief": "The San Jose Earthquakes continue to be the surprise package of the West, traveling to Subaru Park and walking away with a 1-0 win. In a match dominated by physical play, the Quakes found the decisive breakthrough to keep their unbeaten start alive. For Philadelphia, it was a night of missed opportunities and growing frustration as they struggled to break down a disciplined San Jose unit.",
-      "bullets": [
-        "San Jose remains unbeaten through the first three weeks of the season.",
-        "Philadelphia Union suffered their first home loss of the 2026 campaign.",
-        "The match featured physical defensive play from both sides in front of the Philly crowd.",
-        "San Jose has now secured back-to-back results against Eastern Conference opponents.",
-        "The Union have struggled to find consistent scoring early in the season."
-      ],
-      "context": "San Jose moves into the top tier of the Western Conference standings.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.philadelphiaunion.com/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "4b-b9Pt5EQE",
-          "title": "Philadelphia Union vs. San Jose Earthquakes | Full Match Highlights",
-          "url": "https://www.youtube.com/watch?v=4b-b9Pt5EQE",
-          "embedUrl": "https://www.youtube.com/embed/4b-b9Pt5EQE",
-          "publishedAt": "2026-03-08T03:03:27Z",
-          "matchScore": 100
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }

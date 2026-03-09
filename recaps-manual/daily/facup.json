@@ -2,104 +2,98 @@
   "leagueName": "FA Cup",
   "leagueKey": "facup",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The FA Cup fifth round delivered high drama on Saturday as the Premier League's heavyweights narrowly avoided massive upsets. While Manchester City flexed their squad depth to overcome an early deficit at St James' Park, Arsenal and Chelsea were pushed to the absolute limit by lower-league opposition. Wrexham, in particular, came agonizingly close to a 'Hollywood' penalty shootout before Chelsea's extra-time quality finally told.",
+  "leagueBriefing": "The FA Cup fifth round delivered late drama and a significant upset on March 8th. Southampton edged past Fulham with a stoppage-time penalty, while League One's struggling Port Vale heroically dumped Premier League Sunderland out thanks to an early goal and resolute defending. Leeds United, however, faced no such trouble, cruising past Norwich City to book their quarter-final spot.",
   "games": [
     {
-      "id": "63908508",
+      "id": "554793",
       "teams": {
-        "away": "Manchester City",
-        "home": "Newcastle United"
+        "away": "Southampton",
+        "home": "Fulham"
       },
-      "headline": "Marmoush double seals City comeback as Guardiola's men march on",
-      "score": "NEW 1 - MCI 3",
-      "brief": "Manchester City's quest for another trophy remains on track after a clinical second-half display on Tyneside. Despite Pep Guardiola making ten changes to his lineup and falling behind to an early Harvey Barnes strike, City never panicked. A fortunate Savinho equalizer before the break set the stage for Omar Marmoush to take over; the Egyptian forward continued his incredible scoring record against the Magpies with two sharp finishes to deflate the St James' Park crowd.",
+      "headline": "Stewart's late penalty sends Southampton past Fulham after VAR drama",
+      "score": "Fulham 0 - 1 Southampton",
+      "brief": "Southampton snatched a quarter-final spot with a dramatic 90+1' Ross Stewart penalty after Fulham had a bizarre goal disallowed in the first half due to an early whistle, adding to their VAR frustrations. The Championship side defended resolutely and took their late chance to progress, making it a frustrating afternoon for the Premier League hosts.",
       "bullets": [
-        "Omar Marmoush scored twice (47', 65') to bring his tally to 7 goals in 13 months against Newcastle.",
-        "Savinho scored a bizarre equalizer in the 39th minute when the ball deflected in off his standing leg.",
-        "Harvey Barnes had briefly given Newcastle hope with a clinical 18th-minute opener.",
-        "Man City dominated the stats with 63% possession and 3.2 expected goals (xG).",
-        "Tino Livramento made his 100th appearance for Newcastle as a late substitute."
+        "Ross Stewart converted a penalty in the 91st minute to secure the win.",
+        "Fulham had a goal disallowed in the 18th minute after the referee blew before the ball crossed the line.",
+        "Championship side Southampton knocked out Premier League opposition away from home.",
+        "The win marks 50 years since Southampton's famous 1976 FA Cup win as a second-tier team.",
+        "Fulham made nine changes to their starting lineup for the cup clash."
       ],
-      "context": "City advances to the quarter-finals as they continue to juggle four active competitions.",
+      "context": "Southampton advance to the FA Cup quarter-finals, continuing their status as potential giant-killers.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mancity.com/news/mens/newcastle-united-v-manchester-city-fa-cup-report-march-2026-63908508"
+        "recapUrl": "https://www.skysports.com/football/fulham-vs-southampton/report/554793"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "9pRYe7qXiFY",
-          "title": "Marmoush's incredible DOUBLE ✌️ | Newcastle United (1-3) Manchester City | Emirates FA Cup 2025-26",
-          "url": "https://www.youtube.com/watch?v=9pRYe7qXiFY",
-          "embedUrl": "https://www.youtube.com/embed/9pRYe7qXiFY",
-          "publishedAt": "2026-03-08T12:00:16Z",
-          "matchScore": 100
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260307-wrexham-chelsea",
+      "id": "port-vale-v-sunderland-fa-cup-fifth-round-live",
       "teams": {
-        "away": "Chelsea",
-        "home": "Wrexham"
+        "away": "Sunderland",
+        "home": "Port Vale"
       },
-      "headline": "Chelsea survive Wrexham scare in extra-time thriller at the Racecourse",
-      "score": "WRE 2 - CHE 4",
-      "brief": "Hollywood-owned Wrexham came inches away from a historic upset, pushing a much-changed Chelsea side all the way to extra time. The Red Dragons led twice through Sam Smith and Callum Doyle, but their dream was undone by a late red card to George Dobson and the clinical finishing of Chelsea's second-half substitutes. A late Lewis Brunt equalizer for Wrexham was ruled out by VAR for a marginal offside, finally allowing the Blues to breathe easy and secure their spot in the final eight.",
+      "headline": "Giant-killing Port Vale stun Sunderland to reach quarter-finals",
+      "score": "Port Vale 1 - 0 Sunderland",
+      "brief": "League One's bottom club Port Vale produced a massive FA Cup upset, beating Premier League Sunderland 1-0 at Vale Park. Ben Waine's 28th-minute strike was enough for the Valiants, who defended bravely and rode their luck at times, with keeper Joe Gauci making key saves to secure a memorable victory for the home faithful.",
       "bullets": [
-        "Alejandro Garnacho and Joao Pedro scored in extra time to break Wrexham hearts.",
-        "Wrexham's George Dobson was sent off in stoppage time following a VAR review for a reckless challenge.",
-        "Sam Smith opened the scoring in the 18th minute to ignite hopes of a massive upset.",
-        "Lewis Brunt thought he had forced penalties in the 114th minute, but his header was ruled offside by an ankle.",
-        "Chelsea manager Liam Rosenior made nine changes to his side ahead of a midweek Champions League clash."
+        "Ben Waine scored the only goal in the 28th minute to secure the upset.",
+        "Port Vale, currently bottom of League One, defeated Premier League Sunderland.",
+        "It is Port Vale's fourth successive 1-0 home win in this season's FA Cup campaign.",
+        "Port Vale reach the FA Cup quarter-finals for the first time since 1954.",
+        "Goalkeeper Joe Gauci was the hero with several point-blank saves late in the game."
       ],
-      "context": "Chelsea barely avoids a giant-killing to keep their sole domestic trophy hope alive.",
+      "context": "Port Vale cause the shock of the round to advance to the FA Cup quarter-finals.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.nbcsports.com/soccer/news/wrexham-vs-chelsea-recap-final-score-fa-cup-extra-time-video-highlights-analysis"
+        "recapUrl": "https://www.theguardian.com/football/live/2026/mar/08/port-vale-v-sunderland-fa-cup-fifth-round-live"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "qgJlRZMLQOQ",
-          "title": "Garnacho grabs extra-time WINNER for Blues 🔵 | Wrexham AFC (2-4) Chelsea | Emirates FA Cup 2025-26",
-          "url": "https://www.youtube.com/watch?v=qgJlRZMLQOQ",
-          "embedUrl": "https://www.youtube.com/embed/qgJlRZMLQOQ",
-          "publishedAt": "2026-03-08T12:01:29Z",
-          "matchScore": 100
+          "videoId": "StoB04RVUkk",
+          "title": "Port Vale 1-0 Sunderland | FA Cup Highlights",
+          "url": "https://www.youtube.com/watch?v=StoB04RVUkk",
+          "embedUrl": "https://www.youtube.com/embed/StoB04RVUkk"
         }
       ]
     },
     {
-      "id": "20260307-mansfield-arsenal",
+      "id": "emirates-fa-cup-report-leeds-united-3-0-norwich-city",
       "teams": {
-        "away": "Arsenal",
-        "home": "Mansfield Town"
+        "away": "Norwich City",
+        "home": "Leeds United"
       },
-      "headline": "Eze thunderbolt rescues Arsenal from Mansfield upset bid",
-      "score": "MAN 1 - ARS 2",
-      "brief": "Arsenal kept their quadruple dreams alive, but only just. Facing a raucous atmosphere at Field Mill, the Premier League leaders struggled to impose themselves on third-tier Mansfield Town. Noni Madueke's opener was canceled out by a spirited Will Evans strike, leaving the match on a knife-edge. It took a moment of individual brilliance from substitute Eberechi Eze, who smashed home a winner just minutes after coming on, to prevent a demoralizing fifth-round exit for Mikel Arteta's squad.",
+      "headline": "Leeds cruise into FA Cup quarter-finals with comfortable Norwich win",
+      "score": "Leeds United 3 - 0 Norwich City",
+      "brief": "Leeds United booked their place in the FA Cup quarter-finals with a clinical 3-0 victory over Norwich City at Elland Road. Goals from Sean Longstaff and Gabriel Gudmundsson in the first half put Leeds firmly in control, and Joël Piroe sealed the win late on as Daniel Farke's side eased into the last eight with a professional performance.",
       "bullets": [
-        "Eberechi Eze scored the match-winner in the 66th minute with a strike from the edge of the box.",
-        "Will Evans leveled for Mansfield in the 50th minute after a loose pass from Arsenal's backline.",
-        "Arsenal boss Mikel Arteta made nine changes, resting stars like Bukayo Saka and Martin Odegaard.",
-        "Mansfield matched Arsenal's 19 shots and created nearly 2.0 expected goals (xG).",
-        "Teenager Max Dowman made an impressive appearance for the Gunners in the midfield."
+        "Sean Longstaff opened the scoring with a volley in the 32nd minute.",
+        "Gabriel Gudmundsson scored his first goal for Leeds United in the 43rd minute.",
+        "Joël Piroe added a third in the 85th minute to wrap up the result.",
+        "Leeds had a goal disallowed by VAR for a marginal handball in the build-up.",
+        "Leeds reach the FA Cup quarter-finals for the first time in over 20 years (since 2003)."
       ],
-      "context": "Arsenal reaches the quarter-finals for the first time since their 2020 triumph.",
+      "context": "Leeds United advance to the FA Cup quarter-finals as strong contenders for the trophy.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.beinsports.com/en-mena/football/fa-cup/articles-video/arsenal-survive-fa-cup-scare-to-keep-quadruple-dream-alive-2026-03-07"
+        "recapUrl": "https://www.leedsunited.com/en/news/emirates-fa-cup-report-leeds-united-3-0-norwich-city"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "C2fihT35IrU",
-          "title": "Eberechi Eze POWERS Gunners through 💪 | Mansfield Town (1-2) Arsenal | Emirates FA Cup 2025-26",
-          "url": "https://www.youtube.com/watch?v=C2fihT35IrU",
-          "embedUrl": "https://www.youtube.com/embed/C2fihT35IrU",
-          "publishedAt": "2026-03-08T12:00:27Z",
-          "matchScore": 100
+          "videoId": "S3QNBITqJEY",
+          "title": "Leeds United v Norwich City | Match Highlights | Emirates FA Cup",
+          "url": "https://www.youtube.com/watch?v=S3QNBITqJEY",
+          "embedUrl": "https://www.youtube.com/embed/S3QNBITqJEY"
         }
       ]
     }

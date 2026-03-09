@@ -2,135 +2,129 @@
   "leagueName": "LaLiga",
   "leagueKey": "laliga",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Saturday in LaLiga was defined by late-game heroics and teenage brilliance. Barcelona maintained their cushion at the top thanks to a wonder strike from Lamine Yamal at San Mamés, while Atlético Madrid snatched a vital victory in the dying minutes against Real Sociedad. Elsewhere, Girona's European push hit a minor snag as they were forced to settle for a dramatic point at Levante.",
+  "leagueBriefing": "It was a day of home-turf heroics across Spain as three hosts secured vital victories to shake up the middle of the table. Villarreal and Getafe both utilized clinical set-piece execution to down their opponents, while Valencia survived a five-goal thriller at the Mestalla to keep their European dreams flickering. The only blemish for home fans came in Seville, where a wonder-strike from Rayo Vallecano forced a stalemate that left both sides looking over their shoulders at the relegation zone.",
   "games": [
     {
-      "id": "osasuna-vs-mallorca-20260307",
+      "id": "villarreal-elche-laliga-report-2026-03-08",
       "teams": {
-        "away": "Mallorca",
-        "home": "Osasuna"
+        "away": "Elche",
+        "home": "Villarreal"
       },
-      "headline": "Budimir rescues point for Osasuna in chaotic 10-man stalemate",
-      "score": "OSA 2 - MLL 2",
-      "brief": "Osasuna and Mallorca played out a breathless draw at El Sadar that saw both teams finish with 10 men and a flurry of late goals. Vedat Muriqi looked to have secured a massive road win for Mallorca with a clinical brace, but Osasuna refused to go quietly. Ante Budimir turned into the local hero, nodding home a dramatic equalizer deep in stoppage time to ensure the spoils were shared in a match that felt more like a street fight than a football game.",
+      "headline": "Buchanan blast keeps Villarreal level with Atletico in Champions League race",
+      "score": "Villarreal 2 - 1 Elche",
+      "brief": "Villarreal continued their impressive surge toward a top-four finish, grinding out a narrow win over a resilient Elche side. Tajon Buchanan provided the spark with a clinical finish to open the scoring, and Santiago Mouriño doubled the advantage to put the Yellow Submarine in the driver's seat. Though Elche pulled one back late through Andrea Silva to set up a nervy finale, the hosts held firm to stay neck-and-neck with Atletico Madrid in the high-stakes battle for the final Champions League spot.",
       "bullets": [
-        "Vedat Muriqi scored twice (35', 61') to put Mallorca in a commanding position.",
-        "Kike Barja ignited the comeback with a strike in the 89th minute.",
-        "Ante Budimir headed in the equalizer in the 4th minute of added time.",
-        "Both sides saw red cards in a high-tension affair that featured 7 bookings.",
-        "Osasuna dominated the shot count 22-8 but struggled with clinical finishing until the death."
+        "Tajon Buchanan opened the scoring with a powerful strike after 15 minutes of sustained pressure.",
+        "Pape Gueye earned Man of the Match honors for a dominant display in the heart of the Villarreal midfield.",
+        "Andrea Silva scored a 78th-minute header for Elche, their only shot on target in the second half.",
+        "The win marks Villarreal’s third consecutive home victory, keeping them level on points for third place.",
+        "Villarreal defender Santiago Mouriño netted his first goal of the season to make it 2-0."
       ],
-      "context": "The draw keeps both teams entrenched in the mid-table battle, separated by just a few points.",
+      "context": "The victory keeps Villarreal firmly in the hunt for a Champions League spot, tied on points with third-place Atletico Madrid.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.foxsports.com/soccer/la-liga-osasuna-vs-mallorca-mar-07-2026-game-boxscore-632344?tab=boxscore"
+        "recapUrl": "https://www.flashscore.com/news/villarreal-elche-laliga-report-2026-03-08/vgCpFnxB/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "8akfA36c254",
-          "title": "CA OSASUNA 2 - 2 RCD MALLORCA | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=8akfA36c254",
-          "embedUrl": "https://www.youtube.com/embed/8akfA36c254",
-          "publishedAt": "2026-03-07T15:15:30Z",
-          "matchScore": 100
+          "videoId": "mNoZZDlgRps",
+          "title": "Villarreal vs. Elche | LALIGA Highlights",
+          "url": "https://www.youtube.com/watch?v=mNoZZDlgRps",
+          "embedUrl": "https://www.youtube.com/embed/mNoZZDlgRps"
         }
       ]
     },
     {
-      "id": "levante-vs-girona-20260307",
+      "id": "getafe-v-real-betis-match-highlights",
       "teams": {
-        "away": "Girona",
-        "home": "Levante"
+        "away": "Real Betis",
+        "home": "Getafe"
       },
-      "headline": "Girona salvages late point at Levante after VAR drama",
-      "score": "LEV 1 - LÉV 1",
-      "brief": "Girona’s high-flying season faced a stern test in Valencia as they narrowly avoided defeat against a gritty Levante side. The match looked set for a home victory until the 93rd minute when Joel Roca unleashed a strike from distance that required a lengthy VAR review to stand. It was a cruel blow for Levante, who had defended heroically, but a vital point for a Girona side that refused to stop knocking on the door.",
+      "headline": "Getafe muscle past disciplined-depleted Betis in Coliseum clash",
+      "score": "Getafe 2 - 0 Real Betis",
+      "brief": "Getafe used their trademark physical style to rattle Real Betis and secure a crucial home win. The match swung on Getafe's aerial dominance, with Kiko Femenía breaking the deadlock following a monstrous long throw-in. As Betis grew increasingly frustrated with the officiating and Getafe's aggressive pressing, Martín Satriano capitalized on a defensive lapse to chip the goalkeeper and seal the points. It was a tactical masterclass in disruption that left a creative Betis side with no answers.",
       "bullets": [
-        "Joel Roca scored the dramatic 93rd-minute equalizer from outside the box.",
-        "Girona's Axel Witsel rattled the crossbar from close range just minutes before the goal.",
-        "Levante goalkeeper Mathew Ryan made several world-class saves to keep his side ahead for 90 minutes.",
-        "The match ended in a yellow card flurry as Levante's Kervin Arriaga was booked in the final seconds.",
-        "Girona controlled 62% of the ball but struggled to break down Levante's low block."
+        "Kiko Femenía scored the opener in the 35th minute after a long throw caused chaos in the Betis box.",
+        "Martín Satriano doubled the lead with a clever lobbed finish over the oncoming Álvaro Valles.",
+        "Real Betis failed to register a shot on target in the final 30 minutes despite trailing by two.",
+        "Getafe's David Soria recorded his 6th clean sheet of the season with two critical first-half saves.",
+        "Real Betis were missing key playmaker Giovani Lo Celso, who remained out with a thigh injury."
       ],
-      "context": "Girona remains in the hunt for a Champions League spot despite the dropped points.",
+      "context": "Getafe’s win provides a major boost in their bid to distance themselves from the bottom three.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mykhel.com/football/la-liga-levante-vs-girona-match-2572198/"
+        "recapUrl": "https://www.beinsports.com/en-mena/football/la-liga/getafe-vs-real-betis-2026-03-08"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "i-qkf2cdPTQ",
-          "title": "LEVANTE UD 1 - 1 GIRONA FC | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=i-qkf2cdPTQ",
-          "embedUrl": "https://www.youtube.com/embed/i-qkf2cdPTQ",
-          "publishedAt": "2026-03-07T17:25:08Z",
-          "matchScore": 100
+          "videoId": "UBetRuKFwTc",
+          "title": "Getafe v Real Betis | LaLiga 25/26 | Match Highlights",
+          "url": "https://www.youtube.com/watch?v=UBetRuKFwTc",
+          "embedUrl": "https://www.youtube.com/embed/UBetRuKFwTc"
         }
       ]
     },
     {
-      "id": "atletico-madrid-vs-real-sociedad-20260307",
+      "id": "sevilla-rayo-vallecano-resumen-y-goles",
       "teams": {
-        "away": "Real Sociedad",
-        "home": "Atlético Madrid"
+        "away": "Rayo Vallecano",
+        "home": "Sevilla"
       },
-      "headline": "Nico González header seals dramatic late win for Atleti",
-      "score": "ATM 3 - RSO 2",
-      "brief": "In a preview of the upcoming Copa del Rey final, Atlético Madrid and Real Sociedad delivered a classic at the Metropolitano. The lead changed hands in a back-and-forth thriller that saw world-class strikes from Mikel Oyarzabal and Alexander Sørloth. However, it was young midfielder Nico González who had the final word, rising highest in the 81st minute to power home a header that kept Diego Simeone’s side firmly in the title conversation.",
+      "headline": "Espino stunner earns Rayo a point as Sevilla's home woes continue",
+      "score": "Sevilla 1 - 1 Rayo Vallecano",
+      "brief": "Sevilla and Rayo Vallecano shared the spoils in a high-tension encounter at the Ramón Sánchez Pizjuán that did little to ease the relegation fears of either club. Sevilla looked to be in control early when Alexis Sánchez provided a clinical spark, but the stadium was stunned by a second-half Pacha Espino rocket that brought Rayo level. Both teams appeared more afraid of losing than desperate to win in the closing stages, resulting in a cagey stalemate that leaves Sevilla hovering dangerously close to the drop zone.",
       "bullets": [
-        "Nico González scored twice, including the 81st-minute game-winner.",
-        "Alexander Sørloth opened the scoring just 5 minutes into the match.",
-        "Mikel Oyarzabal leveled the score with a 'guided missile' of a long-range strike in the 68th minute.",
-        "Antoine Griezmann provided a 'magical' assist for Atleti’s second goal.",
-        "The victory served as a psychological boost ahead of their April 18th cup final meeting."
+        "Pacha Espino's equalizing goal was a 25-yard thunderbolt that left the keeper with no chance.",
+        "Sevilla veteran Alexis Sánchez continues his late-career resurgence with a first-half opener.",
+        "Rayo Vallecano's Jorge de Frutos was held scoreless after entering the match as the team's top scorer.",
+        "Sevilla has now failed to win any of their last four home matches in LaLiga.",
+        "Augusto Batalla made four saves for Rayo to ensure they left Seville with a vital point."
       ],
-      "context": "The win solidifies Atleti's position in the top three as they turn focus to the Champions League.",
+      "context": "A crucial point for Rayo Vallecano in the survival race, while Sevilla remains mired in a disappointing mid-table slump.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.beinsports.com/en-us/soccer/la-liga/articles/-video-all-the-goals-from-atl%C3%A9tico-madrid-vs-real-sociedad-in-la-liga-2026-03-07"
+        "recapUrl": "https://as.com/futbol/videos/resumen-y-goles-del-sevilla-vs-rayo-vallecano-jornada-27-de-laliga-ea-sports-f202603-v/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "7PATWAwB82s",
-          "title": "ATLÉTICO DE MADRID 3 - 2 REAL SOCIEDAD | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=7PATWAwB82s",
-          "embedUrl": "https://www.youtube.com/embed/7PATWAwB82s",
-          "publishedAt": "2026-03-07T19:51:22Z",
-          "matchScore": 100
+          "videoId": "cjd_9o1K14Y",
+          "title": "Sevilla 1-1 Rayo Vallecano | LaLiga 25/26 Match Highlights",
+          "url": "https://www.youtube.com/watch?v=cjd_9o1K14Y",
+          "embedUrl": "https://www.youtube.com/embed/cjd_9o1K14Y"
         }
       ]
     },
     {
-      "id": "athletic-club-vs-barcelona-20260307",
+      "id": "valencia-v-alaves-resumen-mestalla",
       "teams": {
-        "away": "Barcelona",
-        "home": "Athletic Club"
+        "away": "Deportivo Alaves",
+        "home": "Valencia"
       },
-      "headline": "Lamine Yamal wonder goal restores Barcelona's four-point lead",
-      "score": "ATH 0 - BAR 1",
-      "brief": "Lamine Yamal continues to prove he is the crown jewel of world football. In a hostile San Mamés, the 18-year-old produced a moment of pure magic, cutting inside and curling a left-footed strike into the top corner to break a scoreless deadlock. Hansi Flick’s tactical substitutions in the second half turned the tide, allowing the league leaders to survive an aerial barrage from Athletic and maintain their gap over Real Madrid.",
+      "headline": "Valencia survive five-goal thriller at Mestalla to keep European hopes alive",
+      "score": "Valencia 3 - 2 Deportivo Alaves",
+      "brief": "Valencia and Deportivo Alavés combined for the most entertaining match of the weekend, a back-and-forth five-goal epic at the Mestalla. After a cagey first half that saw the hosts hit the woodwork, the floodgates opened in the second period. Valencia's attack finally clicked, finding the net three times to overcome a resilient Alavés side that refused to go away quietly. The win propels Valencia closer to the European places, while Alavés is left empty-handed despite a spirited comeback attempt.",
       "bullets": [
-        "Lamine Yamal scored the winner in the 68th minute, his 50th career goal.",
-        "Goalkeeper Joan Garcia was vital, making a string of point-blank saves to preserve the clean sheet.",
-        "Athletic Club hit the woodwork inside the first minute through a deflected cross.",
-        "Hansi Flick rotated his squad ahead of a midweek Champions League clash with Newcastle.",
-        "Barcelona now sits at 67 points, four clear of rivals Real Madrid."
+        "Valencia scored three goals in a single half for the first time this season.",
+        "Alavés winger Luis Rioja was a constant threat, registering an assist before the hosts locked him down.",
+        "The match saw 32 total shots, with Valencia accounting for 19 of them in a dominant offensive display.",
+        "Valencia's Hugo Duro struck the crossbar in the first half before later turning provider.",
+        "The victory marks Valencia’s first win against Alavés in their last three league meetings."
       ],
-      "context": "The win maintains Barcelona's momentum heading into the business end of the season.",
+      "context": "Valencia moves into the top eight with the win, putting pressure on the teams currently in Europa League spots.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.fotmob.com/news/16h93dnw99ol31qxt8b0yacvk8-athletic-club-0-1-barcelona-yamal-helps-leaders-restore-four-point-lead"
+        "recapUrl": "https://www.beinsports.com/en-mena/football/la-liga"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "Dk_JIOO4FSg",
-          "title": "Lamine Yamal scores winner as Barça escape San Mamés",
-          "url": "https://www.youtube.com/watch?v=Dk_JIOO4FSg&pp=ygUUYmFyY2Vsb25hIGhpZ2hsaWdodHM%3D",
-          "embedUrl": "https://www.youtube.com/embed/Dk_JIOO4FSg"
+          "videoId": "li91VmPGks0",
+          "title": "Valencia vs Deportivo Alavés 3-2 Resumen | La Liga - 2025/2026",
+          "url": "https://www.youtube.com/watch?v=li91VmPGks0",
+          "embedUrl": "https://www.youtube.com/embed/li91VmPGks0"
         }
       ]
     }

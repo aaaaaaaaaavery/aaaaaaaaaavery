@@ -1,484 +1,236 @@
 {
   "leagueName": "WTA",
-  "leagueKey": "WTA",
+  "leagueKey": "wta",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The action heated up in the California desert as several top seeds faced fierce resistance, while a massive upset completely shook up the draw. Iga Swiatek, Elena Rybakina, and Jessica Pegula all survived tough tests to keep their title hopes alive, but the story of the day belonged to young stars like Sonay Kartal and Antonia Ruzic, who delivered stunning victories over highly-seeded opponents to announce their arrival on the big stage.",
+  "leagueBriefing": "A dramatic day at Indian Wells saw World No. 1 Aryna Sabalenka and Amanda Anisimova cruise into the fourth round, while top-seeded Coco Gauff was forced to retire with an injury, clearing the way for a historic run by the Philippines' Alexandra Eala.",
   "games": [
     {
-      "id": "20260308-baptiste-rybakina",
+      "id": "20260308-cirstea-noskova",
       "teams": {
-        "away": "Hailey Baptiste",
-        "home": "Elena Rybakina"
+        "away": "Sorana Cirstea",
+        "home": "Linda Noskova"
       },
-      "headline": "Rybakina survives major scare to outlast Baptiste in three sets",
-      "score": "BAP 1 - RYB 2",
-      "brief": "Elena Rybakina needed every ounce of her championship experience to fend off a brilliant early challenge from Hailey Baptiste. The American came out swinging freely, utilizing aggressive net play and delicate drop shots to steal a thrilling opening-set tiebreak. However, the third-seeded Rybakina steadied her powerful serve in the final two sets, breaking Baptiste's rhythm and coasting to the finish line to avoid the upset.",
+      "headline": "Noskova outlasts Cirstea in three-set marathon to reach Indian Wells quarterfinals",
+      "score": "6-7, 6-4, 6-4",
+      "brief": "In a grueling two-and-a-half-hour battle, 21-year-old Linda Noskova avenged a recent loss to Sorana Cirstea to secure her place in the quarterfinals. After dropping a tight opening set tiebreak, the World No. 14 showed incredible resilience, converting crucial break points under pressure. The victory underscores the current dominance of Czech tennis, with Noskova leading a strong contingent of her compatriots deep into the tournament draw.",
       "bullets": [
-        "Rybakina advanced with a hard-fought 6-7(5), 6-2, 6-2 victory over the talented American.",
-        "After squandering an early lead, Rybakina faced three set points before Baptiste clinched the first set in the tiebreak.",
-        "The former Indian Wells champion dominated the final two sets, cleaning up her unforced errors and leaning on her heavy forehand.",
-        "Baptiste showcased spectacular touch and variety, drawing praise from the crowd and her opponent."
+        "Linda Noskova created 12 break point opportunities, successfully capitalizing on three to turn the match in her favor.",
+        "The win serves as immediate revenge for Noskova, who was held to just five games by Cirstea in Dubai three weeks ago.",
+        "Noskova becomes one of four Czech players to reach the third round or better in the 2026 Indian Wells draw."
       ],
-      "context": "Rybakina passes a grueling early test, finding her hard-court footing as she aims for another deep run in the desert.",
+      "context": "Noskova's quarterfinal berth marks a significant career milestone and strengthens her position in the top 15.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://nationaltoday.com/us/ca/indian-wells/news/2026/03/08/czechs-noskova-advances-to-indian-wells-quarterfinals/"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
+          "title": "Noskova vs. Cirstea Highlights",
           "url": "",
           "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-hunter-bencic",
+      "id": "20260308-sabalenka-cristian",
       "teams": {
-        "away": "Storm Hunter",
-        "home": "Belinda Bencic"
+        "away": "Aryna Sabalenka",
+        "home": "Jaqueline Cristian"
       },
-      "headline": "Bencic cruises past Hunter with clinical straight-sets win",
-      "score": "HUN 0 - BEN 2",
-      "brief": "Belinda Bencic put on an absolute ball-striking clinic, dismissing Australian qualifier Storm Hunter with ease. Taking the ball incredibly early and changing directions beautifully, the Swiss star never let Hunter establish any momentum or dictate the rallies. It was a thoroughly professional performance from Bencic, who looked razor-sharp in the California conditions.",
+      "headline": "Sabalenka powers past Cristian to set up blockbuster clash with Osaka",
+      "score": "6-4, 6-1",
+      "brief": "World No. 1 Aryna Sabalenka continued her march through the desert with a clinical victory over Romania's Jaqueline Cristian. Sabalenka's trademark power was on full display as she blasted 23 winners, overwhelming Cristian in just over an hour. Despite a minor blip while serving for the first set, the top seed remained focused to secure a fourth-round meeting with Naomi Osaka in one of the most anticipated matchups of the season.",
       "bullets": [
-        "Bencic secured a comfortable 6-3, 6-2 victory in just over an hour.",
-        "The Swiss star was virtually untouchable on her first serve, winning the vast majority of those points.",
-        "Hunter fought hard but simply couldn't handle Bencic's flat, penetrating groundstrokes.",
-        "Bencic moves into the next round with minimal energy expended."
+        "Aryna Sabalenka hit 23 winners and dominated her service games, winning over 80% of her first-serve points.",
+        "The Belarusian has now won 12 consecutive matches against players ranked outside the Top 20.",
+        "Sabalenka's win sets up a rematch with Naomi Osaka, whom she hasn't played since 2018."
       ],
-      "context": "Bencic looks incredibly dangerous early in the tournament, reaffirming her status as a dark horse contender.",
+      "context": "The victory moves Sabalenka into the fourth round as the heavy favorite to claim her first Indian Wells title.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://www.hindustantimes.com/sports/tennis/sabalenka-sails-into-indian-wells-last-16-101772999600958.html"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
+          "title": "Sabalenka vs. Cristian Highlights",
           "url": "",
           "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-muchova-bondar",
+      "id": "20260308-paolini-tomljanovic",
       "teams": {
-        "away": "Karolina Muchova",
-        "home": "Anna Bondar"
+        "away": "Jasmine Paolini",
+        "home": "Ajla Tomljanovic"
       },
-      "headline": "Muchova uses trademark variety to dismiss Bondar",
-      "score": "MUC 2 - BON 0",
-      "brief": "Karolina Muchova brought her full bag of tricks to the court, using a beautiful mix of slices, drop shots, and net approaches to defeat Anna Bondar. After a highly competitive first set where Bondar's heavy topspin kept things close, Muchova found her groove. She broke the Hungarian late in the first set and completely ran away with the second, looking fully healthy and incredibly dangerous.",
+      "headline": "Paolini survives three-set rollercoaster against gritty Tomljanovic",
+      "score": "7-5, 5-7, 6-1",
+      "brief": "Seventh seed Jasmine Paolini found her 'fire' again in a high-intensity battle against Australia's Ajla Tomljanovic. In a match defined by wild momentum swings, Paolini regained control in the final set, sprinting to the finish line after the two split hard-fought sets. The victory is a return to form for the Italian, who had struggled early in the 2026 season but now looks like a threat for the title.",
       "bullets": [
-        "Muchova advanced with a solid 7-5, 6-2 straight-sets victory.",
-        "The Czech star successfully executed several serve-and-volley plays to keep Bondar off-balance.",
-        "Bondar put up strong resistance early but faded once Muchova secured the decisive break in the opening set.",
-        "Muchova continues her strong start to the season following her recent title run in Doha."
+        "Jasmine Paolini won the final five games of the match to dismantle Tomljanovic in the decider.",
+        "The match lasted over two hours and fifteen minutes, featuring 10 combined breaks of serve.",
+        "Tomljanovic was playing her third three-set match in the last eight days following an injury-plagued 2025."
       ],
-      "context": "Muchova looks perfectly suited for the slow hard courts, showcasing the variety that makes her a nightmare matchup.",
+      "context": "Paolini advances to the round of 16, her best performance at Indian Wells since 2024.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://www.reddit.com/r/tennis/comments/1rojme5/wta_1000_indian_wells_r3_7_j_paolini_def_a/"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
+          "title": "Paolini vs. Tomljanovic Highlights",
           "url": "",
           "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-sakkari-tagger",
+      "id": "20260308-osorio-osaka",
       "teams": {
-        "away": "Maria Sakkari",
-        "home": "Lilli Tagger"
+        "away": "Camila Osorio",
+        "home": "Naomi Osaka"
       },
-      "headline": "Sakkari bagels Tagger in dominant second-set finish",
-      "score": "SAK 2 - TAG 0",
-      "brief": "Maria Sakkari survived a tricky opening set before finding a devastating extra gear to sweep past Lilli Tagger. Tagger played inspired tennis early, staying with the Greek powerhouse stroke for stroke until a late break decided the first set. After that, the resistance broke; Sakkari dominated the second set without dropping a single game, flashing her elite athleticism and heavy forehand.",
+      "headline": "Osaka finds positivity and precision to avenge previous Osorio defeat",
+      "score": "6-1, 3-6, 6-1",
+      "brief": "Naomi Osaka continued her impressive return to the top tier of tennis by ousting Camila Osorio in a topsy-turvy three-set encounter. After a dominant start, Osaka overcame a second-set dip in focus by rededicating herself to a point-by-point mentality in the decider. The win is particularly sweet for the former champion, as it avenges a straight-sets loss to the Colombian at this same venue just one year ago.",
       "bullets": [
-        "Sakkari cruised to a 7-5, 6-0 victory to punch her ticket to the next round.",
-        "The Greek star won the final seven games of the match consecutively.",
-        "Tagger showed great promise in the first set but was completely overwhelmed by Sakkari's physicality later on.",
-        "Sakkari looks to rebuild her confidence with a deep run in the desert."
+        "Naomi Osaka broke Osorio's first three service games of the match to race to a 6-1 lead.",
+        "After losing the second set, Osaka won the first three games of the third to re-establish dominance.",
+        "This marks Osaka's first tournament since withdrawing from the Australian Open with an abdominal injury."
       ],
-      "context": "Sakkari turns a potentially sticky opening test into a statement victory.",
+      "context": "The win sets up a much-anticipated fourth-round showdown against World No. 1 Aryna Sabalenka.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://bnpparibasopen.com/news/naomi-osaka-march-8"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
+          "title": "Osaka vs. Osorio Highlights",
           "url": "",
           "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-volynets-ostapenko",
+      "id": "20260308-raducanu-anisimova",
       "teams": {
-        "away": "Katie Volynets",
-        "home": "Jelena Ostapenko"
+        "away": "Emma Raducanu",
+        "home": "Amanda Anisimova"
       },
-      "headline": "Ostapenko overpowers Volynets in tight straight-sets duel",
-      "score": "VOL 0 - OST 2",
-      "brief": "Jelena Ostapenko brought her signature fireworks to the court, hitting through the incredible defense of Katie Volynets to secure a straight-sets win. Volynets, playing in her home state, made the Latvian work for every single point by tracking down seemingly impossible balls. However, Ostapenko's sheer pace and willingness to pull the trigger down the lines eventually wore down the American's defenses, culminating in a dramatic second-set tiebreak.",
+      "headline": "Anisimova delivers 52-minute masterclass to blitz Raducanu in the desert",
+      "score": "6-1, 6-1",
+      "brief": "In a stunning display of power and timing, Amanda Anisimova needed less than an hour to dismantle Emma Raducanu and reach the Indian Wells fourth round. The World No. 6 was untouchable, striking 21 winners and losing only three points behind her serve in the opening set. Raducanu, who had recently returned to form, admitted she had no answers for the American's relentless pace and court positioning.",
       "bullets": [
-        "Ostapenko prevailed 6-4, 7-6(5) in a classic clash of styles.",
-        "The Latvian hit a massive number of both winners and unforced errors, dictating the terms of the match.",
-        "Volynets thrilled the crowd with several spectacular gets but fell just short in the crucial tiebreak.",
-        "Ostapenko secures her first victory at Indian Wells since the 2023 tournament."
+        "Amanda Anisimova hit 21 winners while Raducanu was limited to just two in the entire 52-minute match.",
+        "Anisimova won 73% of points played on Raducanu's first serve, a staggering return statistic.",
+        "The win evens the head-to-head between the two former Grand Slam semifinalists at two matches apiece."
       ],
-      "context": "Ostapenko handles a tricky, defensive-minded opponent perfectly to keep her tournament hopes alive.",
+      "context": "Anisimova moves into the round of 16 at Indian Wells for only the second time in her career.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://www.wtatennis.com/news/4464789/amanda-anisimova-blitzes-emma-raducanu-in-all-around-52-minute-masterclass-advances-to-indian-wells-fourth-round"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
+          "title": "Anisimova vs. Raducanu Highlights",
           "url": "",
           "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-day-swiatek",
+      "id": "20260308-gauff-eala",
       "teams": {
-        "away": "Kayla Day",
-        "home": "Iga Swiatek"
+        "away": "Coco Gauff",
+        "home": "Alexandra Eala"
       },
-      "headline": "Swiatek dishes out another bagel before surviving second-set scare",
-      "score": "DAY 0 - SWI 2",
-      "brief": "World No. 2 Iga Swiatek looked ready to dish out a double-bagel before Kayla Day mounted a spectacular second-set fightback. After Swiatek took the first set in an absolute blur without dropping a game, Day completely flipped the script, breaking the Polish star's serve multiple times to force a tiebreak. Swiatek eventually regained her composure when it mattered most, locking down her groundstrokes to clinch the match and avoid a deciding set.",
+      "headline": "Eala reaches historic fourth round as Gauff forced to retire with injury",
+      "score": "6-2, 2-0 (Retired)",
+      "brief": "The night session at Indian Wells ended in disappointment for the home crowd as World No. 4 Coco Gauff was forced to retire due to a left arm injury. Philippines' rising star Alexandra Eala was in complete control, leading by a set and a break when Gauff called it quits. Eala, who showed great sportsmanship in her victory, makes history as the first Filipino player to ever reach the Round of 16 in the California desert.",
       "bullets": [
-        "Swiatek won 6-0, 7-6(2) to safely advance to the third round.",
-        "The Polish star dropped the first set 6-0, looking completely unstoppable early on.",
-        "Day dug incredibly deep, using heavy lefty spin to completely disrupt Swiatek's rhythm in the second set.",
-        "Swiatek hit back-to-back winners in the tiebreak to finally extinguish the American's comeback hopes."
+        "Alexandra Eala led 6-2, 2-0 after 54 minutes of play when Coco Gauff officially retired.",
+        "This marks only the second mid-match retirement of Gauff's career and her first since 2022.",
+        "Eala becomes the first player from the Philippines to reach the fourth round of a WTA 1000 event."
       ],
-      "context": "Swiatek gets a valuable early-tournament wake-up call, surviving a tense second set without dropping the match.",
+      "context": "Gauff's injury status remains uncertain as she defends significant points in the upcoming Miami Open.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://www.wtatennis.com/news/4464840/eala-through-to-indian-wells-fourth-round-as-gauff-retires-with-left-arm-injury"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
+          "title": "Eala vs. Gauff Highlights",
           "url": "",
           "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-kartal-navarro",
+      "id": "20260308-mboko-kalinskaya",
       "teams": {
-        "away": "Sonay Kartal",
-        "home": "Emma Navarro"
+        "away": "Victoria Mboko",
+        "home": "Anna Kalinskaya"
       },
-      "headline": "Kartal saves match point to stun Navarro in dramatic upset",
-      "score": "KAR 2 - NAV 1",
-      "brief": "British star Sonay Kartal delivered one of the upsets of the tournament, saving a match point to take out 20th-seeded American Emma Navarro in a grueling three-setter. Kartal raced through the first set before Navarro found her footing to level the match. In a wild, unpredictable deciding set, Kartal found herself broken late and facing the exit, but showed incredible resilience to break back and absolutely dominate the deciding tiebreak.",
+      "headline": "Teen phenom Mboko dominates Kalinskaya to continue dream debut",
+      "score": "6-4, 6-1",
+      "brief": "Canadian teenager Victoria Mboko continued her meteoric rise, securing her 15th win of the season with a straight-sets demolition of Anna Kalinskaya. Making her main-draw debut at Indian Wells, the 19-year-old showed no nerves, winning the final six games of the match to advance to the round of 16. Mboko's physical baseline game was too much for the 23rd seed, setting up a high-stakes clash with American star Amanda Anisimova.",
       "bullets": [
-        "Kartal pulled off the massive 6-1, 3-6, 7-6(2) upset in over two and a half hours.",
-        "The British No. 2 saved a match point when Navarro was serving for the match late in the third set.",
-        "Kartal took two medical timeouts but still managed to physically outlast her opponent.",
-        "The upset continues a difficult recent stretch of results for Navarro on the WTA Tour."
+        "Victoria Mboko is now 11-0 in 2026 against players ranked outside the top 20.",
+        "The Canadian teenager won 88% of her first-serve points in a clinical 64-minute performance.",
+        "Mboko's 15 match wins this season are the second-most on the WTA tour behind only Elina Svitolina."
       ],
-      "context": "Kartal secures a monumental victory, proving her gritty baseline game belongs on the biggest stages.",
+      "context": "The win guarantees Mboko a significant rankings boost, likely moving her into the top 40.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://www.wtatennis.com/news/4464889/mboko-beats-kalinskaya-in-straight-sets-sets-up-anisimova-clash"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
+          "title": "Mboko vs. Kalinskaya Highlights",
           "url": "",
           "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-samsonova-krueger",
+      "id": "20260308-gibson-tauson",
       "teams": {
-        "away": "Liudmila Samsonova",
-        "home": "Ashlyn Krueger"
+        "away": "Talia Gibson",
+        "home": "Clara Tauson"
       },
-      "headline": "Krueger powers past Samsonova in three-set comeback",
-      "score": "SAM 1 - KRU 2",
-      "brief": "Ashlyn Krueger continues to make waves on the WTA tour, pulling off an impressive comeback victory over the heavy-hitting Liudmila Samsonova. After dropping the first set to the Russian's blistering serve, the young American found her return timing and began turning defense into offense. Krueger completely dominated the final set, showing maturity and poise well beyond her years to close out a huge win in front of the home crowd.",
+      "headline": "Australian qualifier Talia Gibson stuns Tauson to break into Top 100",
+      "score": "7-6, 4-6, 6-4",
+      "brief": "Talia Gibson's dream run at Indian Wells reached new heights as she outlasted Denmark's Clara Tauson in a nearly three-hour marathon. Despite facing 28 aces from the big-serving Dane, the Australian qualifier maintained her composure to secure her second consecutive win over a Top 20 opponent. With the victory, the 21-year-old Gibson is guaranteed to make her debut in the WTA Top 100 next week.",
       "bullets": [
-        "Krueger rallied to win 3-6, 7-5, 6-2 against the higher-ranked Russian.",
-        "The American hit effectively through the slow, gritty Indian Wells courts to rush Samsonova's footwork.",
-        "Samsonova struggled with double faults late in the match as the pressure mounted.",
-        "This marks a significant milestone victory for Krueger as she continues climbing the rankings."
+        "Talia Gibson withstood a barrage of 28 aces from Clara Tauson to win in two hours and 43 minutes.",
+        "The win is Gibson's fifth consecutive victory in Indian Wells after starting in the qualifying rounds.",
+        "Gibson is now 15-5 in the 2026 season, marking the most successful stretch of her career."
       ],
-      "context": "Krueger earns a signature win, showcasing her immense potential to American tennis fans.",
+      "context": "Gibson's breakthrough ensures her direct entry into future Grand Slam main draws.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": ""
+        "recapUrl": "https://www.tennis.com.au/fan-zone/news/2026/03/09/gibson-continues-golden-run-at-indian-wells"
       },
       "highlights": [
         {
           "provider": "youtube",
           "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-andreeva-sierra",
-      "teams": {
-        "away": "Mirra Andreeva",
-        "home": "Solana Sierra"
-      },
-      "headline": "Andreeva flawless in double-bagel demolition of Sierra",
-      "score": "AND 2 - SIE 0",
-      "brief": "Defending champion Mirra Andreeva sent a terrifying message to the rest of the field, dishing out a rare double-bagel to Solana Sierra. The 18-year-old Russian sensation was absolutely immaculate from start to finish, constructing points beautifully and never allowing the Argentine a single look into the match. It was a flawless display of tennis that lasted barely an hour.",
-      "bullets": [
-        "Andreeva won 6-0, 6-0 in a completely lopsided affair.",
-        "The Russian lost just a handful of points throughout the entire match.",
-        "Sierra struggled to find any answers for Andreeva's court coverage and depth.",
-        "Andreeva officially begins her title defense in the most intimidating way possible."
-      ],
-      "context": "Andreeva looks terrifyingly sharp as she begins her quest to go back-to-back in the California desert.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-siniakova-fernandez",
-      "teams": {
-        "away": "Katerina Siniakova",
-        "home": "Leylah Fernandez"
-      },
-      "headline": "Siniakova edges Fernandez in marathon final-set tiebreak",
-      "score": "SIN 2 - FER 1",
-      "brief": "In a match featuring incredible athleticism and shot-making, Katerina Siniakova outlasted Leylah Fernandez in a bruising three-set battle. The momentum swung wildly, with Fernandez taking the first set and Siniakova fighting back to force a decider. The match culminated in a highly dramatic final set tiebreak, where the Czech's aggressive net play and superior stamina eventually overwhelmed the Canadian fan-favorite.",
-      "bullets": [
-        "Siniakova triumphed 5-7, 6-4, 7-6(1) in a high-quality encounter.",
-        "Fernandez fought brilliantly but ran out of steam in the completely one-sided final tiebreak.",
-        "Both players excelled at the net, turning the match into a tactical game of cat-and-mouse.",
-        "Siniakova's doubles expertise shone through in her crucial volley put-aways."
-      ],
-      "context": "Siniakova secures a hard-fought, emotional win that highlights her singles capabilities on big stages.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-ruzic-zheng",
-      "teams": {
-        "away": "Antonia Ruzic",
-        "home": "Qinwen Zheng"
-      },
-      "headline": "Ruzic shocks the tennis world with straight-sets upset over Zheng",
-      "score": "RUZ 2 - ZHE 0",
-      "brief": "In the most stunning result of the day, unheralded Antonia Ruzic played the match of her life to completely outclass top-tier star Qinwen Zheng. The Croatian qualifier looked entirely unfazed by the big stage, absorbing Zheng's massive power and redirecting it beautifully down the lines. Zheng struggled with her serve and grew increasingly frustrated as Ruzic confidently served out the match to claim the biggest win of her career.",
-      "bullets": [
-        "Ruzic pulled off the massive 6-4, 7-5 upset over the heavily favored Chinese star.",
-        "The Croatian capitalized on Zheng's surprisingly high unforced error count.",
-        "Zheng was unable to consistently find her usually dominant first serve.",
-        "Ruzic advances to the third round, completely blowing her section of the draw wide open."
-      ],
-      "context": "Ruzic delivers a tournament-altering upset, knocking out one of the event's top contenders in the early rounds.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-mertens-bucsa",
-      "teams": {
-        "away": "Elise Mertens",
-        "home": "Cristina Bucsa"
-      },
-      "headline": "Mertens makes quick work of Bucsa in straight sets",
-      "score": "MER 2 - BUC 0",
-      "brief": "Elise Mertens relied on her vast experience and rock-solid baseline game to easily dispatch Cristina Bucsa. The Belgian veteran was in total control from the first ball, moving the Spaniard side-to-side and punishing anything left short. Bucsa simply couldn't find a way to hit through Mertens' impeccable defense, leading to a quick and straightforward result.",
-      "bullets": [
-        "Mertens cruised to a dominant 6-2, 6-1 victory.",
-        "The Belgian was highly efficient, converting multiple break point opportunities without wasting any.",
-        "Bucsa's normally reliable backhand broke down under Mertens' relentless depth.",
-        "Mertens continues her historically consistent record of reaching the middle rounds at big events."
-      ],
-      "context": "Mertens looks as steady as ever, smoothly advancing without spending much time on court.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-pegula-vekic",
-      "teams": {
-        "away": "Jessica Pegula",
-        "home": "Donna Vekic"
-      },
-      "headline": "Pegula rallies past Vekic to survive opening test",
-      "score": "PEG 2 - VEK 1",
-      "brief": "Jessica Pegula had to dig incredibly deep to overcome a massive early challenge from the hard-hitting Donna Vekic under the lights. The Croatian came out firing, blasting winners to take the first set and put the American heavily on the back foot. However, Pegula slowly neutralized Vekic's power, using her flat, low-bouncing groundstrokes to turn the tide and comfortably win the final two sets.",
-      "bullets": [
-        "Pegula advanced with a hard-fought 4-6, 6-2, 6-3 comeback victory.",
-        "Vekic played flawless first-strike tennis in the opening set before her error count rose.",
-        "Pegula broke serve early in both the second and third sets to establish momentum.",
-        "The American maintains her strong recent form following her recent WTA 1000 title in Dubai."
-      ],
-      "context": "Pegula shows her trademark grit, avoiding a dangerous early exit against a very capable opponent.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-keys-parry",
-      "teams": {
-        "away": "Madison Keys",
-        "home": "Diane Parry"
-      },
-      "headline": "Keys powers through Parry with heavy hitting",
-      "score": "KEY 2 - PAR 0",
-      "brief": "Madison Keys used her overwhelming power to hit right through the tricky slices of Diane Parry, securing a comfortable straight-sets win. Parry's elegant one-handed backhand and variety usually disrupt her opponents' rhythm, but Keys simply stepped into the court and blasted winners off both wings. The American's serve was highly effective, never allowing the Frenchwoman a chance to settle in.",
-      "bullets": [
-        "Keys advanced comfortably with a 6-4, 6-3 victory.",
-        "The American's booming forehand was the key differentiator in the match.",
-        "Parry attempted to use her slice to slow the pace, but Keys handled the low bounces perfectly.",
-        "Keys looks healthy and dangerous as she moves into the third round."
-      ],
-      "context": "Keys continues to be a massive threat on the American hard courts with her completely overpowering game.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-kostyuk-townsend",
-      "teams": {
-        "away": "Marta Kostyuk",
-        "home": "Taylor Townsend"
-      },
-      "headline": "Kostyuk shuts down Townsend's net attacks for straight-sets win",
-      "score": "KOS 2 - TOW 0",
-      "brief": "Marta Kostyuk was dialed in on her passing shots, successfully navigating the aggressive serve-and-volley tactics of Taylor Townsend. The American continually charged the net to try and rush the Ukrainian, but Kostyuk kept her composure, dipping the ball low and finding spectacular angles. Kostyuk's exceptional movement and court coverage ultimately sealed a very solid victory.",
-      "bullets": [
-        "Kostyuk secured a straightforward 6-3, 6-2 win.",
-        "The Ukrainian hit multiple clean passing shots to discourage Townsend from rushing the net.",
-        "Townsend struggled to protect her own serve, facing heavy pressure on her second deliveries.",
-        "Kostyuk continues her strong recent string of performances on the tour."
-      ],
-      "context": "Kostyuk displays excellent tactical awareness to neutralize one of the tour's most unique playstyles.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260308-siegemund-svitolina",
-      "teams": {
-        "away": "Laura Siegemund",
-        "home": "Elina Svitolina"
-      },
-      "headline": "Svitolina outlasts Siegemund in grinding three-set affair",
-      "score": "SIE 1 - SVI 2",
-      "brief": "In a match filled with long, grueling rallies and tactical adjustments, Elina Svitolina proved to be the steadier player against veteran Laura Siegemund. The German's craftiness earned her a very tight first-set tiebreak, but Svitolina simply put her head down and went to work. The Ukrainian improved her depth and consistency, slowly grinding down Siegemund's defenses to claim the final two sets.",
-      "bullets": [
-        "Svitolina battled back to win 6-7(5), 6-4, 6-3.",
-        "The match was a deeply physical baseline battle that tested both players' conditioning.",
-        "Siegemund utilized her heavy dropshots, but Svitolina's footwork allowed her to track them down effectively.",
-        "Svitolina flipped the momentum entirely after securing an early break in the second set."
-      ],
-      "context": "Svitolina earns a gritty, hard-fought victory to build crucial match fitness for the rest of the tournament.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": ""
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
+          "title": "Gibson vs. Tauson Highlights",
           "url": "",
           "embedUrl": ""
         }

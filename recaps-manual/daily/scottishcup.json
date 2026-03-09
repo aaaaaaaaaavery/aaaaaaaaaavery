@@ -1,0 +1,70 @@
+{
+  "leagueName": "SPFL",
+  "leagueKey": "scottishpremiership",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "It was a day of high-stakes drama in the Scottish Cup as the nation's biggest rivalry required a penalty shootout to find a winner. While Celtic kept their nerve from the spot at Ibrox, St. Mirren had to battle back from an early scare to overcome Championship opposition and secure their own place in the next round. For both victors, the dream of a trip to Hampden remains very much alive.",
+  "games": [
+    {
+      "id": "20260308-rangers-celtic",
+      "teams": {
+        "away": "Celtic",
+        "home": "Rangers"
+      },
+      "headline": "Celtic edge out Rangers on penalties after Ibrox stalemate",
+      "score": "Rangers 0 - 0 Celtic (4-5 on penalties)",
+      "brief": "The latest chapter of the Old Firm rivalry was a test of nerves rather than clinical finishing, as 120 minutes of high-intensity football failed to produce a goal at Ibrox. Both sides had chances to win it in regulation, but stellar goalkeeping and desperate defending forced a penalty shootout. In the end, it was Celtic who held their composure, converting five perfect spot-kicks to silence the home crowd and march on in the Scottish Cup.",
+      "bullets": [
+        "Celtic converted all five of their penalties to win the shootout 5-4.",
+        "Rangers' captain James Tavernier saw his decisive penalty saved by Kasper Schmeichel.",
+        "The match saw 10 yellow cards issued as tensions flared in a physical encounter.",
+        "Rangers dominated the shot count 14-8 but couldn't find a way past a resolute Celtic backline.",
+        "This was the first Old Firm cup tie to go to penalties since the 2016 Scottish Cup semi-final."
+      ],
+      "context": "Celtic advance to the Scottish Cup semi-finals, ending Rangers' hopes of a domestic cup double.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.bbc.com/sport/football/scotland"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "aq1_S8LbJSo",
+          "title": "Scottish Cup highlights",
+          "url": "https://youtu.be/aq1_S8LbJSo?si=cSLA0ws5JoRFsP5v",
+          "embedUrl": "https://www.youtube.com/embed/aq1_S8LbJSo"
+        }
+      ]
+    },
+    {
+      "id": "20260308-stmirren-partick",
+      "teams": {
+        "away": "Partick Thistle",
+        "home": "St. Mirren"
+      },
+      "headline": "St. Mirren survive early scare to sink Partick Thistle",
+      "score": "St. Mirren 2 - 1 Partick Thistle",
+      "brief": "St. Mirren avoided a potential banana skin against Championship side Partick Thistle, coming from behind to secure their spot in the quarter-finals. The visitors stunned the Paisley crowd with an early opener, but the Premiership side's quality eventually told. Two quick-fire goals either side of half-time turned the tide, allowing the Buddies to control the closing stages and extinguish the Jags' hopes of an upset.",
+      "bullets": [
+        "Toyosi Olusanya scored the winning goal in the 52nd minute with a powerful close-range finish.",
+        "Partick Thistle took a shock lead in the 12th minute through Brian Graham.",
+        "St. Mirren's Mikael Mandron equalized just before the break to shift the momentum.",
+        "The Buddies recorded 64% possession as they wore down their lower-league opponents.",
+        "This victory marks St. Mirren's third consecutive home win in the competition."
+      ],
+      "context": "St. Mirren progress to the quarter-finals as they look to replicate their famous 1987 cup triumph.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.dailyrecord.co.uk/sport/football/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "aq1_S8LbJSo",
+          "title": "Scottish Cup highlights",
+          "url": "https://youtu.be/aq1_S8LbJSo?si=cSLA0ws5JoRFsP5v",
+          "embedUrl": "https://www.youtube.com/embed/aq1_S8LbJSo"
+        }
+      ]
+    }
+  ]
+}

@@ -167,8 +167,11 @@
       { leagueName: "Carabao Cup", leagueKey: "carabaocup", fileUrl: "recaps-manual/daily/carabaocup.json" },
       { leagueName: "Coupe de France", leagueKey: "coupedefrance", fileUrl: "recaps-manual/daily/coupedefrance.json" },
       { leagueName: "SheBelieves Cup", leagueKey: "shebelievescup", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "SHEBELIEVES_CUP" },
+    { leagueName: "Scottish Cup", leagueKey: "scottishcup", fileUrl: "recaps-manual/daily/scottishcup.json" },
       { leagueName: "Six Nations", leagueKey: "sixnations", fileUrl: "recaps-manual/daily/sixnations.json" },
       { leagueName: "WBC", leagueKey: "wbc", fileUrl: "recaps-manual/daily/wbc.json" },
+    { leagueName: "NASCAR Cup Series", leagueKey: "nascarcupseries", fileUrl: "recaps-manual/daily/nascarcupseries.json" },
+    { leagueName: "NHRA", leagueKey: "nhra", fileUrl: "recaps-manual/daily/nhra.json" },
       { leagueName: "UFC", leagueKey: "ufc", fileUrl: "recaps-manual/daily/ufc.json" },
       { leagueName: "Boxing", leagueKey: "boxing", fileUrl: "recaps-manual/daily/boxing.json" },
       { leagueName: "PGA Tour", leagueKey: "pgatour", fileUrl: "recaps-manual/daily/pgatour.json" },
@@ -181,12 +184,12 @@
 
     const LEAGUE_DISPLAY_ORDER = [
       "NFL", "NBA", "MLB", "NHL", "WBC", "Soccer", "Formula One", "NCAAM", "NCAAW", "PGA Tour", "UFC", "Boxing",
-      "NASCAR Cup Series", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "NCAA Softball", "IndyCar", "LPGA Tour", "MotoGP", "Six Nations"
+            "NASCAR Cup Series", "NHRA", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "NCAA Softball", "IndyCar", "LPGA Tour", "MotoGP", "Six Nations"
     ];
 
     const SOCCER_LEAGUE_DISPLAY_ORDER = [
       "Premier League", "UEFA Champions League", "MLS", "LaLiga", "Serie A", "Bundesliga", "Ligue 1", "Liga MX",
-      "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France", "SheBelieves Cup"
+            "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France", "SheBelieves Cup", "Scottish Cup"
     ];
 
     const GOLF_LEAGUE_DISPLAY_ORDER = [
@@ -203,7 +206,7 @@
     const TENNIS_ORDER_INDEX = Object.fromEntries(TENNIS_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_LEAGUE_KEYS = new Set([
       "premierleague", "uefachampionsleague", "mls", "laliga", "seriea", "bundesliga", "ligue1", "ligamx",
-      "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance", "shebelievescup"
+            "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance", "shebelievescup", "scottishcup"
     ]);
     const GOLF_LEAGUE_KEYS = new Set(["pgatour", "dpworldtour", "lpgatour", "livgolf"]);
     const TENNIS_LEAGUE_KEYS = new Set(["atp", "wta"]);
@@ -314,6 +317,7 @@
             ncaabaseball: "https://www.ncaa.com/modules/custom/casablanca_core/img/sportbanners/baseball.png",
             ncaasoftball: "https://a.espncdn.com/i/espn/misc_logos/500/ncaa_womens_softball.png",
             nascar: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/500px-NASCAR_Cup_Series_logo.svg.png",
+            nascarcupseries: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/500px-NASCAR_Cup_Series_logo.svg.png",
             sixnations: "https://cdn.jsdelivr.net/gh/aaaaaaaaaavery/aaaaaaaaaavery@8808cbdbdf55e9720bb3117a554471e4cc36af7d/sixnations.svg",
         };
         const LEAGUE_WIKIPEDIA_PAGE_BY_KEY = {
@@ -366,6 +370,7 @@
             livgolf: "LIVGolf",
             indycar: "IndyCar",
             nascar: "NASCARCupSeries",
+            nascarcupseries: "NASCARCupSeries",
             motogp: "MotoGP",
             tennis: "Tennis",
             atp: "Tennis",
@@ -456,10 +461,33 @@
                 laclippers: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Los_Angeles_Clippers_%282024%29.svg/500px-Los_Angeles_Clippers_%282024%29.svg.png",
                 lac: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Los_Angeles_Clippers_%282024%29.svg/500px-Los_Angeles_Clippers_%282024%29.svg.png",
             },
+            mls: {
+                atlantautd: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+                atlantaunited: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+                atlantaunitedfc: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+                atl: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+
+                sportingkc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sporting_Kansas_City_logo.svg/500px-Sporting_Kansas_City_logo.svg.png",
+                sportingkansascity: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sporting_Kansas_City_logo.svg/500px-Sporting_Kansas_City_logo.svg.png",
+                skc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sporting_Kansas_City_logo.svg/500px-Sporting_Kansas_City_logo.svg.png",
+
+                minnesotaunited: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Minnesota_United_FC_%28MLS%29_Primary_logo.svg/330px-Minnesota_United_FC_%28MLS%29_Primary_logo.svg.png",
+                minnesotaunitedfc: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Minnesota_United_FC_%28MLS%29_Primary_logo.svg/330px-Minnesota_United_FC_%28MLS%29_Primary_logo.svg.png",
+                min: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Minnesota_United_FC_%28MLS%29_Primary_logo.svg/330px-Minnesota_United_FC_%28MLS%29_Primary_logo.svg.png",
+
+                losangelesfc: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Los_Angeles_Football_Club.svg/330px-Los_Angeles_Football_Club.svg.png",
+                lafc: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Los_Angeles_Football_Club.svg/330px-Los_Angeles_Football_Club.svg.png",
+
+                sjearthquakes: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+                sanjoseearthquakes: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+                earthquakes: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+                sj: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+            },
         };
         const SCORE_CARD_LOGO_API_BY_LEAGUE = {
             nba: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams",
             mls: "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams",
+            ligamx: "https://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/teams",
             laliga: "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams",
             seriea: "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/teams",
             bundesliga: "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/teams",
@@ -471,6 +499,7 @@
             "nba",
             "wbc",
             "mls",
+            "ligamx",
             "laliga",
             "seriea",
             "bundesliga",

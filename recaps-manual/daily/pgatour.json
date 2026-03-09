@@ -2,36 +2,36 @@
   "leagueName": "PGA Tour",
   "leagueKey": "pgatour",
   "sourceType": "console_recaps",
-  "leagueBriefing": "A rain-softened but still punishing Bay Hill produced a volatile Saturday at the Arnold Palmer Invitational, with Daniel Berger preserving control while the chasing pack tightened before darkness halted play.",
+  "leagueBriefing": "Akshay Bhatia channeled the spirit of Arnold Palmer at Bay Hill, erasing a five-shot deficit on the back nine to secure a dramatic playoff victory over Daniel Berger.",
   "games": [
     {
-      "id": "20260307-arnold-palmer-invitational-round-3",
+      "id": "akshay-bhatia-has-a-charge-that-would-make-arnie-proud-as-he-rallies-from-5-down-to-win-bay-hill",
       "teams": {
-        "away": "PGA Tour Field",
-        "home": "Arnold Palmer Invitational"
+        "away": "Akshay Bhatia",
+        "home": "Daniel Berger"
       },
-      "headline": "Berger stays in front at Bay Hill as weather and darkness reshape Round 3",
+      "headline": "Bhatia channels Arnold Palmer with stunning back-nine charge to win at Bay Hill",
       "score": null,
-      "brief": "Daniel Berger navigated a chaotic third round at Bay Hill to keep the lead in the Arnold Palmer Invitational, reaching 13-under despite seeing his five-shot cushion shrink as conditions shifted after a lengthy rain delay. Akshay Bhatia moved into second at 11-under, while Cameron Young, Sepp Straka and Collin Morikawa posted at 9-under to set up a crowded Sunday chase. Berger's steadiness, plus a key late birdie run before darkness suspended play, kept him in command in a tournament that suddenly felt wide open again.",
+      "brief": "In a finish that would have made 'The King' proud, Akshay Bhatia staged a massive comeback at the Arnold Palmer Invitational. After falling five shots back following a missed short putt, Bhatia ignited his round with four straight birdies and a near-albatross on the 16th to force a playoff with Daniel Berger. Bhatia eventually outlasted Berger in the first playoff at Bay Hill in over 25 years, securing his third PGA Tour title and the iconic red cardigan in dramatic fashion.",
       "bullets": [
-        "Berger held the top spot at 13-under through an unfinished third round, still leading by two.",
-        "Bhatia climbed to 11-under and sat closest to Berger entering the overnight restart.",
-        "Young shot 67 and joined Straka (66) and Morikawa (70) at 9-under.",
-        "Rory McIlroy withdrew before Round 3 because of back muscle spasms.",
-        "Scottie Scheffler rallied on the back nine but made double bogey at 18 after finding water."
+        "Akshay Bhatia rallied from five shots down on the back nine, highlighted by four consecutive birdies and a clutch eagle on the par-5 16th.",
+        "The victory marks Bhatia's third career PGA Tour title, with all three wins remarkably coming via playoffs.",
+        "Daniel Berger narrowly missed becoming the first wire-to-wire winner at Bay Hill in a decade after a weak par putt on the first playoff hole.",
+        "The $4 million winner's share from the $20 million Signature Event propels the 24-year-old Bhatia into the top 20 of the Official World Golf Ranking.",
+        "World No. 1 Scottie Scheffler struggled to a T24 finish, marking his first tournament without a round under 70 since last year's U.S. Open."
       ],
-      "context": "With Bay Hill still demanding and several contenders within reach, the delayed finish turned the final round into a multi-player pressure test rather than a runaway.",
+      "context": "The win guarantees Bhatia a spot in the Masters and cements his status as a top contender heading into the major season.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/07/arnold-palmer-invitational-bay-hill-scores-leaderboard-results-round-3"
+        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/08/akshay-bhatia-has-a-charge-that-would-make-arnie-proud-as-he-rallies-from-5-down-to-win-bay-hill"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "Arlg9N6KIok",
-          "title": "",
-          "url": "https://youtu.be/Arlg9N6KIok?si=PtY8B6T5RChOCkOZ",
-          "embedUrl": "https://www.youtube.com/embed/Arlg9N6KIok"
+          "videoId": "wW_6_nB8yis",
+          "title": "Akshay Bhatia’s Round 4 highlights from Arnold Palmer",
+          "url": "https://www.youtube.com/watch?v=wW_6_nB8yis",
+          "embedUrl": "https://www.youtube.com/embed/wW_6_nB8yis"
         }
       ]
     }

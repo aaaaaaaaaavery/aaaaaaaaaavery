@@ -38,12 +38,7 @@ Example:
 
 ---
 SCORE
-If a final score exists, format exactly:
-TEAM A X - TEAM B Y
-
-Examples:
-MIN 5 - TB 1
-LAL 110 - NO 101
+If a final score exists, give it (use mascot names for MLB, NHL, NBA; use team names with no mascot for all other leagues.)
 
 If there is no score (golf, racing, some tennis summaries, etc.):
 "score": null
@@ -207,4 +202,4 @@ FINAL SELF-CHECK (SILENT, BEFORE OUTPUT)
 5. Is top-level `leagueKey` present, non-empty, and correctly mapped from `leagueName` per the mapping table?
 6. Is the output valid JSON in one fenced `json` code block with no extra text?
 
-Do all games in these leagues: NBA
+Do all these games, for leagueName

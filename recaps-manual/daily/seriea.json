@@ -2,104 +2,160 @@
   "leagueName": "Serie A",
   "leagueKey": "seriea",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Saturday in Serie A was all about the 'old guard' reasserting dominance and a gritty fightback in Bergamo. Juventus emphatically snapped a month-long slump by putting four past Pisa, while Atalanta relied on a Gianluca Scamacca rescue mission to avoid a shock home defeat. Meanwhile, Como continues to be the league's most dangerous dark horse, securing their third straight win to keep the pressure on the Champions League places.",
+  "leagueBriefing": "It was a seismic Sunday in Italy as the Milan Derby lived up to its billing, with AC Milan claiming city bragging rights and dealing a major blow to their rivals' title hopes. Elsewhere, the relegation battle took center stage as Lecce secured a massive three points in a survival six-pointer, while Hellas Verona pulled off the shock of the weekend by coming from behind to stun Bologna. The results have tightened the screws at both ends of the table, leaving fans with plenty to dissect on Monday morning.",
   "games": [
     {
-      "id": "20260307-cagliari-como",
+      "id": "625477",
       "teams": {
-        "away": "Como",
-        "home": "Cagliari"
+        "away": "Internazionale",
+        "home": "Milan"
       },
-      "headline": "Baturina and Da Cunha keep Como's European dream alive in Sardinia",
-      "score": "CAG 1 - COM 2",
-      "brief": "Como's remarkable surge up the table continued with a clinical display at the Unipol Domus. Martin Baturina set the tone with an early strike, and though Cagliari found a second-half equalizer through Sebastiano Esposito, the visitors showed superior composure. Lucas Da Cunha’s stunning 76th-minute winner proved the difference, securing a third consecutive victory for a Como side that looks increasingly like a top-four contender.",
+      "headline": "Estupinan strike decides Derby della Madonnina as Milan stun Inter",
+      "score": "Milan 1 - 0 Internazionale",
+      "brief": "AC Milan emerged victorious in a high-stakes Derby della Madonnina, with Pervis Estupiñán providing the decisive moment at the San Siro. In a match characterized by tactical discipline and intense midfield battles, Estupiñán’s 35th-minute goal—set up by a clever Yacine Adli ball—proved to be enough to silence the blue half of Milan. Inter pushed desperately for an equalizer in the second half, frequently testing Mike Maignan from set pieces, but the Rossoneri backline held firm to secure a win that resonates far beyond the city limits.",
       "bullets": [
-        "Martin Baturina opened the scoring in the 14th minute for the visitors.",
-        "Lucas Da Cunha netted the match-winner with a 'superb' strike in the 76th minute.",
-        "Sebastiano Esposito briefly leveled for Cagliari in the 56th minute.",
-        "Como has now won three straight matches, their best run in the top flight this season.",
-        "Cagliari remains winless in their last four league outings."
+        "Pervis Estupiñán scored the game's only goal in the 35th minute, assisted by Yacine Adli.",
+        "Inter dominated the corner count 7-2 but failed to convert any of Federico Dimarco's dangerous deliveries.",
+        "Luka Modrić controlled the tempo for Milan but picked up a late yellow card in a frantic stoppage time.",
+        "The win marks Milan's second consecutive derby victory, further shifting the power dynamic in the city.",
+        "Inter's Alessandro Bastoni and Denzel Dumfries both received bookings as frustrations boiled over late in the game."
       ],
-      "context": "The win keeps Como in 5th place, just points away from the Champions League spots.",
+      "context": "The victory propels Milan back into the Scudetto conversation while slowing Inter's momentum at the top of the table.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.livesoccertv.com/match/4944431/cagliari-vs-como/"
+        "recapUrl": "https://www.foxsports.com/soccer/serie-a-ac-milan-vs-inter-milan-mar-08-2026-game-boxscore-625477"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "sxhwQdpTVlY",
-          "title": "CAGLIARI-COMO | HIGHLIGHTS | Da Cunha The Hero For Como! | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=sxhwQdpTVlY",
-          "embedUrl": "https://www.youtube.com/embed/sxhwQdpTVlY",
-          "publishedAt": "2026-03-07T16:40:30Z",
-          "matchScore": 100
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260307-atalanta-udinese",
+      "id": "1253216-genoa-vs-roma-live-score-serie-a",
       "teams": {
-        "away": "Udinese",
-        "home": "Atalanta"
+        "away": "Roma",
+        "home": "Genoa"
       },
-      "headline": "Scamacca brace rescues Atalanta after Udinese's first-half blitz",
-      "score": "ATA 2 - UDI 2",
-      "brief": "It looked like a disaster for Atalanta in Bergamo as Udinese raced into a 2-0 lead behind goals from Kristensen and Davis. However, Gianluca Scamacca reminded everyone why he's one of Italy's top marksmen, scoring twice in just four minutes late in the second half to pull the hosts back from the brink. While a point saves face, Gian Piero Gasperini will be frustrated by a defensive display that nearly cost them dearly.",
+      "headline": "Vitinha comes off bench to sink Roma in second-half thriller at Marassi",
+      "score": "Genoa 2 - 1 Roma",
+      "brief": "Genoa took a massive leap away from the relegation zone with a gutsy comeback win over Roma at the Stadio Luigi Ferraris. After a cagey first half, the game exploded into life when Junior Messias converted a penalty for the hosts, only for Evan Ndicka to equalize for Roma just moments later. The drama peaked in the 80th minute when substitute Vitinha found the back of the net, rewarding Genoa’s clinical counter-attacking play. Despite a late siege by the Giallorossi, Genoa’s defensive organization remained unbreakable.",
       "bullets": [
-        "Gianluca Scamacca scored twice in quick succession (75', 79') to earn the draw.",
-        "Thomas Thiesson Kristensen and Keinan Davis had given Udinese a shock 2-0 lead.",
-        "Atalanta dominated possession with 64% but struggled to break Udinese's low block until the final quarter.",
-        "Udinese has now drawn three of their last four away matches against top-six opposition.",
-        "Scamacca has scored 5 goals in his last 4 appearances for club and country."
+        "Substitute Vitinha scored the winning goal in the 80th minute after being on the pitch for less than 15 minutes.",
+        "Junior Messias opened the scoring from the penalty spot in the 52nd minute after a foul on Victor Ellertsson.",
+        "Evan Ndicka equalized for Roma with a powerful header just two minutes after Genoa's opener.",
+        "Genoa goalkeeper Justin Bijlow made a series of crucial saves in the final 10 minutes to preserve the lead.",
+        "Roma controlled 58% of possession but struggled to penetrate Genoa’s low defensive block."
       ],
-      "context": "The draw keeps Atalanta in the hunt for European places but represents a missed opportunity at home.",
+      "context": "Genoa moves six points clear of the drop zone, while Roma misses a chance to climb into the top four.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.livesoccertv.com/match/4944430/atalanta-vs-udinese/"
+        "recapUrl": "https://www.vavel.com/en-us/soccer/2026/03/08/1253216-genoa-vs-roma-live-score-serie-a.html"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "LC95Zw3EVdw",
-          "title": "ATALANTA-UDINESE | HIGHLIGHTS | Incredible Comeback In Bergamo! | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=LC95Zw3EVdw",
-          "embedUrl": "https://www.youtube.com/embed/LC95Zw3EVdw",
-          "publishedAt": "2026-03-07T19:44:48Z",
-          "matchScore": 100
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260307-juventus-pisa",
+      "id": "serie-a-bologna-1-2-verona-bowie-shock-victory",
       "teams": {
-        "away": "Pisa",
-        "home": "Juventus"
+        "away": "Verona",
+        "home": "Bologna"
       },
-      "headline": "Yildiz shines as Juventus crushes Pisa to end winless drought",
-      "score": "JUV 4 - PIS 0",
-      "brief": "The pressure on Thiago Motta finally lifted as Juventus returned to winning ways in style at the Allianz Stadium. After a tense, goalless first half, the floodgates opened following Andrea Cambiaso's breakthrough. Kenan Yıldız was the architect-in-chief, scoring a magnificent third and providing an assist in a performance that reconfirmed his status as the club's new golden boy. The 4-0 scoreline was a fair reflection of a dominant second half that had the Turin faithful back in full voice.",
+      "headline": "Bowie's debut goal caps stunning Verona comeback at the Dall'Ara",
+      "score": "Bologna 1 - 2 Verona",
+      "brief": "Hellas Verona pulled off the upset of the season, coming from a goal down to beat high-flying Bologna in their own backyard. Jonathan Rowe had given the hosts the lead early in the second half, seemingly putting Bologna on track for their sixth straight win. However, Verona responded with incredible grit, equalizing through Martin Frese before Kieron Bowie secured the win with his first-ever Serie A goal. The result snapped Bologna's winning streak and gave Verona a lifeline in their desperate fight against relegation.",
       "bullets": [
-        "Kenan Yıldız recorded a goal and an assist in a Man of the Match performance.",
-        "Andrea Cambiaso, Khéphren Thuram, and Jeremie Boga also found the net for the Bianconeri.",
-        "Juventus kept their first clean sheet in five matches.",
-        "The win snaps a four-match winless streak in Serie A for the Old Lady.",
-        "Pisa remains rooted in the relegation battle after managing zero shots on target."
+        "Kieron Bowie scored the match-winner in the 57th minute, marking his first goal in Italian football.",
+        "Bologna’s Jonathan Rowe opened the scoring in the 49th minute before Verona's quickfire response.",
+        "Verona's victory is their first league win in over two months, dating back to December.",
+        "Bologna had a potential late equalizer from Santiago Castro ruled out for a foul after a VAR review.",
+        "Hellas Verona keeper Lorenzo Montipò made seven saves to keep the Rossoblu at bay."
       ],
-      "context": "Juventus moves back into 2nd place, staying within striking distance of the leaders.",
+      "context": "The win moves Verona out of the bottom three for the first time in weeks, while Bologna’s European push takes a hit.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.livesoccertv.com/match/4944432/juventus-vs-pisa/"
+        "recapUrl": "https://football-italia.net/serie-a-bologna-1-2-verona-bowie-shock-victory/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "A8M27BjjUnU",
-          "title": "JUVENTUS-PISA 4-0 | HIGHLIGHTS | Juventus Firing On All Cylinders | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=A8M27BjjUnU",
-          "embedUrl": "https://www.youtube.com/embed/A8M27BjjUnU",
-          "publishedAt": "2026-03-07T22:27:40Z",
-          "matchScore": 100
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "lecce-2-1-cremonese-big-win-survival-vardy",
+      "teams": {
+        "away": "Cremonese",
+        "home": "Lecce"
+      },
+      "headline": "Lecce survive late VAR drama to edge Cremonese in relegation battle",
+      "score": "Lecce 2 - 1 Cremonese",
+      "brief": "Lecce secured a vital three points in the race for Serie A survival, narrowly defeating direct rivals Cremonese at the Stadio Via del Mare. The Giallorossi looked to be cruising after first-half goals from Santiago Pierotti and a Nikola Stulic penalty, but a revitalized Cremonese fought back after the break. A Federico Bonazzoli goal set up a frantic finish, which included a disallowed Cremonese equalizer and a red card for the visitors' bench, leaving the home crowd exhausted but jubilant at the final whistle.",
+      "bullets": [
+        "Santiago Pierotti opened the scoring in the 22nd minute with a header from a corner kick.",
+        "Nikola Stulic converted a 38th-minute penalty after a VAR review confirmed a handball by Matteo Bianchetti.",
+        "Cremonese striker Jamie Vardy was forced off with an injury during the halftime interval.",
+        "Cremonese's Giuseppe Pezzella was sent off from the bench during heated stoppage-time protests.",
+        "Lecce keeper Wladimiro Falcone made a point-blank save in the 93rd minute to deny an equalizer."
+      ],
+      "context": "Lecce moves three points clear of the relegation zone, placing Cremonese in a precarious position heading into the final stretch.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://football-italia.net/lecce-2-1-cremonese-big-win-survival-vardy/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "serie-a-fiorentina-0-0-parma-cannot-viola-joy",
+      "teams": {
+        "away": "Parma",
+        "home": "Fiorentina"
+      },
+      "headline": "Stalemate at the Franchi sees Fiorentina escape bottom three",
+      "score": "Fiorentina 0 - 0 Parma",
+      "brief": "Fiorentina and Parma played out a tense, scoreless draw that offered little entertainment but significant implications for the standings. While the Viola were frustrated by their inability to break down a resolute Parma defense, the single point was enough to lift them out of the relegation zone for the first time since October. Parma, meanwhile, continued their impressive run of form, looking comfortable in mid-table and effectively extinguishing any lingering fears of being dragged back into the survival scrap.",
+      "bullets": [
+        "Fiorentina recorded 62% possession but managed only two shots on target throughout the match.",
+        "David de Gea preserved the point for the hosts with a sharp save on a late Gabriel Strefezza counter-attack.",
+        "Parma’s Zion Suzuki returned to the matchday squad for the first time since a hand injury in November.",
+        "The draw ends a two-match losing streak in Serie A for Fiorentina.",
+        "Parma has now kept three clean sheets in their last five league outings."
+      ],
+      "context": "A milestone point for Fiorentina as they climb out of the drop zone, though they remain just one point clear of danger.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://football-italia.net/serie-a-fiorentina-0-0-parma-cannot-viola-joy/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }
