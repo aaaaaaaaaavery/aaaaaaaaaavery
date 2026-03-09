@@ -31253,6 +31253,7 @@
       appendingGuard: false,
       manualNavLockUntil: 0,
       scrollTicking: false,
+    top10BriefingCollapsedByScroll: false,
       lastScrollTop: 0,
       top10Token: 0,
       top10Items: [],
@@ -32371,8 +32372,12 @@
             if (!parsed) return raw;
 
       if (COLLEGE_SCORE_LEAGUES.has(lk)) {
-                const awaySchool = String(parsed.awayTeam || "").trim() || extractCollegeSchoolName(game?.teams?.away);
-                const homeSchool = String(parsed.homeTeam || "").trim() || extractCollegeSchoolName(game?.teams?.home);
+                const awaySchool = lk === "ncaaw"
+                    ? (extractCollegeSchoolName(game?.teams?.away) || String(parsed.awayTeam || "").trim())
+                    : (String(parsed.awayTeam || "").trim() || extractCollegeSchoolName(game?.teams?.away));
+                const homeSchool = lk === "ncaaw"
+                    ? (extractCollegeSchoolName(game?.teams?.home) || String(parsed.homeTeam || "").trim())
+                    : (String(parsed.homeTeam || "").trim() || extractCollegeSchoolName(game?.teams?.home));
         if (!awaySchool || !homeSchool) return raw;
                 return `${awaySchool} ${parsed.awayScore} — ${homeSchool} ${parsed.homeScore}`;
       }
@@ -32387,6 +32392,9 @@
       const awayFull = extractFullTeamName(game?.teams?.away, lk);
       const homeFull = extractFullTeamName(game?.teams?.home, lk);
       if (!awayFull || !homeFull) return raw;
+            if (SOCCER_LEAGUE_KEYS.has(lk)) {
+                return `${awayFull} ${parsed.homeScore} — ${homeFull} ${parsed.awayScore}`;
+            }
             return `${awayFull} ${parsed.awayScore} — ${homeFull} ${parsed.homeScore}`;
     }
 
@@ -32820,10 +32828,20 @@
                     const isCollegeScoreLeague = COLLEGE_SCORE_LEAGUES.has(normalizedScoreLeagueKey);
                     const awayName = extractFullTeamName(g?.teams?.away, scoreLeagueKey) || parsedScore.awayTeam || "";
                     const homeName = extractFullTeamName(g?.teams?.home, scoreLeagueKey) || parsedScore.homeTeam || "";
-                    const awayDisplayName = isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.awayTeam : awayName;
-                    const homeDisplayName = isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.homeTeam : homeName;
-                    const awayStandingLookup = isCollegeScoreLeague ? parsedScore.awayTeam : awayName;
-                    const homeStandingLookup = isCollegeScoreLeague ? parsedScore.homeTeam : homeName;
+                                        const ncaawAwaySchool = extractCollegeSchoolName(g?.teams?.away);
+                                        const ncaawHomeSchool = extractCollegeSchoolName(g?.teams?.home);
+                                        const awayDisplayName = normalizedScoreLeagueKey === "ncaaw"
+                                            ? (ncaawAwaySchool || parsedScore.awayTeam)
+                                            : (isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.awayTeam : awayName);
+                                        const homeDisplayName = normalizedScoreLeagueKey === "ncaaw"
+                                            ? (ncaawHomeSchool || parsedScore.homeTeam)
+                                            : (isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.homeTeam : homeName);
+                                        const awayStandingLookup = normalizedScoreLeagueKey === "ncaaw"
+                                            ? (ncaawAwaySchool || parsedScore.awayTeam)
+                                            : (isCollegeScoreLeague ? parsedScore.awayTeam : awayName);
+                                        const homeStandingLookup = normalizedScoreLeagueKey === "ncaaw"
+                                            ? (ncaawHomeSchool || parsedScore.homeTeam)
+                                            : (isCollegeScoreLeague ? parsedScore.homeTeam : homeName);
                     const awayStanding = findTeamStanding(scoreLeagueKey, awayStandingLookup);
                     const homeStanding = findTeamStanding(scoreLeagueKey, homeStandingLookup);
                     const awayLogoUrl = getTeamLogoUrl(scoreLeagueKey, awayName || parsedScore.awayTeam);
@@ -32982,6 +33000,7 @@
 
       const briefing = document.createElement("div");
       briefing.className = "border-b border-gray-200 px-3 py-3 sm:px-4 sm:py-4";
+    briefing.dataset.leagueBriefing = "1";
       const leagueBriefText = composeLeagueBriefText(data);
       if (leagueBriefText) {
         const p = document.createElement("div");
@@ -33520,11 +33539,41 @@
       }
     }
 
+        function updateTop10BriefingFromScroll() {
+            const section = state.sectionByLeagueKey.get("all");
+            if (!section) return;
+
+            const briefing = section.querySelector("[data-league-briefing='1']");
+            if (!briefing) return;
+
+            const firstCard = section.querySelector(".game-card");
+            if (!firstCard) return;
+
+            const containerTop = rightScroll.getBoundingClientRect().top;
+            const firstCardTop = firstCard.getBoundingClientRect().top - containerTop;
+
+            // Hysteresis prevents flicker as collapsing/expanding changes layout height.
+            const collapseAt = 120;
+            const expandAt = 190;
+
+            if (!state.top10BriefingCollapsedByScroll && firstCardTop <= collapseAt) {
+                briefing.classList.add("hidden");
+                state.top10BriefingCollapsedByScroll = true;
+                return;
+            }
+
+            if (state.top10BriefingCollapsedByScroll && firstCardTop >= expandAt) {
+                briefing.classList.remove("hidden");
+                state.top10BriefingCollapsedByScroll = false;
+            }
+        }
+
     function onScroll() {
       if (state.scrollTicking) return;
       state.scrollTicking = true;
       requestAnimationFrame(async () => {
         state.scrollTicking = false;
+                updateTop10BriefingFromScroll();
         updateCurrentLeagueFromScroll();
         updateActiveHeadlineFromScroll();
         await maybeAppendNextLeague();
