@@ -1,13 +1,19 @@
 const { execSync } = require('child_process');
+const path = require('path');
 
 // Try to load standings scraper config (if it exists)
 let STANDINGS_CONFIG = {};
 try {
-  // For CommonJS, we can use require directly
-  STANDINGS_CONFIG = require('./standings-scraper-config.js').STANDINGS_SCRAPER_CONFIG || {};
-} catch (e) {
-  // Config file doesn't exist or can't be loaded, use all enabled by default
-  console.log('⚠️ Could not load standings-scraper-config.js, running all scrapers');
+  const configCjsPath = path.resolve(__dirname, '../../standings-scraper-config.cjs');
+  STANDINGS_CONFIG = require(configCjsPath).STANDINGS_SCRAPER_CONFIG || {};
+} catch (firstError) {
+  try {
+    const configJsPath = path.resolve(__dirname, '../../standings-scraper-config.js');
+    STANDINGS_CONFIG = require(configJsPath).STANDINGS_SCRAPER_CONFIG || {};
+  } catch (secondError) {
+    // Config file doesn't exist or can't be loaded, use all enabled by default
+    console.log('⚠️ Could not load standings-scraper-config.{cjs,js}, running all scrapers');
+  }
 }
 
 // Add delay between scrapers for responsible scraping
@@ -37,9 +43,7 @@ async function runScraperIfEnabled(scraperFile, emoji, name) {
 }
 
 async function runScrapers() {
-  // NFL standings are intentionally hardcoded in the front-end to prevent
-  // live scrapes from overwriting curated data. Skip the NFL scraper here.
-  // await runScraperIfEnabled('scrape-nfl-standings.cjs', '🏈', 'NFL Standings');
+  await runScraperIfEnabled('scrape-nfl-standings.cjs', '🏈', 'NFL Standings');
   await runScraperIfEnabled('scrape-nba-standings.cjs', '🏀', 'NBA Standings');
   await runScraperIfEnabled('scrape-mlb-standings.cjs', '⚾', 'MLB Standings');
   await runScraperIfEnabled('scrape-nhl-standings.cjs', '🏒', 'NHL Standings');
@@ -57,9 +61,8 @@ async function runScrapers() {
   await runScraperIfEnabled('scrape-ligamx-standings.cjs', '⚽', 'Liga MX Standings');
   await runScraperIfEnabled('scrape-nwsl-standings.cjs', '⚽', 'NWSL Standings');
   await runScraperIfEnabled('scrape-ligue1-standings.cjs', '⚽', 'Ligue 1 Standings');
-  // PAUSED: F1 is out of season - uncomment when F1 season resumes
-  // await runScraperIfEnabled('scrape-f1-driver-standings.cjs', '🏎️', 'F1 Driver Standings');
-  // await runScraperIfEnabled('scrape-f1-constructor-standings.cjs', '🏎️', 'F1 Constructor Standings');
+  await runScraperIfEnabled('scrape-f1-driver-standings.cjs', '🏎️', 'F1 Driver Standings');
+  await runScraperIfEnabled('scrape-f1-constructor-standings.cjs', '🏎️', 'F1 Constructor Standings');
   await runScraperIfEnabled('sync-top25-to-games.cjs', '🔄', 'Top 25 Rankings Sync');
   await runScraperIfEnabled('scrape-cfp-standings.cjs', '🏈', 'CFP Rankings');
   await runScraperIfEnabled('scrape-pgatour-standings.cjs', '⛳', 'PGA Tour Standings');
