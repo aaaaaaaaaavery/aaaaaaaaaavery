@@ -167,8 +167,11 @@
       { leagueName: "Carabao Cup", leagueKey: "carabaocup", fileUrl: "recaps-manual/daily/carabaocup.json" },
       { leagueName: "Coupe de France", leagueKey: "coupedefrance", fileUrl: "recaps-manual/daily/coupedefrance.json" },
       { leagueName: "SheBelieves Cup", leagueKey: "shebelievescup", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "SHEBELIEVES_CUP" },
+    { leagueName: "Scottish Cup", leagueKey: "scottishcup", fileUrl: "recaps-manual/daily/scottishcup.json" },
       { leagueName: "Six Nations", leagueKey: "sixnations", fileUrl: "recaps-manual/daily/sixnations.json" },
       { leagueName: "WBC", leagueKey: "wbc", fileUrl: "recaps-manual/daily/wbc.json" },
+    { leagueName: "NASCAR Cup Series", leagueKey: "nascarcupseries", fileUrl: "recaps-manual/daily/nascarcupseries.json" },
+    { leagueName: "NHRA", leagueKey: "nhra", fileUrl: "recaps-manual/daily/nhra.json" },
       { leagueName: "UFC", leagueKey: "ufc", fileUrl: "recaps-manual/daily/ufc.json" },
       { leagueName: "Boxing", leagueKey: "boxing", fileUrl: "recaps-manual/daily/boxing.json" },
       { leagueName: "PGA Tour", leagueKey: "pgatour", fileUrl: "recaps-manual/daily/pgatour.json" },
@@ -176,17 +179,17 @@
       { leagueName: "LPGA Tour", leagueKey: "lpgatour", fileUrl: "recaps-manual/daily/lpgatour.json" },
       { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/livgolf.json" },
       { leagueName: "ATP", leagueKey: "atp", fileUrl: "recaps-manual/daily/tennis-atp.json" },
-      { leagueName: "WTA", leagueKey: "wta", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "WTA" }
+            { leagueName: "WTA", leagueKey: "wta", fileUrl: "recaps-manual/daily/tennis-wta.json" }
     ];
 
     const LEAGUE_DISPLAY_ORDER = [
       "NFL", "NBA", "MLB", "NHL", "WBC", "Soccer", "Formula One", "NCAAM", "NCAAW", "PGA Tour", "UFC", "Boxing",
-      "NASCAR Cup Series", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "NCAA Softball", "IndyCar", "LPGA Tour", "MotoGP", "Six Nations"
+            "NASCAR Cup Series", "NHRA", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "NCAA Softball", "IndyCar", "LPGA Tour", "MotoGP", "Six Nations"
     ];
 
     const SOCCER_LEAGUE_DISPLAY_ORDER = [
       "Premier League", "UEFA Champions League", "MLS", "LaLiga", "Serie A", "Bundesliga", "Ligue 1", "Liga MX",
-      "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France", "SheBelieves Cup"
+            "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France", "SheBelieves Cup", "Scottish Cup"
     ];
 
     const GOLF_LEAGUE_DISPLAY_ORDER = [
@@ -203,7 +206,7 @@
     const TENNIS_ORDER_INDEX = Object.fromEntries(TENNIS_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_LEAGUE_KEYS = new Set([
       "premierleague", "uefachampionsleague", "mls", "laliga", "seriea", "bundesliga", "ligue1", "ligamx",
-      "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance", "shebelievescup"
+            "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance", "shebelievescup", "scottishcup"
     ]);
     const GOLF_LEAGUE_KEYS = new Set(["pgatour", "dpworldtour", "lpgatour", "livgolf"]);
     const TENNIS_LEAGUE_KEYS = new Set(["atp", "wta"]);
@@ -314,6 +317,9 @@
             ncaabaseball: "https://www.ncaa.com/modules/custom/casablanca_core/img/sportbanners/baseball.png",
             ncaasoftball: "https://a.espncdn.com/i/espn/misc_logos/500/ncaa_womens_softball.png",
             nascar: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/500px-NASCAR_Cup_Series_logo.svg.png",
+            nascarcupseries: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/500px-NASCAR_Cup_Series_logo.svg.png",
+            scottishcup: "https://scottishcuptoolkit.co.uk/img/mensscottishcupbadge.png",
+            nhra: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/National_Hot_Rod_Association_Logo.svg/500px-National_Hot_Rod_Association_Logo.svg.png",
             sixnations: "https://cdn.jsdelivr.net/gh/aaaaaaaaaavery/aaaaaaaaaavery@8808cbdbdf55e9720bb3117a554471e4cc36af7d/sixnations.svg",
         };
         const LEAGUE_WIKIPEDIA_PAGE_BY_KEY = {
@@ -366,6 +372,7 @@
             livgolf: "LIVGolf",
             indycar: "IndyCar",
             nascar: "NASCARCupSeries",
+            nascarcupseries: "NASCARCupSeries",
             motogp: "MotoGP",
             tennis: "Tennis",
             atp: "Tennis",
@@ -456,10 +463,33 @@
                 laclippers: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Los_Angeles_Clippers_%282024%29.svg/500px-Los_Angeles_Clippers_%282024%29.svg.png",
                 lac: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Los_Angeles_Clippers_%282024%29.svg/500px-Los_Angeles_Clippers_%282024%29.svg.png",
             },
+            mls: {
+                atlantautd: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+                atlantaunited: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+                atlantaunitedfc: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+                atl: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Atlanta_MLS.svg/500px-Atlanta_MLS.svg.png",
+
+                sportingkc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sporting_Kansas_City_logo.svg/500px-Sporting_Kansas_City_logo.svg.png",
+                sportingkansascity: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sporting_Kansas_City_logo.svg/500px-Sporting_Kansas_City_logo.svg.png",
+                skc: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sporting_Kansas_City_logo.svg/500px-Sporting_Kansas_City_logo.svg.png",
+
+                minnesotaunited: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Minnesota_United_FC_%28MLS%29_Primary_logo.svg/330px-Minnesota_United_FC_%28MLS%29_Primary_logo.svg.png",
+                minnesotaunitedfc: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Minnesota_United_FC_%28MLS%29_Primary_logo.svg/330px-Minnesota_United_FC_%28MLS%29_Primary_logo.svg.png",
+                min: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Minnesota_United_FC_%28MLS%29_Primary_logo.svg/330px-Minnesota_United_FC_%28MLS%29_Primary_logo.svg.png",
+
+                losangelesfc: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Los_Angeles_Football_Club.svg/330px-Los_Angeles_Football_Club.svg.png",
+                lafc: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Los_Angeles_Football_Club.svg/330px-Los_Angeles_Football_Club.svg.png",
+
+                sjearthquakes: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+                sanjoseearthquakes: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+                earthquakes: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+                sj: "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png",
+            },
         };
         const SCORE_CARD_LOGO_API_BY_LEAGUE = {
             nba: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams",
             mls: "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/teams",
+            ligamx: "https://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/teams",
             laliga: "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/teams",
             seriea: "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/teams",
             bundesliga: "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/teams",
@@ -471,6 +501,7 @@
             "nba",
             "wbc",
             "mls",
+            "ligamx",
             "laliga",
             "seriea",
             "bundesliga",
@@ -32294,45 +32325,73 @@
       return raw;
     }
 
-    function formatScoreLineWithMascots(game, leagueKey) {
-      const lk = String(leagueKey || "").toLowerCase();
-      const raw = String(game?.scoreLine || game?.score || "").trim();
-      if (!raw) return raw;
+        function parseStructuredScoreLine(scoreLine) {
+            const raw = String(scoreLine || "").trim();
+            if (!raw) return null;
 
-      const m = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
-      if (!m) return raw;
+            // Normalize common wrappers while preserving the core score string.
+            const normalized = raw
+                .replace(/^(?:ft|final|full\s*time)\s*[:\-]?\s*/i, "")
+                .replace(/\s*\((?:on\s+penalties|penalties|pens?|aet|after\s+extra\s+time|agg[^)]*)\)\s*$/i, "")
+                .trim();
+            const parseInput = normalized || raw;
+
+            // Supports both formats:
+            // 1) Team A 3 - Team B 2
+            // 2) Team A 3 - 2 Team B
+            const patternA = parseInput.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(.+?)\s+(\d+)$/);
+            if (patternA) {
+                return {
+                    awayTeam: String(patternA[1] || "").trim(),
+                    awayScore: String(patternA[2] || "").trim(),
+                    homeTeam: String(patternA[3] || "").trim(),
+                    homeScore: String(patternA[4] || "").trim(),
+                };
+            }
+
+            const patternB = parseInput.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(\d+)\s+(.+)$/);
+            if (patternB) {
+                return {
+                    awayTeam: String(patternB[1] || "").trim(),
+                    awayScore: String(patternB[2] || "").trim(),
+                    homeTeam: String(patternB[4] || "").trim(),
+                    homeScore: String(patternB[3] || "").trim(),
+                };
+            }
+
+            return null;
+        }
+
+        function formatScoreLineWithMascots(game, leagueKey) {
+            const lk = String(leagueKey || "").toLowerCase();
+            const raw = String(game?.scoreLine || game?.score || "").trim();
+            if (!raw) return raw;
+
+            const parsed = parseStructuredScoreLine(raw);
+            if (!parsed) return raw;
 
       if (COLLEGE_SCORE_LEAGUES.has(lk)) {
-        const awaySchool = extractCollegeSchoolName(game?.teams?.away);
-        const homeSchool = extractCollegeSchoolName(game?.teams?.home);
+                const awaySchool = String(parsed.awayTeam || "").trim() || extractCollegeSchoolName(game?.teams?.away);
+                const homeSchool = String(parsed.homeTeam || "").trim() || extractCollegeSchoolName(game?.teams?.home);
         if (!awaySchool || !homeSchool) return raw;
-        return `${awaySchool} ${m[2]} — ${homeSchool} ${m[4]}`;
+                return `${awaySchool} ${parsed.awayScore} — ${homeSchool} ${parsed.homeScore}`;
       }
 
       if (MASCOT_SCORE_LEAGUES.has(lk)) {
-                const awayMascot = extractMascotName(game?.teams?.away) || extractMascotName(m[1]);
-                const homeMascot = extractMascotName(game?.teams?.home) || extractMascotName(m[3]);
+                const awayMascot = extractMascotName(game?.teams?.away) || extractMascotName(parsed.awayTeam);
+                const homeMascot = extractMascotName(game?.teams?.home) || extractMascotName(parsed.homeTeam);
         if (!awayMascot || !homeMascot) return raw;
-        return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
+            return `${awayMascot} ${parsed.awayScore} — ${homeMascot} ${parsed.homeScore}`;
       }
 
       const awayFull = extractFullTeamName(game?.teams?.away, lk);
       const homeFull = extractFullTeamName(game?.teams?.home, lk);
       if (!awayFull || !homeFull) return raw;
-      return `${awayFull} ${m[2]} — ${homeFull} ${m[4]}`;
+            return `${awayFull} ${parsed.awayScore} — ${homeFull} ${parsed.homeScore}`;
     }
 
     function parseScoreLine(scoreLine) {
-      const raw = String(scoreLine || "").trim();
-      if (!raw) return null;
-      const m = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
-      if (!m) return null;
-      return {
-        awayTeam: String(m[1] || "").trim(),
-        awayScore: String(m[2] || "").trim(),
-        homeTeam: String(m[3] || "").trim(),
-        homeScore: String(m[4] || "").trim(),
-      };
+            return parseStructuredScoreLine(scoreLine);
     }
 
     function scoreGame(game, leagueKey, briefingText) {
@@ -32756,13 +32815,17 @@
 
         if (parsedScore) {
                     const isWbcScore = String(scoreLeagueKey || "").toLowerCase() === "wbc";
-                    const isMascotScoreLeague = MASCOT_SCORE_LEAGUES.has(String(scoreLeagueKey || "").toLowerCase());
+                    const normalizedScoreLeagueKey = String(scoreLeagueKey || "").toLowerCase();
+                    const isMascotScoreLeague = MASCOT_SCORE_LEAGUES.has(normalizedScoreLeagueKey);
+                    const isCollegeScoreLeague = COLLEGE_SCORE_LEAGUES.has(normalizedScoreLeagueKey);
                     const awayName = extractFullTeamName(g?.teams?.away, scoreLeagueKey) || parsedScore.awayTeam || "";
                     const homeName = extractFullTeamName(g?.teams?.home, scoreLeagueKey) || parsedScore.homeTeam || "";
-                    const awayDisplayName = isMascotScoreLeague ? parsedScore.awayTeam : awayName;
-                    const homeDisplayName = isMascotScoreLeague ? parsedScore.homeTeam : homeName;
-                    const awayStanding = findTeamStanding(scoreLeagueKey, awayName);
-                    const homeStanding = findTeamStanding(scoreLeagueKey, homeName);
+                    const awayDisplayName = isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.awayTeam : awayName;
+                    const homeDisplayName = isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.homeTeam : homeName;
+                    const awayStandingLookup = isCollegeScoreLeague ? parsedScore.awayTeam : awayName;
+                    const homeStandingLookup = isCollegeScoreLeague ? parsedScore.homeTeam : homeName;
+                    const awayStanding = findTeamStanding(scoreLeagueKey, awayStandingLookup);
+                    const homeStanding = findTeamStanding(scoreLeagueKey, homeStandingLookup);
                     const awayLogoUrl = getTeamLogoUrl(scoreLeagueKey, awayName || parsedScore.awayTeam);
                     const homeLogoUrl = getTeamLogoUrl(scoreLeagueKey, homeName || parsedScore.homeTeam);
 
