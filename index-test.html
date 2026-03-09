@@ -318,6 +318,8 @@
             ncaasoftball: "https://a.espncdn.com/i/espn/misc_logos/500/ncaa_womens_softball.png",
             nascar: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/500px-NASCAR_Cup_Series_logo.svg.png",
             nascarcupseries: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/NASCAR_Cup_Series_logo.svg/500px-NASCAR_Cup_Series_logo.svg.png",
+            scottishcup: "https://scottishcuptoolkit.co.uk/img/mensscottishcupbadge.png",
+            nhra: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/National_Hot_Rod_Association_Logo.svg/500px-National_Hot_Rod_Association_Logo.svg.png",
             sixnations: "https://cdn.jsdelivr.net/gh/aaaaaaaaaavery/aaaaaaaaaavery@8808cbdbdf55e9720bb3117a554471e4cc36af7d/sixnations.svg",
         };
         const LEAGUE_WIKIPEDIA_PAGE_BY_KEY = {
@@ -32323,45 +32325,66 @@
       return raw;
     }
 
-    function formatScoreLineWithMascots(game, leagueKey) {
-      const lk = String(leagueKey || "").toLowerCase();
-      const raw = String(game?.scoreLine || game?.score || "").trim();
-      if (!raw) return raw;
+        function parseStructuredScoreLine(scoreLine) {
+            const raw = String(scoreLine || "").trim();
+            if (!raw) return null;
 
-      const m = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
-      if (!m) return raw;
+            // Supports both formats:
+            // 1) Team A 3 - Team B 2
+            // 2) Team A 3 - 2 Team B
+            const patternA = raw.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(.+?)\s+(\d+)$/);
+            if (patternA) {
+                return {
+                    awayTeam: String(patternA[1] || "").trim(),
+                    awayScore: String(patternA[2] || "").trim(),
+                    homeTeam: String(patternA[3] || "").trim(),
+                    homeScore: String(patternA[4] || "").trim(),
+                };
+            }
+
+            const patternB = raw.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(\d+)\s+(.+)$/);
+            if (patternB) {
+                return {
+                    awayTeam: String(patternB[1] || "").trim(),
+                    awayScore: String(patternB[2] || "").trim(),
+                    homeTeam: String(patternB[4] || "").trim(),
+                    homeScore: String(patternB[3] || "").trim(),
+                };
+            }
+
+            return null;
+        }
+
+        function formatScoreLineWithMascots(game, leagueKey) {
+            const lk = String(leagueKey || "").toLowerCase();
+            const raw = String(game?.scoreLine || game?.score || "").trim();
+            if (!raw) return raw;
+
+            const parsed = parseStructuredScoreLine(raw);
+            if (!parsed) return raw;
 
       if (COLLEGE_SCORE_LEAGUES.has(lk)) {
         const awaySchool = extractCollegeSchoolName(game?.teams?.away);
         const homeSchool = extractCollegeSchoolName(game?.teams?.home);
         if (!awaySchool || !homeSchool) return raw;
-        return `${awaySchool} ${m[2]} — ${homeSchool} ${m[4]}`;
+                return `${awaySchool} ${parsed.awayScore} — ${homeSchool} ${parsed.homeScore}`;
       }
 
       if (MASCOT_SCORE_LEAGUES.has(lk)) {
-                const awayMascot = extractMascotName(game?.teams?.away) || extractMascotName(m[1]);
-                const homeMascot = extractMascotName(game?.teams?.home) || extractMascotName(m[3]);
+                const awayMascot = extractMascotName(game?.teams?.away) || extractMascotName(parsed.awayTeam);
+                const homeMascot = extractMascotName(game?.teams?.home) || extractMascotName(parsed.homeTeam);
         if (!awayMascot || !homeMascot) return raw;
-        return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
+            return `${awayMascot} ${parsed.awayScore} — ${homeMascot} ${parsed.homeScore}`;
       }
 
       const awayFull = extractFullTeamName(game?.teams?.away, lk);
       const homeFull = extractFullTeamName(game?.teams?.home, lk);
       if (!awayFull || !homeFull) return raw;
-      return `${awayFull} ${m[2]} — ${homeFull} ${m[4]}`;
+            return `${awayFull} ${parsed.awayScore} — ${homeFull} ${parsed.homeScore}`;
     }
 
     function parseScoreLine(scoreLine) {
-      const raw = String(scoreLine || "").trim();
-      if (!raw) return null;
-      const m = raw.match(/^(.+?)\s+(\d+)\s*[—-]\s*(.+?)\s+(\d+)$/);
-      if (!m) return null;
-      return {
-        awayTeam: String(m[1] || "").trim(),
-        awayScore: String(m[2] || "").trim(),
-        homeTeam: String(m[3] || "").trim(),
-        homeScore: String(m[4] || "").trim(),
-      };
+            return parseStructuredScoreLine(scoreLine);
     }
 
     function scoreGame(game, leagueKey, briefingText) {

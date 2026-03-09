@@ -27,10 +27,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "tm4wt5Kjn7M",
+          "title": "Australia vs. Japan 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=tm4wt5Kjn7M",
+          "embedUrl": "https://www.youtube.com/embed/tm4wt5Kjn7M",
+          "publishedAt": "2026-03-08T15:26:56Z",
+          "matchScore": 121
         }
       ]
     },
