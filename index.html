@@ -32310,8 +32310,8 @@
       }
 
       if (MASCOT_SCORE_LEAGUES.has(lk)) {
-        const awayMascot = extractMascotName(game?.teams?.away);
-        const homeMascot = extractMascotName(game?.teams?.home);
+                const awayMascot = extractMascotName(game?.teams?.away) || extractMascotName(m[1]);
+                const homeMascot = extractMascotName(game?.teams?.home) || extractMascotName(m[3]);
         if (!awayMascot || !homeMascot) return raw;
         return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
       }
@@ -32756,8 +32756,11 @@
 
         if (parsedScore) {
                     const isWbcScore = String(scoreLeagueKey || "").toLowerCase() === "wbc";
+                    const isMascotScoreLeague = MASCOT_SCORE_LEAGUES.has(String(scoreLeagueKey || "").toLowerCase());
                     const awayName = extractFullTeamName(g?.teams?.away, scoreLeagueKey) || parsedScore.awayTeam || "";
                     const homeName = extractFullTeamName(g?.teams?.home, scoreLeagueKey) || parsedScore.homeTeam || "";
+                    const awayDisplayName = isMascotScoreLeague ? parsedScore.awayTeam : awayName;
+                    const homeDisplayName = isMascotScoreLeague ? parsedScore.homeTeam : homeName;
                     const awayStanding = findTeamStanding(scoreLeagueKey, awayName);
                     const homeStanding = findTeamStanding(scoreLeagueKey, homeName);
                     const awayLogoUrl = getTeamLogoUrl(scoreLeagueKey, awayName || parsedScore.awayTeam);
@@ -32778,7 +32781,7 @@
                     }
                     const awayTeam = document.createElement("div");
                     awayTeam.className = "truncate text-sm font-medium text-gray-700";
-                    awayTeam.textContent = awayName || parsedScore.awayTeam;
+                    awayTeam.textContent = awayDisplayName || parsedScore.awayTeam;
                     awayTeamLine.appendChild(awayTeam);
                     awayTeamWrap.appendChild(awayTeamLine);
                     const awayMetaText = isWbcScore ? "" : formatStandingMeta(awayStanding);
@@ -32812,7 +32815,7 @@
                     }
                     const homeTeam = document.createElement("div");
                     homeTeam.className = "truncate text-sm font-medium text-gray-700";
-                    homeTeam.textContent = homeName || parsedScore.homeTeam;
+                    homeTeam.textContent = homeDisplayName || parsedScore.homeTeam;
                     homeTeamLine.appendChild(homeTeam);
                     homeTeamWrap.appendChild(homeTeamLine);
                     const homeMetaText = isWbcScore ? "" : formatStandingMeta(homeStanding);

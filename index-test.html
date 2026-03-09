@@ -32310,8 +32310,8 @@
       }
 
       if (MASCOT_SCORE_LEAGUES.has(lk)) {
-        const awayMascot = extractMascotName(game?.teams?.away);
-        const homeMascot = extractMascotName(game?.teams?.home);
+                const awayMascot = extractMascotName(game?.teams?.away) || extractMascotName(m[1]);
+                const homeMascot = extractMascotName(game?.teams?.home) || extractMascotName(m[3]);
         if (!awayMascot || !homeMascot) return raw;
         return `${awayMascot} ${m[2]} — ${homeMascot} ${m[4]}`;
       }
