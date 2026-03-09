@@ -2,101 +2,155 @@
   "leagueName": "Ligue 1",
   "leagueKey": "ligue1",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Saturday's Ligue 1 action was a masterclass in defensive resilience and clinical finishing on the road. Both Angers SCO and Olympique Marseille secured vital 1-0 away victories, while Auxerre and Strasbourg played out a tense tactical stalemate. Marseille's victory was particularly sweet, as they leapfrogged into third place while avenging a recent cup exit, while Angers proved they can grind out results in the most hostile environments.",
+  "leagueBriefing": "Paris Saint-Germain maintained their grip on the top of the table despite a hard-fought draw in Lyon, while Lens kept the pressure on with a clinical victory over Metz. Rennes provided the fireworks of the day with a four-goal demolition of Nice, and Brest continued their steady climb into the European conversation.",
   "games": [
     {
-      "id": "2026-03-07-nantes-angers-sco",
+      "id": "535127",
       "teams": {
-        "away": "Angers SCO",
-        "home": "Nantes"
+        "away": "Metz",
+        "home": "Lens"
       },
-      "headline": "Sbaï strike helps Angers silence the Beaujoire in gritty away win",
-      "score": "NAN 0 - ANG 1",
-      "brief": "In a match where chances were at a premium, Angers SCO showed exactly why they are a tough nut to crack on the road. Amine Sbaï provided the game's only moment of true quality shortly after the break, slotting home to stun the Nantes faithful. Despite a late barrage from the hosts, Angers' backline held firm to secure three points that feel massive in the mid-table scramble.",
+      "headline": "Lens keeps title hopes alive with clinical shutout of Metz",
+      "score": "Lens 3 - 0 Metz",
+      "brief": "RC Lens delivered a professional performance at the Stade Bollaert-Delelis, systematically dismantling a struggling Metz side to stay within striking distance of the league leaders. After a tense opening period, Saud Abdulhamid broke the deadlock just before the break, setting the stage for a second-half surge. The victory keeps Lens firmly in the championship conversation, proving they have the depth and discipline to maintain a serious title charge deep into the season.",
       "bullets": [
-        "Amine Sbaï scored the match-winner in the 52nd minute.",
-        "Nantes dominated the shot count 13-11 but managed only 3 on target.",
-        "Angers maintained a disciplined 52% possession to frustrate the hosts.",
-        "The victory marks a significant upward trend for Angers in the second half of the season."
+        "Saud Abdulhamid opened the scoring in the 44th minute with a precise finish into the bottom left corner.",
+        "Florian Thauvin and Amadou Haidara added second-half goals to secure the dominant 3-0 result.",
+        "The win moves Lens to within just one point of league leaders PSG in the standings.",
+        "Metz struggled to find any rhythm, managing only a few blocked attempts throughout the ninety minutes."
       ],
-      "context": "Angers' victory keeps them clear of the relegation scrap while dampening Nantes' European hopes.",
+      "context": "The victory leaves Lens one point behind PSG in a tightening race for the Ligue 1 title.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.365scores.com/en-us/football/match/ligue-1-35/angers-nantes-486-493-35"
+        "recapUrl": "https://www.beinsports.com/en-us/soccer/ligue-1/lens-vs-metz-2026-03-08"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "o2syFruj5xg",
-          "title": "Nantes vs Angers | HIGHLIGHTS Ligue 1 | 03/07/2026 | beIN SPORTS USA",
-          "url": "https://www.youtube.com/watch?v=o2syFruj5xg",
-          "embedUrl": "https://www.youtube.com/embed/o2syFruj5xg",
-          "publishedAt": "2026-03-07T19:10:36Z",
-          "matchScore": 141
+          "videoId": "3z74O1WMXtk",
+          "title": "Lens vs Metz | HIGHLIGHTS Ligue 1 | 03/08/2026",
+          "url": "https://www.youtube.com/watch?v=3z74O1WMXtk",
+          "embedUrl": "https://www.youtube.com/embed/3z74O1WMXtk"
         }
       ]
     },
     {
-      "id": "2026-03-07-auxerre-strasbourg",
+      "id": "73334",
       "teams": {
-        "away": "Strasbourg",
-        "home": "Auxerre"
+        "away": "Le Havre",
+        "home": "Brest"
       },
-      "headline": "Strasbourg held by resilient Auxerre despite possession dominance",
-      "score": "AUX 0 - STR 0",
-      "brief": "Strasbourg will leave the Abbé-Deschamps wondering how they didn't take all three points after controlling nearly three-quarters of the ball. Auxerre set up in a deep block and dared the visitors to break them down, a gamble that paid off as the match ended in a tactical 0-0 draw. It wasn't one for the neutrals, but for Auxerre, it's a hard-earned point against a top-half side.",
+      "headline": "Brest continues European surge with steady win over Le Havre",
+      "score": "Brest 2 - 0 Le Havre",
+      "brief": "Brest extended their unbeaten league run to five matches with a business-like 2-0 victory over Le Havre. Romain Del Castillo’s strike right on the stroke of halftime changed the complexion of the match, allowing the home side to control the second half with confidence. Ludovic Ajorque’s 71st-minute header sealed the points, leaving Brest fans dreaming of European qualification while Le Havre continues to glance nervously at the relegation zone.",
       "bullets": [
-        "Strasbourg dominated the match with a staggering 72% possession.",
-        "Auxerre's defense forced Strasbourg into mostly long-range efforts, allowing only 5 shots on target.",
-        "The match was a physical affair, with both sides receiving multiple bookings for tactical fouls.",
-        "Strasbourg has now drawn three of their last five matches."
+        "Romain Del Castillo broke the deadlock in the 45th minute with a well-placed left-footed shot.",
+        "Target man Ludovic Ajorque doubled the lead in the 71st minute, his 7th goal contribution in 6 games.",
+        "Brest has now kept three consecutive clean sheets in Ligue 1 for the first time in two years.",
+        "Le Havre remains stuck on just one away win for the entire 2025/26 campaign."
       ],
-      "context": "The point is vital for Auxerre's survival bid, while Strasbourg misses a chance to close the gap on the top five.",
+      "context": "The win keeps Brest in the thick of the race for a European spot, potentially reaching the Champions League qualifying rounds.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.365scores.com/en-us/football/match/ligue-1-35/auxerre-strasbourg-476-479-35"
+        "recapUrl": "https://ligue1.com/en/match-sheet/l1_championship_match_73334/stats"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "H2zKcZggs1I",
-          "title": "Auxerre vs Strasbourg | HIGHLIGHTS Ligue 1 | 03/07/2026 | bien SPORTS USA",
-          "url": "https://www.youtube.com/watch?v=H2zKcZggs1I",
-          "embedUrl": "https://www.youtube.com/embed/H2zKcZggs1I",
-          "publishedAt": "2026-03-07T20:23:19Z",
-          "matchScore": 141
+          "videoId": "wENZGqn9OyY",
+          "title": "Stade Brestois - Brest Vs Le Havre | Ligue 1 Full Match 25/26 Highlights",
+          "url": "https://www.youtube.com/watch?v=wENZGqn9OyY",
+          "embedUrl": "https://www.youtube.com/embed/wENZGqn9OyY"
         }
       ]
     },
     {
-      "id": "2026-03-07-toulouse-olympique-marseille",
+      "id": "d2nnj1IE",
       "teams": {
-        "away": "Olympique Marseille",
-        "home": "Toulouse"
+        "away": "Rennes",
+        "home": "Nice"
       },
-      "headline": "Greenwood fires Marseille into third with revenge win at Toulouse",
-      "score": "TOU 0 - MAR 1",
-      "brief": "Olympique Marseille exacted the perfect revenge on Toulouse following their recent cup exit. An early goal from Mason Greenwood—his 15th of the season—was all Roberto De Zerbi's side needed to secure a clinical 1-0 victory. Toulouse threw everything at the visitors in the second half, even rattling the woodwork, but Marseille showed a defensive grit that has been their hallmark during this surge up the table.",
+      "headline": "Rennes stuns Nice with four-goal masterclass on the road",
+      "score": "Nice 0 - 4 Rennes",
+      "brief": "Stade Rennais delivered the most lopsided result of the weekend, embarrassing OGC Nice at the Allianz Riviera. Rennes dominated every facet of the game, showcasing a clinical edge that has been missing for much of their season. For Nice, the defeat highlights a worrying trend of home struggles, as they failed to record a single shot on target for much of the contest. The result pulls Rennes within striking distance of the top three and leaves Claude Puel's Nice side looking for answers.",
       "bullets": [
-        "Mason Greenwood scored the game's only goal in the 18th minute.",
-        "Greenwood's strike takes him to 15 league goals for the campaign.",
-        "Toulouse hit the crossbar late in the second half during a frantic push for an equalizer.",
-        "The win officially moves Marseille into third place in the Ligue 1 standings."
+        "Rennes scored four unanswered goals to secure their largest away win of the season.",
+        "Breel Embolo continued his trend of late-game heroics, adding to the second-half tally.",
+        "Nice has now gone six consecutive top-flight home games without a victory.",
+        "Rennes moved within five points of the top three with their fourth consecutive league win."
       ],
-      "context": "Marseille moves into the Champions League places, trailing only PSG and Monaco.",
+      "context": "The massive win puts Rennes firmly back in contention for a Champions League spot.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.beinsports.com/en-mena/football/ligue-1/articles-video/marseille-take-revenge-on-toulouse-and-rise-to-third-in-ligue-1-2026-03-07"
+        "recapUrl": "https://www.flashscore.co.uk/match/football/nice-YagoQJpq/rennes-d2nnj1IE/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "joZgD3kh8wg",
-          "title": "Toulouse vs Marseille | HIGHLIGHTS Ligue 1 | 03/07/2026 | bien SPORTS USA",
-          "url": "https://www.youtube.com/watch?v=joZgD3kh8wg",
-          "embedUrl": "https://www.youtube.com/embed/joZgD3kh8wg",
-          "publishedAt": "2026-03-07T22:40:23Z",
-          "matchScore": 141
+          "videoId": "",
+          "title": "OGC Nice - Stade Rennais FC - (0 - 4) - Highlights",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "pfDZL71o",
+      "teams": {
+        "away": "Lorient",
+        "home": "Lille"
+      },
+      "headline": "Lille held by resilient Lorient in blow to European hopes",
+      "score": "Lille 1 - 1 Lorient",
+      "brief": "LOSC Lille missed a golden opportunity to climb into the top four after being held to a frustrating 1-1 draw by Lorient. Despite controlling possession and creating several chances, Lille lacked the final touch to put the game away. Lorient's organized defense and timely counters proved effective, as they snatched a valuable point on the road. The result is a setback for Lille's Champions League aspirations, while Lorient continues to pick up the gritty points needed for mid-table security.",
+      "bullets": [
+        "The match ended in a 1-1 deadlock, leaving Lille in 5th place in the standings.",
+        "Lille missed several opportunities to secure the win, hitting the woodwork once in the second half.",
+        "Lorient's goal came from a set-piece situation, highlighting Lille's occasional defensive lapses.",
+        "Lille remains three points adrift of the Champions League automatic qualification spots."
+      ],
+      "context": "The draw stalls Lille's momentum in a highly competitive race for the top four.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-mena/football/ligue-1/articles-video/lille-held-1-1-by-lorient-miss-chance-to-boost-european-push-2026-03-08"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "LOSC Lille - FC Lorient - (1 - 1) - Highlights",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260308-lyon-paris",
+      "teams": {
+        "away": "Paris",
+        "home": "Olympique Lyonnais"
+      },
+      "headline": "PSG survives Lyon test to maintain narrow lead at the top",
+      "score": "Olympique Lyonnais 1 - 1 Paris",
+      "brief": "In a clash of French giants, Paris Saint-Germain and Olympique Lyonnais played out a high-intensity 1-1 draw that lived up to the billing. Lyon struck early to put the champions on the back foot, but PSG's persistent pressure eventually told as they found a late equalizer to salvage a point. While Luis Enrique will be disappointed not to take all three points, the result keeps PSG at the summit of the table, though their lead over Lens has now been cut to a single point.",
+      "bullets": [
+        "The 1-1 draw is PSG's second consecutive game without a win against a top-six side.",
+        "PSG dominated possession but struggled to break through Lyon's disciplined low block.",
+        "The result leaves PSG only one point ahead of Lens with Matchday 25 concluding.",
+        "Lyon remains undefeated in their last four matches, cementing their position in the top four."
+      ],
+      "context": "The draw keeps PSG in first place but shrinks their lead to just one point over second-place Lens.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://en.parisfans.fr/ligue-1-highlights-from-matchday-2-lyon-top-the-table-psg-cruise-along.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "N3no-sclBuk",
+          "title": "OL - PSG: Highlights",
+          "url": "https://www.youtube.com/watch?v=N3no-sclBuk",
+          "embedUrl": "https://www.youtube.com/embed/N3no-sclBuk"
         }
       ]
     }
