@@ -32329,10 +32329,17 @@
             const raw = String(scoreLine || "").trim();
             if (!raw) return null;
 
+            // Normalize common wrappers while preserving the core score string.
+            const normalized = raw
+                .replace(/^(?:ft|final|full\s*time)\s*[:\-]?\s*/i, "")
+                .replace(/\s*\((?:on\s+penalties|penalties|pens?|aet|after\s+extra\s+time|agg[^)]*)\)\s*$/i, "")
+                .trim();
+            const parseInput = normalized || raw;
+
             // Supports both formats:
             // 1) Team A 3 - Team B 2
             // 2) Team A 3 - 2 Team B
-            const patternA = raw.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(.+?)\s+(\d+)$/);
+            const patternA = parseInput.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(.+?)\s+(\d+)$/);
             if (patternA) {
                 return {
                     awayTeam: String(patternA[1] || "").trim(),
@@ -32342,7 +32349,7 @@
                 };
             }
 
-            const patternB = raw.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(\d+)\s+(.+)$/);
+            const patternB = parseInput.match(/^(.+?)\s+(\d+)\s*[—–−-]\s*(\d+)\s+(.+)$/);
             if (patternB) {
                 return {
                     awayTeam: String(patternB[1] || "").trim(),
@@ -32364,8 +32371,8 @@
             if (!parsed) return raw;
 
       if (COLLEGE_SCORE_LEAGUES.has(lk)) {
-        const awaySchool = extractCollegeSchoolName(game?.teams?.away);
-        const homeSchool = extractCollegeSchoolName(game?.teams?.home);
+                const awaySchool = String(parsed.awayTeam || "").trim() || extractCollegeSchoolName(game?.teams?.away);
+                const homeSchool = String(parsed.homeTeam || "").trim() || extractCollegeSchoolName(game?.teams?.home);
         if (!awaySchool || !homeSchool) return raw;
                 return `${awaySchool} ${parsed.awayScore} — ${homeSchool} ${parsed.homeScore}`;
       }
@@ -32808,13 +32815,17 @@
 
         if (parsedScore) {
                     const isWbcScore = String(scoreLeagueKey || "").toLowerCase() === "wbc";
-                    const isMascotScoreLeague = MASCOT_SCORE_LEAGUES.has(String(scoreLeagueKey || "").toLowerCase());
+                    const normalizedScoreLeagueKey = String(scoreLeagueKey || "").toLowerCase();
+                    const isMascotScoreLeague = MASCOT_SCORE_LEAGUES.has(normalizedScoreLeagueKey);
+                    const isCollegeScoreLeague = COLLEGE_SCORE_LEAGUES.has(normalizedScoreLeagueKey);
                     const awayName = extractFullTeamName(g?.teams?.away, scoreLeagueKey) || parsedScore.awayTeam || "";
                     const homeName = extractFullTeamName(g?.teams?.home, scoreLeagueKey) || parsedScore.homeTeam || "";
-                    const awayDisplayName = isMascotScoreLeague ? parsedScore.awayTeam : awayName;
-                    const homeDisplayName = isMascotScoreLeague ? parsedScore.homeTeam : homeName;
-                    const awayStanding = findTeamStanding(scoreLeagueKey, awayName);
-                    const homeStanding = findTeamStanding(scoreLeagueKey, homeName);
+                    const awayDisplayName = isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.awayTeam : awayName;
+                    const homeDisplayName = isMascotScoreLeague || isCollegeScoreLeague ? parsedScore.homeTeam : homeName;
+                    const awayStandingLookup = isCollegeScoreLeague ? parsedScore.awayTeam : awayName;
+                    const homeStandingLookup = isCollegeScoreLeague ? parsedScore.homeTeam : homeName;
+                    const awayStanding = findTeamStanding(scoreLeagueKey, awayStandingLookup);
+                    const homeStanding = findTeamStanding(scoreLeagueKey, homeStandingLookup);
                     const awayLogoUrl = getTeamLogoUrl(scoreLeagueKey, awayName || parsedScore.awayTeam);
                     const homeLogoUrl = getTeamLogoUrl(scoreLeagueKey, homeName || parsedScore.homeTeam);
 
