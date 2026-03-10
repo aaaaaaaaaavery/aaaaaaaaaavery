@@ -32498,8 +32498,16 @@ Wisconsin
             return LEAGUE_NAV_LOGO_URL_BY_KEY[key] || "";
         }
 
-        function makeLeagueNavLogoNode(leagueKey, leagueName) {
+        function makeLeagueNavLogoNode(leagueKey, leagueName, isActive = false) {
             const key = String(leagueKey || "").trim().toLowerCase();
+            if (key === "all") {
+                const img = document.createElement("img");
+                img.src = isActive ? "thporth_logo_white.png" : "thporth_logo_black.png";
+                img.alt = "THPORTH logo";
+                img.className = "h-4 w-4 shrink-0 object-contain";
+                img.loading = "lazy";
+                return img;
+            }
             if (key === "boxing") {
                 const glove = document.createElement("iconify-icon");
                 glove.setAttribute("icon", "mdi:boxing-glove");
@@ -33822,7 +33830,7 @@ Wisconsin
         const nameRow = document.createElement("div");
         nameRow.className = "flex min-w-0 items-center gap-2";
 
-        const logoNode = makeLeagueNavLogoNode(lg.leagueKey, lg.leagueName);
+        const logoNode = makeLeagueNavLogoNode(lg.leagueKey, lg.leagueName, isActive);
 
         const name = document.createElement("div");
         name.className = "truncate text-sm font-bold";
