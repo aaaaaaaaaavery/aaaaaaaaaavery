@@ -2,117 +2,27 @@
   "leagueName": "NCAAW",
   "leagueKey": "ncaaw",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Conference tournament season reached a fever pitch on Sunday as heavyweights collided for silverware. Texas made a massive statement by dethroning South Carolina in the SEC, while UCLA left no doubt about their dominance in the Big Ten. Meanwhile, UConn continued its march toward another title with a century-mark performance in the Big East semifinals.",
+  "leagueBriefing": "Championship Monday saw UConn continue its reign of terror in the Big East, while James Madison, Fairfield, and Jacksonville punched their tickets to the Big Dance with conference titles. Meanwhile, the Mountain West and West Coast tournaments set the stage for high-stakes finals after a day of semifinal drama.",
   "games": [
     {
-      "id": "401815152",
+      "id": "401803310",
       "teams": {
-        "away": "Texas",
-        "home": "South Carolina"
-      },
-      "headline": "Texas ends South Carolina’s reign to claim SEC crown",
-      "score": "TEX 78 - SC 61",
-      "brief": "In a battle of titans, Texas proved they are the team to beat heading into the Big Dance by dismantling South Carolina. The Longhorns' defense swamped the Gamecocks from the opening tip, building a double-digit lead that the defending champs simply couldn't chip away at. It’s a performance that sends shockwaves through the bracket projections and establishes Texas as a bona fide national title favorite.",
-      "bullets": [
-        "Texas snapped South Carolina's long-standing dominance in conference tournament play.",
-        "The Longhorns led by as many as 21 points during a clinical second half.",
-        "South Carolina struggled with uncharacteristic turnovers and poor shooting percentages.",
-        "Madison Booker led the way for Texas, controlling the tempo and hitting clutch buckets."
-      ],
-      "context": "Texas secures the SEC's automatic bid and likely a #1 overall seed in the NCAA Tournament.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401815152"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "CqB97X0YmUo",
-          "title": "Texas vs. South Carolina Game Highlights",
-          "url": "https://www.youtube.com/watch?v=CqB97X0YmUo",
-          "embedUrl": "https://www.youtube.com/embed/CqB97X0YmUo"
-        }
-      ]
-    },
-    {
-      "id": "401814785",
-      "teams": {
-        "away": "Iowa",
-        "home": "UCLA"
-      },
-      "headline": "UCLA smothers Iowa to capture Big Ten title",
-      "score": "IOWA 45 - UCLA 96",
-      "brief": "UCLA didn't just win the Big Ten Tournament; they made a statement that echoed across the country. The Bruins' defense was suffocating, holding a high-powered Iowa offense to a meager 45 points in a blowout of historic proportions. From the first whistle, UCLA's length and athleticism were too much for the Hawkeyes to handle, turning the championship game into a highlight reel for the Bruins.",
-      "bullets": [
-        "The 51-point margin is one of the largest in Big Ten Tournament final history.",
-        "UCLA held Iowa to under 10 points in both the first and fourth quarters.",
-        "Lauren Betts dominated the paint on both ends of the floor for the Bruins.",
-        "Iowa finished with their lowest scoring output of the entire season."
-      ],
-      "context": "UCLA enters the NCAA Tournament with massive momentum as Big Ten Champions.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401814785"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "3_f7m9Q-5Yk",
-          "title": "Iowa vs. UCLA Big Ten Final Highlights",
-          "url": "https://www.youtube.com/watch?v=3_f7m9Q-5Yk",
-          "embedUrl": "https://www.youtube.com/embed/3_f7m9Q-5Yk"
-        }
-      ]
-    },
-    {
-      "id": "401815594",
-      "teams": {
-        "away": "Louisville",
-        "home": "Duke"
-      },
-      "headline": "Duke outlasts Louisville in overtime thriller for ACC glory",
-      "score": "LOU 65 - DUKE 70",
-      "brief": "It took five extra minutes to decide the ACC champion, but Duke eventually stood tall after an exhausting battle with Louisville. In a game defined by lead changes and physical defense, the Blue Devils found an extra gear in overtime to pull away. It was a gritty, high-stakes encounter that felt like a Final Four preview, with Duke proving they have the poise to win when the pressure is at its highest.",
-      "bullets": [
-        "Duke claimed their first ACC Tournament title since 2013.",
-        "The game saw 12 lead changes before Duke took control in the overtime period.",
-        "Louisville's comeback effort in the fourth quarter forced the extra session.",
-        "Reigan Richardson came up big for the Blue Devils with key baskets in OT."
-      ],
-      "context": "Duke secures the ACC's automatic bid and a likely top-4 seed in the NCAA Tournament.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401815594"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "6E_Xm8hS_3w",
-          "title": "Louisville vs. Duke ACC Final Highlights",
-          "url": "https://www.youtube.com/watch?v=6E_Xm8hS_3w",
-          "embedUrl": "https://www.youtube.com/embed/6E_Xm8hS_3w"
-        }
-      ]
-    },
-    {
-      "id": "401815777",
-      "teams": {
-        "away": "Creighton",
+        "away": "Villanova",
         "home": "UConn"
       },
-      "headline": "Sarah Strong leads UConn's hundred-point rout of Creighton",
-      "score": "CREI 51 - CONN 100",
-      "brief": "UConn looked every bit the top-ranked team in the nation on Sunday, dismantling Creighton to punch their ticket to the Big East title game. Sarah Strong was everywhere, putting up a stat line that looked more like a video game than a semifinal. The Huskies' ball movement and transition game were too fast for Creighton, as UConn hit the century mark and reminded the field why they are the favorites to cut down the nets in April.",
+      "headline": "UConn captures 24th Big East title in dominant fashion over Villanova",
+      "score": "Villanova 51 - UConn 90",
+      "brief": "The top-ranked Huskies left no room for doubt at Mohegan Sun Arena, dismantling Villanova to secure their 24th Big East championship. From a crushing 15-3 opening run to a dominant interior performance, UConn looked every bit like the national title favorite, extending their perfect season behind a balanced attack that the Wildcats simply couldn't weather.",
       "bullets": [
-        "Freshman Sarah Strong dropped 23 points, 7 rebounds, and 6 steals.",
-        "UConn reached 100 points for the fifth time this season.",
-        "The Huskies' defense forced 19 turnovers, leading to 28 transition points.",
-        "Creighton was held to just 9 points in a lopsided opening quarter."
+        "Azzi Fudd paced the Huskies with 19 points on efficient 8-of-13 shooting.",
+        "Sarah Strong dominated the glass and the paint with 18 points and eight rebounds in just 22 minutes.",
+        "UConn outscored Villanova 28-4 in the paint during a decisive first half.",
+        "The Huskies improved to 34-0 on the year, entering the NCAA Tournament undefeated."
       ],
-      "context": "UConn advances to the Big East Championship game seeking their 22nd tournament title.",
+      "context": "UConn earns the Big East automatic bid and secures a likely No. 1 overall seed in the NCAA Tournament.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401815777"
+        "recapUrl": "https://www.bigeast.com/news/2026/3/10/uconn-captures-the-2026-big-east-womens-basketball-crown.aspx"
       },
       "highlights": [
         {
@@ -125,270 +35,24 @@
       ]
     },
     {
-      "id": "401815124",
-      "teams": {
-        "away": "West Virginia",
-        "home": "TCU"
-      },
-      "headline": "West Virginia grinds out Big 12 title against TCU",
-      "score": "WVU 62 - TCU 53",
-      "brief": "In a defensive slugfest that came down to the final minutes, West Virginia showed more grit to claim the Big 12 Tournament title over TCU. The Mountaineers' relentless pressure eventually wore down the Horned Frogs, who struggled to find clean looks in the fourth quarter. It wasn't the prettiest offensive display, but for West Virginia fans, the trophy looks exactly the same after a hard-fought battle in Kansas City.",
-      "bullets": [
-        "West Virginia's defense held TCU to just 9 points in the critical third quarter.",
-        "JJ Quinerly led the Mountaineers with 18 points and key defensive stops.",
-        "This marks West Virginia's first Big 12 tournament championship since 2017.",
-        "TCU was held well below their season scoring average of 74 points."
-      ],
-      "context": "West Virginia earns the Big 12 automatic bid and a major boost in seeding.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401815124"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "G2-R_6mN6pU",
-          "title": "WVU vs. TCU Big 12 Final Highlights",
-          "url": "https://www.youtube.com/watch?v=G2-R_6mN6pU",
-          "embedUrl": "https://www.youtube.com/embed/G2-R_6mN6pU"
-        }
-      ]
-    },
-    {
-  "leagueName": "NCAAW",
-  "leagueKey": "ncaaw",
-  "sourceType": "console_recaps",
-  "leagueBriefing": "Tournament madness was in full swing on Sunday as underdogs shook up conference brackets across the country. Air Force pulled off the shocker of the day by toppling top-seeded San Diego State, while Samford completed a stunning rally to snatch the SoCon title. From overtime survival in the MAAC to dominant displays in the Sun Belt, the road to the Big Dance is getting wild.",
-  "games": [
-    {
-      "id": "401815809",
-      "teams": {
-        "away": "Merrimack",
-        "home": "Fairfield"
-      },
-      "headline": "Huerter and Andersen power No. 25 Fairfield into MAAC title game",
-      "score": "MRMK 48 - FAIR 65",
-      "brief": "Fairfield's dynamic duo of Jillian Huerter and Meghan Andersen proved too much for Merrimack, as the Stags pulled away in the second half to secure their spot in the MAAC championship. Despite a cold night from deep for Andersen, her presence inside complemented Huerter's hot hand from the perimeter. The Stags survived a mid-game lull to maintain their quest for a conference sweep.",
-      "bullets": [
-        "Jillian Huerter led the Stags with 19 points, including five triples.",
-        "Fairfield held Merrimack to just 7 points in the final quarter to seal the win.",
-        "The Stags' defense neutralized Merrimack's leading scorers after a tight first half.",
-        "Fairfield advances to face top-seeded Quinnipiac for the tournament trophy."
-      ],
-      "context": "Fairfield moves one win away from an automatic NCAA Tournament bid.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.newsday.com/sports/college/college-basketball/merrmack-fairfield-score-o96874"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401815254",
-      "teams": {
-        "away": "Samford",
-        "home": "Chattanooga"
-      },
-      "headline": "Samford stuns Chattanooga to punch ticket to March Madness",
-      "score": "SAM 72 - CHAT 67",
-      "brief": "In an improbable underdog story, Samford erased an early double-digit deficit to upset top-seeded Chattanooga and capture the Southern Conference title. Behind a barrage of three-pointers and ice-cold free-throw shooting in the final seconds, the Bulldogs secured an automatic NCAA bid in head coach Matt Wise's debut season. It was a classic tournament turnaround for a team that found its best form at exactly the right time.",
-      "bullets": [
-        "Freshman Kaylee Yarbrough came off the bench for a career-high 25 points.",
-        "Samford shot a blistering 58.8% (10-for-17) from beyond the arc.",
-        "The Bulldogs converted 12-of-13 free throws to fend off a late Mocs rally.",
-        "This marks Samford's first SoCon championship under their new coaching staff."
-      ],
-      "context": "Samford earns the SoCon automatic bid and their first NCAA appearance since 2020.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://samfordsports.com/news/2026/3/8/womens-basketball-samford-upsets-chattanooga-to-claim-socon-championship-earn-ncaa-bid.aspx"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401815808",
-      "teams": {
-        "away": "Iona",
-        "home": "Quinnipiac"
-      },
-      "headline": "Quinnipiac survives Iona in overtime thriller to reach MAAC final",
-      "score": "IONA 62 - QUIN 63",
-      "brief": "Top-seeded Quinnipiac narrowly avoided disaster, outlasting a gritty Iona squad in an overtime battle that came down to the final possession. After Iona took a late lead in the extra period, the Bobcats found a way to reclaim the edge and watched as the Gaels' final attempt missed the mark. It was a game of punch and counter-punch that kept the Atlantic City crowd on its feet until the buzzer.",
-      "bullets": [
-        "Karson Martin led the Bobcats with 19 points off the bench.",
-        "Iona's Zoey Ward recorded a double-double with 23 points and 10 rebounds.",
-        "The game featured multiple lead changes in both the fourth quarter and OT.",
-        "Quinnipiac dominated the glass with a 43-32 rebounding advantage."
-      ],
-      "context": "The Bobcats advance to face Fairfield in a heavyweight MAAC Championship clash.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://ionagaels.com/news/2026/3/8/womens-basketball-iona-wbb-2025-26-season-comes-to-close-in-maac-semifinals.aspx"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401815143",
+      "id": "20260309-jamesmadison-troy",
       "teams": {
         "away": "James Madison",
-        "home": "Georgia Southern"
-      },
-      "headline": "James Madison dominates top-seeded Georgia Southern to reach Sun Belt final",
-      "score": "JMU 81 - GS 53",
-      "brief": "James Madison made a mockery of the 'underdog' label, crushing top-seeded Georgia Southern in the Sun Belt semifinals. The Dukes used a massive rebounding advantage and a stifling defense to hold the regular-season champs to just 53 points. Peyton McDaniel was the engine for JMU, putting on a scoring clinic that left the Eagles searching for answers as the Dukes booked their fourth consecutive trip to the title game.",
-      "bullets": [
-        "Peyton McDaniel dazzled with 25 points, her fourth 25+ point game of the season.",
-        "JMU dominated the boards with a staggering 45-16 rebounding margin.",
-        "The Dukes held Sun Belt Player of the Year Kishyah Anderson to just 8 points.",
-        "JMU is the first 4-seed to reach the SBC title game since 2016."
-      ],
-      "context": "JMU advances to the Sun Belt Championship game with a bid to the NCAA Tournament on the line.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://rocktownnow.com/news/218812-jmu-womens-basketball-defeats-no-1-seed-georgia-southern-81-53-in-sbc-semifinals/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401815610",
-      "teams": {
-        "away": "IU Indianapolis",
-        "home": "Purdue Fort Wayne"
-      },
-      "headline": "Purdue Fort Wayne shoots lights out in blowout win over IU Indy",
-      "score": "IUI 49 - PFW 85",
-      "brief": "Purdue Fort Wayne delivered an offensive masterclass, posting one of the best shooting percentages in Horizon League history to dismiss IU Indianapolis. The Mastodons couldn't miss in the second and third quarters, turning a close game into a rout in minutes. With balanced scoring and a dominant effort on the glass, PFW looks like a dangerous contender heading into the tournament semifinals.",
-      "bullets": [
-        "The Mastodons' 60.9% field goal mark is the 3rd-best in HL tournament history.",
-        "Hillary Offing led a balanced attack where every Mastodon player scored.",
-        "A 14-2 second-quarter run sparked by Destiny Macharia broke the game open.",
-        "PFW secured their third consecutive 20-win season with the victory."
-      ],
-      "context": "PFW advances to face top-seeded Green Bay in the Horizon League semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://gomastodons.com/news/2026/3/8/womens-basketball-mastodons-obliterate-jaguars-to-move-on-to-hlwbb-semifinal"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401815664",
-      "teams": {
-        "away": "Weber State",
-        "home": "Idaho"
-      },
-      "headline": "Idaho extends record streak to 16 wins in Big Sky quarterfinal",
-      "score": "WSU 52 - IDAHO 66",
-      "brief": "The Idaho Vandals continued their historic run, overcoming a spirited Weber State team to push their winning streak to 16 games. After a back-and-forth opening quarter, Idaho's defense clamped down, holding the Wildcats without a field goal for over six minutes in the second. The Vandals' depth and defensive discipline were the difference as they booked their first semifinal appearance in four years.",
-      "bullets": [
-        "The 16-game win streak sets a new program record for the NCAA era.",
-        "Ana Pinheiro recorded a double-double and tied her career high in rebounds.",
-        "Idaho outrebounded Weber State by 19 in a dominant interior performance.",
-        "Kyra Gardner led the defensive effort with a season-high 8 steals."
-      ],
-      "context": "Top-seeded Idaho advances to the Big Sky semifinals as the tournament favorite.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://govandals.com/news/2026/3/8/womens-basketball-no-1-vandals-seal-spot-in-semis-beat-wildcats-66-52.aspx"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401815701",
-      "teams": {
-        "away": "Portland",
-        "home": "Oregon State"
-      },
-      "headline": "Williamson's double-double carries Oregon State past Portland",
-      "score": "PORT 50 - OSU 60",
-      "brief": "Lizzy Williamson was a force of nature in the WCC quarterfinals, leading Oregon State to a gritty win over Portland. The Beavers dominated the interior, out-rebounding the Pilots by 25 and controlling the paint from start to finish. While Portland managed to keep the score respectable with perimeter play, they simply had no answer for Williamson's size and efficiency under the basket.",
-      "bullets": [
-        "Lizzy Williamson posted 20 points, 16 rebounds, and 3 blocks.",
-        "Oregon State held a massive 54-29 advantage on the boards.",
-        "The Beavers recorded 20 second-chance points compared to Portland's 9.",
-        "OSU advances to face No. 1 seed LMU in the tournament semifinals."
-      ],
-      "context": "Oregon State moves closer to a WCC title shot and a potential NCAA berth.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://wccsports.com/news/2026/3/8/womens-basketball-no-5-portland-vs-no-4-oregon-state.aspx"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401815142",
-      "teams": {
-        "away": "Arkansas State",
         "home": "Troy"
       },
-      "headline": "Troy fends off Arkansas State rally to secure Sun Belt final berth",
-      "score": "ASU 73 - TROY 83",
-      "brief": "In a high-scoring Sun Belt semifinal, Troy relied on a massive second-quarter surge to build a cushion they would need to survive an Arkansas State comeback. The Red Wolves cut a 19-point lead down to single digits in the fourth quarter, but Troy's execution down the stretch kept the upset at bay. It was a physical, fast-paced game that showcased why these two teams were among the league's elite all year.",
+      "headline": "James Madison suffocates Troy to claim second Sun Belt crown in four years",
+      "score": "James Madison 69 - Troy 52",
+      "brief": "James Madison used a suffocating 13-0 start to take the air out of the Pensacola Bay Center and never looked back against the second-seeded Trojans. Troy's high-powered offense went cold under the Dukes' defensive pressure, missing their first 11 shots and failing to regain momentum even after a brief second-quarter rally.",
       "bullets": [
-        "Troy outscored Arkansas State 20-7 in the pivotal second quarter.",
-        "Arkansas State's D’Arrah Allen led all scorers with 18 points.",
-        "A late 10-0 run for Troy in the fourth quarter effectively ended the comeback.",
-        "Troy forced 18 turnovers, turning them into 21 transition points."
+        "Tournament MVP Peyton McDaniel led all scorers with 28 points and 10 rebounds.",
+        "Ashanti Barnes added a massive 19-point, 12-rebound double-double for the Dukes.",
+        "JMU held Troy to just 30% shooting from the field and 8% from beyond the arc.",
+        "The victory marks JMU's 12th consecutive win and their 14th NCAA Tournament appearance."
       ],
-      "context": "Troy advances to face James Madison in a battle for the Sun Belt championship.",
+      "context": "James Madison secures the Sun Belt's automatic NCAA Tournament berth.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://astateredwolves.com/news/2026/3/8/womens-basketball-arkansas-state-falls-to-troy-in-sbc-championship-semifinals-73-83.aspx"
+        "recapUrl": "https://troytrojans.com/news/2026/3/9/basketball-w-no-2-troy-falls-short-in-sun-belt-championship-to-no-4-james-madison"
       },
       "highlights": [
         {
@@ -401,24 +65,594 @@
       ]
     },
     {
-      "id": "401815629",
+      "id": "20260309-fairfield-quinnipiac",
       "teams": {
-        "away": "Air Force",
-        "home": "San Diego State"
+        "away": "Fairfield",
+        "home": "Quinnipiac"
       },
-      "headline": "Air Force pulls massive upset to bounce top-seeded Aztecs from MW tourney",
-      "score": "AF 83 - SDSU 76",
-      "brief": "The Mountain West tournament was turned upside down as Air Force stunned regular-season champion San Diego State. Despite a decorated Aztecs squad featuring the Coach and Player of the Year, the Falcons found another gear in the second half, out-executing the favorites in the final minutes. It's a devastating blow for an SDSU team that dominated the league all winter but now faces an anxious wait for a potential at-large bid.",
+      "headline": "Fairfield cements MAAC dynasty with third consecutive conference title",
+      "score": "Fairfield 51 - Quinnipiac 44",
+      "brief": "In a defensive grind in Atlantic City, Fairfield proved why they are the class of the MAAC, holding off top-seeded Quinnipiac to complete a championship three-peat. The Stags' defense was the story, forcing 19 turnovers and coming up with clutch stops in the final minute to deny the Bobcats a late comeback attempt.",
       "bullets": [
-        "Air Force overcame a halftime deficit to score 51 points in the second half.",
-        "San Diego State's Nala Williams (MW Player of the Year) was held in check late.",
-        "The Falcons' transition offense repeatedly caught the Aztecs out of position.",
-        "This is Air Force's first-ever tournament win over a No. 1 seed."
+        "Jillian Huerter earned Tournament MVP honors after hitting four critical 3-pointers for 16 points.",
+        "Cyanne Coe anchored the interior with a 15-point, 10-rebound double-double.",
+        "Fairfield has now reached the NCAA Tournament four times in the last five seasons.",
+        "Quinnipiac's Anna Foley led the Bobcats with 17 points and nine rebounds in the loss."
       ],
-      "context": "San Diego State's automatic bid hopes are dashed, while Air Force becomes the tourney's Cinderella.",
+      "context": "Fairfield claims the MAAC automatic bid and its seventh conference title in program history.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://goaztecs.com/news/2026/03/8/aztecs-fall-to-air-force-at-mountain-west-tournament"
+        "recapUrl": "https://maacsports.com/news/2026/3/10/fairfield-wins-the-2026-air-force-reserve-maac-womens-basketball-championship-powered-by-northeast-beef-stags-become-fourth-program-in-maac-history-to-three-peat.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-austinpeay-jacksonville",
+      "teams": {
+        "away": "Austin Peay",
+        "home": "Jacksonville"
+      },
+      "headline": "Jacksonville edges Austin Peay in overtime thriller to clinch ASUN title",
+      "score": "Austin Peay 63 - Jacksonville 66",
+      "brief": "Jacksonville survived a wild, back-and-forth overtime battle to claim its first ASUN championship in a decade. After seeing an 11-point lead evaporate in the fourth quarter, the Dolphins found their footing in the extra period, with Comari Mitchell's clutch layup providing the go-ahead points and a desperate Austin Peay three-pointer clanging off the rim at the buzzer.",
+      "bullets": [
+        "Makiya Miller was named Tournament Most Outstanding Player after finishing with 49 points over three games.",
+        "Priscilla Williams recorded a huge double-double with 16 points and 13 rebounds before fouling out.",
+        "Austin Peay's Mya Williams led the Governors with 20 points in the losing effort.",
+        "This is Jacksonville's second-ever ASUN title and their first NCAA trip since 2016."
+      ],
+      "context": "Jacksonville secures the ASUN automatic bid to the NCAA Tournament.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://judolphins.com/news/2026/3/9/womens-basketball-tournament-bound-dolphins-make-history-with-asun-championship-title.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-airforce-boisestate",
+      "teams": {
+        "away": "Air Force",
+        "home": "Boise State"
+      },
+      "headline": "Air Force stuns Boise State to keep Mountain West Cinderella run alive",
+      "score": "Air Force 68 - Boise State 66",
+      "brief": "The Air Force Falcons are the talk of Las Vegas after pulling off yet another massive upset, this time toppling Boise State to reach the Mountain West final. After knocking off the top-seeded San Diego State earlier, the Falcons used a late 9-0 run to flip the game on its head and survived a furious Broncos rally to punch their ticket to the championship game.",
+      "bullets": [
+        "Milahnie Perry scored a game-high 26 points and sealed the win with a clutch free throw.",
+        "Libby Hutton carried Boise State with a career-high 25 points and seven rebounds.",
+        "The Falcons outscored the Broncos 21-16 in a high-tension fourth quarter.",
+        "Air Force is making just its second-ever appearance in the Mountain West semifinals/finals."
+      ],
+      "context": "The 9-seed Falcons advance to the Mountain West Championship as the lowest seed to ever do so.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://broncosports.com/news/2026/3/9/womens-basketball-boise-state-drops-heartbreaker-to-air-force"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-coloradostate-unlv",
+      "teams": {
+        "away": "Colorado State",
+        "home": "UNLV"
+      },
+      "headline": "Colorado State shuts down UNLV to reach Mountain West final",
+      "score": "Colorado State 66 - UNLV 59",
+      "brief": "Colorado State spoiled the party for the home crowd at Thomas & Mack Center, pulling away from UNLV in the fourth quarter to secure a spot in the Mountain West title game. The Rams' defense was impenetrable in the final stretch, and back-to-back triples to open the fourth quarter gave them a cushion they would never surrender against the second-seeded Lady Rebels.",
+      "bullets": [
+        "Brooke Carlson led the Rams' offense with 19 points and clutch scoring in the second half.",
+        "UNLV's Aaliyah Alexander scored a game-high 22 points in a valiant losing effort.",
+        "The Rams won the battle in the paint 28-10, proving too physical for the Rebels down low.",
+        "CSU shot a perfect 8-for-8 from the free-throw line to seal the victory late."
+      ],
+      "context": "Colorado State advances to the Mountain West Championship to face Cinderella Air Force.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://unlvrebels.com/news/2026/3/9/womens-basketball-lady-rebels-drop-in-mw-semfinals-66-59-against-rams.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-santaclara-gonzaga",
+      "teams": {
+        "away": "Santa Clara",
+        "home": "Gonzaga"
+      },
+      "headline": "Gonzaga blitzes Santa Clara to set up WCC title rematch",
+      "score": "Santa Clara 60 - Gonzaga 88",
+      "brief": "Gonzaga looked every bit the powerhouse in Las Vegas, overwhelming Santa Clara from the perimeter and the paint to advance to the WCC title game. The Bulldogs shot a blistering 64% from three-point range and dominated the glass, turning a competitive early matchup into a runaway victory that sends a message to the rest of the conference.",
+      "bullets": [
+        "Allie Turner led the Bulldogs with 17 points, while freshman sensation Lauren Whittaker added 16 and 9 rebounds.",
+        "Gonzaga out-rebounded the Broncos 50-32 and doubled them up on points in the paint (48-28).",
+        "Santa Clara was led by Ashley Hawkins, who put up 17 points in the loss.",
+        "The win sets up a championship showdown with Oregon State."
+      ],
+      "context": "Gonzaga advances to the WCC Championship game for the eighth consecutive year.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://wccsports.com/news/2026/3/9/womens-basketball-no-2-gonzaga-vs-no-3-santa-clara.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-oregonstate-lmu",
+      "teams": {
+        "away": "Oregon State",
+        "home": "Loyola Marymount"
+      },
+      "headline": "Oregon State holds off LMU rally to return to WCC final",
+      "score": "Oregon State 73 - Loyola Marymount 67",
+      "brief": "Oregon State survived a late scare from a gritty Loyola Marymount squad to punch their ticket to the WCC Championship. After building a comfortable lead through three quarters, the Beavers had to withstand a furious 24-point fourth-quarter explosion from the Lions, eventually relying on veteran poise to close out the win in the final minutes.",
+      "bullets": [
+        "LMU's Amaya Lawson poured in 25 points to keep the Lions in the game until the final whistle.",
+        "The Beavers used a balanced attack, outscoring LMU 28-24 in a high-scoring final period.",
+        "Oregon State reached its 23rd win of the season with the victory.",
+        "The win earns the Beavers a rematch with Gonzaga for the WCC title."
+      ],
+      "context": "Oregon State advances to the WCC Championship game seeking its first tournament title since joining the conference.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://lmulions.com/news/2026/3/9/womens-basketball-lawson-powers-lions-with-25-as-lmu-battles-oregon-state-in-wcc-semifinal.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-umbc-vermont",
+      "teams": {
+        "away": "UMBC",
+        "home": "Vermont"
+      },
+      "headline": "Vermont survives double-overtime epic against UMBC to reach fourth straight final",
+      "score": "UMBC 65 - Vermont 68",
+      "brief": "In a game that refused to end, top-seeded Vermont outlasted UMBC in a double-overtime thriller at Patrick Gym. UMBC's Jade Tillman put on a performance for the ages with 32 points, including a buzzer-beating layup to force overtime, but the Catamounts' depth and experience proved just enough to survive the Retrievers' upset bid and keep their championship hopes alive.",
+      "bullets": [
+        "Jadyn Weltz led the Catamounts with 23 points and clutch perimeter shooting.",
+        "Nikola Priede reached the 1,000-point milestone while adding 22 points in the win.",
+        "UMBC's Jade Tillman set a career-high with 32 points and 10 rebounds.",
+        "Vermont clinched the victory with a 10-7 run in the second overtime period."
+      ],
+      "context": "Vermont advances to the America East Championship for the fourth consecutive year.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://uvmathletics.com/news/2026/3/9/womens-basketball-vermont-advances-to-america-east-championship-in-double-overtime-thriller-over-umbc.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-binghamton-maine",
+      "teams": {
+        "away": "Binghamton",
+        "home": "Maine"
+      },
+      "headline": "Maine edges Binghamton in semifinal battle to reach America East final",
+      "score": "Binghamton 56 - Maine 60",
+      "brief": "Maine survived a fourth-quarter surge from Binghamton to keep their championship dreams alive in Orono. Despite a 24-point explosion from the Bearcats' Bella Pucci, the Black Bears relied on conference Player of the Year Adrianna Smith and a clutch free-throw performance from Sarah Talon to secure the win and return to the America East title game.",
+      "bullets": [
+        "Adrianna Smith recorded her 57th career double-double with 26 points and 12 rebounds.",
+        "Sarah Talon scored 17 points and went 4-for-4 from the line in the final seconds to seal it.",
+        "Binghamton's Bella Pucci hit five three-pointers on her way to a team-high 24 points.",
+        "Maine forced 19 turnovers while committing only 8 giveaways in a disciplined performance."
+      ],
+      "context": "Maine advances to the America East Championship seeking its 11th conference title.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://goblackbears.com/news/2026/3/9/womens-basketball-black-bears-top-binghamton-in-america-east-semifinal-60-56.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-bostonu-navy",
+      "teams": {
+        "away": "Boston University",
+        "home": "Navy"
+      },
+      "headline": "Freshman Mesuch's record-breaking night leads Navy past BU",
+      "score": "Boston University 66 - Navy 76",
+      "brief": "Zoe Mesuch put on a shooting clinic for the ages, breaking the Patriot League Tournament record with eight triples to lead top-seeded Navy past Boston University. The Terriers hung tough behind 33 points from Anete Adler, but Navy's explosive 20-2 run bridging the third and fourth quarters turned a one-point nail-biter into a comfortable home victory.",
+      "bullets": [
+        "Freshman Zoe Mesuch scored a career-high 31 points and set a PL tourney record with 8 made 3-pointers.",
+        "Patriot Player of the Year Zanai Barnett-Gay added 16 points and 14 rebounds.",
+        "BU's Anete Adler tied a tournament record with 15 field goals on her way to 33 points.",
+        "The Mids used a 24-point third quarter to take control of the game."
+      ],
+      "context": "Navy advances to the Patriot League semifinals to host defending champion Lehigh.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://navysports.com/news/2026/3/9/womens-basketball-navy-rides-mesuchs-hot-hand-to-76-66-patriot-league-quarterfinal-win-over-bu.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-colgate-holycross",
+      "teams": {
+        "away": "Colgate",
+        "home": "Holy Cross"
+      },
+      "headline": "Holy Cross throttles Colgate in dominant quarterfinal showing",
+      "score": "Colgate 36 - Holy Cross 72",
+      "brief": "Holy Cross left no doubt in their Patriot League opener, suffocating Colgate from the opening tip to secure a lopsided quarterfinal win. Meg Cahalan ignited a 13-4 start and never let up, while the Crusaders' defense held the Raiders to a dismal 23% shooting from the floor in one of the most dominant defensive performances of the tournament.",
+      "bullets": [
+        "Meg Cahalan led all scorers with 21 points in just 23 minutes of action.",
+        "Simone Foreman posted a double-double with 10 points and 13 rebounds.",
+        "Holy Cross held Colgate to just 36 points, including a five-point fourth quarter.",
+        "The Crusaders improved to 12-3 at home this season with the victory."
+      ],
+      "context": "Holy Cross advances to the Patriot League semifinals to face Army West Point.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://goholycross.com/news/2026/3/9/womens-basketball-no-2-womens-basketball-cruises-to-victory-over-colgate-in-2026-penfed-credit-union-patriot-league-quarterfinals-will-face-no-3-army-in-semifinals.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-loyolamd-lehigh",
+      "teams": {
+        "away": "Loyola Maryland",
+        "home": "Lehigh"
+      },
+      "headline": "Lovette's career night propels Lehigh past Loyola into semifinals",
+      "score": "Loyola Maryland 54 - Lehigh 68",
+      "brief": "Gracyn Lovette chose the perfect time for a career performance, leading Lehigh to a comfortable victory over Loyola Maryland. The Mountain Hawks jumped out to an early 10-point lead and maintained control throughout, answering every Greyhounds rally with timely shooting to set up a semifinal clash with top-seeded Navy.",
+      "bullets": [
+        "Gracyn Lovette scored a career-high 19 points and added eight assists.",
+        "Belle Bramer chipped in 16 points and three steals for the Mountain Hawks.",
+        "Loyola's Lex Therien finished her career as the Patriot League's all-time rebounding leader (1,250).",
+        "Lehigh held Loyola to just 27% shooting in a decisive fourth quarter."
+      ],
+      "context": "Lehigh advances to the Patriot League semifinals for the second consecutive year.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://lehighsports.com/news/2026/3/9/womens-basketball-lovette-nets-career-high-as-lehigh-defeats-loyola-in-the-quarterfinals-at-stabler"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-lafayette-army",
+      "teams": {
+        "away": "Lafayette",
+        "home": "Army"
+      },
+      "headline": "Army pulls away late to fend off Lafayette's upset bid",
+      "score": "Lafayette 57 - Army 65",
+      "brief": "In a physical Patriot League quarterfinal, Army West Point used a late surge to overcome a stubborn Lafayette team. The Black Knights trailed by one late in the fourth quarter before unleashing a 14-5 run to close the game, anchored by a monster double-double from Kya Smith that proved to be the difference in the final minutes.",
+      "bullets": [
+        "Kya Smith dominated with 21 points and a game-high 21 rebounds.",
+        "Army forced a decisive 14-5 run over the final four minutes of the game.",
+        "Lafayette was led by Teresa Kiewiet's 18 points and eight rebounds.",
+        "This win marks Army's fifth straight victory over the Leopards."
+      ],
+      "context": "Army advances to the Patriot League semifinals to face No. 2 seed Holy Cross.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://patriotleague.org/news/2026/3/10/2025-26-penfed-credit-union-patriot-league-womens-basketball-first-round-recap-3-9-26.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-stonehill-mercyhurst",
+      "teams": {
+        "away": "Stonehill",
+        "home": "Mercyhurst"
+      },
+      "headline": "Mercyhurst weathers Pelletier's 27-point night to advance",
+      "score": "Stonehill 64 - Mercyhurst 70",
+      "brief": "Mercyhurst overcame a lights-out shooting performance from Stonehill's Ella Pelletier to secure a hard-fought win in the NEC quarterfinals. Stonehill led for much of the first half, but the Lakers' defense adjusted after the break, limiting the Skyhawks' supporting cast and pulling away late in the fourth quarter to clinch their spot in the semifinals.",
+      "bullets": [
+        "Stonehill's Ella Pelletier scored a career-high 27 points, including four 3-pointers.",
+        "Mercyhurst outscored Stonehill 25-20 in a back-and-forth fourth quarter.",
+        "Freshman Julia Webster added 11 points and 8 assists for the Skyhawks.",
+        "The win moves Mercyhurst to .500 on the season (15-15)."
+      ],
+      "context": "Mercyhurst advances to the NEC semifinals in their first year of Division I eligibility.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://stonehillskyhawks.com/news/2026/3/9/womens-basketball-pelletier-nets-career-high-27-in-70-64-setback-at-mercyhurst-in-nec-quarterfinals.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-lemoyne-wagner",
+      "teams": {
+        "away": "Le Moyne",
+        "home": "Wagner"
+      },
+      "headline": "Postell's late dagger sends Le Moyne to NEC semifinals",
+      "score": "Le Moyne 54 - Wagner 47",
+      "brief": "Le Moyne survived a defensive slugfest on Staten Island, relying on a late heroics from Sydney Postell to push past Wagner. In a game defined by scoring droughts and lead changes, Postell's 3-pointer with 45 seconds left finally broke the Seahawks' spirit, capping an 18-9 third-quarter surge that proved to be the difference.",
+      "bullets": [
+        "Eli Clark led all scorers with 15 points, including two key triples.",
+        "Sydney Postell hit the game-winning three-pointer in the final minute.",
+        "The Dolphins reached the conference semifinals for the eighth time in nine years.",
+        "Le Moyne held Wagner to just 32% shooting from the field."
+      ],
+      "context": "Le Moyne advances to the NEC semifinals in its second year in Division I.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://lemoynedolphins.com/news/2026/3/9/womens-basketball-womens-basketball-advances-to-nec-semifinals-with-54-47-win-over-wagner.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-bethunecookman-texassouthern",
+      "teams": {
+        "away": "Bethune-Cookman",
+        "home": "Texas Southern"
+      },
+      "headline": "Bethune-Cookman holds off Texas Southern in SWAC opener",
+      "score": "Bethune-Cookman 66 - Texas Southern 62",
+      "brief": "Bethune-Cookman survived a late comeback attempt from Texas Southern to advance in the SWAC tournament. After building an eight-point halftime lead, the Wildcats had to weather a final Tigers surge that cut the deficit to just two points in the closing seconds before sealing the victory at the free-throw line.",
+      "bullets": [
+        "Daimoni Dorsey and Mya Johnson each scored 12 points to lead the Wildcats.",
+        "Taliyah Longwood led all scorers with 14 points for Texas Southern.",
+        "The two teams combined for 57 free-throw attempts in a whistle-heavy contest.",
+        "B-CU forced 19 turnovers and recorded 11 steals to maintain their lead."
+      ],
+      "context": "Bethune-Cookman advances to the second round of the SWAC Tournament.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://bcuathletics.com/news/2026/3/9/womens-basketball-cats-edge-tigers-advance-to-second-round.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-etamu-northwesternstate",
+      "teams": {
+        "away": "East Texas A&M",
+        "home": "Northwestern State"
+      },
+      "headline": "Northwestern State explodes in second half to down East Texas A&M",
+      "score": "East Texas A&M 56 - Northwestern State 69",
+      "brief": "Northwestern State looked like two different teams in Lake Charles, shaking off a sluggish first half to dominate the second. Behind a historic performance from SLC Player of the Year Vernell Atamah, the Lady Demons turned a halftime deficit into a comfortable double-digit victory, fueled by a 15-0 fourth-quarter run that left the Lions in the dust.",
+      "bullets": [
+        "Vernell Atamah scored 14 of her 19 points in the fourth quarter and set a school 3-point record.",
+        "The Lady Demons dominated the glass, out-rebounding the Lions 53-26.",
+        "East Texas A&M led 32-23 at the half before being outscored 46-24 after the break.",
+        "NSU shot a near-perfect 14-of-15 from the free-throw line."
+      ],
+      "context": "Northwestern State advances to the second round of the Southland Tournament.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://nsudemons.com/news/2026/3/9/lady-demon-basketball-lady-demons-use-strong-second-half-to-down-east-texas-am.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-purduefortwayne-greenbay",
+      "teams": {
+        "away": "Purdue Fort Wayne",
+        "home": "Green Bay"
+      },
+      "headline": "Green Bay crushes Purdue Fort Wayne to reach fourth straight title game",
+      "score": "Purdue Fort Wayne 48 - Green Bay 73",
+      "brief": "Top-seeded Green Bay left no room for an upset in Indianapolis, overwhelming Purdue Fort Wayne with a dominant defensive display. A 16-0 first-half run effectively ended the contest early, and the Phoenix never looked back, controlling the paint and the glass to secure their fourth consecutive appearance in the Horizon League championship game.",
+      "bullets": [
+        "Carley Duffney led the way with a season-high 20 points.",
+        "Meghan Schultz recorded a double-double with 13 points and 10 rebounds.",
+        "Purdue Fort Wayne was held to just 16.7% shooting from three-point range.",
+        "Green Bay dominated the boards, out-rebounding the Mastodons 47-27."
+      ],
+      "context": "Green Bay advances to the Horizon League Championship to face Youngstown State.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://greenbayphoenix.com/news/2026/3/9/womens-basketball-advances-to-fourth-straight-horizon-league-title-game.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-clevelandstate-youngstownstate",
+      "teams": {
+        "away": "Cleveland State",
+        "home": "Youngstown State"
+      },
+      "headline": "Youngstown State stuns Cleveland State with furious late rally",
+      "score": "Cleveland State 55 - Youngstown State 60",
+      "brief": "Youngstown State is heading to its first-ever Horizon League championship game after a wild fourth-quarter comeback against Cleveland State. The Penguins trailed late but finished the game on a 6-0 run, fueled by a high-pressure defense and a clutch corner triple from Danielle Cameron that finally broke the Vikings' hold on the game.",
+      "bullets": [
+        "Danielle Cameron led the Penguins with 16 points, 10 of which came in the fourth quarter.",
+        "YSU outscored Cleveland State 25-15 in the final period.",
+        "The Vikings' Izabella Zingaro put up a monster 19-point, 14-rebound performance in the loss.",
+        "Cleveland State missed all five of its three-point attempts in the fourth quarter."
+      ],
+      "context": "Youngstown State reaches its first Horizon League Championship game in program history.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://ysusports.com/news/2026/3/9/womens-basketball-furious-finish-pushes-penguins-to-first-ever-hl-championship-game.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-easternwashington-northerncolorado",
+      "teams": {
+        "away": "Eastern Washington",
+        "home": "Northern Colorado"
+      },
+      "headline": "Eastern Washington flips script on Northern Colorado to reach semis",
+      "score": "Eastern Washington 55 - Northern Colorado 53",
+      "brief": "Eastern Washington overcame an 11-point halftime deficit to pull off a gritty upset over third-seeded Northern Colorado. The Eagles' defense was the story in the fourth quarter, holding the Bears to just seven points and 27% shooting, as they snapped a four-game losing streak against UNC at the most critical time possible.",
+      "bullets": [
+        "Five Eagles scored in double figures, led by Ella Gallatin and Kourtney Grossman with 11 each.",
+        "Eastern Washington outscored Northern Colorado 35-22 in the second half.",
+        "Jaecy Eggers posted her 6th double-double of the season with 10 points and 11 rebounds.",
+        "The Eagles improved to 4-0 this season when holding opponents under 30% shooting."
+      ],
+      "context": "Eastern Washington advances to the Big Sky semifinals.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://goeags.com/news/2026/3/9/womens-basketball-no-6-eagles-knock-off-no-3-bears-to-advance-to-big-sky-semis.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-sacramentostate-idahostate",
+      "teams": {
+        "away": "Sacramento State",
+        "home": "Idaho State"
+      },
+      "headline": "Idaho State stifles Sacramento State in first-round rout",
+      "score": "Sacramento State 53 - Idaho State 62",
+      "brief": "Idaho State rode a dominant defensive performance and a record-breaking night from freshman Jackson Rasmussen to brush past Sacramento State in Boise. The Vandals held the Hornets to a mere 13 points in the first half, allowing them to cruise through the second period and secure back-to-back years with a conference tournament win for the first time in a decade.",
+      "bullets": [
+        "Jackson Rasmussen became the all-time leading freshman scorer in school history with 19 points.",
+        "Idaho State's defense tied the lowest scoring total by an opponent in a Big Sky tourney game in a decade (45 at one point).",
+        "Kolton Mitchell added 17 points and eight rebounds in his return from injury.",
+        "Sacramento State was held to just 25% shooting from the floor."
+      ],
+      "context": "Idaho State advances to the Big Sky semifinals to face Montana State.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://govandals.com/news/2026/3/7/mens-basketball-gem-state-natives-power-idaho-to-opening-round-win-in-boise.aspx"
       },
       "highlights": [
         {
@@ -430,7 +664,5 @@
         }
       ]
     }
-  ]
-}
   ]
 }

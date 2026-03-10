@@ -1,446 +1,213 @@
 {
-  "leagueName": "NCAAM",
-  "leagueKey": "NCAAM",
+  "leagueName": "NBA",
+  "leagueKey": "ncaam",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Michigan clinched a perfect 15-0 finish to the Big Ten season by sweeping rival Michigan State, while mid-major tournaments saw massive upsets as top seeds Navy and Marshall both went down at the buzzer.",
+  "leagueBriefing": "Conference tournament season shifted into high gear as Gonzaga secured its 29th straight WCC title game appearance, while Santa Clara pulled off a major upset to burst the bubble of Saint Mary's.",
   "games": [
     {
-      "id": "401825567",
+      "id": "401851759",
       "teams": {
-        "away": "Illinois Fighting Illini",
-        "home": "Maryland Terrapins"
+        "away": "Oregon State",
+        "home": "Gonzaga"
       },
-      "headline": "Mirkovic helps No. 11 Illinois clinch Big Ten bye in gritty road win",
-      "score": "Illinois 78 — Maryland 72",
-      "brief": "Illinois survived a serious scare in College Park to lock up a crucial double-bye for the Big Ten Tournament. Despite a dismal shooting night from deep, the Illini relied on David Mirkovic’s interior presence and a late 7-0 run to fend off a Maryland team playing for pride in a disappointing season.",
+      "headline": "Ike dominates as Gonzaga reaches 29th straight WCC title game",
+      "score": "Oregon State 56 - Gonzaga 65",
+      "brief": "Gonzaga continued its remarkable run of WCC dominance, securing a spot in the conference championship game for nearly the 30th consecutive year. Graham Ike was the undisputed star, recording a massive double-double and serving as the only Bulldog to reach double figures in scoring. The Zags' defense set the tone early, smothering the Beavers and holding them to a dismal shooting performance in the first half to ensure Gonzaga's final WCC tournament run ends on a high note before they jump to the Pac-12.",
       "bullets": [
-        "David Mirkovic led the charge with a double-double, tallying 22 points and 11 rebounds.",
-        "The Illini tied a program record with their eighth Big Ten road win of the season.",
-        "Maryland's Andre Mills poured in 30 points in the loss as the Terps fell to a 20-loss season for the first time since 1989.",
-        "Illinois secured the win despite shooting a frigid 5-of-24 from three-point range."
+        "Graham Ike finished with 24 points and 11 rebounds, marking his 45th career double-double.",
+        "Gonzaga outscored Oregon State 16-0 on the fast break and 38-24 in the paint.",
+        "The Bulldogs' defense forced 10-second and shot-clock violations during a decisive 15-2 first-half run.",
+        "Oregon State missed its first nine shots of the game and shot just 28.6% in the opening half.",
+        "This marks Gonzaga's final WCC tournament before joining the Pac-12 next season."
       ],
-      "context": "The win guarantees Illinois a spot in Friday's Big Ten quarterfinals; Maryland enters the tournament as a No. 17 seed.",
+      "context": "Gonzaga moves to the championship game with a 29-3 record, maintaining their status as a projected high seed in the NCAA Tournament.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825567/illinois-maryland"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851759/oregon-st-gonzaga"
       },
       "highlights": []
     },
     {
-      "id": "401825568",
+      "id": "401851760",
       "teams": {
-        "away": "Michigan State Spartans",
-        "home": "Michigan Wolverines"
+        "away": "Santa Clara",
+        "home": "Saint Mary's"
       },
-      "headline": "Lendeborg leads No. 3 Michigan to rivalry sweep and 15th straight win",
-      "score": "Michigan State 80 — Michigan 90",
-      "brief": "In a high-stakes rivalry matchup, No. 3 Michigan asserted its dominance over Michigan State to cap off an incredible 15-game conference winning streak. Yaxel Lendeborg was the catalyst, exploding for 27 points to ensure the Big Ten champions entered the postseason with maximum momentum, while the Spartans struggled with both the score and their composure.",
+      "headline": "Santa Clara stuns Saint Mary's to reach first WCC final since 2007",
+      "score": "Santa Clara 76 - Saint Mary's 71",
+      "brief": "Santa Clara likely punched their ticket to the Big Dance with a thrilling upset over No. 21 Saint Mary's. In a game that featured 14 lead changes, Sash Gavalyugov delivered the dagger with a late three-pointer that silenced the Gaels. The win is a massive milestone for coach Herb Sendek, marking his 600th career victory and breaking a four-year streak of Gonzaga-Saint Mary's championship matchups. While the Gaels should still be safe for an at-large bid, the Broncos have transformed from bubble team to title contenders.",
       "bullets": [
-        "Yaxel Lendeborg scored 19 of his 27 points in the first half and matched a career high with five 3-pointers.",
-        "Michigan has now won 15 consecutive Big Ten games, finishing the regular season 29-2.",
-        "Spartans guard Jeremy Fears Jr. was assessed a technical foul after a video review showed him kicking an opponent.",
-        "Jaxon Kohler matched his career high with 23 points for Michigan State in the losing effort."
+        "Sash Gavalyugov scored 23 points, including the go-ahead 3-pointer with 12.1 seconds remaining.",
+        "Coach Herb Sendek earned his 600th career coaching victory with the upset win.",
+        "This is the first time since 2021 that the WCC final will not feature both Gonzaga and Saint Mary's.",
+        "Paulius Murauskas led the Gaels with 26 points in the losing effort.",
+        "Santa Clara entered the game ranked No. 42 in the NCAA NET rankings, significantly boosting their tournament resume."
       ],
-      "context": "Michigan cements its case for a No. 1 seed in the NCAA Tournament; both teams head to the Big Ten quarterfinals Friday.",
+      "context": "Santa Clara reaches its first WCC final in 19 years and likely secures an NCAA Tournament berth.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825568/michigan-st-michigan"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851760/santa-clara-saint-marys"
       },
       "highlights": []
     },
     {
-      "id": "401825569",
+      "id": "401856431",
       "teams": {
-        "away": "Iowa Hawkeyes",
-        "home": "Nebraska Cornhuskers"
+        "away": "Campbell",
+        "home": "Monmouth"
       },
-      "headline": "Jacobsen’s overtime heroics help No. 9 Nebraska match program wins record",
-      "score": "Iowa 75 — Nebraska 84",
-      "brief": "Pinnacle Bank Arena was rocking as Nebraska survived an Iowa comeback to secure their 26th win of the season, matching an all-time school record. After the Hawkeyes forced overtime with a late 3-pointer, bench spark Cale Jacobsen took over in the extra period to ensure a sentimental Senior Day victory for Sam Hoiberg and his father, coach Fred Hoiberg.",
+      "headline": "Monmouth shuts down Campbell to advance to CAA championship",
+      "score": "Campbell 64 - Monmouth 74",
+      "brief": "Monmouth used a balanced attack and a strong second half to pull away from Campbell and secure a spot in the CAA title game. Kavion McClain took over after the break, scoring 14 of his 19 points to keep the Fighting Camels at arm's length. After Campbell narrowed the lead early in the second half, Monmouth responded with a 7-0 run that effectively iced the game, moving the Hawks one win away from an automatic NCAA Tournament bid.",
       "bullets": [
-        "Cale Jacobsen scored 13 of his 15 points after halftime, including the tiebreaking three in overtime.",
-        "Sam Hoiberg celebrated Senior Day with 15 points and 5 steals.",
-        "Nebraska tied the program record for most wins in a single season (26).",
-        "Kael Combs led Iowa with 18 points, including the clutch triple to force overtime with 2 seconds left."
+        "Kavion McClain led all Hawks with 19 points, including 14 in the second half.",
+        "Jason Rivera-Torres contributed 17 points, 7 rebounds, and 3 steals.",
+        "Monmouth outscored Campbell 44-40 in the second half to maintain their lead.",
+        "Jeremiah Johnson scored 21 points for the ninth-seeded Fighting Camels in the loss.",
+        "Monmouth will face Hofstra in the championship game on Tuesday."
       ],
-      "context": "Nebraska clinches the No. 2 seed in the Big Ten Tournament; Iowa will start as the No. 9 seed.",
+      "context": "Monmouth advances to the CAA final for a chance at an automatic NCAA Tournament berth.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825569/iowa-nebraska"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856431/campbell-monmouth"
       },
       "highlights": []
     },
     {
-      "id": "401851547",
+      "id": "401851332",
       "teams": {
-        "away": "Colgate Raiders",
-        "home": "Lehigh Mountain Hawks"
+        "away": "Northern Colorado",
+        "home": "Montana"
       },
-      "headline": "Alvey’s 30-point explosion sends Lehigh to Patriot League title game",
-      "score": "Colgate 69 — Lehigh 76",
-      "brief": "Hank Alvey was simply too much for Colgate to handle as he powered Lehigh into the Patriot League Championship game. Behind Alvey’s 30 points and a lockdown defensive performance from Nasir Whitlock, the Mountain Hawks ended Colgate's season and set themselves up for a shot at the NCAA Tournament bid on Wednesday.",
+      "headline": "Money Williams erupts for career-high 40 points in Big Sky thriller",
+      "score": "Northern Colorado 89 - Montana 95",
+      "brief": "Montana's Money Williams lived up to his name on Monday night, delivering one of the most dominant individual performances of the season to lead the Grizzlies past Northern Colorado. Williams dropped a career-high 40 points, including 18 free throws, to fend off a late charge from the Bears. Despite 29 points from Quinn Denker, Montana's massive 17-point halftime lead proved to be too much for Northern Colorado to overcome in a high-scoring Big Sky quarterfinal.",
       "bullets": [
-        "Hank Alvey dominated with 30 points, 5 rebounds, and 3 blocks.",
-        "Nasir Whitlock recorded a double-double with 22 points and 10 assists.",
-        "Lehigh used a 16-2 first-half run to take control of the momentum.",
-        "Jalen Cox led Colgate with 26 points, but the Raiders couldn't overcome Lehigh's interior scoring."
+        "Money Williams scored 40 points on 10-of-21 shooting and 18-of-19 from the free-throw line.",
+        "Montana built a commanding 49-32 lead by halftime.",
+        "Quinn Denker led Northern Colorado with 29 points and 8 assists.",
+        "The Grizzlies advance to face top-seeded Portland State in the semifinals.",
+        "Brock Wisne recorded a double-double for the Bears with 15 points and 11 rebounds."
       ],
-      "context": "Lehigh advances to the Patriot League championship game on Wednesday against Boston University.",
+      "context": "Montana advances to the Big Sky semifinals behind a historic scoring performance.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851547/colgate-lehigh"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851332/n-colorado-montana"
       },
       "highlights": []
     },
     {
-      "id": "401825570",
+      "id": "401856432",
       "teams": {
-        "away": "Penn State Nittany Lions",
-        "home": "Rutgers Scarlet Knights"
+        "away": "Towson",
+        "home": "Hofstra"
       },
-      "headline": "Rutgers smothers Penn State early to complete regular season sweep",
-      "score": "Penn State 62 — Rutgers 74",
-      "brief": "Rutgers finished the regular season on a high note, using a suffocating 16-0 first-half run to bury Penn State early. Tariq Francis and Lino Mark provided the offensive punch, but it was the Scarlet Knights' defense that told the story, holding the Nittany Lions to a disastrous 3-of-22 shooting performance from beyond the arc.",
+      "headline": "Edmead’s overtime dagger sends Hofstra to CAA final",
+      "score": "Towson 65 - Hofstra 68",
+      "brief": "In a classic conference tournament nail-biter, Hofstra outlasted Towson in overtime thanks to the heroics of Preston Edmead. Towson's Tyler Tejada was a force all night with 29 points and forced overtime with late free throws, but Edmead answered back in the extra period. His two clutch three-pointers in overtime—including the go-ahead bucket with just three seconds left—punched Hofstra's ticket to the championship game and kept their NCAA dreams alive.",
       "bullets": [
-        "Tariq Francis led Rutgers with 18 points, including three 3-pointers.",
-        "Rutgers blew the game open early with a 16-0 run that resulted in a 37-14 lead.",
-        "Darren Buchanan Jr. dominated the glass with 12 rebounds.",
-        "Penn State struggled from deep, shooting just 13.6% (3-of-22) from three-point range."
+        "Preston Edmead scored 22 points, including the game-winning 3-pointer with three seconds left in OT.",
+        "Tyler Tejada scored a game-high 29 points for Towson in the loss.",
+        "Cruz Davis scored 16 of his 18 points in the second half for the Pride.",
+        "Hofstra outscored Towson 13-10 in the overtime period.",
+        "The Pride will face Monmouth in the CAA championship game."
       ],
-      "context": "Rutgers sweeps the season series and heads to Chicago for the Big Ten Tournament starting Tuesday.",
+      "context": "Hofstra survives an upset bid to reach the CAA title game against Monmouth.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401825570/penn-state-rutgers"
+        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401856432/towson-hofstra"
       },
       "highlights": []
     },
     {
-      "id": "401851548",
+      "id": "401851715",
       "teams": {
-        "away": "Boston University Terriers",
-        "home": "Navy Midshipmen"
+        "away": "Mississippi Valley State",
+        "home": "Grambling"
       },
-      "headline": "Gladden’s buzzer-beater stuns top-seeded Navy and ends 14-game streak",
-      "score": "Boston U 73 — Navy 72",
-      "brief": "In an absolute heartbreaker in Annapolis, Chance Gladden played the role of giant-killer. After top-seeded Navy took the lead with only three seconds left, Gladden raced down the court and buried a 3-pointer at the buzzer to snap the Midshipmen's 14-game winning streak and send the fourth-seeded Terriers to the Patriot League championship.",
+      "headline": "Muttilib’s hot shooting leads Grambling to blowout win over Delta Devils",
+      "score": "Mississippi Valley State 52 - Grambling 77",
+      "brief": "Grambling left no room for doubt in their SWAC tournament opener, crushing Mississippi Valley State behind a 22-point effort from Jamil Muttilib. The Tigers took the lead midway through the first half and never looked back, using a barrage of three-pointers to build a double-digit halftime cushion. While Michael James played a valiant game for the Delta Devils, Grambling's superior depth and defensive pressure were too much for a Mississippi Valley State team that finished the year with 30 losses.",
       "bullets": [
-        "Chance Gladden scored 24 of his 26 points in the second half, capped by the buzzer-beating winner.",
-        "The upset ended Navy’s 14-game winning streak and their hope for a top-seed tourney title.",
-        "BU's Michael McNair added 22 points, hitting five 3-pointers.",
-        "Aidan Kehoe led Navy in the loss with a massive 26-point, 12-rebound double-double."
+        "Jamil Muttilib scored 22 points, hitting 5-of-8 shots from beyond the arc.",
+        "Grambling led 34-19 at halftime and led for the final 29 minutes of the game.",
+        "Michael James led all scorers with 23 points for Mississippi Valley State.",
+        "Derrius Ward added 15 points and a game-high 7 assists for the Tigers.",
+        "Grambling advances to face Jackson State in the second round."
       ],
-      "context": "Boston University advances to the Patriot League final to face Lehigh on Wednesday.",
+      "context": "Grambling advances in the SWAC tournament while Mississippi Valley State's season comes to an end.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851548/boston-u-navy"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851715/miss-valley-st-grambling"
       },
       "highlights": []
     },
     {
-      "id": "401828264",
+      "id": "401851608",
       "teams": {
-        "away": "Memphis Tigers",
-        "home": "Tulane Green Wave"
+        "away": "Nicholls",
+        "home": "UT Rio Grande Valley"
       },
-      "headline": "Berry's clutch free throws in OT snap Memphis' seven-game skid",
-      "score": "Memphis 96 — Tulane 95",
-      "brief": "Memphis finally found their way back into the win column after a grueling overtime battle in New Orleans. Quante Berry was the hero for the Tigers, drawing a foul and sinking the winning free throws with just two seconds left to survive a career-high 31-point performance from Tulane’s Rowan Brumbaugh.",
+      "headline": "Brankovic leads UTRGV past Nicholls into Southland semis",
+      "score": "Nicholls 68 - UT Rio Grande Valley 86",
+      "brief": "UT Rio Grande Valley used a commanding first-half performance to cruise past Nicholls and secure a spot in the Southland Conference semifinals. Filip Brankovic led a balanced Vaqueros offense that saw multiple players catch fire from deep. Once UTRGV took the lead halfway through the first period, they never trailed again, effectively shutting down Trae English and the Colonels' offense to set up a high-stakes semifinal matchup with McNeese.",
       "bullets": [
-        "Quante Berry led Memphis with 22 points, including the winning free throws with 2.3 seconds left in OT.",
-        "Rowan Brumbaugh scored a career-high 31 points for Tulane in the heartbreak.",
-        "Memphis snapped a seven-game losing streak with the victory.",
-        "Dug McDaniel contributed 20 points, 7 rebounds, and 6 assists for the Tigers."
+        "Filip Brankovic paced the Vaqueros with 21 points and 5 rebounds.",
+        "Koree Cotton added 18 points, including four 3-pointers.",
+        "UTRGV led 44-32 at the half and maintained a double-digit lead for most of the second period.",
+        "Trae English led Nicholls with 17 points in the losing effort.",
+        "The Vaqueros will face second-seeded McNeese on Tuesday."
       ],
-      "context": "Memphis ends the regular season with a win to build momentum for the AAC Tournament.",
+      "context": "UTRGV moves one step closer to a Southland title and an NCAA Tournament bid.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828264/memphis-tulane"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851608/nicholls-ut-rio-grande"
       },
       "highlights": []
     },
     {
-      "id": "401856428",
+      "id": "401851433",
       "teams": {
-        "away": "Drexel Dragons",
-        "home": "Monmouth Hawks"
+        "away": "Detroit Mercy",
+        "home": "Robert Morris"
       },
-      "headline": "Monmouth uses late 11-0 run to bounce Drexel from CAA tourney",
-      "score": "Drexel 57 — Monmouth 65",
-      "brief": "Monmouth kept their NCAA Tournament hopes alive by locking down Drexel in the second half of the CAA quarterfinals. Trailing midway through the period, the Hawks unleashed an 11-0 blitz to take the lead for good, powered by double-digit scoring from Jason Rivera-Torres and Stefanos Spartalis.",
+      "headline": "Detroit Mercy rallies past Robert Morris to reach Horizon title game",
+      "score": "Detroit Mercy 70 - Robert Morris 64",
+      "brief": "Detroit Mercy is headed to the Horizon League championship game after a gritty second-half comeback against Robert Morris. Trailing at the break, the Titans leaned on Orlando Lovejoy and a spark from the bench by Lance Stone to outscore the Colonials by nine in the final period. The win sets up a championship clash with top-seeded Wright State, where the Titans will look to complete their improbable run to the NCAA Tournament.",
       "bullets": [
-        "Jason Rivera-Torres scored 11 of his 14 points in the second half.",
-        "Monmouth outscored Drexel by 9 points in the second half to erase a halftime deficit.",
-        "Stefanos Spartalis added 14 points on efficient 5-of-7 shooting.",
-        "Kevon Vanderhorst led Drexel with 15 points in their season-ending loss."
+        "Orlando Lovejoy scored 21 points and dished out 6 assists to lead the Titans.",
+        "Lance Stone provided a major boost with 16 points off the bench.",
+        "Detroit Mercy outscored Robert Morris 37-28 in the second half to secure the win.",
+        "DeSean Goode led the Colonials with 14 points and 10 rebounds.",
+        "The Titans advance to face Wright State for the automatic bid on Tuesday."
       ],
-      "context": "Monmouth advances to the CAA semifinals to play Campbell on Monday.",
+      "context": "Detroit Mercy moves to within one win of an automatic NCAA Tournament berth.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856428/drexel-monmouth"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851433/detroit-mercy-robert-morris"
       },
       "highlights": []
     },
     {
-      "id": "401828266",
+      "id": "401851333",
       "teams": {
-        "away": "Temple Owls",
-        "home": "Tulsa Golden Hurricane"
+        "away": "Weber State",
+        "home": "Eastern Washington"
       },
-      "headline": "Green and Barnstable help Tulsa survive Temple in regular season finale",
-      "score": "Temple 76 — Tulsa 78",
-      "brief": "Tulsa ended their regular season on a high note by surviving a back-and-forth thriller against Temple. In a game that saw nine lead changes in the second half alone, the Golden Hurricane leaned on David Green’s scoring and some clutch perimeter shooting from Miles Barnstable to hold off the Owls' upset bid.",
+      "headline": "Hamilton IV’s career night fuels Eastern Washington over Weber State",
+      "score": "Weber State 79 - Eastern Washington 84",
+      "brief": "Eastern Washington survived a late-game rally from Weber State to advance in the Big Sky Tournament, powered by a career-high 25 points from Alton Hamilton IV. The Eagles looked to be in total control after a massive 16-0 run in the first half, but they had to withstand a 27-point barrage from Tijan Saine Jr. in the second half. Isaiah Moses came up huge in the final minute with a clutch three-point play to ice the game and keep the Eagles' season alive.",
       "bullets": [
-        "David Green paced Tulsa with 22 points and 6 rebounds.",
-        "The second half alone featured 9 lead changes and 7 ties.",
-        "Temple's Derrian Ford led all scorers with 23 points in the narrow loss.",
-        "Miles Barnstable hit three key 3-pointers, finishing with 11 of his 13 points after halftime."
+        "Alton Hamilton IV scored a career-high 25 points on 8-of-10 shooting.",
+        "Isaiah Moses added 22 points and 8 assists, including a critical late three-point play.",
+        "Eastern Washington led by 14 points at halftime after a 16-0 first-half run.",
+        "Tijan Saine Jr. led all scorers with 27 points for Weber State.",
+        "The Eagles advance to face Idaho in the Big Sky semifinals."
       ],
-      "context": "The American Athletic Conference Tournament begins Wednesday.",
+      "context": "Eastern Washington moves into the Big Sky semifinals to face the team that recently ended their win streak.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828266/temple-tulsa"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401828265",
-      "teams": {
-        "away": "UTSA Roadrunners",
-        "home": "Rice Owls"
-      },
-      "headline": "Smith's hot start carries Rice past UTSA to close AAC season",
-      "score": "UTSA 71 — Rice 80",
-      "brief": "Rice never trailed after the opening minutes as Jalen Smith took over early against UTSA. The Owls built a double-digit halftime cushion and kept the Roadrunners at arm's length throughout the second half, ensuring they enter the conference tournament with a victory.",
-      "bullets": [
-        "Jalen Smith led the Owls with 25 points and 6 rebounds.",
-        "Rice took the lead at the 17:48 mark of the first half and held it the rest of the way.",
-        "Nick Anderson contributed 20 points for Rice on efficient shooting.",
-        "UTSA's Matheo Coffi recorded a double-double with 12 points and 14 rebounds."
-      ],
-      "context": "Rice closes the AAC regular season 7-11 heading into tournament play Wednesday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828265/utsa-rice"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401828262",
-      "teams": {
-        "away": "East Carolina Pirates",
-        "home": "UAB Blazers"
-      },
-      "headline": "Westry’s double-double powers UAB past ECU in regular season finale",
-      "score": "East Carolina 83 — UAB 90",
-      "brief": "UAB locked in their 20th win of the season by overcoming a halftime deficit to defeat East Carolina. Chance Westry was the engine of the Blazers' offense, facilitating at an elite level with 11 assists while matching Daniel Rivera for the team lead in scoring to secure the win in front of the Birmingham crowd.",
-      "bullets": [
-        "Chance Westry recorded 22 points and 11 assists for his second straight double-double.",
-        "Daniel Rivera matched Westry with 22 points for the Blazers.",
-        "UAB finished the regular season with a 20-11 record (11-7 in AAC).",
-        "ECU’s Demitri Gardner led the Pirates with 19 points in the loss."
-      ],
-      "context": "UAB enters the AAC Tournament as the No. 4 seed on their home court this Wednesday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401828262/east-carolina-uab"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401856429",
-      "teams": {
-        "away": "Towson Tigers",
-        "home": "Charleston Cougars"
-      },
-      "headline": "Tejada’s 30-point masterclass fuels Towson’s upset romp over Charleston",
-      "score": "Towson 81 — Charleston 56",
-      "brief": "Towson didn't just beat second-seeded Charleston; they dismantled them. In the shock of the CAA Tournament so far, Tyler Tejada exploded for 30 points as the 7th-seeded Tigers jumped out to an early lead and never let up, using a massive second-half run to turn a competitive game into a total blowout.",
-      "bullets": [
-        "Tyler Tejada shot 11-of-17 from the field for 30 points.",
-        "Towson used a 13-0 run in the second half to extend their lead to 24 points.",
-        "The Tigers shot lights-out from deep, led by Ryan Conway and Tejada.",
-        "Charleston, the No. 2 seed, was held to just 56 points in their early exit."
-      ],
-      "context": "No. 7 seed Towson advances to Monday's CAA semifinals after an emphatic upset.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401856429/towson-charleston"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851704",
-      "teams": {
-        "away": "Southern Miss Golden Eagles",
-        "home": "Troy Trojans"
-      },
-      "headline": "Bellamy’s defensive clinic leads top-seeded Troy into Sun Belt final",
-      "score": "Southern Miss 70 — Troy 78",
-      "brief": "Top-seeded Troy took a major step toward the Big Dance, fending off a resilient Southern Miss squad in the Sun Belt semifinals. Jerrell Bellamy was the story on both ends of the floor, pairing his 22 points with a staggering 6 blocks to anchor the Trojans' defense against a career-high effort from Southern Miss star Isaac Tavares.",
-      "bullets": [
-        "Jerrell Bellamy posted 22 points and a season-high 6 blocks.",
-        "Southern Miss’s Isaac Tavares scored a game-high 32 points in the loss.",
-        "Troy held the lead for the final 33 minutes of the game.",
-        "Trojans reserve Cooper Campbell added 14 critical second-half points."
-      ],
-      "context": "Troy advances to Monday's Sun Belt Championship game with an NCAA bid on the line.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851704/southern-miss-troy"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851465",
-      "teams": {
-        "away": "Marist Red Foxes",
-        "home": "Merrimack Warriors"
-      },
-      "headline": "Dorset’s late triple sends top-seeded Merrimack to MAAC title game",
-      "score": "Marist 57 — Merrimack 58",
-      "brief": "Merrimack survived a defensive grind in Atlantic City thanks to some late-game heroics from Tye Dorset. In a game that went down to the final possession, Dorset's go-ahead 3-pointer with 85 seconds remaining proved to be the difference, keeping the Warriors' dream of a MAAC title and NCAA Tournament berth alive.",
-      "bullets": [
-        "Tye Dorset scored a game-high 23 points, including the winning 3-pointer with 1:25 left.",
-        "Merrimack's defense held Marist scoreless over the final 1:25 of play.",
-        "Kevair Kennedy added 16 points and 3 steals for the Warriors.",
-        "Marist was led by Rhyjon Blackwell with 15 points in the heartbreaker."
-      ],
-      "context": "No. 1 seed Merrimack will play for the MAAC title on Tuesday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851465/marist-merrimack"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851591",
-      "teams": {
-        "away": "UNC Greensboro Spartans",
-        "home": "Furman Paladins"
-      },
-      "headline": "Wilkins explodes for 34 as Furman rallies to reach SoCon final",
-      "score": "UNC Greensboro 75 — Furman 81",
-      "brief": "Furman is one win away from the NCAA Tournament after a sensational second-half performance from Alex Wilkins. Trailing by 11 at the half, the Paladins rode Wilkins' hot hand as he poured in 28 of his 34 points after the break to surge past UNC Greensboro in the Southern Conference semifinals.",
-      "bullets": [
-        "Alex Wilkins scored 34 points, with 28 coming in the second half alone.",
-        "Furman overcame a 38-27 halftime deficit with a 54-point second-half outburst.",
-        "Justin Neely led the Spartans with 27 points in the loss.",
-        "The Paladins shot a high percentage in the second half to erase UNCG's lead."
-      ],
-      "context": "Furman (No. 6 seed) will face No. 1 seed ETSU for the SoCon championship on Monday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851591/unc-greensboro-furman"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401856430",
-      "teams": {
-        "away": "William & Mary Tribe",
-        "home": "Hofstra Pride"
-      },
-      "headline": "Davis powers Hofstra to 31-point demolition of William & Mary",
-      "score": "William & Mary 61 — Hofstra 92",
-      "brief": "Hofstra left no doubt in their CAA quarterfinal matchup, crushing William & Mary from the opening tip. Cruz Davis was the star of the show, racking up 30 points and leading an offensive explosion that saw the Pride build a 17-point halftime lead and never look back in a total dominant performance.",
-      "bullets": [
-        "Cruz Davis led all scorers with 30 points and added 5 assists.",
-        "Hofstra took the lead at 18:33 of the first half and never trailed again.",
-        "The Pride shot effectively from all levels, building a lead as large as 33 points.",
-        "Jo'el Emanuel led the Tribe with 16 points and 8 rebounds in their season finale."
-      ],
-      "context": "No. 3 seed Hofstra advances to face Towson in the CAA semifinals on Monday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856430/william-mary-hofstra"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851466",
-      "teams": {
-        "away": "Fairfield Stags",
-        "home": "Siena Saints"
-      },
-      "headline": "Shoats and Doty combine for 51 as Siena punches ticket to MAAC final",
-      "score": "Fairfield 61 — Siena 76",
-      "brief": "Siena is headed to the MAAC championship after Justice Shoats and Gavin Doty put on a scoring clinic against Fairfield. The Saints took control mid-way through the first half and used a late 10-0 run to extinguish any hope of a Fairfield comeback, setting up a heavyweight title bout against top-seeded Merrimack.",
-      "bullets": [
-        "Justice Shoats scored 26 points, including a perfect 3-for-3 from deep.",
-        "Gavin Doty added 25 points and 8 rebounds, going 10-of-11 from the foul line.",
-        "Siena dominated the second half, leading by as many as 15 points down the stretch.",
-        "Declan Wucherpfennig recorded a double-double (13 pts, 10 reb) for Fairfield."
-      ],
-      "context": "No. 3 seed Siena will play No. 1 seed Merrimack for the MAAC title and an NCAA berth on Tuesday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851466/fairfield-siena"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851705",
-      "teams": {
-        "away": "Georgia Southern Eagles",
-        "home": "Marshall Thundering Herd"
-      },
-      "headline": "Spudd Webb sparks massive upset as 10-seed Georgia Southern reaches Sun Belt final",
-      "score": "Georgia Southern 82 — Marshall 78",
-      "brief": "The Cinderella story of the Sun Belt Tournament continues. No. 10 seed Georgia Southern shocked second-seeded Marshall behind a 31-point outburst from Spudd Webb. The Eagles have now won five straight games in the tournament and are just one win away from one of the most improbable NCAA Tournament berths in history.",
-      "bullets": [
-        "Spudd Webb scored 31 points, including 18 in the second half to seal the upset.",
-        "Georgia Southern is the No. 10 seed and has won 5 games in 5 days.",
-        "Andres Burney contributed a double-double with 12 points and 11 rebounds.",
-        "Marshall's Shamarrie Hugie led the Thundering Herd with 19 points in the loss."
-      ],
-      "context": "Georgia Southern will face No. 1 seed Troy in the championship on Monday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851705/ga-southern-marshall"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851331",
-      "teams": {
-        "away": "Idaho Vandals",
-        "home": "Montana State Bobcats"
-      },
-      "headline": "Brickner’s perfect second half fuels Idaho’s upset of Montana State",
-      "score": "Idaho 78 — Montana State 74",
-      "brief": "Idaho pulled off a stunning second-half turnaround to bounce second-seeded Montana State from the Big Sky Tournament. After going scoreless in the first half, Isaiah Brickner went a perfect 6-of-8 from the floor after the break to lead the Vandals' charge, as they erased a halftime deficit to secure their spot in the semifinals.",
-      "bullets": [
-        "Isaiah Brickner scored all 15 of his points in the second half.",
-        "Biko Johnson led the Vandals with 19 points, 5 rebounds, and 4 assists.",
-        "No. 7 seed Idaho took the lead for good with five minutes remaining.",
-        "Jeremiah Davis led Montana State with 22 points in the defeat."
-      ],
-      "context": "No. 7 seed Idaho advances to the Big Sky semifinals on Tuesday.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851331/idaho-montana-st"
-      },
-      "highlights": []
-    },
-    {
-      "id": "401851757",
-      "teams": {
-        "away": "Pacific Tigers",
-        "home": "Santa Clara Broncos"
-      },
-      "headline": "Graves sparks Santa Clara off the bench to reach WCC semifinals",
-      "score": "Pacific 68 — Santa Clara 76",
-      "brief": "Santa Clara is moving on in Las Vegas after a dominant performance from reserve Allen Graves. The Broncos used a blistering 12-0 run early in the second half to separate from Pacific, maintaining a comfortable lead despite a late flurry of three-pointers from Tigers star Elias Ralph.",
-      "bullets": [
-        "Allen Graves came off the bench to score 19 points on 7-of-10 shooting.",
-        "Santa Clara used a 12-0 second-half run to build a 14-point lead.",
-        "Elijah Mahi anchored the interior with 13 points and 11 rebounds.",
-        "Pacific’s Elias Ralph led all scorers with 25 points, including five 3-pointers."
-      ],
-      "context": "No. 3 seed Santa Clara advances to play No. 2 seed Saint Mary's in Monday's semifinal.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851757/pacific-santa-clara"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851333/weber-st-e-washington"
       },
       "highlights": []
     }

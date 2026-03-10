@@ -2,137 +2,36 @@
   "leagueName": "LaLiga",
   "leagueKey": "laliga",
   "sourceType": "console_recaps",
-  "leagueBriefing": "It was a day of home-turf heroics across Spain as three hosts secured vital victories to shake up the middle of the table. Villarreal and Getafe both utilized clinical set-piece execution to down their opponents, while Valencia survived a five-goal thriller at the Mestalla to keep their European dreams flickering. The only blemish for home fans came in Seville, where a wonder-strike from Rayo Vallecano forced a stalemate that left both sides looking over their shoulders at the relegation zone.",
+  "leagueBriefing": "Espanyol's frustrating winless run continued on Monday night as they were held to a 1-1 draw by basement-dwellers Real Oviedo at the RCDE Stadium.",
   "games": [
     {
-      "id": "villarreal-elche-laliga-report-2026-03-08",
+      "id": "632339",
       "teams": {
-        "away": "Elche",
-        "home": "Villarreal"
+        "away": "Real Oviedo",
+        "home": "Espanyol"
       },
-      "headline": "Buchanan blast keeps Villarreal level with Atletico in Champions League race",
-      "score": "Villarreal 2 - 1 Elche",
-      "brief": "Villarreal continued their impressive surge toward a top-four finish, grinding out a narrow win over a resilient Elche side. Tajon Buchanan provided the spark with a clinical finish to open the scoring, and Santiago Mouriño doubled the advantage to put the Yellow Submarine in the driver's seat. Though Elche pulled one back late through Andrea Silva to set up a nervy finale, the hosts held firm to stay neck-and-neck with Atletico Madrid in the high-stakes battle for the final Champions League spot.",
+      "headline": "Kike García rescues point as Espanyol winless streak hits double digits",
+      "score": "Espanyol 1 - 1 Real Oviedo",
+      "brief": "Espanyol’s search for a spark continues as they played out a gritty 1-1 draw against a resilient Real Oviedo side. The visitors stunned the RCDE Stadium early when Alberto Reina found the back of the net just eight minutes in, capitalizing on a defensive lapse. While Kike García managed to restore parity before the break with a well-taken strike, the hosts couldn't find a winner despite a second-half onslaught. The result keeps Espanyol mired in a worrying slump, while Oviedo will take heart from a disciplined defensive performance that earned them a rare away point.",
       "bullets": [
-        "Tajon Buchanan opened the scoring with a powerful strike after 15 minutes of sustained pressure.",
-        "Pape Gueye earned Man of the Match honors for a dominant display in the heart of the Villarreal midfield.",
-        "Andrea Silva scored a 78th-minute header for Elche, their only shot on target in the second half.",
-        "The win marks Villarreal’s third consecutive home victory, keeping them level on points for third place.",
-        "Villarreal defender Santiago Mouriño netted his first goal of the season to make it 2-0."
+        "Alberto Reina gave the visitors a shock lead in the 8th minute, finishing an assist from Thiago Fernández.",
+        "Kike García equalized for the hosts in the 36th minute, converting a chance set up by Cyril Ngonge.",
+        "Espanyol dominated the stat sheet with 28 total shots and 58% possession but struggled with clinical finishing.",
+        "Oviedo goalkeeper Aarón Escandell was the hero for the visitors, making 8 saves to preserve the draw.",
+        "The draw extends Espanyol's winless run in LaLiga to 10 consecutive matches."
       ],
-      "context": "The victory keeps Villarreal firmly in the hunt for a Champions League spot, tied on points with third-place Atletico Madrid.",
+      "context": "The draw leaves Espanyol stuck in mid-table mediocrity while Real Oviedo remains rooted to the bottom of the LaLiga standings.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.flashscore.com/news/villarreal-elche-laliga-report-2026-03-08/vgCpFnxB/"
+        "recapUrl": "https://www.foxsports.com/soccer/la-liga-espanyol-vs-oviedo-mar-09-2026-game-boxscore-632339?tab=boxscore"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "tR1JUokJYCk",
-          "title": "VILLARREAL CF 2 - 1 ELCHE CF | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=tR1JUokJYCk",
-          "embedUrl": "https://www.youtube.com/embed/tR1JUokJYCk",
-          "publishedAt": "2026-03-08T15:05:22Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "getafe-v-real-betis-match-highlights",
-      "teams": {
-        "away": "Real Betis",
-        "home": "Getafe"
-      },
-      "headline": "Getafe muscle past disciplined-depleted Betis in Coliseum clash",
-      "score": "Getafe 2 - 0 Real Betis",
-      "brief": "Getafe used their trademark physical style to rattle Real Betis and secure a crucial home win. The match swung on Getafe's aerial dominance, with Kiko Femenía breaking the deadlock following a monstrous long throw-in. As Betis grew increasingly frustrated with the officiating and Getafe's aggressive pressing, Martín Satriano capitalized on a defensive lapse to chip the goalkeeper and seal the points. It was a tactical masterclass in disruption that left a creative Betis side with no answers.",
-      "bullets": [
-        "Kiko Femenía scored the opener in the 35th minute after a long throw caused chaos in the Betis box.",
-        "Martín Satriano doubled the lead with a clever lobbed finish over the oncoming Álvaro Valles.",
-        "Real Betis failed to register a shot on target in the final 30 minutes despite trailing by two.",
-        "Getafe's David Soria recorded his 6th clean sheet of the season with two critical first-half saves.",
-        "Real Betis were missing key playmaker Giovani Lo Celso, who remained out with a thigh injury."
-      ],
-      "context": "Getafe’s win provides a major boost in their bid to distance themselves from the bottom three.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.beinsports.com/en-mena/football/la-liga/getafe-vs-real-betis-2026-03-08"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "PosKSBaqgPY",
-          "title": "GETAFE CF 2 - 0 REAL BETIS | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=PosKSBaqgPY",
-          "embedUrl": "https://www.youtube.com/embed/PosKSBaqgPY",
-          "publishedAt": "2026-03-08T17:27:28Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "sevilla-rayo-vallecano-resumen-y-goles",
-      "teams": {
-        "away": "Rayo Vallecano",
-        "home": "Sevilla"
-      },
-      "headline": "Espino stunner earns Rayo a point as Sevilla's home woes continue",
-      "score": "Sevilla 1 - 1 Rayo Vallecano",
-      "brief": "Sevilla and Rayo Vallecano shared the spoils in a high-tension encounter at the Ramón Sánchez Pizjuán that did little to ease the relegation fears of either club. Sevilla looked to be in control early when Alexis Sánchez provided a clinical spark, but the stadium was stunned by a second-half Pacha Espino rocket that brought Rayo level. Both teams appeared more afraid of losing than desperate to win in the closing stages, resulting in a cagey stalemate that leaves Sevilla hovering dangerously close to the drop zone.",
-      "bullets": [
-        "Pacha Espino's equalizing goal was a 25-yard thunderbolt that left the keeper with no chance.",
-        "Sevilla veteran Alexis Sánchez continues his late-career resurgence with a first-half opener.",
-        "Rayo Vallecano's Jorge de Frutos was held scoreless after entering the match as the team's top scorer.",
-        "Sevilla has now failed to win any of their last four home matches in LaLiga.",
-        "Augusto Batalla made four saves for Rayo to ensure they left Seville with a vital point."
-      ],
-      "context": "A crucial point for Rayo Vallecano in the survival race, while Sevilla remains mired in a disappointing mid-table slump.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://as.com/futbol/videos/resumen-y-goles-del-sevilla-vs-rayo-vallecano-jornada-27-de-laliga-ea-sports-f202603-v/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "NABr4rOz3Dk",
-          "title": "SEVILLA FC 1 - 1 RAYO VALLECANO | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=NABr4rOz3Dk",
-          "embedUrl": "https://www.youtube.com/embed/NABr4rOz3Dk",
-          "publishedAt": "2026-03-08T19:39:49Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "valencia-v-alaves-resumen-mestalla",
-      "teams": {
-        "away": "Deportivo Alaves",
-        "home": "Valencia"
-      },
-      "headline": "Valencia survive five-goal thriller at Mestalla to keep European hopes alive",
-      "score": "Valencia 3 - 2 Deportivo Alaves",
-      "brief": "Valencia and Deportivo Alavés combined for the most entertaining match of the weekend, a back-and-forth five-goal epic at the Mestalla. After a cagey first half that saw the hosts hit the woodwork, the floodgates opened in the second period. Valencia's attack finally clicked, finding the net three times to overcome a resilient Alavés side that refused to go away quietly. The win propels Valencia closer to the European places, while Alavés is left empty-handed despite a spirited comeback attempt.",
-      "bullets": [
-        "Valencia scored three goals in a single half for the first time this season.",
-        "Alavés winger Luis Rioja was a constant threat, registering an assist before the hosts locked him down.",
-        "The match saw 32 total shots, with Valencia accounting for 19 of them in a dominant offensive display.",
-        "Valencia's Hugo Duro struck the crossbar in the first half before later turning provider.",
-        "The victory marks Valencia’s first win against Alavés in their last three league meetings."
-      ],
-      "context": "Valencia moves into the top eight with the win, putting pressure on the teams currently in Europa League spots.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.beinsports.com/en-mena/football/la-liga"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "43g1HSZs9BI",
-          "title": "VALENCIA CF 3 - 2 DEPORTIVO ALAVÉS | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=43g1HSZs9BI",
-          "embedUrl": "https://www.youtube.com/embed/43g1HSZs9BI",
-          "publishedAt": "2026-03-08T22:16:14Z",
-          "matchScore": 100
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }

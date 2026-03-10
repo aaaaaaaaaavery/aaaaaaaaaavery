@@ -2,237 +2,245 @@
   "leagueName": "WTA",
   "leagueKey": "wta",
   "sourceType": "console_recaps",
-  "leagueBriefing": "A dramatic day at Indian Wells saw World No. 1 Aryna Sabalenka and Amanda Anisimova cruise into the fourth round, while top-seeded Coco Gauff was forced to retire with an injury, clearing the way for a historic run by the Philippines' Alexandra Eala.",
+  "leagueBriefing": "Upset alerts rang out across Indian Wells as defending champion Mirra Andreeva and home favorite Madison Keys both crumbled in three-set heartbreakers, while Iga Swiatek and Elena Rybakina stood firm to secure their places in the Round of 16.",
   "games": [
     {
-      "id": "20260308-cirstea-noskova",
+      "id": "20260309-andreeva-siniakova",
       "teams": {
-        "away": "Sorana Cirstea",
-        "home": "Linda Noskova"
+        "away": "Katerina Siniakova",
+        "home": "Mirra Andreeva"
       },
-      "headline": "Noskova outlasts Cirstea in three-set marathon to reach Indian Wells quarterfinals",
-      "score": "6-7, 6-4, 6-4",
-      "brief": "In a grueling two-and-a-half-hour battle, 21-year-old Linda Noskova avenged a recent loss to Sorana Cirstea to secure her place in the quarterfinals. After dropping a tight opening set tiebreak, the World No. 14 showed incredible resilience, converting crucial break points under pressure. The victory underscores the current dominance of Czech tennis, with Noskova leading a strong contingent of her compatriots deep into the tournament draw.",
+      "headline": "Siniakova dethrones defending champ Andreeva in fiery desert duel",
+      "score": "Katerina Siniakova 2 - Mirra Andreeva 1",
+      "brief": "In a match that was as much about mental fortitude as it was about baseline winners, Katerina Siniakova outlasted the defending champion Mirra Andreeva. The contest was marked by high tension and visible frustration from Andreeva, but Siniakova remained clinical in the tiebreak to turn the tide and eventually sprint through the decider.",
       "bullets": [
-        "Linda Noskova created 12 break point opportunities, successfully capitalizing on three to turn the match in her favor.",
-        "The win serves as immediate revenge for Noskova, who was held to just five games by Cirstea in Dubai three weeks ago.",
-        "Noskova becomes one of four Czech players to reach the third round or better in the 2026 Indian Wells draw."
+        "Andreeva was two points away from a straight-sets win before Siniakova rallied to take the second-set tiebreak 7-5.",
+        "The match was a marathon of breaks, with both players losing their serve seven times apiece.",
+        "Andreeva's frustration boiled over with multiple racquet smashes and a code violation after dropping the second set.",
+        "Siniakova saved 19 of the 26 break points she faced to secure her first-ever Round of 16 spot at Indian Wells."
       ],
-      "context": "Noskova's quarterfinal berth marks a significant career milestone and strengthens her position in the top 15.",
+      "context": "The loss means Andreeva will drop significant ranking points after failing to defend her 2025 title.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://nationaltoday.com/us/ca/indian-wells/news/2026/03/08/czechs-noskova-advances-to-indian-wells-quarterfinals/"
+        "recapUrl": "https://www.wtatennis.com/news/4465247/katerina-siniakova-ousts-reigning-champ-mirra-andreeva-in-tense-3-set-comeback"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "v4vX_CkR9_A",
-          "title": "Sorana Cirstea vs. Linda Noskova | 2026 Indian Wells Round 3 | WTA Match Highlights",
-          "url": "https://www.youtube.com/watch?v=v4vX_CkR9_A",
-          "embedUrl": "https://www.youtube.com/embed/v4vX_CkR9_A"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-sabalenka-cristian",
+      "id": "20260309-keys-kartal",
       "teams": {
-        "away": "Aryna Sabalenka",
-        "home": "Jaqueline Cristian"
+        "away": "Sonay Kartal",
+        "home": "Madison Keys"
       },
-      "headline": "Sabalenka powers past Cristian to set up blockbuster clash with Osaka",
-      "score": "6-4, 6-1",
-      "brief": "World No. 1 Aryna Sabalenka continued her march through the desert with a clinical victory over Romania's Jaqueline Cristian. Sabalenka's trademark power was on full display as she blasted 23 winners, overwhelming Cristian in just over an hour. Despite a minor blip while serving for the first set, the top seed remained focused to secure a fourth-round meeting with Naomi Osaka in one of the most anticipated matchups of the season.",
+      "headline": "Kartal stuns Keys with gritty comeback to silence home crowd",
+      "score": "Sonay Kartal 2 - Madison Keys 1",
+      "brief": "Sonay Kartal delivered the shock of the evening, overcoming both a dominant start from Madison Keys and lingering back pain to reach the fourth round. After being blown off the court in the first set, the British No. 2 adjusted her tactics, using variety and defensive resilience to force the American into a flurry of unforced errors.",
       "bullets": [
-        "Aryna Sabalenka hit 23 winners and dominated her service games, winning over 80% of her first-serve points.",
-        "The Belarusian has now won 12 consecutive matches against players ranked outside the Top 20.",
-        "Sabalenka's win sets up a rematch with Naomi Osaka, whom she hasn't played since 2018."
+        "Keys appeared in total control after racing through the opening set 6-2 in under 30 minutes.",
+        "Kartal revealed post-match she had not practiced the day prior to prioritize recovery for a back injury.",
+        "The Brit became the first British woman to reach the fourth round at Indian Wells twice.",
+        "Keys struggled with consistency in the final set, failing to capitalize on the momentum of the home support."
       ],
-      "context": "The victory moves Sabalenka into the fourth round as the heavy favorite to claim her first Indian Wells title.",
+      "context": "Kartal sets up a first-time meeting with former champion Elena Rybakina in the next round.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.hindustantimes.com/sports/tennis/sabalenka-sails-into-indian-wells-last-16-101772999600958.html"
+        "recapUrl": "https://evrimagaci.org/gpt/sonay-kartal-stuns-madison-keys-with-dramatic-indian-wells-comeback-532820"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "u3vX_BkR10_A",
-          "title": "Aryna Sabalenka vs. Jaqueline Cristian | 2026 Indian Wells Round 3 | WTA Match Highlights",
-          "url": "https://www.youtube.com/watch?v=u3vX_BkR10_A",
-          "embedUrl": "https://www.youtube.com/embed/u3vX_BkR10_A"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-paolini-tomljanovic",
+      "id": "20260309-swiatek-sakkari",
       "teams": {
-        "away": "Jasmine Paolini",
-        "home": "Ajla Tomljanovic"
+        "away": "Iga Swiatek",
+        "home": "Maria Sakkari"
       },
-      "headline": "Paolini survives three-set rollercoaster against gritty Tomljanovic",
-      "score": "7-5, 5-7, 6-1",
-      "brief": "Seventh seed Jasmine Paolini found her 'fire' again in a high-intensity battle against Australia's Ajla Tomljanovic. In a match defined by wild momentum swings, Paolini regained control in the final set, sprinting to the finish line after the two split hard-fought sets. The victory is a return to form for the Italian, who had struggled early in the 2026 season but now looks like a threat for the title.",
+      "headline": "Swiatek avenges Doha defeat with dominant display against Sakkari",
+      "score": "Iga Swiatek 2 - Maria Sakkari 0",
+      "brief": "Iga Swiatek left no doubt about who was the superior player in this highly anticipated rematch. After losing to Sakkari just last month in Doha, the World No. 2 utilized her devastating forehand and superior movement to dismantle the Greek's defense and maintain her pursuit of a third Indian Wells crown.",
       "bullets": [
-        "Jasmine Paolini won the final five games of the match to dismantle Tomljanovic in the decider.",
-        "The match lasted over two hours and fifteen minutes, featuring 10 combined breaks of serve.",
-        "Tomljanovic was playing her third three-set match in the last eight days following an injury-plagued 2025."
+        "Swiatek hit 15 forehand winners and broke Sakkari's serve four times during the 6-3, 6-2 victory.",
+        "The win improves Swiatek's career record at Indian Wells to a staggering 24-3.",
+        "Sakkari struggled to find answers for Swiatek’s depth, committing 22 unforced errors.",
+        "With this victory, the head-to-head between the two rivals moves to 5-4 in favor of Swiatek."
       ],
-      "context": "Paolini advances to the round of 16, her best performance at Indian Wells since 2024.",
+      "context": "Swiatek advances to face Karolina Muchova in the fourth round.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.reddit.com/r/tennis/comments/1rojme5/wta_1000_indian_wells_r3_7_j_paolini_def_a/"
+        "recapUrl": "https://bnpparibasopen.com/news/swiatek-pegula-advance"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "y7vX_FkR6_A",
-          "title": "Ajla Tomljanovic vs. Jasmine Paolini | 2026 Indian Wells Round 3 | WTA Match Highlights",
-          "url": "https://www.youtube.com/watch?v=y7vX_FkR6_A",
-          "embedUrl": "https://www.youtube.com/embed/y7vX_FkR6_A"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-osorio-osaka",
+      "id": "20260309-pegula-ostapenko",
       "teams": {
-        "away": "Camila Osorio",
-        "home": "Naomi Osaka"
+        "away": "Jelena Ostapenko",
+        "home": "Jessica Pegula"
       },
-      "headline": "Osaka finds positivity and precision to avenge previous Osorio defeat",
-      "score": "6-1, 3-6, 6-1",
-      "brief": "Naomi Osaka continued her impressive return to the top tier of tennis by ousting Camila Osorio in a topsy-turvy three-set encounter. After a dominant start, Osaka overcame a second-set dip in focus by rededicating herself to a point-by-point mentality in the decider. The win is particularly sweet for the former champion, as it avenges a straight-sets loss to the Colombian at this same venue just one year ago.",
+      "headline": "Pegula digs deep to outlast Ostapenko in three-set rollercoaster",
+      "score": "Jelena Ostapenko 1 - Jessica Pegula 2",
+      "brief": "Jessica Pegula proved once again why she is one of the toughest outs on the WTA tour. Faced with the high-risk, high-reward power of Jelena Ostapenko, the American stayed composed after losing the first set, slowly wearing down the former Roland Garros champion with relentless consistency and smart tactical changes.",
       "bullets": [
-        "Naomi Osaka broke Osorio's first three service games of the match to race to a 6-1 lead.",
-        "After losing the second set, Osaka won the first three games of the third to re-establish dominance.",
-        "This marks Osaka's first tournament since withdrawing from the Australian Open with an abdominal injury."
+        "Pegula rallied from a set down to win 4-6, 6-3, 6-2 in just under two hours.",
+        "Ostapenko fired 30 winners but was undone by 45 unforced errors as the match progressed.",
+        "This is the first time Pegula has beaten Ostapenko after losing the opening set.",
+        "Pegula won 12 of the final 17 games to secure her spot in the Round of 16."
       ],
-      "context": "The win sets up a much-anticipated fourth-round showdown against World No. 1 Aryna Sabalenka.",
+      "context": "Pegula will face Belinda Bencic next, a player she has never taken a set off in four previous tries.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://bnpparibasopen.com/news/naomi-osaka-march-8"
+        "recapUrl": "https://bnpparibasopen.com/news/swiatek-pegula-advance"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "x6vX_EkR7_A",
-          "title": "Camila Osorio vs. Naomi Osaka | 2026 Indian Wells Round 3 | WTA Match Highlights",
-          "url": "https://www.youtube.com/watch?v=x6vX_EkR7_A",
-          "embedUrl": "https://www.youtube.com/embed/x6vX_EkR7_A"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-raducanu-anisimova",
+      "id": "20260309-kostyuk-rybakina",
       "teams": {
-        "away": "Emma Raducanu",
-        "home": "Amanda Anisimova"
+        "away": "Elena Rybakina",
+        "home": "Marta Kostyuk"
       },
-      "headline": "Anisimova delivers 52-minute masterclass to blitz Raducanu in the desert",
-      "score": "6-1, 6-1",
-      "brief": "In a stunning display of power and timing, Amanda Anisimova needed less than an hour to dismantle Emma Raducanu and reach the Indian Wells fourth round. The World No. 6 was untouchable, striking 21 winners and losing only three points behind her serve in the opening set. Raducanu, who had recently returned to form, admitted she had no answers for the American's relentless pace and court positioning.",
+      "headline": "Rybakina stays unbothered to fend off Kostyuk challenge",
+      "score": "Elena Rybakina 2 - Marta Kostyuk 0",
+      "brief": "Elena Rybakina’s trademark 'ice-cool' demeanor was on full display as she navigated a tricky straight-sets win over Marta Kostyuk. Despite falling behind an early break in both sets, the 2023 champion found her range when it mattered most, breaking Kostyuk back immediately and closing out both sets with clinical efficiency.",
       "bullets": [
-        "Amanda Anisimova hit 21 winners while Raducanu was limited to just two in the entire 52-minute match.",
-        "Anisimova won 73% of points played on Raducanu's first serve, a staggering return statistic.",
-        "The win evens the head-to-head between the two former Grand Slam semifinalists at two matches apiece."
+        "Rybakina broke Kostyuk's serve late in both sets at 5-4 to avoid potential tiebreaks.",
+        "The match was closer than the 6-4, 6-4 scoreline suggests, lasting 1 hour and 27 minutes.",
+        "Kostyuk generated five break point opportunities but was only able to convert two of them.",
+        "Rybakina has now reached the second week of Indian Wells for the third time in her career."
       ],
-      "context": "Anisimova moves into the round of 16 at Indian Wells for only the second time in her career.",
+      "context": "Rybakina remains a title favorite alongside Swiatek as the tournament enters its second week.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.wtatennis.com/news/4464789/amanda-anisimova-blitzes-emma-raducanu-in-all-around-52-minute-masterclass-advances-to-indian-wells-fourth-round"
+        "recapUrl": "https://www.wtatennis.com/news/4465438/rybakina-challenged-by-kostyuk-but-through-to-round-of-16-at-indian-wells"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "z8vX_GkR5_A",
-          "title": "Emma Raducanu vs. Amanda Anisimova | 2026 Indian Wells Round 3 | WTA Match Highlights",
-          "url": "https://www.youtube.com/watch?v=z8vX_GkR5_A",
-          "embedUrl": "https://www.youtube.com/embed/z8vX_GkR5_A"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-gauff-eala",
+      "id": "20260309-muchova-ruzic",
       "teams": {
-        "away": "Coco Gauff",
-        "home": "Alexandra Eala"
+        "away": "Antonia Ruzic",
+        "home": "Karolina Muchova"
       },
-      "headline": "Eala reaches historic fourth round as Gauff forced to retire with injury",
-      "score": "6-2, 2-0 (Retired)",
-      "brief": "The night session at Indian Wells ended in disappointment for the home crowd as World No. 4 Coco Gauff was forced to retire due to a left arm injury. Philippines' rising star Alexandra Eala was in complete control, leading by a set and a break when Gauff called it quits. Eala, who showed great sportsmanship in her victory, makes history as the first Filipino player to ever reach the Round of 16 in the California desert.",
+      "headline": "Muchova halts Ruzic's dream run with masterclass in variety",
+      "score": "Antonia Ruzic 0 - Karolina Muchova 2",
+      "brief": "Antonia Ruzic’s Cinderella story in the desert came to an abrupt end at the hands of Karolina Muchova. The Czech star used her full repertoire of slices, volleys, and drop shots to keep the young Croatian qualifier off balance, securing a straightforward victory to reach the second week.",
       "bullets": [
-        "Alexandra Eala led 6-2, 2-0 after 54 minutes of play when Coco Gauff officially retired.",
-        "This marks only the second mid-match retirement of Gauff's career and her first since 2022.",
-        "Eala becomes the first player from the Philippines to reach the fourth round of a WTA 1000 event."
+        "Muchova needed only 74 minutes to dispatch Ruzic 6-0, 6-3.",
+        "Ruzic had stunned World No. 7 Qinwen Zheng in the previous round but couldn't replicate the feat.",
+        "Muchova didn't face a single break point in a dominant first set that lasted just 28 minutes.",
+        "The win sets up a mouth-watering fourth-round clash against Iga Swiatek."
       ],
-      "context": "Gauff's injury status remains uncertain as she defends significant points in the upcoming Miami Open.",
+      "context": "This is Muchova's deepest run at a 1000-level event since returning from injury.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.wtatennis.com/news/4464840/eala-through-to-indian-wells-fourth-round-as-gauff-retires-with-left-arm-injury"
+        "recapUrl": "https://www.youtube.com/watch?v=kQJxqJt3DGs"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "L_n9oHkR3yQ",
-          "title": "\"I'm trying to find my limits and go past them\" | Alex Eala Press Conference | Indian Wells Round 3",
-          "url": "https://www.youtube.com/watch?v=L_n9oHkR3yQ",
-          "embedUrl": "https://www.youtube.com/embed/L_n9oHkR3yQ"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-mboko-kalinskaya",
+      "id": "20260309-mertens-bencic",
       "teams": {
-        "away": "Victoria Mboko",
-        "home": "Anna Kalinskaya"
+        "away": "Belinda Bencic",
+        "home": "Elise Mertens"
       },
-      "headline": "Teen phenom Mboko dominates Kalinskaya to continue dream debut",
-      "score": "6-4, 6-1",
-      "brief": "Canadian teenager Victoria Mboko continued her meteoric rise, securing her 15th win of the season with a straight-sets demolition of Anna Kalinskaya. Making her main-draw debut at Indian Wells, the 19-year-old showed no nerves, winning the final six games of the match to advance to the round of 16. Mboko's physical baseline game was too much for the 23rd seed, setting up a high-stakes clash with American star Amanda Anisimova.",
+      "headline": "Bencic stays perfect against Mertens to reach Round of 16",
+      "score": "Belinda Bencic 2 - Elise Mertens 0",
+      "brief": "Belinda Bencic continued her career-long dominance over Elise Mertens, extending her head-to-head record to 5-0. The Swiss star's ability to take the ball early and redirect pace left Mertens searching for answers throughout a one-sided affair in the California sun.",
       "bullets": [
-        "Victoria Mboko is now 11-0 in 2026 against players ranked outside the top 20.",
-        "The Canadian teenager won 88% of her first-serve points in a clinical 64-minute performance.",
-        "Mboko's 15 match wins this season are the second-most on the WTA tour behind only Elina Svitolina."
+        "Bencic secured the win in straight sets, 6-2, 6-3, in just 82 minutes.",
+        "Mertens struggled on serve, winning only 48% of her first-serve points.",
+        "Bencic hit 25 winners to just 12 unforced errors in a highly disciplined performance.",
+        "This is the fourth time Bencic has reached the fourth round at the BNP Paribas Open."
       ],
-      "context": "The win guarantees Mboko a significant rankings boost, likely moving her into the top 40.",
+      "context": "Bencic moves on to face Jessica Pegula for a spot in the quarterfinals.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.wtatennis.com/news/4464889/mboko-beats-kalinskaya-in-straight-sets-sets-up-anisimova-clash"
+        "recapUrl": "https://bnpparibasopen.com/news/swiatek-pegula-advance"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "b9vX_HkR4_A",
-          "title": "Victoria Mboko vs. Anna Kalinskaya | 2026 Indian Wells Round 3 | WTA Match Highlights",
-          "url": "https://www.youtube.com/watch?v=b9vX_HkR4_A",
-          "embedUrl": "https://www.youtube.com/embed/b9vX_HkR4_A"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260308-gibson-tauson",
+      "id": "20260309-krueger-svitolina",
       "teams": {
-        "away": "Talia Gibson",
-        "home": "Clara Tauson"
+        "away": "Elina Svitolina",
+        "home": "Ashlyn Krueger"
       },
-      "headline": "Australian qualifier Talia Gibson stuns Tauson to break into Top 100",
-      "score": "7-6, 4-6, 6-4",
-      "brief": "Talia Gibson's dream run at Indian Wells reached new heights as she outlasted Denmark's Clara Tauson in a nearly three-hour marathon. Despite facing 28 aces from the big-serving Dane, the Australian qualifier maintained her composure to secure her second consecutive win over a Top 20 opponent. With the victory, the 21-year-old Gibson is guaranteed to make her debut in the WTA Top 100 next week.",
+      "headline": "Svitolina experience shines through in straight-sets win over Krueger",
+      "score": "Elina Svitolina 2 - Ashlyn Krueger 0",
+      "brief": "Elina Svitolina’s return to the top tier of tennis continued with a composed victory over the rising American Ashlyn Krueger. Svitolina's defensive masterclass forced Krueger into over-hitting, allowing the Ukrainian to control the tempo and secure her sixth appearance in the Indian Wells fourth round.",
       "bullets": [
-        "Talia Gibson withstood a barrage of 28 aces from Clara Tauson to win in two hours and 43 minutes.",
-        "The win is Gibson's fifth consecutive victory in Indian Wells after starting in the qualifying rounds.",
-        "Gibson is now 15-5 in the 2026 season, marking the most successful stretch of her career."
+        "Svitolina took the match 6-4, 6-2, breaking Krueger's serve four times.",
+        "The Ukrainian won 75% of her service points and faced only one break point the entire match.",
+        "Krueger hit more winners (18 to 14) but was undone by 28 unforced errors compared to Svitolina's 10.",
+        "Svitolina has yet to lose a set in the tournament so far."
       ],
-      "context": "Gibson's breakthrough ensures her direct entry into future Grand Slam main draws.",
+      "context": "Svitolina will next face Katerina Siniakova, an opponent she has beaten in all four of their previous meetings.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.tennis.com.au/fan-zone/news/2026/03/09/gibson-continues-golden-run-at-indian-wells"
+        "recapUrl": "https://www.wtatennis.com/videos/4465319/svitolina-defeats-krueger-to-secure-spot-in-indian-wells-fourth-round"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "w5vX_DkR8_A",
-          "title": "Talia Gibson vs. Clara Tauson | 2026 Indian Wells Round 3 | WTA Match Highlights",
-          "url": "https://www.youtube.com/watch?v=w5vX_DkR8_A",
-          "embedUrl": "https://www.youtube.com/embed/w5vX_DkR8_A"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }

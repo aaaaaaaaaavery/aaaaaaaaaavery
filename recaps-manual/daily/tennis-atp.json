@@ -2,200 +2,27 @@
   "leagueName": "ATP",
   "leagueKey": "atp",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The young guard made its presence felt at Indian Wells as Joao Fonseca and Learner Tien secured breakthrough victories over top seeds, while Jannik Sinner and Alexander Zverev stayed the course to reach the fourth round.",
+  "leagueBriefing": "The heavy hitters survived a day of scares at Indian Wells, as Novak Djokovic and Carlos Alcaraz both dropped sets but advanced, while Alex Michelsen pulled off the shock of the tournament by ousting Taylor Fritz.",
   "games": [
     {
-      "id": "401803310",
+      "id": "20260309-djokovic-kovacevic",
       "teams": {
-        "away": "Brandon Nakashima",
-        "home": "Alexander Zverev"
+        "away": "Aleksandar Kovacevic",
+        "home": "Novak Djokovic"
       },
-      "headline": "Zverev digs deep to survive Nakashima's serving masterclass",
-      "score": "7-6, 5-7, 6-4",
-      "brief": "Alexander Zverev had to weather a storm of 17 aces from Southern California native Brandon Nakashima to punch his ticket to the fourth round. In a match where break points were nearly non-existent for the first two sets, the German finally found his opening in the closing games of the third. Zverev's experience shone through in the pressure moments, extending his perfect head-to-head record against the American to 5-0.",
+      "headline": "Djokovic shakes off rust to survive Kovacevic scare in Indian Wells opener",
+      "score": "Aleksandar Kovacevic 1 - Novak Djokovic 2",
+      "brief": "Novak Djokovic's return to the desert was anything but a walk in the park. The world number one looked uncharacteristically vulnerable in the second set against Aleksandar Kovacevic, but his trademark mental toughness surfaced in the decider to avoid a massive opening-round upset.",
       "bullets": [
-        "Alexander Zverev didn't earn a single break point until the third set of the two-and-a-half-hour marathon.",
-        "Brandon Nakashima fired 17 aces and forced Zverev to admit the American has one of the best-placed serves in the world.",
-        "Zverev sealed the victory by breaking Nakashima in the final game of the match."
+        "Djokovic dominated the opening set 6-4 before losing focus and dropping the second 1-6.",
+        "Kovacevic broke the legend twice in the second set, playing some of the best tennis of his career.",
+        "The top seed cleaned up his unforced errors in the third set to seal the 6-4, 1-6, 6-4 victory.",
+        "This marked Djokovic's first competitive match in several weeks, showing clear signs of competitive rust."
       ],
-      "context": "Zverev moves on to face Flavio Cobolli as he chases his first title in the California desert.",
+      "context": "Djokovic moves on to face Jack Draper in a highly anticipated second-round clash.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://bnpparibasopen.com/news/sinner-shines-vs-shapovalov"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "543vvFbJJ-A",
-          "title": "Alexander Zverev vs Brandon Nakashima Match Highlights | Indian Wells 2026",
-          "url": "https://www.youtube.com/watch?v=543vvFbJJ-A",
-          "embedUrl": "https://www.youtube.com/embed/543vvFbJJ-A"
-        }
-      ]
-    },
-    {
-      "id": "20260308-shelton-tien",
-      "teams": {
-        "away": "Ben Shelton",
-        "home": "Learner Tien"
-      },
-      "headline": "Learner Tien outwits power-hitter Shelton in California homecoming",
-      "score": "7-6, 4-6, 6-3",
-      "brief": "In a battle of the next generation of American tennis, 20-year-old Learner Tien used guile and precision to neutralize the booming serve of Ben Shelton. Tien remarkably out-aced one of the tour's biggest servers and showed veteran-like composure to break Shelton late in the third set. The victory marks a major milestone for the Irvine native, who becomes the youngest American man to reach the Indian Wells round of 16 in over a decade.",
-      "bullets": [
-        "Learner Tien hit 15 aces to Ben Shelton's eight, a shocking stat given Shelton's reputation as a serve specialist.",
-        "Tien successfully neutralized a 144 MPH rocket from Shelton to set up a crucial break of serve.",
-        "The Irvine native has now won seven of his last eight matches against Top 30 opponents."
-      ],
-      "context": "Tien's rise into the round of 16 signals a major shift in the American tennis hierarchy.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://bnpparibasopen.com/news/tien-comes-of-age"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "z1S2vlwMqb8",
-          "title": "Ben Shelton vs Learner Tien Match Highlights | Indian Wells 2026",
-          "url": "https://www.youtube.com/watch?v=z1S2vlwMqb8",
-          "embedUrl": "https://www.youtube.com/embed/z1S2vlwMqb8"
-        }
-      ]
-    },
-    {
-      "id": "20260308-fonseca-paul",
-      "teams": {
-        "away": "Joao Fonseca",
-        "home": "Tommy Paul"
-      },
-      "headline": "Fonseca storms into Masters 1000 spotlight with dominant Paul upset",
-      "score": "6-2, 6-3",
-      "brief": "Brazilian teenager Joao Fonseca delivered what he called his 'cleanest performance' to date, dismantling Tommy Paul in straight sets. Fonseca's baseline aggression left the veteran American with no answers, as the 19-year-old dominated the long rallies and showed off a versatile all-court game. The win sets up a mouth-watering fourth-round clash with Jannik Sinner and marks Fonseca's first ever trip to the round of 16 at a Masters 1000 event.",
-      "bullets": [
-        "Joao Fonseca won 32 baseline points compared to just 12 for Tommy Paul.",
-        "The 19-year-old Brazilian has now defeated two Top 30 players back-to-back at Indian Wells (Khachanov and Paul).",
-        "Fonseca's victory was punctuated by a stunning 19-shot rally ended with an angled drop shot."
-      ],
-      "context": "The win secures Fonseca a first-ever meeting with World No. 2 Jannik Sinner.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://bnpparibasopen.com/news/joao-fonseca-sinner-indian-wells-paul"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "fXbUAu8pwjs",
-          "title": "Joao Fonseca vs Tommy Paul Match Highlights | Indian Wells 2026",
-          "url": "https://www.youtube.com/watch?v=fXbUAu8pwjs",
-          "embedUrl": "https://www.youtube.com/embed/fXbUAu8pwjs"
-        }
-      ]
-    },
-    {
-      "id": "20260308-shapovalov-sinner",
-      "teams": {
-        "away": "Denis Shapovalov",
-        "home": "Jannik Sinner"
-      },
-      "headline": "Clinical Sinner silences Shapovalov to stay perfect in Tennis Paradise",
-      "score": "6-3, 6-2",
-      "brief": "Jannik Sinner continued his dominant run in the desert, needing only 71 minutes to dismiss Canada's Denis Shapovalov. The Italian remained untouchable on serve and displayed the ruthless form that has defined his season, winning 22 of the final 24 points to close out the match. Sinner has yet to be truly tested this tournament as he eyes a potential finals showdown with rival Carlos Alcaraz.",
-      "bullets": [
-        "Jannik Sinner won a staggering 22 of the final 24 points to sprint across the finish line.",
-        "Sinner has now won 13 matches at Indian Wells, with his only losses in the desert coming against Carlos Alcaraz since 2023.",
-        "The World No. 2 has dropped a total of only seven games through his first two matches."
-      ],
-      "context": "Sinner advances to face teenage sensation Joao Fonseca in the round of 16.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://bnpparibasopen.com/news/sinner-shines-vs-shapovalov"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "aVLbrn3ArBA",
-          "title": "Jannik Sinner vs Denis Shapovalov Match Highlights | Indian Wells 2026",
-          "url": "https://www.youtube.com/watch?v=aVLbrn3ArBA",
-          "embedUrl": "https://www.youtube.com/embed/aVLbrn3ArBA"
-        }
-      ]
-    },
-    {
-      "id": "20260308-diallo-faa",
-      "teams": {
-        "away": "Gabriel Diallo",
-        "home": "Felix Auger-Aliassime"
-      },
-      "headline": "Auger-Aliassime wins all-Montreal battle against rising Diallo",
-      "score": "6-7, 6-3, 6-3",
-      "brief": "In a physical all-Canadian clash, Felix Auger-Aliassime overcame a slow start to outlast his countryman Gabriel Diallo. After dropping a tight first-set tiebreaker, the veteran Auger-Aliassime tightened his game, cutting down on unforced errors and dominating at the net. Despite Diallo's impressive power, Auger-Aliassime's experience in long-haul Masters matches proved the difference in the nearly two-and-a-half-hour contest.",
-      "bullets": [
-        "Felix Auger-Aliassime won 10 of 13 points at the net to turn the momentum after the first set.",
-        "Gabriel Diallo hit 11 aces but was undone by 42 unforced errors throughout the match.",
-        "Auger-Aliassime saved three of four break points to keep Diallo from mounting a comeback in the final set."
-      ],
-      "context": "Auger-Aliassime advances to face Arthur Fils in the fourth round.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.sportsnet.ca/atp/article/auger-aliassime-beats-fellow-canadian-diallo-at-indian-wells-open/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "gBkR2HtpC8g",
-          "title": "Gabriel Diallo vs Felix Auger-Aliassime Match Highlights | Indian Wells 2026",
-          "url": "https://www.youtube.com/watch?v=gBkR2HtpC8g",
-          "embedUrl": "https://www.youtube.com/embed/gBkR2HtpC8g"
-        }
-      ]
-    },
-    {
-      "id": "20260308-davidovich-mensik",
-      "teams": {
-        "away": "Alejandro Davidovich Fokina",
-        "home": "Jakub Mensik"
-      },
-      "headline": "Davidovich Fokina survives umpire dispute and emotional rollercoaster to edge Mensik",
-      "score": "6-2, 4-6, 6-2",
-      "brief": "Alejandro Davidovich Fokina secured an 'epic' victory over rising star Jakub Mensik, but it wasn't without his signature drama. After cruising through the first set, the Spaniard lost his focus following a dispute with the chair umpire, allowing Mensik to force a decider. However, 'Foki' steadied the ship in the third, reclaiming his aggressive baseline play to shut the door on the Czech teenager.",
-      "bullets": [
-        "Davidovich Fokina successfully protected his ranking points after a difficult start to the 2026 season.",
-        "Jakub Mensik showed maturity beyond his years, saving nine break points in his previous round to set up this clash.",
-        "The win sets up a round of 16 match between Davidovich Fokina and American Cinderella story Learner Tien."
-      ],
-      "context": "The victory helps Davidovich Fokina stabilize his position in the top 20 rankings.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.puntodebreak.com/en/2026/03/09/davidovich-eliminates-mensik-in-indian-wells-after-an-emotional-rollercoaster"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "CNuNUPp524A",
-          "title": "Jakub Mensik vs Alejandro Davidovich Fokina Match Highlights | Indian Wells 2026",
-          "url": "https://www.youtube.com/watch?v=CNuNUPp524A",
-          "embedUrl": "https://www.youtube.com/embed/CNuNUPp524A"
-        }
-      ]
-    },
-    {
-      "id": "20260308-fucsovics-fils",
-      "teams": {
-        "away": "Marton Fucsovics",
-        "home": "Arthur Fils"
-      },
-      "headline": "Fils stops Fucsovics' run to continue impressive Indian Wells return",
-      "score": "6-3, 7-5",
-      "brief": "Arthur Fils put an end to Marton Fucsovics' giant-killing run with a disciplined straight-sets victory. Fucsovics, fresh off an upset of the 5th seed, found Fils' power and court coverage too much to handle. The young Frenchman showed impressive poise to close out a tight second set, conserving vital energy as he prepares for a physical fourth-round matchup with Felix Auger-Aliassime.",
-      "bullets": [
-        "Arthur Fils successfully navigated a potential 'trap match' after Fucsovics upset Lorenzo Musetti in the previous round.",
-        "The Frenchman conserved energy by closing the match in straight sets, avoiding a dangerous decider.",
-        "Fils is now set for a high-stakes rematch with Felix Auger-Aliassime in the round of 16."
-      ],
-      "context": "Fils continues his surge back into form after a quiet start to the season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.reddit.com/r/tennis/comments/1rom28b/indian_wells_r3_30_a_fils_def_m_fucsovics_63_75/"
+        "recapUrl": "https://www.atptour.com/en/news/djokovic-kovacevic-indian-wells-2026-monday"
       },
       "highlights": [
         {
@@ -208,23 +35,204 @@
       ]
     },
     {
-      "id": "20260308-cobolli-tiafoe",
+      "id": "20260309-michelsen-fritz",
       "teams": {
-        "away": "Flavio Cobolli",
-        "home": "Frances Tiafoe"
+        "away": "Taylor Fritz",
+        "home": "Alex Michelsen"
       },
-      "headline": "Tiafoe clinical in straight-sets revenge over Cobolli",
-      "score": "6-1, 6-2",
-      "brief": "Frances Tiafoe turned the tables on Flavio Cobolli, avenging his recent loss in the Acapulco final with a dominant performance at Indian Wells. Tiafoe was aggressive from the first point, never allowing the Italian to settle into the baseline rhythm that gave him trouble just a week ago. The American looks to be finding his peak form just in time for the second week of the Masters 1000 event.",
+      "headline": "Michelsen stuns Fritz in all-American upset at Indian Wells",
+      "score": "Taylor Fritz 0 - Alex Michelsen 2",
+      "brief": "In a battle of generations for American tennis, 21-year-old Alex Michelsen proved he’s ready for the big stage by taking down the former champion Taylor Fritz. Michelsen played fearless tennis in the pressure moments, particularly during a tense second-set tiebreak, to record the biggest win of his young career.",
       "bullets": [
-        "Tiafoe allowed Cobolli only three games in a match that lasted just over an hour.",
-        "The win reverses the result of the Acapulco final where Cobolli defeated Tiafoe to break into the Top 15.",
-        "Tiafoe will now face Alexander Zverev in a marquee fourth-round encounter."
+        "Michelsen broke Fritz early in the first set and never looked back, taking it 6-4.",
+        "Fritz struggled with his first-serve percentage, allowing Michelsen to dictate play from the baseline.",
+        "The second set went to a tiebreak where Michelsen rallied from 4-6 down to win 8-6.",
+        "This is Fritz's earliest exit at Indian Wells since 2018."
       ],
-      "context": "The victory keeps American hopes alive for a deep run in the men's singles draw.",
+      "context": "The loss is a significant blow to Fritz's ranking points as he was defending deep-run points from previous years.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.tennisworldusa.org/tennis/news/On_the_ATP_results_with/164707/flavio-cobolli-tops-frances-tiafoe-wins-third-atp-title-in-acapulco-/"
+        "recapUrl": "https://www.atptour.com/en/news/michelsen-fritz-indian-wells-2026-monday"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-alcaraz-rinderknech",
+      "teams": {
+        "away": "Arthur Rinderknech",
+        "home": "Carlos Alcaraz"
+      },
+      "headline": "Alcaraz overcomes tiebreak blip to overpower Rinderknech",
+      "score": "Arthur Rinderknech 1 - Carlos Alcaraz 2",
+      "brief": "Carlos Alcaraz looked like he was in for a short night until a loose tiebreak handed Arthur Rinderknech a lifeline. However, the Spaniard's explosive power proved too much in the final set as he sprinted to the finish line, reminding the crowd why he is a perennial favorite in the desert.",
+      "bullets": [
+        "Alcaraz lost a tight second-set tiebreak 7-8 (6-8) after holding a mini-break lead.",
+        "The Spaniard responded by winning the first four games of the third set in just 15 minutes.",
+        "Rinderknech hammered 12 aces but was broken four times during the match.",
+        "Alcaraz finished with 34 winners compared to just 18 unforced errors."
+      ],
+      "context": "Alcaraz keeps his hopes of reclaiming the world No. 1 spot alive with the win.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.atptour.com/en/news/alcaraz-rinderknech-indian-wells-2026-monday"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-medvedev-baez",
+      "teams": {
+        "away": "Sebastian Baez",
+        "home": "Daniil Medvedev"
+      },
+      "headline": "Medvedev delivers clinical masterclass to dismiss Baez",
+      "score": "Sebastian Baez 0 - Daniil Medvedev 2",
+      "brief": "While others struggled, Daniil Medvedev was the picture of efficiency. The 'Chess Player' dismantled Sebastian Baez's clay-court style with relentless depth and a near-perfect second set, spending less than 80 minutes on court to secure his spot in the next round.",
+      "bullets": [
+        "Medvedev won a staggering 92% of his first-serve points during the match.",
+        "The second set was a total lockout, with Medvedev taking it 6-0 in just 24 minutes.",
+        "Baez was unable to generate a single break point against the Medvedev serve.",
+        "This win marks Medvedev's 10th consecutive victory on hard courts this season."
+      ],
+      "context": "Medvedev's form makes him a heavy favorite for the title given the struggles of other top seeds.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.atptour.com/en/news/medvedev-baez-indian-wells-2026-monday"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-norrie-deminaur",
+      "teams": {
+        "away": "Alex De Minaur",
+        "home": "Cameron Norrie"
+      },
+      "headline": "Norrie grinds down De Minaur in tactical desert battle",
+      "score": "Alex De Minaur 0 - Cameron Norrie 2",
+      "brief": "Cameron Norrie out-dueled one of the fastest players on tour by simply refusing to miss. In a match defined by long rallies and tactical patience, the former champion used his flat backhand to neutralize De Minaur's speed and claim a straight-sets victory.",
+      "bullets": [
+        "Norrie saved all three break points he faced in the first set.",
+        "De Minaur committed 25 unforced errors, frustrated by Norrie's defensive consistency.",
+        "Both sets ended 6-4, mirroring the tight nature of their head-to-head history.",
+        "Norrie has now reached the third round in Indian Wells for five consecutive years."
+      ],
+      "context": "Norrie's win sets up a clash with Rinky Hijikata in the next round.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.atptour.com/en/news/norrie-de-minaur-indian-wells-2026-monday"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-bublik-hijikata",
+      "teams": {
+        "away": "Rinky Hijikata",
+        "home": "Alexander Bublik"
+      },
+      "headline": "Hijikata outlasts Bublik's trickery in three-set marathon",
+      "score": "Alexander Bublik 1 - Rinky Hijikata 2",
+      "brief": "Rinky Hijikata proved that substance beats style at Indian Wells. Despite Alexander Bublik's usual array of underarm serves and tweeners, the young Australian stayed disciplined through two tiebreaks to secure a gritty comeback win that left the crowd exhausted.",
+      "bullets": [
+        "Bublik won the opening set tiebreak 7-3 but lost focus in the middle of the match.",
+        "The match featured three sets that all went to at least 6-3 or a tiebreak.",
+        "Hijikata won the final set tiebreak 7-3 to pull off the upset.",
+        "Bublik served 15 aces but also 11 double faults in a wildly inconsistent performance."
+      ],
+      "context": "Hijikata earns his first ever third-round appearance at a Masters 1000 event.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.atptour.com/en/news/hijikata-bublik-indian-wells-2026-monday"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-cerundolo-draper",
+      "teams": {
+        "away": "Jack Draper",
+        "home": "Francisco Cerundolo"
+      },
+      "headline": "Draper dominates Cerundolo to set up blockbuster Djokovic date",
+      "score": "Jack Draper 2 - Francisco Cerundolo 0",
+      "brief": "Jack Draper is playing with a level of confidence that should put the rest of the draw on notice. He made quick work of the seeded Francisco Cerundolo, using his heavy lefty forehand to dictate play and ensure he didn't spend any more time in the heat than necessary.",
+      "bullets": [
+        "Draper broke Cerundolo in the very first game of the match and never trailed.",
+        "The Brit won 80% of his second-serve return points in a dominant first set (6-1).",
+        "Cerundolo showed more fight in the second set (7-5) but was undone by Draper's late break.",
+        "Draper hit 22 winners to only 9 unforced errors in a very clean display."
+      ],
+      "context": "Draper's reward is a second-round match against world No. 1 Novak Djokovic.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.atptour.com/en/news/draper-cerundolo-indian-wells-2026-monday"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260309-vacherot-ruud",
+      "teams": {
+        "away": "Casper Ruud",
+        "home": "Valentin Vacherot"
+      },
+      "headline": "Ruud fights back to deny Vacherot a fairy-tale upset",
+      "score": "Valentin Vacherot 1 - Casper Ruud 2",
+      "brief": "Casper Ruud narrowly escaped what would have been the surprise of the day. The qualifier Valentin Vacherot played the set of his life to take the opener, but Ruud’s superior fitness and heavy topspin eventually wore down the underdog in the desert heat.",
+      "bullets": [
+        "Vacherot stunned the world No. 8 by taking the first set 6-3 with aggressive net play.",
+        "Ruud adjusted his return position in the second set, winning it 6-3 to force a decider.",
+        "The third set was a battle of nerves, with Ruud securing the decisive break at 4-4.",
+        "This was Vacherot's first ever match against a top-10 opponent."
+      ],
+      "context": "Ruud advances to a clash with Carlos Alcaraz in what could be the match of the tournament.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.atptour.com/en/news/ruud-vacherot-indian-wells-2026-monday"
       },
       "highlights": [
         {

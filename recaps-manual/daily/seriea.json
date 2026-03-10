@@ -2,28 +2,28 @@
   "leagueName": "Serie A",
   "leagueKey": "seriea",
   "sourceType": "console_recaps",
-  "leagueBriefing": "It was a seismic Sunday in Italy as the Milan Derby lived up to its billing, with AC Milan claiming city bragging rights and dealing a major blow to their rivals' title hopes. Elsewhere, the relegation battle took center stage as Lecce secured a massive three points in a survival six-pointer, while Hellas Verona pulled off the shock of the weekend by coming from behind to stun Bologna. The results have tightened the screws at both ends of the table, leaving fans with plenty to dissect on Monday morning.",
+  "leagueBriefing": "Lazio finally snapped a four-match winless streak in dramatic fashion, using a stoppage-time header from Adam Marusic to secure a vital 2-1 victory over Sassuolo at the Stadio Olimpico.",
   "games": [
     {
-      "id": "625477",
+      "id": "625475",
       "teams": {
-        "away": "Internazionale",
-        "home": "Milan"
+        "away": "Sassuolo",
+        "home": "Lazio"
       },
-      "headline": "Estupinan strike decides Derby della Madonnina as Milan stun Inter",
-      "score": "Milan 1 - 0 Internazionale",
-      "brief": "AC Milan emerged victorious in a high-stakes Derby della Madonnina, with Pervis Estupiñán providing the decisive moment at the San Siro. In a match characterized by tactical discipline and intense midfield battles, Estupiñán’s 35th-minute goal—set up by a clever Yacine Adli ball—proved to be enough to silence the blue half of Milan. Inter pushed desperately for an equalizer in the second half, frequently testing Mike Maignan from set pieces, but the Rossoneri backline held firm to secure a win that resonates far beyond the city limits.",
+      "headline": "Marusic stoppage-time header ends Lazio's month-long winless drought",
+      "score": "Sassuolo 1 - Lazio 2",
+      "brief": "Lazio returned to the win column in the most dramatic way possible, finding a 92nd-minute winner to sink a resilient Sassuolo side. Daniel Maldini ignited the nearly empty Stadio Olimpico just two minutes in with his first goal for the club, but the hosts' inability to capitalize on further chances allowed Armand Lauriente to equalize before halftime. Just as it looked like Lazio would settle for another frustrating draw, Adam Marusic met a Matteo Cancellieri cross in the dying moments to secure all three points and push the Biancocelesti back into the top 10.",
       "bullets": [
-        "Pervis Estupiñán scored the game's only goal in the 35th minute, assisted by Yacine Adli.",
-        "Inter dominated the corner count 7-2 but failed to convert any of Federico Dimarco's dangerous deliveries.",
-        "Luka Modrić controlled the tempo for Milan but picked up a late yellow card in a frantic stoppage time.",
-        "The win marks Milan's second consecutive derby victory, further shifting the power dynamic in the city.",
-        "Inter's Alessandro Bastoni and Denzel Dumfries both received bookings as frustrations boiled over late in the game."
+        "Daniel Maldini opened his Lazio account just 80 seconds into the match, pouncing on a rebound from a Gustav Isaksen shot.",
+        "Adam Marusic's winning header in the 92nd minute was his first goal of the season and ended a personal performance slump.",
+        "21-year-old goalkeeper Edoardo Motta made his Serie A debut for Lazio, stepping in for the injured Ivan Provedel.",
+        "The match was played in front of only 5,000 fans as Lazio ultras continued their boycott against President Claudio Lotito.",
+        "Lazio leapfrogged Udinese to move into 10th place, though they remain one point behind 9th-place Sassuolo."
       ],
-      "context": "The victory propels Milan back into the Scudetto conversation while slowing Inter's momentum at the top of the table.",
+      "context": "The win ends a four-match winless run in league play and keeps Lazio within striking distance of the European qualification spots.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.foxsports.com/soccer/serie-a-ac-milan-vs-inter-milan-mar-08-2026-game-boxscore-625477"
+        "recapUrl": "https://thelaziali.com/2026/03/09/lazio-2-1-sassuolo-marusics-injury-time-header-ends-winless-run/"
       },
       "highlights": [
         {
@@ -32,138 +32,6 @@
           "title": "",
           "url": "",
           "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "1253216-genoa-vs-roma-live-score-serie-a",
-      "teams": {
-        "away": "Roma",
-        "home": "Genoa"
-      },
-      "headline": "Vitinha comes off bench to sink Roma in second-half thriller at Marassi",
-      "score": "Genoa 2 - 1 Roma",
-      "brief": "Genoa took a massive leap away from the relegation zone with a gutsy comeback win over Roma at the Stadio Luigi Ferraris. After a cagey first half, the game exploded into life when Junior Messias converted a penalty for the hosts, only for Evan Ndicka to equalize for Roma just moments later. The drama peaked in the 80th minute when substitute Vitinha found the back of the net, rewarding Genoa’s clinical counter-attacking play. Despite a late siege by the Giallorossi, Genoa’s defensive organization remained unbreakable.",
-      "bullets": [
-        "Substitute Vitinha scored the winning goal in the 80th minute after being on the pitch for less than 15 minutes.",
-        "Junior Messias opened the scoring from the penalty spot in the 52nd minute after a foul on Victor Ellertsson.",
-        "Evan Ndicka equalized for Roma with a powerful header just two minutes after Genoa's opener.",
-        "Genoa goalkeeper Justin Bijlow made a series of crucial saves in the final 10 minutes to preserve the lead.",
-        "Roma controlled 58% of possession but struggled to penetrate Genoa’s low defensive block."
-      ],
-      "context": "Genoa moves six points clear of the drop zone, while Roma misses a chance to climb into the top four.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.vavel.com/en-us/soccer/2026/03/08/1253216-genoa-vs-roma-live-score-serie-a.html"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "UaucHfOnTBU",
-          "title": "GENOA-ROMA | HIGHLIGHTS | De Rossi Stuns Roma | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=UaucHfOnTBU",
-          "embedUrl": "https://www.youtube.com/embed/UaucHfOnTBU",
-          "publishedAt": "2026-03-08T19:41:48Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "serie-a-bologna-1-2-verona-bowie-shock-victory",
-      "teams": {
-        "away": "Verona",
-        "home": "Bologna"
-      },
-      "headline": "Bowie's debut goal caps stunning Verona comeback at the Dall'Ara",
-      "score": "Bologna 1 - 2 Verona",
-      "brief": "Hellas Verona pulled off the upset of the season, coming from a goal down to beat high-flying Bologna in their own backyard. Jonathan Rowe had given the hosts the lead early in the second half, seemingly putting Bologna on track for their sixth straight win. However, Verona responded with incredible grit, equalizing through Martin Frese before Kieron Bowie secured the win with his first-ever Serie A goal. The result snapped Bologna's winning streak and gave Verona a lifeline in their desperate fight against relegation.",
-      "bullets": [
-        "Kieron Bowie scored the match-winner in the 57th minute, marking his first goal in Italian football.",
-        "Bologna’s Jonathan Rowe opened the scoring in the 49th minute before Verona's quickfire response.",
-        "Verona's victory is their first league win in over two months, dating back to December.",
-        "Bologna had a potential late equalizer from Santiago Castro ruled out for a foul after a VAR review.",
-        "Hellas Verona keeper Lorenzo Montipò made seven saves to keep the Rossoblu at bay."
-      ],
-      "context": "The win moves Verona out of the bottom three for the first time in weeks, while Bologna’s European push takes a hit.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://football-italia.net/serie-a-bologna-1-2-verona-bowie-shock-victory/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "bV7mQXD7YsE",
-          "title": "BOLOGNA-VERONA | HIGHLIGHTS | Underdogs Deliver Blow To Bologna! | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=bV7mQXD7YsE",
-          "embedUrl": "https://www.youtube.com/embed/bV7mQXD7YsE",
-          "publishedAt": "2026-03-08T16:47:58Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "lecce-2-1-cremonese-big-win-survival-vardy",
-      "teams": {
-        "away": "Cremonese",
-        "home": "Lecce"
-      },
-      "headline": "Lecce survive late VAR drama to edge Cremonese in relegation battle",
-      "score": "Lecce 2 - 1 Cremonese",
-      "brief": "Lecce secured a vital three points in the race for Serie A survival, narrowly defeating direct rivals Cremonese at the Stadio Via del Mare. The Giallorossi looked to be cruising after first-half goals from Santiago Pierotti and a Nikola Stulic penalty, but a revitalized Cremonese fought back after the break. A Federico Bonazzoli goal set up a frantic finish, which included a disallowed Cremonese equalizer and a red card for the visitors' bench, leaving the home crowd exhausted but jubilant at the final whistle.",
-      "bullets": [
-        "Santiago Pierotti opened the scoring in the 22nd minute with a header from a corner kick.",
-        "Nikola Stulic converted a 38th-minute penalty after a VAR review confirmed a handball by Matteo Bianchetti.",
-        "Cremonese striker Jamie Vardy was forced off with an injury during the halftime interval.",
-        "Cremonese's Giuseppe Pezzella was sent off from the bench during heated stoppage-time protests.",
-        "Lecce keeper Wladimiro Falcone made a point-blank save in the 93rd minute to deny an equalizer."
-      ],
-      "context": "Lecce moves three points clear of the relegation zone, placing Cremonese in a precarious position heading into the final stretch.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://football-italia.net/lecce-2-1-cremonese-big-win-survival-vardy/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "f8vEOJ8qF4w",
-          "title": "LECCE-CREMONESE | HIGHLIGHTS | Tough Fight At The Bottom | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=f8vEOJ8qF4w",
-          "embedUrl": "https://www.youtube.com/embed/f8vEOJ8qF4w",
-          "publishedAt": "2026-03-08T14:33:03Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "serie-a-fiorentina-0-0-parma-cannot-viola-joy",
-      "teams": {
-        "away": "Parma",
-        "home": "Fiorentina"
-      },
-      "headline": "Stalemate at the Franchi sees Fiorentina escape bottom three",
-      "score": "Fiorentina 0 - 0 Parma",
-      "brief": "Fiorentina and Parma played out a tense, scoreless draw that offered little entertainment but significant implications for the standings. While the Viola were frustrated by their inability to break down a resolute Parma defense, the single point was enough to lift them out of the relegation zone for the first time since October. Parma, meanwhile, continued their impressive run of form, looking comfortable in mid-table and effectively extinguishing any lingering fears of being dragged back into the survival scrap.",
-      "bullets": [
-        "Fiorentina recorded 62% possession but managed only two shots on target throughout the match.",
-        "David de Gea preserved the point for the hosts with a sharp save on a late Gabriel Strefezza counter-attack.",
-        "Parma’s Zion Suzuki returned to the matchday squad for the first time since a hand injury in November.",
-        "The draw ends a two-match losing streak in Serie A for Fiorentina.",
-        "Parma has now kept three clean sheets in their last five league outings."
-      ],
-      "context": "A milestone point for Fiorentina as they climb out of the drop zone, though they remain just one point clear of danger.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://football-italia.net/serie-a-fiorentina-0-0-parma-cannot-viola-joy/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "lObIRqcsu18",
-          "title": "FIORENTINA-PARMA | HIGHLIGHTS | Points Shared in Florence | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=lObIRqcsu18",
-          "embedUrl": "https://www.youtube.com/embed/lObIRqcsu18",
-          "publishedAt": "2026-03-08T16:45:17Z",
-          "matchScore": 100
         }
       ]
     }

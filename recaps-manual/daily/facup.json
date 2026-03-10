@@ -2,104 +2,36 @@
   "leagueName": "FA Cup",
   "leagueKey": "facup",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The FA Cup fifth round delivered late drama and a significant upset on March 8th. Southampton edged past Fulham with a stoppage-time penalty, while League One's struggling Port Vale heroically dumped Premier League Sunderland out thanks to an early goal and resolute defending. Leeds United, however, faced no such trouble, cruising past Norwich City to book their quarter-final spot.",
+  "leagueBriefing": "West Ham United secured a spot in the FA Cup quarter-finals for the first time in a decade, overcoming Brentford in a dramatic penalty shootout at the London Stadium after a hard-fought 2-2 draw.",
   "games": [
     {
-      "id": "554793",
+      "id": "697495",
       "teams": {
-        "away": "Southampton",
-        "home": "Fulham"
+        "away": "Brentford",
+        "home": "West Ham United"
       },
-      "headline": "Stewart's late penalty sends Southampton past Fulham after VAR drama",
-      "score": "Fulham 0 - 1 Southampton",
-      "brief": "Southampton snatched a quarter-final spot with a dramatic 90+1' Ross Stewart penalty after Fulham had a bizarre goal disallowed in the first half due to an early whistle, adding to their VAR frustrations. The Championship side defended resolutely and took their late chance to progress, making it a frustrating afternoon for the Premier League hosts.",
+      "headline": "Mavropanos converts winning penalty as West Ham edge Brentford in shootout thriller",
+      "score": "West Ham United 2 - 2 Brentford",
+      "brief": "In a pulsating fifth-round encounter, West Ham United outlasted Brentford in a penalty shootout to set up a quarter-final clash with Leeds United. Jarrod Bowen twice put the Hammers ahead, first with a clinical close-range finish and then from the penalty spot, but each time the Bees responded through braces from Igor Thiago. After a scoreless extra-time period, the match was decided by Dango Ouattara's failed Panenka attempt, which Alphonse Areola comfortably saved. Konstantinos Mavropanos then stepped up to fire home the decisive spot-kick, sparking wild celebrations in East London as the Hammers remained perfect in the shootout.",
       "bullets": [
-        "Ross Stewart converted a penalty in the 91st minute to secure the win.",
-        "Fulham had a goal disallowed in the 18th minute after the referee blew before the ball crossed the line.",
-        "Championship side Southampton knocked out Premier League opposition away from home.",
-        "The win marks 50 years since Southampton's famous 1976 FA Cup win as a second-tier team.",
-        "Fulham made nine changes to their starting lineup for the cup clash."
+        "Jarrod Bowen scored his seventh career goal against Brentford, the most he has scored against any single opponent.",
+        "Igor Thiago reached 20 goals for the season in all competitions with his second-half penalty equalizer.",
+        "Alphonse Areola was the hero of the shootout, standing his ground to catch Dango Ouattara's attempted chip down the middle.",
+        "The victory marks West Ham's first trip to the FA Cup quarter-finals since the 2015/16 season.",
+        "West Ham converted all five of their penalties (Bowen, Castellanos, Wilson, Souček, and Mavropanos) to win the shootout 5-3."
       ],
-      "context": "Southampton advance to the FA Cup quarter-finals, continuing their status as potential giant-killers.",
+      "context": "The win propels West Ham into a home quarter-final against Leeds United and keeps their hopes of silverware alive.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.skysports.com/football/fulham-vs-southampton/report/554793"
+        "recapUrl": "https://whufc.com/en/news/match-report-or-spot-on-hammers-win-dramatic-shootout-to-progress-to-fa-cup"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "yTBpCh7J4kA",
-          "title": "LATE PENALTY WINNER! 😱 | Fulham (0-1) Southampton | Emirates FA Cup 2025-26",
-          "url": "https://www.youtube.com/watch?v=yTBpCh7J4kA",
-          "embedUrl": "https://www.youtube.com/embed/yTBpCh7J4kA",
-          "publishedAt": "2026-03-09T12:01:38Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "port-vale-v-sunderland-fa-cup-fifth-round-live",
-      "teams": {
-        "away": "Sunderland",
-        "home": "Port Vale"
-      },
-      "headline": "Giant-killing Port Vale stun Sunderland to reach quarter-finals",
-      "score": "Port Vale 1 - 0 Sunderland",
-      "brief": "League One's bottom club Port Vale produced a massive FA Cup upset, beating Premier League Sunderland 1-0 at Vale Park. Ben Waine's 28th-minute strike was enough for the Valiants, who defended bravely and rode their luck at times, with keeper Joe Gauci making key saves to secure a memorable victory for the home faithful.",
-      "bullets": [
-        "Ben Waine scored the only goal in the 28th minute to secure the upset.",
-        "Port Vale, currently bottom of League One, defeated Premier League Sunderland.",
-        "It is Port Vale's fourth successive 1-0 home win in this season's FA Cup campaign.",
-        "Port Vale reach the FA Cup quarter-finals for the first time since 1954.",
-        "Goalkeeper Joe Gauci was the hero with several point-blank saves late in the game."
-      ],
-      "context": "Port Vale cause the shock of the round to advance to the FA Cup quarter-finals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.theguardian.com/football/live/2026/mar/08/port-vale-v-sunderland-fa-cup-fifth-round-live"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "Iiv3CeflU68",
-          "title": "Port Vale's DREAM run continues! 🤩 | Port Vale (1-0) Sunderland | Emirates FA Cup 2025-26",
-          "url": "https://www.youtube.com/watch?v=Iiv3CeflU68",
-          "embedUrl": "https://www.youtube.com/embed/Iiv3CeflU68",
-          "publishedAt": "2026-03-09T12:00:34Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "emirates-fa-cup-report-leeds-united-3-0-norwich-city",
-      "teams": {
-        "away": "Norwich City",
-        "home": "Leeds United"
-      },
-      "headline": "Leeds cruise into FA Cup quarter-finals with comfortable Norwich win",
-      "score": "Leeds United 3 - 0 Norwich City",
-      "brief": "Leeds United booked their place in the FA Cup quarter-finals with a clinical 3-0 victory over Norwich City at Elland Road. Goals from Sean Longstaff and Gabriel Gudmundsson in the first half put Leeds firmly in control, and Joël Piroe sealed the win late on as Daniel Farke's side eased into the last eight with a professional performance.",
-      "bullets": [
-        "Sean Longstaff opened the scoring with a volley in the 32nd minute.",
-        "Gabriel Gudmundsson scored his first goal for Leeds United in the 43rd minute.",
-        "Joël Piroe added a third in the 85th minute to wrap up the result.",
-        "Leeds had a goal disallowed by VAR for a marginal handball in the build-up.",
-        "Leeds reach the FA Cup quarter-finals for the first time in over 20 years (since 2003)."
-      ],
-      "context": "Leeds United advance to the FA Cup quarter-finals as strong contenders for the trophy.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.leedsunited.com/en/news/emirates-fa-cup-report-leeds-united-3-0-norwich-city"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "dGnJidG0veA",
-          "title": "PERFECT Leeds at home! 👏 | Leeds United (3-0) Norwich City | Emirates FA Cup 2025-26",
-          "url": "https://www.youtube.com/watch?v=dGnJidG0veA",
-          "embedUrl": "https://www.youtube.com/embed/dGnJidG0veA",
-          "publishedAt": "2026-03-09T12:01:06Z",
-          "matchScore": 100
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }
