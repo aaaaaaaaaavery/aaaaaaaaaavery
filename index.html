@@ -16,13 +16,6 @@
       --header-h: 0px;
     }
 
-    .brief-collapsed {
-      display: -webkit-box;
-      line-clamp: 3;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-      overflow: hidden;
-    }
   </style>
 </head>
 <body class="min-h-screen overflow-x-hidden bg-gray-100 font-sans text-gray-800 antialiased">
@@ -162,8 +155,10 @@
       { leagueName: "Liga MX", leagueKey: "ligamx", fileUrl: "recaps-manual/daily/ligamx.json" },
       { leagueName: "FA Cup", leagueKey: "facup", fileUrl: "recaps-manual/daily/facup.json" },
       { leagueName: "NWSL", leagueKey: "nwsl", fileUrl: "recaps-manual/daily/nwsl.json" },
+    { leagueName: "CONCACAF Champions Cup", leagueKey: "concacafchampionscup", fileUrl: "recaps-manual/daily/concacafchampionscup.json" },
       { leagueName: "UEFA Europa League", leagueKey: "uefaeuropaleague", fileUrl: "recaps-manual/daily/uefaeuropaleague.json" },
       { leagueName: "UEFA Conference League", leagueKey: "uefaconferenceleague", fileUrl: "recaps-manual/daily/uefaconferenceleague.json" },
+    { leagueName: "Super Lig", leagueKey: "superlig", fileUrl: "recaps-manual/daily/superlig.json" },
       { leagueName: "Carabao Cup", leagueKey: "carabaocup", fileUrl: "recaps-manual/daily/carabaocup.json" },
       { leagueName: "Coupe de France", leagueKey: "coupedefrance", fileUrl: "recaps-manual/daily/coupedefrance.json" },
       { leagueName: "SheBelieves Cup", leagueKey: "shebelievescup", fileUrl: "recaps-manual/daily/oneperleague.json", sourceLeagueKey: "SHEBELIEVES_CUP" },
@@ -189,7 +184,7 @@
 
     const SOCCER_LEAGUE_DISPLAY_ORDER = [
       "Premier League", "UEFA Champions League", "MLS", "LaLiga", "Serie A", "Bundesliga", "Ligue 1", "Liga MX",
-            "FA Cup", "NWSL", "UEFA Europa League", "UEFA Conference League", "Carabao Cup", "Coupe de France", "SheBelieves Cup", "Scottish Cup"
+        "FA Cup", "NWSL", "CONCACAF Champions Cup", "UEFA Europa League", "UEFA Conference League", "Super Lig", "Carabao Cup", "Coupe de France", "SheBelieves Cup", "Scottish Cup"
     ];
 
     const GOLF_LEAGUE_DISPLAY_ORDER = [
@@ -206,7 +201,7 @@
     const TENNIS_ORDER_INDEX = Object.fromEntries(TENNIS_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_LEAGUE_KEYS = new Set([
       "premierleague", "uefachampionsleague", "mls", "laliga", "seriea", "bundesliga", "ligue1", "ligamx",
-            "facup", "nwsl", "uefaeuropaleague", "uefaconferenceleague", "carabaocup", "coupedefrance", "shebelievescup", "scottishcup"
+        "facup", "nwsl", "concacafchampionscup", "uefaeuropaleague", "uefaconferenceleague", "superlig", "carabaocup", "coupedefrance", "shebelievescup", "scottishcup"
     ]);
     const GOLF_LEAGUE_KEYS = new Set(["pgatour", "dpworldtour", "lpgatour", "livgolf"]);
     const TENNIS_LEAGUE_KEYS = new Set(["atp", "wta"]);
@@ -307,7 +302,9 @@
             ligue1: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Logo_Ligue_1_McDonald%27s_2024.svg/250px-Logo_Ligue_1_McDonald%27s_2024.svg.png",
             ligamx: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Liga_MX_logo.svg/500px-Liga_MX_logo.svg.png",
             facup: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/FA_Cup_logo_%282020%29.svg/330px-FA_Cup_logo_%282020%29.svg.png",
+            concacafchampionscup: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/CONCACAF_Champions_Cup_logo.svg/960px-CONCACAF_Champions_Cup_logo.svg.png",
             bundesliga: "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/500px-Bundesliga_logo_%282017%29.svg.png",
+            superlig: "https://upload.wikimedia.org/wikipedia/en/2/2a/S%C3%BCperLig-Logo_%282024%29.png",
             dpworldtour: "https://upload.wikimedia.org/wikipedia/commons/7/75/Logotype_de_DP_World.png",
             lpgatour: "https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Ladies_Professional_Golf_Association.svg/330px-Ladies_Professional_Golf_Association.svg.png",
             livgolf: "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/LIV_golf_logo.svg/960px-LIV_golf_logo.svg.png",
@@ -33008,33 +33005,84 @@ Wisconsin
 
             const parsed = parseStructuredScoreLine(raw);
             if (!parsed) return raw;
+            const canonicalScores = resolveCanonicalAwayHomeScores(game, parsed, lk);
 
       if (COLLEGE_SCORE_LEAGUES.has(lk)) {
                 const awaySchool = extractCollegeSchoolDisplayName(game?.teams?.away, parsed.awayTeam);
                 const homeSchool = extractCollegeSchoolDisplayName(game?.teams?.home, parsed.homeTeam);
         if (!awaySchool || !homeSchool) return raw;
-                return `${awaySchool} ${parsed.awayScore} — ${homeSchool} ${parsed.homeScore}`;
+                return `${awaySchool} ${canonicalScores.awayScore} — ${homeSchool} ${canonicalScores.homeScore}`;
       }
 
       if (MASCOT_SCORE_LEAGUES.has(lk)) {
                 const awayMascot = extractMascotName(game?.teams?.away) || extractMascotName(parsed.awayTeam);
                 const homeMascot = extractMascotName(game?.teams?.home) || extractMascotName(parsed.homeTeam);
         if (!awayMascot || !homeMascot) return raw;
-            return `${awayMascot} ${parsed.awayScore} — ${homeMascot} ${parsed.homeScore}`;
+            return `${awayMascot} ${canonicalScores.awayScore} — ${homeMascot} ${canonicalScores.homeScore}`;
       }
 
       const awayFull = extractFullTeamName(game?.teams?.away, lk);
       const homeFull = extractFullTeamName(game?.teams?.home, lk);
       if (!awayFull || !homeFull) return raw;
-            if (SOCCER_LEAGUE_KEYS.has(lk)) {
-                return `${awayFull} ${parsed.homeScore} — ${homeFull} ${parsed.awayScore}`;
-            }
-            return `${awayFull} ${parsed.awayScore} — ${homeFull} ${parsed.homeScore}`;
+            return `${awayFull} ${canonicalScores.awayScore} — ${homeFull} ${canonicalScores.homeScore}`;
     }
 
     function parseScoreLine(scoreLine) {
             return parseStructuredScoreLine(scoreLine);
     }
+
+        function resolveCanonicalAwayHomeScores(game, parsedScore, leagueKey) {
+            const parsed = parsedScore || null;
+            if (!parsed) {
+                return { awayScore: "", homeScore: "" };
+            }
+
+            const lk = String(leagueKey || "").toLowerCase();
+            const firstTeam = String(parsed.awayTeam || "").trim();
+            const secondTeam = String(parsed.homeTeam || "").trim();
+            const firstScore = String(parsed.awayScore || "").trim();
+            const secondScore = String(parsed.homeScore || "").trim();
+
+            const toKey = (value) => normalizeTeamLookupName(value);
+            const firstKey = toKey(firstTeam);
+            const secondKey = toKey(secondTeam);
+
+            const collectTeamAliases = (team, parsedName) => {
+                const aliases = new Set();
+                const add = (value) => {
+                    const key = toKey(value);
+                    if (key) aliases.add(key);
+                };
+
+                add(getTeamNameValue(team));
+                add(extractFullTeamName(team, lk));
+                add(extractMascotName(team));
+                add(extractCollegeSchoolDisplayName(team, parsedName));
+                return aliases;
+            };
+
+            const awayAliases = collectTeamAliases(game?.teams?.away, firstTeam);
+            const homeAliases = collectTeamAliases(game?.teams?.home, secondTeam);
+
+            const firstLooksAway = firstKey && awayAliases.has(firstKey);
+            const firstLooksHome = firstKey && homeAliases.has(firstKey);
+            const secondLooksAway = secondKey && awayAliases.has(secondKey);
+            const secondLooksHome = secondKey && homeAliases.has(secondKey);
+
+            if (firstLooksAway && secondLooksHome) {
+                return { awayScore: firstScore, homeScore: secondScore };
+            }
+
+            if (firstLooksHome && secondLooksAway) {
+                return { awayScore: secondScore, homeScore: firstScore };
+            }
+
+            if (SOCCER_LEAGUE_KEYS.has(lk)) {
+                return { awayScore: secondScore, homeScore: firstScore };
+            }
+
+            return { awayScore: firstScore, homeScore: secondScore };
+        }
 
     function scoreGame(game, leagueKey, briefingText) {
       const headline = normalizeText(game?.headline);
@@ -33489,93 +33537,82 @@ Wisconsin
                                         let homeLogoUrl = getTeamLogoUrl(scoreLeagueKey, homeLogoLookup);
                                         let awayFallbackTeam = parsedScore.awayTeam;
                                         let homeFallbackTeam = parsedScore.homeTeam;
-                                        let awayScoreValue = parsedScore.awayScore;
-                                        let homeScoreValue = parsedScore.homeScore;
+                                        const canonicalScores = resolveCanonicalAwayHomeScores(g, parsedScore, scoreLeagueKey);
+                                        let awayScoreValue = canonicalScores.awayScore;
+                                        let homeScoreValue = canonicalScores.homeScore;
 
-                                        if (isSoccerScoreLeague) {
-                                                [awayName, homeName] = [homeName, awayName];
-                                                [awayDisplayName, homeDisplayName] = [homeDisplayName, awayDisplayName];
-                                                [awayStandingLookup, homeStandingLookup] = [homeStandingLookup, awayStandingLookup];
-                                                [awayStanding, homeStanding] = [homeStanding, awayStanding];
-                                                [awayLogoUrl, homeLogoUrl] = [homeLogoUrl, awayLogoUrl];
-                                                [awayFallbackTeam, homeFallbackTeam] = [homeFallbackTeam, awayFallbackTeam];
-                                                [awayScoreValue, homeScoreValue] = [homeScoreValue, awayScoreValue];
-                                        }
+                    const awayRowData = {
+                        name: awayName,
+                        displayName: awayDisplayName,
+                        standing: awayStanding,
+                        logoUrl: awayLogoUrl,
+                        fallbackTeam: awayFallbackTeam,
+                        scoreValue: awayScoreValue,
+                    };
+                    const homeRowData = {
+                        name: homeName,
+                        displayName: homeDisplayName,
+                        standing: homeStanding,
+                        logoUrl: homeLogoUrl,
+                        fallbackTeam: homeFallbackTeam,
+                        scoreValue: homeScoreValue,
+                    };
 
-          const awayRow = document.createElement("div");
-          awayRow.className = "flex items-center justify-between gap-2";
-                    const awayTeamWrap = document.createElement("div");
-                    awayTeamWrap.className = "min-w-0";
-                    const awayTeamLine = document.createElement("div");
-                    awayTeamLine.className = "flex min-w-0 items-center gap-1.5";
-                    if (awayLogoUrl) {
-                        const awayLogo = document.createElement("img");
-                        awayLogo.src = awayLogoUrl;
-                        awayLogo.alt = `${awayName || awayFallbackTeam} logo`;
-                        awayLogo.className = "h-4 w-4 shrink-0 object-contain";
-                        awayLogo.onerror = () => {
-                            awayLogo.remove();
-                        };
-                        awayTeamLine.appendChild(awayLogo);
-                    }
-                    const awayTeam = document.createElement("div");
-                    awayTeam.className = "truncate text-sm font-medium text-gray-700";
-                    awayTeam.textContent = awayDisplayName || awayFallbackTeam;
-                    awayTeamLine.appendChild(awayTeam);
-                    awayTeamWrap.appendChild(awayTeamLine);
-                    const awayMetaText = isWbcScore ? "" : formatStandingMeta(awayStanding);
-                    if (awayMetaText) {
-                        const awayMeta = document.createElement("div");
-                        awayMeta.className = "truncate text-[11px] font-normal text-gray-500";
-                        awayMeta.textContent = awayMetaText;
-                        awayTeamWrap.appendChild(awayMeta);
-                    }
-          const awayScore = document.createElement("span");
-          awayScore.className = "shrink-0 text-sm font-semibold tabular-nums text-gray-900";
-          awayScore.textContent = awayScoreValue;
-                    awayRow.appendChild(awayTeamWrap);
-          awayRow.appendChild(awayScore);
+                    const topRowData = isSoccerScoreLeague ? homeRowData : awayRowData;
+                    const bottomRowData = isSoccerScoreLeague ? awayRowData : homeRowData;
 
-          const divider = document.createElement("div");
-          divider.className = "my-0.5 border-t border-gray-200";
+                    const buildScoreRow = (rowData) => {
+                        const row = document.createElement("div");
+                        row.className = "flex items-center justify-between gap-2";
 
-          const homeRow = document.createElement("div");
-          homeRow.className = "flex items-center justify-between gap-2";
-                    const homeTeamWrap = document.createElement("div");
-                    homeTeamWrap.className = "min-w-0";
-                    const homeTeamLine = document.createElement("div");
-                    homeTeamLine.className = "flex min-w-0 items-center gap-1.5";
-                    if (homeLogoUrl) {
-                        const homeLogo = document.createElement("img");
-                        homeLogo.src = homeLogoUrl;
-                        homeLogo.alt = `${homeName || homeFallbackTeam} logo`;
-                        homeLogo.className = "h-4 w-4 shrink-0 object-contain";
-                        homeLogo.onerror = () => {
-                            homeLogo.remove();
-                        };
-                        homeTeamLine.appendChild(homeLogo);
-                    }
-                    const homeTeam = document.createElement("div");
-                    homeTeam.className = "truncate text-sm font-medium text-gray-700";
-                    homeTeam.textContent = homeDisplayName || homeFallbackTeam;
-                    homeTeamLine.appendChild(homeTeam);
-                    homeTeamWrap.appendChild(homeTeamLine);
-                    const homeMetaText = isWbcScore ? "" : formatStandingMeta(homeStanding);
-                    if (homeMetaText) {
-                        const homeMeta = document.createElement("div");
-                        homeMeta.className = "truncate text-[11px] font-normal text-gray-500";
-                        homeMeta.textContent = homeMetaText;
-                        homeTeamWrap.appendChild(homeMeta);
-                    }
-          const homeScore = document.createElement("span");
-          homeScore.className = "shrink-0 text-sm font-semibold tabular-nums text-gray-900";
-          homeScore.textContent = homeScoreValue;
-                    homeRow.appendChild(homeTeamWrap);
-          homeRow.appendChild(homeScore);
+                        const teamWrap = document.createElement("div");
+                        teamWrap.className = "min-w-0";
 
-          scoreCard.appendChild(awayRow);
-          scoreCard.appendChild(divider);
-          scoreCard.appendChild(homeRow);
+                        const teamLine = document.createElement("div");
+                        teamLine.className = "flex min-w-0 items-center gap-1.5";
+
+                        if (rowData.logoUrl) {
+                            const logo = document.createElement("img");
+                            logo.src = rowData.logoUrl;
+                            logo.alt = `${rowData.name || rowData.fallbackTeam} logo`;
+                            logo.className = "h-4 w-4 shrink-0 object-contain";
+                            logo.onerror = () => {
+                                logo.remove();
+                            };
+                            teamLine.appendChild(logo);
+                        }
+
+                        const team = document.createElement("div");
+                        team.className = "truncate text-sm font-medium text-gray-700";
+                        team.textContent = rowData.displayName || rowData.fallbackTeam;
+                        teamLine.appendChild(team);
+                        teamWrap.appendChild(teamLine);
+
+                        const metaText = isWbcScore ? "" : formatStandingMeta(rowData.standing);
+                        if (metaText) {
+                            const meta = document.createElement("div");
+                            meta.className = "truncate text-[11px] font-normal text-gray-500";
+                            meta.textContent = metaText;
+                            teamWrap.appendChild(meta);
+                        }
+
+                        const score = document.createElement("span");
+                        score.className = "shrink-0 text-sm font-semibold tabular-nums text-gray-900";
+                        score.textContent = rowData.scoreValue;
+
+                        row.appendChild(teamWrap);
+                        row.appendChild(score);
+                        return row;
+                    };
+
+                    const topRow = buildScoreRow(topRowData);
+                    const divider = document.createElement("div");
+                    divider.className = "my-0.5 border-t border-gray-200";
+                    const bottomRow = buildScoreRow(bottomRowData);
+
+                    scoreCard.appendChild(topRow);
+                    scoreCard.appendChild(divider);
+                    scoreCard.appendChild(bottomRow);
         } else {
           const fallback = document.createElement("div");
           fallback.className = "text-sm font-semibold text-gray-800";
@@ -33628,8 +33665,12 @@ Wisconsin
       section.dataset.leagueKey = lg.leagueKey;
 
             const headerCard = document.createElement("div");
-            headerCard.className = "sticky top-2 z-10 rounded-md border border-gray-200 bg-white shadow-sm sm:top-4";
-            headerCard.dataset.leagueStickyHeader = "1";
+            if (lg.leagueKey === "all") {
+                headerCard.className = "rounded-md border border-gray-200 bg-white shadow-sm";
+            } else {
+                headerCard.className = "sticky top-2 z-10 rounded-md border border-gray-200 bg-white shadow-sm sm:top-4";
+                headerCard.dataset.leagueStickyHeader = "1";
+            }
       const headerInner = document.createElement("div");
       headerInner.className = "flex flex-wrap items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 sm:gap-3 sm:px-4 sm:py-3";
       const left = document.createElement("div");
@@ -33657,16 +33698,14 @@ Wisconsin
       // left.appendChild(src);
       headerInner.appendChild(left);
 
-      const meta = document.createElement("span");
-      meta.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-1 text-[11px] text-gray-600 sm:px-3 sm:py-2 sm:text-xs";
-      const mobileMeta = lg.leagueKey === "all"
-        ? "News briefing"
-        : `${gameCount} recaps`;
-      const desktopMeta = lg.leagueKey === "all"
-        ? "News briefing"
-        : `${lg.leagueName} • ${gameCount} recaps • ${lg.fileUrl}`;
-      meta.textContent = window.matchMedia("(max-width: 767px)").matches ? mobileMeta : desktopMeta;
-      headerInner.appendChild(meta);
+            // if (lg.leagueKey !== "all") {
+            //     const meta = document.createElement("span");
+            //     meta.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-1 text-[11px] text-gray-600 sm:px-3 sm:py-2 sm:text-xs";
+            //     const mobileMeta = `${gameCount} recaps`;
+            //     const desktopMeta = `${lg.leagueName} • ${gameCount} recaps • ${lg.fileUrl}`;
+            //     meta.textContent = window.matchMedia("(max-width: 767px)").matches ? mobileMeta : desktopMeta;
+            //     headerInner.appendChild(meta);
+            // }
       headerCard.appendChild(headerInner);
 
       const briefing = document.createElement("div");
@@ -33675,39 +33714,9 @@ Wisconsin
       const leagueBriefText = composeLeagueBriefText(data);
       if (leagueBriefText) {
         const p = document.createElement("div");
-        p.className = "brief-collapsed whitespace-pre-line text-sm leading-relaxed text-gray-700";
+                p.className = "whitespace-pre-line text-sm leading-relaxed text-gray-700";
         p.textContent = leagueBriefText;
-
-        const toggle = document.createElement("button");
-        toggle.type = "button";
-        toggle.className = "mt-2 inline-flex items-center gap-1 text-xs font-medium text-gray-600 transition-colors hover:text-gray-900";
-        toggle.setAttribute("aria-expanded", "false");
-
-        const arrow = document.createElement("span");
-        arrow.textContent = "▾";
-
-        const label = document.createElement("span");
-        label.textContent = "Expand";
-
-        toggle.appendChild(arrow);
-        toggle.appendChild(label);
-        toggle.addEventListener("click", () => {
-          const expanded = toggle.getAttribute("aria-expanded") === "true";
-          if (expanded) {
-            p.classList.add("brief-collapsed");
-            toggle.setAttribute("aria-expanded", "false");
-            arrow.textContent = "▾";
-            label.textContent = "Expand";
-          } else {
-            p.classList.remove("brief-collapsed");
-            toggle.setAttribute("aria-expanded", "true");
-            arrow.textContent = "▴";
-            label.textContent = "Collapse";
-          }
-        });
-
         briefing.appendChild(p);
-        briefing.appendChild(toggle);
       } else {
         briefing.classList.add("hidden");
       }
@@ -34211,6 +34220,9 @@ Wisconsin
     }
 
         function updateTop10BriefingFromScroll() {
+            // Top 10 header/briefing now scrolls naturally with cards, so no auto-hide.
+            return;
+
             const section = state.sectionByLeagueKey.get("all");
             if (!section) return;
 

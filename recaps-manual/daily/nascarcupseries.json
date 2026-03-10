@@ -1,39 +1,7 @@
 {
-  "leagueName": "NASCAR Cup Series",
-  "leagueKey": "nascarcupseries",
-  "sourceType": "console_recaps",
-  "leagueBriefing": "Ryan Blaney overcame early pit road penalties to secure a dramatic win at Phoenix, completing a perfect weekend for Team Penske following their IndyCar victory on Saturday.",
-  "games": [
-    {
-      "id": "2026-straight-talk-wireless-500",
-      "teams": {
-        "away": "Ryan Blaney",
-        "home": "Christopher Bell"
-      },
-      "headline": "Blaney rallies from early penalties to complete Penske's Phoenix sweep",
-      "score": null,
-      "brief": "Ryan Blaney showcased pure perseverance at Phoenix Raceway, storming back from two separate trips to the rear of the field to claim his first win of 2026. A strategic two-tire call on the final pit stop allowed Blaney to jump ahead of a dominant Christopher Bell, who led a race-high 176 laps but couldn't close the gap on fresh rubber. The victory capped off a historic weekend for Team Penske, following Josef Newgarden's IndyCar win at the same track just 24 hours prior.",
-      "bullets": [
-        "Ryan Blaney overcame a 'pitting outside the box' penalty to secure his 18th career victory and second at Phoenix Raceway.",
-        "Christopher Bell dominated the afternoon with 176 laps led and a Stage 2 win, but fell just 0.399 seconds short at the finish line.",
-        "The race featured 12 cautions, tying the all-time track record for yellow flags at the Arizona one-mile oval.",
-        "Tyler Reddick's historic three-race winning streak to start the season ended with an eighth-place finish, though he maintains the points lead.",
-        "Ty Gibbs earned his second consecutive fourth-place finish, leading late before being overtaken by Blaney with 10 laps to go."
-      ],
-      "context": "The win vaults Blaney to second in the championship standings as the series heads to Las Vegas.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.nascar.com/news-media/2026/03/08/cup-series-2026-phoenix-raceway-christopher-bell-gibbs-hamlin/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "6AEmtZR4rsQ",
-          "title": "NASCAR Cup Series Highlights",
-          "url": "https://www.youtube.com/watch?v=6AEmtZR4rsQ",
-          "embedUrl": "https://www.youtube.com/embed/6AEmtZR4rsQ"
-        }
-      ]
-    }
-  ]
+	"leagueName": "NASCAR Cup Series",
+	"leagueKey": "nascarcupseries",
+	"sourceType": "console_recaps",
+	"leagueBriefing": "",
+	"games": []
 }

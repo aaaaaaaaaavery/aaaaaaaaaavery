@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "icZ8sUgHv9g",
+          "title": "LAZIO-SASSUOLO | HIGHLIGHTS | Stoppage Time Thrill! | Serie A 2025/26",
+          "url": "https://www.youtube.com/watch?v=icZ8sUgHv9g",
+          "embedUrl": "https://www.youtube.com/embed/icZ8sUgHv9g",
+          "publishedAt": "2026-03-09T23:15:14Z",
+          "matchScore": 100
         }
       ]
     }

@@ -25,7 +25,15 @@
       "source": {
         "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851759/oregon-st-gonzaga"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "Y7M3xZpXn7M",
+          "title": "Oregon State Beavers vs. Gonzaga Bulldogs | WCC MBB Tournament Highlights | ESPN College Basketball",
+          "url": "https://www.youtube.com/watch?v=Y7M3xZpXn7M",
+          "embedUrl": "https://www.youtube.com/embed/Y7M3xZpXn7M"
+        }
+      ]
     },
     {
       "id": "401851760",

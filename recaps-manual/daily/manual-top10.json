@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-09",
+  "date": "2026-03-10",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "seriea",
-      "gameId": "625477",
-      "headline": "Estupinan strike decides Derby della Madonnina as Milan stun Inter",
-      "scoreLine": "Milan 1 - 0 Internazionale"
+      "leagueKey": "wbc",
+      "gameId": "20260309-MEX-USA",
+      "headline": "Skenes dominates as United States holds off Mexico to stay undefeated",
+      "scoreLine": "Mexico 3 - United States 5"
     },
     {
       "rank": 2,
       "leagueKey": "nba",
-      "gameId": "401810776",
-      "headline": "Celtics sweep season series with Cavs as Tatum finds his rhythm",
-      "scoreLine": "Celtics 109 — Cavaliers 98"
+      "gameId": "401810788",
+      "headline": "Gilgeous-Alexander ties Wilt Chamberlain record and sinks Nuggets with late dagger",
+      "scoreLine": "Nuggets 126 - Thunder 129"
     },
     {
       "rank": 3,
-      "leagueKey": "ncaaw",
-      "gameId": "401815152",
-      "headline": "Texas ends South Carolina’s reign to claim SEC crown",
-      "scoreLine": "TEX 78 - SC 61"
+      "leagueKey": "atp",
+      "gameId": "20260309-alcaraz-rinderknech",
+      "headline": "Alcaraz overcomes tiebreak blip to overpower Rinderknech",
+      "scoreLine": "Arthur Rinderknech 1 - Carlos Alcaraz 2"
     },
     {
       "rank": 4,
-      "leagueKey": "ncaam",
-      "gameId": "401825568",
-      "headline": "Lendeborg leads No. 3 Michigan to rivalry sweep and 15th straight win",
-      "scoreLine": "Michigan State 80 — Michigan 90"
+      "leagueKey": "facup",
+      "gameId": "697495",
+      "headline": "Mavropanos converts winning penalty as West Ham edge Brentford in shootout thriller",
+      "scoreLine": "West Ham United 2 - 2 Brentford"
     },
     {
       "rank": 5,
-      "leagueKey": "nba",
-      "gameId": "401810782",
-      "headline": "Wembanyama and Spurs dismantle Rockets in offensive masterclass",
-      "scoreLine": "Rockets 120 — Spurs 145"
+      "leagueKey": "atp",
+      "gameId": "20260309-djokovic-kovacevic",
+      "headline": "Djokovic shakes off rust to survive Kovacevic scare in Indian Wells opener",
+      "scoreLine": "Aleksandar Kovacevic 1 - Novak Djokovic 2"
     },
     {
       "rank": 6,
-      "leagueKey": "nascarcupseries",
-      "gameId": "2026-straight-talk-wireless-500",
-      "headline": "Blaney rallies from early penalties to complete Penske's Phoenix sweep",
-      "scoreLine": ""
+      "leagueKey": "nba",
+      "gameId": "401810786",
+      "headline": "Harden hits 29,000 career points as Cavaliers cruise past depleted 76ers",
+      "scoreLine": "76ers 101 - Cavaliers 115"
     },
     {
       "rank": 7,
       "leagueKey": "nhl",
-      "gameId": "401803352",
-      "headline": "MacKinnon nets league-leading 43rd goal and shootout winner to edge Wild",
-      "scoreLine": "Wild 2 — Avalanche 3"
+      "gameId": "401857755",
+      "headline": "Kempe’s overtime heroics lift Kings closer to wild-card spot",
+      "scoreLine": "Kings 5 - Blue Jackets 4"
     },
     {
       "rank": 8,
-      "leagueKey": "pgatour",
-      "gameId": "akshay-bhatia-has-a-charge-that-would-make-arnie-proud-as-he-rallies-from-5-down-to-win-bay-hill",
-      "headline": "Bhatia channels Arnold Palmer with stunning back-nine charge to win at Bay Hill",
-      "scoreLine": ""
+      "leagueKey": "wta",
+      "gameId": "20260309-pegula-ostapenko",
+      "headline": "Pegula digs deep to outlast Ostapenko in three-set rollercoaster",
+      "scoreLine": "Jelena Ostapenko 1 - Jessica Pegula 2"
     },
     {
       "rank": 9,
-      "leagueKey": "scottishcup",
-      "gameId": "20260308-rangers-celtic",
-      "headline": "Celtic edge out Rangers on penalties after Ibrox stalemate",
-      "scoreLine": "Rangers 0 - 0 Celtic (4-5 on penalties)"
+      "leagueKey": "wbc",
+      "gameId": "20260309-KOR-AUS",
+      "headline": "Korea keeps tournament hopes alive with convincing win over Australia",
+      "scoreLine": "Korea 7 - Australia 2"
     },
     {
       "rank": 10,
       "leagueKey": "nba",
-      "gameId": "401810783",
-      "headline": "Booker's perfect night at the line snaps Hornets' road streak",
-      "scoreLine": "Hornets 99 — Suns 111"
+      "gameId": "401810790",
+      "headline": "Clippers hit .500 mark as Leonard and Mathurin outduel Towns in Inglewood",
+      "scoreLine": "Knicks 118 - Clippers 126"
     }
   ],
   "top10": [
-    "Estupinan strike decides Derby della Madonnina as Milan stun Inter",
-    "Celtics sweep season series with Cavs as Tatum finds his rhythm",
-    "Texas ends South Carolina’s reign to claim SEC crown",
-    "Lendeborg leads No. 3 Michigan to rivalry sweep and 15th straight win",
-    "Wembanyama and Spurs dismantle Rockets in offensive masterclass",
-    "Blaney rallies from early penalties to complete Penske's Phoenix sweep",
-    "MacKinnon nets league-leading 43rd goal and shootout winner to edge Wild",
-    "Bhatia channels Arnold Palmer with stunning back-nine charge to win at Bay Hill",
-    "Celtic edge out Rangers on penalties after Ibrox stalemate",
-    "Booker's perfect night at the line snaps Hornets' road streak"
+    "Skenes dominates as United States holds off Mexico to stay undefeated",
+    "Gilgeous-Alexander ties Wilt Chamberlain record and sinks Nuggets with late dagger",
+    "Alcaraz overcomes tiebreak blip to overpower Rinderknech",
+    "Mavropanos converts winning penalty as West Ham edge Brentford in shootout thriller",
+    "Djokovic shakes off rust to survive Kovacevic scare in Indian Wells opener",
+    "Harden hits 29,000 career points as Cavaliers cruise past depleted 76ers",
+    "Kempe’s overtime heroics lift Kings closer to wild-card spot",
+    "Pegula digs deep to outlast Ostapenko in three-set rollercoaster",
+    "Korea keeps tournament hopes alive with convincing win over Australia",
+    "Clippers hit .500 mark as Leonard and Mathurin outduel Towns in Inglewood"
   ],
-  "newsBriefing": "NFL free agency chaos dominated Monday: Miami moved on from Tua Tagovailoa with a post-June 1 release that brings a record dead-cap hit, then dealt safety Minkah Fitzpatrick to the Jets, while the Packers sent pass rusher Rashan Gary to Dallas as teams kept reshaping rosters. Houston kept guard Ed Ingram on a three-year deal, Pittsburgh re-signed Asante Samuel Jr. for one year, and league-wide business tension rose as owners were briefed on increasingly strained labor talks with the referees union ahead of the current CBA deadline. Outside the NFL, Brazilian football erupted when Cruzeiro's state final win over Atletico-MG ended in a mass brawl and 23 red cards, and MMA got a marquee update with Francis Ngannou set to return May 16 against Philipe Lins on Most Valuable Promotions' inaugural MMA card streaming on Netflix.",
-  "updatedAt": "2026-03-09T14:55:44.064Z"
+  "newsBriefing": "It was a whirlwind Monday across the sports world, headlined by a massive reshuffling of the NFL’s quarterback landscape as the Falcons agreed to a one-year deal with Tua Tagovailoa following his release from the Dolphins, who quickly pivoted to sign Malik Willis to a three-year, $67.5 million contract. The free agency frenzy continued with the Raiders making Tyler Linderbaum the highest-paid interior lineman in history on an $81 million deal, while the Panthers bolstered their defense by landing second-team All-Pro linebacker Devin Lloyd for $45 million and the Steelers added physical runner Rico Dowdle. On the hardwood, Shai Gilgeous-Alexander delivered a legendary performance by scoring 35 points to match Wilt Chamberlain’s record of 126 consecutive 20-point games, punctuated by a game-winning buzzer-beater to sink the Nuggets. Emotional storylines emerged elsewhere as former U.S. Open champion Gary Woodland bravely went public with his PTSD diagnosis following brain surgery, and UFC legend Jon Jones requested his release from the promotion amid a heated public dispute with Dana White over a missed opportunity to fight at the White House. Meanwhile, the road to March Madness gained clarity as Troy and Furman officially punched their tickets to the NCAA Tournament by securing conference titles on an action-packed night of mid-major hoops.",
+  "updatedAt": "2026-03-10T11:44:31.832Z"
 }

@@ -1,39 +1,7 @@
 {
-  "leagueName": "PGA Tour",
-  "leagueKey": "pgatour",
-  "sourceType": "console_recaps",
-  "leagueBriefing": "Akshay Bhatia channeled the spirit of Arnold Palmer at Bay Hill, erasing a five-shot deficit on the back nine to secure a dramatic playoff victory over Daniel Berger.",
-  "games": [
-    {
-      "id": "akshay-bhatia-has-a-charge-that-would-make-arnie-proud-as-he-rallies-from-5-down-to-win-bay-hill",
-      "teams": {
-        "away": "Akshay Bhatia",
-        "home": "Daniel Berger"
-      },
-      "headline": "Bhatia channels Arnold Palmer with stunning back-nine charge to win at Bay Hill",
-      "score": null,
-      "brief": "In a finish that would have made 'The King' proud, Akshay Bhatia staged a massive comeback at the Arnold Palmer Invitational. After falling five shots back following a missed short putt, Bhatia ignited his round with four straight birdies and a near-albatross on the 16th to force a playoff with Daniel Berger. Bhatia eventually outlasted Berger in the first playoff at Bay Hill in over 25 years, securing his third PGA Tour title and the iconic red cardigan in dramatic fashion.",
-      "bullets": [
-        "Akshay Bhatia rallied from five shots down on the back nine, highlighted by four consecutive birdies and a clutch eagle on the par-5 16th.",
-        "The victory marks Bhatia's third career PGA Tour title, with all three wins remarkably coming via playoffs.",
-        "Daniel Berger narrowly missed becoming the first wire-to-wire winner at Bay Hill in a decade after a weak par putt on the first playoff hole.",
-        "The $4 million winner's share from the $20 million Signature Event propels the 24-year-old Bhatia into the top 20 of the Official World Golf Ranking.",
-        "World No. 1 Scottie Scheffler struggled to a T24 finish, marking his first tournament without a round under 70 since last year's U.S. Open."
-      ],
-      "context": "The win guarantees Bhatia a spot in the Masters and cements his status as a top contender heading into the major season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/08/akshay-bhatia-has-a-charge-that-would-make-arnie-proud-as-he-rallies-from-5-down-to-win-bay-hill"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "zyA4ArxWyCw",
-          "title": "PGA Tour highlights",
-          "url": "https://www.youtube.com/watch?v=zyA4ArxWyCw&pp=ygUTcGdhIHRvdXIgaGlnaGxpZ2h0cw%3D%3D",
-          "embedUrl": "https://www.youtube.com/embed/zyA4ArxWyCw"
-        }
-      ]
-    }
-  ]
+	"leagueName": "PGA Tour",
+	"leagueKey": "pgatour",
+	"sourceType": "console_recaps",
+	"leagueBriefing": "",
+	"games": []
 }

@@ -27,10 +27,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "-T_H3B2RkWw",
           "title": "",
-          "url": "",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=-T_H3B2RkWw&list=PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L&index=2&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/-T_H3B2RkWw"
         }
       ]
     },
@@ -57,10 +57,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "Ww-9Z2wNbIo",
+          "title": "Dominican Republic vs. Israel 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=Ww-9Z2wNbIo",
+          "embedUrl": "https://www.youtube.com/embed/Ww-9Z2wNbIo",
+          "publishedAt": "2026-03-09T21:33:28Z",
+          "matchScore": 121
         }
       ]
     },
@@ -87,10 +89,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "jo2Q0JGcZ24",
+          "title": "Korea vs. Australia 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=jo2Q0JGcZ24",
+          "embedUrl": "https://www.youtube.com/embed/jo2Q0JGcZ24",
+          "publishedAt": "2026-03-09T16:24:53Z",
+          "matchScore": 121
         }
       ]
     },
@@ -117,10 +121,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "5NA6FYMWYo0",
+          "title": "Colombia vs. Panama 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=5NA6FYMWYo0",
+          "embedUrl": "https://www.youtube.com/embed/5NA6FYMWYo0",
+          "publishedAt": "2026-03-09T20:50:41Z",
+          "matchScore": 121
         }
       ]
     },
@@ -147,10 +153,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "fTo28kr_M3Q",
+          "title": "Brazil vs. Great Britain 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=fTo28kr_M3Q",
+          "embedUrl": "https://www.youtube.com/embed/fTo28kr_M3Q",
+          "publishedAt": "2026-03-09T21:09:19Z",
+          "matchScore": 121
         }
       ]
     },
@@ -177,10 +185,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "obInwgccDt4",
           "title": "",
-          "url": "",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=obInwgccDt4&list=PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L&index=3&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/obInwgccDt4"
         }
       ]
     },
@@ -207,10 +215,10 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
+          "videoId": "obInwgccDt4",
           "title": "",
-          "url": "",
-          "embedUrl": ""
+          "url": "https://www.youtube.com/watch?v=obInwgccDt4&list=PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L&index=3&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/obInwgccDt4"
         }
       ]
     }

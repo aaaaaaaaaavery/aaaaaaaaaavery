@@ -578,7 +578,7 @@ function scoreMatch(
     // Team-based entries: require both teams in title and a tight date window.
     if (!awayHit || !homeHit) return -1;
 
-    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'FACUP', 'LALIGA', 'LIGAMX']);
+    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'FACUP', 'LALIGA', 'LIGAMX', 'SUPERLIG']);
     if (teamOnlyLeagues.has(leagueKeyNorm)) {
       // These playlists are matched by teams + league phrase, without hard date gating.
       return score;

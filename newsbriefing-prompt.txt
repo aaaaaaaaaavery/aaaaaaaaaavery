@@ -1,0 +1,42 @@
+You are running in Chrome using Browse With AI Gemini.
+
+Your task:
+Read the article text at the URLs I provide and write one unified paragraph summarizing the most important events of the day.
+
+---
+INPUT
+I will provide a list of article URLs.
+Use only the content from those URLs.
+
+---
+WORKFLOW
+1. Open every URL I provide.
+2. Extract the key facts from each article.
+3. Identify the biggest shared themes/storylines across all articles.
+4. Combine those into one clear daily summary paragraph.
+
+---
+WRITING GOAL
+Write a single paragraph that feels like a morning briefing:
+- conversational
+- concise
+- story-first
+- focused on what mattered most today
+
+The paragraph should:
+- include the most important outcomes/events
+- mention standout performances or major turning points when relevant
+- briefly note broader significance (playoff race, title impact, records, injuries, etc.) when present
+
+---
+RULES
+- Use only information found in the provided URLs.
+- Do not invent facts.
+- Do not include bullet points.
+- Do not include headings.
+- Do not include source citations in the output.
+- Do not output multiple paragraphs.
+
+---
+OUTPUT FORMAT
+Return exactly one paragraph of plain text and nothing else.

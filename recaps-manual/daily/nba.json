@@ -25,7 +25,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810786/76ers-cavaliers"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "vzi-Q0otZ5E",
+          "title": "76ERS at CAVALIERS | FULL GAME HIGHLIGHTS | March 9, 2026",
+          "url": "https://www.youtube.com/watch?v=vzi-Q0otZ5E",
+          "embedUrl": "https://www.youtube.com/embed/vzi-Q0otZ5E",
+          "publishedAt": "2026-03-10T01:37:51Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810787",
@@ -48,7 +58,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810787/grizzlies-nets"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "1XCbl1sZYDg",
+          "title": "GRIZZLIES at NETS | FULL GAME HIGHLIGHTS | March 9, 2026",
+          "url": "https://www.youtube.com/watch?v=1XCbl1sZYDg",
+          "embedUrl": "https://www.youtube.com/embed/1XCbl1sZYDg",
+          "publishedAt": "2026-03-10T02:16:46Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810788",
@@ -71,7 +91,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810788/nuggets-thunder"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "gF_kXeuKOwE",
+          "title": "EXTENDED: NUGGETS at THUNDER | FULL GAME HIGHLIGHTS | March 9, 2026",
+          "url": "https://www.youtube.com/watch?v=gF_kXeuKOwE",
+          "embedUrl": "https://www.youtube.com/embed/gF_kXeuKOwE",
+          "publishedAt": "2026-03-10T05:07:30Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810789",
@@ -94,7 +124,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810789/warriors-jazz"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "Y4Q8m2WnE2Y",
+          "title": "WARRIORS at JAZZ | FULL GAME HIGHLIGHTS | March 9, 2026",
+          "url": "https://www.youtube.com/watch?v=Y4Q8m2WnE2Y",
+          "embedUrl": "https://www.youtube.com/embed/Y4Q8m2WnE2Y",
+          "publishedAt": "2026-03-10T03:57:27Z",
+          "matchScore": 135
+        }
+      ]
     },
     {
       "id": "401810790",
@@ -117,7 +157,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nba/recap/_/gameId/401810790/knicks-clippers"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "qKKX5guDOxw",
+          "title": "KNICKS at CLIPPERS | FULL GAME HIGHLIGHTS | March 9, 2026",
+          "url": "https://www.youtube.com/watch?v=qKKX5guDOxw",
+          "embedUrl": "https://www.youtube.com/embed/qKKX5guDOxw",
+          "publishedAt": "2026-03-10T04:57:13Z",
+          "matchScore": 135
+        }
+      ]
     }
   ]
 }

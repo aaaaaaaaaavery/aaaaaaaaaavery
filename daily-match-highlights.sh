@@ -22,6 +22,7 @@ BUNDESLIGA_PLAYLIST="PL3uJGozO1imdWwTzbnNXTuiXbLJhFb83r"
 LIGUE1_PLAYLIST="PL5dXR9bHuKvnWwEHClY5GL3QDzKEn4av_"
 FACUP_PLAYLIST="PLvnfVnc10KYh8PapZ5DXB-xy0Q8yH0Qay"
 LALIGA_PLAYLIST="PLKj1QUtwqLN-i1rzwTy60ukT1vxHOyrEe"
+SUPERLIG_PLAYLIST="PLREq_OnJpFaRT2WY8UTDz-Bbty-BQIMmj"
 WBC_PLAYLIST="PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L"
 WBC_CHANNEL_URL="https://www.youtube.com/@MLB/videos"
 FACUP_CHANNEL_URL="https://www.youtube.com/@thefacup/videos"
@@ -208,6 +209,7 @@ run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/bundesliga.json" "$BUNDES
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligue1.json" "$LIGUE1_PLAYLIST" "Ligue 1" "ligue 1" "2"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/facup.json" "$FACUP_PLAYLIST" "FA Cup" "fa cup"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/laliga.json" "$LALIGA_PLAYLIST" "LaLiga" "laliga"
+run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/superlig.json" "$SUPERLIG_PLAYLIST" "Super Lig" "super lig"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/wbc.json" "$WBC_CHANNEL_URL" "WBC" "world baseball classic"
 
 echo ""
@@ -222,6 +224,7 @@ echo "- recaps-manual/daily/bundesliga.json"
 echo "- recaps-manual/daily/ligue1.json"
 echo "- recaps-manual/daily/facup.json"
 echo "- recaps-manual/daily/laliga.json"
+echo "- recaps-manual/daily/superlig.json"
 echo "- recaps-manual/daily/wbc.json"
 
 if [[ "$FAILED_MATCHES" -gt 0 ]]; then

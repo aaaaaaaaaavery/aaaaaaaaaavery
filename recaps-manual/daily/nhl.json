@@ -25,7 +25,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401857755/kings-blue-jackets"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "uuwGTKU4vH8",
+          "title": "Kings vs. Blue Jackets | NHL Highlights | March 09, 2026",
+          "url": "https://www.youtube.com/watch?v=uuwGTKU4vH8",
+          "embedUrl": "https://www.youtube.com/embed/uuwGTKU4vH8",
+          "publishedAt": "2026-03-09T23:24:17Z",
+          "matchScore": 141
+        }
+      ]
     },
     {
       "id": "401803359",
@@ -48,7 +58,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803359/rangers-flyers"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "0MS3SXydsmY",
+          "title": "Rangers vs. Flyers | NHL Highlights | March 09, 2026",
+          "url": "https://www.youtube.com/watch?v=0MS3SXydsmY",
+          "embedUrl": "https://www.youtube.com/embed/0MS3SXydsmY",
+          "publishedAt": "2026-03-10T02:09:38Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803360",
@@ -71,7 +91,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803360/flames-capitals"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "OmsIrTjm8yw",
+          "title": "Flames vs. Capitals | NHL Highlights | March 09, 2026",
+          "url": "https://www.youtube.com/watch?v=OmsIrTjm8yw",
+          "embedUrl": "https://www.youtube.com/embed/OmsIrTjm8yw",
+          "publishedAt": "2026-03-10T01:59:02Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803361",
@@ -94,7 +124,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803361/mammoth-blackhawks"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "qdHHC7aYKWA",
+          "title": "Mammoth vs. Blackhawks | NHL Highlights | March 09, 2026",
+          "url": "https://www.youtube.com/watch?v=qdHHC7aYKWA",
+          "embedUrl": "https://www.youtube.com/embed/qdHHC7aYKWA",
+          "publishedAt": "2026-03-10T03:50:41Z",
+          "matchScore": 120
+        }
+      ]
     },
     {
       "id": "401803362",
@@ -117,7 +157,17 @@
       "source": {
         "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803362/senators-canucks"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "aG8_YxR4ep4",
+          "title": "Senators vs. Canucks | NHL Highlights | March 09, 2026",
+          "url": "https://www.youtube.com/watch?v=aG8_YxR4ep4",
+          "embedUrl": "https://www.youtube.com/embed/aG8_YxR4ep4",
+          "publishedAt": "2026-03-10T04:06:21Z",
+          "matchScore": 120
+        }
+      ]
     }
   ]
 }

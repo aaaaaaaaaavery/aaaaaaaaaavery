@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "SNmbf_7XKc8",
+          "title": "RCD ESPANYOL 1 - 1 REAL OVIEDO | RESUMEN LALIGA EA SPORTS",
+          "url": "https://www.youtube.com/watch?v=SNmbf_7XKc8",
+          "embedUrl": "https://www.youtube.com/embed/SNmbf_7XKc8",
+          "publishedAt": "2026-03-09T22:04:49Z",
+          "matchScore": 100
         }
       ]
     }
