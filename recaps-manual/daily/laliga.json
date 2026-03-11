@@ -3,39 +3,5 @@
   "leagueKey": "laliga",
   "sourceType": "console_recaps",
   "leagueBriefing": "Espanyol's frustrating winless run continued on Monday night as they were held to a 1-1 draw by basement-dwellers Real Oviedo at the RCDE Stadium.",
-  "games": [
-    {
-      "id": "632339",
-      "teams": {
-        "away": "Real Oviedo",
-        "home": "Espanyol"
-      },
-      "headline": "Kike García rescues point as Espanyol winless streak hits double digits",
-      "score": "Espanyol 1 - 1 Real Oviedo",
-      "brief": "Espanyol’s search for a spark continues as they played out a gritty 1-1 draw against a resilient Real Oviedo side. The visitors stunned the RCDE Stadium early when Alberto Reina found the back of the net just eight minutes in, capitalizing on a defensive lapse. While Kike García managed to restore parity before the break with a well-taken strike, the hosts couldn't find a winner despite a second-half onslaught. The result keeps Espanyol mired in a worrying slump, while Oviedo will take heart from a disciplined defensive performance that earned them a rare away point.",
-      "bullets": [
-        "Alberto Reina gave the visitors a shock lead in the 8th minute, finishing an assist from Thiago Fernández.",
-        "Kike García equalized for the hosts in the 36th minute, converting a chance set up by Cyril Ngonge.",
-        "Espanyol dominated the stat sheet with 28 total shots and 58% possession but struggled with clinical finishing.",
-        "Oviedo goalkeeper Aarón Escandell was the hero for the visitors, making 8 saves to preserve the draw.",
-        "The draw extends Espanyol's winless run in LaLiga to 10 consecutive matches."
-      ],
-      "context": "The draw leaves Espanyol stuck in mid-table mediocrity while Real Oviedo remains rooted to the bottom of the LaLiga standings.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.foxsports.com/soccer/la-liga-espanyol-vs-oviedo-mar-09-2026-game-boxscore-632339?tab=boxscore"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "SNmbf_7XKc8",
-          "title": "RCD ESPANYOL 1 - 1 REAL OVIEDO | RESUMEN LALIGA EA SPORTS",
-          "url": "https://www.youtube.com/watch?v=SNmbf_7XKc8",
-          "embedUrl": "https://www.youtube.com/embed/SNmbf_7XKc8",
-          "publishedAt": "2026-03-09T22:04:49Z",
-          "matchScore": 100
-        }
-      ]
-    }
-  ]
+  "games": []
 }

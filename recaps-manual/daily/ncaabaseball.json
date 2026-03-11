@@ -2,57 +2,147 @@
   "leagueName": "NCAA Baseball",
   "leagueKey": "ncaabaseball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "It was a wild Monday on the diamond as mid-major programs and unranked challengers gave several powerhouses all they could handle. Stetson pulled off the day's biggest stunner by clinching a series split in Fayetteville, while Utah finished off a dominant sweep of Grand Canyon to keep their home momentum rolling. Meanwhile, high-scoring affairs in California and Florida proved that no lead is safe in midweek action.",
+  "leagueBriefing": "Ranked powerhouses flexed their muscles on Tuesday as Texas, UCLA, and Auburn cruised to blowout victories, while Florida took the opening round of the Sunshine Showdown against rival Florida State.",
   "games": [
     {
-      "id": "7ltyipP022aUJKmSgYVs3wXi7up73ghniwD5ElWyd07J7BNseBaMQePf0fY%2F3yUP03wg%2Fd6yiAUgD0%2B0FPsGor%2BXp7fFdPDZOcAAWGOlPWS1SO7ChjznAoxuOzp0EbUaoBHC6fVt3RHcubNtTSwSRB981eY65pBzKEdrc127H%2BE%3D&path=baseball",
+      "id": "401810574",
       "teams": {
-        "away": "Stetson",
-        "home": "Arkansas"
+        "away": "UC Irvine",
+        "home": "UCLA"
       },
-      "headline": "Stetson stuns No. 5 Arkansas to force rare series split at Baum-Walker",
-      "score": "Stetson 6 - Arkansas 4",
-      "brief": "Stetson jumped on Arkansas early and never looked back, silencing a Fayetteville crowd that isn't used to seeing the Razorbacks drop non-conference series at home. The Hatters tagged the Hogs' starter for four runs before he could record a single out, and while Arkansas clawed back within striking distance, their bats went cold when it mattered most. It was a gritty performance from the visitors that snapped a long-standing streak of home dominance for the ranked Razorbacks.",
+      "headline": "Top-ranked Bruins dismantle Anteaters in seven-inning rout",
+      "score": "UC Irvine 1 - UCLA 11",
+      "brief": "UCLA looked every bit the No. 1 team in the country on Tuesday night, invoking the run rule early against UC Irvine. The Bruins' offense was relentless from the jump, burying the Anteaters under a double-digit deficit before the sun had fully set in Los Angeles.",
       "bullets": [
-        "Freshman Carter Rutenbar was a lone bright spot for Arkansas, going 4-for-5 at the plate.",
-        "Stetson’s Yohann Dessureault set the tone immediately with a massive three-run homer in the first inning.",
-        "The Razorbacks struggled mightily with runners in scoring position, going 0-for-9 in those critical situations.",
-        "This marks the first time since 2014 that Arkansas has failed to win a non-conference weekend series at Baum-Walker Stadium."
+        "UCLA scored in five of the six innings they came to the plate.",
+        "The Bruins' pitching staff limited UC Irvine to just three hits over seven innings.",
+        "UCLA's lead-off hitters reached base in nearly every frame to set the table for the blowout.",
+        "This win marks UCLA's largest margin of victory over their SoCal rivals in over a decade."
       ],
-      "context": "The loss prevents Arkansas from building momentum heading into a high-stakes SEC opening weekend against Mississippi State.",
+      "context": "The Bruins maintain their grip on the No. 1 ranking with a dominant midweek performance.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.secsports.com/news/2026/03/no-5-arkansas-cant-erase-early-deficit-falls-to-stetson"
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401810574"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "S6S_oXf2Xf8",
-          "title": "Stetson vs #5 Arkansas | Game 4 | 2026 College Baseball Highlights",
-          "url": "https://www.youtube.com/watch?v=S6S_oXf2Xf8",
-          "embedUrl": "https://www.youtube.com/embed/S6S_oXf2Xf8"
+          "videoId": "TlFGuQJCUvk",
+          "title": "Florida highlights",
+          "url": "https://www.youtube.com/watch?v=TlFGuQJCUvk",
+          "embedUrl": "https://www.youtube.com/embed/TlFGuQJCUvk"
         }
       ]
     },
     {
-      "id": "20856",
+      "id": "401815194",
       "teams": {
-        "away": "Grand Canyon",
-        "home": "Utah"
+        "away": "Florida State",
+        "home": "Florida"
       },
-      "headline": "Utes complete clean sweep of Grand Canyon with steady series finale",
-      "score": "Grand Canyon 2 - Utah 7",
-      "brief": "Utah didn't let a brief second-inning deficit dampen their spirits as they cruised to a 7-2 win, finishing a four-game sweep of Grand Canyon. The Utes' pitching has been nothing short of historic lately, and their bats backed them up on Monday with a balanced attack that saw every top-of-the-order hitter reach base. After a weekend of shutouts, the Utes proved they could handle a punch and still maintain control of the game.",
+      "headline": "Gator arms silence Seminoles as Florida takes Sunshine Showdown opener",
+      "score": "Florida State 3 - Florida 6",
+      "brief": "Florida's pitching staff rose to the occasion in the season's first installment of the Sunshine Showdown, striking out 18 Seminoles to secure a 6-3 victory. After falling behind early, the Gators relied on a resilient bullpen and a key home run from Brendan Lawson to pull ahead and shut the door on their rivals.",
       "bullets": [
-        "Cameron Gurney provided the muscle for Utah with a 407-foot home run and four RBIs.",
-        "Utah's pitching staff has allowed only two runs over their last 41 innings of play.",
-        "The Utes' bullpen was perfect over the final four frames, allowing zero base runners to reach.",
-        "Dominic Chacon provided the only offense for GCU with a two-run homer in the second inning."
+        "Florida pitchers recorded the final 11 outs of the game via strikeout.",
+        "Brendan Lawson provided the offensive spark with his 9th home run of the season.",
+        "Joshua Whritenour struck out all five batters he faced to earn a dominant save.",
+        "The Gators' staff held the high-powered FSU offense to just five total hits."
       ],
-      "context": "Utah enters the heart of their schedule riding a wave of pitching dominance that has them looking like a major threat in the Pac-12.",
+      "context": "Florida secures a massive resume win and early-season bragging rights over their in-state rivals.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://utahutes.com/news/2026/3/9/baseball-utah-sweeps-gcu-with-7-2-win-on-monday"
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401815194"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "5jEXe8vSPyQ",
+          "title": "Texas vs Texas State highlights",
+          "url": "https://www.youtube.com/watch?v=5jEXe8vSPyQ",
+          "embedUrl": "https://www.youtube.com/embed/5jEXe8vSPyQ"
+        }
+      ]
+    },
+    {
+      "id": "401813134",
+      "teams": {
+        "away": "Texas",
+        "home": "Texas State"
+      },
+      "headline": "Longhorns stay perfect as record crowd witnesses rout of Texas State",
+      "score": "Texas 15 - Texas State 4",
+      "brief": "Texas continued its march toward history, moving to 16-0 with a comprehensive beatdown of Texas State in front of a record-setting crowd in San Marcos. The Longhorns' bats were hot from the first pitch, ensuring the record 3,482 fans in attendance saw plenty of offensive fireworks.",
+      "bullets": [
+        "Texas improved to a perfect 16-0 on the season with the win.",
+        "The attendance of 3,482 set an all-time record for Bobcat Ballpark.",
+        "Texas scored early and often, building a double-digit lead by the middle innings.",
+        "The Longhorns' pitching staff effectively neutralized a usually potent Texas State lineup."
+      ],
+      "context": "Texas remains the only undefeated team in the Top 5 as they steamroll through their midweek schedule.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401813134"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "D9IExeSAOaU",
+          "title": "Tennessee Tech highlights",
+          "url": "https://www.youtube.com/watch?v=D9IExeSAOaU",
+          "embedUrl": "https://www.youtube.com/embed/D9IExeSAOaU"
+        }
+      ]
+    },
+    {
+      "id": "401812845",
+      "teams": {
+        "away": "Tennessee Tech",
+        "home": "Tennessee"
+      },
+      "headline": "Vols launch five homers in 20-run demolition of Tennessee Tech",
+      "score": "Tennessee Tech 2 - Tennessee 20",
+      "brief": "Tennessee put on a power-hitting clinic at Lindsey Nelson Stadium, blasting five home runs in a 20-2 thrashing of Tennessee Tech. A nine-run first inning, capped by a Reese Chapman grand slam, essentially ended the contest before it really began, allowing the Vols to cruise through the rest of the evening.",
+      "bullets": [
+        "Garrett Wright opened the game with a leadoff home run to set the tone.",
+        "Reese Chapman provided the big blow with a grand slam in a nine-run first inning.",
+        "The Vols totaled five home runs as a team in the shortened contest.",
+        "The game was called after seven innings due to the 10-run rule."
+      ],
+      "context": "Tennessee bounces back from a weekend loss with one of their most dominant offensive displays of the year.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401812845"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "g_dPtjGAs3Q",
+          "title": "Wake Forest highlights",
+          "url": "https://www.youtube.com/watch?v=g_dPtjGAs3Q",
+          "embedUrl": "https://www.youtube.com/embed/g_dPtjGAs3Q"
+        }
+      ]
+    },
+    {
+      "id": "401813354",
+      "teams": {
+        "away": "Tulane",
+        "home": "Mississippi State"
+      },
+      "headline": "Bulldogs storm back with massive seventh inning to sink Tulane",
+      "score": "Tulane 7 - Mississippi State 11",
+      "brief": "Mississippi State showed serious grit in the Hancock Whitney Classic, erasing a five-run deficit to take down Tulane. The Bulldogs' offense came alive in the seventh inning, exploding for six runs to flip the script and secure a hard-fought comeback victory in front of a raucous crowd.",
+      "bullets": [
+        "Tulane led 7-2 before Mississippi State's late-inning heroics.",
+        "Mississippi State scored six runs in the 7th and two more in the 8th to pull away.",
+        "A 4-RBI home run in the 7th inning served as the turning point for the Bulldogs.",
+        "Tulane's bullpen struggled to find the plate, conceding several walks during the collapse."
+      ],
+      "context": "A character-building win for the Bulldogs as they head toward a critical SEC opening weekend.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401813354"
       },
       "highlights": [
         {
@@ -65,24 +155,24 @@
       ]
     },
     {
-      "id": "17364",
+      "id": "401812674",
       "teams": {
-        "away": "Pepperdine",
-        "home": "Cal State Northridge"
+        "away": "UAB",
+        "home": "Auburn"
       },
-      "headline": "CSUN bats explode in seven-run fifth to bury Pepperdine",
-      "score": "Pepperdine 1 - Cal State Northridge 12",
-      "brief": "What started as a tight defensive battle quickly turned into a rout as Cal State Northridge dismantled Pepperdine in seven innings. The Matadors blew the game wide open in the fifth, putting up seven runs to trigger the mercy rule and send the Waves home early. It was a dominant display of situational hitting and aggressive baserunning that left Pepperdine with no answers on the road.",
+      "headline": "Auburn hitters go wild in run-rule rout of UAB",
+      "score": "UAB 2 - Auburn 17",
+      "brief": "Auburn brought the heavy lumber to their midweek matchup against UAB, scoring 17 runs in just five innings of offensive work. The Tigers' lineup was relentless, scoring in every single inning and using a flurry of home runs to turn what was expected to be a competitive game into a complete blowout.",
       "bullets": [
-        "The game was called after seven innings due to a 10-run mercy rule after CSUN took an 11-run lead.",
-        "CSUN's Nathan Thomas delivered the knockout blow with a two-RBI triple during the decisive third inning.",
-        "Adam Christopher earned the win for the Matadors, keeping the Pepperdine bats in check throughout his outing.",
-        "Pepperdine managed only six hits and a single run, which came on a bases-loaded walk in the third."
+        "Auburn hit multiple home runs, including a massive 4-RBI blast by Steele in the 5th.",
+        "The Tigers scored four runs in the 1st, five in the 3rd, and five more in the 5th.",
+        "UAB was held to just two runs as Auburn's pitching staff remained in total control.",
+        "The game was shortened to seven innings via the run rule."
       ],
-      "context": "The win pushes CSUN to 10-6 on the season as they continue to build a strong resume in the Big West.",
+      "context": "Auburn's offense looks unstoppable as they gear up for conference play.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://gomatadors.com/boxscore.aspx?id=17364"
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401812674"
       },
       "highlights": [
         {
@@ -95,24 +185,24 @@
       ]
     },
     {
-      "id": "20260309-xavier-oregonstate",
+      "id": "401811802",
       "teams": {
-        "away": "Xavier",
-        "home": "Oregon State"
+        "away": "Wake Forest",
+        "home": "Coastal Carolina"
       },
-      "headline": "Oregon State flips the switch late to outlast Xavier in series finale",
-      "score": "Xavier 2 - Oregon State 7",
-      "brief": "Oregon State had to work much harder for this win than they did in Sunday's blowout, but a late surge helped the No. 18 Beavers pull away from Xavier to wrap up the series. While the Musketeers kept it close through the early innings, Oregon State's pitching depth and veteran composure proved too much to handle in the end. It wasn't the offensive firework show fans saw yesterday, but it was the kind of 'gritty victory' that ranked teams need to stack wins.",
+      "headline": "Coastal Carolina powers past Wake Forest in mid-week slugfest",
+      "score": "Wake Forest 4 - Coastal Carolina 10",
+      "brief": "In a battle between two ranked programs, Coastal Carolina's bats proved too much for the Wake Forest pitching staff. The Chanticleers exploded for double-digit runs, using a massive mid-game surge to pull away from the Demon Deacons and assert their dominance on their home turf.",
       "bullets": [
-        "Starter Eric Segura was dominant, striking out eight over 5.2 scoreless innings.",
-        "The Beavers' pitching staff combined for 15 strikeouts on the night, consistently silencing Xavier's threats.",
-        "This victory concludes a four-game series that saw Oregon State showcase both power and defensive precision.",
-        "Oregon State has now won six consecutive games, continuing their climb up the national rankings."
+        "Coastal Carolina's lineup featured four players with multi-hit games.",
+        "The Chanticleers hit three home runs, accounting for six of their ten runs.",
+        "Wake Forest's highly-touted rotation struggled, conceding seven runs in the first four innings.",
+        "Coastal Carolina has now won six of their last seven games against ACC opponents."
       ],
-      "context": "The Beavers move to 11-4 and maintain their status as a top-tier contender as they prepare for conference play.",
+      "context": "A significant RPI boost for the Chanticleers as they knock off a top-tier Wake Forest squad.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://dailybaro.orangemedianetwork.com/31266/daily-barometer-sports/beavs-flip-the-switch-late-to-earn-gritty-victory/"
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401811802"
       },
       "highlights": [
         {
@@ -125,24 +215,24 @@
       ]
     },
     {
-      "id": "14133",
+      "id": "401814674",
       "teams": {
-        "away": "South Florida",
-        "home": "Jacksonville"
+        "away": "Stephen F. Austin",
+        "home": "Texas A&M"
       },
-      "headline": "Bulls survive 'Monday Madness' shootout to down Jacksonville",
-      "score": "South Florida 11 - Jacksonville 6",
-      "brief": "South Florida and Jacksonville traded haymakers in a wild early-inning shootout that saw the game tied at five by the second inning. However, the Bulls' relentless offense eventually wore down the Dolphins, as USF scored in six different innings to pull away. It was a high-octane display of power hitting that saw both teams clear the fences early before USF's bullpen settled things down to secure the road win.",
+      "headline": "Aggies erupt for ten runs in one inning to bury Lumberjacks",
+      "score": "Stephen F. Austin 1 - Texas A&M 14",
+      "brief": "Texas A&M put on a clinic in offensive efficiency Tuesday, using a staggering ten-run sixth inning to blow past Stephen F. Austin. Blake Binderup was the star of the show, launching two home runs as the Aggies turned a close game into a run-rule victory in a matter of minutes.",
       "bullets": [
-        "Matt Rose fueled the Bulls' offense with a massive three-run home run in the first inning.",
-        "Jacksonville’s Roger Vergara answered immediately with a two-run blast of his own in the bottom half.",
-        "USF's Jake Kulikowski had a stellar night, including a leadoff triple in the third that sparked a three-run rally.",
-        "The Bulls improved to 14-3 on the season, continuing one of the best starts in program history."
+        "Blake Binderup hit two home runs, including a 3-run shot during the 10-run 6th inning.",
+        "Texas A&M improved to 15-1 on the season with the victory.",
+        "The game was called after seven innings due to the run rule.",
+        "Lumberjack pitchers struggled with command, walking six batters in the decisive 6th inning."
       ],
-      "context": "South Florida continues to look like a dangerous midweek opponent as they push toward a potential top-25 ranking.",
+      "context": "The Aggies' high-powered offense continues to justify their Top 25 ranking.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://gousfbulls.com/news/2026/3/9/south-florida-baseball-is-victorious-in-jacksonville.aspx"
+        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401814674"
       },
       "highlights": [
         {

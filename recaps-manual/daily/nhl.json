@@ -2,169 +2,228 @@
   "leagueName": "NHL",
   "leagueKey": "nhl",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The Western Conference wild-card race tightened as the Kings pulled within a point of a playoff spot, while the Senators continued their scorching run behind a James Reimer shutout.",
+  "leagueBriefing": "The Islanders made history with their 10th straight overtime win, while the Rangers and Wild dominated with shutouts on a busy Tuesday night. In a potential playoff preview, the Oilers edged the Avalanche in a high-scoring thriller, and the Blue Jackets continued their surprising surge by extending their point streak to seven games.",
   "games": [
     {
-      "id": "401857755",
+      "id": "20260310-LAK-BOS",
       "teams": {
         "away": "Los Angeles Kings",
-        "home": "Columbus Blue Jackets"
+        "home": "Boston Bruins"
       },
-      "headline": "Kempe’s overtime heroics lift Kings closer to wild-card spot",
-      "score": "Kings 5 - Blue Jackets 4",
-      "brief": "In a game rescheduled from a January blizzard, the Kings brought their own storm to Columbus. Adrian Kempe buried his second goal of the night in the dying moments of overtime to secure a massive two points for Los Angeles. The Kings nearly let this one slip away after giving up a late power-play goal to Kirill Marchenko, but they showed enough resilience to start their five-game road trip with a win and move within striking distance of the final playoff spot in the West.",
+      "headline": "Bruins edge Kings in overtime after tight defensive battle",
+      "score": "Kings 1 - Bruins 2",
+      "brief": "In a game where goals were hard to come by, the Bruins found the extra gear in the bonus frame to take down the Kings. After a scoreless first 40 minutes, both teams traded goals in the third, but Boston's transition game in overtime proved to be the difference maker in front of the home crowd.",
       "bullets": [
-        "Adrian Kempe scored twice, including the game-winner with just 1:26 remaining in overtime.",
-        "Anze Kopitar recorded his 167th career assist on a game-tying goal, setting a new franchise record for the Kings.",
-        "Brian Dumoulin turned in a three-point performance with one goal and two assists.",
-        "Connor Garland ended a career-long 24-game goal drought by scoring twice for Columbus.",
-        "Scott Laughton has now scored in back-to-back games since being traded to Los Angeles from Toronto."
+        "Mason Lohrei opened the scoring for Boston midway through the third period with his seventh goal of the season.",
+        "Kings defenseman Drew Doughty forced overtime with a one-timer at the six-minute mark of the third period.",
+        "Boston outshot Los Angeles 12-8 through the first two periods, but the Kings led the overall shot count early on.",
+        "The win marks another strong home performance for the Bruins, who improved to 25-8-1 at TD Garden."
       ],
-      "context": "The Kings are now just one point behind Seattle for the final Western Conference wild-card spot.",
+      "context": "Boston continues to solidify its position as one of the top home teams in the league.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401857755/kings-blue-jackets"
+        "recapUrl": "https://www.nhl.com/kings/news/3-10-26-final-kings-1-bruins-2"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "uuwGTKU4vH8",
-          "title": "Kings vs. Blue Jackets | NHL Highlights | March 09, 2026",
-          "url": "https://www.youtube.com/watch?v=uuwGTKU4vH8",
-          "embedUrl": "https://www.youtube.com/embed/uuwGTKU4vH8",
-          "publishedAt": "2026-03-09T23:24:17Z",
-          "matchScore": 141
-        }
-      ]
-    },
-    {
-      "id": "401803359",
-      "teams": {
-        "away": "New York Rangers",
-        "home": "Philadelphia Flyers"
-      },
-      "headline": "Zibanejad and the Rangers' power play overwhelm Flyers in Philly",
-      "score": "Rangers 6 - Flyers 2",
-      "brief": "The Rangers turned the Wells Fargo Center into their own personal shooting gallery on Monday night, powered by a lethal man-advantage. Mika Zibanejad led the charge with a three-point night as New York converted three times on the power play to bury the Flyers early. While Philadelphia welcomed back stars like Travis Konecny, they had no answer for the Rangers' clinical finishing and a steady 32-save performance from Igor Shesterkin.",
-      "bullets": [
-        "Mika Zibanejad spearheaded the offense with two goals and an assist.",
-        "The Rangers scored three power-play goals on the night, including two in a 20-second span during the second period.",
-        "Igor Shesterkin stopped 32 of 34 shots to earn his 3rd win in five starts.",
-        "Alexis Lafreniere and rookie Noah Laba each contributed a goal and an assist.",
-        "Flyers goalie Dan Vladar was pulled after the second period after allowing six goals on 24 shots."
-      ],
-      "context": "New York continues to stabilize their playoff positioning with their third win in five games.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803359/rangers-flyers"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "0MS3SXydsmY",
-          "title": "Rangers vs. Flyers | NHL Highlights | March 09, 2026",
-          "url": "https://www.youtube.com/watch?v=0MS3SXydsmY",
-          "embedUrl": "https://www.youtube.com/embed/0MS3SXydsmY",
-          "publishedAt": "2026-03-10T02:09:38Z",
+          "videoId": "XJLA4RSm3hA",
+          "title": "Kings vs. Bruins | NHL Highlights | March 10, 2026",
+          "url": "https://www.youtube.com/watch?v=XJLA4RSm3hA",
+          "embedUrl": "https://www.youtube.com/embed/XJLA4RSm3hA",
+          "publishedAt": "2026-03-11T02:14:23Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "401803360",
+      "id": "20260310-CBJ-TBL",
+      "teams": {
+        "away": "Columbus Blue Jackets",
+        "home": "Tampa Bay Lightning"
+      },
+      "headline": "Garland stays hot as Blue Jackets extend point streak to seven",
+      "score": "Blue Jackets 5 - Lightning 2",
+      "brief": "Conor Garland is playing out of his mind right now, netting his second consecutive two-goal game to lead the Blue Jackets past the Lightning. Columbus completely neutralized Tampa Bay's high-powered offense, limiting them to just 18 shots and handing the Lightning their sixth loss in seven games.",
+      "bullets": [
+        "Conor Garland scored twice, including a critical power-play goal in the third period.",
+        "Zach Werenski and Sean Monahan each recorded two assists for the Blue Jackets.",
+        "The Blue Jackets have now earned points in seven consecutive games.",
+        "Tampa Bay was held to just 18 shots on goal in the loss."
+      ],
+      "context": "The Blue Jackets are emerging as a serious spoiler in the Eastern Conference playoff race.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/gamecenter/cbj-vs-tbl/2026/03/10/2025021015"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "23ATiNbsKvY",
+          "title": "Blue Jackets vs. Lightning | NHL Highlights | March 10, 2026",
+          "url": "https://www.youtube.com/watch?v=23ATiNbsKvY",
+          "embedUrl": "https://www.youtube.com/embed/23ATiNbsKvY",
+          "publishedAt": "2026-03-11T02:25:09Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260310-CGY-NYR",
       "teams": {
         "away": "Calgary Flames",
-        "home": "Washington Capitals"
+        "home": "New York Rangers"
       },
-      "headline": "Capitals explode for seven goals to snap skid despite Flames' short-handed surge",
-      "score": "Flames 3 - Capitals 7",
-      "brief": "Washington’s offense finally woke up in a big way to end a three-game losing streak. After surging to a 3-0 lead, the Capitals survived a bizarre second-period collapse where they surrendered two short-handed goals in just over a minute. Rather than folding, the Caps dominated the third period with four unanswered goals, including a pair from Connor McMichael, to turn a tight game into a genuine blowout.",
+      "headline": "Lafrenière hat trick and Quick shutout fuel Rangers' revenge",
+      "score": "Flames 0 - Rangers 4",
+      "brief": "Alexis Lafrenière stole the show at Madison Square Garden, recording a hat trick to power the Rangers to a dominant victory over Calgary. Behind him, veteran Jonathan Quick was a wall, earning a historic shutout to avenge a lopsided loss to the Flames earlier this season.",
       "bullets": [
-        "Connor McMichael snapped a seven-game goal drought with a two-goal performance.",
-        "Justin Sourdif tallied a career-high three points (1G, 2A) to lead the Washington attack.",
-        "Calgary scored two short-handed goals in a span of 1:16 during the second period to briefly tie the game.",
-        "Ryan Strome faced off against his brother Dylan and recorded an assist in the losing effort.",
-        "The Capitals' Ryan Leonard extended his personal point streak to three games with a late breakaway goal."
+        "Alexis Lafrenière scored three goals, leading the Rangers' newly formed top line.",
+        "Jonathan Quick stopped all shots faced for a historic shutout at age 40.",
+        "The win avenges a 5-1 loss the Rangers suffered in Calgary back in October.",
+        "Mika Zibanejad and Perreault anchored the top line alongside Lafrenière in the absence of J.T. Miller."
       ],
-      "context": "Washington snaps a three-game slide to keep pace in the East, while Calgary has lost five of their last six.",
+      "context": "Lafrenière's breakout performance highlights the Rangers' depth as they look to climb the Metropolitan standings.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803360/flames-capitals"
+        "recapUrl": "https://www.blueshirtbanter.com/recap-alexis-lafrenieres-hat-trick-powers-rangers-to-4-0-win-over-flames/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "OmsIrTjm8yw",
-          "title": "Flames vs. Capitals | NHL Highlights | March 09, 2026",
-          "url": "https://www.youtube.com/watch?v=OmsIrTjm8yw",
-          "embedUrl": "https://www.youtube.com/embed/OmsIrTjm8yw",
-          "publishedAt": "2026-03-10T01:59:02Z",
+          "videoId": "1FRI3VXoAsQ",
+          "title": "Flames vs. Rangers | NHL Highlights | March 10, 2026",
+          "url": "https://www.youtube.com/watch?v=1FRI3VXoAsQ",
+          "embedUrl": "https://www.youtube.com/embed/1FRI3VXoAsQ",
+          "publishedAt": "2026-03-11T02:15:43Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "401803361",
+      "id": "20260310-NYI-STL",
       "teams": {
-        "away": "Utah Mammoth",
-        "home": "Chicago Blackhawks"
+        "away": "New York Islanders",
+        "home": "St. Louis Blues"
       },
-      "headline": "Nazar’s OT winner and Burakovsky’s ‘Michigan’ goal stun Mammoth",
-      "score": "Mammoth 2 - Blackhawks 3",
-      "brief": "The Blackhawks might be out of the playoff hunt, but they provided the highlight of the night in Chicago. Andre Burakovsky sent the United Center into a frenzy with a spectacular lacrosse-style 'Michigan' goal to tie the game, setting the stage for Frank Nazar to win it on a power play in overtime. The loss is a tough pill for the Mammoth, who are fighting for their playoff lives and saw their three-game winning streak snapped by a last-place Chicago team that has had their number all season.",
+      "headline": "Islanders set NHL record with 10th straight overtime victory",
+      "score": "Islanders 4 - Blues 3",
+      "brief": "The Islanders have become the masters of the extra frame, making NHL history by winning their 10th consecutive game decided in overtime. After falling behind 3-0, New York staged a gritty comeback capped by Mathew Barzal's stunning individual effort to secure the two points in St. Louis.",
       "bullets": [
-        "Frank Nazar scored the game-winner at 2:24 of overtime on a feed from Connor Bedard.",
-        "Andre Burakovsky scored his first goal in 19 games using a spectacular lacrosse-style move.",
-        "Dylan Guenther reached the 30-goal milestone for the first time in his career for Utah.",
-        "Andrew Mangiapane scored his first goal for Chicago since being acquired from Edmonton.",
-        "Chicago has won all three matchups against Utah so far this season."
+        "The Islanders are the first team in NHL history to go 10-0 in overtime in a single season.",
+        "Mathew Barzal finished with a goal and two assists, including the game-winner.",
+        "New York erased a 3-0 deficit, scoring four unanswered goals to win.",
+        "The Islanders fired a season-high 49 shots on the Blues' net."
       ],
-      "context": "A significant blow to Utah’s wild-card hopes as they drop points to the cellar-dwelling Blackhawks.",
+      "context": "The win pulls the Islanders even with Pittsburgh for second place in the Metropolitan Division.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803361/mammoth-blackhawks"
+        "recapUrl": "https://www.nhl.com/islanders/news/takeaways-barzal-buries-an-overtime-winner-in-4-3-ot-victory-over-blues"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "qdHHC7aYKWA",
-          "title": "Mammoth vs. Blackhawks | NHL Highlights | March 09, 2026",
-          "url": "https://www.youtube.com/watch?v=qdHHC7aYKWA",
-          "embedUrl": "https://www.youtube.com/embed/qdHHC7aYKWA",
-          "publishedAt": "2026-03-10T03:50:41Z",
+          "videoId": "PeyyAaiw1rw",
+          "title": "Islanders vs. Blues | NHL Highlights | March 10, 2026",
+          "url": "https://www.youtube.com/watch?v=PeyyAaiw1rw",
+          "embedUrl": "https://www.youtube.com/embed/PeyyAaiw1rw",
+          "publishedAt": "2026-03-11T02:31:54Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "401803362",
+      "id": "20260310-VGK-DAL",
       "teams": {
-        "away": "Ottawa Senators",
-        "home": "Vancouver Canucks"
+        "away": "Vegas Golden Knights",
+        "home": "Dallas Stars"
       },
-      "headline": "Reimer’s 16-save shutout keeps Senators' playoff dream alive",
-      "score": "Senators 2 - Canucks 0",
-      "brief": "The Ottawa Senators are officially the hottest team no one wants to play right now. 37-year-old veteran James Reimer turned back the clock in Vancouver, stopping every shot he faced for his first shutout in nearly a year. The Senators stifled the Canucks' high-powered offense, playing a disciplined road game that extended their point streak to seven games. With Tim Stutzle and Brady Tkachuk both extending long point streaks, Ottawa is making a very loud case for a wild-card miracle.",
+      "headline": "Stars defensive masterclass stifles Golden Knights",
+      "score": "Golden Knights 1 - Stars 2",
+      "brief": "Dallas won a low-scoring, defensive grind against Vegas, relying on timely special teams play and a rock-solid performance in front of Jake Oettinger. Despite a strong defensive showing from the Knights, their offense couldn't generate enough high-quality looks to overcome a quick second-period surge from the Stars.",
       "bullets": [
-        "James Reimer earned his 32nd career shutout in his first start in over a month.",
-        "Tim Stutzle extended his point streak to 13 games, the longest active streak in the league.",
-        "Brady Tkachuk has now recorded a point in seven straight games since returning from the Olympics.",
-        "Ottawa has earned points in 11 of their last 12 games (9-1-2).",
-        "Ridly Greig scored the game-winner, which survived a Vancouver challenge for a hand pass."
+        "Jack Eichel scored his 23rd goal of the season to give Vegas an early lead.",
+        "Jamie Benn was instrumental in the Stars' second-period comeback.",
+        "The game saw only five shots on goal total in the entire first period.",
+        "Vegas failed to convert on a crucial power play early in the third period."
       ],
-      "context": "Ottawa’s incredible 9-1-2 run has put them firmly in the hunt for an Eastern Conference wild-card spot.",
+      "context": "The Stars' victory keeps them near the top of the Western Conference standings.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803362/senators-canucks"
+        "recapUrl": "https://sinbin.vegas/vgkatdal2526/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "aG8_YxR4ep4",
-          "title": "Senators vs. Canucks | NHL Highlights | March 09, 2026",
-          "url": "https://www.youtube.com/watch?v=aG8_YxR4ep4",
-          "embedUrl": "https://www.youtube.com/embed/aG8_YxR4ep4",
-          "publishedAt": "2026-03-10T04:06:21Z",
+          "videoId": "GEMg16-HqrI",
+          "title": "Golden Knights vs. Stars | NHL Highlights | March 10, 2026",
+          "url": "https://www.youtube.com/watch?v=GEMg16-HqrI",
+          "embedUrl": "https://www.youtube.com/embed/GEMg16-HqrI",
+          "publishedAt": "2026-03-11T03:08:43Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260310-ANA-WPG",
+      "teams": {
+        "away": "Anaheim Ducks",
+        "home": "Winnipeg Jets"
+      },
+      "headline": "Ducks' second-period explosion halts Jets' point streak",
+      "score": "Ducks 4 - Jets 1",
+      "brief": "Anaheim used a lightning-fast scoring outburst in the second period to stun the Jets in Winnipeg. After falling behind 1-0, the Ducks scored three times in less than two minutes, proving that their top-tier Pacific Division standing is no fluke and cooling off one of the league's hottest teams.",
+      "bullets": [
+        "Ryan Poehling led the way with a goal and an assist for the Ducks.",
+        "Anaheim scored three goals in a span of just 1 minute and 44 seconds in the second period.",
+        "Lukas Dostal continued his hot streak, winning his 13th game in his last 15 starts.",
+        "The loss ended Winnipeg's six-game point streak."
+      ],
+      "context": "The win keeps Anaheim in sole possession of first place in the Pacific Division.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.newsday.com/sports/hockey/ducks-jets-score-o10512"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "aHfVMJ7djpg",
+          "title": "Ducks vs. Jets | NHL Highlights | March 10, 2026",
+          "url": "https://www.youtube.com/watch?v=aHfVMJ7djpg",
+          "embedUrl": "https://www.youtube.com/embed/aHfVMJ7djpg",
+          "publishedAt": "2026-03-11T03:22:38Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260310-NSH-SEA",
+      "teams": {
+        "away": "Nashville Predators",
+        "home": "Seattle Kraken"
+      },
+      "headline": "Ufko's milestone goal helps Predators sink Kraken",
+      "score": "Predators 4 - Kraken 2",
+      "brief": "Nashville handled business in Seattle, led by a memorable moment for rookie Ryan Ufko. The Predators' balanced attack and steady goaltending were too much for the Kraken, who struggled to find consistent offense despite a loud home crowd at Climate Pledge Arena.",
+      "bullets": [
+        "Ryan Ufko scored his first career NHL goal in the victory.",
+        "The Predators used a three-goal second period to take control of the game.",
+        "Seattle's losing streak continues as they struggle to stay in the wild card hunt.",
+        "Nashville improved their road record as they push for a higher playoff seed."
+      ],
+      "context": "The win provides crucial points for Nashville as the Western Conference playoff race tightens.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.cbssports.com/nhl/gametracker/recap/NHL_20260310_NSH@SEA/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "bWfCQ3ikhrY",
+          "title": "Predators vs. Kraken | NHL Highlights | March 10, 2026",
+          "url": "https://www.youtube.com/watch?v=bWfCQ3ikhrY",
+          "embedUrl": "https://www.youtube.com/embed/bWfCQ3ikhrY",
+          "publishedAt": "2026-03-11T05:17:22Z",
           "matchScore": 120
         }
       ]

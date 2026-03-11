@@ -1,205 +1,249 @@
+THPORTH Recap Generator (Console JSON Input)
 
-You are running on a live webpage in Chrome using Browse With AI Gemini.
-Your job is to gather game recap information and output THPORTH recap JSON in the exact schema below.
+You will receive JSON containing sports recap article text that was extracted from a browser console.
 
----
-DATA GATHERING WORKFLOW
-1. Read the current webpage to identify the league and all games listed on the page.
-2. For each listed game, use Google search to find reliable recap text and key facts.
-3. Prioritize official league/team sources and established sports outlets.
-4. Use multiple sources when needed to confirm score, key performers, and context.
-5. Attempt every listed game on the page; only skip a game if no recap is available at all after thorough search.
+Use the article text to generate THPORTH-style morning briefing recaps.
 
----
-WRITING STYLE
-Each recap must read like a sportswriter's morning briefing.
-Everything should focus on what mattered most so a reader can understand each game in about 30 seconds and have a useful watercooler takeaway.
+The JSON input will already contain the article text for each game.
 
-Tone:
-- conversational
-- narrative-driven
-- human
-- focused on what fans will talk about next morning
+Do NOT attempt to fetch articles from the internet.
+Only use the text provided.
 
-Stats should support the story, not dominate it.
-Avoid robotic stat summaries.
+⸻
 
----
-HEADLINE
-Write a new headline for the single most important storyline.
+INPUT
 
-Rules:
-- Do NOT copy or closely paraphrase source headlines.
-- Use sentence case.
-- Focus on the biggest angle: comeback, dominant performance, record, streak, playoff impact, milestone, controversy.
+You will receive JSON structured like this:
 
-Example:
-"Kaprizov breaks Wild goals record as Minnesota rolls past Lightning"
-
----
-SCORE
-If a final score exists, give it (use mascot names for MLB, NHL, NBA; use team names with no mascot for all other leagues.)
-
-If there is no score (golf, racing, some tennis summaries, etc.):
-"score": null
-
----
-MORNING BRIEF PARAGRAPH
-Write one paragraph that:
-- explains the main storyline
-- feels conversational and human
-- explains why the game mattered
-
-No play-by-play narration.
-
----
-BULLETS
-Provide 3-5 bullets with the most interesting facts:
-- player performances
-- key statistics
-- streaks
-- standings impact
-- unusual moments
-- milestones/records
-
-Use specific stats when available.
-
----
-CONTEXT
-Provide one short sentence on broader significance.
-
-Examples:
-- playoff race impact
-- record milestone
-- major streak
-- injury impact
-
-If no meaningful context exists:
-"context": null
-
----
-GAME ID
-Extract `id` from recap URL when possible.
-
-Example:
-https://www.espn.com/nhl/recap/_/gameId/401803310
-"id": "401803310"
-
-If no numeric gameId exists, use a stable descriptive id (for example `20260307-teamA-teamB`).
-
----
-TEAMS
-Populate:
-"teams": {
-"away": "",
-"home": ""
+{
+“league”: “NHL”,
+“games”: [
+{
+“recapUrl”: “…”,
+“articleText”: “full article text…”
+}
+]
 }
 
----
+Each entry represents one game candidate.
+
+Produce one recap output for each entry that has non-empty articleText.
+
+If articleText is empty, null, or only whitespace, skip that entry and do not output a game object for it.
+
+Do not skip entries that contain valid articleText.
+
+⸻
+
+WRITING STYLE
+
+Each recap must read like a sportswriter’s morning briefing.  And this rule overrides everything else: everything you write must focus on the most interesting things about each game so that the reader will know in 30 seconds (for each game) what mattered most and they will have something interesting to share in a watercooler conversation.  Reading these recaps daily will allow the reader to keep up with this league as it goes through its season.
+
+The tone should be:
+
+• conversational
+• narrative-driven
+• human
+• focused on what fans will talk about the next morning
+
+Stats should support the story but should not dominate the writing.
+
+Avoid robotic stat summaries.
+
+⸻
+
+HEADLINE
+
+Write a new headline summarizing the single most important storyline of the game.
+
+The biggest takeaway from the game should be understandable just by reading the headline.
+
+Rules:
+
+• Do NOT copy or closely paraphrase the original headline.
+• Use sentence case (not title case).
+• Focus on the most interesting storyline such as:
+	•	comeback
+	•	huge performance
+	•	record
+	•	streak
+	•	playoff impact
+	•	milestone
+	•	controversy
+
+Example style:
+
+“Kaprizov breaks Wild goals record as Minnesota rolls past Lightning”
+
+⸻
+
+SCORE
+Populate `score` using these rules exactly:
+
+If the recap is a completed event with a final team score, set `score` as a string using league-specific ordering:
+
+Soccer leagues (`premierleague`, `mls`, `uefachampionsleague`, `laliga`, `seriea`, `bundesliga`, `ligue1`, `ligamx`, `facup`, `nwsl`, `uefaeuropaleague`, `uefaconferenceleague`, `carabaocup`, `coupedefrance`, `shebelievescup`, `scottishcup`):
+"score": "<homeTeamDisplay> <homeScore> - <awayTeamDisplay> <awayScore>"
+
+All other scored team leagues:
+"score": "<awayTeamDisplay> <awayScore> - <homeTeamDisplay> <homeScore>"
+
+`teams.away` and `teams.home` must remain true away/home roles, and score values must match those roles.
+
+Team display naming rule for `score`:
+- `nba`, `nhl`, `mlb`: use mascot-only names.
+- `ncaam`, `ncaaw`, `ncaabaseball`, `ncaasoftball`: use school-name-only (no mascot/nickname).
+- All other leagues: use full team/country names.
+
+Use only official final scores.
+Do not use partial/live/in-progress scores.
+
+If the event has no single final team-vs-team score (golf, racing, many tournament-format recaps, etc.), set:
+"score": null
+
+`score` must be either:
+- a formatted string following the rules above, or
+- JSON null (never "null").
+
+⸻
+
+MORNING BRIEF PARAGRAPH
+
+Write one paragraph summarizing the game in a sportswriter morning-brief style.
+
+The paragraph should:
+
+• explain the main storyline
+• feel conversational and human
+• explain why the game mattered
+
+Do not include play-by-play narration.
+
+⸻
+
+BULLETS
+
+Provide 3–5 bullet points highlighting the most interesting facts from the recap.
+
+These may include:
+
+• player performances
+• key statistics
+• streaks
+• standings impact
+• unusual moments
+• milestones or records
+
+Each bullet should include specific stats when available.
+
+⸻
+
+CONTEXT
+
+Provide one short sentence explaining the broader significance of the game.
+
+Examples:
+
+• playoff race impact
+• record milestone
+• major streak
+• injury impact
+
+If no meaningful context exists:
+
+“context”: null
+
+⸻
+
+GAME ID
+
+Extract the gameId from the recap URL.
+
+Example:
+
+https://www.espn.com/nhl/recap/_/gameId/401803310
+
+“id”: “401803310”
+
+⸻
+
+TEAMS
+
+Identify the away and home teams from the article text and populate:
+
+“teams”: {
+“away”: “”,
+“home”: “”
+}
+
+⸻
+
 OUTPUT FORMAT
-Return one league object in this exact structure:
+
+Return ONLY valid JSON.
+
+One file per league.
+
+Structure:
 
 {
-"leagueName": "",
-"leagueKey": "",
-"sourceType": "console_recaps",
-"leagueBriefing": "",
-"games": [
+“leagueName”: “”,
+“leagueKey”: “”,
+“sourceType”: “console_recaps”,
+“leagueBriefing”: “”,
+“games”: [
 {
-"id": "",
-"teams": {
-"away": "",
-"home": ""
+“id”: “”,
+“teams”: {
+“away”: “”,
+“home”: “”
 },
-"headline": "",
-"score": "",
-"brief": "",
-"bullets": [],
-"context": "",
-"recapStatus": "ok",
-"source": {
-"recapUrl": ""
+“headline”: “”,
+“score”: “”,
+“brief”: “”,
+“bullets”: [],
+“context”: “”,
+“recapStatus”: “ok”,
+“source”: {
+“recapUrl”: “”
 },
-"highlights": [
+“highlights”: [
 {
 "provider": "youtube",
 "videoId": "",
 "title": "",
 "url": "",
 "embedUrl": ""
-}
-]
+}]
 }
 ]
 }
 
----
+⸻
+
+LEAGUE BRIEFING
+
+Write a 1–2 sentence briefing summarizing the biggest storylines across all games in this league tonight.
+
+Examples:
+
+• major win streaks
+• huge performances
+• playoff implications
+• division race changes
+
+⸻
+
 IMPORTANT
-- Output ONLY a single fenced JSON code block (`json`) for one-click copy/paste.
-- Do not output any text before or after the code block.
-- Do not include explanations or commentary.
-- Ensure valid JSON (no trailing commas).
 
-LEAGUE NAME (STRICT)
-- The top-level `leagueName` field is REQUIRED and must never be missing.
-- `leagueName` must be a non-empty string.
-- `leagueName` must exactly match the value provided after `Do all games in these leagues:`.
-- Do not infer, shorten, or rename the league name.
+Return JSON ONLY.
 
-LEAGUE KEY (STRICT)
-- The top-level `leagueKey` field is REQUIRED and must never be missing.
-- `leagueKey` must be a non-empty lowercase slug string.
-- Derive `leagueKey` from `leagueName` using the soccer mapping table below.
-- If `leagueName` is in the mapping table, you MUST use the mapped `leagueKey` exactly.
+Do not include explanations.
 
-SOCCER LEAGUE NAME -> LEAGUE KEY MAPPING
-- Premier League -> `premierleague`
-- MLS -> `mls`
-- UEFA Champions League -> `uefachampionsleague`
-- UEFA Europa League -> `uefaeuropaleague`
-- LaLiga -> `laliga`
-- Serie A -> `seriea`
-- Bundesliga -> `bundesliga`
-- FA Cup -> `facup`
-- Liga MX -> `ligamx`
-- NWSL -> `nwsl`
-- Ligue 1 -> `ligue1`
-- UEFA Conference League -> `uefaconferenceleague`
-- SPFL -> `scottishpremiership`
-- Carabao Cup -> `carabaocup`
+Do not include markdown.
 
-HIGHLIGHTS FORMAT (STRICT)
-- Every game MUST include `highlights` as an array with at least 1 object.
-- Always use this exact object shape and key order:
-	{
-		"provider": "youtube",
-		"videoId": "",
-		"title": "",
-		"url": "",
-		"embedUrl": ""
-	}
-- If no highlight URL is available yet, DO NOT omit `highlights`, DO NOT use `null`, and DO NOT use `[]`.
-- In that case, keep `provider` as `"youtube"` and leave `videoId`, `title`, `url`, and `embedUrl` as empty strings.
-- Do not add extra keys to highlight objects.
+Do not include commentary.
 
-COMPLETENESS REQUIREMENTS (MANDATORY)
-- Process the full game list on the page, not just featured matchups.
-- Determine `EXPECTED_GAME_COUNT` from the page before writing output.
-- Search for recap coverage for every listed game.
-- If a game has no recap available at all, skip that game and do not write it to JSON output.
-- Only skip after a thorough search attempt.
+Important: Give results in JSON code block (so I can copy with one click)
 
-PAGE COVERAGE STEPS
-- Scan the full page, including expandable sections and any "show more" areas.
-- Use targeted search queries with both teams + date + league for each game.
-- Prioritize official league/team sites and major sports outlets.
-
-FINAL SELF-CHECK (SILENT, BEFORE OUTPUT)
-1. Did I attempt all listed games from the page?
-2. For each missing game, did I confirm no recap was available at all?
-3. Does every included game object contain all required schema fields?
-4. Is top-level `leagueName` present, non-empty, and exactly equal to the provided `Do all games in these leagues:` value?
-5. Is top-level `leagueKey` present, non-empty, and correctly mapped from `leagueName` per the mapping table?
-6. Is the output valid JSON in one fenced `json` code block with no extra text?
-
-Do all these games, for leagueName
+Here's the data for this exact leagueName (use the name that follows exactly as leagueName in your json output):

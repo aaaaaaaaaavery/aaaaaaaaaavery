@@ -3,39 +3,5 @@
   "leagueKey": "facup",
   "sourceType": "console_recaps",
   "leagueBriefing": "West Ham United secured a spot in the FA Cup quarter-finals for the first time in a decade, overcoming Brentford in a dramatic penalty shootout at the London Stadium after a hard-fought 2-2 draw.",
-  "games": [
-    {
-      "id": "697495",
-      "teams": {
-        "away": "Brentford",
-        "home": "West Ham United"
-      },
-      "headline": "Mavropanos converts winning penalty as West Ham edge Brentford in shootout thriller",
-      "score": "West Ham United 2 - 2 Brentford",
-      "brief": "In a pulsating fifth-round encounter, West Ham United outlasted Brentford in a penalty shootout to set up a quarter-final clash with Leeds United. Jarrod Bowen twice put the Hammers ahead, first with a clinical close-range finish and then from the penalty spot, but each time the Bees responded through braces from Igor Thiago. After a scoreless extra-time period, the match was decided by Dango Ouattara's failed Panenka attempt, which Alphonse Areola comfortably saved. Konstantinos Mavropanos then stepped up to fire home the decisive spot-kick, sparking wild celebrations in East London as the Hammers remained perfect in the shootout.",
-      "bullets": [
-        "Jarrod Bowen scored his seventh career goal against Brentford, the most he has scored against any single opponent.",
-        "Igor Thiago reached 20 goals for the season in all competitions with his second-half penalty equalizer.",
-        "Alphonse Areola was the hero of the shootout, standing his ground to catch Dango Ouattara's attempted chip down the middle.",
-        "The victory marks West Ham's first trip to the FA Cup quarter-finals since the 2015/16 season.",
-        "West Ham converted all five of their penalties (Bowen, Castellanos, Wilson, Souček, and Mavropanos) to win the shootout 5-3."
-      ],
-      "context": "The win propels West Ham into a home quarter-final against Leeds United and keeps their hopes of silverware alive.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://whufc.com/en/news/match-report-or-spot-on-hammers-win-dramatic-shootout-to-progress-to-fa-cup"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "rv-1q1PfX-8",
-          "title": "INSANE penalties send Hammers through! ⚒️ | West Ham (2-2) Brentford | Emirates FA Cup 2025-26",
-          "url": "https://www.youtube.com/watch?v=rv-1q1PfX-8",
-          "embedUrl": "https://www.youtube.com/embed/rv-1q1PfX-8",
-          "publishedAt": "2026-03-10T12:01:29Z",
-          "matchScore": 100
-        }
-      ]
-    }
-  ]
+  "games": []
 }

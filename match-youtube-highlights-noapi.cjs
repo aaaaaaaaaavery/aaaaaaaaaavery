@@ -4,6 +4,16 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
+const DEFAULT_SOURCE_BY_LEAGUE = {
+  CONCACAFCHAMPIONSCUP: 'https://www.youtube.com/playlist?list=PL6XTKrlgbQUBtOk2ji7hvg_4jVIUP-Kl2',
+  UEFACHAMPIONSLEAGUE: 'https://www.youtube.com/playlist?list=PLkwBiY2Dq-oaG6vHAhmcCOc3Q_-To2dlA',
+};
+
+const DEFAULT_TITLE_MUST_INCLUDE_BY_LEAGUE = {
+  CONCACAFCHAMPIONSCUP: 'concacaf champions cup',
+  UEFACHAMPIONSLEAGUE: 'ucl',
+};
+
 function parseArgs(argv) {
   const args = {};
   for (let i = 2; i < argv.length; i += 1) {
@@ -61,6 +71,33 @@ function parseDateToIso(input) {
 
   return null;
 }
+
+function getRecentIsoDatesNY() {
+  const now = new Date();
+  const todayStr = now.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'America/New_York',
+  });
+  const todayIso = parseDateToIso(todayStr);
+  if (!todayIso) return new Set();
+
+  const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+  const yesterdayStr = yesterday.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'America/New_York',
+  });
+  const yesterdayIso = parseDateToIso(yesterdayStr);
+
+  const out = new Set([todayIso]);
+  if (yesterdayIso) out.add(yesterdayIso);
+  return out;
+}
+
+const WBC_ALLOWED_VIDEO_DATES = getRecentIsoDatesNY();
 
 function includesPhrase(haystackNorm, phraseNorm) {
   if (!phraseNorm) return false;
@@ -162,7 +199,7 @@ function fetchVideosWithYtDlp(sourceUrl) {
     .filter((v) => v.videoId && v.title);
 }
 
-function pickBestTeamVideo(game, videos, targetDateIso, titleMustIncludeNorm) {
+function pickBestTeamVideo(game, videos, targetDateIso, titleMustIncludeNorm, leagueKeyNorm) {
   const awayKeys = teamNameKeys(game?.teams?.away);
   const homeKeys = teamNameKeys(game?.teams?.home);
   const scoreCodes = parseScoreTeamCodes(game?.score);
@@ -182,8 +219,14 @@ function pickBestTeamVideo(game, videos, targetDateIso, titleMustIncludeNorm) {
     const homeHit = homeKeys.some((k) => includesPhrase(titleNorm, k));
     if (!awayHit || !homeHit) continue;
 
-    // Required: same date for team-based games.
-    if (!targetDateIso || v.uploadDateIso !== targetDateIso) continue;
+    // WBC uploads can land today or yesterday in ET regardless of game date parsing.
+    const isWbc = String(leagueKeyNorm || '').toUpperCase() === 'WBC';
+    if (isWbc) {
+      if (!v.uploadDateIso || !WBC_ALLOWED_VIDEO_DATES.has(v.uploadDateIso)) continue;
+    } else {
+      // Required: same date for team-based games.
+      if (!targetDateIso || v.uploadDateIso !== targetDateIso) continue;
+    }
 
     let score = 100;
     if (includesPhrase(titleNorm, normalizeText(game?.teams?.away))) score += 5;
@@ -210,18 +253,23 @@ function pickBestTeamVideo(game, videos, targetDateIso, titleMustIncludeNorm) {
 function main() {
   const args = parseArgs(process.argv);
   const jsonPathArg = args.json;
-  const channelUrl = args.channelUrl || args.channel;
   const dateInput = args.date || '';
   const usePerGameDate = String(args.usePerGameDate || '').toLowerCase() === 'true';
-  const titleMustIncludeNorm = normalizeText(args.titleMustInclude || '');
+  let titleMustIncludeNorm = normalizeText(args.titleMustInclude || '');
 
   if (!jsonPathArg) throw new Error('Missing --json path');
-  if (!channelUrl) throw new Error('Missing --channelUrl');
 
   const jsonPath = path.resolve(process.cwd(), jsonPathArg);
   const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
   const games = Array.isArray(data?.games) ? data.games : null;
   if (!games) throw new Error('Expected object with games[]');
+  const leagueKeyNorm = String(data?.leagueKey || '').toUpperCase();
+  const channelUrl = args.channelUrl || args.channel || DEFAULT_SOURCE_BY_LEAGUE[leagueKeyNorm] || '';
+  if (!channelUrl) throw new Error('Missing --channelUrl (and no default source for this league).');
+
+  if (!titleMustIncludeNorm) {
+    titleMustIncludeNorm = normalizeText(DEFAULT_TITLE_MUST_INCLUDE_BY_LEAGUE[leagueKeyNorm] || '');
+  }
 
   const globalTargetDateIso = parseDateToIso(dateInput);
   const videos = fetchVideosWithYtDlp(channelUrl);
@@ -229,7 +277,7 @@ function main() {
   let matched = 0;
   for (const game of games) {
     const targetDateIso = usePerGameDate ? parseGameDateIso(game) : globalTargetDateIso;
-    const best = pickBestTeamVideo(game, videos, targetDateIso, titleMustIncludeNorm);
+    const best = pickBestTeamVideo(game, videos, targetDateIso, titleMustIncludeNorm, leagueKeyNorm);
     if (best) {
       game.highlights = [best];
       matched += 1;

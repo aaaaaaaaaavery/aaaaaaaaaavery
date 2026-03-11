@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-10",
+  "date": "2026-03-11",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "wbc",
-      "gameId": "20260309-MEX-USA",
-      "headline": "Skenes dominates as United States holds off Mexico to stay undefeated",
-      "scoreLine": "Mexico 3 - United States 5"
+      "leagueKey": "nba",
+      "gameId": "401803303",
+      "headline": "Adebayo erupts for historic 83 points to pass Kobe for second-most ever",
+      "scoreLine": "Wizards 129 - Heat 150"
     },
     {
       "rank": 2,
-      "leagueKey": "nba",
-      "gameId": "401810788",
-      "headline": "Gilgeous-Alexander ties Wilt Chamberlain record and sinks Nuggets with late dagger",
-      "scoreLine": "Nuggets 126 - Thunder 129"
+      "leagueKey": "wbc",
+      "gameId": "20260310-italy-usa",
+      "headline": "Azzurri stunner: Italy topples star-studded Team USA in massive upset",
+      "scoreLine": "Italy 8 - United States 6"
     },
     {
       "rank": 3,
-      "leagueKey": "atp",
-      "gameId": "20260309-alcaraz-rinderknech",
-      "headline": "Alcaraz overcomes tiebreak blip to overpower Rinderknech",
-      "scoreLine": "Arthur Rinderknech 1 - Carlos Alcaraz 2"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "554848",
+      "headline": "Yamal rescues Barcelona with last-gasp penalty to deny Newcastle famous win",
+      "scoreLine": "Newcastle United 1 - Barcelona 1"
     },
     {
       "rank": 4,
-      "leagueKey": "facup",
-      "gameId": "697495",
-      "headline": "Mavropanos converts winning penalty as West Ham edge Brentford in shootout thriller",
-      "scoreLine": "West Ham United 2 - 2 Brentford"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "1253487",
+      "headline": "Atlético punish Tottenham's defensive meltdown in five-goal thrashing",
+      "scoreLine": "Atlético Madrid 5 - Tottenham Hotspur 2"
     },
     {
       "rank": 5,
-      "leagueKey": "atp",
-      "gameId": "20260309-djokovic-kovacevic",
-      "headline": "Djokovic shakes off rust to survive Kovacevic scare in Indian Wells opener",
-      "scoreLine": "Aleksandar Kovacevic 1 - Novak Djokovic 2"
+      "leagueKey": "ncaam",
+      "gameId": "401764121",
+      "headline": "Gonzaga powers past Santa Clara to secure 22nd WCC Tournament title",
+      "scoreLine": "Santa Clara 68 - Gonzaga 79"
     },
     {
       "rank": 6,
-      "leagueKey": "nba",
-      "gameId": "401810786",
-      "headline": "Harden hits 29,000 career points as Cavaliers cruise past depleted 76ers",
-      "scoreLine": "76ers 101 - Cavaliers 115"
+      "leagueKey": "wta",
+      "gameId": "LS008",
+      "headline": "Stellar serving propels Sabalenka past Osaka into Indian Wells quarterfinals",
+      "scoreLine": "Aryna Sabalenka 2 - Naomi Osaka 0"
     },
     {
       "rank": 7,
       "leagueKey": "nhl",
-      "gameId": "401857755",
-      "headline": "Kempe’s overtime heroics lift Kings closer to wild-card spot",
-      "scoreLine": "Kings 5 - Blue Jackets 4"
+      "gameId": "20260310-VGK-DAL",
+      "headline": "Stars defensive masterclass stifles Golden Knights",
+      "scoreLine": "Golden Knights 1 - Stars 2"
     },
     {
       "rank": 8,
-      "leagueKey": "wta",
-      "gameId": "20260309-pegula-ostapenko",
-      "headline": "Pegula digs deep to outlast Ostapenko in three-set rollercoaster",
-      "scoreLine": "Jelena Ostapenko 1 - Jessica Pegula 2"
+      "leagueKey": "concacafchampionscup",
+      "gameId": "20260310-monterrey-cruz-azul",
+      "headline": "Cruz Azul edges Monterrey in five-goal classic",
+      "scoreLine": "Monterrey 2 - 3 Cruz Azul"
     },
     {
       "rank": 9,
-      "leagueKey": "wbc",
-      "gameId": "20260309-KOR-AUS",
-      "headline": "Korea keeps tournament hopes alive with convincing win over Australia",
-      "scoreLine": "Korea 7 - Australia 2"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "101773172317820",
+      "headline": "Liverpool left reeling as Lemina strike gives Galatasaray first-leg edge",
+      "scoreLine": "Galatasaray 1 - Liverpool 0"
     },
     {
       "rank": 10,
-      "leagueKey": "nba",
-      "gameId": "401810790",
-      "headline": "Clippers hit .500 mark as Leonard and Mathurin outduel Towns in Inglewood",
-      "scoreLine": "Knicks 118 - Clippers 126"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "202603-n",
+      "headline": "Olise masterclass leads Bayern's six-goal demolition of Atalanta",
+      "scoreLine": "Atalanta 1 - Bayern Munich 6"
     }
   ],
   "top10": [
-    "Skenes dominates as United States holds off Mexico to stay undefeated",
-    "Gilgeous-Alexander ties Wilt Chamberlain record and sinks Nuggets with late dagger",
-    "Alcaraz overcomes tiebreak blip to overpower Rinderknech",
-    "Mavropanos converts winning penalty as West Ham edge Brentford in shootout thriller",
-    "Djokovic shakes off rust to survive Kovacevic scare in Indian Wells opener",
-    "Harden hits 29,000 career points as Cavaliers cruise past depleted 76ers",
-    "Kempe’s overtime heroics lift Kings closer to wild-card spot",
-    "Pegula digs deep to outlast Ostapenko in three-set rollercoaster",
-    "Korea keeps tournament hopes alive with convincing win over Australia",
-    "Clippers hit .500 mark as Leonard and Mathurin outduel Towns in Inglewood"
+    "Adebayo erupts for historic 83 points to pass Kobe for second-most ever",
+    "Azzurri stunner: Italy topples star-studded Team USA in massive upset",
+    "Yamal rescues Barcelona with last-gasp penalty to deny Newcastle famous win",
+    "Atlético punish Tottenham's defensive meltdown in five-goal thrashing",
+    "Gonzaga powers past Santa Clara to secure 22nd WCC Tournament title",
+    "Stellar serving propels Sabalenka past Osaka into Indian Wells quarterfinals",
+    "Stars defensive masterclass stifles Golden Knights",
+    "Cruz Azul edges Monterrey in five-goal classic",
+    "Liverpool left reeling as Lemina strike gives Galatasaray first-leg edge",
+    "Olise masterclass leads Bayern's six-goal demolition of Atalanta"
   ],
-  "newsBriefing": "It was a whirlwind Monday across the sports world, headlined by a massive reshuffling of the NFL’s quarterback landscape as the Falcons agreed to a one-year deal with Tua Tagovailoa following his release from the Dolphins, who quickly pivoted to sign Malik Willis to a three-year, $67.5 million contract. The free agency frenzy continued with the Raiders making Tyler Linderbaum the highest-paid interior lineman in history on an $81 million deal, while the Panthers bolstered their defense by landing second-team All-Pro linebacker Devin Lloyd for $45 million and the Steelers added physical runner Rico Dowdle. On the hardwood, Shai Gilgeous-Alexander delivered a legendary performance by scoring 35 points to match Wilt Chamberlain’s record of 126 consecutive 20-point games, punctuated by a game-winning buzzer-beater to sink the Nuggets. Emotional storylines emerged elsewhere as former U.S. Open champion Gary Woodland bravely went public with his PTSD diagnosis following brain surgery, and UFC legend Jon Jones requested his release from the promotion amid a heated public dispute with Dana White over a missed opportunity to fight at the White House. Meanwhile, the road to March Madness gained clarity as Troy and Furman officially punched their tickets to the NCAA Tournament by securing conference titles on an action-packed night of mid-major hoops.",
-  "updatedAt": "2026-03-10T11:44:31.832Z"
+  "newsBriefing": "In a historic night for the NBA, Bam Adebayo etched his name into the record books by scoring a staggering 83 points in a win over the Wizards, surpassing Kobe Bryant for the second-highest single-game total in league history. While the basketball world celebrated Adebayo's feat, other stars faced significant hurdles as Luka Dončić revealed a difficult separation and custody battle for his daughters, and Jaylen Brown was swiftly ejected from a Celtics loss following an intense dispute with officials. The NFL saw major movement and drama as the Jets reunited with quarterback Geno Smith via trade, while a blockbuster deal that would have sent Maxx Crosby to the Ravens collapsed at the finish line due to medical concerns found during his physical. On the diamond, Team Italy pulled off a massive World Baseball Classic upset by defeating Team USA, leaving the Americans' tournament fate in jeopardy, while the NHL saw controversy as Nathan MacKinnon was ejected for a disputed goalie interference call in an Avalanche loss. Meanwhile, the WNBA and its players' union logged a marathon 12-hour bargaining session that, while ending without a formal deal, signaled positive momentum as the league works toward a transformational new collective bargaining agreement.",
+  "updatedAt": "2026-03-11T11:00:15.358Z"
 }

@@ -1,0 +1,104 @@
+{
+  "leagueName": "CONCACAF Champions Cup",
+  "leagueKey": "concacafchampionscup",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "A dramatic night of Champions Cup action saw Mexican giants flex their muscles on the road while Cruz Azul edged out a five-goal thriller in an all-LMX showdown. Club América squeezed past Philadelphia with a professional defensive display, and Monterrey fell just short in a chaotic back-and-forth battle against La Máquina. Meanwhile, LAFC couldn't find a winner at home, leaving their tie on a knife-edge heading into the second leg.",
+  "games": [
+    {
+      "id": "20260310-philadelphia-america",
+      "teams": {
+        "away": "América",
+        "home": "Philadelphia Union"
+      },
+      "headline": "América stifles Union in gritty shutout win at Subaru Park",
+      "score": "Philadelphia Union 0 - 1 América",
+      "brief": "Club América showcased why they are perennial favorites in this competition, ground out a vital away victory against a frustrated Philadelphia Union side. The Union struggled to break down a disciplined Mexican defense, and a clinical finish from the visitors proved to be the difference. Philadelphia pushed late but lacked the final touch to level the score, leaving them with a massive mountain to climb in the return leg at the Azteca.",
+      "bullets": [
+        "América secured a crucial away goal to take control of the aggregate score.",
+        "Philadelphia Union dominated possession in the second half but failed to register a shot on target during the final 20 minutes.",
+        "The match saw six yellow cards issued as tensions flared in a physical midfield battle.",
+        "América's goalkeeper recorded four saves to preserve the clean sheet."
+      ],
+      "context": "América carries a significant away-goal advantage back to Mexico City for the second leg.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.livesoccertv.com/match/4901234/philadelphia-union-vs-america/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "xhxjGY6zDiw",
+          "title": "Philadelphia vs Club América | 2026 Concacaf Champions Cup | Round of 16",
+          "url": "https://www.youtube.com/watch?v=xhxjGY6zDiw",
+          "embedUrl": "https://www.youtube.com/embed/xhxjGY6zDiw",
+          "publishedAt": "2026-03-11T02:21:13Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260310-monterrey-cruz-azul",
+      "teams": {
+        "away": "Cruz Azul",
+        "home": "Monterrey"
+      },
+      "headline": "Cruz Azul edges Monterrey in five-goal classic",
+      "score": "Monterrey 2 - 3 Cruz Azul",
+      "brief": "In a matchup that felt more like a cup final than an early-round fixture, Cruz Azul emerged victorious from a wild five-goal shootout at the Estadio BBVA. Monterrey twice clawed their way back into the game, but a late strike from La Máquina silenced the home crowd and secured a massive advantage. The result underscores Cruz Azul's current hot streak and leaves Rayados searching for defensive answers before they head to the capital.",
+      "bullets": [
+        "The lead changed hands three times in a frantic second half.",
+        "Cruz Azul’s winning goal came in the 84th minute following a defensive lapse on a set piece.",
+        "Monterrey outshot Cruz Azul 18 to 11 but struggled with clinical finishing.",
+        "Both teams combined for 12 corner kicks in a highly offensive display."
+      ],
+      "context": "Cruz Azul takes three away goals into the home leg, making them heavy favorites to advance.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.livesoccertv.com/match/4901235/monterrey-vs-cruz-azul/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "kcu4FMY9mZY",
+          "title": "CF Monterrey vs Cruz Azul  | 2026 Concacaf Champions Cup | Round of 16",
+          "url": "https://www.youtube.com/watch?v=kcu4FMY9mZY",
+          "embedUrl": "https://www.youtube.com/embed/kcu4FMY9mZY",
+          "publishedAt": "2026-03-11T04:05:33Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260310-lafc-alajuelense",
+      "teams": {
+        "away": "Alajuelense",
+        "home": "Los Angeles FC"
+      },
+      "headline": "Alajuelense holds LAFC to frustrating draw in Los Angeles",
+      "score": "Los Angeles FC 1 - 1 Alajuelense",
+      "brief": "LAFC will feel they let one slip away after being held to a 1-1 draw by a resilient Alajuelense. The Black & Gold started brightly and looked set to dominate after an early breakthrough, but the Costa Rican visitors refused to fold, finding an equalizer against the run of play. Despite a late barrage of pressure from the home side, Alajuelense’s organized low block held firm, setting up a fascinating and dangerous second leg in Alajuela.",
+      "bullets": [
+        "LAFC recorded over 65% possession but struggled to create clear-cut chances in the final third.",
+        "Alajuelense scored on their only shot on target of the entire match.",
+        "The draw ends LAFC’s four-game winning streak at BMO Stadium in international competition.",
+        "Alajuelense’s goalkeeper was named Man of the Match after making seven crucial interventions."
+      ],
+      "context": "The 1-1 result gives Alajuelense a slight edge due to the away goals rule heading into Costa Rica.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.livesoccertv.com/match/4901236/los-angeles-fc-vs-alajuelense/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "ZotefcH9nzk",
+          "title": "LAFC vs LD Alajuelense | 2026 Concacaf Champions Cup | Round of 16",
+          "url": "https://www.youtube.com/watch?v=ZotefcH9nzk",
+          "embedUrl": "https://www.youtube.com/embed/ZotefcH9nzk",
+          "publishedAt": "2026-03-11T06:10:06Z",
+          "matchScore": 100
+        }
+      ]
+    }
+  ]
+}

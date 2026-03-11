@@ -1,0 +1,136 @@
+{
+  "leagueName": "UEFA Champions League",
+  "leagueKey": "uefachampionsleague",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "A night of extremes in the Champions League saw Bayern Munich and Atlético Madrid essentially punch their tickets to the quarterfinals with dominant first-leg displays, while Liverpool suffered a frustrating setback in Turkey and Newcastle came seconds away from a historic upset against Barcelona.",
+  "games": [
+    {
+      "id": "554848",
+      "teams": {
+        "away": "Barcelona",
+        "home": "Newcastle United"
+      },
+      "headline": "Yamal rescues Barcelona with last-gasp penalty to deny Newcastle famous win",
+      "score": "Newcastle United 1 - Barcelona 1",
+      "brief": "St. James' Park was ready to celebrate one of its greatest European nights after Harvey Barnes broke the deadlock in the 86th minute, but the party was cut short in the cruelest fashion. Deep into stoppage time, a clumsy challenge by Malick Thiaw gifted Barcelona a penalty, which teenage star Lamine Yamal calmly converted with the final kick of the game. It was a heartbreaking end for a Newcastle side that had outplayed the Spanish giants for long stretches, leaving the tie on a knife-edge heading back to Spain.",
+      "bullets": [
+        "Harvey Barnes scored his 14th goal of the season in all competitions with a clinical 86th-minute volley.",
+        "Lamine Yamal's equalizer at 95:50 was Barcelona's second-latest goal in Champions League history (excluding extra time).",
+        "Newcastle's Lewis Hall was named Man of the Match after creating a game-high five chances while silencing Yamal for most of the night.",
+        "The Magpies had a Joelinton goal ruled out for offside in the 76th minute after a VAR review."
+      ],
+      "context": "Barcelona holds a slight psychological edge heading to the second leg at Camp Nou, while Newcastle must now win away to advance.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.skysports.com/football/newcastle-vs-barcelona/report/554848"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "7_bqfwoD-eQ",
+          "title": "Newcastle United vs. Barcelona: Extended Highlights | UCL Round of 16 - Leg 1 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=7_bqfwoD-eQ",
+          "embedUrl": "https://www.youtube.com/embed/7_bqfwoD-eQ",
+          "publishedAt": "2026-03-10T22:13:38Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "101773172317820",
+      "teams": {
+        "away": "Liverpool",
+        "home": "Galatasaray"
+      },
+      "headline": "Liverpool left reeling as Lemina strike gives Galatasaray first-leg edge",
+      "score": "Galatasaray 1 - Liverpool 0",
+      "brief": "Liverpool’s difficult season hit another low point in the hostile 'hell' of RAMS Park, where an early Mario Lemina header proved enough to sink the six-time champions. Arne Slot's 100th game in charge of the Reds was one to forget, as his side lacked any real attacking rhythm and looked vulnerable to every Turkish counter-attack. While Liverpool dominated possession in the second half, they couldn't find a way past Ugurcan Cakir, leaving them needing another famous Anfield comeback to stay in the competition.",
+      "bullets": [
+        "Mario Lemina scored the game's only goal in the 7th minute with a diving header following a Victor Osimhen flick-on.",
+        "Mohamed Salah made his 81st Champions League appearance for Liverpool, a new club record, but was subbed off after a quiet 60 minutes.",
+        "A 70th-minute Liverpool goal was overturned by VAR after Ibrahima Konate was judged to have used his arm in the buildup.",
+        "Galatasaray extended their unbeaten run in home European knockout matches to 11 games dating back to 1973."
+      ],
+      "context": "Liverpool must win by two goals at Anfield next week to avoid their earliest European exit since 2023.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.hindustantimes.com/sports/others/liverpool-rocked-by-galatasaray-defeat-in-champions-league-last-16-first-leg-101773172317820.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "fLmBupmBqyY",
+          "title": "Galatasaray vs. Liverpool: Extended Highlights | UCL Round of 16 - Leg 1 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=fLmBupmBqyY",
+          "embedUrl": "https://www.youtube.com/embed/fLmBupmBqyY",
+          "publishedAt": "2026-03-10T20:07:51Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "202603-n",
+      "teams": {
+        "away": "Bayern Munich",
+        "home": "Atalanta"
+      },
+      "headline": "Olise masterclass leads Bayern's six-goal demolition of Atalanta",
+      "score": "Atalanta 1 - Bayern Munich 6",
+      "brief": "Vincent Kompany’s Bayern Munich turned a potentially tricky trip to Bergamo into a statement of intent, dismantling Atalanta with a ruthless display of attacking football. Even with Harry Kane starting on the bench, the German giants were untouchable, racing to a 3-0 lead within 25 minutes. Michael Olise was the architect of the destruction, involved in nearly every goal as Bayern exposed Atalanta's man-marking system with clinical precision. The result effectively ends the tie before the second leg in Munich has even begun.",
+      "bullets": [
+        "Michael Olise scored twice and provided an assist, reaching 36 goal contributions across all competitions this season.",
+        "Bayern registered 14 shots on goal in the first half alone, while Atalanta managed just two.",
+        "Substitute Nicolas Jackson and starlet Jamal Musiala added second-half goals to complete the rout.",
+        "The victory was slightly marred by an injury to Bayern goalkeeper Jonas Urbig during Atalanta's late consolation goal."
+      ],
+      "context": "Bayern Munich has essentially secured a quarterfinal spot, marking their 14th appearance in the final eight over the last 16 seasons.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://en.as.com/soccer/atalanta-vs-bayern-munich-live-online-score-stats-goals-updates-champions-league-round-of-16-first-leg-202526-f202603-n/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "Oz4kEhWT9YQ",
+          "title": "Atalanta vs. Bayern Munich: Extended Highlights | UCL Round of 16 - Leg 1 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=Oz4kEhWT9YQ",
+          "embedUrl": "https://www.youtube.com/embed/Oz4kEhWT9YQ",
+          "publishedAt": "2026-03-10T22:09:37Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "1253487",
+      "teams": {
+        "away": "Tottenham Hotspur",
+        "home": "Atlético Madrid"
+      },
+      "headline": "Atlético punish Tottenham's defensive meltdown in five-goal thrashing",
+      "score": "Atlético Madrid 5 - Tottenham Hotspur 2",
+      "brief": "Tottenham’s European return turned into a nightmare in Madrid as a series of shocking defensive errors gifted Atlético a massive first-leg advantage. Spurs keeper Antonin Kinsky had a half to forget, slipping twice to allow Julián Alvarez and Antoine Griezmann easy goals as Atlético raced into a 4-0 lead before the 25-minute mark. While Spurs showed some second-half spirit with goals from Pedro Porro and Dominic Solanke, the damage done during their early collapse looks too great to overcome.",
+      "bullets": [
+        "Julián Alvarez capitalized on two defensive blunders to score twice, including one into an empty net after just 15 minutes.",
+        "Atlético scored four goals in a blistering 16-minute span during the first half.",
+        "Dominic Solanke scored his first Champions League goal for Spurs, but the team lost midfielder João Palhinha to a late injury.",
+        "Spurs manager Igor Tudor subbed off goalkeeper Kinsky before halftime following his costly errors."
+      ],
+      "context": "Tottenham needs a three-goal victory in London to force extra time, a tall order against Simeone's disciplined defense.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.vavel.com/en-us/soccer/2026/03/10/1253487-atletico-madrid-vs-tottenham-live-score-champions-league.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "hhPAUM8f4d4",
+          "title": "Atlético Madrid vs. Tottenham: Extended Highlights | UCL Round of 16 - Leg 1 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=hhPAUM8f4d4",
+          "embedUrl": "https://www.youtube.com/embed/hhPAUM8f4d4",
+          "publishedAt": "2026-03-10T22:24:53Z",
+          "matchScore": 100
+        }
+      ]
+    }
+  ]
+}

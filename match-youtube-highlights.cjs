@@ -7,6 +7,13 @@ const https = require('https');
 const DEFAULT_PLAYLISTS_BY_LEAGUE = {
   NBA: 'PLlVlyGVtvuVlek5UOvwJaRDtuAI1FgGZf',
   WBC: 'PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L',
+  CONCACAFCHAMPIONSCUP: 'PL6XTKrlgbQUBtOk2ji7hvg_4jVIUP-Kl2',
+  UEFACHAMPIONSLEAGUE: 'PLkwBiY2Dq-oaG6vHAhmcCOc3Q_-To2dlA',
+};
+
+const DEFAULT_TITLE_MUST_INCLUDE_BY_LEAGUE = {
+  CONCACAFCHAMPIONSCUP: 'concacaf champions cup',
+  UEFACHAMPIONSLEAGUE: 'ucl',
 };
 
 function parseArgs(argv) {
@@ -399,6 +406,33 @@ function dateWithinDays(isoA, isoB, maxDays) {
   return d !== null && d <= maxDays;
 }
 
+function getRecentIsoDatesNY() {
+  const now = new Date();
+  const todayStr = now.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'America/New_York',
+  });
+  const todayIso = parseDateToIso(todayStr);
+  if (!todayIso) return new Set();
+
+  const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+  const yesterdayStr = yesterday.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'America/New_York',
+  });
+  const yesterdayIso = parseDateToIso(yesterdayStr);
+
+  const out = new Set([todayIso]);
+  if (yesterdayIso) out.add(yesterdayIso);
+  return out;
+}
+
+const WBC_ALLOWED_VIDEO_DATES = getRecentIsoDatesNY();
+
 function withinLastHours(publishedAt, maxHours) {
   if (!Number.isFinite(maxHours) || maxHours < 0) return true;
   const ts = Date.parse(String(publishedAt || ''));
@@ -578,7 +612,24 @@ function scoreMatch(
     // Team-based entries: require both teams in title and a tight date window.
     if (!awayHit || !homeHit) return -1;
 
-    const teamOnlyLeagues = new Set(['SERIEA', 'BUNDESLIGA', 'FACUP', 'LALIGA', 'LIGAMX', 'SUPERLIG']);
+    if (leagueKeyNorm === 'WBC') {
+      const dateAllowed =
+        (publishedDateIso && WBC_ALLOWED_VIDEO_DATES.has(publishedDateIso)) ||
+        (dateInTitleIso && WBC_ALLOWED_VIDEO_DATES.has(dateInTitleIso));
+      if (!dateAllowed) return -1;
+      return score;
+    }
+
+    const teamOnlyLeagues = new Set([
+      'SERIEA',
+      'BUNDESLIGA',
+      'FACUP',
+      'LALIGA',
+      'LIGAMX',
+      'SUPERLIG',
+      'CONCACAFCHAMPIONSCUP',
+      'UEFACHAMPIONSLEAGUE',
+    ]);
     if (teamOnlyLeagues.has(leagueKeyNorm)) {
       // These playlists are matched by teams + league phrase, without hard date gating.
       return score;
@@ -800,7 +851,6 @@ async function main() {
   const jsonPathArg = args.json || args.file;
   const apiKey = args.apiKey || process.env.YOUTUBE_API_KEY;
   const dateInput = args.date || defaultDateString();
-  const titleMustIncludeNorm = normalizeText(args.titleMustInclude || '');
   const channelInput = args.channel || args.channelUrl || '';
 
   if (!jsonPathArg) {
@@ -850,6 +900,9 @@ async function main() {
 
   const globalTargetDateIso = parseDateToIso(dateInput);
   const leagueKeyNorm = String(leagueKeyForDefaults || '').toUpperCase();
+  const titleMustIncludeNorm = normalizeText(
+    args.titleMustInclude || DEFAULT_TITLE_MUST_INCLUDE_BY_LEAGUE[leagueKeyNorm] || ''
+  );
   const leagueNameNorm = normalizeText(leagueEntry?.leagueName || '');
   const maxDateDriftDaysRaw = Number(args.maxDateDriftDays);
   const maxDateDriftDaysOverride =

@@ -27,6 +27,8 @@ WBC_PLAYLIST="PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L"
 WBC_CHANNEL_URL="https://www.youtube.com/@MLB/videos"
 FACUP_CHANNEL_URL="https://www.youtube.com/@thefacup/videos"
 WTA_CHANNEL_URL="https://www.youtube.com/@WTA/videos"
+UEFA_CHAMPIONS_LEAGUE_PLAYLIST="https://www.youtube.com/playlist?list=PLkwBiY2Dq-oaG6vHAhmcCOc3Q_-To2dlA"
+CONCACAF_CHAMPIONS_CUP_PLAYLIST="https://www.youtube.com/playlist?list=PL6XTKrlgbQUBtOk2ji7hvg_4jVIUP-Kl2"
 NCAAM_PLAYLISTS="https://www.youtube.com/playlist?list=PL2RRF9GtC9s1v7L7tO5Astcl4Z8xq3BqQ,https://youtube.com/playlist?list=PLn3nHXu50t5zIzgZhRCXRsZcRIfapIxEV,https://youtube.com/playlist?list=PLhh7fyF6r5qVV2_RonsHodwkwe-GGt_Jl,https://youtube.com/playlist?list=PLSrXjFYZsRuMeW1ttMkXz4cQy9bap9fIB,https://youtube.com/playlist?list=PLmkjXprBSRGMmLrdClEpgvhPQ2DijUXG6,https://youtube.com/playlist?list=PL1Vg1LQKb_yhAKOVNRK2hCBmYuDQdf1K6,https://youtube.com/playlist?list=PLSoN6Th-EepNAj-4G-KbtcJB4w3Q__KOb"
 LIV_PLAYLIST="https://www.youtube.com/playlist?list=PLoWyc6xDZR3XkJnpIwPJfcMeO9bThLvsV"
 
@@ -210,6 +212,9 @@ run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ligue1.json" "$LIGUE1_PLA
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/facup.json" "$FACUP_PLAYLIST" "FA Cup" "fa cup"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/laliga.json" "$LALIGA_PLAYLIST" "LaLiga" "laliga"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/superlig.json" "$SUPERLIG_PLAYLIST" "Super Lig" "super lig"
+run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/uefachampionsleague.json" "$UEFA_CHAMPIONS_LEAGUE_PLAYLIST" "UEFA Champions League" "ucl"
+run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/concacafchampionscup.json" "$CONCACAF_CHAMPIONS_CUP_PLAYLIST" "CONCACAF Champions Cup" "concacaf champions cup"
+run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/tennis-wta.json" "$WTA_CHANNEL_URL" "WTA" "highlights"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/wbc.json" "$WBC_CHANNEL_URL" "WBC" "world baseball classic"
 
 echo ""
@@ -225,6 +230,9 @@ echo "- recaps-manual/daily/ligue1.json"
 echo "- recaps-manual/daily/facup.json"
 echo "- recaps-manual/daily/laliga.json"
 echo "- recaps-manual/daily/superlig.json"
+echo "- recaps-manual/daily/uefachampionsleague.json"
+echo "- recaps-manual/daily/concacafchampionscup.json"
+echo "- recaps-manual/daily/tennis-wta.json"
 echo "- recaps-manual/daily/wbc.json"
 
 if [[ "$FAILED_MATCHES" -gt 0 ]]; then

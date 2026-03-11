@@ -2,28 +2,27 @@
   "leagueName": "NCAA Softball",
   "leagueKey": "ncaasoftball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Florida's Keagan Rothrock continued her dominant run with a series sweep over Missouri, while Arkansas showcased its power with a massive run-rule victory over Missouri State. Elsewhere, Drake and Utah Valley survived late-inning drama to secure narrow wins.",
+  "leagueBriefing": "The SEC’s elite remained untouchable on Tuesday as No. 1 Tennessee and No. 6 Alabama both moved to 24-0 with convincing midweek victories. Tennessee tied its best start in school history with a run-rule win over Austin Peay, while Alabama utilized a multi-homer night from Brooke Wells to dispatch Samford. Meanwhile, No. 20 LSU snapped a losing skid with a season-high hit barrage, and No. 25 Duke made a statement on the road by outlasting No. 24 South Carolina in a ranked battle.",
   "games": [
     {
-      "id": "30711",
+      "id": "20260310-austin-peay-tennessee",
       "teams": {
-        "away": "Missouri",
-        "home": "Florida"
+        "away": "Austin Peay",
+        "home": "Tennessee"
       },
-      "headline": "Rothrock fuels sweep as Gators shut down Missouri",
-      "score": "Missouri 2 - Florida 5",
-      "brief": "Florida completed a perfect opening SEC weekend, leaning on another stellar performance from Keagan Rothrock to secure the series sweep over Missouri. Rothrock was efficient and immovable for much of the night, holding the Tigers scoreless until a late two-run single in the seventh. Offensively, the Gators did their damage early, highlighted by a Taylor Shumaker home run and timely hitting from Jocelyn Erickson to keep Missouri at arm's length.",
+      "headline": "Lady Vols tie program record with 24-0 start after run-ruling Governors",
+      "score": "Austin Peay 1 - Tennessee 9",
+      "brief": "The top-ranked Lady Vols continued their historic tear, matching the 2006 squad for the best start in program history. After Austin Peay managed to tie the game in the fourth, Tennessee's offense shifted into another gear, scoring eight unanswered runs over the final three innings to trigger the mercy rule and keep their perfect season alive.",
       "bullets": [
-        "Keagan Rothrock earned her third win of the weekend, pitching 15 of Florida's 25 total innings in the series.",
-        "Taylor Shumaker extended the lead in the fourth with her 11th home run of the season.",
-        "Jocelyn Erickson finished the series with a .417 average and five RBIs.",
-        "Missouri freshman Abby Carr drove in both Tiger runs with a two-out single in the final frame.",
-        "The sweep was Florida's first at home against Missouri since 2018."
+        "Tennessee moves to 24-0, tying the school record for consecutive wins to open a season.",
+        "Ella Dodge delivered the game's biggest blow with a bases-clearing three-run double in the fourth.",
+        "Makenzie Butt fueled the offense, going yard in the sixth to plate the final two runs.",
+        "Sophia Knight recorded her 15th multi-hit game of the season, going 3-for-4 with two runs."
       ],
-      "context": "Florida moves to 26-1 and remains unbeaten in SEC play while extending their win streak over Missouri to five games.",
+      "context": "Tennessee ties the 2006 team for the best start to a season in program history.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://floridagators.com/news/2026/3/9/softball-polishes-off-series-sweet-over-missouri"
+        "recapUrl": "https://www.secsports.com/news/2026/03/no-1-lady-volunteers-school-governors-with-elite-offense"
       },
       "highlights": [
         {
@@ -36,25 +35,24 @@
       ]
     },
     {
-      "id": "21986",
+      "id": "20260310-samford-alabama",
       "teams": {
-        "away": "Drake",
-        "home": "Colorado State"
+        "away": "Samford",
+        "home": "Alabama"
       },
-      "headline": "Drake survives epic Colorado State rally in extra-inning thriller",
-      "score": "Drake 9 - Colorado State 8",
-      "brief": "What looked like a runaway victory for Drake turned into an absolute battle in Fort Collins. After the Bulldogs built a commanding 8-2 lead, Colorado State mounted a furious six-run rally in the bottom of the seventh to force extra innings. Drake managed to regain their composure in the eighth, using a sacrifice fly from Pearson Hall to reclaim the lead and finally put away the Rams.",
+      "headline": "Wells powers Alabama to 24th straight win with two-homer night",
+      "score": "Samford 1 - Alabama 8",
+      "brief": "No. 6 Alabama showed why they are one of the most dangerous lineups in the country, using a three-homer performance to roll past Samford and maintain their undefeated status. Brooke Wells led the charge with a massive individual effort, while the Crimson Tide pitching staff held the Bulldogs to just three hits in a clinical midweek showing.",
       "bullets": [
-        "Colorado State scored six runs in the bottom of the seventh, capped by Lauren Stucky's two-run double to tie it.",
-        "Lili Gonzalez led the Bulldogs' offense with two doubles and three RBIs.",
-        "Drake's Pearson Hall drove in the winning run in the eighth inning with a sacrifice fly.",
-        "The Rams out-hit the Bulldogs 12-11 but stranded the tying run at third in the final frame.",
-        "Ashlynn Sheets earned the win in relief after stopping the Rams' seventh-inning momentum."
+        "Brooke Wells went 3-for-4 with two home runs and three RBIs, now leading the team with 10 homers.",
+        "Alexis Pupillo extended her reached-base streak to 20 games with her ninth home run of the year.",
+        "The Crimson Tide pitching staff combined for nine strikeouts, with Vic Moten earning her 10th win.",
+        "Alabama has now hit multiple home runs in six of their last seven contests."
       ],
-      "context": "The win allows Drake to finish their Colorado road trip on a high note despite the late-game defensive lapse.",
+      "context": "Alabama is now one win away from matching its fourth-best start in program history (25-0 in 2007).",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://godrakebulldogs.com/news/2026/3/9/softball-drake-takes-extra-innings-win-over-rams-in-colorado-state-tournament-finale.aspx"
+        "recapUrl": "https://rolltide.com/news/2026/3/10/softball-alabama-remains-undefeated-with-8-1-win-over-samford-tuesday-in-tuscaloosa"
       },
       "highlights": [
         {
@@ -67,25 +65,24 @@
       ]
     },
     {
-      "id": "7600",
+      "id": "20260310-west-georgia-georgia",
       "teams": {
-        "away": "Arkansas",
-        "home": "Missouri State"
+        "away": "West Georgia",
+        "home": "Georgia"
       },
-      "headline": "McDowell slams Arkansas to dominant run-rule win",
-      "score": "Arkansas 12 - Missouri State 0",
-      "brief": "Arkansas made quick work of Missouri State in Springfield, powered by a career day from Ella McDowell. The Razorbacks' offense was relentless from the start, putting up three runs in the first and five in the second before McDowell's grand slam in the third essentially ended the contest. The 12-0 victory marks the 15th time this season the Hogs have ended a game early via the run rule.",
+      "headline": "Georgia shuts down West Georgia behind multi-hit barrage",
+      "score": "West Georgia 0 - Georgia 8",
+      "brief": "No. 13 Georgia made quick work of West Georgia, using a 12-hit attack and a combined shutout from Destin Howard and Ada Little to secure a run-rule victory. The Bulldogs' offense was clinical, recording zero strikeouts as a team for the third time this season while scoring in every inning except the first.",
       "bullets": [
-        "Ella McDowell went a perfect 3-for-3 with a grand slam and six total RBIs.",
-        "This was McDowell's second consecutive game with a grand slam.",
-        "Tianna Bell hit her team-leading ninth home run of the season, a two-run shot in the second.",
-        "Arkansas out-hit Missouri State 11-4 and did not commit an error.",
-        "Pitchers Payton Burnham and Lillie-Faye McWhorter combined for the five-inning shutout."
+        "Jaydyn Goodwin led the way with a 3-for-4 night, including the game-sealing RBI single in the fifth.",
+        "Freshman Gabi Novickas blasted her second home run of the season, a two-run shot in the fourth.",
+        "Destin Howard earned her second win of the year, allowing just three hits over four dominant innings.",
+        "The Bulldogs improve to 20-7 overall after a tough opening weekend of SEC play."
       ],
-      "context": "Arkansas improves to 22-2 and has now outscored their opponents 231-47 on the season.",
+      "context": "Georgia reached the 20-win mark with the victory.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.secsports.com/news/2026/03/ella-mcdowell-leads-no-9-arkansas-to-run-rule-win-vs-missouri-state"
+        "recapUrl": "https://georgiadogs.com/news/2026/3/10/softball-no-13-bulldogs-take-down-west-georgia-8-0-5-inn-on-tuesday-night"
       },
       "highlights": [
         {
@@ -98,25 +95,114 @@
       ]
     },
     {
-      "id": "28862",
+      "id": "20260310-semo-mississippi-state-g1",
       "teams": {
-        "away": "Utah Valley",
-        "home": "UC Davis"
+        "away": "Southeast Missouri State",
+        "home": "Mississippi State"
       },
-      "headline": "Wolverines hold off late UC Davis charge in Davis",
-      "score": "Utah Valley 6 - UC Davis 5",
-      "brief": "Utah Valley jumped out to an early lead and managed to withstand a gritty comeback attempt by UC Davis to secure a narrow midweek win. The Wolverines used a balanced attack to build a 6-3 lead heading into the bottom of the sixth, where the Aggies pulled within one run. However, Utah Valley's relief pitching held firm in the seventh, leaving the tying run stranded to escape with the victory.",
+      "headline": "Ammon tosses no-hitter as Bulldogs sweep SEMO in doubleheader",
+      "score": "Southeast Missouri State 0 - Mississippi State 9",
+      "brief": "Freshman Leila Ammon etched her name into the Bulldogs' record books, throwing a five-inning no-hitter to open a dominant Tuesday sweep. The Bulldogs' bats backed her up immediately, exploding for seven runs in the first inning to effectively end the contest before the sun went down.",
       "bullets": [
-        "Utah Valley's Maddie McSorley hit a solo home run in the third and added a stolen base.",
-        "UC Davis freshman Naomi Kalanetra homered for the second straight game.",
-        "The Wolverines racked up 12 hits compared to 8 for the Aggies.",
-        "Gia Felice kept the Aggies in it with two hits, two RBIs, and a stolen base.",
-        "Payge Armendariz earned the win, while Ella Miller locked down her first save of the season."
+        "Leila Ammon threw the 27th no-hitter in program history, striking out seven in the process.",
+        "The Bulldogs completed the sweep later in the evening with a 4-0 shutout win in the nightcap.",
+        "Mississippi State improved to 26-2 overall, marking one of the strongest starts in school history.",
+        "SEMO was limited to just four hits across both games of the doubleheader."
       ],
-      "context": "The victory moves Utah Valley to 15-8 as they continue their successful California road swing.",
+      "context": "Ammon's no-hitter is the first by a Mississippi State freshman since 2021.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://ucdavisaggies.com/news/2026/3/9/softball-aggie-comeback-against-utah-valley-falls-one-run-short.aspx"
+        "recapUrl": "https://semoredhawks.com/news/2026/3/10/softball-redhawks-drop-doubleheader-to-12-mississippi-state-tuesday.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260310-lsu-nicholls",
+      "teams": {
+        "away": "LSU",
+        "home": "Nicholls"
+      },
+      "headline": "LSU snap skid with season-high hit total in rout of Nicholls",
+      "score": "LSU 12 - Nicholls 2",
+      "brief": "No. 20 LSU snapped out of an offensive funk in a big way, pounding out a season-high 14 hits to dismantle Nicholls in Thibodaux. After a winless SEC opening weekend, the Tigers' lineup saw every starter record a hit, providing a massive cushion for freshman Cali Deal in her first career start.",
+      "bullets": [
+        "Freshman Cali Deal earned her first collegiate win, allowing only one run on two hits in four innings.",
+        "Alix Franklin and Kylee Edwards both set career highs with three hits each.",
+        "Avery Hodge broke the game open with her first home run of the season, a three-run blast in the fourth.",
+        "LSU extends its winning streak to 38 consecutive games in the all-time series against Nicholls."
+      ],
+      "context": "The win ends a three-game losing streak for the Tigers and provides momentum heading into a ranked series with Texas A&M.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://lsusports.net/news/2026/03/10/no-20-lsu-routs-nicholls-12-2/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260310-hampton-virginia",
+      "teams": {
+        "away": "Hampton",
+        "home": "Virginia"
+      },
+      "headline": "Virginia explodes for 10 runs in first inning to crush Hampton",
+      "score": "Hampton 0 - Virginia 10",
+      "brief": "No. 14 Virginia didn't leave anything to chance on Tuesday, sending 14 batters to the plate in a chaotic 10-run first inning. The early barrage was more than enough for freshman Taylor Smith, who struck out a career-high seven batters in a clinical start that saw the Cavaliers reach their 23rd win of the season.",
+      "bullets": [
+        "Macee Eaton led the first-inning onslaught with an RBI double and a two-run home run in the same frame.",
+        "Taylor Smith set a new career high with seven strikeouts over 3.0 innings of one-hit work.",
+        "The Cavaliers have now hit 40 home runs as a team in 2026, with Eaton responsible for nine of them.",
+        "Virginia moves to 23-2 on the year, continuing their rise into the top 15."
+      ],
+      "context": "Virginia's 23-2 start remains one of the best in program history as they prepare for ACC play.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://virginiasports.com/news/2026/03/10/no-14-virginia-downs-hampton-in-midweek-matchup"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260310-duke-south-carolina",
+      "teams": {
+        "away": "Duke",
+        "home": "South Carolina"
+      },
+      "headline": "Duke silences Gamecocks to secure 100th road win in program history",
+      "score": "Duke 6 - South Carolina 2",
+      "brief": "In a ranked midweek battle, No. 25 Duke utilized a balanced 11-hit attack and a complete-game performance from Cassidy Curd to spoil No. 24 South Carolina's night. The victory was a significant milestone for the Blue Devils, marking their 100th true road win in program history and extending their current win streak to seven games.",
+      "bullets": [
+        "Aminah Vega led the offense with a perfect 3-for-3 night, extending her hitting streak to seven games.",
+        "Cassidy Curd improved to 9-2 on the year with her third consecutive complete-game effort.",
+        "Duke reached the milestone of 100 all-time road wins with the victory in Columbia.",
+        "South Carolina's Tori Ensley provided the only Gamecock highlights with a double and a solo home run."
+      ],
+      "context": "Duke's seventh straight win helps them climb the rankings after a statement road victory over a top-25 opponent.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://goduke.com/news/2026/3/10/softball-balanced-offense-leads-duke-to-6-2-victory-over-no-23-south-carolina"
       },
       "highlights": [
         {

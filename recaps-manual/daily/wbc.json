@@ -2,223 +2,137 @@
   "leagueName": "WBC",
   "leagueKey": "wbc",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The World Baseball Classic pool play reached a fever pitch on Monday as the United States fended off a gritty Mexico squad to stay perfect, while the Dominican Republic showcased its terrifying offensive depth in a blowout win over Israel. In Tokyo, Korea finally got into the win column with a dominant showing against Australia, keeping their tournament hopes alive in a crowded Pool B.",
+  "leagueBriefing": "The 2026 World Baseball Classic reached a fever pitch as pool play wrapped up with major implications. Italy delivered the stunner of the tournament by toppling the star-studded United States, while Japan polished off a perfect 4-0 run behind a late power surge. Canada kept its quarterfinal dreams alive in a rain-soaked thriller, and Israel bid farewell to the tournament with a pride-restoring victory over the Netherlands.",
   "games": [
     {
-      "id": "20260309-MEX-USA",
+      "id": "788111",
       "teams": {
-        "away": "Mexico",
-        "home": "United States"
+        "away": "Czechia",
+        "home": "Japan"
       },
-      "headline": "Skenes dominates as United States holds off Mexico to stay undefeated",
-      "score": "Mexico 3 - United States 5",
-      "brief": "The United States moved to 3-0 in pool play, but they had to earn every bit of it against a determined Mexican team. Paul Skenes lived up to the massive hype, carving through the Mexican lineup early, while the American bats did just enough to stay ahead. Mexico threatened late, but the U.S. bullpen slammed the door to secure a pivotal win in front of a raucous Phoenix crowd.",
+      "headline": "Murakami grand slam caps Japan's perfect pool play run",
+      "score": "Czechia 0 - Japan 9",
+      "brief": "Japan finished Pool C with a perfect 4-0 record, but for seven innings, the Tokyo Dome was on edge. Electrician-turned-pitcher Ondrej Satoria and the plucky Czech squad kept the defending champions scoreless through seven frames. The dam finally broke in the eighth when Japan erupted for nine runs, punctuated by Munetaka Murakami's first home run of the tournament—a towering grand slam that signaled the slugger's return to form just in time for the quarterfinals.",
       "bullets": [
-        "Paul Skenes earned the win with a dominant start, surrendering no runs and striking out six over four innings of work.",
-        "Garrett Whitlock earned the save, navigating a tense ninth inning to preserve the two-run lead.",
-        "Mexico out-hit the Americans 8-7, but three costly defensive errors ultimately proved to be the difference.",
-        "The U.S. offense was sparked by a balanced attack, with five different players recording an RBI."
+        "Munetaka Murakami broke his tournament slump with a massive eighth-inning grand slam.",
+        "Czech starter Ondrej Satoria silenced the Japanese bats for 4.2 innings with a fastball barely touching 80 mph.",
+        "Ukyo Shuto ignited the nine-run eighth inning with a three-run home run.",
+        "Japan's pitching staff combined for a two-hit shutout, led by Yumeto Kanemaru's winning relief effort.",
+        "Japan finishes pool play 4-0 and now heads to Miami for the knockout stage."
       ],
-      "context": "The United States clinches a spot in the quarterfinals with this victory, while Mexico faces a must-win scenario in their final pool play game.",
+      "context": "Japan clinches the top spot in Pool C and heads to Miami to face the Pool D runner-up in the quarterfinals.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/gameday/mexico-vs-united-states/2026/03/09/798939/recap"
+        "recapUrl": "https://www.mlb.com/gameday/czechia-vs-japan/2026/03/10/788111/final/box"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "-T_H3B2RkWw",
-          "title": "",
-          "url": "https://www.youtube.com/watch?v=-T_H3B2RkWw&list=PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L&index=2&pp=iAQB",
-          "embedUrl": "https://www.youtube.com/embed/-T_H3B2RkWw"
+          "videoId": "6aSvrCHMRLw",
+          "title": "Czechia VS. Japan 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=6aSvrCHMRLw",
+          "embedUrl": "https://www.youtube.com/embed/6aSvrCHMRLw",
+          "publishedAt": "2026-03-10T14:13:33Z",
+          "matchScore": 100
         }
       ]
     },
     {
-      "id": "20260309-DOM-ISR",
+      "id": "788102",
       "teams": {
-        "away": "Dominican Republic",
-        "home": "Israel"
+        "away": "Israel",
+        "home": "Netherlands"
       },
-      "headline": "Dominican Republic flexes muscles in lopsided victory over Israel",
-      "score": "Dominican Republic 10 - Israel 1",
-      "brief": "The Dominican Republic reminded the world why they are tournament favorites, dismantling Israel in a game that was never truly competitive. Brayan Bello set the tone on the mound, and the star-studded lineup followed suit, putting up ten runs on just seven hits by capitalizing on walks and timely power. It was a clinical performance that moved the D.R. to the top of Pool D.",
+      "headline": "Gelof and Mervis lead Israel to parting victory over Netherlands",
+      "score": "Israel 6 - Netherlands 2",
+      "brief": "Though both teams were already eliminated from advancing, Israel made sure their 2026 WBC exit was a memorable one. Trailing 2-1 heading into the sixth, Israel's bats woke up for a five-run outburst. Jake Gelof and Matt Mervis provided the heavy lifting with clutch RBI hits, allowing Israel to finish the tournament with a respectable 2-2 record and secured their place in the next World Baseball Classic without needing to qualify.",
       "bullets": [
-        "Brayan Bello was sharp, allowing only one run over five innings to pick up his first win of the Classic.",
-        "The Dominican offense showed incredible plate discipline, drawing eight walks to supplement their seven hits.",
-        "Israel was held to just two hits all game as the Dominican bullpen provided four innings of hitless relief.",
-        "This win marks the third straight double-digit run performance for the Dominicans in this tournament."
+        "Jake Gelof delivered the go-ahead two-run single during a decisive five-run sixth inning.",
+        "Matt Mervis added a two-run double to provide insurance for the Israeli bullpen.",
+        "The Netherlands took an early 2-0 lead in the first behind RBIs from Xander Bogaerts and Didi Gregorius.",
+        "Israel pitcher Ben Mallitz earned the win with a scoreless relief appearance.",
+        "Israel finishes third in Pool D, ensuring automatic qualification for the 2029 WBC."
       ],
-      "context": "The Dominican Republic moves to 3-0, effectively securing their path to the knockout stage.",
+      "context": "Israel finishes the tournament 2-2, while the Netherlands ends a disappointing campaign at 1-3.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/gameday/dominican-rep-vs-israel/2026/03/09/798935/recap"
+        "recapUrl": "https://www.mlb.com/gameday/israel-vs-netherlands/2026/03/10/788102/final/box"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "Ww-9Z2wNbIo",
-          "title": "Dominican Republic vs. Israel 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=Ww-9Z2wNbIo",
-          "embedUrl": "https://www.youtube.com/embed/Ww-9Z2wNbIo",
-          "publishedAt": "2026-03-09T21:33:28Z",
-          "matchScore": 121
+          "videoId": "WWoRmOxR7JA",
+          "title": "Israel vs. Netherlands 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=WWoRmOxR7JA",
+          "embedUrl": "https://www.youtube.com/embed/WWoRmOxR7JA",
+          "publishedAt": "2026-03-11T03:14:36Z",
+          "matchScore": 100
         }
       ]
     },
     {
-      "id": "20260309-KOR-AUS",
+      "id": "788132",
       "teams": {
-        "away": "Korea",
-        "home": "Australia"
-      },
-      "headline": "Korea keeps tournament hopes alive with convincing win over Australia",
-      "score": "Korea 7 - Australia 2",
-      "brief": "Facing a virtual must-win situation, Korea delivered a composed and efficient performance to take down Australia in Tokyo. Korea's hitters found the gaps early and often, racking up 10 hits to provide plenty of cushion for their pitching staff. Australia struggled to string hits together, and Korea's defense remained flawless to ensure there was no late-inning drama.",
-      "bullets": [
-        "Starting pitcher Son was brilliant, throwing four shutout innings to earn the win and lower his tournament ERA to 0.00.",
-        "Korea's lineup featured a balanced attack with seven different players recording a hit.",
-        "Australia's Luke Wells took the loss after being chased early during a four-run Korean rally.",
-        "The victory draws both teams level at 2-2 in Pool B standings."
-      ],
-      "context": "This result creates a logjam in Pool B, with tiebreaker scenarios likely to determine who advances alongside Japan.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.mlb.com/gameday/korea-vs-australia/2026/03/09/798934/recap"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "jo2Q0JGcZ24",
-          "title": "Korea vs. Australia 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=jo2Q0JGcZ24",
-          "embedUrl": "https://www.youtube.com/embed/jo2Q0JGcZ24",
-          "publishedAt": "2026-03-09T16:24:53Z",
-          "matchScore": 121
-        }
-      ]
-    },
-    {
-      "id": "20260309-COL-PAN",
-      "teams": {
-        "away": "Colombia",
-        "home": "Panama"
-      },
-      "headline": "Colombia edges Panama in a defensive duel for first Classic win",
-      "score": "Colombia 4 - Panama 3",
-      "brief": "In a tight battle between neighbors, Colombia managed to scratch out a one-run victory over Panama. It wasn't the prettiest game, with Colombia managing only four hits, but they made them count by taking advantage of Panama's missed opportunities. The Colombian bullpen stood tall in the final frames, preserving a slim lead to give the fans in Miami a classic tournament thriller.",
-      "bullets": [
-        "Hayden Bergner pitched through trouble to earn the win, striking out five over 4.2 innings.",
-        "Pedro Garcia secured his first save of the tournament with a perfect ninth inning.",
-        "Panama out-hit Colombia 7-4 but left eight runners on base during the contest.",
-        "Both teams now sit at 1-3, looking to avoid the bottom of the pool standings."
-      ],
-      "context": "Colombia avoids elimination from automatic qualification for the next WBC with this vital win.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.mlb.com/gameday/colombia-vs-panama/2026/03/09/798936/recap"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "5NA6FYMWYo0",
-          "title": "Colombia vs. Panama 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=5NA6FYMWYo0",
-          "embedUrl": "https://www.youtube.com/embed/5NA6FYMWYo0",
-          "publishedAt": "2026-03-09T20:50:41Z",
-          "matchScore": 121
-        }
-      ]
-    },
-    {
-      "id": "20260309-BRA-GBR",
-      "teams": {
-        "away": "Brazil",
-        "home": "Great Britain"
-      },
-      "headline": "Great Britain dominates Brazil to claim first victory of the tournament",
-      "score": "Brazil 1 - Great Britain 8",
-      "brief": "Great Britain put on a clinic in fundamental baseball to cruise past Brazil. Behind a stellar outing from Gill Hill and an offense that pounded out eight hits, the British squad never looked back after an early three-run burst. Brazil's offense was completely neutralized, managing only a single hit as they fell to 0-4 in a disappointing pool play campaign.",
-      "bullets": [
-        "Gill Hill earned the win, allowing just one run while striking out seven over five dominant innings.",
-        "Brazil was held to a tournament-low one hit throughout the entire nine-inning game.",
-        "Great Britain's defense was perfect, committing zero errors compared to Brazil's one.",
-        "The win is Great Britain's first of the 2026 Classic, moving them to 1-3 in Pool C."
-      ],
-      "context": "Great Britain secures a likely spot in the next WBC qualifiers, while Brazil will face relegation from the main tournament bracket.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.mlb.com/gameday/brazil-vs-great-britain/2026/03/09/798937/recap"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "fTo28kr_M3Q",
-          "title": "Brazil vs. Great Britain 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=fTo28kr_M3Q",
-          "embedUrl": "https://www.youtube.com/embed/fTo28kr_M3Q",
-          "publishedAt": "2026-03-09T21:09:19Z",
-          "matchScore": 121
-        }
-      ]
-    },
-    {
-      "id": "20260309-CUB-PUR",
-      "teams": {
-        "away": "Cuba",
+        "away": "Canada",
         "home": "Puerto Rico"
       },
-      "headline": "Puerto Rico stays perfect as pitching stifles Cuba",
-      "score": "Cuba 1 - Puerto Rico 4",
-      "brief": "Puerto Rico continued their march through Pool D with a methodical win over a struggling Cuban side. Eduardo Rodríguez was masterful on the mound, keeping the Cuban hitters off-balance all night. While Cuba’s defense kept them in the game early, they simply couldn't generate enough offense to match the timely hitting of the Puerto Rican stars in front of their home-away-from-home fans in Miami.",
+      "headline": "Canada edges Puerto Rico in rain-delayed thriller to keep dreams alive",
+      "score": "Canada 3 - Puerto Rico 2",
+      "brief": "In a game twice interrupted by tropical downpours in San Juan, Canada ground out a massive 3-2 victory over the hosts to set up a win-and-in scenario. Canada took advantage of Puerto Rico's uncharacteristic lack of control, scoring two runs on bases-loaded walks in the third. Brock Dykxhoorn then slammed the door with three dominant innings of relief to silence the partisan crowd and move Canada to the brink of its first-ever quarterfinal appearance.",
       "bullets": [
-        "Eduardo Rodríguez earned the win with five scoreless innings, allowing only two hits.",
-        "Edwin Díaz came on in the ninth to secure his first save of the tournament with two strikeouts.",
-        "Cuba's offense has now been held to one run or fewer in two of their first three games.",
-        "Puerto Rico remains unbeaten (3-0) and has allowed the fewest runs in Pool D so far."
+        "Canada scored twice in the third inning on consecutive bases-loaded walks by Rico Garcia.",
+        "Owen Caissie continued his torrid tournament, going 2-for-3 with two doubles to push his average to .545.",
+        "Nolan Arenado drove in both runs for Puerto Rico but was held in check during the final frames.",
+        "Jordan Balazovic earned the win with three gritty innings, allowing just one hit.",
+        "Brock Dykxhoorn secured the save with three perfect innings, striking out one."
       ],
-      "context": "Puerto Rico joins the Dominican Republic at the top of the 'Pool of Death,' setting up a massive clash for the top seed.",
+      "context": "Canada can clinch its first-ever WBC quarterfinal berth with a win over Cuba on Wednesday.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/gameday/cuba-vs-puerto-rico/2026/03/09/798938/recap"
+        "recapUrl": "https://www.mlb.com/gameday/canada-vs-puerto-rico/2026/03/10/788132/final"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "obInwgccDt4",
-          "title": "",
-          "url": "https://www.youtube.com/watch?v=obInwgccDt4&list=PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L&index=3&pp=iAQB",
-          "embedUrl": "https://www.youtube.com/embed/obInwgccDt4"
+          "videoId": "I6ZZSTVratc",
+          "title": "Canada vs. Puerto Rico 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=I6ZZSTVratc",
+          "embedUrl": "https://www.youtube.com/embed/I6ZZSTVratc",
+          "publishedAt": "2026-03-11T06:52:35Z",
+          "matchScore": 100
         }
       ]
     },
     {
-      "id": "20260309-VEN-NIC",
+      "id": "20260310-italy-usa",
       "teams": {
-        "away": "Venezuela",
-        "home": "Nicaragua"
+        "away": "Italy",
+        "home": "United States"
       },
-      "headline": "Venezuela cruises past Nicaragua behind flawless pitching performance",
-      "score": "Venezuela 4 - Nicaragua 0",
-      "brief": "Venezuela remained undefeated in pool play with a clinical shutout victory over Nicaragua. Yohander Gómez led a parade of Venezuelan pitchers that completely silenced the Nicaraguan bats. While Nicaragua actually out-hit Venezuela 7-5, three costly errors and a complete lack of situational hitting doomed them, leaving Venezuela comfortably at the top of the standings.",
+      "headline": "Azzurri stunner: Italy topples star-studded Team USA in massive upset",
+      "score": "Italy 8 - United States 6",
+      "brief": "In what will be remembered as one of the greatest upsets in WBC history, Italy stunned a United States roster filled with MLB All-Stars. Behind a brilliant start from Michael Lorenzen and a barrage of early home runs from prospects Kyle Teel and Sam Antonacci, the Italians built a shocking 8-0 lead. A furious late rally by the Americans, led by two Pete Crow-Armstrong homers, fell just short when Aaron Judge struck out with the tying run at the plate in the ninth.",
       "bullets": [
-        "Yohander Gómez earned the win, scattering three hits over four innings of scoreless work.",
-        "Nicaragua stranded nine runners on base and committed three errors that led to two unearned runs.",
-        "Venezuela is now 3-0, maintaining a perfect record heading into the final day of pool play.",
-        "Nicaragua falls to 0-4, finishing their tournament without a victory."
+        "Michael Lorenzen dominated his MLB peers, tossing 4.2 scoreless innings to earn the win.",
+        "Italy's 6-7-8 hitters (Teel, Caglianone, and Antonacci) went a combined 6-for-8 with three home runs.",
+        "Pete Crow-Armstrong sparked a late U.S. surge with two home runs and four RBIs.",
+        "U.S. captain Aaron Judge represented the tying run in the ninth but struck out to end the game.",
+        "The loss leaves Team USA's advancement in jeopardy, pending the result of Italy vs. Mexico."
       ],
-      "context": "Venezuela clinches a quarterfinal berth with the win, while Nicaragua will have to re-qualify for the 2030 tournament.",
+      "context": "The U.S. no longer controls its own destiny and needs an Italy win over Mexico to guarantee advancement.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/gameday/venezuela-vs-nicaragua/2026/03/09/798940/recap"
+        "recapUrl": "https://www.olympics.com/en/news/2026-world-baseball-classic-italy-stun-united-states"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "obInwgccDt4",
-          "title": "",
-          "url": "https://www.youtube.com/watch?v=obInwgccDt4&list=PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L&index=3&pp=iAQB",
-          "embedUrl": "https://www.youtube.com/embed/obInwgccDt4"
+          "videoId": "7Xb9harx0UU",
+          "title": "Italy vs. United States 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=7Xb9harx0UU",
+          "embedUrl": "https://www.youtube.com/embed/7Xb9harx0UU",
+          "publishedAt": "2026-03-11T06:45:43Z",
+          "matchScore": 100
         }
       ]
     }

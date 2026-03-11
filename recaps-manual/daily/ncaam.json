@@ -1,223 +1,308 @@
 {
-  "leagueName": "NBA",
+  "leagueName": "NCAAM",
   "leagueKey": "ncaam",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Conference tournament season shifted into high gear as Gonzaga secured its 29th straight WCC title game appearance, while Santa Clara pulled off a major upset to burst the bubble of Saint Mary's.",
+  "leagueBriefing": "Conference tournament season shifted into high gear on Tuesday as Gonzaga claimed another WCC crown, while underdogs like Maryland and Pittsburgh kept their seasons alive with gritty opening-round wins in the Big Ten and ACC.",
   "games": [
     {
-      "id": "401851759",
+      "id": "401764121",
       "teams": {
-        "away": "Oregon State",
+        "away": "Santa Clara",
         "home": "Gonzaga"
       },
-      "headline": "Ike dominates as Gonzaga reaches 29th straight WCC title game",
-      "score": "Oregon State 56 - Gonzaga 65",
-      "brief": "Gonzaga continued its remarkable run of WCC dominance, securing a spot in the conference championship game for nearly the 30th consecutive year. Graham Ike was the undisputed star, recording a massive double-double and serving as the only Bulldog to reach double figures in scoring. The Zags' defense set the tone early, smothering the Beavers and holding them to a dismal shooting performance in the first half to ensure Gonzaga's final WCC tournament run ends on a high note before they jump to the Pac-12.",
+      "headline": "Gonzaga powers past Santa Clara to secure 22nd WCC Tournament title",
+      "score": "Santa Clara 68 - Gonzaga 79",
+      "brief": "After a sluggish first half that saw them trailing by four, the Bulldogs unleashed a dominant 50-point second half to pull away from the Broncos. Gonzaga's clinical execution down the stretch proved too much for Santa Clara, as the Zags secured their usual spot atop the West Coast Conference and punched their ticket to the Big Dance.",
       "bullets": [
-        "Graham Ike finished with 24 points and 11 rebounds, marking his 45th career double-double.",
-        "Gonzaga outscored Oregon State 16-0 on the fast break and 38-24 in the paint.",
-        "The Bulldogs' defense forced 10-second and shot-clock violations during a decisive 15-2 first-half run.",
-        "Oregon State missed its first nine shots of the game and shot just 28.6% in the opening half.",
-        "This marks Gonzaga's final WCC tournament before joining the Pac-12 next season."
+        "Gonzaga outscored Santa Clara 50-35 in the second half to erase a halftime deficit.",
+        "The victory marks the Bulldogs' 30th win of the season (30-3).",
+        "Santa Clara finishes a strong season at 26-8 with a 15-3 conference record.",
+        "Gonzaga shot over 55% from the field in the final 20 minutes to seal the game."
       ],
-      "context": "Gonzaga moves to the championship game with a 29-3 record, maintaining their status as a projected high seed in the NCAA Tournament.",
+      "context": "Gonzaga secures the WCC automatic bid, likely cementing a high seed in the NCAA Tournament.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851759/oregon-st-gonzaga"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap?gameId=401764121"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "hVIf-s4RhaA",
-          "title": "Oregon State Beavers vs. Gonzaga Bulldogs | WCC MBB Tournament Highlights | ESPN College Basketball",
-          "url": "https://youtu.be/hVIf-s4RhaA?si=tALChg4Mvoa8ERN3",
-          "embedUrl": "https://www.youtube.com/embed/hVIf-s4RhaA"
+          "videoId": "nrApHXL3Juc",
+          "title": "Gonzaga highlights",
+          "url": "https://www.youtube.com/watch?v=nrApHXL3Juc&list=PLn3nHXu50t5zIzgZhRCXRsZcRIfapIxEV&index=1&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/nrApHXL3Juc"
         }
       ]
     },
     {
-      "id": "401851760",
+      "id": "20260310-okstate-colorado",
       "teams": {
-        "away": "Santa Clara",
-        "home": "Saint Mary's"
+        "away": "Oklahoma State",
+        "home": "Colorado"
       },
-      "headline": "Santa Clara stuns Saint Mary's to reach first WCC final since 2007",
-      "score": "Santa Clara 76 - Saint Mary's 71",
-      "brief": "Santa Clara likely punched their ticket to the Big Dance with a thrilling upset over No. 21 Saint Mary's. In a game that featured 14 lead changes, Sash Gavalyugov delivered the dagger with a late three-pointer that silenced the Gaels. The win is a massive milestone for coach Herb Sendek, marking his 600th career victory and breaking a four-year streak of Gonzaga-Saint Mary's championship matchups. While the Gaels should still be safe for an at-large bid, the Broncos have transformed from bubble team to title contenders.",
+      "headline": "Cowboys ride historic scoring night past Buffaloes",
+      "score": "Oklahoma State 92 - Colorado 83",
+      "brief": "Oklahoma State's offense clicked like never before in a Big 12 Tournament setting, putting up a program-record 92 points to knock out Colorado. Anthony Roy led the charge with 24 points, but it was the Cowboys' dominance at the free-throw line that truly told the story. Despite Colorado shooting well from deep, they couldn't stop the Cowboys from getting to the rim and the charity stripe, where OSU outscored them by 20 points.",
       "bullets": [
-        "Sash Gavalyugov scored 23 points, including the go-ahead 3-pointer with 12.1 seconds remaining.",
-        "Coach Herb Sendek earned his 600th career coaching victory with the upset win.",
-        "This is the first time since 2021 that the WCC final will not feature both Gonzaga and Saint Mary's.",
-        "Paulius Murauskas led the Gaels with 26 points in the losing effort.",
-        "Santa Clara entered the game ranked No. 42 in the NCAA NET rankings, significantly boosting their tournament resume."
+        "The 92 points scored by OSU are the most in program history for a Big 12 Tournament game.",
+        "Anthony Roy led all scorers with 24 points.",
+        "The Cowboys went 29-of-35 from the free-throw line compared to just 9-of-16 for the Buffs.",
+        "Colorado's Bangot Dak tied his career-high with 22 points in the defeat."
       ],
-      "context": "Santa Clara reaches its first WCC final in 19 years and likely secures an NCAA Tournament berth.",
+      "context": "Oklahoma State advances to play TCU, while Colorado's season likely ends.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851760/santa-clara-saint-marys"
+        "recapUrl": "https://okstate.com/news/2026/3/11/cowboy-basketball-postgame-notes-colorado"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "H87vzv3hAyE",
+          "title": "Colorado highlights",
+          "url": "https://www.youtube.com/watch?v=H87vzv3hAyE&list=PL1Vg1LQKb_yhAKOVNRK2hCBmYuDQdf1K6&index=1&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/H87vzv3hAyE"
+        }
+      ]
     },
     {
-      "id": "401856431",
+      "id": "401768407",
       "teams": {
-        "away": "Campbell",
-        "home": "Monmouth"
+        "away": "Maryland",
+        "home": "Oregon"
       },
-      "headline": "Monmouth shuts down Campbell to advance to CAA championship",
-      "score": "Campbell 64 - Monmouth 74",
-      "brief": "Monmouth used a balanced attack and a strong second half to pull away from Campbell and secure a spot in the CAA title game. Kavion McClain took over after the break, scoring 14 of his 19 points to keep the Fighting Camels at arm's length. After Campbell narrowed the lead early in the second half, Monmouth responded with a 7-0 run that effectively iced the game, moving the Hawks one win away from an automatic NCAA Tournament bid.",
+      "headline": "Maryland stifles Oregon early to advance in Big Ten Tournament",
+      "score": "Maryland 70 - Oregon 60",
+      "brief": "Maryland jumped out to a massive early lead, holding Oregon to just 12 points in the first half. While the Ducks found their rhythm late and put up 48 in the second period, the mountain was simply too high to climb. David Coit led the charge for the Terrapins, who effectively ended Oregon's disappointing season in the tournament opener.",
       "bullets": [
-        "Kavion McClain led all Hawks with 19 points, including 14 in the second half.",
-        "Jason Rivera-Torres contributed 17 points, 7 rebounds, and 3 steals.",
-        "Monmouth outscored Campbell 44-40 in the second half to maintain their lead.",
-        "Jeremiah Johnson scored 21 points for the ninth-seeded Fighting Camels in the loss.",
-        "Monmouth will face Hofstra in the championship game on Tuesday."
+        "David Coit led all scorers with 17 points for Maryland.",
+        "Oregon's 12 points in the first half was a season low.",
+        "Elijah Saunders contributed 15 points to the Terrapins' victory.",
+        "The Ducks finish the season with a 12-20 record."
       ],
-      "context": "Monmouth advances to the CAA final for a chance at an automatic NCAA Tournament berth.",
+      "context": "Maryland advances to the second round of the Big Ten Tournament to face higher-seeded opposition.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401856431/campbell-monmouth"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap?gameId=401768407"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "joDNW4oz2dw",
+          "title": "Oregon highlights",
+          "url": "https://www.youtube.com/watch?v=joDNW4oz2dw&list=PL1Vg1LQKb_yhAKOVNRK2hCBmYuDQdf1K6&index=5&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/joDNW4oz2dw"
+        }
+      ]
     },
     {
-      "id": "401851332",
+      "id": "20260310-byu-kstate",
       "teams": {
-        "away": "Northern Colorado",
-        "home": "Montana"
+        "away": "Kansas State",
+        "home": "BYU"
       },
-      "headline": "Money Williams erupts for career-high 40 points in Big Sky thriller",
-      "score": "Northern Colorado 89 - Montana 95",
-      "brief": "Montana's Money Williams lived up to his name on Monday night, delivering one of the most dominant individual performances of the season to lead the Grizzlies past Northern Colorado. Williams dropped a career-high 40 points, including 18 free throws, to fend off a late charge from the Bears. Despite 29 points from Quinn Denker, Montana's massive 17-point halftime lead proved to be too much for Northern Colorado to overcome in a high-scoring Big Sky quarterfinal.",
+      "headline": "AJ Dybantsa sets Big 12 record with 40-point masterpiece",
+      "score": "Kansas State 91 - BYU 105",
+      "brief": "The AJ Dybantsa show officially arrived in Kansas City. The nation's leading freshman scorer put on an historic performance, dropping 40 points to lead BYU past Kansas State in a high-scoring track meet. BYU's 105 points were the most ever scored in a Big 12 Tournament game, as the Cougars' 'attack-mode' offense proved too much for a Wildcats team that fought valiantly but ultimately ran out of gas against a superstar performance.",
       "bullets": [
-        "Money Williams scored 40 points on 10-of-21 shooting and 18-of-19 from the free-throw line.",
-        "Montana built a commanding 49-32 lead by halftime.",
-        "Quinn Denker led Northern Colorado with 29 points and 8 assists.",
-        "The Grizzlies advance to face top-seeded Portland State in the semifinals.",
-        "Brock Wisne recorded a double-double for the Bears with 15 points and 11 rebounds."
+        "AJ Dybantsa's 40 points set a new Big 12 Tournament freshman scoring record.",
+        "BYU's 105 points broke the previous tournament record of 94 set by Kansas in 2001.",
+        "The Cougars shot a blistering 54.8% from the field and dominated points in the paint (50-34).",
+        "K-State's P.J. Haggerty ended a strong season with 27 points in the loss."
       ],
-      "context": "Montana advances to the Big Sky semifinals behind a historic scoring performance.",
+      "context": "BYU advances to the second round while K-State's disappointing 12-win season ends.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851332/n-colorado-montana"
+        "recapUrl": "https://www.kstatesports.com/news/2026/3/10/mens-basketball-k-state-ends-season-in-big-12-tournament"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "b0nirb3ycac",
+          "title": "Kansas State highlights",
+          "url": "https://www.youtube.com/watch?v=b0nirb3ycac&list=PLn3nHXu50t5zIzgZhRCXRsZcRIfapIxEV&index=3&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/b0nirb3ycac"
+        }
+      ]
     },
     {
-      "id": "401856432",
+      "id": "20260310-smu-syracuse",
       "teams": {
-        "away": "Towson",
-        "home": "Hofstra"
+        "away": "Syracuse",
+        "home": "SMU"
       },
-      "headline": "Edmead’s overtime dagger sends Hofstra to CAA final",
-      "score": "Towson 65 - Hofstra 68",
-      "brief": "In a classic conference tournament nail-biter, Hofstra outlasted Towson in overtime thanks to the heroics of Preston Edmead. Towson's Tyler Tejada was a force all night with 29 points and forced overtime with late free throws, but Edmead answered back in the extra period. His two clutch three-pointers in overtime—including the go-ahead bucket with just three seconds left—punched Hofstra's ticket to the championship game and kept their NCAA dreams alive.",
+      "headline": "Mustangs charge past Orange behind dominant second half",
+      "score": "Syracuse 69 - SMU 86",
+      "brief": "SMU found its rhythm at the perfect time, ending a four-game skid with a dominant second-half performance against Syracuse. After a tight first half, the Mustangs exploded with a 13-0 run sparked by Jaron Pierre Jr.'s lights-out shooting. Syracuse simply couldn't find an answer for the Mustangs' perimeter attack, as SMU cruised into the next round and secured a 20-win season for coach Andy Enfield.",
       "bullets": [
-        "Preston Edmead scored 22 points, including the game-winning 3-pointer with three seconds left in OT.",
-        "Tyler Tejada scored a game-high 29 points for Towson in the loss.",
-        "Cruz Davis scored 16 of his 18 points in the second half for the Pride.",
-        "Hofstra outscored Towson 13-10 in the overtime period.",
-        "The Pride will face Monmouth in the CAA championship game."
+        "Boopie Miller led the Mustangs with 25 points, including five triples.",
+        "Jaron Pierre Jr. scored 17 of his 21 points in the second half alone.",
+        "Jaden Toombs recorded a monster double-double with 16 points and 11 rebounds.",
+        "Syracuse struggled from deep, shooting just 26.5% on 34 attempts."
       ],
-      "context": "Hofstra survives an upset bid to reach the CAA title game against Monmouth.",
+      "context": "SMU advances to face Louisville while Syracuse sees their season come to an end.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401856432/towson-hofstra"
+        "recapUrl": "https://smumustangs.com/news/2026/3/10/mens-basketball-smu-defeats-syracuse-86-69-in-acc-tournament-first-round.aspx"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "aa5lFbhOonw",
+          "title": "Syracuse highlights",
+          "url": "https://www.youtube.com/watch?v=aa5lFbhOonw&list=PLn3nHXu50t5zIzgZhRCXRsZcRIfapIxEV&index=5&pp=iAQB",
+          "embedUrl": "https://www.youtube.com/embed/aa5lFbhOonw"
+        }
+      ]
     },
     {
-      "id": "401851715",
+      "id": "401769188",
       "teams": {
-        "away": "Mississippi Valley State",
-        "home": "Grambling"
+        "away": "Pittsburgh",
+        "home": "Stanford"
       },
-      "headline": "Muttilib’s hot shooting leads Grambling to blowout win over Delta Devils",
-      "score": "Mississippi Valley State 52 - Grambling 77",
-      "brief": "Grambling left no room for doubt in their SWAC tournament opener, crushing Mississippi Valley State behind a 22-point effort from Jamil Muttilib. The Tigers took the lead midway through the first half and never looked back, using a barrage of three-pointers to build a double-digit halftime cushion. While Michael James played a valiant game for the Delta Devils, Grambling's superior depth and defensive pressure were too much for a Mississippi Valley State team that finished the year with 30 losses.",
+      "headline": "Pittsburgh survives late Stanford surge in ACC Tournament thriller",
+      "score": "Pittsburgh 64 - Stanford 63",
+      "brief": "In a classic ACC opening-round grind, Pittsburgh built a lead and then hung on for dear life as Stanford's 40-point second half nearly stole the game. The Panthers' defense did just enough in the final seconds to thwart the Cardinal and keep their slim postseason hopes flickering for at least one more day.",
       "bullets": [
-        "Jamil Muttilib scored 22 points, hitting 5-of-8 shots from beyond the arc.",
-        "Grambling led 34-19 at halftime and led for the final 29 minutes of the game.",
-        "Michael James led all scorers with 23 points for Mississippi Valley State.",
-        "Derrius Ward added 15 points and a game-high 7 assists for the Tigers.",
-        "Grambling advances to face Jackson State in the second round."
+        "Stanford outscored Pitt by seven in the second half but fell one point short.",
+        "The win marks Pitt's 13th victory in a challenging season.",
+        "Stanford finishes the season with a 20-12 record, likely heading to the NIT.",
+        "The game featured six lead changes in the final five minutes."
       ],
-      "context": "Grambling advances in the SWAC tournament while Mississippi Valley State's season comes to an end.",
+      "context": "Pittsburgh advances to face an ACC heavyweight in the next round, while Stanford's bubble officially bursts.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851715/miss-valley-st-grambling"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap?gameId=401769188"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
     },
     {
-      "id": "401851608",
+      "id": "401768875",
       "teams": {
-        "away": "Nicholls",
-        "home": "UT Rio Grande Valley"
+        "away": "Wake Forest",
+        "home": "Virginia Tech"
       },
-      "headline": "Brankovic leads UTRGV past Nicholls into Southland semis",
-      "score": "Nicholls 68 - UT Rio Grande Valley 86",
-      "brief": "UT Rio Grande Valley used a commanding first-half performance to cruise past Nicholls and secure a spot in the Southland Conference semifinals. Filip Brankovic led a balanced Vaqueros offense that saw multiple players catch fire from deep. Once UTRGV took the lead halfway through the first period, they never trailed again, effectively shutting down Trae English and the Colonels' offense to set up a high-stakes semifinal matchup with McNeese.",
+      "headline": "Wake Forest outlasts Virginia Tech in high-scoring overtime battle",
+      "score": "Wake Forest 95 - Virginia Tech 89",
+      "brief": "Wake Forest and Virginia Tech traded blows for 40 minutes before the Demon Deacons finally broke away in overtime. In a game defined by offensive sparks and clutch shooting, Wake Forest's 20-point explosion in the extra period proved to be the difference, keeping their ACC Tournament run alive and sending the Hokies home.",
       "bullets": [
-        "Filip Brankovic paced the Vaqueros with 21 points and 5 rebounds.",
-        "Koree Cotton added 18 points, including four 3-pointers.",
-        "UTRGV led 44-32 at the half and maintained a double-digit lead for most of the second period.",
-        "Trae English led Nicholls with 17 points in the losing effort.",
-        "The Vaqueros will face second-seeded McNeese on Tuesday."
+        "Wake Forest scored 20 points in the five-minute overtime period.",
+        "The teams combined for 184 total points in the contest.",
+        "Wake Forest improved to 17-15 on the year with the victory.",
+        "Virginia Tech ends their season with a 19-13 record."
       ],
-      "context": "UTRGV moves one step closer to a Southland title and an NCAA Tournament bid.",
+      "context": "Wake Forest moves into the next round of the ACC Tournament, maintaining their slim chances for an at-large bid.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851608/nicholls-ut-rio-grande"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap?gameId=401768875"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
     },
     {
-      "id": "401851433",
+      "id": "401766324",
       "teams": {
-        "away": "Detroit Mercy",
-        "home": "Robert Morris"
+        "away": "UT Rio Grande Valley",
+        "home": "McNeese"
       },
-      "headline": "Detroit Mercy rallies past Robert Morris to reach Horizon title game",
-      "score": "Detroit Mercy 70 - Robert Morris 64",
-      "brief": "Detroit Mercy is headed to the Horizon League championship game after a gritty second-half comeback against Robert Morris. Trailing at the break, the Titans leaned on Orlando Lovejoy and a spark from the bench by Lance Stone to outscore the Colonials by nine in the final period. The win sets up a championship clash with top-seeded Wright State, where the Titans will look to complete their improbable run to the NCAA Tournament.",
+      "headline": "McNeese survives triple-overtime marathon to reach Southland Final",
+      "score": "UT Rio Grande Valley 80 - McNeese 84",
+      "brief": "In arguably the game of the night, McNeese outlasted UTRGV in a grueling three-overtime thriller. Neither team could separate for most of the night, but the Cowboys' resilience in the third extra period finally wore down the Vaqueros. McNeese moves one step closer to an NCAA Tournament berth in dramatic fashion.",
       "bullets": [
-        "Orlando Lovejoy scored 21 points and dished out 6 assists to lead the Titans.",
-        "Lance Stone provided a major boost with 16 points off the bench.",
-        "Detroit Mercy outscored Robert Morris 37-28 in the second half to secure the win.",
-        "DeSean Goode led the Colonials with 14 points and 10 rebounds.",
-        "The Titans advance to face Wright State for the automatic bid on Tuesday."
+        "The game required three overtime periods to find a winner.",
+        "McNeese improved their impressive record to 27-5.",
+        "UTRGV fell despite a valiant 80-point effort in the marathon.",
+        "McNeese outscored UTRGV 26-22 across the three overtime periods."
       ],
-      "context": "Detroit Mercy moves to within one win of an automatic NCAA Tournament berth.",
+      "context": "McNeese advances to the Southland Conference Championship game with an automatic bid on the line.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851433/detroit-mercy-robert-morris"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap?gameId=401766324"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
     },
     {
-      "id": "401851333",
+      "id": "20260310-missouristate-fiu",
       "teams": {
-        "away": "Weber State",
-        "home": "Eastern Washington"
+        "away": "Missouri State",
+        "home": "Florida International"
       },
-      "headline": "Hamilton IV’s career night fuels Eastern Washington over Weber State",
-      "score": "Weber State 79 - Eastern Washington 84",
-      "brief": "Eastern Washington survived a late-game rally from Weber State to advance in the Big Sky Tournament, powered by a career-high 25 points from Alton Hamilton IV. The Eagles looked to be in total control after a massive 16-0 run in the first half, but they had to withstand a 27-point barrage from Tijan Saine Jr. in the second half. Isaiah Moses came up huge in the final minute with a clutch three-point play to ice the game and keep the Eagles' season alive.",
+      "headline": "Bears survive FIU scare behind late 3-point barrage",
+      "score": "Missouri State 75 - FIU 72",
+      "brief": "Missouri State used a gritty second-half comeback to survive and advance in Huntsville. Trailing by six late in the game, the Bears found their stroke from deep, burying eight 3-pointers in the second half to stun FIU. Kobi Williams hit the go-ahead triple with under two minutes remaining, and the Bears survived a desperation heave at the buzzer to move on to the quarterfinals.",
       "bullets": [
-        "Alton Hamilton IV scored a career-high 25 points on 8-of-10 shooting.",
-        "Isaiah Moses added 22 points and 8 assists, including a critical late three-point play.",
-        "Eastern Washington led by 14 points at halftime after a 16-0 first-half run.",
-        "Tijan Saine Jr. led all scorers with 27 points for Weber State.",
-        "The Eagles advance to face Idaho in the Big Sky semifinals."
+        "Kobi Williams led four Bears in double figures with 15 points.",
+        "Missouri State shot 53% from the field for the game.",
+        "The Bears outscored the Panthers in the final two minutes to erase a late deficit.",
+        "FIU's season ends after their final shot at the buzzer went offline."
       ],
-      "context": "Eastern Washington moves into the Big Sky semifinals to face the team that recently ended their win streak.",
+      "context": "Missouri State advances to face top-seeded Liberty in the CUSA quarterfinals.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401851333/weber-st-e-washington"
+        "recapUrl": "https://missouristatebears.com/news/2026/3/10/untitled-story.aspx"
       },
-      "highlights": []
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260310-siena-merrimack",
+      "teams": {
+        "away": "Siena",
+        "home": "Merrimack"
+      },
+      "headline": "Siena's defensive masterclass secures MAAC title",
+      "score": "Siena 64 - Merrimack 54",
+      "brief": "Siena saved its best defensive effort for the biggest game of the year, stifling top-seeded Merrimack to claim the MAAC championship. The Saints held the Warriors scoreless for the first nine minutes of the second half, a dominant stretch that included six blocks and built a lead that even a late Merrimack run couldn't erase. It was a statement win for a Siena team that completely controlled the paint and the pace.",
+      "bullets": [
+        "Siena set a program MAAC Tournament record with 10 blocked shots.",
+        "The Saints outscored the Warriors 32-12 in the paint.",
+        "Merrimack's star freshman Kevair Kennedy was limited to 15 points.",
+        "Siena started the second half on a 12-0 run while holding Merrimack to 0-for-15 shooting."
+      ],
+      "context": "Siena earns the MAAC automatic bid to the NCAA Tournament.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://sienasaints.com/news/2026/3/11/mens-basketball-seventh-heaven.aspx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
     }
   ]
 }

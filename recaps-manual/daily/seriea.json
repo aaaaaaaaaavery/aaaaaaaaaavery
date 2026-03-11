@@ -3,39 +3,5 @@
   "leagueKey": "seriea",
   "sourceType": "console_recaps",
   "leagueBriefing": "Lazio finally snapped a four-match winless streak in dramatic fashion, using a stoppage-time header from Adam Marusic to secure a vital 2-1 victory over Sassuolo at the Stadio Olimpico.",
-  "games": [
-    {
-      "id": "625475",
-      "teams": {
-        "away": "Sassuolo",
-        "home": "Lazio"
-      },
-      "headline": "Marusic stoppage-time header ends Lazio's month-long winless drought",
-      "score": "Sassuolo 1 - Lazio 2",
-      "brief": "Lazio returned to the win column in the most dramatic way possible, finding a 92nd-minute winner to sink a resilient Sassuolo side. Daniel Maldini ignited the nearly empty Stadio Olimpico just two minutes in with his first goal for the club, but the hosts' inability to capitalize on further chances allowed Armand Lauriente to equalize before halftime. Just as it looked like Lazio would settle for another frustrating draw, Adam Marusic met a Matteo Cancellieri cross in the dying moments to secure all three points and push the Biancocelesti back into the top 10.",
-      "bullets": [
-        "Daniel Maldini opened his Lazio account just 80 seconds into the match, pouncing on a rebound from a Gustav Isaksen shot.",
-        "Adam Marusic's winning header in the 92nd minute was his first goal of the season and ended a personal performance slump.",
-        "21-year-old goalkeeper Edoardo Motta made his Serie A debut for Lazio, stepping in for the injured Ivan Provedel.",
-        "The match was played in front of only 5,000 fans as Lazio ultras continued their boycott against President Claudio Lotito.",
-        "Lazio leapfrogged Udinese to move into 10th place, though they remain one point behind 9th-place Sassuolo."
-      ],
-      "context": "The win ends a four-match winless run in league play and keeps Lazio within striking distance of the European qualification spots.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://thelaziali.com/2026/03/09/lazio-2-1-sassuolo-marusics-injury-time-header-ends-winless-run/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "icZ8sUgHv9g",
-          "title": "LAZIO-SASSUOLO | HIGHLIGHTS | Stoppage Time Thrill! | Serie A 2025/26",
-          "url": "https://www.youtube.com/watch?v=icZ8sUgHv9g",
-          "embedUrl": "https://www.youtube.com/embed/icZ8sUgHv9g",
-          "publishedAt": "2026-03-09T23:15:14Z",
-          "matchScore": 100
-        }
-      ]
-    }
-  ]
+  "games": []
 }
