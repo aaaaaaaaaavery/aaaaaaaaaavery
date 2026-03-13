@@ -89,10 +89,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "lKNq9NvmCi0",
-          "title": "Iga Swiatek Highlights",
-          "url": "https://www.youtube.com/watch?v=lKNq9NvmCi0",
-          "embedUrl": "https://www.youtube.com/embed/lKNq9NvmCi0"
+          "videoId": "V9rb88lLTr4",
+          "title": "Day 8 in Indian Wells featuring Swiatek, Pegula, Svitolina and more | WTA Match Highlights",
+          "url": "https://www.youtube.com/watch?v=V9rb88lLTr4",
+          "embedUrl": "https://www.youtube.com/embed/V9rb88lLTr4",
+          "publishedAt": "2026-03-12T01:36:55Z",
+          "matchScore": 121
         }
       ]
     },

@@ -223,7 +223,43 @@
     ]);
     const GOLF_LEAGUE_KEYS = new Set(["golf"]);
     const TENNIS_LEAGUE_KEYS = new Set(["tennis"]);
-    const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
+        // Admin-only: maps a leagueKey (or sourceLeagueKey for merged sub-leagues) to a CTA link shown
+        // beside the league header (regular leagues) or in each game card top-right (merged sub-leagues).
+        const ADMIN_HIGHLIGHTS_LINKS = {
+            pgatour: { text: "HIGHLIGHTS", url: "https://www.youtube.com/results?search_query=pga+tour+highlights" },
+            uefaconferenceleague: { text: "HIGHLIGHTS", url: "https://www.youtube.com/results?search_query=uefa+conference+league+highlights" },
+            livgolf: { text: "HIGHLIGHTS", url: "https://www.youtube.com/results?search_query=liv+golf+highlights" },
+            lpgatour: { text: "HIGHLIGHTS", url: "https://www.youtube.com/results?search_query=lpga+tour+highlights" },
+            dpworldtour: { text: "HIGHLIGHTS", url: "https://www.youtube.com/results?search_query=dp+world+tour+highlights" },
+            atp: { text: "HIGHLIGHTS", url: "https://www.youtube.com/@tennistv/videos" },
+            wta: { text: "HIGHLIGHTS", url: "https://www.youtube.com/@WTA/videos" },
+                        ncaam: {
+                            text: "HIGHLIGHTS",
+                            urls: [
+                                "https://www.youtube.com/playlist?list=PLn3nHXu50t5zIzgZhRCXRsZcRIfapIxEV",
+                                "https://www.youtube.com/playlist?list=PLhh7fyF6r5qVV2_RonsHodwkwe-GGt_Jl",
+                                "https://www.youtube.com/playlist?list=PL2RRF9GtC9s1v7L7tO5Astcl4Z8xq3BqQ",
+                                "https://www.youtube.com/playlist?list=PLSrXjFYZsRuMeW1ttMkXz4cQy9bap9fIB",
+                                "https://www.youtube.com/playlist?list=PLmkjXprBSRGMmLrdClEpgvhPQ2DijUXG6",
+                                "https://www.youtube.com/playlist?list=PLXEMPXZ3PY1hBAeXnFUh9QWwZlfQFgswt",
+                                "https://www.youtube.com/playlist?list=PL1Vg1LQKb_yhAKOVNRK2hCBmYuDQdf1K6",
+                            ],
+                        },
+                        ncaaw: {
+                            text: "HIGHLIGHTS",
+                            urls: [
+                                "https://www.youtube.com/playlist?list=PLn3nHXu50t5ycOprei1VvRrS6rgFyNamo",
+                                "https://www.youtube.com/playlist?list=PLSrXjFYZsRuPigBvTe-tB2PWDWZr6Eks_",
+                                "https://www.youtube.com/playlist?list=PLhh7fyF6r5qXCuhDgwdKKfCIzXkgF4fqx",
+                                "https://www.youtube.com/playlist?list=PL2RRF9GtC9s32jHtkN74wyLXRtTR5Ash8",
+                                "https://www.youtube.com/playlist?list=PL1Vg1LQKb_yhAKOVNRK2hCBmYuDQdf1K6",
+                                "https://www.youtube.com/playlist?list=PLXEMPXZ3PY1hBAeXnFUh9QWwZlfQFgswt",
+                            ],
+                        },
+            ncaasoftball: { text: "HIGHLIGHTS", url: "https://www.youtube.com/@WheelsYT/videos" },
+            ncaabaseball: { text: "HIGHLIGHTS", url: "https://www.youtube.com/@WheelsYT/videos" },
+        };
+        const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
     const MANUAL_TOP10_STORAGE_KEY = "thporth.manual-top10.v1";
     const MANUAL_TOP10_FILE_URL = "recaps-manual/daily/manual-top10.json";
     const MASCOT_SCORE_LEAGUES = new Set(["nba", "mlb", "nhl"]);
@@ -32603,6 +32639,35 @@ Wisconsin
       return null;
     }
 
+        function createAdminHighlightsLink(linkCfg, className) {
+            if (!linkCfg || typeof linkCfg !== "object") return null;
+
+            const urls = [...new Set(
+                (Array.isArray(linkCfg.urls) ? linkCfg.urls : [linkCfg.url])
+                    .map((u) => String(u || "").trim())
+                    .filter(Boolean)
+            )];
+            if (!urls.length) return null;
+
+            const link = document.createElement("a");
+            link.href = urls[0];
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = String(linkCfg.text || "HIGHLIGHTS");
+            link.className = className;
+
+            if (urls.length > 1) {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    urls.forEach((url) => {
+                        window.open(url, "_blank", "noopener,noreferrer");
+                    });
+                });
+            }
+
+            return link;
+        }
+
     function makePill(text) {
       const span = document.createElement("span");
       span.className = "inline-flex items-center rounded-md border border-gray-300 bg-gray-100 px-2 py-0.5 text-xs text-gray-700";
@@ -33668,7 +33733,23 @@ Wisconsin
       card.dataset.sourceLeagueName = String(g.sourceLeagueName || "");
       card.id = makeGameAnchorId(leagueKey, card.dataset.gameId);
 
-      if (state.isAdminMode && leagueKey !== "all") {
+        if (state.isAdminMode && leagueKey !== "all" && g.sourceLeagueKey) {
+                const cardLinkCfg = ADMIN_HIGHLIGHTS_LINKS[g.sourceLeagueKey];
+                if (cardLinkCfg) {
+                    const linkRow = document.createElement("div");
+                    linkRow.className = "flex justify-end -mt-1 mb-2";
+                                        const adminCardLink = createAdminHighlightsLink(
+                                            cardLinkCfg,
+                                            "text-[10px] font-semibold uppercase tracking-wide text-amber-700 hover:text-amber-900 hover:underline"
+                                        );
+                                        if (adminCardLink) {
+                                            linkRow.appendChild(adminCardLink);
+                                            card.appendChild(linkRow);
+                                        }
+                }
+            }
+
+            if (state.isAdminMode && leagueKey !== "all") {
         const gameKey = makeGameKey(leagueKey, card.dataset.gameId);
         const currentRank = state.manualRankByGame.get(gameKey) || "";
 
@@ -33961,6 +34042,21 @@ Wisconsin
       headerInner.appendChild(left);
 
             // if (lg.leagueKey !== "all") {
+
+            if (state.isAdminMode && !lg.mergedLeagues && lg.leagueKey !== "all") {
+                const headerLinkCfg = ADMIN_HIGHLIGHTS_LINKS[lg.leagueKey];
+                if (headerLinkCfg) {
+                                        const adminHeaderLink = createAdminHighlightsLink(
+                                            headerLinkCfg,
+                                            "shrink-0 text-[11px] font-semibold uppercase tracking-wide text-amber-700 hover:text-amber-900 hover:underline"
+                                        );
+                                        if (adminHeaderLink) {
+                                            headerInner.appendChild(adminHeaderLink);
+                                        }
+                }
+            }
+
+                        // if (lg.leagueKey !== "all") {
             //     const meta = document.createElement("span");
             //     meta.className = "rounded-md border border-gray-200 bg-gray-50 px-2 py-1 text-[11px] text-gray-600 sm:px-3 sm:py-2 sm:text-xs";
             //     const mobileMeta = `${gameCount} recaps`;
