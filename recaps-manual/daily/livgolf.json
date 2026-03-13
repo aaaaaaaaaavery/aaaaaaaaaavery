@@ -1,7 +1,39 @@
 {
-	"leagueName": "LIV Golf",
-	"leagueKey": "livgolf",
-	"sourceType": "console_recaps",
-	"leagueBriefing": "",
-	"games": []
+  "leagueName": "LIV Golf",
+  "leagueKey": "livgolf",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "Bryson DeChambeau flexed his muscles and his short game at Sentosa, seizing a commanding three-shot lead as the Crushers GC vaulted to the top of the team standings in Singapore.",
+  "games": [
+    {
+      "id": "2026-singapore-round-2",
+      "teams": {
+        "away": "Chasing Pack",
+        "home": "Bryson DeChambeau"
+      },
+      "headline": "DeChambeau pulls away in Singapore as Crushers surge to team lead",
+      "score": null,
+      "brief": "Bryson DeChambeau turned a crowded leaderboard into a personal showcase during the second round in Singapore. Despite a scary moment on the 15th where he found the water, the Crushers captain played nearly flawless golf, carding a 6-under 65 to move to 10-under for the tournament. He heads into the final day with a three-shot cushion over a high-profile group of chasers that includes Jon Rahm and Louis Oosthuizen, while his Crushers squad looks to lock down their first low-team honors of the season.",
+      "bullets": [
+        "DeChambeau leads the field in Strokes Gained Approach (+4.70) and sits 15th in Driving Distance despite the technical layout.",
+        "Graeme McDowell made history by recording an ace on the par-3 second hole, his second hole-in-one in as many weeks.",
+        "Jon Rahm extended his league record by carding his 23rd consecutive under-par round with a 3-under 68.",
+        "The Crushers GC combined for a 10-under total on Friday, the best team performance of the round.",
+        "Sergio Garcia reached a career milestone by becoming the first player in LIV history to record 2,000 Greens in Regulation."
+      ],
+      "context": "DeChambeau is hunting for his first win of the 2026 season while trying to hold off Jon Rahm, who has finished under par in every single LIV round he has played.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.livgolf.com/news/bryson-dechambeau-crushers-gc-lead-after-round-2-liv-golf-singapore-2026"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "KN2zkcmN3hE",
+          "title": "LIV Golf Highlights",
+          "url": "https://www.youtube.com/watch?v=KN2zkcmN3hE",
+          "embedUrl": "https://www.youtube.com/embed/KN2zkcmN3hE"
+        }
+      ]
+    }
+  ]
 }

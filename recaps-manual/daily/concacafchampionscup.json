@@ -1,102 +1,70 @@
 {
   "leagueName": "CONCACAF Champions Cup",
-  "leagueKey": "concacafchampionscup",
+  "leagueKey": "uefachampionsleague",
   "sourceType": "console_recaps",
-  "leagueBriefing": "A dramatic night of Champions Cup action saw Mexican giants flex their muscles on the road while Cruz Azul edged out a five-goal thriller in an all-LMX showdown. Club América squeezed past Philadelphia with a professional defensive display, and Monterrey fell just short in a chaotic back-and-forth battle against La Máquina. Meanwhile, LAFC couldn't find a winner at home, leaving their tie on a knife-edge heading into the second leg.",
+  "leagueBriefing": "MLS sides dominated the opening night of the Round of 16 as FC Cincinnati and the Seattle Sounders both secured massive 3-0 victories to put one foot in the quarterfinals. Cincinnati dismantled a Liga MX giant in record fashion, while Seattle's Paul Arriola completed a fairytale comeback with a brace exactly one year after his ACL injury.",
   "games": [
     {
-      "id": "20260310-philadelphia-america",
+      "id": "20260312-FCCvsTIG",
       "teams": {
-        "away": "América",
-        "home": "Philadelphia Union"
+        "away": "Tigres UANL",
+        "home": "FC Cincinnati"
       },
-      "headline": "América stifles Union in gritty shutout win at Subaru Park",
-      "score": "Philadelphia Union 0 - 1 América",
-      "brief": "Club América showcased why they are perennial favorites in this competition, ground out a vital away victory against a frustrated Philadelphia Union side. The Union struggled to break down a disciplined Mexican defense, and a clinical finish from the visitors proved to be the difference. Philadelphia pushed late but lacked the final touch to level the score, leaving them with a massive mountain to climb in the return leg at the Azteca.",
+      "headline": "Cincinnati makes statement with record-breaking shutout of Tigres",
+      "score": "FC Cincinnati 3 - Tigres UANL 0",
+      "brief": "FC Cincinnati didn't just beat Tigres UANL; they delivered a masterclass that felt like a changing of the guard in North American soccer. Kévin Denkey was the star of the show, pouncing on an early goalkeeping error and never looking back. The 3-0 result represents Cincinnati's largest-ever win over a Liga MX opponent and leaves the Mexican powerhouse needing a miracle in the return leg to avoid an early exit from the competition.",
       "bullets": [
-        "América secured a crucial away goal to take control of the aggregate score.",
-        "Philadelphia Union dominated possession in the second half but failed to register a shot on target during the final 20 minutes.",
-        "The match saw six yellow cards issued as tensions flared in a physical midfield battle.",
-        "América's goalkeeper recorded four saves to preserve the clean sheet."
+        "Kévin Denkey powered the offense with two goals and an assist, becoming the club’s all-time leading scorer in Champions Cup play.",
+        "Goalkeeper Roman Celentano celebrated his 150th appearance for the club by keeping a clean sheet against a dangerous Tigres attack.",
+        "The three-goal margin is the largest victory FC Cincinnati has ever recorded against a team from Liga MX.",
+        "Tom Barlow netted his third goal of the current tournament to double the lead early in the second half.",
+        "FC Cincinnati remains unbeaten and has yet to concede a single goal in the 2026 Champions Cup campaign."
       ],
-      "context": "América carries a significant away-goal advantage back to Mexico City for the second leg.",
+      "context": "The win gives Cincinnati a massive aggregate cushion heading into a notoriously difficult second leg in Mexico.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.livesoccertv.com/match/4901234/philadelphia-union-vs-america/"
+        "recapUrl": "https://www.fccincinnati.com/news/recap-fc-cincinnati-3-tigres-uanl-0-concacaf-champions-cup-round-of-16-first-leg"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "xhxjGY6zDiw",
-          "title": "Philadelphia vs Club América | 2026 Concacaf Champions Cup | Round of 16",
-          "url": "https://www.youtube.com/watch?v=xhxjGY6zDiw",
-          "embedUrl": "https://www.youtube.com/embed/xhxjGY6zDiw",
-          "publishedAt": "2026-03-11T02:21:13Z",
+          "videoId": "BGCtWKhCyB0",
+          "title": "FC Cincinnati vs Tigres UANL | 2026 Concacaf Champions Cup | Round of 16",
+          "url": "https://www.youtube.com/watch?v=BGCtWKhCyB0",
+          "embedUrl": "https://www.youtube.com/embed/BGCtWKhCyB0",
+          "publishedAt": "2026-03-13T03:19:40Z",
           "matchScore": 100
         }
       ]
     },
     {
-      "id": "20260310-monterrey-cruz-azul",
+      "id": "20260312-VANvsSEA",
       "teams": {
-        "away": "Cruz Azul",
-        "home": "Monterrey"
+        "away": "Seattle Sounders FC",
+        "home": "Vancouver Whitecaps"
       },
-      "headline": "Cruz Azul edges Monterrey in five-goal classic",
-      "score": "Monterrey 2 - 3 Cruz Azul",
-      "brief": "In a matchup that felt more like a cup final than an early-round fixture, Cruz Azul emerged victorious from a wild five-goal shootout at the Estadio BBVA. Monterrey twice clawed their way back into the game, but a late strike from La Máquina silenced the home crowd and secured a massive advantage. The result underscores Cruz Azul's current hot streak and leaves Rayados searching for defensive answers before they head to the capital.",
+      "headline": "Arriola strikes twice in emotional return as Sounders crush Whitecaps",
+      "score": "Vancouver Whitecaps 0 - Seattle Sounders FC 3",
+      "brief": "Exactly one year and one day after tearing his ACL in this very competition, Paul Arriola made his first start of 2026 and reminded everyone why he's a difference-maker. His brace spearheaded a clinical Sounders performance that took the air out of BC Place. While Vancouver dominated the ball, Seattle was ruthless on the counter, bagging three crucial away goals that make the second leg feel like a mere formality for the Rave Green.",
       "bullets": [
-        "The lead changed hands three times in a frantic second half.",
-        "Cruz Azul’s winning goal came in the 84th minute following a defensive lapse on a set piece.",
-        "Monterrey outshot Cruz Azul 18 to 11 but struggled with clinical finishing.",
-        "Both teams combined for 12 corner kicks in a highly offensive display."
+        "Paul Arriola scored his first two goals of the season in his first start since returning from a devastating knee injury.",
+        "Jesús Ferreira provided his team-leading fourth assist of the year to set up the opening goal just before halftime.",
+        "Paul Rothrock added the third goal in the 70th minute, marking his second strike of the young 2026 season.",
+        "The Whitecaps held over 60% of possession but managed only two shots on target throughout the entire match.",
+        "Seattle's Stefan Frei earned the clean sheet, continuing his legendary form in a tournament he won in 2022."
       ],
-      "context": "Cruz Azul takes three away goals into the home leg, making them heavy favorites to advance.",
+      "context": "With three away goals in the bag, Seattle is in prime position to advance to an all-MLS quarterfinal against either Cincinnati or Tigres.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.livesoccertv.com/match/4901235/monterrey-vs-cruz-azul/"
+        "recapUrl": "https://www.soundersfc.com/news/recap-sounders-overpower-whitecaps-in-ccc-round-of-16-opener"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "kcu4FMY9mZY",
-          "title": "CF Monterrey vs Cruz Azul  | 2026 Concacaf Champions Cup | Round of 16",
-          "url": "https://www.youtube.com/watch?v=kcu4FMY9mZY",
-          "embedUrl": "https://www.youtube.com/embed/kcu4FMY9mZY",
-          "publishedAt": "2026-03-11T04:05:33Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "20260310-lafc-alajuelense",
-      "teams": {
-        "away": "Alajuelense",
-        "home": "Los Angeles FC"
-      },
-      "headline": "Alajuelense holds LAFC to frustrating draw in Los Angeles",
-      "score": "Los Angeles FC 1 - 1 Alajuelense",
-      "brief": "LAFC will feel they let one slip away after being held to a 1-1 draw by a resilient Alajuelense. The Black & Gold started brightly and looked set to dominate after an early breakthrough, but the Costa Rican visitors refused to fold, finding an equalizer against the run of play. Despite a late barrage of pressure from the home side, Alajuelense’s organized low block held firm, setting up a fascinating and dangerous second leg in Alajuela.",
-      "bullets": [
-        "LAFC recorded over 65% possession but struggled to create clear-cut chances in the final third.",
-        "Alajuelense scored on their only shot on target of the entire match.",
-        "The draw ends LAFC’s four-game winning streak at BMO Stadium in international competition.",
-        "Alajuelense’s goalkeeper was named Man of the Match after making seven crucial interventions."
-      ],
-      "context": "The 1-1 result gives Alajuelense a slight edge due to the away goals rule heading into Costa Rica.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.livesoccertv.com/match/4901236/los-angeles-fc-vs-alajuelense/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ZotefcH9nzk",
-          "title": "LAFC vs LD Alajuelense | 2026 Concacaf Champions Cup | Round of 16",
-          "url": "https://www.youtube.com/watch?v=ZotefcH9nzk",
-          "embedUrl": "https://www.youtube.com/embed/ZotefcH9nzk",
-          "publishedAt": "2026-03-11T06:10:06Z",
-          "matchScore": 100
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }

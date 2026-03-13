@@ -7,11 +7,13 @@ const { spawnSync } = require('child_process');
 const DEFAULT_SOURCE_BY_LEAGUE = {
   CONCACAFCHAMPIONSCUP: 'https://www.youtube.com/playlist?list=PL6XTKrlgbQUBtOk2ji7hvg_4jVIUP-Kl2',
   UEFACHAMPIONSLEAGUE: 'https://www.youtube.com/playlist?list=PLkwBiY2Dq-oaG6vHAhmcCOc3Q_-To2dlA',
+  NCAAM: 'https://www.youtube.com/playlist?list=PLhh7fyF6r5qVV2_RonsHodwkwe-GGt_Jl,https://www.youtube.com/playlist?list=PL2RRF9GtC9s1v7L7tO5Astcl4Z8xq3BqQ,https://www.youtube.com/playlist?list=PLSrXjFYZsRuMeW1ttMkXz4cQy9bap9fIB,https://www.youtube.com/playlist?list=PLmkjXprBSRGMmLrdClEpgvhPQ2DijUXG6',
 };
 
 const DEFAULT_TITLE_MUST_INCLUDE_BY_LEAGUE = {
   CONCACAFCHAMPIONSCUP: 'concacaf champions cup',
   UEFACHAMPIONSLEAGUE: 'ucl',
+  NCAAM: 'highlights',
 };
 
 function parseArgs(argv) {
@@ -168,35 +170,52 @@ function parseScoreTeamCodes(score) {
 }
 
 function fetchVideosWithYtDlp(sourceUrl) {
-  const proc = spawnSync(
-    'yt-dlp',
-    ['--flat-playlist', '--dump-json', sourceUrl],
-    { encoding: 'utf8', maxBuffer: 50 * 1024 * 1024 }
-  );
+  const sources = String(sourceUrl || '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (!sources.length) return [];
 
-  if (proc.status !== 0) {
-    throw new Error(`yt-dlp failed (${proc.status}): ${(proc.stderr || '').slice(0, 400)}`);
+  const merged = [];
+  for (const src of sources) {
+    const proc = spawnSync(
+      'yt-dlp',
+      ['--flat-playlist', '--dump-json', src],
+      { encoding: 'utf8', maxBuffer: 50 * 1024 * 1024 }
+    );
+
+    if (proc.status !== 0) {
+      throw new Error(`yt-dlp failed (${proc.status}): ${(proc.stderr || '').slice(0, 400)}`);
+    }
+
+    const out = String(proc.stdout || '').trim();
+    if (!out) continue;
+
+    const videos = out
+      .split('\n')
+      .map((line) => {
+        try {
+          return JSON.parse(line);
+        } catch {
+          return null;
+        }
+      })
+      .filter(Boolean)
+      .map((v) => ({
+        videoId: v.id,
+        title: v.title || '',
+        uploadDateIso: parseDateToIso(v.upload_date || ''),
+      }))
+      .filter((v) => v.videoId && v.title);
+
+    merged.push(...videos);
   }
 
-  const out = String(proc.stdout || '').trim();
-  if (!out) return [];
-
-  return out
-    .split('\n')
-    .map((line) => {
-      try {
-        return JSON.parse(line);
-      } catch {
-        return null;
-      }
-    })
-    .filter(Boolean)
-    .map((v) => ({
-      videoId: v.id,
-      title: v.title || '',
-      uploadDateIso: parseDateToIso(v.upload_date || ''),
-    }))
-    .filter((v) => v.videoId && v.title);
+  const deduped = new Map();
+  for (const v of merged) {
+    if (!deduped.has(v.videoId)) deduped.set(v.videoId, v);
+  }
+  return [...deduped.values()];
 }
 
 function pickBestTeamVideo(game, videos, targetDateIso, titleMustIncludeNorm, leagueKeyNorm) {

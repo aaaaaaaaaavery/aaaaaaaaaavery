@@ -2,125 +2,129 @@
   "leagueName": "WTA",
   "leagueKey": "wta",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The underdogs stole the spotlight at Indian Wells as Australian qualifier Talia Gibson and Canadian teen Victoria Mboko both stunned Top 10 seeds to reach their first major quarterfinals. Meanwhile, world number one Aryna Sabalenka and Czech rising star Linda Noskova flexed their muscles with clinical straight-sets victories to round out a high-stakes day in the desert.",
+  "leagueBriefing": "The semifinals are set in Tennis Paradise after a day of heavyweight clashes and gritty survival. World No. 1 Aryna Sabalenka and reigning Australian Open champion Elena Rybakina both took care of business in straight sets, but the story of the day was Elina Svitolina's stunning upset of Iga Swiatek. Svitolina's resurgence continues to be the primary talking point of the 2026 season, as she now prepares for a high-stakes showdown with Rybakina while Sabalenka faces the rising Czech star Linda Noskova.",
   "games": [
     {
-      "id": "LS008",
-      "teams": {
-        "away": "Naomi Osaka",
-        "home": "Aryna Sabalenka"
-      },
-      "headline": "Stellar serving propels Sabalenka past Osaka into Indian Wells quarterfinals",
-      "score": "Aryna Sabalenka 2 - Naomi Osaka 0",
-      "brief": "In a heavyweight clash between four-time Grand Slam champions, Aryna Sabalenka proved too strong for Naomi Osaka, securing a 6-2, 6-4 victory. Sabalenka’s serve was the story of the match, as she never faced a break point and consistently pressured Osaka’s second serve to cruise into the final eight. While Osaka showed flashes of her vintage hard-court brilliance, she couldn't find an answer for the world number one's raw power and precision in the desert heat.",
-      "bullets": [
-        "Sabalenka fired 8 aces and won 76% of her first-serve points in a dominant service display.",
-        "The win marked Sabalenka's 23rd consecutive victory against players ranked outside the Top 20.",
-        "Osaka was held to zero break point opportunities throughout the 71-minute contest.",
-        "With this win, Sabalenka moved past Maria Sharapova for the seventh-most WTA 1000 match wins (137) in history."
-      ],
-      "context": "Sabalenka advances to face Victoria Mboko as she continues her quest for a first Indian Wells title.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.wtatennis.com/news/4465964/stellar-serving-propels-sabalenka-past-osaka-into-indian-wells-quarters"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "mPO7ye5WYrs",
-          "title": "Sabalenka highlights",
-          "url": "https://www.youtube.com/watch?v=mPO7ye5WYrs",
-          "embedUrl": "https://www.youtube.com/embed/mPO7ye5WYrs"
-        }
-      ]
-    },
-    {
-      "id": "LS011",
-      "teams": {
-        "away": "Talia Gibson",
-        "home": "Jasmine Paolini"
-      },
-      "headline": "Australian qualifier Gibson stuns world number seven Paolini in desert fairytale",
-      "score": "Talia Gibson 2 - Jasmine Paolini 1",
-      "brief": "Talia Gibson's dream run reached a new peak as the 21-year-old Australian qualifier claimed her first career Top 10 victory by upsetting Jasmine Paolini 7-5, 2-6, 6-1. After a mid-match surge from the Italian veteran, Gibson regained her composure to dominate the deciding set, breaking Paolini three times. The victory makes Gibson the first qualifier in 11 years to reach the Indian Wells quarterfinals, capping off a week where she has already taken down three Top 20 opponents.",
-      "bullets": [
-        "Gibson is the first qualifier since Lesia Tsurenko in 2015 to reach the quarterfinals at Indian Wells.",
-        "The Australian has won 16 of her 18 matches since the start of the 2026 season.",
-        "Gibson is guaranteed to leap over 45 spots in the rankings, breaking into the Top 70 for the first time.",
-        "She joins Sam Stosur and Casey Dellacqua as the only Australian women to reach the final eight in this tournament."
-      ],
-      "context": "Gibson’s breakthrough run significantly impacts the Australian rankings and sets up a quarterfinal against Linda Noskova.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.tennis.com.au/fan-zone/news/2026/03/11/gibson-reaches-indian-wells-2026-quarterfinals"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "klvlAyA8ycc",
-          "title": "Gibson highlights",
-          "url": "https://www.youtube.com/watch?v=klvlAyA8ycc",
-          "embedUrl": "https://www.youtube.com/embed/klvlAyA8ycc"
-        }
-      ]
-    },
-    {
-      "id": "LS009",
+      "id": "20260312-sabalenka-mboko",
       "teams": {
         "away": "Victoria Mboko",
-        "home": "Amanda Anisimova"
+        "home": "Aryna Sabalenka"
       },
-      "headline": "Mboko dispatches Anisimova to secure second consecutive Top 10 upset",
-      "score": "Victoria Mboko 2 - Amanda Anisimova 0",
-      "brief": "Canadian teenager Victoria Mboko continues to prove she belongs at the top of the game, crushing sixth seed Amanda Anisimova 6-4, 6-1 in just 73 minutes. Mboko played clean, measured tennis, capitalizing on an error-prone performance from the American to reach her third WTA 1000 quarterfinal in only seven appearances. The 19-year-old was ruthless on her own delivery, winning 100% of the break points she faced to set up a rematch with Aryna Sabalenka.",
+      "headline": "Sabalenka halts Mboko's dream run to reach Indian Wells semis",
+      "score": "Victoria Mboko 0 - Aryna Sabalenka 2",
+      "brief": "Aryna Sabalenka proved why she's the world's top-ranked player, weathering a fierce challenge from 19-year-old sensation Victoria Mboko. The Canadian teenager went toe-to-toe with the top seed's power for much of the match, but Sabalenka's experience shone through during a flawless first-set tiebreak. Despite Mboko’s aggressive baseline play and multiple break opportunities, Sabalenka remained unshakeable in the clutch moments to keep her hunt for a first Indian Wells title alive.",
       "bullets": [
-        "Mboko won all eight of her service games and converted four out of four break point chances.",
-        "This was Mboko's fifth career Top 10 win and her fourth of the 2026 season alone.",
-        "Anisimova was unable to convert her only break point opportunity in the match.",
-        "Mboko has now won 11 straight matches against players ranked outside the Top 20 this year."
+        "Sabalenka maintained a perfect record on break points, saving all five she faced throughout the match.",
+        "The World No. 1 dominated the first-set tiebreak 7-0, the first time she has swept a tour-level breaker in her career.",
+        "Despite the loss, Mboko is projected to debut in the world's Top 10 on Monday, reaching a career-high No. 9.",
+        "Sabalenka has now reached six consecutive semifinals on the WTA Tour, dating back to last August."
       ],
-      "context": "The win sets up an Australian Open rematch against world No. 1 Aryna Sabalenka in the quarterfinals.",
+      "context": "Sabalenka advances to her third career Indian Wells semifinal as she looks to finally claim the trophy after two previous runner-up finishes.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.wtatennis.com/news/4466203/mboko-dispatches-anisimova-in-straight-sets-to-face-sabalenka-in-indian-wells-quarters"
+        "recapUrl": "https://www.wtatennis.com/news/4467765/sabalenka-tops-mboko-for-second-time-in-2026-to-make-indian-wells-semis"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "7IabfT7HpWg",
-          "title": "Mboko highlights",
-          "url": "https://www.youtube.com/watch?v=7IabfT7HpWg",
-          "embedUrl": "https://www.youtube.com/embed/7IabfT7HpWg"
+          "videoId": "-IorEOm0rko",
+          "title": "Aryna Sabalenka vs. Victoria Mboko | 2026 Indian Wells Quarterfinal | WTA Match Highlights",
+          "url": "https://www.youtube.com/watch?v=-IorEOm0rko",
+          "embedUrl": "https://www.youtube.com/embed/-IorEOm0rko",
+          "publishedAt": "2026-03-12T20:12:21Z",
+          "matchScore": 121
         }
       ]
     },
     {
-      "id": "1751305",
+      "id": "20260312-rybakina-pegula",
       "teams": {
-        "away": "Alex Eala",
-        "home": "Linda Noskova"
+        "away": "Jessica Pegula",
+        "home": "Elena Rybakina"
       },
-      "headline": "Noskova overpowers Eala to book maiden Indian Wells quarterfinal spot",
-      "score": "Linda Noskova 2 - Alex Eala 0",
-      "brief": "Linda Noskova made quick work of Alex Eala in the night session, sprinting to a 6-2, 6-0 victory in just 55 minutes. The 14th-seeded Czech was in total control from the first ball, winning the final eight games of the match to extinguish the Philippines' rising star's hopes. Noskova’s aggressive baseline play and seven aces left Eala with no room to breathe, propelling the 21-year-old into her first tour-level quarterfinal of the season.",
+      "headline": "Rybakina thwarts Pegula comeback to book semifinal spot",
+      "score": "Jessica Pegula 0 - Elena Rybakina 2",
+      "brief": "Elena Rybakina stayed on a collision course with the top seeds after dismissing American No. 1 Jessica Pegula in straight sets. Rybakina looked unstoppable early, racing through the opening frame, but had to withstand a spirited second-set charge from Pegula. The Kazakh star's trademark serve and clinical ball-striking eventually wore down Pegula in the tiebreak, securing Rybakina's spot in a high-profile semifinal against a surging Elina Svitolina.",
       "bullets": [
-        "Noskova hit 7 aces and converted 5 of 8 break-point opportunities.",
-        "The Czech won 83% of her first-serve points and saved the only break point she faced.",
-        "At 21, Noskova is the second-youngest Czech player to reach three WTA 1000 quarterfinals.",
-        "The match was the most one-sided of the round, with Noskova winning 60% of total points played."
+        "Rybakina dominated the opening set 6-1 before surviving a much tighter second-set tiebreak.",
+        "This victory marks Rybakina's fourth consecutive win over Pegula, extending her head-to-head lead to 5-3.",
+        "The reigning Australian Open champion struck 26 winners to just 15 unforced errors during the contest.",
+        "Rybakina is seeking her second career title in the California desert after winning the event in 2023."
       ],
-      "context": "Noskova’s dominant form makes her a heavy favorite in her upcoming quarterfinal against qualifier Talia Gibson.",
+      "context": "The victory sets up a tactical battle against Elina Svitolina, who holds a winning record in their previous encounters on clay.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.wtatennis.com/news/4466258/noskova-dominates-eala-to-book-indian-wells-quarterfinal-spot"
+        "recapUrl": "https://www.thehindu.com/sport/tennis/indian-wells-bnp-paribas-tennis-championship/article70737872.ece"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "wQ1Y2R4_dAU",
-          "title": "Eala highlights",
-          "url": "https://www.youtube.com/watch?v=wQ1Y2R4_dAU",
-          "embedUrl": "https://www.youtube.com/embed/wQ1Y2R4_dAU"
+          "videoId": "W-8a9rj2wEw",
+          "title": "Jessica Pegula Highlights",
+          "url": "https://www.youtube.com/watch?v=W-8a9rj2wEw",
+          "embedUrl": "https://www.youtube.com/embed/W-8a9rj2wEw"
+        }
+      ]
+    },
+    {
+      "id": "20260312-svitolina-swiatek",
+      "teams": {
+        "away": "Elina Svitolina",
+        "home": "Iga Swiatek"
+      },
+      "headline": "Svitolina stuns Swiatek in three-set thriller to reach final four",
+      "score": "Elina Svitolina 2 - Iga Swiatek 1",
+      "brief": "In the most dramatic result of the tournament, Elina Svitolina reminded the tennis world why she’s the tour’s winningest player in 2026 by toppling World No. 2 Iga Swiatek. Svitolina took advantage of a shaky start from the two-time champion, and while Swiatek fought back to force a decider, the Ukrainian remained 'cold as ice' in the final set. A crucial break in the ninth game allowed Svitolina to serve out the match at love, marking a major milestone in her successful return to the sport's elite tier.",
+      "bullets": [
+        "Svitolina earned her 19th win of 2026, leading all players on the WTA Tour this season.",
+        "The Ukrainian remains undefeated in three-set matches this year with a perfect 6-0 record.",
+        "Swiatek struggled with her serve throughout, committing eight double faults and winning just 13% of her second-serve points in the first set.",
+        "This is Svitolina’s first Indian Wells semifinal appearance since 2019 and her 11th career win over a Top 2 opponent."
+      ],
+      "context": "Svitolina's victory continues a remarkable 2026 campaign that has seen her return to the Top 10 for the first time since becoming a mother.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.wtatennis.com/news/4467988/svitolina-stands-tall-late-earns-rare-win-over-swiatek-to-reach-indian-wells-semifinals"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "lKNq9NvmCi0",
+          "title": "Iga Swiatek Highlights",
+          "url": "https://www.youtube.com/watch?v=lKNq9NvmCi0",
+          "embedUrl": "https://www.youtube.com/embed/lKNq9NvmCi0"
+        }
+      ]
+    },
+    {
+      "id": "20260312-noskova-gibson",
+      "teams": {
+        "away": "Talia Gibson",
+        "home": "Linda Noskova"
+      },
+      "headline": "Noskova outlasts qualifier Gibson to secure semifinal debut",
+      "score": "Talia Gibson 1 - Linda Noskova 2",
+      "brief": "Linda Noskova brought an end to Talia Gibson's fairytale run from qualifying, but the young Australian didn't go down without a fight. Noskova controlled the pace early with a heavy serve, though she briefly lost her rhythm in the second set as fatigue seemed to play a role on both sides. In the decider, the Czech teenager refound her clinical edge, breaking twice to secure her first-ever Indian Wells semifinal and a date with World No. 1 Aryna Sabalenka.",
+      "bullets": [
+        "Noskova hammered 13 aces during the match to offset 10 double faults.",
+        "This is the second WTA 1000 semifinal of Noskova's career and her first in North America.",
+        "Gibson's run from qualifying included her first two career wins over Top 20 opponents.",
+        "Noskova secured five service breaks in total, all coming in the two sets she won."
+      ],
+      "context": "Noskova's deep run cements her status as one of the tour's most dangerous young stars and sets up a rematch of the 2023 Adelaide final against Sabalenka.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.wtatennis.com/news/4467790/linda-noskova-fends-off-talia-gibson-in-indian-wells-quarters-set-for-aryna-sabalenka-semifinal-showdown"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "YNazInoXq8A",
+          "title": "Linda Noskova vs. Talia Gibson | 2026 Indian Wells Quarterfinal | WTA Match Highlights",
+          "url": "https://www.youtube.com/watch?v=YNazInoXq8A",
+          "embedUrl": "https://www.youtube.com/embed/YNazInoXq8A",
+          "publishedAt": "2026-03-12T22:27:26Z",
+          "matchScore": 121
         }
       ]
     }

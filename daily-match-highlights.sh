@@ -214,6 +214,7 @@ run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/laliga.json" "$LALIGA_PLA
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/superlig.json" "$SUPERLIG_PLAYLIST" "Super Lig" "super lig"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/uefachampionsleague.json" "$UEFA_CHAMPIONS_LEAGUE_PLAYLIST" "UEFA Champions League" "ucl"
 run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/concacafchampionscup.json" "$CONCACAF_CHAMPIONS_CUP_PLAYLIST" "CONCACAF Champions Cup" "concacaf champions cup"
+run_match_per_game_date "$ROOT_DIR/recaps-manual/daily/ncaam.json" "$NCAAM_PLAYLISTS" "NCAAM" "highlights"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/tennis-wta.json" "$WTA_CHANNEL_URL" "WTA" "highlights"
 run_match_per_game_date_channel "$ROOT_DIR/recaps-manual/daily/wbc.json" "$WBC_CHANNEL_URL" "WBC" "world baseball classic"
 
@@ -232,6 +233,7 @@ echo "- recaps-manual/daily/laliga.json"
 echo "- recaps-manual/daily/superlig.json"
 echo "- recaps-manual/daily/uefachampionsleague.json"
 echo "- recaps-manual/daily/concacafchampionscup.json"
+echo "- recaps-manual/daily/ncaam.json"
 echo "- recaps-manual/daily/tennis-wta.json"
 echo "- recaps-manual/daily/wbc.json"
 

@@ -1,7 +1,7 @@
 {
-	"leagueName": "NASCAR Cup Series",
-	"leagueKey": "nascarcupseries",
-	"sourceType": "console_recaps",
-	"leagueBriefing": "",
-	"games": []
+  "leagueName": "NASCAR Cup Series",
+  "leagueKey": "nascarcupseries",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "",
+  "games": []
 }

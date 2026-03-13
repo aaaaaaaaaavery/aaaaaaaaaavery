@@ -2,147 +2,58 @@
   "leagueName": "NCAA Baseball",
   "leagueKey": "ncaabaseball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Ranked powerhouses flexed their muscles on Tuesday as Texas, UCLA, and Auburn cruised to blowout victories, while Florida took the opening round of the Sunshine Showdown against rival Florida State.",
+  "leagueBriefing": "Conference play kicked off with a bang on Thursday as top-ranked teams faced early tests and offensive records were nearly shattered. Georgia Tech sent a clear message to the ACC with a dominant shutout of Clemson, while Wichita State put on a historic clinic at the plate. In the Big 12, BYU proved that home-field advantage is real by halting one of the nation's longest active winning streaks.",
   "games": [
     {
-      "id": "401810574",
+      "id": "JcLFfL9RUu0H5ystoOMbjQ7A58QMysWHEEqi7hufVoQXO5nVxbctjHh%2F6ifARsoKUNz2Cn1GpJx0eQgL%2FI8uNugW6%2F65ooJ9xE6%2BliOEFRl1EIOMAkcBvIU2aC8AuTau2UnY2vrhsp0zGxHkJEx3fbAnLWUmX%2F8r%2BMq5T8OXc2WIexLN5H205dHiBhHjVE91",
       "teams": {
-        "away": "UC Irvine",
-        "home": "UCLA"
+        "away": "Georgia Tech",
+        "home": "Clemson"
       },
-      "headline": "Top-ranked Bruins dismantle Anteaters in seven-inning rout",
-      "score": "UC Irvine 1 - UCLA 11",
-      "brief": "UCLA looked every bit the No. 1 team in the country on Tuesday night, invoking the run rule early against UC Irvine. The Bruins' offense was relentless from the jump, burying the Anteaters under a double-digit deficit before the sun had fully set in Los Angeles.",
+      "headline": "Georgia Tech silences Clemson in dominant conference opener",
+      "score": "Georgia Tech 10 - Clemson 0",
+      "brief": "Georgia Tech made a massive statement to open ACC play, absolutely dismantling No. 11 Clemson in a game that was shortened to seven innings due to the run rule. The Yellow Jackets' pitching staff kept the Tigers completely off balance, surrendering only two hits while the offense relentlessly piled on runs. It was the kind of performance that shifts expectations in a division race, proving Tech can travel into a hostile environment and dominate a top-tier rival.",
       "bullets": [
-        "UCLA scored in five of the six innings they came to the plate.",
-        "The Bruins' pitching staff limited UC Irvine to just three hits over seven innings.",
-        "UCLA's lead-off hitters reached base in nearly every frame to set the table for the blowout.",
-        "This win marks UCLA's largest margin of victory over their SoCal rivals in over a decade."
+        "Yellow Jacket pitchers combined for a two-hit shutout, stifling a Clemson offense that entered the game with high momentum.",
+        "The game was called after seven innings as Georgia Tech reached a 10-run lead, invoking the conference run rule.",
+        "Georgia Tech's offense was clinical, racking up 12 hits while capitalizing on two Clemson errors.",
+        "This victory moves Georgia Tech to a 16-2 record, further solidifying their status as one of the most dangerous teams in the country."
       ],
-      "context": "The Bruins maintain their grip on the No. 1 ranking with a dominant midweek performance.",
+      "context": "The dominant shutout serves as a major momentum shifter for Georgia Tech as they begin their ACC campaign against a top-15 opponent.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401810574"
+        "recapUrl": "https://theacc.com/boxscore.aspx?id=JcLFfL9RUu0H5ystoOMbjQ7A58QMysWHEEqi7hufVoQXO5nVxbctjHh%2F6ifARsoKUNz2Cn1GpJx0eQgL%2FI8uNugW6%2F65ooJ9xE6%2BliOEFRl1EIOMAkcBvIU2aC8AuTau2UnY2vrhsp0zGxHkJEx3fbAnLWUmX%2F8r%2BMq5T8OXc2WIexLN5H2v5dHiBhHjVE91&path=baseball"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "TlFGuQJCUvk",
-          "title": "Florida highlights",
-          "url": "https://www.youtube.com/watch?v=TlFGuQJCUvk",
-          "embedUrl": "https://www.youtube.com/embed/TlFGuQJCUvk"
+          "videoId": "WdAZv1-0HhQ",
+          "title": "Georgia Tech vs Clemson Highlights",
+          "url": "https://www.youtube.com/watch?v=WdAZv1-0HhQ",
+          "embedUrl": "https://www.youtube.com/embed/WdAZv1-0HhQ"
         }
       ]
     },
     {
-      "id": "401815194",
+      "id": "18716",
       "teams": {
-        "away": "Florida State",
-        "home": "Florida"
+        "away": "Butler",
+        "home": "Wichita State"
       },
-      "headline": "Gator arms silence Seminoles as Florida takes Sunshine Showdown opener",
-      "score": "Florida State 3 - Florida 6",
-      "brief": "Florida's pitching staff rose to the occasion in the season's first installment of the Sunshine Showdown, striking out 18 Seminoles to secure a 6-3 victory. After falling behind early, the Gators relied on a resilient bullpen and a key home run from Brendan Lawson to pull ahead and shut the door on their rivals.",
+      "headline": "Wichita State flirts with history in 27-run explosion against Butler",
+      "score": "Butler 3 - Wichita State 27",
+      "brief": "Wichita State turned their series opener into a batting practice session, scoring their most runs in nearly a quarter-century to blow past Butler. After Butler took a brief early lead, the Shockers responded with a relentless barrage, highlighted by an 11-run third inning where they batted around without recording an out. It was a historic night at Eck Stadium that saw WSU score in every single inning they came to the plate, leaving the Bulldogs searching for answers.",
       "bullets": [
-        "Florida pitchers recorded the final 11 outs of the game via strikeout.",
-        "Brendan Lawson provided the offensive spark with his 9th home run of the season.",
-        "Joshua Whritenour struck out all five batters he faced to earn a dominant save.",
-        "The Gators' staff held the high-powered FSU offense to just five total hits."
+        "The 27 runs scored are the most by the Shockers since 2002 and the second-most in program history.",
+        "Max Kaufer continued his torrid start to the season, blasting two home runs to bring his season total to 11 through 18 games.",
+        "Wichita State scored in every inning (1st through 6th), a feat the program hadn't achieved since 1999.",
+        "Owen Washburn extended his impressive multi-hit game streak to 10 straight contests with a 2-for-4 performance.",
+        "The Shocker offense benefited from 12 walks and three hit batsmen issued by a parade of six Butler pitchers."
       ],
-      "context": "Florida secures a massive resume win and early-season bragging rights over their in-state rivals.",
+      "context": "The offensive explosion nearly broke the school record of 35 runs and marks a definitive turnaround for a Shocker program looking to return to national relevance.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401815194"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "5jEXe8vSPyQ",
-          "title": "Texas vs Texas State highlights",
-          "url": "https://www.youtube.com/watch?v=5jEXe8vSPyQ",
-          "embedUrl": "https://www.youtube.com/embed/5jEXe8vSPyQ"
-        }
-      ]
-    },
-    {
-      "id": "401813134",
-      "teams": {
-        "away": "Texas",
-        "home": "Texas State"
-      },
-      "headline": "Longhorns stay perfect as record crowd witnesses rout of Texas State",
-      "score": "Texas 15 - Texas State 4",
-      "brief": "Texas continued its march toward history, moving to 16-0 with a comprehensive beatdown of Texas State in front of a record-setting crowd in San Marcos. The Longhorns' bats were hot from the first pitch, ensuring the record 3,482 fans in attendance saw plenty of offensive fireworks.",
-      "bullets": [
-        "Texas improved to a perfect 16-0 on the season with the win.",
-        "The attendance of 3,482 set an all-time record for Bobcat Ballpark.",
-        "Texas scored early and often, building a double-digit lead by the middle innings.",
-        "The Longhorns' pitching staff effectively neutralized a usually potent Texas State lineup."
-      ],
-      "context": "Texas remains the only undefeated team in the Top 5 as they steamroll through their midweek schedule.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401813134"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "D9IExeSAOaU",
-          "title": "Tennessee Tech highlights",
-          "url": "https://www.youtube.com/watch?v=D9IExeSAOaU",
-          "embedUrl": "https://www.youtube.com/embed/D9IExeSAOaU"
-        }
-      ]
-    },
-    {
-      "id": "401812845",
-      "teams": {
-        "away": "Tennessee Tech",
-        "home": "Tennessee"
-      },
-      "headline": "Vols launch five homers in 20-run demolition of Tennessee Tech",
-      "score": "Tennessee Tech 2 - Tennessee 20",
-      "brief": "Tennessee put on a power-hitting clinic at Lindsey Nelson Stadium, blasting five home runs in a 20-2 thrashing of Tennessee Tech. A nine-run first inning, capped by a Reese Chapman grand slam, essentially ended the contest before it really began, allowing the Vols to cruise through the rest of the evening.",
-      "bullets": [
-        "Garrett Wright opened the game with a leadoff home run to set the tone.",
-        "Reese Chapman provided the big blow with a grand slam in a nine-run first inning.",
-        "The Vols totaled five home runs as a team in the shortened contest.",
-        "The game was called after seven innings due to the 10-run rule."
-      ],
-      "context": "Tennessee bounces back from a weekend loss with one of their most dominant offensive displays of the year.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401812845"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "g_dPtjGAs3Q",
-          "title": "Wake Forest highlights",
-          "url": "https://www.youtube.com/watch?v=g_dPtjGAs3Q",
-          "embedUrl": "https://www.youtube.com/embed/g_dPtjGAs3Q"
-        }
-      ]
-    },
-    {
-      "id": "401813354",
-      "teams": {
-        "away": "Tulane",
-        "home": "Mississippi State"
-      },
-      "headline": "Bulldogs storm back with massive seventh inning to sink Tulane",
-      "score": "Tulane 7 - Mississippi State 11",
-      "brief": "Mississippi State showed serious grit in the Hancock Whitney Classic, erasing a five-run deficit to take down Tulane. The Bulldogs' offense came alive in the seventh inning, exploding for six runs to flip the script and secure a hard-fought comeback victory in front of a raucous crowd.",
-      "bullets": [
-        "Tulane led 7-2 before Mississippi State's late-inning heroics.",
-        "Mississippi State scored six runs in the 7th and two more in the 8th to pull away.",
-        "A 4-RBI home run in the 7th inning served as the turning point for the Bulldogs.",
-        "Tulane's bullpen struggled to find the plate, conceding several walks during the collapse."
-      ],
-      "context": "A character-building win for the Bulldogs as they head toward a critical SEC opening weekend.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401813354"
+        "recapUrl": "https://goshockers.com/news/2026/3/12/baseball-shockers-plate-27-runs-in-series-opener.aspx"
       },
       "highlights": [
         {
@@ -155,84 +66,25 @@
       ]
     },
     {
-      "id": "401812674",
+      "id": "401803310",
       "teams": {
-        "away": "UAB",
-        "home": "Auburn"
+        "away": "Cincinnati",
+        "home": "BYU"
       },
-      "headline": "Auburn hitters go wild in run-rule rout of UAB",
-      "score": "UAB 2 - Auburn 17",
-      "brief": "Auburn brought the heavy lumber to their midweek matchup against UAB, scoring 17 runs in just five innings of offensive work. The Tigers' lineup was relentless, scoring in every single inning and using a flurry of home runs to turn what was expected to be a competitive game into a complete blowout.",
+      "headline": "BYU power surge ends Cincinnati’s seven-game win streak",
+      "score": "Cincinnati 2 - BYU 5",
+      "brief": "In a classic Big 12 battle, BYU used the long ball and stellar pitching to snap Cincinnati's red-hot seven-game winning streak. The game was a pitcher's duel through the early stages until the Cougars' bats woke up with two pivotal home runs that provided all the cushion they needed. While the Bearcats attempted a ninth-inning rally to keep their streak alive, BYU's bullpen slammed the door to secure a vital win in their conference home opener.",
       "bullets": [
-        "Auburn hit multiple home runs, including a massive 4-RBI blast by Steele in the 5th.",
-        "The Tigers scored four runs in the 1st, five in the 3rd, and five more in the 5th.",
-        "UAB was held to just two runs as Auburn's pitching staff remained in total control.",
-        "The game was shortened to seven innings via the run rule."
+        "Ezra McNaughton delivered the decisive blow with a three-run home run in the bottom of the seventh inning to break the game open.",
+        "Crew McChesney opened the scoring for the Cougars with a two-run blast in the fourth inning.",
+        "BYU starter Garrison Sumner earned the win, allowing only one run and four hits while striking out six over 5.1 innings.",
+        "The loss was the first for Cincinnati in over two weeks, ending a seven-game stretch of dominant baseball.",
+        "The victory marked head coach Trent Pratt’s 200th career game at the helm for BYU."
       ],
-      "context": "Auburn's offense looks unstoppable as they gear up for conference play.",
+      "context": "This victory gives BYU an early edge in the Big 12 standings while halting one of the most significant winning streaks in Cincinnati program history.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401812674"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401811802",
-      "teams": {
-        "away": "Wake Forest",
-        "home": "Coastal Carolina"
-      },
-      "headline": "Coastal Carolina powers past Wake Forest in mid-week slugfest",
-      "score": "Wake Forest 4 - Coastal Carolina 10",
-      "brief": "In a battle between two ranked programs, Coastal Carolina's bats proved too much for the Wake Forest pitching staff. The Chanticleers exploded for double-digit runs, using a massive mid-game surge to pull away from the Demon Deacons and assert their dominance on their home turf.",
-      "bullets": [
-        "Coastal Carolina's lineup featured four players with multi-hit games.",
-        "The Chanticleers hit three home runs, accounting for six of their ten runs.",
-        "Wake Forest's highly-touted rotation struggled, conceding seven runs in the first four innings.",
-        "Coastal Carolina has now won six of their last seven games against ACC opponents."
-      ],
-      "context": "A significant RPI boost for the Chanticleers as they knock off a top-tier Wake Forest squad.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401811802"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401814674",
-      "teams": {
-        "away": "Stephen F. Austin",
-        "home": "Texas A&M"
-      },
-      "headline": "Aggies erupt for ten runs in one inning to bury Lumberjacks",
-      "score": "Stephen F. Austin 1 - Texas A&M 14",
-      "brief": "Texas A&M put on a clinic in offensive efficiency Tuesday, using a staggering ten-run sixth inning to blow past Stephen F. Austin. Blake Binderup was the star of the show, launching two home runs as the Aggies turned a close game into a run-rule victory in a matter of minutes.",
-      "bullets": [
-        "Blake Binderup hit two home runs, including a 3-run shot during the 10-run 6th inning.",
-        "Texas A&M improved to 15-1 on the season with the victory.",
-        "The game was called after seven innings due to the run rule.",
-        "Lumberjack pitchers struggled with command, walking six batters in the decisive 6th inning."
-      ],
-      "context": "The Aggies' high-powered offense continues to justify their Top 25 ranking.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/recap/_/gameId/401814674"
+        "recapUrl": "https://byucougars.com/news/2026/03/12/byu-opens-conference-play-with-5-2-win-over-cincinnati"
       },
       "highlights": [
         {

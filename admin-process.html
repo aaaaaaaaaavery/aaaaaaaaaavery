@@ -1,0 +1,2016 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <title>THPORTH Admin Process</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #101828;
+      --muted: #667085;
+      --line: #e4e7ec;
+      --accent: #175cd3;
+      --ok-bg: #ecfdf3;
+      --ok-line: #abefc6;
+      --lock-bg: #f9fafb;
+      --lock-text: #98a2b3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+      color: var(--text);
+      font: 14px/1.5 "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+      min-height: 100vh;
+      padding: 16px;
+      display: grid;
+      gap: 16px;
+      grid-template-rows: auto 1fr;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+    }
+
+    .top {
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .muted { color: var(--muted); }
+
+    .pill {
+      border: 1px solid #b2ddff;
+      background: #eff8ff;
+      color: #175cd3;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 320px 360px 1fr;
+      gap: 16px;
+      min-height: 0;
+    }
+
+    .panel {
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel h2 {
+      margin: 0;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+
+    .panel-body {
+      min-height: 0;
+      overflow: auto;
+      padding: 10px;
+      display: grid;
+      gap: 8px;
+      align-content: start;
+    }
+
+    .step {
+      border: none;
+      border-radius: 0;
+      padding: 4px 2px;
+      display: grid;
+      gap: 4px;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .step-head {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    .step.done {
+      border: none;
+      background: transparent;
+    }
+
+    .step.active {
+      border-color: #84caff;
+      background: #eff8ff;
+      border: 1px solid #84caff;
+      border-radius: 10px;
+      padding: 10px;
+      color: var(--text);
+    }
+
+    .step.locked {
+      background: transparent;
+      cursor: not-allowed;
+    }
+
+    .step:not(.active) {
+      color: #98a2b3;
+    }
+
+    .step-index {
+      display: none;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .step.active .step-index {
+      width: 22px;
+      min-width: 22px;
+      text-align: center;
+      border-radius: 6px;
+      background: #f2f4f7;
+      border: 1px solid #e4e7ec;
+      line-height: 20px;
+    }
+
+    .step:not(.active) .step-index {
+      color: #98a2b3;
+    }
+
+    .step-name {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .step:not(.active) .step-name,
+    .step:not(.active) .step-meta,
+    .substep:not(.active) .substep-title {
+      color: #98a2b3;
+    }
+
+    .step-meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    input[type="checkbox"] {
+      margin-top: 2px;
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      min-height: 16px;
+      max-width: 16px;
+      max-height: 16px;
+      flex: 0 0 16px;
+      box-sizing: border-box;
+      -webkit-appearance: checkbox;
+      appearance: auto;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .substep {
+      border: none;
+      border-radius: 0;
+      padding: 4px 2px;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .substep.done {
+      border: none;
+      background: transparent;
+    }
+
+    .substep.active {
+      border-color: #84caff;
+      background: #eff8ff;
+      border: 1px solid #84caff;
+      border-radius: 10px;
+      padding: 10px;
+      color: var(--text);
+    }
+
+    .substep.locked {
+      background: transparent;
+      cursor: not-allowed;
+    }
+
+    .substep:not(.active) {
+      color: #98a2b3;
+    }
+
+    .substep-head {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    .substep-title {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .substep-inline-icon {
+      width: 16px;
+      height: 16px;
+      vertical-align: -2px;
+    }
+
+    .content-block {
+      border: 1px solid #d0d5dd;
+      border-radius: 10px;
+      background: #f8fafc;
+      padding: 12px;
+      position: relative;
+      white-space: pre-wrap;
+      line-height: 1.45;
+      min-height: 90px;
+    }
+
+    .panel-body.editor-mode {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    .content-block.editor-shell {
+      width: 100%;
+      flex: 1;
+      min-height: 600px;
+      display: flex;
+      padding: 8px;
+      background: #fff;
+    }
+
+    .content-editor {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      padding: 10px;
+      font: inherit;
+      line-height: 1.45;
+      color: var(--text);
+      background: #fff;
+      resize: none;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border: 1px solid #b2ddff;
+      background: #eff8ff;
+      color: #175cd3;
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .controls {
+      padding: 10px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: 1px solid #d0d5dd;
+      background: #fff;
+      color: var(--text);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button.danger {
+      border-color: #fecdca;
+      background: #fef3f2;
+      color: #b42318;
+    }
+
+    .empty {
+      color: var(--muted);
+      border: 1px dashed #d0d5dd;
+      border-radius: 10px;
+      padding: 10px;
+      background: #fcfcfd;
+    }
+
+    @media (max-width: 1200px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" id="app"></div>
+
+  <script>
+    (function () {
+      const TEMPLATE_KEY = 'thporth.admin.todo.templates.v2';
+      const STATE_KEY = 'thporth.admin.todo.state.v2';
+
+      function detectAdminMode() {
+        const path = String(location.pathname || '').toLowerCase();
+        const params = new URLSearchParams(location.search || '');
+        return path.endsWith('/admin-process.html') || params.get('admin') === '1';
+      }
+
+      function getDateKey() {
+        return new Date().toISOString().slice(0, 10);
+      }
+
+      const DEFAULT_TEMPLATES = {
+        steps: [
+          {
+            id: 'step-1',
+            number: 1,
+            name: 'Clear .json files from yesterday',
+            subSteps: [
+              {
+                id: 'step-1-sub-1',
+                title: 'Paste this prompt to VS Code',
+                contentBlocks: [
+                  {
+                    id: 'step-1-sub-1-block-1',
+                    type: 'copy',
+                    text:
+`Use this exact workflow in /Users/avery/Downloads/Copy of THPORTHINDEX:\n\nTask:\nEmpty and reset all league JSON files to this skeleton format, using each file’s correct \`leagueName\` + \`leagueKey\` from \`LEAGUE_FILES\` in \`index-test.html\`:\n\n{\n  "leagueName": "MLS",\n  "leagueKey": "mls",\n  "sourceType": "console_recaps",\n  "leagueBriefing": "",\n  "games": []\n}\n\nExecution requirements:\n1. Read \`index-test.html\` and extract every entry in \`LEAGUE_FILES\`.\n2. For each league entry, overwrite its \`fileUrl\` JSON with the skeleton above.\n3. Do NOT guess league names/keys; use exactly what is in \`LEAGUE_FILES\`.\n4. Do NOT touch non-league JSON files unless they are explicitly in \`LEAGUE_FILES\`.\n5. Use a Python script file (not a long inline command) to avoid terminal truncation.\n   - Write the script to \`/tmp/reset_league_jsons.py\`\n   - Run it\n6. Validate all written files by loading each JSON and checking:\n   - \`leagueName\` matches\n   - \`leagueKey\` matches\n   - \`sourceType === "console_recaps"\`\n   - \`leagueBriefing === ""\`\n   - \`games\` is \`[]\`\n7. Return:\n   - count of files reset\n   - list of files reset\n   - confirmation that validation passed (or exact failures)\n\nPlease do it end-to-end without asking follow-ups unless blocked by a real error.`
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 'step-2',
+            number: 2,
+            name: 'Get articles for all leagues',
+            subSteps: [
+              {
+                id: 'step-2-sub-1',
+                title: 'Open these webpages',
+                contentBlocks: [
+                  {
+                    id: 'step-2-sub-1-block-1',
+                    type: 'info',
+                    text: '[LIVESPORTSONTV.COM list goes here: each league related to its URL]\n\nPlaceholder for now. You will provide this list later.'
+                  }
+                ]
+              },
+              {
+                id: 'step-2-sub-2',
+                title: 'Open Browse with AI at each webpage and paste script',
+                contentBlocks: [
+                  {
+                    id: 'step-2-sub-2-block-1',
+                    type: 'copy',
+                    text: `You are running on a live webpage in Chrome using Browse With AI Gemini.
+Your job is to use Gemini's Google Search capabilities to gather game recap information and output THPORTH recap JSON in the exact schema below.
+
+---
+DATA GATHERING WORKFLOW
+1. Read the current webpage to identify the league and all games listed on the page.
+2. For each listed game, use Gemini Google Search to find reliable recap text and key facts.
+3. Prioritize official league/team sources and established sports outlets.
+4. Use multiple sources when needed to confirm score, key performers, and context.
+5. Attempt every listed game on the page; only skip a game if no recap is available at all after thorough search.
+6. Do NOT search for highlight videos. I will provide highlights later.
+
+---
+WRITING STYLE
+Each recap must read like a sportswriter's morning briefing.
+Everything should focus on what mattered most so a reader can understand each game in about 30 seconds and have a useful watercooler takeaway.
+
+Tone:
+- conversational
+- narrative-driven
+- human
+- focused on what fans will talk about next morning
+
+Stats should support the story, not dominate it.
+Avoid robotic stat summaries.
+
+---
+HEADLINE
+Write a new headline for the single most important storyline.
+
+Rules:
+- Do NOT copy or closely paraphrase source headlines.
+- Use sentence case.
+- Focus on the biggest angle: comeback, dominant performance, record, streak, playoff impact, milestone, controversy.
+
+Example:
+"Kaprizov breaks Wild goals record as Minnesota rolls past Lightning"
+
+---
+SCORE
+Populate \`score\` using these rules exactly:
+
+If the recap is a completed event with a final team score, set \`score\` as a string using league-specific ordering:
+
+Soccer leagues (\`premierleague\`, \`mls\`, \`uefachampionsleague\`, \`laliga\`, \`seriea\`, \`bundesliga\`, \`ligue1\`, \`ligamx\`, \`facup\`, \`nwsl\`, \`uefaeuropaleague\`, \`uefaconferenceleague\`, \`carabaocup\`, \`coupedefrance\`, \`shebelievescup\`, \`scottishcup\`):
+"score": "<homeTeamDisplay> <homeScore> - <awayTeamDisplay> <awayScore>"
+
+All other scored team leagues:
+"score": "<awayTeamDisplay> <awayScore> - <homeTeamDisplay> <homeScore>"
+
+\`teams.away\` and \`teams.home\` must remain true away/home roles, and score values must match those roles.
+
+Team display naming rule for \`score\`:
+- \`nba\`, \`nhl\`, \`mlb\`: use mascot-only names.
+- \`ncaam\`, \`ncaaw\`, \`ncaabaseball\`, \`ncaasoftball\`: use school-name-only (no mascot/nickname).
+- All other leagues: use full team/country names.
+
+Use only official final scores.
+Do not use partial/live/in-progress scores.
+
+If the event has no single final team-vs-team score (golf, racing, many tournament-format recaps, etc.), set:
+"score": null
+
+\`score\` must be either:
+- a formatted string following the rules above, or
+- JSON null (never "null").
+
+---
+MORNING BRIEF PARAGRAPH
+Write one paragraph that:
+- explains the main storyline
+- feels conversational and human
+- explains why the game mattered
+
+No play-by-play narration.
+
+---
+BULLETS
+Provide 3-5 bullets with the most interesting facts:
+- player performances
+- key statistics
+- streaks
+- standings impact
+- unusual moments
+- milestones/records
+
+Use specific stats when available.
+
+---
+CONTEXT
+Provide one short sentence on broader significance.
+
+Examples:
+- playoff race impact
+- record milestone
+- major streak
+- injury impact
+
+If no meaningful context exists:
+"context": null
+
+---
+GAME ID
+Extract \`id\` from recap URL when possible.
+
+Example:
+https://www.espn.com/nhl/recap/_/gameId/401803310
+"id": "401803310"
+
+If no numeric gameId exists, use a stable descriptive id (for example \`20260307-teamA-teamB\`).
+
+---
+TEAMS
+Populate:
+"teams": {
+  "away": "",
+  "home": ""
+}
+
+---
+OUTPUT FORMAT
+Return one league object in this exact structure:
+
+{
+  "leagueName": "",
+  "leagueKey": "",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "",
+  "games": [
+    {
+      "id": "",
+      "teams": {
+        "away": "",
+        "home": ""
+      },
+      "headline": "",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": "",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
+}
+
+---
+IMPORTANT
+- Output ONLY a single fenced JSON code block (\`json\`) for one-click copy/paste.
+- Do not output any text before or after the code block.
+- Do not include explanations or commentary.
+- Ensure valid JSON (no trailing commas).
+
+LEAGUE NAME (STRICT)
+- The top-level \`leagueName\` field is REQUIRED and must never be missing.
+- \`leagueName\` must be a non-empty string.
+- \`leagueName\` must exactly match the value provided after \`Do all games in these leagues:\`.
+- Do not infer, shorten, or rename the league name.
+
+LEAGUE KEY (STRICT)
+- The top-level \`leagueKey\` field is REQUIRED and must never be missing.
+- \`leagueKey\` must be a non-empty lowercase slug string.
+- Derive \`leagueKey\` from \`leagueName\` using the soccer mapping table below.
+- If \`leagueName\` is in the mapping table, you MUST use the mapped \`leagueKey\` exactly.
+
+SOCCER LEAGUE NAME -> LEAGUE KEY MAPPING
+- Premier League -> \`premierleague\`
+- MLS -> \`mls\`
+- UEFA Champions League -> \`uefachampionsleague\`
+- UEFA Europa League -> \`uefaeuropaleague\`
+- LaLiga -> \`laliga\`
+- Serie A -> \`seriea\`
+- Bundesliga -> \`bundesliga\`
+- FA Cup -> \`facup\`
+- Liga MX -> \`ligamx\`
+- NWSL -> \`nwsl\`
+- Ligue 1 -> \`ligue1\`
+- UEFA Conference League -> \`uefaconferenceleague\`
+- SPFL -> \`scottishpremiership\`
+- Carabao Cup -> \`carabaocup\`
+
+HIGHLIGHTS FORMAT (STRICT)
+- Every game MUST include \`highlights\` as an array with at least 1 object.
+- Always use this exact object shape and key order:
+  {
+    "provider": "youtube",
+    "videoId": "",
+    "title": "",
+    "url": "",
+    "embedUrl": ""
+  }
+- If no highlight URL is available yet, DO NOT omit \`highlights\`, DO NOT use \`null\`, and DO NOT use \`[]\`.
+- In that case, keep \`provider\` as \`"youtube"\` and leave \`videoId\`, \`title\`, \`url\`, and \`embedUrl\` as empty strings.
+- Do not add extra keys to highlight objects.
+- Do NOT search for or infer highlight videos in this task; always leave highlight fields empty unless explicitly provided in the input.
+
+COMPLETENESS REQUIREMENTS (MANDATORY)
+- Process the full game list on the page, not just featured matchups.
+- Determine \`EXPECTED_GAME_COUNT\` from the page before writing output.
+- Search for recap coverage for every listed game.
+- If a game has no recap available at all, skip that game and do not write it to JSON output.
+- Only skip after a thorough search attempt.
+
+PAGE COVERAGE STEPS
+- Scan the full page, including expandable sections and any "show more" areas.
+- Use targeted search queries with both teams + date + league for each game.
+- Prioritize official league/team sites and major sports outlets.
+
+FINAL SELF-CHECK (SILENT, BEFORE OUTPUT)
+1. Did I attempt all listed games from the page?
+2. For each missing game, did I confirm no recap was available at all?
+3. Does every included game object contain all required schema fields?
+4. Is top-level \`leagueName\` present, non-empty, and exactly equal to the provided \`Do all games in these leagues:\` value?
+5. Is top-level \`leagueKey\` present, non-empty, and correctly mapped from \`leagueName\` per the mapping table?
+6. Is the output valid JSON in one fenced \`json\` code block with no extra text?
+
+Do all these games, for leagueName`
+                  }
+                ]
+              },
+              {
+                id: 'step-2-sub-3',
+                title: 'Copy games from webpage, add leagueName below script in Browse with AI, and paste games below',
+                contentBlocks: [
+                  {
+                    id: 'step-2-sub-3-block-1',
+                    type: 'info',
+                    text: ''
+                  }
+                ]
+              },
+              {
+                id: 'step-2-sub-7',
+                title: 'For each soccer league: copy games from webpage, add leagueName below script in Browse with AI, and paste games below',
+                contentBlocks: [
+                  {
+                    id: 'step-2-sub-7-block-1',
+                    type: 'note',
+                    text: 'Note: Now same exact thing for [leagueName]'
+                  }
+                ]
+              },
+              {
+                id: 'step-2-sub-4',
+                title: 'Paste output by Browse with AI in each webpage into [leaguename].json',
+                contentBlocks: [
+                  {
+                    id: 'step-2-sub-4-block-1',
+                    type: 'info',
+                    text: ''
+                  }
+                ]
+              },
+              {
+                id: 'step-2-sub-5',
+                title: 'Open this URL',
+                contentBlocks: [
+                  {
+                    id: 'step-2-sub-5-block-1',
+                    type: 'link',
+                    text: 'LiveSoccerTV',
+                    url: 'https://livesoccertv.com'
+                  }
+                ]
+              },
+              {
+                id: 'step-2-sub-6',
+                title: 'Open Browse with AI and paste this',
+                contentBlocks: [
+                  {
+                    id: 'step-2-sub-6-block-1',
+                    type: 'copy',
+                    text: `You are running on a live webpage in Chrome using Browse With AI Gemini.
+Your job is to use Gemini's Google Search capabilities to gather game recap information and output THPORTH recap JSON in the exact schema below.
+
+---
+DATA GATHERING WORKFLOW
+1. Read the current webpage to identify the league and all games listed on the page.
+2. For each listed game, use Gemini Google Search to find reliable recap text and key facts.
+3. Prioritize official league/team sources and established sports outlets.
+4. Use multiple sources when needed to confirm score, key performers, and context.
+5. Attempt every listed game on the page; only skip a game if no recap is available at all after thorough search.
+6. Do NOT search for highlight videos. I will provide highlights later.
+
+---
+WRITING STYLE
+Each recap must read like a sportswriter's morning briefing.
+Everything should focus on what mattered most so a reader can understand each game in about 30 seconds and have a useful watercooler takeaway.
+
+Tone:
+- conversational
+- narrative-driven
+- human
+- focused on what fans will talk about next morning
+
+Stats should support the story, not dominate it.
+Avoid robotic stat summaries.
+
+---
+HEADLINE
+Write a new headline for the single most important storyline.
+
+Rules:
+- Do NOT copy or closely paraphrase source headlines.
+- Use sentence case.
+- Focus on the biggest angle: comeback, dominant performance, record, streak, playoff impact, milestone, controversy.
+
+Example:
+"Kaprizov breaks Wild goals record as Minnesota rolls past Lightning"
+
+---
+SCORE
+Populate \`score\` using these rules exactly:
+
+If the recap is a completed event with a final team score, set \`score\` as a string using league-specific ordering:
+
+Soccer leagues (\`premierleague\`, \`mls\`, \`uefachampionsleague\`, \`laliga\`, \`seriea\`, \`bundesliga\`, \`ligue1\`, \`ligamx\`, \`facup\`, \`nwsl\`, \`uefaeuropaleague\`, \`uefaconferenceleague\`, \`carabaocup\`, \`coupedefrance\`, \`shebelievescup\`, \`scottishcup\`):
+"score": "<homeTeamDisplay> <homeScore> - <awayTeamDisplay> <awayScore>"
+
+All other scored team leagues:
+"score": "<awayTeamDisplay> <awayScore> - <homeTeamDisplay> <homeScore>"
+
+\`teams.away\` and \`teams.home\` must remain true away/home roles, and score values must match those roles.
+
+Team display naming rule for \`score\`:
+- \`nba\`, \`nhl\`, \`mlb\`: use mascot-only names.
+- \`ncaam\`, \`ncaaw\`, \`ncaabaseball\`, \`ncaasoftball\`: use school-name-only (no mascot/nickname).
+- All other leagues: use full team/country names.
+
+Use only official final scores.
+Do not use partial/live/in-progress scores.
+
+If the event has no single final team-vs-team score (golf, racing, many tournament-format recaps, etc.), set:
+"score": null
+
+\`score\` must be either:
+- a formatted string following the rules above, or
+- JSON null (never "null").
+
+---
+MORNING BRIEF PARAGRAPH
+Write one paragraph that:
+- explains the main storyline
+- feels conversational and human
+- explains why the game mattered
+
+No play-by-play narration.
+
+---
+BULLETS
+Provide 3-5 bullets with the most interesting facts:
+- player performances
+- key statistics
+- streaks
+- standings impact
+- unusual moments
+- milestones/records
+
+Use specific stats when available.
+
+---
+CONTEXT
+Provide one short sentence on broader significance.
+
+Examples:
+- playoff race impact
+- record milestone
+- major streak
+- injury impact
+
+If no meaningful context exists:
+"context": null
+
+---
+GAME ID
+Extract \`id\` from recap URL when possible.
+
+Example:
+https://www.espn.com/nhl/recap/_/gameId/401803310
+"id": "401803310"
+
+If no numeric gameId exists, use a stable descriptive id (for example \`20260307-teamA-teamB\`).
+
+---
+TEAMS
+Populate:
+"teams": {
+  "away": "",
+  "home": ""
+}
+
+---
+OUTPUT FORMAT
+Return one league object in this exact structure:
+
+{
+  "leagueName": "",
+  "leagueKey": "",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "",
+  "games": [
+    {
+      "id": "",
+      "teams": {
+        "away": "",
+        "home": ""
+      },
+      "headline": "",
+      "score": "",
+      "brief": "",
+      "bullets": [],
+      "context": "",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": ""
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
+}
+
+---
+IMPORTANT
+- Output ONLY a single fenced JSON code block (\`json\`) for one-click copy/paste.
+- Do not output any text before or after the code block.
+- Do not include explanations or commentary.
+- Ensure valid JSON (no trailing commas).
+
+LEAGUE NAME (STRICT)
+- The top-level \`leagueName\` field is REQUIRED and must never be missing.
+- \`leagueName\` must be a non-empty string.
+- \`leagueName\` must exactly match the value provided after \`Do all games in these leagues:\`.
+- Do not infer, shorten, or rename the league name.
+
+LEAGUE KEY (STRICT)
+- The top-level \`leagueKey\` field is REQUIRED and must never be missing.
+- \`leagueKey\` must be a non-empty lowercase slug string.
+- Derive \`leagueKey\` from \`leagueName\` using the soccer mapping table below.
+- If \`leagueName\` is in the mapping table, you MUST use the mapped \`leagueKey\` exactly.
+
+SOCCER LEAGUE NAME -> LEAGUE KEY MAPPING
+- Premier League -> \`premierleague\`
+- MLS -> \`mls\`
+- UEFA Champions League -> \`uefachampionsleague\`
+- UEFA Europa League -> \`uefaeuropaleague\`
+- LaLiga -> \`laliga\`
+- Serie A -> \`seriea\`
+- Bundesliga -> \`bundesliga\`
+- FA Cup -> \`facup\`
+- Liga MX -> \`ligamx\`
+- NWSL -> \`nwsl\`
+- Ligue 1 -> \`ligue1\`
+- UEFA Conference League -> \`uefaconferenceleague\`
+- SPFL -> \`scottishpremiership\`
+- Carabao Cup -> \`carabaocup\`
+
+HIGHLIGHTS FORMAT (STRICT)
+- Every game MUST include \`highlights\` as an array with at least 1 object.
+- Always use this exact object shape and key order:
+  {
+    "provider": "youtube",
+    "videoId": "",
+    "title": "",
+    "url": "",
+    "embedUrl": ""
+  }
+- If no highlight URL is available yet, DO NOT omit \`highlights\`, DO NOT use \`null\`, and DO NOT use \`[]\`.
+- In that case, keep \`provider\` as \`"youtube"\` and leave \`videoId\`, \`title\`, \`url\`, and \`embedUrl\` as empty strings.
+- Do not add extra keys to highlight objects.
+- Do NOT search for or infer highlight videos in this task; always leave highlight fields empty unless explicitly provided in the input.
+
+COMPLETENESS REQUIREMENTS (MANDATORY)
+- Process the full game list on the page, not just featured matchups.
+- Determine \`EXPECTED_GAME_COUNT\` from the page before writing output.
+- Search for recap coverage for every listed game.
+- If a game has no recap available at all, skip that game and do not write it to JSON output.
+- Only skip after a thorough search attempt.
+
+PAGE COVERAGE STEPS
+- Scan the full page, including expandable sections and any "show more" areas.
+- Use targeted search queries with both teams + date + league for each game.
+- Prioritize official league/team sites and major sports outlets.
+
+FINAL SELF-CHECK (SILENT, BEFORE OUTPUT)
+1. Did I attempt all listed games from the page?
+2. For each missing game, did I confirm no recap was available at all?
+3. Does every included game object contain all required schema fields?
+4. Is top-level \`leagueName\` present, non-empty, and exactly equal to the provided \`Do all games in these leagues:\` value?
+5. Is top-level \`leagueKey\` present, non-empty, and correctly mapped from \`leagueName\` per the mapping table?
+6. Is the output valid JSON in one fenced \`json\` code block with no extra text?
+
+Do all these games, for leagueName`
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 'step-3',
+            number: 3,
+            name: 'Do Top 10 newsBriefing',
+            subSteps: [
+              {
+                id: 'step-3-sub-1',
+                title: 'Open these URLs',
+                contentBlocks: [
+                  {
+                    id: 'step-3-sub-1-block-1',
+                    type: 'link',
+                    text: 'ESPN',
+                    url: 'https://espn.com'
+                  },
+                  {
+                    id: 'step-3-sub-1-block-2',
+                    type: 'link',
+                    text: 'CBS',
+                    url: 'https://cbssports.com'
+                  }
+                ]
+              },
+              {
+                id: 'step-3-sub-2',
+                title: 'Open Browse with AI at each webpage and paste script',
+                contentBlocks: [
+                  {
+                    id: 'step-3-sub-2-block-1',
+                    type: 'copy',
+                    text: `You are running in Chrome using Browse With AI Gemini.
+
+Your task:
+Read the article text at the URLs I provide and write one unified paragraph summarizing the most important events of the day.
+
+---
+INPUT
+I will provide a list of article URLs.
+Use only the content from those URLs.
+
+---
+WORKFLOW
+1. Open every URL I provide.
+2. Extract the key facts from each article.
+3. Identify the biggest shared themes/storylines across all articles.
+4. Combine those into one clear daily summary paragraph.
+
+---
+WRITING GOAL
+Write a single paragraph that feels like a morning briefing:
+- conversational
+- concise
+- story-first
+- focused on what mattered most today
+
+The paragraph should:
+- include the most important outcomes/events
+- mention standout performances or major turning points when relevant
+- briefly note broader significance (playoff race, title impact, records, injuries, etc.) when present
+
+---
+RULES
+- Use only information found in the provided URLs.
+- Do not invent facts.
+- Do not include bullet points.
+- Do not include headings.
+- Do not include source citations in the output.
+- Do not output multiple paragraphs.
+
+---
+OUTPUT FORMAT
+Return exactly one paragraph of plain text and nothing else.`
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 'step-4',
+            number: 4,
+            name: 'Rank top 10',
+            subSteps: [
+              {
+                id: 'step-4-sub-1',
+                title: 'Paste this into terminal to run local server',
+                contentBlocks: [
+                  {
+                    id: 'step-4-sub-1-block-1',
+                    type: 'copy',
+                    text: 'cd /Users/avery/Downloads/Copy\\ of\\ THPORTHINDEX && python3 -m http.server 8000'
+                  }
+                ]
+              },
+              {
+                id: 'step-4-sub-2',
+                title: 'Open this URL',
+                contentBlocks: [
+                  {
+                    id: 'step-4-sub-2-block-1',
+                    type: 'link',
+                    text: 'http://localhost:8000/index-test.html?admin=1',
+                    url: 'http://localhost:8000/index-test.html?admin=1'
+                  }
+                ]
+              },
+              {
+                id: 'step-4-sub-3',
+                title: 'Rank top 10',
+                contentBlocks: [
+                  {
+                    id: 'step-4-sub-3-block-1',
+                    type: 'info',
+                    text: ''
+                  }
+                ]
+              },
+              {
+                id: 'step-4-sub-4',
+                title: 'download JSON',
+                contentBlocks: [
+                  {
+                    id: 'step-4-sub-4-block-1',
+                    type: 'info',
+                    text: ''
+                  }
+                ]
+              },
+              {
+                id: 'step-4-sub-5',
+                title: 'Open JSON file and copy text and paste into VS Code agent chat with this prompt',
+                contentBlocks: [
+                  {
+                    id: 'step-4-sub-5-block-1',
+                    type: 'copy',
+                    text: 'Clear manual-top10.json and add this'
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 'step-5',
+            number: 5,
+            name: 'Get highlights for all leagues',
+            subSteps: [
+              {
+                id: 'step-5-sub-1',
+                title: 'Paste into terminal to run scraper (standings included)',
+                contentBlocks: [
+                  {
+                    id: 'step-5-sub-1-block-1',
+                    type: 'copy',
+                    text: 'cd "/Users/avery/Downloads/Copy of THPORTHINDEX" && node scrape-all-standings.cjs && YOUTUBE_API_KEY="AIzaSyAhZUuew7ecR0vg-atfBv8asjae6qTKgwo" ./daily-match-highlights.sh'
+                  }
+                ]
+              },
+              {
+                id: 'step-5-sub-2',
+                title: 'Check this URL for which leagues are missing highlights',
+                contentBlocks: [
+                  {
+                    id: 'step-5-sub-2-block-1',
+                    type: 'link',
+                    text: 'http://localhost:8000/index-test.html',
+                    url: 'http://localhost:8000/index-test.html'
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 'step-6',
+            number: 6,
+            name: 'Publish',
+            subSteps: [
+              {
+                id: 'step-6-sub-1',
+                title: 'Copy index-test.html to index.html',
+                contentBlocks: [
+                  {
+                    id: 'step-6-sub-1-block-1',
+                    type: 'info',
+                    text: ''
+                  }
+                ]
+              },
+              {
+                id: 'step-6-sub-2',
+                title: 'Push live to Github',
+                contentBlocks: [
+                  {
+                    id: 'step-6-sub-2-block-1',
+                    type: 'copy',
+                    text: 'cd "/Users/avery/Downloads/Copy of THPORTHINDEX" && git add -A && git commit -m "live update" && git push origin main:master'
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            id: 'step-7',
+            number: 7,
+            name: 'Get list of leagues for tomorrow',
+            subSteps: [
+              {
+                id: 'step-7-sub-1',
+                title: 'Open this webpage',
+                contentBlocks: [
+                  {
+                    id: 'step-7-sub-1-block-1',
+                    type: 'link',
+                    text: 'LiveSportsOnTV',
+                    url: 'https://livesportsontv.com'
+                  }
+                ]
+              },
+              {
+                id: 'step-7-sub-2',
+                title: 'Open Browse with AI and paste this script',
+                contentBlocks: [
+                  {
+                    id: 'step-7-sub-2-block-1',
+                    type: 'copy',
+                    text: `You are extracting league names from the CURRENT webpage only.
+
+Task:
+Build a clean list.
+
+Rules:
+1. Include every league name shown on the page.
+2. League names only (NO URLs).
+3. Use the displayed league name exactly (no renaming).
+4. Remove duplicates.
+5. One league per line.
+6. Sort alphabetically.
+7. Output ONLY the block below, with no extra text.
+8. Exclude the following leagues: World Rally Championship, Women's College Ice Hockey, Women's College Lacrosse, Primera Division, QMJHL, Serie A Brazil, Ski Freestyle World Cup, UCI World Tour, USHL, NRL, OHL, Other, NBA G League, Major League Volleyball, Girls High School Basketball, High School Basketball, Horse Racing, College Volleyball, ECHL, Euroleague, Coppa Italia Femminile, AFL, Copa De La Reina, Liga MX Femenil, Liga Nacional, League One Volleyball (LOVB), College Lacrosse, CONCACAF Champions Cup, Copa Libertadores, FIBA Women's World Cup
+
+Output format (exact):
+<League Name>
+<League Name>
+<League Name>`
+                  }
+                ]
+              },
+              {
+                id: 'step-7-sub-3',
+                title: "Paste output list here, edit out leagues we don't cover, and save",
+                contentBlocks: [
+                  {
+                    id: 'step-7-sub-3-block-1',
+                    type: 'textarea',
+                    text: ''
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
+
+      const templates = loadJson(TEMPLATE_KEY, DEFAULT_TEMPLATES);
+      const state = loadJson(STATE_KEY, {
+        dateKey: getDateKey(),
+        completedStepIds: {},
+        completedSubStepIds: {},
+        livesportLeaguesList: '',
+        selectedStepId: null,
+        selectedSubStepId: null,
+        updatedAt: new Date().toISOString()
+      });
+
+      if (typeof state.livesportLeaguesList !== 'string') {
+        state.livesportLeaguesList = '';
+      }
+
+      if (!state.completedSubStepIds || typeof state.completedSubStepIds !== 'object') {
+        state.completedSubStepIds = {};
+      }
+
+      if (state.dateKey !== getDateKey()) {
+        state.dateKey = getDateKey();
+        state.completedStepIds = {};
+        state.completedSubStepIds = {};
+        state.selectedStepId = null;
+        state.selectedSubStepId = null;
+      }
+
+      if (ensureDefaultSteps(templates, DEFAULT_TEMPLATES)) {
+        localStorage.setItem(TEMPLATE_KEY, JSON.stringify(templates));
+      }
+
+      const app = document.getElementById('app');
+      if (!detectAdminMode()) {
+        app.innerHTML = '<div class="card" style="padding:16px"><h1 class="title">Admin Access Required</h1><p class="muted">Open this page at <code>/admin-process.html</code>.</p></div>';
+        return;
+      }
+
+      setTimeout(() => {
+        try {
+          syncLivesportLeagueListAcrossSteps();
+          render();
+        } catch (err) {
+          const msg = err && err.message ? err.message : String(err);
+          app.innerHTML = '<div class="card" style="padding:16px"><h1 class="title">Admin Process Error</h1><p class="muted">' + msg.replace(/</g, '&lt;') + '</p></div>';
+        }
+      }, 0);
+
+      function loadJson(key, fallback) {
+        try {
+          const raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : fallback;
+        } catch (_) {
+          return fallback;
+        }
+      }
+
+      function ensureDefaultSteps(targetTemplates, defaultTemplates) {
+        if (!targetTemplates || !Array.isArray(targetTemplates.steps)) return false;
+        let changed = false;
+
+        const existingIds = new Set(targetTemplates.steps.map((s) => s.id));
+        for (const step of defaultTemplates.steps || []) {
+          const existingStep = (targetTemplates.steps || []).find((s) => s.id === step.id);
+          if (!existingStep) {
+            targetTemplates.steps.push(JSON.parse(JSON.stringify(step)));
+            changed = true;
+            continue;
+          }
+
+          if (existingStep.id === 'step-3' && existingStep.name !== step.name) {
+            existingStep.name = step.name;
+            changed = true;
+          }
+
+          if (!Array.isArray(existingStep.subSteps)) {
+            existingStep.subSteps = [];
+            changed = true;
+          }
+
+          for (const defaultSub of (step.subSteps || [])) {
+            const existingSub = existingStep.subSteps.find((sub) => sub.id === defaultSub.id);
+            if (!existingSub) {
+              existingStep.subSteps.push(JSON.parse(JSON.stringify(defaultSub)));
+              changed = true;
+              continue;
+            }
+
+            if ((existingSub.id === 'step-1-sub-1' || existingSub.id === 'step-2-sub-1' || existingSub.id === 'step-2-sub-2' || existingSub.id === 'step-2-sub-6' || existingSub.id === 'step-3-sub-1' || existingSub.id === 'step-3-sub-2' || existingSub.id === 'step-5-sub-1' || existingSub.id === 'step-7-sub-3') && existingSub.title !== defaultSub.title) {
+              existingSub.title = defaultSub.title;
+              changed = true;
+            }
+
+            if (!Array.isArray(existingSub.contentBlocks)) {
+              existingSub.contentBlocks = [];
+              changed = true;
+            }
+
+            const existingBlockIds = new Set(existingSub.contentBlocks.map((b) => b.id));
+            for (const defaultBlock of (defaultSub.contentBlocks || [])) {
+              if (!existingBlockIds.has(defaultBlock.id)) {
+                existingSub.contentBlocks.push(JSON.parse(JSON.stringify(defaultBlock)));
+                changed = true;
+                continue;
+              }
+
+              const existingBlock = existingSub.contentBlocks.find((b) => b.id === defaultBlock.id);
+              if (existingBlock && defaultBlock.text === '' && existingBlock.text !== '' && defaultBlock.id !== 'step-7-sub-3-block-1') {
+                existingBlock.text = '';
+                changed = true;
+                continue;
+              }
+
+              if (existingBlock && defaultBlock.id === 'step-2-sub-2-block-1' && existingBlock.text !== defaultBlock.text) {
+                existingBlock.text = defaultBlock.text;
+                changed = true;
+              }
+
+              if (existingBlock && defaultBlock.id === 'step-2-sub-6-block-1') {
+                if (existingBlock.type !== defaultBlock.type) {
+                  existingBlock.type = defaultBlock.type;
+                  changed = true;
+                }
+                if (existingBlock.text !== defaultBlock.text) {
+                  existingBlock.text = defaultBlock.text;
+                  changed = true;
+                }
+              }
+
+              if (existingBlock && defaultBlock.id === 'step-2-sub-7-block-1') {
+                if (existingBlock.type !== defaultBlock.type) {
+                  existingBlock.type = defaultBlock.type;
+                  changed = true;
+                }
+                if (existingBlock.text !== defaultBlock.text) {
+                  existingBlock.text = defaultBlock.text;
+                  changed = true;
+                }
+              }
+
+              if (existingBlock && defaultBlock.id === 'step-3-sub-2-block-1') {
+                if (existingBlock.type !== defaultBlock.type) {
+                  existingBlock.type = defaultBlock.type;
+                  changed = true;
+                }
+                if (existingBlock.text !== defaultBlock.text) {
+                  existingBlock.text = defaultBlock.text;
+                  changed = true;
+                }
+              }
+
+              if (existingBlock && (defaultBlock.id === 'step-3-sub-1-block-1' || defaultBlock.id === 'step-3-sub-1-block-2')) {
+                if (existingBlock.type !== defaultBlock.type) {
+                  existingBlock.type = defaultBlock.type;
+                  changed = true;
+                }
+                if (existingBlock.text !== defaultBlock.text) {
+                  existingBlock.text = defaultBlock.text;
+                  changed = true;
+                }
+                if ((existingBlock.url || '') !== (defaultBlock.url || '')) {
+                  existingBlock.url = defaultBlock.url || '';
+                  changed = true;
+                }
+              }
+
+              if (existingBlock && defaultBlock.id === 'step-5-sub-1-block-1') {
+                if (existingBlock.type !== defaultBlock.type) {
+                  existingBlock.type = defaultBlock.type;
+                  changed = true;
+                }
+                if (existingBlock.text !== defaultBlock.text) {
+                  existingBlock.text = defaultBlock.text;
+                  changed = true;
+                }
+              }
+
+              if (existingBlock && defaultBlock.id === 'step-4-sub-2-block-1') {
+                if (existingBlock.type !== defaultBlock.type) {
+                  existingBlock.type = defaultBlock.type;
+                  changed = true;
+                }
+                if (existingBlock.text !== defaultBlock.text) {
+                  existingBlock.text = defaultBlock.text;
+                  changed = true;
+                }
+                if ((existingBlock.url || '') !== (defaultBlock.url || '')) {
+                  existingBlock.url = defaultBlock.url || '';
+                  changed = true;
+                }
+              }
+
+              if (existingBlock && defaultBlock.id === 'step-7-sub-2-block-1') {
+                if (existingBlock.type !== defaultBlock.type) {
+                  existingBlock.type = defaultBlock.type;
+                  changed = true;
+                }
+                if (existingBlock.text !== defaultBlock.text) {
+                  existingBlock.text = defaultBlock.text;
+                  changed = true;
+                }
+              }
+            }
+          }
+        }
+        return changed;
+      }
+
+      function findContentBlock(blockId) {
+        for (const step of (templates.steps || [])) {
+          for (const sub of (step.subSteps || [])) {
+            for (const block of (sub.contentBlocks || [])) {
+              if (block && block.id === blockId) return block;
+            }
+          }
+        }
+        return null;
+      }
+
+      const LIVESPORT_LEAGUE_URLS = {
+        'ATP': 'https://www.flashscoreusa.com/tennis/',
+        'College Baseball': 'https://www.espn.com/college-baseball/scoreboard',
+        'College Softball': 'https://www.espn.com/college-softball/scoreboard',
+        'DP World Tour': 'https://www.europeantour.com/dpworld-tour/news/',
+        'Formula 1': 'https://www.google.com/search?q=formula+1&rlz=1C5MACD_enUS1166US1166&oq=formula+1&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQxNzNqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8',
+        'LIV Golf': 'https://www.livgolf.com/',
+        'LPGA Tour': 'https://www.lpga.com/news-and-video',
+        'MLB': 'https://www.mlb.com/scores',
+        "Men's College Basketball": 'https://www.espn.com/mens-college-basketball/scoreboard',
+        'NBA': 'https://www.espn.com/nba/scoreboard',
+        'NHL': 'https://www.espn.com/nhl/scoreboard',
+        'PGA Tour': 'https://www.pgatour.com/',
+        'WTA': 'https://www.flashscoreusa.com/tennis/',
+        "Women's College Basketball": 'https://www.espn.com/womens-college-basketball/scoreboard',
+        'WBC': 'https://www.mlb.com/scores'
+      };
+
+      const EXCLUDED_LIVESPORT_LEAGUES = new Set([
+        'world rally championship',
+        "women's college ice hockey",
+        "women's college lacrosse",
+        'primera division',
+        'qmjhl',
+        'serie a brazil',
+        'ski freestyle world cup',
+        'uci world tour',
+        'ushl',
+        'nrl',
+        'ohl',
+        'other',
+        'nba g league',
+        'major league volleyball',
+        'girls high school basketball',
+        'high school basketball',
+        'horse racing',
+        'college volleyball',
+        'echl',
+        'euroleague',
+        'coppa italia femminile',
+        'afl',
+        'copa de la reina',
+        'liga mx femenil',
+        'liga nacional',
+        'league one volleyball (lovb)',
+        'college lacrosse',
+        'concacaf champions cup',
+        'copa libertadores',
+        "fiba women's world cup"
+      ]);
+
+      function normalizeLeagueName(name) {
+        return String(name || '').trim().replace(/^[-*\u2022]\s+/, '');
+      }
+
+      function normalizeLeagueKey(name) {
+        return normalizeLeagueName(name).toLowerCase();
+      }
+
+      function filterExcludedLivesportLeagues(text) {
+        const lines = String(text || '').split('\n').map((line) => normalizeLeagueName(line)).filter(Boolean);
+        const filtered = lines.filter((league) => !EXCLUDED_LIVESPORT_LEAGUES.has(normalizeLeagueKey(league)));
+        return filtered.join('\n');
+      }
+
+      function renderLivesportLeagueLinks(el, text) {
+        const lines = String(text || '').split('\n').map((line) => normalizeLeagueName(line)).filter(Boolean);
+        if (!lines.length) {
+          el.textContent = '';
+          return;
+        }
+
+        const urlsToOpen = [];
+        const seenUrls = new Set();
+        for (const leagueName of lines) {
+          const url = LIVESPORT_LEAGUE_URLS[leagueName] || '';
+          if (url && !seenUrls.has(url)) {
+            seenUrls.add(url);
+            urlsToOpen.push(url);
+          }
+        }
+
+        if (urlsToOpen.length) {
+          const openAllBtn = document.createElement('button');
+          openAllBtn.className = 'copy-btn';
+          openAllBtn.textContent = 'Open All';
+          openAllBtn.onclick = (e) => {
+            e.preventDefault();
+            for (const url of urlsToOpen) {
+              window.open(url, '_blank', 'noopener,noreferrer');
+            }
+            const step = orderedSteps().find((s) => s.id === 'step-2');
+            if (step) {
+              setSubStepComplete(step, 'step-2-sub-1', true);
+            }
+          };
+          el.appendChild(openAllBtn);
+        }
+
+        const frag = document.createDocumentFragment();
+        for (const leagueName of lines) {
+          const row = document.createElement('div');
+          const url = LIVESPORT_LEAGUE_URLS[leagueName] || '';
+          if (url) {
+            const a = document.createElement('a');
+            a.href = url;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            a.textContent = leagueName;
+            row.appendChild(a);
+          } else {
+            row.textContent = leagueName;
+          }
+          frag.appendChild(row);
+        }
+        el.appendChild(frag);
+      }
+
+      function syncLivesportLeagueListAcrossSteps(forceFromState) {
+        const step7Block = findContentBlock('step-7-sub-3-block-1');
+        const step2Block = findContentBlock('step-2-sub-1-block-1');
+        if (!step2Block) return;
+
+        const fallback = '[LIVESPORTSONTV.COM list goes here: each league related to its URL]\n\nPlaceholder for now. You will provide this list later.';
+        const sourceText = forceFromState
+          ? String(state.livesportLeaguesList || '')
+          : ((state.livesportLeaguesList || '').trim().length
+          ? state.livesportLeaguesList
+          : ((step7Block && typeof step7Block.text === 'string') ? step7Block.text : ''));
+
+        const filteredSource = filterExcludedLivesportLeagues(sourceText);
+        const listText = filteredSource.trim().length ? filteredSource : fallback;
+
+        if (state.livesportLeaguesList !== filteredSource) {
+          state.livesportLeaguesList = filteredSource;
+        }
+        if (step7Block && step7Block.text !== filteredSource) {
+          step7Block.text = filteredSource;
+        }
+        if (step2Block.text !== listText) {
+          step2Block.text = listText;
+        }
+      }
+
+      function saveState() {
+        state.updatedAt = new Date().toISOString();
+        localStorage.setItem(TEMPLATE_KEY, JSON.stringify(templates));
+        localStorage.setItem(STATE_KEY, JSON.stringify(state));
+      }
+
+      function orderedSteps() {
+        return (templates.steps || []).slice().sort((a, b) => Number(a.number) - Number(b.number));
+      }
+
+      function firstIncompleteStepId(steps) {
+        for (const step of steps) {
+          if (!state.completedStepIds[step.id]) return step.id;
+        }
+        return null;
+      }
+
+      function isStepUnlocked(step, steps) {
+        const firstIncomplete = firstIncompleteStepId(steps);
+        if (!firstIncomplete) return true;
+        if (state.completedStepIds[step.id]) return true;
+        return step.id === firstIncomplete;
+      }
+
+      function isFutureStep(step, steps) {
+        const firstIncomplete = firstIncompleteStepId(steps);
+        if (!firstIncomplete) return false;
+        const currentIdx = steps.findIndex((s) => s.id === step.id);
+        const firstIdx = steps.findIndex((s) => s.id === firstIncomplete);
+        if (currentIdx < 0 || firstIdx < 0) return false;
+        return currentIdx > firstIdx;
+      }
+
+      function setStepComplete(stepId, checked) {
+        const steps = orderedSteps();
+        const step = steps.find((s) => s.id === stepId);
+        if (!step) return;
+        if (checked && isFutureStep(step, steps)) return;
+        const singleSub = step && Array.isArray(step.subSteps) && step.subSteps.length === 1 ? step.subSteps[0] : null;
+
+        if (checked) {
+          state.completedStepIds[stepId] = true;
+          if (singleSub) {
+            state.completedSubStepIds[singleSub.id] = true;
+          }
+          const firstIncomplete = firstIncompleteStepId(steps);
+          if (firstIncomplete) state.selectedStepId = firstIncomplete;
+        } else {
+          const idx = steps.findIndex(s => s.id === stepId);
+          if (idx >= 0) {
+            clearSubStepsForSteps(steps.slice(idx));
+            for (let i = idx; i < steps.length; i++) {
+              delete state.completedStepIds[steps[i].id];
+            }
+            state.selectedStepId = stepId;
+          }
+        }
+
+        saveState();
+        render();
+      }
+
+      function isSubStepDone(subStepId) {
+        return !!state.completedSubStepIds[subStepId];
+      }
+
+      function firstIncompleteSubStepId(subSteps) {
+        for (const sub of subSteps || []) {
+          if (!isSubStepDone(sub.id)) return sub.id;
+        }
+        return null;
+      }
+
+      function isSubStepUnlocked(subStep, subSteps) {
+        const firstIncomplete = firstIncompleteSubStepId(subSteps || []);
+        if (!firstIncomplete) return true;
+        if (isSubStepDone(subStep.id)) return true;
+        return subStep.id === firstIncomplete;
+      }
+
+      function isFutureSubStep(subStep, subSteps) {
+        const firstIncomplete = firstIncompleteSubStepId(subSteps || []);
+        if (!firstIncomplete) return false;
+        const currentIdx = (subSteps || []).findIndex((s) => s.id === subStep.id);
+        const firstIdx = (subSteps || []).findIndex((s) => s.id === firstIncomplete);
+        if (currentIdx < 0 || firstIdx < 0) return false;
+        return currentIdx > firstIdx;
+      }
+
+      function setSubStepComplete(step, subStepId, checked) {
+        const subSteps = Array.isArray(step && step.subSteps) ? step.subSteps : [];
+        const targetSubStep = subSteps.find((s) => s.id === subStepId);
+        if (!targetSubStep) return;
+        if (checked && isFutureSubStep(targetSubStep, subSteps)) return;
+        const isSingleSubStep = !!(step && step.id && subSteps.length === 1 && subSteps[0].id === subStepId);
+        const isLastSubStep = !!(subSteps.length && subSteps[subSteps.length - 1].id === subStepId);
+
+        if (checked) {
+          state.completedSubStepIds[subStepId] = true;
+
+          if (isSingleSubStep && step && step.id) {
+            const steps = orderedSteps();
+            state.completedStepIds[step.id] = true;
+            const firstIncompleteStep = firstIncompleteStepId(steps);
+            if (firstIncompleteStep) {
+              state.selectedStepId = firstIncompleteStep;
+              state.selectedSubStepId = null;
+            }
+          } else if (step && step.id && subSteps.length > 1 && isLastSubStep) {
+            // For multi-sub-step steps, only the last sub-step can complete the step.
+            const allPriorDone = subSteps.slice(0, -1).every((s) => isSubStepDone(s.id));
+            if (allPriorDone) {
+              state.completedStepIds[step.id] = true;
+            }
+            const steps = orderedSteps();
+            const firstIncompleteStep = firstIncompleteStepId(steps);
+            if (firstIncompleteStep && firstIncompleteStep !== step.id) {
+              state.selectedStepId = firstIncompleteStep;
+              state.selectedSubStepId = null;
+            }
+          }
+
+          const nextIncomplete = firstIncompleteSubStepId(subSteps);
+          if (nextIncomplete && (!step || state.selectedStepId === step.id)) {
+            state.selectedSubStepId = nextIncomplete;
+          }
+        } else {
+          if (step && step.id) {
+            delete state.completedStepIds[step.id];
+          }
+
+          if (isSingleSubStep) {
+            const steps = orderedSteps();
+            const idx = steps.findIndex((s) => s.id === step.id);
+            if (idx >= 0) {
+              clearSubStepsForSteps(steps.slice(idx));
+              for (let i = idx; i < steps.length; i++) {
+                delete state.completedStepIds[steps[i].id];
+              }
+              state.selectedStepId = step.id;
+              state.selectedSubStepId = subStepId;
+              saveState();
+              render();
+              return;
+            }
+          }
+
+          const idx = subSteps.findIndex(s => s.id === subStepId);
+          if (idx >= 0) {
+            for (let i = idx; i < subSteps.length; i++) {
+              delete state.completedSubStepIds[subSteps[i].id];
+            }
+            state.selectedSubStepId = subStepId;
+          } else {
+            delete state.completedSubStepIds[subStepId];
+          }
+        }
+        saveState();
+        render();
+      }
+
+      function clearSubStepsForSteps(stepsToClear) {
+        for (const step of stepsToClear) {
+          for (const sub of (step.subSteps || [])) {
+            delete state.completedSubStepIds[sub.id];
+          }
+        }
+      }
+
+      function copyText(text, buttonEl) {
+        navigator.clipboard.writeText(String(text || '')).then(() => {
+          const prev = buttonEl.textContent;
+          buttonEl.textContent = 'Copied';
+          setTimeout(() => { buttonEl.textContent = prev; }, 900);
+        }).catch(() => {
+          const prev = buttonEl.textContent;
+          buttonEl.textContent = 'Failed';
+          setTimeout(() => { buttonEl.textContent = prev; }, 900);
+        });
+      }
+
+      function render() {
+        const steps = orderedSteps();
+        const selectedStep = resolveSelectedStep(steps);
+        const selectedSub = resolveSelectedSubStep(selectedStep);
+        saveState();
+
+        app.innerHTML = '';
+
+        const header = document.createElement('section');
+        header.className = 'card top';
+        header.innerHTML = `
+          <div>
+            <h1 class="title">THPORTH Admin Process</h1>
+            <div class="muted">Date: ${state.dateKey} · Last saved: ${new Date(state.updatedAt).toLocaleString()}</div>
+          </div>
+          <span class="pill">Admin Process</span>
+        `;
+
+        const main = document.createElement('section');
+        main.className = 'layout';
+
+        const col1 = document.createElement('div');
+        col1.className = 'card panel';
+        col1.innerHTML = '<h2>Column 1: Steps</h2>';
+        const col1Body = document.createElement('div');
+        col1Body.className = 'panel-body';
+
+        for (const step of steps) {
+          const unlocked = isStepUnlocked(step, steps);
+          const futureStep = isFutureStep(step, steps);
+          const done = !!state.completedStepIds[step.id];
+          const isActive = selectedStep && selectedStep.id === step.id;
+
+          const el = document.createElement('div');
+          el.className = 'step';
+          if (done) el.classList.add('done');
+          if (isActive) el.classList.add('active');
+          if (!unlocked && !done) el.classList.add('locked');
+
+          const head = document.createElement('div');
+          head.className = 'step-head';
+
+          const idx = document.createElement('div');
+          idx.className = 'step-index';
+          idx.textContent = String(step.number);
+
+          const check = document.createElement('input');
+          check.type = 'checkbox';
+          check.checked = done;
+          const hasSubSteps = Array.isArray(step.subSteps) && step.subSteps.length > 0;
+          const canToggleStepDirectly = !hasSubSteps;
+          check.disabled = !canToggleStepDirectly || futureStep || (!unlocked && !done);
+          check.addEventListener('click', (e) => e.stopPropagation());
+          if (canToggleStepDirectly) {
+            check.addEventListener('change', () => {
+              if (check.disabled) return;
+              setStepComplete(step.id, check.checked);
+            });
+          }
+
+          const nameWrap = document.createElement('div');
+          const name = document.createElement('p');
+          name.className = 'step-name';
+          name.textContent = step.name;
+
+          const meta = document.createElement('div');
+          meta.className = 'step-meta';
+          meta.textContent = done ? 'Complete' : (unlocked ? 'Current step' : 'Locked');
+
+          nameWrap.appendChild(name);
+          nameWrap.appendChild(meta);
+
+          head.appendChild(idx);
+          head.appendChild(check);
+          head.appendChild(nameWrap);
+          el.appendChild(head);
+
+          el.addEventListener('click', () => {
+            if (!unlocked && !done) return;
+            state.selectedStepId = step.id;
+            state.selectedSubStepId = null;
+            saveState();
+            render();
+          });
+
+          col1Body.appendChild(el);
+        }
+
+        if (!steps.length) {
+          col1Body.innerHTML = '<div class="empty">No steps configured yet.</div>';
+        }
+
+        col1.appendChild(col1Body);
+
+        const col1Controls = document.createElement('div');
+        col1Controls.className = 'controls';
+        const resetBtn = document.createElement('button');
+        resetBtn.className = 'danger';
+        resetBtn.textContent = 'Reset Progress';
+        resetBtn.onclick = () => {
+          if (!confirm('Reset progress for all steps?')) return;
+          state.completedStepIds = {};
+          state.completedSubStepIds = {};
+          state.selectedStepId = steps[0] ? steps[0].id : null;
+          state.selectedSubStepId = null;
+          saveState();
+          render();
+        };
+        col1Controls.appendChild(resetBtn);
+        col1.appendChild(col1Controls);
+
+        const col2 = document.createElement('div');
+        col2.className = 'card panel';
+        col2.innerHTML = '<h2>Column 2: Sub-steps</h2>';
+        const col2Body = document.createElement('div');
+        col2Body.className = 'panel-body';
+
+        if (selectedStep && Array.isArray(selectedStep.subSteps) && selectedStep.subSteps.length) {
+          const subSteps = selectedStep.subSteps;
+          for (const sub of subSteps) {
+            const subDone = isSubStepDone(sub.id);
+            const subUnlocked = isSubStepUnlocked(sub, subSteps);
+            const subFuture = isFutureSubStep(sub, subSteps);
+            const el = document.createElement('div');
+            el.className = 'substep' + (subDone ? ' done' : '') + ((selectedSub && selectedSub.id === sub.id) ? ' active' : '');
+            if (!subUnlocked && !subDone) el.classList.add('locked');
+
+            const head = document.createElement('div');
+            head.className = 'substep-head';
+
+            const check = document.createElement('input');
+            check.type = 'checkbox';
+            check.checked = subDone;
+            check.disabled = subFuture || (!subUnlocked && !subDone);
+            check.addEventListener('click', (e) => e.stopPropagation());
+            check.addEventListener('change', () => {
+              if (check.disabled) return;
+              setSubStepComplete(selectedStep, sub.id, check.checked);
+            });
+
+            const t = document.createElement('p');
+            t.className = 'substep-title';
+            t.textContent = sub.title;
+            if (sub.id === 'step-1-sub-1' || sub.id === 'step-2-sub-1' || sub.id === 'step-2-sub-2' || sub.id === 'step-2-sub-5' || sub.id === 'step-2-sub-6' || sub.id === 'step-3-sub-1' || sub.id === 'step-3-sub-2' || sub.id === 'step-4-sub-1' || sub.id === 'step-4-sub-2' || sub.id === 'step-4-sub-5' || sub.id === 'step-5-sub-1' || sub.id === 'step-5-sub-2' || sub.id === 'step-6-sub-2' || sub.id === 'step-7-sub-1' || sub.id === 'step-7-sub-2' || sub.id === 'step-7-sub-3') {
+              const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+              icon.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+              icon.setAttribute('fill', 'none');
+              icon.setAttribute('viewBox', '0 0 24 24');
+              icon.setAttribute('stroke-width', '1.5');
+              icon.setAttribute('stroke', 'currentColor');
+              icon.setAttribute('class', 'substep-inline-icon');
+
+              const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+              path.setAttribute('stroke-linecap', 'round');
+              path.setAttribute('stroke-linejoin', 'round');
+              path.setAttribute('d', 'M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3');
+              icon.appendChild(path);
+
+              t.appendChild(document.createTextNode(' '));
+              t.appendChild(icon);
+            }
+
+            head.appendChild(check);
+            head.appendChild(t);
+            el.appendChild(head);
+
+            el.addEventListener('click', () => {
+              if (!subUnlocked && !subDone) return;
+              state.selectedSubStepId = sub.id;
+              saveState();
+              render();
+            });
+            col2Body.appendChild(el);
+          }
+        } else {
+          col2Body.innerHTML = '<div class="empty">Select a step to view sub-steps.</div>';
+        }
+        col2.appendChild(col2Body);
+
+        const col3 = document.createElement('div');
+        col3.className = 'card panel';
+        col3.innerHTML = '<h2>Column 3: Content / Copy</h2>';
+        const col3Body = document.createElement('div');
+        col3Body.className = 'panel-body';
+
+        const rawBlocks = selectedSub && Array.isArray(selectedSub.contentBlocks) ? selectedSub.contentBlocks : [];
+        const blocks = rawBlocks.filter((block) => {
+          const text = String(block && block.text ? block.text : '').trim();
+          const url = String(block && block.url ? block.url : '').trim();
+          if (block && block.type === 'link') return url.length > 0 || text.length > 0;
+          if (block && block.type === 'textarea') return true;
+          return text.length > 0;
+        });
+        if (blocks.length) {
+          const hasTextarea = blocks.some((block) => block && block.type === 'textarea');
+          if (hasTextarea) {
+            col3Body.classList.add('editor-mode');
+          }
+
+          for (const block of blocks) {
+            const el = document.createElement('div');
+            el.className = 'content-block';
+
+            if (block.id === 'step-2-sub-1-block-1') {
+              renderLivesportLeagueLinks(el, block.text || '');
+            } else if (block.type === 'link') {
+              const a = document.createElement('a');
+              a.href = block.url || '';
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.textContent = block.text || block.url || '';
+              el.appendChild(a);
+            } else if (block.type === 'textarea') {
+              el.classList.add('editor-shell');
+              const textarea = document.createElement('textarea');
+              textarea.className = 'content-editor';
+              textarea.placeholder = 'Paste list here...';
+              textarea.value = block.text || '';
+              el.appendChild(textarea);
+              const saveBtn = document.createElement('button');
+              saveBtn.className = 'copy-btn';
+              saveBtn.textContent = 'Save';
+              saveBtn.onclick = (e) => {
+                e.preventDefault();
+                const nextValue = filterExcludedLivesportLeagues(textarea.value);
+                state.livesportLeaguesList = nextValue;
+                block.text = nextValue;
+                textarea.value = nextValue;
+                syncLivesportLeagueListAcrossSteps(true);
+                saveState();
+                const prev = saveBtn.textContent;
+                saveBtn.textContent = 'Saved';
+                setTimeout(() => { saveBtn.textContent = prev; }, 900);
+              };
+              el.appendChild(saveBtn);
+            } else {
+              el.textContent = block.text || '';
+              if (block.type === 'note') {
+                el.style.fontStyle = 'italic';
+              }
+            }
+
+            if (block.type === 'copy') {
+              const btn = document.createElement('button');
+              btn.className = 'copy-btn';
+              btn.textContent = 'Copy';
+              btn.onclick = (e) => {
+                e.preventDefault();
+                copyText(block.text || '', btn);
+              };
+              el.appendChild(btn);
+            }
+
+            col3Body.appendChild(el);
+          }
+        }
+
+        col3.appendChild(col3Body);
+
+        main.appendChild(col1);
+        main.appendChild(col2);
+        main.appendChild(col3);
+
+        app.appendChild(header);
+        app.appendChild(main);
+      }
+
+      function resolveSelectedStep(steps) {
+        const selected = steps.find(s => s.id === state.selectedStepId);
+        if (selected) return selected;
+
+        const firstIncomplete = firstIncompleteStepId(steps);
+        const fallback = steps.find(s => s.id === firstIncomplete) || steps[0] || null;
+        state.selectedStepId = fallback ? fallback.id : null;
+        return fallback;
+      }
+
+      function resolveSelectedSubStep(step) {
+        if (!step || !Array.isArray(step.subSteps) || !step.subSteps.length) {
+          state.selectedSubStepId = null;
+          return null;
+        }
+
+        const selected = step.subSteps.find(s => s.id === state.selectedSubStepId);
+        if (selected) {
+          if (isSubStepUnlocked(selected, step.subSteps) || isSubStepDone(selected.id)) return selected;
+        }
+
+        const firstIncomplete = firstIncompleteSubStepId(step.subSteps);
+        const fallback = step.subSteps.find(s => s.id === firstIncomplete) || step.subSteps[0];
+        state.selectedSubStepId = fallback.id;
+        return fallback;
+      }
+    })();
+  </script>
+</body>
+</html>

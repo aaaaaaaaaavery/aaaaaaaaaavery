@@ -1,7 +1,7 @@
 {
-	"leagueName": "LPGA Tour",
-	"leagueKey": "lpgatour",
-	"sourceType": "console_recaps",
-	"leagueBriefing": "",
-	"games": []
+  "leagueName": "LPGA Tour",
+  "leagueKey": "lpgatour",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "",
+  "games": []
 }

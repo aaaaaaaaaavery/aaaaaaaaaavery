@@ -1,7 +1,39 @@
 {
-	"leagueName": "PGA Tour",
-	"leagueKey": "pgatour",
-	"sourceType": "console_recaps",
-	"leagueBriefing": "",
-	"games": []
+  "leagueName": "PGA Tour",
+  "leagueKey": "pgatour",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "The opening round of THE PLAYERS Championship was a war of attrition against the elements, ending in a four-way logjam at the top as TPC Sawgrass bared its teeth.",
+  "games": [
+    {
+      "id": "20260312-the-players-round-1",
+      "teams": {
+        "away": "The Field",
+        "home": "TPC Sawgrass"
+      },
+      "headline": "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
+      "score": null,
+      "brief": "Round 1 at THE PLAYERS Championship was defined by survival as much as scoring. Sepp Straka utilized a spectacular chip-in eagle on the 16th to join Maverick McNealy, Lee Hodges, and Sahith Theegala in the clubhouse lead at 5-under par. On a day that saw wind, rain, and a brief weather delay, the iconic Stadium Course proved as treacherous as ever, claiming 38 balls in the water across the final three holes alone and forcing several big names to scramble just to stay in contention before darkness halted play.",
+      "bullets": [
+        "Sepp Straka carded a bogey-free 67, highlighted by seven par saves and a 50-foot chip-in for eagle on the par-5 16th.",
+        "Sahith Theegala provided the 'Shot of the Day' by holing out from the fairway for an eagle on the 12th hole.",
+        "The daunting closing stretch lived up to its reputation, with 38 balls finding the water on holes 16, 17, and 18 throughout the day.",
+        "World No. 1 Scottie Scheffler struggled to find fairways, finishing with an uncharacteristic even-par 72.",
+        "Defending major champion Collin Morikawa was forced to withdraw after just one hole due to a sudden back injury during a practice swing."
+      ],
+      "context": "With 67 being the highest leading score after Round 1 since 2017, the tournament remains wide open heading into a busy Friday restart.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/12/the-players-championship-round-1-scores-leaderboard-results-mcnealy-mcilroy-scheffler-sepp-straka"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

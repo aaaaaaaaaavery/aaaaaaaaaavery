@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-11",
+  "date": "2026-03-13",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
       "leagueKey": "nba",
-      "gameId": "401803303",
-      "headline": "Adebayo erupts for historic 83 points to pass Kobe for second-most ever",
-      "scoreLine": "Wizards 129 - Heat 150"
+      "gameId": "401803310_BOS@OKC",
+      "headline": "Gilgeous-Alexander breaks Wilt Chamberlain's record in Thunder win",
+      "scoreLine": "Celtics 102 - Thunder 104"
     },
     {
       "rank": 2,
-      "leagueKey": "wbc",
-      "gameId": "20260310-italy-usa",
-      "headline": "Azzurri stunner: Italy topples star-studded Team USA in massive upset",
-      "scoreLine": "Italy 8 - United States 6"
+      "leagueKey": "pgatour",
+      "gameId": "20260312-the-players-round-1",
+      "headline": "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
+      "scoreLine": ""
     },
     {
       "rank": 3,
-      "leagueKey": "uefachampionsleague",
-      "gameId": "554848",
-      "headline": "Yamal rescues Barcelona with last-gasp penalty to deny Newcastle famous win",
-      "scoreLine": "Newcastle United 1 - Barcelona 1"
+      "leagueKey": "ncaam",
+      "gameId": "NCAAB_20260312_FSU@DUKE",
+      "headline": "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
+      "scoreLine": "Florida State 79 - Duke 80"
     },
     {
       "rank": 4,
-      "leagueKey": "uefachampionsleague",
-      "gameId": "1253487",
-      "headline": "Atlético punish Tottenham's defensive meltdown in five-goal thrashing",
-      "scoreLine": "Atlético Madrid 5 - Tottenham Hotspur 2"
+      "leagueKey": "nhl",
+      "gameId": "401803300",
+      "headline": "Sharks stun Bruins at TD Garden to continue late-season surge",
+      "scoreLine": "Sharks 4 - Bruins 2"
     },
     {
       "rank": 5,
-      "leagueKey": "ncaam",
-      "gameId": "401764121",
-      "headline": "Gonzaga powers past Santa Clara to secure 22nd WCC Tournament title",
-      "scoreLine": "Santa Clara 68 - Gonzaga 79"
+      "leagueKey": "ncaabaseball",
+      "gameId": "JcLFfL9RUu0H5ystoOMbjQ7A58QMysWHEEqi7hufVoQXO5nVxbctjHh%2F6ifARsoKUNz2Cn1GpJx0eQgL%2FI8uNugW6%2F65ooJ9xE6%2BliOEFRl1EIOMAkcBvIU2aC8AuTau2UnY2vrhsp0zGxHkJEx3fbAnLWUmX%2F8r%2BMq5T8OXc2WIexLN5H205dHiBhHjVE91",
+      "headline": "Georgia Tech silences Clemson in dominant conference opener",
+      "scoreLine": "Georgia Tech 10 - Clemson 0"
     },
     {
       "rank": 6,
-      "leagueKey": "wta",
-      "gameId": "LS008",
-      "headline": "Stellar serving propels Sabalenka past Osaka into Indian Wells quarterfinals",
-      "scoreLine": "Aryna Sabalenka 2 - Naomi Osaka 0"
+      "leagueKey": "nba",
+      "gameId": "q71917",
+      "headline": "Luka Doncic hits 51 points as Lakers cruise past Bulls in James’ return",
+      "scoreLine": "Bulls 130 - Lakers 142"
     },
     {
       "rank": 7,
-      "leagueKey": "nhl",
-      "gameId": "20260310-VGK-DAL",
-      "headline": "Stars defensive masterclass stifles Golden Knights",
-      "scoreLine": "Golden Knights 1 - Stars 2"
+      "leagueKey": "uefaeuropaleague",
+      "gameId": "20260312-LILvsAVL",
+      "headline": "Watkins breaks drought as Villa snatch clinical away win in France",
+      "scoreLine": "Lille 0 - 1 Aston Villa"
     },
     {
       "rank": 8,
-      "leagueKey": "concacafchampionscup",
-      "gameId": "20260310-monterrey-cruz-azul",
-      "headline": "Cruz Azul edges Monterrey in five-goal classic",
-      "scoreLine": "Monterrey 2 - 3 Cruz Azul"
+      "leagueKey": "ncaam",
+      "gameId": "NCAAB_20260312_BYU@HOU",
+      "headline": "Houston defense survives Dybantsa's record-breaking night",
+      "scoreLine": "BYU 66 - Houston 73"
     },
     {
       "rank": 9,
-      "leagueKey": "uefachampionsleague",
-      "gameId": "101773172317820",
-      "headline": "Liverpool left reeling as Lemina strike gives Galatasaray first-leg edge",
-      "scoreLine": "Galatasaray 1 - Liverpool 0"
+      "leagueKey": "wta",
+      "gameId": "20260312-rybakina-pegula",
+      "headline": "Rybakina thwarts Pegula comeback to book semifinal spot",
+      "scoreLine": "Jessica Pegula 0 - Elena Rybakina 2"
     },
     {
       "rank": 10,
-      "leagueKey": "uefachampionsleague",
-      "gameId": "202603-n",
-      "headline": "Olise masterclass leads Bayern's six-goal demolition of Atalanta",
-      "scoreLine": "Atalanta 1 - Bayern Munich 6"
+      "leagueKey": "livgolf",
+      "gameId": "2026-singapore-round-2",
+      "headline": "DeChambeau pulls away in Singapore as Crushers surge to team lead",
+      "scoreLine": ""
     }
   ],
   "top10": [
-    "Adebayo erupts for historic 83 points to pass Kobe for second-most ever",
-    "Azzurri stunner: Italy topples star-studded Team USA in massive upset",
-    "Yamal rescues Barcelona with last-gasp penalty to deny Newcastle famous win",
-    "Atlético punish Tottenham's defensive meltdown in five-goal thrashing",
-    "Gonzaga powers past Santa Clara to secure 22nd WCC Tournament title",
-    "Stellar serving propels Sabalenka past Osaka into Indian Wells quarterfinals",
-    "Stars defensive masterclass stifles Golden Knights",
-    "Cruz Azul edges Monterrey in five-goal classic",
-    "Liverpool left reeling as Lemina strike gives Galatasaray first-leg edge",
-    "Olise masterclass leads Bayern's six-goal demolition of Atalanta"
+    "Gilgeous-Alexander breaks Wilt Chamberlain's record in Thunder win",
+    "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
+    "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
+    "Sharks stun Bruins at TD Garden to continue late-season surge",
+    "Georgia Tech silences Clemson in dominant conference opener",
+    "Luka Doncic hits 51 points as Lakers cruise past Bulls in James’ return",
+    "Watkins breaks drought as Villa snatch clinical away win in France",
+    "Houston defense survives Dybantsa's record-breaking night",
+    "Rybakina thwarts Pegula comeback to book semifinal spot",
+    "DeChambeau pulls away in Singapore as Crushers surge to team lead"
   ],
-  "newsBriefing": "In a historic night for the NBA, Bam Adebayo etched his name into the record books by scoring a staggering 83 points in a win over the Wizards, surpassing Kobe Bryant for the second-highest single-game total in league history. While the basketball world celebrated Adebayo's feat, other stars faced significant hurdles as Luka Dončić revealed a difficult separation and custody battle for his daughters, and Jaylen Brown was swiftly ejected from a Celtics loss following an intense dispute with officials. The NFL saw major movement and drama as the Jets reunited with quarterback Geno Smith via trade, while a blockbuster deal that would have sent Maxx Crosby to the Ravens collapsed at the finish line due to medical concerns found during his physical. On the diamond, Team Italy pulled off a massive World Baseball Classic upset by defeating Team USA, leaving the Americans' tournament fate in jeopardy, while the NHL saw controversy as Nathan MacKinnon was ejected for a disputed goalie interference call in an Avalanche loss. Meanwhile, the WNBA and its players' union logged a marathon 12-hour bargaining session that, while ending without a formal deal, signaled positive momentum as the league works toward a transformational new collective bargaining agreement.",
-  "updatedAt": "2026-03-11T11:00:15.358Z"
+  "newsBriefing": "It was a landmark day across the sports world, headlined by Shai Gilgeous-Alexander eclipsing Wilt Chamberlain’s 63-year-old NBA record with his 127th consecutive 20-point game and Luka Doncic erupting for 51 points in LeBron James’ return to the Lakers' lineup. The NFL landscape shifted significantly as the Vikings secured Kyler Murray on a veteran minimum deal following his release from the Cardinals, while the Cowboys integrated newly acquired pass rusher Rashan Gary amidst a \"crazy\" week of trades and social media hacks. However, the day was also clouded by serious developments, including Atlanta Falcons edge rusher James Pearce Jr. facing multiple felony charges and Toronto’s Auston Matthews exiting a game with a knee injury after a controversial hit. In other arenas, Dwight Howard officially retired from all basketball following his Hall of Fame induction, Rory McIlroy struggled early at the Players Championship while a pack of five leaders set the pace at 5-under, and Kansas State neared a deal to name Belmont's Casey Alexander as their next head coach. Moving into postseason play, Team USA revamped its pitching roster for the World Baseball Classic quarterfinals, and the Big 12 made the unprecedented mid-tournament decision to scrap its new LED glass court for traditional hardwood after widespread player complaints about dangerous slippage.",
+  "updatedAt": "2026-03-13T10:00:16.463Z"
 }

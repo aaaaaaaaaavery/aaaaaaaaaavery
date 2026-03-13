@@ -9,11 +9,18 @@ const DEFAULT_PLAYLISTS_BY_LEAGUE = {
   WBC: 'PLL-lmlkrmJal3m1rov-FXlDLLaHpPJL6L',
   CONCACAFCHAMPIONSCUP: 'PL6XTKrlgbQUBtOk2ji7hvg_4jVIUP-Kl2',
   UEFACHAMPIONSLEAGUE: 'PLkwBiY2Dq-oaG6vHAhmcCOc3Q_-To2dlA',
+  NCAAM: [
+    'PLhh7fyF6r5qVV2_RonsHodwkwe-GGt_Jl',
+    'PL2RRF9GtC9s1v7L7tO5Astcl4Z8xq3BqQ',
+    'PLSrXjFYZsRuMeW1ttMkXz4cQy9bap9fIB',
+    'PLmkjXprBSRGMmLrdClEpgvhPQ2DijUXG6',
+  ],
 };
 
 const DEFAULT_TITLE_MUST_INCLUDE_BY_LEAGUE = {
   CONCACAFCHAMPIONSCUP: 'concacaf champions cup',
   UEFACHAMPIONSLEAGUE: 'ucl',
+  NCAAM: 'highlights',
 };
 
 function parseArgs(argv) {
@@ -574,7 +581,12 @@ function resolvePlaylistIds(argsPlaylist, leagueKey) {
   }
 
   const byLeague = DEFAULT_PLAYLISTS_BY_LEAGUE[String(leagueKey || '').toUpperCase()];
-  if (byLeague) return [byLeague];
+  if (byLeague) {
+    if (Array.isArray(byLeague)) {
+      return [...new Set(byLeague.map((s) => String(s).trim()).filter(Boolean))];
+    }
+    return [String(byLeague).trim()];
+  }
 
   return [DEFAULT_PLAYLISTS_BY_LEAGUE.NBA];
 }

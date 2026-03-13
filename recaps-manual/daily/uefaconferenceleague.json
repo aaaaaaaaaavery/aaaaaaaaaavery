@@ -1,0 +1,256 @@
+{
+  "leagueName": "UEFA Conference",
+  "leagueKey": "uefaconferenceleague",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "The Conference League Round of 16 delivered a night of stark contrasts, from AEK Athens’ dominant four-goal masterclass in Slovenia to a pair of frustrating scoreless stalemates for Premier League and Bundesliga representatives. While Rayo Vallecano and Shakhtar Donetsk flexed their muscles with authoritative away wins, Crystal Palace and Mainz found themselves hitting a wall, leaving their European futures hanging in the balance for the second leg.",
+  "games": [
+    {
+      "id": "20260312-RIJvsSTR",
+      "teams": {
+        "away": "Strasbourg",
+        "home": "Rijeka"
+      },
+      "headline": "Strasbourg edges Rijeka in tightly contested battle in Croatia",
+      "score": "Rijeka 1 - Strasbourg 2",
+      "brief": "Strasbourg secured a vital road victory at the Stadion Rujevica, showing clinical efficiency despite a late surge from the hosts. Joaquín Panichelli set the tone almost immediately with a goal in the second minute, and Martial Godo’s second-half strike provided the cushion Strasbourg needed. Although Ante Majstorović pulled one back to ignite the home crowd, the French side’s disciplined defense held firm to ensure they take a lead back to the Stade de la Meinau.",
+      "bullets": [
+        "Joaquín Panichelli opened the scoring just 120 seconds into the match.",
+        "Martial Godo doubled the advantage for the visitors in the 72nd minute.",
+        "Rijeka defender Ante Majstorović gave the hosts hope with a goal in the 76th minute.",
+        "Both teams were physically aggressive, with five yellow cards handed out by the referee.",
+        "Strasbourg extends their unbeaten run to nine matches across all competitions."
+      ],
+      "context": "Strasbourg returns home with two away goals, putting them in the driver's seat to reach the quarterfinals.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.theyscored.com/football/match-summary/rijeka-vs-strasbourg/3838838"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "174-997-7685",
+      "teams": {
+        "away": "Rayo Vallecano",
+        "home": "Samsunspor"
+      },
+      "headline": "Alemão brace powers Rayo Vallecano to dominant win in Türkiye",
+      "score": "Samsunspor 1 - Rayo Vallecano 3",
+      "brief": "Rayo Vallecano silenced a boisterous Turkish crowd with a ruthless performance led by Brazilian forward Alemão. Despite Samsunspor enjoying the lion's share of possession, Rayo was lethal on the counter-attack, scoring twice in the first half to stun the hosts. Marius Mouandilmadji briefly gave the home fans hope, but Rayo's tactical discipline and Alemão's second-half sealer essentially put the tie out of reach before the return leg in Madrid.",
+      "bullets": [
+        "Alemão was the man of the match, netting twice in the 15th and 78th minutes.",
+        "Marius Mouandilmadji scored for Samsunspor in the 21st minute to briefly level the match.",
+        "Álvaro García scored the decisive second goal for Rayo just before the halftime whistle.",
+        "Samsunspor dominated the ball with 62% possession but struggled to create clear-cut chances.",
+        "The referee was busy, issuing six yellow cards in a high-intensity encounter."
+      ],
+      "context": "Rayo Vallecano heads back to Vallecas with a commanding three-goal aggregate cushion.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.365scores.com/football/match/uefa-conference-league-7685/rayo-vallecano-samsunspor-174-997-7685"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260312-LECvsSHA",
+      "teams": {
+        "away": "Shakhtar Donetsk",
+        "home": "Lech Poznań"
+      },
+      "headline": "Shakhtar's Brazilian flair overwhelms Lech Poznań in Poland",
+      "score": "Lech Poznań 1 - Shakhtar Donetsk 3",
+      "brief": "Shakhtar Donetsk continued their impressive European form with a convincing 3-1 victory over Lech Poznań. The Ukrainian side’s young Brazilian stars were the difference-makers, with Newerton, Marlon Gomes, and Isaque Silva all finding the net. Lech Poznań’s talisman Mikael Ishak pulled one back to keep a glimmer of hope alive for the Polish side, but Shakhtar’s superior technical quality was evident throughout the night.",
+      "bullets": [
+        "Newerton and Marlon Gomes scored on either side of halftime to put Shakhtar in control.",
+        "Isaque Silva added a late insurance goal in the 85th minute to secure the three-goal haul.",
+        "Mikael Ishak scored the lone goal for the hosts in the 70th minute.",
+        "Lech Poznań struggled with discipline, picking up multiple yellow cards as they tried to halt Shakhtar's pace.",
+        "Shakhtar has now won five of their last six away games in European competition."
+      ],
+      "context": "Shakhtar’s dominance makes them heavy favorites to advance as they head to the neutral second leg site.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.eventbrite.de/e/heresliveshakhtar-donetsk-v-lech-poznan-live-free-streams-12-mar-2026-tickets-1984716589747?sportsjoe"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "4ADJMjXH",
+      "teams": {
+        "away": "Sparta Praha",
+        "home": "AZ Alkmaar"
+      },
+      "headline": "Parrott at the double as AZ Alkmaar snatches late win over Sparta",
+      "score": "AZ Alkmaar 2 - Sparta Praha 1",
+      "brief": "Troy Parrott was the hero in Alkmaar, scoring a dramatic 87th-minute winner to give the Dutch side a narrow advantage. In a game of shifting momentum, Sparta Praha looked to have earned a valuable draw after Matyáš Vojta canceled out Parrott's first-half opener. However, Parrott’s persistence paid off in the dying stages, rewarding a dominant AZ performance and leaving the Czech champions with plenty of work to do in Prague.",
+      "bullets": [
+        "Troy Parrott scored both goals for AZ, including the 29th-minute opener and the 87th-minute winner.",
+        "Matyáš Vojta scored the equalizer for Sparta Praha early in the second half.",
+        "AZ dominated the match with significantly more shots and possession than the visitors.",
+        "The match was physical, resulting in four yellow cards, including three for Sparta players.",
+        "AZ Alkmaar remains undefeated at home in European competition this season."
+      ],
+      "context": "The late winner provides a massive psychological boost for AZ heading into a difficult second leg in Prague.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.flashscore.com.ng/match/football/az-alkmaar-2RxOow1i/sparta-prague-6qA358jH/summary/stats/?mid=4ADJMjXH"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "2684749",
+      "teams": {
+        "away": "Raków Częstochowa",
+        "home": "Fiorentina"
+      },
+      "headline": "Gudmundsson’s late penalty rescues Fiorentina after Raków scare",
+      "score": "Fiorentina 2 - Raków Częstochowa 1",
+      "brief": "Fiorentina survived a massive scare at the Artemio Franchi as they needed a stoppage-time penalty to overcome a resilient Raków Częstochowa. The Polish visitors silenced the Florence crowd when Jonatan Braut Brunes gave them a shock lead on the hour mark. Cher Ndour quickly equalized, but it wasn’t until Albert Gudmundsson converted from the spot in the 93rd minute that the Viola finally secured the win they desperately sought.",
+      "bullets": [
+        "Albert Gudmundsson scored the winner via a 93rd-minute penalty after a high-pressure final sequence.",
+        "Jonatan Braut Brunes, relative of Erling Haaland, scored the opening goal for Raków in the 60th minute.",
+        "Cher Ndour found the equalizer for Fiorentina just two minutes after falling behind.",
+        "Fiorentina registered 22 total shots but struggled with clinical finishing throughout the night.",
+        "Goalkeeper Oliwier Zych made several outstanding saves for Raków before the late penalty."
+      ],
+      "context": "Fiorentina takes a slender lead to Poland but will be wary of Raków’s ability to strike on the counter.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.xscores.com/soccer/match/international/fiorentina-vs-rakow-czestochowa/2025-2026/2684749"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "352-1798-7685",
+      "teams": {
+        "away": "Mainz 05",
+        "home": "Sigma Olomouc"
+      },
+      "headline": "Sigma Olomouc holds Mainz in frustrating scoreless draw",
+      "score": "Sigma Olomouc 0 - Mainz 05 0",
+      "brief": "In a match that won't live long in the memory, Sigma Olomouc and Mainz played out a tactical stalemate that leaves everything to play for in Germany. Mainz arrived as favorites but failed to record a single shot on target, while the hosts were equally toothless in front of goal. It was a night for the defenses as both sides prioritized structure over risk, resulting in a first leg that lacked any real goal-mouth drama.",
+      "bullets": [
+        "Mainz 05 failed to record a single shot on target throughout the 90 minutes.",
+        "Sigma Olomouc held 55% of the possession but only managed four total shots.",
+        "The draw marks Sigma Olomouc's sixth 'Both Teams to Score - No' result in their last seven matches.",
+        "Mainz defender Stefan Posch and Sigma striker Jan Kliment both received yellow cards in a chippy affair.",
+        "Both teams combined for zero big chances created, highlighting the defensive nature of the game."
+      ],
+      "context": "Mainz will rely on home-field advantage in the second leg to break the deadlock and advance.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.365scores.com/football/match/uefa-conference-league-7685/mainz-05-sigma-olomouc-352-1798-7685"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "1601895",
+      "teams": {
+        "away": "AEK Larnaca",
+        "home": "Crystal Palace"
+      },
+      "headline": "Wayward finishing haunts Crystal Palace in frustrating draw with Larnaca",
+      "score": "Crystal Palace 0 - AEK Larnaca 0",
+      "brief": "Crystal Palace’s inability to find the back of the net continued at Selhurst Park as they were held to a goalless draw by a stubborn AEK Larnaca. Despite dominating possession and creating several quality chances, the Eagles lacked the clinical edge to break down the Cypriot defense. The result means Palace have now failed to score in both meetings with Larnaca this season, leaving them with a tricky second leg away from home.",
+      "bullets": [
+        "Crystal Palace dominated the match with 15 shots but only managed four on target.",
+        "Jean-Philippe Mateta made his return from a six-week injury layoff as a late substitute.",
+        "AEK Larnaca managed only one shot across the entire 90 minutes as they focused entirely on defense.",
+        "This was the second time this season Larnaca has shut out Palace (previously 1-0 in the league phase).",
+        "Larnaca remains unbeaten in the Conference League this season with three wins and four draws."
+      ],
+      "context": "Palace must win in Cyprus next week to avoid a disappointing exit in their first full European campaign.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.tntsports.co.uk/football/uefa-conference-league/2025-2026/crystal-palace-aek-larnaca_mtc1601895/live-commentary.shtml"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260312-CELvsAEK",
+      "teams": {
+        "away": "AEK Athens",
+        "home": "Celje"
+      },
+      "headline": "AEK Athens clinical in Slovenia to put one foot in quarterfinals",
+      "score": "Celje 0 - AEK Athens 4",
+      "brief": "AEK Athens delivered the performance of the night, dismantling NK Celje with a four-goal barrage that all but ends the tie. The Greek side was clinical from the start, with Barnabás Varga scoring in the third minute to set the tone. Celje’s reputation as a home fortress was shattered as AEK exploited every defensive lapse, scoring three goals before halftime and adding a fourth shortly after the break to secure a massive advantage.",
+      "bullets": [
+        "AEK scored three times in the first half through Varga, Koïta, and Gaćinović.",
+        "Harold Moukoudi added the fourth goal in the 49th minute to complete the rout.",
+        "The result ended Celje's previously perfect home record in this season's competition.",
+        "Barnabás Varga’s goal in the 3rd minute was one of the fastest in the tournament this year.",
+        "AEK Athens held Celje to zero shots on target despite the hosts' attacking reputation."
+      ],
+      "context": "With a four-goal lead and four away goals, AEK Athens is virtually guaranteed a spot in the next round.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.transfermarkt.com/betting/tips/nk-celje-vs-aek-athen-prediction-12-03-2026/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
+}
