@@ -169,17 +169,29 @@
     { leagueName: "NHRA", leagueKey: "nhra", fileUrl: "recaps-manual/daily/nhra.json" },
       { leagueName: "UFC", leagueKey: "ufc", fileUrl: "recaps-manual/daily/ufc.json" },
       { leagueName: "Boxing", leagueKey: "boxing", fileUrl: "recaps-manual/daily/boxing.json" },
-      { leagueName: "PGA Tour", leagueKey: "pgatour", fileUrl: "recaps-manual/daily/pgatour.json" },
-      { leagueName: "DP World Tour", leagueKey: "dpworldtour", fileUrl: "recaps-manual/daily/dpworldtour.json" },
-      { leagueName: "LPGA Tour", leagueKey: "lpgatour", fileUrl: "recaps-manual/daily/lpgatour.json" },
-      { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/livgolf.json" },
-      { leagueName: "ATP", leagueKey: "atp", fileUrl: "recaps-manual/daily/tennis-atp.json" },
-            { leagueName: "WTA", leagueKey: "wta", fileUrl: "recaps-manual/daily/tennis-wta.json" }
+            {
+                leagueName: "Golf",
+                leagueKey: "golf",
+                mergedLeagues: [
+                    { leagueName: "PGA Tour", leagueKey: "pgatour", fileUrl: "recaps-manual/daily/pgatour.json" },
+                    { leagueName: "LIV Golf", leagueKey: "livgolf", fileUrl: "recaps-manual/daily/livgolf.json" },
+                    { leagueName: "LPGA Tour", leagueKey: "lpgatour", fileUrl: "recaps-manual/daily/lpgatour.json" },
+                    { leagueName: "DP World Tour", leagueKey: "dpworldtour", fileUrl: "recaps-manual/daily/dpworldtour.json" },
+                ],
+            },
+            {
+                leagueName: "Tennis",
+                leagueKey: "tennis",
+                mergedLeagues: [
+                    { leagueName: "ATP", leagueKey: "atp", fileUrl: "recaps-manual/daily/tennis-atp.json" },
+                    { leagueName: "WTA", leagueKey: "wta", fileUrl: "recaps-manual/daily/tennis-wta.json" },
+                ],
+            }
     ];
 
     const LEAGUE_DISPLAY_ORDER = [
-      "NFL", "NBA", "MLB", "NHL", "WBC", "Soccer", "Formula One", "NCAAM", "NCAAW", "PGA Tour", "UFC", "Boxing",
-            "NASCAR Cup Series", "NHRA", "Tennis", "NCAAF", "WNBA", "LIV Golf", "NCAA Baseball", "NCAA Softball", "IndyCar", "LPGA Tour", "MotoGP", "Six Nations"
+    "NFL", "NBA", "MLB", "NHL", "WBC", "Soccer", "Formula One", "NCAAM", "NCAAW", "Golf", "UFC", "Boxing",
+        "NASCAR Cup Series", "NHRA", "Tennis", "NCAAF", "WNBA", "NCAA Baseball", "NCAA Softball", "IndyCar", "MotoGP", "Six Nations"
     ];
 
         const SOCCER_LEAGUE_DISPLAY_ORDER = [
@@ -187,13 +199,9 @@
                 "FA Cup", "NWSL", "UEFA Europa", "UEFA Conference", "CONCACAF Champions Cup", "Super Lig", "Carabao Cup", "Coupe de France", "SheBelieves Cup", "Scottish Cup"
         ];
 
-    const GOLF_LEAGUE_DISPLAY_ORDER = [
-      "PGA Tour", "LPGA Tour", "DP World Tour", "LIV Golf"
-    ];
+        const GOLF_LEAGUE_DISPLAY_ORDER = ["Golf"];
 
-    const TENNIS_LEAGUE_DISPLAY_ORDER = [
-      "ATP", "WTA"
-    ];
+        const TENNIS_LEAGUE_DISPLAY_ORDER = ["Tennis"];
 
     const LEAGUE_ORDER_INDEX = Object.fromEntries(LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
     const SOCCER_ORDER_INDEX = Object.fromEntries(SOCCER_LEAGUE_DISPLAY_ORDER.map((name, idx) => [name.toLowerCase(), idx]));
@@ -213,8 +221,8 @@
       "premierleague", "uefachampionsleague", "mls", "laliga", "seriea", "bundesliga", "ligue1", "ligamx",
         "facup", "nwsl", "concacafchampionscup", "uefaeuropaleague", "uefaconferenceleague", "superlig", "carabaocup", "coupedefrance", "shebelievescup", "scottishcup"
     ]);
-    const GOLF_LEAGUE_KEYS = new Set(["pgatour", "dpworldtour", "lpgatour", "livgolf"]);
-    const TENNIS_LEAGUE_KEYS = new Set(["atp", "wta"]);
+    const GOLF_LEAGUE_KEYS = new Set(["golf"]);
+    const TENNIS_LEAGUE_KEYS = new Set(["tennis"]);
     const ALL_LEAGUE = { leagueName: "TOP 10", leagueKey: "all", fileUrl: "generated://top10" };
     const MANUAL_TOP10_STORAGE_KEY = "thporth.manual-top10.v1";
     const MANUAL_TOP10_FILE_URL = "recaps-manual/daily/manual-top10.json";
@@ -291,6 +299,7 @@
       "uefa conference league": "UECL",
       livgolf: "LIV",
       liv: "LIV",
+    golf: "Golf",
     };
     const TOP10_STREAM_PILL_CLASS = "inline-flex items-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-xs font-medium text-gray-600";
     const TOP10_HEADLINE_PILL_CLASS = "inline-flex shrink-0 items-center justify-center rounded-sm bg-gray-100 px-1.5 py-0.5 text-center text-[10px] font-medium leading-snug text-gray-600 whitespace-nowrap";
@@ -319,6 +328,8 @@
             dpworldtour: "https://upload.wikimedia.org/wikipedia/commons/7/75/Logotype_de_DP_World.png",
             lpgatour: "https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Ladies_Professional_Golf_Association.svg/330px-Ladies_Professional_Golf_Association.svg.png",
             livgolf: "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/LIV_golf_logo.svg/960px-LIV_golf_logo.svg.png",
+            golf: "golf.png",
+            tennis: "tennis-icon.png",
             wta: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/WTA_2025.svg/500px-WTA_2025.svg.png",
             ncaam: "https://www.pngkey.com/png/full/47-473499_ncaa-mens-basketball-logo.png",
             ncaaw: "https://www.ncaa.com/modules/custom/casablanca_core/img/sportbanners/basketball-women.png",
@@ -32529,8 +32540,8 @@ Wisconsin
         return soccerBase * 1000 + SOCCER_ORDER_INDEX[name] + 1;
       }
       if (Object.prototype.hasOwnProperty.call(GOLF_ORDER_INDEX, name)) {
-        const golfBase = Object.prototype.hasOwnProperty.call(LEAGUE_ORDER_INDEX, "pga tour")
-          ? LEAGUE_ORDER_INDEX["pga tour"]
+                const golfBase = Object.prototype.hasOwnProperty.call(LEAGUE_ORDER_INDEX, "golf")
+                    ? LEAGUE_ORDER_INDEX.golf
           : 100001;
         return golfBase * 1000 + GOLF_ORDER_INDEX[name] + 1;
       }
@@ -33455,6 +33466,8 @@ Wisconsin
             allGamesByKey.set(key, {
               leagueKey,
               leagueName: league.leagueName || leagueKey.toUpperCase(),
+                            sourceLeagueKey: String(game?.sourceLeagueKey || leagueKey),
+                            sourceLeagueName: String(game?.sourceLeagueName || league.leagueName || leagueKey.toUpperCase()),
               gameId,
               text: manualHeadline || sourceHeadline,
               scoreLine: String(game?.scoreLine || game?.score || ""),
@@ -33509,6 +33522,94 @@ Wisconsin
       if (state.loading.has(key)) return state.loading.get(key);
 
       const p = (async () => {
+                if (Array.isArray(lg.mergedLeagues) && lg.mergedLeagues.length) {
+                    const sourceResults = await Promise.allSettled(
+                        lg.mergedLeagues.map(async (sourceLeague) => {
+                            const res = await fetch(`${sourceLeague.fileUrl}?t=${Date.now()}`, { cache: "no-store" });
+                            if (!res.ok) throw new Error(`HTTP ${res.status} when fetching ${sourceLeague.fileUrl}`);
+                            const data = await res.json();
+                            let sourceData = data;
+
+                            // Supports shared source files that contain multiple league objects.
+                            if (Array.isArray(data)) {
+                                const targetKey = String(sourceLeague.sourceLeagueKey || sourceLeague.leagueKey || "").toLowerCase();
+                                sourceData = data.find((entry) => {
+                                    const entryLeagueKey = String(entry?.leagueKey || "").toLowerCase();
+                                    const entryLeagueName = String(entry?.leagueName || "").toLowerCase();
+                                    return entryLeagueKey === targetKey || entryLeagueName === targetKey;
+                                });
+                                if (!sourceData) {
+                                    throw new Error(`No matching league found in ${sourceLeague.fileUrl} for ${sourceLeague.leagueName}`);
+                                }
+                            }
+
+                            if (!sourceData || typeof sourceData !== "object" || Array.isArray(sourceData)) {
+                                throw new Error(`Expected JSON object in ${sourceLeague.fileUrl}`);
+                            }
+
+                            const normalizedSourceLeagueName = normalizeLeagueDisplayName(
+                                sourceData.leagueName || sourceLeague.leagueName,
+                                sourceLeague.leagueKey
+                            );
+                            const sourceLeagueKey = String(sourceLeague.leagueKey || "").trim().toLowerCase();
+                            const sourceGames = Array.isArray(sourceData.games)
+                                ? sourceData.games
+                                        .filter((game) => !shouldSkipGame(game))
+                                        .map((game, idx) => ({
+                                            ...game,
+                                            id: `${sourceLeagueKey}-${String(game?.id != null ? game.id : idx + 1)}`,
+                                            sourceLeagueKey,
+                                            sourceLeagueName: normalizedSourceLeagueName,
+                                        }))
+                                : [];
+
+                            return {
+                                leagueName: normalizedSourceLeagueName,
+                                leagueKey: sourceLeagueKey,
+                                leagueBriefing: String(sourceData.leagueBriefing || sourceData.newsBriefing || "").trim(),
+                                newsBriefing: String(sourceData.newsBriefing || sourceData.leagueBriefing || "").trim(),
+                                games: sourceGames,
+                            };
+                        })
+                    );
+
+                    const mergedGames = [];
+                    const mergedBriefs = [];
+                    const failedSources = [];
+                    sourceResults.forEach((result, idx) => {
+                        if (result.status === "fulfilled") {
+                            const sourceData = result.value;
+                            if (Array.isArray(sourceData.games) && sourceData.games.length) {
+                                mergedGames.push(...sourceData.games);
+                            }
+                            const sourceBrief = String(sourceData.leagueBriefing || sourceData.newsBriefing || "").trim();
+                            if (sourceBrief) {
+                                mergedBriefs.push(`${sourceData.leagueName}: ${sourceBrief}`);
+                            }
+                        } else {
+                            const sourceLeague = lg.mergedLeagues[idx];
+                            failedSources.push(`${sourceLeague?.leagueName || sourceLeague?.leagueKey || "Unknown source"}: ${String(result.reason?.message || result.reason || "load failed")}`);
+                        }
+                    });
+
+                    if (!mergedGames.length && failedSources.length) {
+                        throw new Error(`Failed to load Golf league sources: ${failedSources.join(" | ")}`);
+                    }
+                    if (failedSources.length) {
+                        console.warn("[loadLeagueData] Some merged league sources failed:", failedSources);
+                    }
+
+                    const finalData = {
+                        leagueName: normalizeLeagueDisplayName(lg.leagueName, lg.leagueKey),
+                        leagueKey: lg.leagueKey,
+                        leagueBriefing: mergedBriefs.join("\n\n"),
+                        newsBriefing: mergedBriefs.join("\n\n"),
+                        games: mergedGames,
+                    };
+                    state.cache.set(key, finalData);
+                    return finalData;
+                }
+
         const res = await fetch(`${lg.fileUrl}?t=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status} when fetching ${lg.fileUrl}`);
         const data = await res.json();
@@ -33981,8 +34082,6 @@ Wisconsin
       const top10League = visibleLeagues.find((lg) => lg.leagueKey === "all") || null;
       const nonTop10Leagues = visibleLeagues.filter((lg) => lg.leagueKey !== "all");
       const soccerLeagues = nonTop10Leagues.filter((lg) => isSoccerLeague(lg));
-      const golfLeagues = nonTop10Leagues.filter((lg) => isGolfLeague(lg));
-      const tennisLeagues = nonTop10Leagues.filter((lg) => isTennisLeague(lg));
 
       const appendLeagueButton = (lg, opts = {}) => {
         const idx = indexByLeagueKey.get(lg.leagueKey);
@@ -34065,70 +34164,12 @@ Wisconsin
         leagueNav.appendChild(soccerGroup);
       };
 
-      const appendGolfGroup = () => {
-        if (!golfLeagues.length) return;
-        const golfGroup = document.createElement("div");
-        golfGroup.className = "mt-1 rounded-md border border-gray-200 bg-white";
-
-        const golfHeader = document.createElement("div");
-        golfHeader.className = "border-b border-gray-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-gray-600";
-        golfHeader.textContent = "Golf";
-        golfGroup.appendChild(golfHeader);
-
-        const golfItems = document.createElement("div");
-        golfItems.className = "space-y-1 p-1";
-        golfGroup.appendChild(golfItems);
-
-        golfLeagues.forEach((lg) => {
-          appendLeagueButton(lg, { nested: true, container: golfItems });
-        });
-
-        leagueNav.appendChild(golfGroup);
-      };
-
-      const appendTennisGroup = () => {
-        if (!tennisLeagues.length) return;
-        const tennisGroup = document.createElement("div");
-        tennisGroup.className = "mt-1 rounded-md border border-gray-200 bg-white";
-
-        const tennisHeader = document.createElement("div");
-        tennisHeader.className = "border-b border-gray-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-gray-600";
-        tennisHeader.textContent = "Tennis";
-        tennisGroup.appendChild(tennisHeader);
-
-        const tennisItems = document.createElement("div");
-        tennisItems.className = "space-y-1 p-1";
-        tennisGroup.appendChild(tennisItems);
-
-        tennisLeagues.forEach((lg) => {
-          appendLeagueButton(lg, { nested: true, container: tennisItems });
-        });
-
-        leagueNav.appendChild(tennisGroup);
-      };
-
       let insertedSoccerGroup = false;
-      let insertedGolfGroup = false;
-      let insertedTennisGroup = false;
       nonTop10Leagues.forEach((lg) => {
         if (isSoccerLeague(lg)) {
           if (!insertedSoccerGroup) {
             appendSoccerGroup();
             insertedSoccerGroup = true;
-          }
-          return;
-        }
-        if (isGolfLeague(lg)) {
-          if (!insertedGolfGroup) {
-            appendGolfGroup();
-            insertedGolfGroup = true;
-          }
-          return;
-        }
-        if (isTennisLeague(lg)) {
-          if (!insertedTennisGroup) {
-            appendTennisGroup();
-            insertedTennisGroup = true;
           }
           return;
         }
@@ -34138,13 +34179,6 @@ Wisconsin
       if (!insertedSoccerGroup && soccerLeagues.length) {
         appendSoccerGroup();
       }
-      if (!insertedGolfGroup && golfLeagues.length) {
-        appendGolfGroup();
-      }
-      if (!insertedTennisGroup && tennisLeagues.length) {
-        appendTennisGroup();
-      }
-
       syncDesktopActiveLeagueIntoView();
     }
 

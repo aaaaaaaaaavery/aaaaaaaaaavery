@@ -1149,7 +1149,7 @@ Rules:
 5. One league per line.
 6. Sort alphabetically.
 7. Output ONLY the block below, with no extra text.
-8. Exclude the following leagues: World Rally Championship, Women's College Ice Hockey, Women's College Lacrosse, Primera Division, QMJHL, Serie A Brazil, Ski Freestyle World Cup, UCI World Tour, USHL, NRL, OHL, Other, NBA G League, Major League Volleyball, Girls High School Basketball, High School Basketball, Horse Racing, College Volleyball, ECHL, Euroleague, Coppa Italia Femminile, AFL, Copa De La Reina, Liga MX Femenil, Liga Nacional, League One Volleyball (LOVB), College Lacrosse, CONCACAF Champions Cup, Copa Libertadores, FIBA Women's World Cup
+8. Exclude the following leagues: World Rally Championship, Women's College Ice Hockey, Women's College Lacrosse, Primera Division, QMJHL, Serie A Brazil, Ski Freestyle World Cup, UCI World Tour, USHL, NRL, OHL, Other, NBA G League, Major League Volleyball, Girls High School Basketball, High School Basketball, Horse Racing, College Volleyball, ECHL, Euroleague, Coppa Italia Femminile, AFL, Copa De La Reina, Liga MX Femenil, Liga Nacional, League One Volleyball (LOVB), College Lacrosse, CONCACAF Champions Cup, Copa Libertadores, FIBA Women's World Cup, 2. Bundesliga, 3. Liga, A-League, A-League Women, AHL, Alpine World Cup, ATP Challenger Tour, College Ice Hockey, College Track and Field, División Profesional, Ekstraklasa, FA Youth Cup, Indy NXT Series, Mixed Coverage, Premier League 2, Primera A, PWHL, Scottish Championship, Super League Basketball, USL Super League, Women's College Tennis, Bundesliga, CAF Champions League, La Liga, Ligue 1, NWSL, Pro League, Serie A, Süper Lig
 
 Output format (exact):
 <League Name>
@@ -1398,14 +1398,17 @@ Output format (exact):
         'College Softball': 'https://www.espn.com/college-softball/scoreboard',
         'DP World Tour': 'https://www.europeantour.com/dpworld-tour/news/',
         'Formula 1': 'https://www.google.com/search?q=formula+1&rlz=1C5MACD_enUS1166US1166&oq=formula+1&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQxNzNqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8',
+        'IndyCar': 'https://www.google.com/search?q=indycar&rlz=1C5MACD_enUS1166US1166&oq=indycar&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDzSAQc4ODBqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8',
         'LIV Golf': 'https://www.livgolf.com/',
         'LPGA Tour': 'https://www.lpga.com/news-and-video',
         'MLB': 'https://www.mlb.com/scores',
         "Men's College Basketball": 'https://www.espn.com/mens-college-basketball/scoreboard',
+        'NASCAR Cup Series': 'https://www.nascar.com/news/nascar-cup-series/',
         'NBA': 'https://www.espn.com/nba/scoreboard',
         'NHL': 'https://www.espn.com/nhl/scoreboard',
         'PGA Tour': 'https://www.pgatour.com/',
         'WTA': 'https://www.flashscoreusa.com/tennis/',
+        'World Baseball Classic': 'https://mlb.com/scores',
         "Women's College Basketball": 'https://www.espn.com/womens-college-basketball/scoreboard',
         'WBC': 'https://www.mlb.com/scores'
       };
@@ -1440,7 +1443,37 @@ Output format (exact):
         'college lacrosse',
         'concacaf champions cup',
         'copa libertadores',
-        "fiba women's world cup"
+        "fiba women's world cup",
+        '2. bundesliga',
+        '3. liga',
+        'a-league',
+        'a-league women',
+        'ahl',
+        'alpine world cup',
+        'atp challenger tour',
+        'college ice hockey',
+        'college track and field',
+        'división profesional',
+        'ekstraklasa',
+        'fa youth cup',
+        'indy nxt series',
+        'mixed coverage',
+        'premier league 2',
+        'primera a',
+        'pwhl',
+        'scottish championship',
+        'super league basketball',
+        'usl super league',
+        "women's college tennis",
+        'bundesliga',
+        'caf champions league',
+        'la liga',
+        'ligue 1',
+        'nwsl',
+        'pro league',
+        'serie a',
+        'süper lig',
+        'super lig'
       ]);
 
       function normalizeLeagueName(name) {
