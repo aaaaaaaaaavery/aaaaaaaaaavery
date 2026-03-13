@@ -11,64 +11,64 @@
     },
     {
       "rank": 2,
-      "leagueKey": "pgatour",
-      "gameId": "20260312-the-players-round-1",
+      "leagueKey": "golf",
+      "gameId": "pgatour-20260312-the-players-round-1",
       "headline": "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
       "scoreLine": ""
     },
     {
       "rank": 3,
-      "leagueKey": "ncaam",
-      "gameId": "NCAAB_20260312_FSU@DUKE",
-      "headline": "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
-      "scoreLine": "Florida State 79 - Duke 80"
-    },
-    {
-      "rank": 4,
       "leagueKey": "nhl",
       "gameId": "401803300",
       "headline": "Sharks stun Bruins at TD Garden to continue late-season surge",
       "scoreLine": "Sharks 4 - Bruins 2"
     },
     {
-      "rank": 5,
-      "leagueKey": "ncaabaseball",
-      "gameId": "JcLFfL9RUu0H5ystoOMbjQ7A58QMysWHEEqi7hufVoQXO5nVxbctjHh%2F6ifARsoKUNz2Cn1GpJx0eQgL%2FI8uNugW6%2F65ooJ9xE6%2BliOEFRl1EIOMAkcBvIU2aC8AuTau2UnY2vrhsp0zGxHkJEx3fbAnLWUmX%2F8r%2BMq5T8OXc2WIexLN5H205dHiBhHjVE91",
-      "headline": "Georgia Tech silences Clemson in dominant conference opener",
-      "scoreLine": "Georgia Tech 10 - Clemson 0"
+      "rank": 4,
+      "leagueKey": "ncaam",
+      "gameId": "NCAAB_20260312_FSU@DUKE",
+      "headline": "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
+      "scoreLine": "Florida State 79 - Duke 80"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "leagueKey": "nba",
       "gameId": "q71917",
       "headline": "Luka Doncic hits 51 points as Lakers cruise past Bulls in James’ return",
       "scoreLine": "Bulls 130 - Lakers 142"
     },
     {
-      "rank": 7,
-      "leagueKey": "uefaeuropaleague",
-      "gameId": "20260312-LILvsAVL",
-      "headline": "Watkins breaks drought as Villa snatch clinical away win in France",
-      "scoreLine": "Lille 0 - 1 Aston Villa"
-    },
-    {
-      "rank": 8,
+      "rank": 6,
       "leagueKey": "ncaam",
       "gameId": "NCAAB_20260312_BYU@HOU",
       "headline": "Houston defense survives Dybantsa's record-breaking night",
       "scoreLine": "BYU 66 - Houston 73"
     },
     {
+      "rank": 7,
+      "leagueKey": "nhl",
+      "gameId": "401803313",
+      "headline": "MacKinnon hits 44 goals as Avalanche crush Kraken in Seattle",
+      "scoreLine": "Avalanche 5 - Kraken 1"
+    },
+    {
+      "rank": 8,
+      "leagueKey": "tennis",
+      "gameId": "wta-20260312-sabalenka-mboko",
+      "headline": "Sabalenka halts Mboko's dream run to reach Indian Wells semis",
+      "scoreLine": "Victoria Mboko 0 - Aryna Sabalenka 2"
+    },
+    {
       "rank": 9,
-      "leagueKey": "wta",
-      "gameId": "20260312-rybakina-pegula",
+      "leagueKey": "tennis",
+      "gameId": "wta-20260312-rybakina-pegula",
       "headline": "Rybakina thwarts Pegula comeback to book semifinal spot",
       "scoreLine": "Jessica Pegula 0 - Elena Rybakina 2"
     },
     {
       "rank": 10,
-      "leagueKey": "livgolf",
-      "gameId": "2026-singapore-round-2",
+      "leagueKey": "golf",
+      "gameId": "livgolf-2026-singapore-round-2",
       "headline": "DeChambeau pulls away in Singapore as Crushers surge to team lead",
       "scoreLine": ""
     }
@@ -76,15 +76,15 @@
   "top10": [
     "Gilgeous-Alexander breaks Wilt Chamberlain's record in Thunder win",
     "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
-    "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
     "Sharks stun Bruins at TD Garden to continue late-season surge",
-    "Georgia Tech silences Clemson in dominant conference opener",
+    "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
     "Luka Doncic hits 51 points as Lakers cruise past Bulls in James’ return",
-    "Watkins breaks drought as Villa snatch clinical away win in France",
     "Houston defense survives Dybantsa's record-breaking night",
+    "MacKinnon hits 44 goals as Avalanche crush Kraken in Seattle",
+    "Sabalenka halts Mboko's dream run to reach Indian Wells semis",
     "Rybakina thwarts Pegula comeback to book semifinal spot",
     "DeChambeau pulls away in Singapore as Crushers surge to team lead"
   ],
   "newsBriefing": "It was a landmark day across the sports world, headlined by Shai Gilgeous-Alexander eclipsing Wilt Chamberlain’s 63-year-old NBA record with his 127th consecutive 20-point game and Luka Doncic erupting for 51 points in LeBron James’ return to the Lakers' lineup. The NFL landscape shifted significantly as the Vikings secured Kyler Murray on a veteran minimum deal following his release from the Cardinals, while the Cowboys integrated newly acquired pass rusher Rashan Gary amidst a \"crazy\" week of trades and social media hacks. However, the day was also clouded by serious developments, including Atlanta Falcons edge rusher James Pearce Jr. facing multiple felony charges and Toronto’s Auston Matthews exiting a game with a knee injury after a controversial hit. In other arenas, Dwight Howard officially retired from all basketball following his Hall of Fame induction, Rory McIlroy struggled early at the Players Championship while a pack of five leaders set the pace at 5-under, and Kansas State neared a deal to name Belmont's Casey Alexander as their next head coach. Moving into postseason play, Team USA revamped its pitching roster for the World Baseball Classic quarterfinals, and the Big 12 made the unprecedented mid-tournament decision to scrap its new LED glass court for traditional hardwood after widespread player complaints about dangerous slippage.",
-  "updatedAt": "2026-03-13T10:00:16.463Z"
+  "updatedAt": "2026-03-13T13:49:12.451Z"
 }
