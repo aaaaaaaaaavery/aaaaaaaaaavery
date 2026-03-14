@@ -28,10 +28,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "5w8UllO0SKE",
+          "title": "JUAREZ 2-2 MONTERREY | ¡Gran juego en la frontera! | Con México C26",
+          "url": "https://www.youtube.com/watch?v=5w8UllO0SKE",
+          "embedUrl": "https://www.youtube.com/embed/5w8UllO0SKE",
+          "publishedAt": "2026-03-14T07:00:14Z",
+          "matchScore": 100
         }
       ]
     },
@@ -59,10 +61,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "kHvkEcIp40s",
+          "title": "PUEBLA 0-0 NECAXA | Empate en el Cuauhtémoc | Con México C26",
+          "url": "https://www.youtube.com/watch?v=kHvkEcIp40s",
+          "embedUrl": "https://www.youtube.com/embed/kHvkEcIp40s",
+          "publishedAt": "2026-03-14T04:23:23Z",
+          "matchScore": 100
         }
       ]
     }

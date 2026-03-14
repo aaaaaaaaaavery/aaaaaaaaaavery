@@ -57,10 +57,12 @@
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
+          "videoId": "QHMP-8Srp9Q",
+          "title": "United States vs. Canada 2026 World Baseball Classic | Game Highlights",
+          "url": "https://www.youtube.com/watch?v=QHMP-8Srp9Q",
+          "embedUrl": "https://www.youtube.com/embed/QHMP-8Srp9Q",
+          "publishedAt": "2026-03-14T05:29:45Z",
+          "matchScore": 100
         }
       ]
     }
