@@ -2,6 +2,38 @@
   "leagueName": "LaLiga",
   "leagueKey": "laliga",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "The lone LaLiga fixture on Friday night delivered late-game heroics as Alavés and Villarreal battled to a 1-1 draw at Mendizorroza. An own goal gave the hosts a slim lead for much of the night, but a clinical finish from Nicolas Pépé in the dying seconds of stoppage time rescued a point for the visitors.",
+  "games": [
+    {
+      "id": "3bxlyu",
+      "teams": {
+        "away": "Villarreal",
+        "home": "Deportivo Alavés"
+      },
+      "headline": "Nicolas Pépé strikes in 98th minute to deny Alavés victory",
+      "score": "Deportivo Alavés 1 - 1 Villarreal",
+      "brief": "In a match that seemed destined to end in a gritty 1-0 victory for Deportivo Alavés, Villarreal's Nicolas Pépé produced a moment of magic in the eighth minute of stoppage time to force a 1-1 draw. Alavés had taken the lead late in the first half courtesy of an unfortunate own goal by Rafa Marín and looked set to hold on for three vital points. However, the hosts failed to wrap the game up on several late counterattacks, eventually paying the price when Pépé fired home from a Gerard Moreno assist with virtually the last kick of the game.",
+      "bullets": [
+        "Nicolas Pépé scored the equalizer in the 90+8th minute, marking one of the latest goals of the season.",
+        "Rafa Marín scored an own goal in the 40th minute to give Alavés the initial lead.",
+        "Alavés manager Quique Sánchez Flores was making his home debut in front of 16,215 fans at Mendizorroza.",
+        "Villarreal dominated possession with 52% but struggled to find clinical finishes until the very end.",
+        "The draw helps Villarreal maintain their grip on a top-four spot, while Alavés remains in the bottom half of the table."
+      ],
+      "context": "The late draw prevents Alavés from moving further clear of the relegation zone, while Villarreal stays in the hunt for Champions League qualification.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.fotmob.com/matches/deportivo-alaves-vs-villarreal/3bxlyu"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

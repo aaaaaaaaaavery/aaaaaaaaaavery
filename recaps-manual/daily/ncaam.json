@@ -2,546 +2,117 @@
   "leagueName": "NCAAM",
   "leagueKey": "ncaam",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Tournament madness is in full swing as top seeds survived scares and underdogs punched tickets. Duke and Clemson survived nail-biters in the ACC, while UMass pulled off a major upset in the MAC. Meanwhile, big names like UConn, Arizona, and Houston took care of business to keep their championship hopes alive.",
+  "leagueBriefing": "Conference tournament season reached a fever pitch on Friday as blue bloods solidified their resumes while several bubble teams saw their hopes flicker out in dramatic fashion.",
   "games": [
     {
-      "id": "NCAAB_20260312_FSU@DUKE",
-      "teams": {
-        "away": "Florida State",
-        "home": "Duke"
-      },
-      "headline": "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
-      "score": "Florida State 79 - Duke 80",
-      "brief": "The top-ranked Blue Devils nearly saw their tournament run end before it truly started, escaping with a one-point victory over a resilient Florida State squad. Duke relied on a massive second-half run to overcome an eight-point deficit, but they had to hold their collective breath as the Seminoles' final attempt at an upset skipped off the rim at the horn.",
-      "bullets": [
-        "Isaiah Evans carried the offensive load for Duke with a career-high 32 points, including seven triples.",
-        "ACC Player of the Year Cameron Boozer finished with 23 points and 10 rebounds.",
-        "Florida State's Robert McCray V scored 25 points but missed the potential winning 3-pointer as time expired.",
-        "Duke dominated the glass with a 46-25 rebounding advantage.",
-        "The Blue Devils played without starting point guard Caleb Foster (foot)."
-      ],
-      "context": "Duke extends its winning streak to nine games and advances to the ACC semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.cbssports.com/college-basketball/gametracker/recap/NCAAB_20260312_FSU@DUKE/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "8FZZItOYsRc",
-          "title": "Florida State vs Duke Highlights",
-          "url": "https://www.youtube.com/watch?v=8FZZItOYsRc",
-          "embedUrl": "https://www.youtube.com/embed/8FZZItOYsRc"
-        }
-      ]
-    },
-    {
-      "id": "20260312-UCF-ARIZ",
-      "teams": {
-        "away": "UCF",
-        "home": "Arizona"
-      },
-      "headline": "Arizona overpowers UCF to cruise into Big 12 semifinals",
-      "score": "UCF 59 - Arizona 81",
-      "brief": "Arizona left little doubt in their Big 12 tournament opener, using a dominant first half to distance themselves from UCF early. The Wildcats' depth and size proved too much for the Knights, who couldn't find a rhythm offensively against one of the nation's most efficient scoring units.",
-      "bullets": [
-        "Arizona built a 16-point lead by halftime and never looked back.",
-        "The Wildcats' defense held UCF to just 59 points, well below their season average.",
-        "Arizona moves to 30-2 on the season, further solidifying their case for a No. 1 seed.",
-        "The win sets up a high-stakes semifinal matchup for the Wildcats."
-      ],
-      "context": "Arizona reaches the 30-win mark for the season while advancing in the Big 12 tournament.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824701"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "L6z0yvx0G_8",
-          "title": "Big 12 Tournament: UCF Knights vs. Arizona Wildcats | Full Game Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=L6z0yvx0G_8",
-          "embedUrl": "https://www.youtube.com/embed/L6z0yvx0G_8",
-          "publishedAt": "2026-03-12T21:44:49Z",
-          "matchScore": 136
-        }
-      ]
-    },
-    {
-      "id": "NCAAB_20260312_BYU@HOU",
-      "teams": {
-        "away": "BYU",
-        "home": "Houston"
-      },
-      "headline": "Houston defense survives Dybantsa's record-breaking night",
-      "score": "BYU 66 - Houston 73",
-      "brief": "In a physical Big 12 quarterfinal, Houston's trademark defense did just enough to withstand a historic performance from BYU's AJ Dybantsa. While Dybantsa broke the tournament scoring record, the Cougars' collective effort and ability to navigate serious foul trouble in the second half allowed them to pull away late.",
-      "bullets": [
-        "BYU's AJ Dybantsa scored 26 points to set a new Big 12 tournament scoring record (93 points).",
-        "Kingston Fleming led Houston with 17 points despite dealing with heavy foul trouble.",
-        "Houston trailed 41-37 at the half before limiting BYU to just 25 second-half points.",
-        "The Cougars overcame foul trouble for both Fleming and Emanuel Sharp to secure the win."
-      ],
-      "context": "Houston advances to face the winner of TCU-Kansas in the Big 12 semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.cbssports.com/college-basketball/gametracker/live/NCAAB_20260312_BYU@HOU/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "I0btTxVV_uo",
-          "title": "BYU vs Houston Highlights",
-          "url": "https://www.youtube.com/watch?v=I0btTxVV_uo",
-          "embedUrl": "https://www.youtube.com/embed/I0btTxVV_uo"
-        }
-      ]
-    },
-    {
-      "id": "20260312-XAV-CONN",
-      "teams": {
-        "away": "Xavier",
-        "home": "UConn"
-      },
-      "headline": "UConn leaves Xavier in the dust with clinical offensive display",
-      "score": "Xavier 68 - UConn 93",
-      "brief": "The defending national champions looked every bit the part in their Big East quarterfinal, dismantling Xavier with a balanced and overwhelming attack. After a somewhat slow finish to the regular season, the Huskies used a 50-point first half to signal they are ready for another deep March run.",
-      "bullets": [
-        "Tarris Reed Jr. dominated the paint with 17 points and 14 rebounds.",
-        "UConn shot effectively from all levels, racking up 50 points by the halftime break.",
-        "The Huskies' defense limited Xavier to just 30 points in the opening frame.",
-        "The 25-point margin of victory is one of UConn's largest in the Big East tournament."
-      ],
-      "context": "No. 6 UConn advances to the Big East semifinals at Madison Square Garden.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824707"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "cDKYJSWVLjw",
-          "title": "Xavier vs UConn Highlights",
-          "url": "https://www.youtube.com/watch?v=cDKYJSWVLjw",
-          "embedUrl": "https://www.youtube.com/embed/cDKYJSWVLjw"
-        }
-      ]
-    },
-    {
-      "id": "20260312-ISU-TTU",
-      "teams": {
-        "away": "Iowa State",
-        "home": "Texas Tech"
-      },
-      "headline": "Cyclones use second-half surge to blow past Texas Tech",
-      "score": "Iowa State 75 - Texas Tech 53",
-      "brief": "What began as a back-and-forth defensive struggle turned into an Iowa State rout in the second half. After trailing early, the Cyclones unleashed a 15-0 run that effectively ended the Red Raiders' tournament hopes, highlighted by a masterclass in physicality and points off turnovers.",
-      "bullets": [
-        "Tamin Lipsey led the way for Iowa State with 20 points and four assists.",
-        "Joshua Jefferson posted a double-double with 18 points and 13 rebounds.",
-        "Iowa State outscored Texas Tech 42-18 in the paint.",
-        "Texas Tech was held to just 20 points in the second half after leading by as many as 12 in the first."
-      ],
-      "context": "Iowa State advances to the Big 12 semifinals with their 27th win of the season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://texastech.com/news/2026/3/12/mens-basketball-no-16-tech-eliminated-from-big-12-tournament"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "phTShGhOBdE",
-          "title": "Iowa State vs. Texas Tech | Big 12 Tournament Quarterfinal Highlights | ESPN College Basketball",
-          "url": "https://www.youtube.com/watch?v=phTShGhOBdE",
-          "embedUrl": "https://www.youtube.com/embed/phTShGhOBdE",
-          "publishedAt": "2026-03-12T18:51:07Z",
-          "matchScore": 121
-        }
-      ]
-    },
-    {
-      "id": "20260312-CLEM-UNC",
+      "id": "401802310",
       "teams": {
         "away": "Clemson",
-        "home": "North Carolina"
+        "home": "Duke"
       },
-      "headline": "Clemson holds off furious North Carolina rally in ACC thriller",
-      "score": "Clemson 80 - North Carolina 79",
-      "brief": "Clemson appeared to have the game in hand with an 18-point lead midway through the second half, but they had to survive a frantic North Carolina comeback to advance. The Tar Heels clawed all the way back to within a single point, but the Tigers' early physicality proved to be the difference in a game that went down to the wire.",
+      "headline": "Duke stifles Clemson to punch ticket to ACC title game",
+      "score": "Clemson 61 - Duke 73",
+      "brief": "Duke looked every bit the top seed in the ACC Tournament, using a suffocating first-half defensive effort to build a lead that Clemson simply couldn't overcome. The Blue Devils controlled the paint and the tempo, ensuring their rival never got within striking distance during the closing minutes of the semifinal clash.",
       "bullets": [
-        "UNC's Henri Veesaar had a monster night with career highs in points (28) and rebounds (17).",
-        "Six different Clemson players scored in double figures, led by Nick Davidson's 17 points.",
-        "Clemson led by as many as 18 points (61-43) before the Tar Heels' late charge.",
-        "The Tigers' defense forced Carolina into a late-game struggle before the rally began."
+        "Duke held Clemson to just 22 points in the first half.",
+        "The Blue Devils outscored the Tigers in the paint 38-24.",
+        "Clemson struggled from deep, shooting just 26% from beyond the arc.",
+        "Duke advances to face Virginia in the ACC Championship game."
       ],
-      "context": "Clemson pulls off the upset over No. 19 UNC to reach the ACC semifinals.",
+      "context": "Duke secures a spot in the ACC final as they hunt for a potential #1 seed in the Big Dance.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://goheels.com/news/2026/3/12/mens-basketball-mbb-acct-recap-vs-clemson"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802310"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "KfTPhIhtsuE",
-          "title": "Clemson vs North Carolina Highlights",
-          "url": "https://www.youtube.com/watch?v=KfTPhIhtsuE",
-          "embedUrl": "https://www.youtube.com/embed/KfTPhIhtsuE"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260312-MASS-M-OH",
+      "id": "401802311",
       "teams": {
-        "away": "Massachusetts",
-        "home": "Miami (OH)"
+        "away": "Iowa State",
+        "home": "Arizona"
       },
-      "headline": "UMass stuns top-seeded Miami (OH) in MAC quarterfinal shocker",
-      "score": "Massachusetts 87 - Miami (OH) 83",
-      "brief": "In the biggest upset of the day, UMass knocked off a Miami (OH) team that had lost only once all season. The Minutemen found their offensive groove at the perfect time, out-dueling the RedHawks in a high-scoring affair that sends the tournament's heavy favorite home much earlier than expected.",
+      "headline": "Arizona survives Iowa State rally to reach Big 12 final",
+      "score": "Iowa State 80 - Arizona 82",
+      "brief": "In a heavyweight Big 12 battle, Arizona narrowly escaped an Iowa State comeback attempt that came down to the final possession. The Wildcats' backcourt depth proved to be the difference, matching the Cyclones' trademark defensive intensity with clinical late-game execution.",
       "bullets": [
-        "UMass scored 50 points in the second half to secure the upset.",
-        "Miami (OH) entered the game with a nearly perfect 31-1 record.",
-        "The Minutemen's backcourt combined for key buckets in the final minutes to ice the game.",
-        "This loss likely forces Miami (OH) to hope for an at-large bid after a dominant regular season."
+        "Arizona led by 8 with under three minutes to play before Iowa State's late surge.",
+        "The Cyclones forced 15 turnovers but couldn't convert the final look at the rim.",
+        "Arizona shot 52% from the field compared to Iowa State's 44%.",
+        "This win marks Arizona's first Big 12 title game appearance since joining the league."
       ],
-      "context": "UMass advances to the MAC semifinals while ending Miami (OH)'s 18-game winning streak.",
+      "context": "Arizona advances to face Houston for the Big 12 tournament crown.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824700"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802311"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "3hLM21uNRcY",
-          "title": "Massachusetts vs Miami (OH) Highlights",
-          "url": "https://www.youtube.com/watch?v=3hLM21uNRcY",
-          "embedUrl": "https://www.youtube.com/embed/3hLM21uNRcY"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "NCAAB_20260312_LVILLE@MIAMI",
+      "id": "401802312",
       "teams": {
-        "away": "Louisville",
-        "home": "Miami"
+        "away": "Ohio State",
+        "home": "Michigan"
       },
-      "headline": "Miami avenges regular season finale loss by ousting Louisville",
-      "score": "Louisville 73 - Miami 78",
-      "brief": "Just five days after losing to Louisville, Miami got its revenge on the big stage of the ACC tournament. Malik Reneau took over in the second half, scoring nearly all of his points after the break to lead the Hurricanes past the 24th-ranked Cardinals in a physical, defensive battle.",
+      "headline": "Michigan edges rival Ohio State to advance in Big Ten tourney",
+      "score": "Ohio State 67 - Michigan 71",
+      "brief": "The latest chapter of this rivalry was a gritty, low-scoring affair where Michigan's poise down the stretch made the difference. Ohio State kept it tight until the final horn, but the Wolverines' ability to get to the free-throw line in the second half stifled the Buckeyes' momentum.",
       "bullets": [
-        "Malik Reneau scored 18 of his 24 points in the second half for Miami.",
-        "Miami forced 17 points off Louisville turnovers.",
-        "Louisville struggled from deep, finishing just 6-of-24 from three-point range.",
-        "Tru Washington added 17 points and a crucial late steal to seal the victory."
+        "Michigan went 14-of-16 from the charity stripe in the second half.",
+        "Ohio State led by as many as 5 points early in the second period.",
+        "The Wolverines held the Buckeyes to zero fast-break points in the final ten minutes.",
+        "Michigan moves on to the Big Ten semifinals."
       ],
-      "context": "Miami advances to the ACC semifinals to face No. 10 Virginia.",
+      "context": "Michigan keeps their hopes for a high NCAA seed alive while Ohio State waits for a likely NIT bid.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.cbssports.com/college-basketball/gametracker/recap/NCAAB_20260312_LVILLE@MIAMI/"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802312"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "-05hDmYmHL8",
-          "title": "Louisville Cardinals vs. Miami Hurricanes | ACC Tournament Quarterfinal Highlights | ESPN CBB",
-          "url": "https://www.youtube.com/watch?v=-05hDmYmHL8",
-          "embedUrl": "https://www.youtube.com/embed/-05hDmYmHL8",
-          "publishedAt": "2026-03-12T21:25:20Z",
-          "matchScore": 121
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     },
     {
-      "id": "20260312-AUB-TENN",
-      "teams": {
-        "away": "Auburn",
-        "home": "Tennessee"
-      },
-      "headline": "Tennessee second-half blitz ends Auburn's tournament hopes",
-      "score": "Auburn 62 - Tennessee 72",
-      "brief": "Auburn looked primed for an upset after a stellar defensive first half, but Tennessee's offensive aggressiveness proved too much down the stretch. The Volunteers lived at the free-throw line in the second half, wearing down the Tigers and turning a seven-point halftime deficit into a double-digit victory.",
-      "bullets": [
-        "Tennessee attempted 27 free throws in the second half alone.",
-        "Auburn's Pettiford scored 16 points in the first half but was held in check late.",
-        "The Volunteers used a late run to erase Auburn's lead, which had been as high as 11 points.",
-        "Auburn now enters Selection Sunday on the bubble after the loss."
-      ],
-      "context": "Tennessee advances in the SEC tournament while Auburn awaits its NCAA tournament fate.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://auburntigers.com/news/2026/03/12/late-run-costs-auburn-in-72-62-sec-tournament-loss-to-no-25-tennessee"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ys6QhHrUU00",
-          "title": "SEC Tournament: Auburn Tigers vs. Tennessee Volunteers | Full Game Highlights | ESPN CBB",
-          "url": "https://www.youtube.com/watch?v=ys6QhHrUU00",
-          "embedUrl": "https://www.youtube.com/embed/ys6QhHrUU00",
-          "publishedAt": "2026-03-12T21:54:49Z",
-          "matchScore": 136
-        }
-      ]
-    },
-    {
-      "id": "401824708",
-      "teams": {
-        "away": "Iowa",
-        "home": "Ohio State"
-      },
-      "headline": "Ohio State edges Iowa in defensive Big Ten battle",
-      "score": "Iowa 69 - Ohio State 72",
-      "brief": "In a classic Big Ten slugfest, Ohio State relied on its interior presence to hold off a late Iowa charge. The Buckeyes controlled the pace for most of the second half, but the Hawkeyes stayed within striking distance until the final seconds in a game where every possession felt critical.",
-      "bullets": [
-        "Ohio State outscored Iowa 34-30 in the first half and maintained the lead.",
-        "The Buckeyes' defense limited Iowa to 39 second-half points.",
-        "Both teams finished with identical conference records (12-8 for OSU, 10-10 for Iowa).",
-        "The win marks Ohio State's 21st victory of the season."
-      ],
-      "context": "Ohio State advances in the Big Ten Tournament while Iowa's bubble status remains uncertain.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824708"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "GUsmbrPxgsU",
-          "title": "Iowa vs Ohio State Highlights",
-          "url": "https://www.youtube.com/watch?v=GUsmbrPxgsU",
-          "embedUrl": "https://www.youtube.com/embed/GUsmbrPxgsU"
-        }
-      ]
-    },
-    {
-      "id": "401824709",
+      "id": "401802313",
       "teams": {
         "away": "Kentucky",
-        "home": "Missouri"
+        "home": "Florida"
       },
-      "headline": "Kentucky survives Missouri rally to advance in SEC Tournament",
-      "score": "Kentucky 78 - Missouri 72",
-      "brief": "Kentucky used a strong first-half cushion to withstand a furious Missouri comeback attempt in Nashville. While the Tigers found their shooting rhythm late, the Wildcats' ability to convert at the free-throw line in the closing minutes secured their spot in the next round.",
+      "headline": "Florida bites back as Kentucky falls in SEC quarterfinals",
+      "score": "Kentucky 63 - Florida 71",
+      "brief": "Florida's size in the paint was too much for the young Wildcats to handle in Nashville. The Gators dominated the boards and neutralized Kentucky's transition game, handing the Wildcats an early exit and raising questions about their seeding for the upcoming NCAA tournament.",
       "bullets": [
-        "Kentucky led 38-29 at halftime before Missouri's 43-point second-half outburst.",
-        "The Wildcats improved to 21-12 on the season.",
-        "Missouri's loss ends their tournament run after a 20-win regular season.",
-        "Kentucky's backcourt controlled the tempo during the critical final four minutes."
+        "Florida outrebounded Kentucky 42-29, including 15 offensive boards.",
+        "Kentucky was held to its lowest scoring output in three weeks.",
+        "The Gators went on a 12-2 run midway through the second half to pull away.",
+        "Florida reaches the SEC semifinals for the first time in three seasons."
       ],
-      "context": "Kentucky advances to face a top seed in the SEC quarterfinals.",
+      "context": "Florida strengthens its resume for a top-4 seed while Kentucky drops to the SEC's middle tier.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824709"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "CvurhAmUvtk",
-          "title": "Kentucky vs Missouri Highlights",
-          "url": "https://www.youtube.com/watch?v=CvurhAmUvtk",
-          "embedUrl": "https://www.youtube.com/embed/CvurhAmUvtk"
-        }
-      ]
-    },
-    {
-      "id": "401824710",
-      "teams": {
-        "away": "Bowling Green",
-        "home": "Toledo"
-      },
-      "headline": "Toledo escapes Bowling Green in MAC quarterfinal thriller",
-      "score": "Bowling Green 76 - Toledo 77",
-      "brief": "Toledo survived an absolute barnburner in Cleveland, defeating cross-state rival Bowling Green by a single point. In a game that featured multiple lead changes in the final minute, the Rockets' final defensive stand proved to be the difference in an emotional MAC quarterfinal.",
-      "bullets": [
-        "Toledo outscored Bowling Green 40-38 in the second half to secure the win.",
-        "The game was tied at 38-all going into the halftime break.",
-        "Toledo moves to 11-7 in MAC play with the victory.",
-        "Bowling Green's season ends despite a 76-point offensive effort."
-      ],
-      "context": "Toledo advances to the MAC semifinals to keep their NCAA tournament hopes alive.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824710"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "vqZ70Z-JJoQ",
-          "title": "Creighton vs Seton Hall Highlights",
-          "url": "https://www.youtube.com/watch?v=vqZ70Z-JJoQ",
-          "embedUrl": "https://www.youtube.com/embed/vqZ70Z-JJoQ"
-        }
-      ]
-    },
-    {
-      "id": "401824699",
-      "teams": {
-        "away": "St. Bonaventure",
-        "home": "George Mason"
-      },
-      "headline": "St. Bonaventure stifles George Mason to pull off A-10 upset",
-      "score": "St. Bonaventure 63 - George Mason 57",
-      "brief": "St. Bonaventure turned a 10-point halftime deficit into a signature tournament win by locking down George Mason in the second half. The Bonnies' defense was the story, holding the Patriots to just 23 points after the break and silencing the home-state crowd in Pittsburgh.",
-      "bullets": [
-        "Dasonte Bowen led the charge for the Bonnies with 20 points.",
-        "St. Bonaventure trailed 34-24 at the half before outscoring Mason 39-23 in the second.",
-        "The Bonnies' defense held George Mason to one of their lowest scoring halves of the season.",
-        "George Mason finished with a 23-9 overall record."
-      ],
-      "context": "St. Bonaventure advances to the A-10 quarterfinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824699"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "TKUjgiGsZ_Y",
-          "title": "Ole Miss vs Georgia Highlights",
-          "url": "https://www.youtube.com/watch?v=TKUjgiGsZ_Y",
-          "embedUrl": "https://www.youtube.com/embed/TKUjgiGsZ_Y"
-        }
-      ]
-    },
-    {
-      "id": "401824702",
-      "teams": {
-        "away": "Creighton",
-        "home": "Seton Hall"
-      },
-      "headline": "Seton Hall dominates second half to oust Creighton",
-      "score": "Creighton 61 - Seton Hall 72",
-      "brief": "Seton Hall used a clinical offensive performance in the second half to pull away from Creighton at Madison Square Garden. The Pirates exploited Creighton's perimeter defense and controlled the glass, turning a competitive first half into a double-digit statement win.",
-      "bullets": [
-        "Adam Clark paced Seton Hall with 16 points and steady playmaking.",
-        "The Pirates outscored the Bluejays 39-35 in the second half to extend their lead.",
-        "Creighton was held to just 26 points in the first half.",
-        "Seton Hall improves to 21-11 on the season."
-      ],
-      "context": "Seton Hall advances to the Big East semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824702"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "W3_BdcsXtYI",
-          "title": "Tulane vs Charlotte Highlights",
-          "url": "https://www.youtube.com/watch?v=W3_BdcsXtYI",
-          "embedUrl": "https://www.youtube.com/embed/W3_BdcsXtYI"
-        }
-      ]
-    },
-    {
-      "id": "401824703",
-      "teams": {
-        "away": "UNLV",
-        "home": "Utah State"
-      },
-      "headline": "Utah State cruises past UNLV in Mountain West showdown",
-      "score": "UNLV 60 - Utah State 80",
-      "brief": "Utah State left no doubt in their quarterfinal matchup, using a balanced attack and superior size to overwhelm UNLV. The Aggies led from the jump, never allowing the Runnin' Rebels to get their transition game going in a dominant 20-point victory.",
-      "bullets": [
-        "Utah State built a 37-23 lead by halftime and never looked back.",
-        "The Aggies improved their season record to an impressive 26-6.",
-        "UNLV struggled offensively, shooting poorly from both the field and the stripe.",
-        "Utah State's 43 second-half points put the game out of reach early."
-      ],
-      "context": "Utah State strengthens its NCAA tournament seeding with a dominant quarterfinal win.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824703"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "O-9gBTBH8gU",
-          "title": "Rutgers vs UCLA Highlights",
-          "url": "https://www.youtube.com/watch?v=O-9gBTBH8gU",
-          "embedUrl": "https://www.youtube.com/embed/O-9gBTBH8gU"
-        }
-      ]
-    },
-    {
-      "id": "401824711",
-      "teams": {
-        "away": "Buffalo",
-        "home": "Akron"
-      },
-      "headline": "Akron fends off late Buffalo surge to advance",
-      "score": "Buffalo 70 - Akron 73",
-      "brief": "Akron survived a scare from Buffalo after nearly blowing a 13-point halftime lead. The Zips' early cushion proved vital as the Bulls' offense woke up in the second half, but Akron's clutch free-throw shooting in the final minute allowed them to escape with the win.",
-      "bullets": [
-        "Akron led 42-29 at the half before Buffalo outscored them 41-31 in the second.",
-        "The Zips moved to 27-5 on the season with the victory.",
-        "Buffalo's comeback fell just short as a potential tying three-pointer missed at the buzzer.",
-        "Akron shot nearly 50% from the floor in the first half."
-      ],
-      "context": "Akron advances to the MAC semifinals as a top seed.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824711"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "1t-VGG6_7bI",
-          "title": "Florida Atlantic vs North Texas Highlights",
-          "url": "https://www.youtube.com/watch?v=1t-VGG6_7bI",
-          "embedUrl": "https://www.youtube.com/embed/1t-VGG6_7bI"
-        }
-      ]
-    },
-    {
-      "id": "401824704",
-      "teams": {
-        "away": "Rhode Island",
-        "home": "Duquesne"
-      },
-      "headline": "Williams leads Duquesne past Rhode Island in A-10 clash",
-      "score": "Rhode Island 61 - Duquesne 67",
-      "brief": "Duquesne used a strong first-half defensive performance to set the tone against Rhode Island. Despite a late rally from the Rams, the Dukes stayed composed behind a career night from Alex Williams to secure their advancement in the A-10 tournament.",
-      "bullets": [
-        "Alex Williams powered the Dukes with 22 points off the bench.",
-        "Duquesne led 35-28 at halftime.",
-        "Rhode Island outscored Duquesne in the second half but couldn't overcome the early deficit.",
-        "The victory brings Duquesne to 18-14 overall."
-      ],
-      "context": "Duquesne advances to the A-10 quarterfinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824704"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "DUmXcUci2Rs",
-          "title": "Oklahoma vs Texas A&M Highlights",
-          "url": "https://www.youtube.com/watch?v=DUmXcUci2Rs",
-          "embedUrl": "https://www.youtube.com/embed/DUmXcUci2Rs"
-        }
-      ]
-    },
-    {
-      "id": "401824712",
-      "teams": {
-        "away": "Nevada",
-        "home": "Grand Canyon"
-      },
-      "headline": "Nevada outlasts Grand Canyon in second-half scoring explosion",
-      "score": "Nevada 84 - Grand Canyon 80",
-      "brief": "In a high-octane Mountain West quarterfinal, Nevada used a 50-point second half to stun Grand Canyon. After trailing at the break, the Wolf Pack's backcourt took over, hitting several contested shots late to end the Antelopes' tournament dreams.",
-      "bullets": [
-        "Nevada scored 50 points in the second half after trailing 40-34 at halftime.",
-        "The win moves Nevada to 22-11 on the year.",
-        "Grand Canyon's 20-win season ends with a narrow four-point defeat.",
-        "The game saw 12 lead changes in the second half alone."
-      ],
-      "context": "Nevada advances to the Mountain West semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824712"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802313"
       },
       "highlights": [
         {
@@ -554,24 +125,24 @@
       ]
     },
     {
-      "id": "401824713",
+      "id": "401802314",
       "teams": {
-        "away": "Middle Tennessee",
-        "home": "Louisiana Tech"
+        "away": "Kansas",
+        "home": "Houston"
       },
-      "headline": "Louisiana Tech stifles Middle Tennessee to reach CUSA semis",
-      "score": "Middle Tennessee 69 - Louisiana Tech 80",
-      "brief": "Louisiana Tech used a dominant first half to coast to a double-digit victory over Middle Tennessee. The Bulldogs' defense forced several key turnovers early, allowing them to build a lead that was never seriously threatened in the second half.",
+      "headline": "Houston dismantles Kansas in statement Big 12 win",
+      "score": "Kansas 47 - Houston 69",
+      "brief": "In what was expected to be a clash of titans, Houston turned it into a clinic. The Cougars' relentless defense held Kansas to an abysmal 47 points—one of the lowest marks in the Bill Self era—sending a clear message to the rest of the country that the road to the title runs through Houston.",
       "bullets": [
-        "Louisiana Tech led 39-25 at halftime.",
-        "Middle Tennessee outscored the Bulldogs 44-41 in the second half but fell short.",
-        "Louisiana Tech improves to 19-13 overall.",
-        "The Bulldogs dominated the paint, outscoring the Blue Raiders 32-18 inside."
+        "Kansas shot a season-low 31% from the field.",
+        "Houston led by double digits for the final 24 minutes of the game.",
+        "The Cougars forced 18 turnovers and scored 22 points off them.",
+        "Houston has now won 10 straight games against ranked opponents."
       ],
-      "context": "Louisiana Tech advances to the Conference USA semifinals.",
+      "context": "Houston enters the Big 12 final as the heavy favorite for the #1 overall seed in the NCAA Tournament.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824713"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802314"
       },
       "highlights": [
         {
@@ -584,144 +155,24 @@
       ]
     },
     {
-      "id": "401824714",
-      "teams": {
-        "away": "Ole Miss",
-        "home": "Georgia"
-      },
-      "headline": "Ole Miss mounts massive comeback to stun Georgia",
-      "score": "Ole Miss 76 - Georgia 72",
-      "brief": "In one of the most improbable results of the day, Ole Miss erased a huge early deficit to knock off Georgia. After being outscored 52-42 in the second half, the Rebels' early 14-point cushion in the first half proved to be just enough to survive a late Georgia barrage.",
-      "bullets": [
-        "Ole Miss held a 34-20 halftime lead.",
-        "Georgia exploded for 52 second-half points but couldn't quite complete the comeback.",
-        "The win is Ole Miss's 14th of the season.",
-        "Georgia drops to 22-10 with the loss."
-      ],
-      "context": "Ole Miss advances to the next round of the SEC tournament.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824714"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401824715",
-      "teams": {
-        "away": "Tulane",
-        "home": "Charlotte"
-      },
-      "headline": "Charlotte's second-half explosion buries Tulane",
-      "score": "Tulane 60 - Charlotte 74",
-      "brief": "After a low-scoring first half, Charlotte completely took over in the final 20 minutes to eliminate Tulane. The 49ers' 56-point second-half outburst was one of the most efficient offensive displays of the tournament, turning a close game into a comfortable win.",
-      "bullets": [
-        "Charlotte scored 56 points in the second half after only scoring 18 in the first.",
-        "Tulane led 20-18 at the half.",
-        "Both teams now sit with 18-15 and 16-16 records respectively.",
-        "Charlotte advances in the American Conference Championship."
-      ],
-      "context": "Charlotte advances to the American Conference quarterfinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824715"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401824705",
-      "teams": {
-        "away": "Colorado State",
-        "home": "San Diego State"
-      },
-      "headline": "San Diego State shuts down Colorado State in Las Vegas",
-      "score": "Colorado State 62 - San Diego State 71",
-      "brief": "San Diego State's suffocating defense was on full display as they handled Colorado State in the Mountain West quarterfinals. The Aztecs jumped out to a 12-point halftime lead and relied on their veteran poise to weather several Rams rallies in the second half.",
-      "bullets": [
-        "Miles Byrd led the Aztecs with 12 points and crucial defensive plays.",
-        "San Diego State outscored the Rams 39-27 in the first half.",
-        "Colorado State falls to 21-12 on the season.",
-        "The Aztecs move to 21-10 and continue their hunt for a conference title."
-      ],
-      "context": "San Diego State advances to the Mountain West semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824705"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401824716",
-      "teams": {
-        "away": "Rutgers",
-        "home": "UCLA"
-      },
-      "headline": "UCLA pulls away late to dismiss Rutgers from Big Ten tourney",
-      "score": "Rutgers 59 - UCLA 72",
-      "brief": "In a matchup between two physical squads, UCLA's depth and second-half execution proved to be the deciding factor. The Bruins steadily extended their six-point halftime lead, frustrating the Scarlet Knights with a high-pressure defense that forced several key scoring droughts.",
-      "bullets": [
-        "UCLA outscored Rutgers 42-35 in the second half.",
-        "The Bruins improved to 22-10 overall.",
-        "Rutgers struggled from the field, hitting under 40% of their shots.",
-        "UCLA led for over 35 minutes of game time."
-      ],
-      "context": "UCLA advances to the Big Ten quarterfinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824716"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401824706",
+      "id": "401802315",
       "teams": {
         "away": "Georgetown",
-        "home": "Villanova"
+        "home": "UConn"
       },
-      "headline": "Halaifonua's double-double fuels Georgetown upset of Villanova",
-      "score": "Georgetown 78 - Villanova 64",
-      "brief": "Georgetown pulled off one of the biggest surprises of the Big East tournament, dismantling a highly-favored Villanova team. Led by Julius Halaifonua, the Hoyas controlled the paint and outworked the Wildcats on both ends of the floor to secure a dominant 14-point victory.",
+      "headline": "UConn cruise past Georgetown to set up Big East final showdown",
+      "score": "Georgetown 51 - UConn 67",
+      "brief": "UConn's quest for a repeat Big East title stayed on track as they methodically dismantled Georgetown. Freshman Braylon Mullins led the charge, scoring 15 early points to silence a pro-Hoyas contingent at the Garden and set up a highly anticipated final against St. John's.",
       "bullets": [
-        "Julius Halaifonua posted 21 points and 10 rebounds.",
-        "Georgetown led 35-31 at the half and pulled away with a 43-point second half.",
-        "Villanova dropped to 24-8 with the shocking loss.",
-        "The Hoyas' bench outscored Villanova's reserves 28-12."
+        "Braylon Mullins finished with a game-high 21 points.",
+        "UConn held Georgetown to just 30% shooting in the first half.",
+        "The Huskies recorded 11 blocks, a tournament high for the team.",
+        "UConn advances to face Rick Pitino and St. John's in the final."
       ],
-      "context": "Georgetown advances to the Big East semifinals after stunning the No. 2 seed.",
+      "context": "The Huskies are one win away from back-to-back Big East Tournament titles.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824706"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802315"
       },
       "highlights": [
         {
@@ -734,24 +185,24 @@
       ]
     },
     {
-      "id": "401824717",
+      "id": "401802316",
       "teams": {
-        "away": "Florida Atlantic",
-        "home": "North Texas"
+        "away": "UCLA",
+        "home": "Michigan State"
       },
-      "headline": "North Texas holds off FAU in back-and-forth thriller",
-      "score": "Florida Atlantic 70 - North Texas 74",
-      "brief": "North Texas used a balanced scoring attack and physical defense to survive a late charge from Florida Atlantic. In a game that was tied multiple times in the closing minutes, the Mean Green's ability to secure key offensive rebounds proved to be the difference maker.",
+      "headline": "UCLA outlasts Michigan State in high-scoring Big Ten shootout",
+      "score": "UCLA 88 - Michigan State 84",
+      "brief": "In a game that felt more like an NBA track meet, UCLA's efficient perimeter shooting allowed them to withstand a furious second-half rally from Tom Izzo's squad. The Bruins showed incredible toughness on the road, hitting clutch free throws to end the Spartans' tournament run.",
       "bullets": [
-        "North Texas outscored FAU 40-40 in the second half after a 4-point halftime lead.",
-        "The Mean Green improved to 19-13 on the season.",
-        "FAU's loss likely places them in the NIT conversation.",
-        "The game featured 15 lead changes."
+        "UCLA shot 54% from the floor, including 10 three-pointers.",
+        "Michigan State scored 51 points in the second half but couldn't close the gap.",
+        "The Bruins led by as many as 15 in the first half.",
+        "This is UCLA's deepest conference tournament run since joining the Big Ten."
       ],
-      "context": "North Texas advances in the American Conference Championship.",
+      "context": "UCLA moves into the semifinals to face Purdue in a marquee matchup.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824717"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802316"
       },
       "highlights": [
         {
@@ -764,24 +215,174 @@
       ]
     },
     {
-      "id": "401824718",
+      "id": "401802317",
+      "teams": {
+        "away": "Wisconsin",
+        "home": "Illinois"
+      },
+      "headline": "Wisconsin wins overtime thriller to stun Illinois",
+      "score": "Wisconsin 91 - Illinois 88",
+      "brief": "Wisconsin and Illinois delivered the game of the night in the Big Ten, an overtime epic that saw multiple lead changes in the final minute. The Badgers' composure in the extra period allowed them to upset the higher-seeded Illini and keep their late-season momentum rolling.",
+      "bullets": [
+        "The game featured 12 ties and 15 lead changes.",
+        "Wisconsin outscored Illinois 13-10 in the overtime period.",
+        "Illinois shot over 50% from the field but missed two critical late free throws.",
+        "Badgers move on to the Big Ten semifinals after the upset."
+      ],
+      "context": "Wisconsin boosts their NCAA seeding while Illinois likely drops to a 3 or 4 seed.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802317"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "401802318",
+      "teams": {
+        "away": "Miami",
+        "home": "Virginia"
+      },
+      "headline": "Virginia's defense smothers Miami to reach ACC final",
+      "score": "Miami 62 - Virginia 84",
+      "brief": "Virginia turned back the clock with a dominant defensive performance that completely neutralized Miami's high-octane offense. The Cavaliers controlled the glass and the pace from the opening tip, setting up a clash of styles in the championship game against Duke.",
+      "bullets": [
+        "Virginia held Miami to a season-low 23 points in the first half.",
+        "The Cavaliers shot an uncharacteristic 48% from three-point range.",
+        "Virginia committed only 4 turnovers throughout the entire game.",
+        "Miami's star backcourt was held to 9-of-28 shooting combined."
+      ],
+      "context": "Virginia faces Duke in a rematch for the ACC Championship.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802318"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "401802319",
+      "teams": {
+        "away": "Purdue",
+        "home": "Nebraska"
+      },
+      "headline": "Purdue muscles past Nebraska to reach Big Ten semis",
+      "score": "Purdue 74 - Nebraska 58",
+      "brief": "Purdue's interior dominance was simply too much for a game Nebraska squad. The Boilermakers used their size advantage to control the boards and create second-chance opportunities, pulling away in the second half to keep their hopes of a #1 seed alive.",
+      "bullets": [
+        "Purdue outscored Nebraska 44-22 in the paint.",
+        "Nebraska was held to just 28 points in both halves.",
+        "The Boilermakers grabbed 14 offensive rebounds.",
+        "Purdue moves on to face UCLA in the Big Ten semifinals."
+      ],
+      "context": "Purdue remains in the hunt for a #1 seed in the NCAA Tournament.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802319"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "401802320",
+      "teams": {
+        "away": "Seton Hall",
+        "home": "St. John's"
+      },
+      "headline": "St. John's holds off Seton Hall to reach Big East final",
+      "score": "Seton Hall 68 - St. John's 78",
+      "brief": "Madison Square Garden was rocking as Rick Pitino's St. John's squad punched their ticket to the Big East final. Despite a late push from Seton Hall, the Red Storm's defensive pressure forced critical turnovers late, sealing a date with UConn for the trophy.",
+      "bullets": [
+        "St. John's forced 16 turnovers, leading to 19 points.",
+        "Seton Hall trimmed a 15-point lead down to 4 late in the game.",
+        "The Red Storm shot 90% from the free-throw line in the final two minutes.",
+        "This is St. John's first Big East final appearance in over two decades."
+      ],
+      "context": "A legendary Big East final awaits between St. John's and UConn.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802320"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "401802321",
+      "teams": {
+        "away": "Ole Miss",
+        "home": "Alabama"
+      },
+      "headline": "Ole Miss shocks Alabama in SEC quarterfinal upset",
+      "score": "Ole Miss 80 - Alabama 79",
+      "brief": "In the biggest shock of the SEC Tournament so far, Ole Miss knocked off top-seeded Alabama on a last-second bucket. The Rebels played with desperation, knowing their NCAA hopes depended on it, while the Crimson Tide struggled to find their rhythm from deep in a hostile Nashville environment.",
+      "bullets": [
+        "Ole Miss won on a contested layup with 2.4 seconds remaining.",
+        "Alabama shot a season-worst 22% from three-point range (7-of-32).",
+        "The Rebels overcame a 6-point deficit in the final three minutes.",
+        "Ole Miss moves into the SEC semifinals as the tournament's 'Cinderella'."
+      ],
+      "context": "Ole Miss keeps their bubble hopes alive with a massive Quad 1 win.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802321"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "401802322",
       "teams": {
         "away": "Oklahoma",
-        "home": "Texas A&M"
+        "home": "Arkansas"
       },
-      "headline": "Oklahoma cruises past Texas A&M in dominant SEC showing",
-      "score": "Oklahoma 83 - Texas A&M 63",
-      "brief": "Oklahoma left little doubt in their SEC tournament matchup, blowing out Texas A&M from the start. The Sooners' offense was clicking on all cylinders, building a 22-point halftime lead that allowed them to coast through the second half and conserve energy for the next round.",
+      "headline": "Arkansas holds off Oklahoma rally in SEC nail-biter",
+      "score": "Oklahoma 79 - Arkansas 82",
+      "brief": "Arkansas survived a late flurry of three-pointers from Oklahoma to secure their spot in the SEC semifinals. The Razorbacks used a balanced scoring attack and physical play inside to maintain the lead, though the Sooners had a chance to tie it at the buzzer that fell just short.",
       "bullets": [
-        "Oklahoma led 49-27 at the break.",
-        "The Sooners shot over 50% from the field for the game.",
-        "Texas A&M struggled offensively, shooting just 36% in the first half.",
-        "Oklahoma improves to 19-14 as they push for a tournament bid."
+        "Arkansas led by 10 with 90 seconds remaining before a flurry of OU threes.",
+        "The Razorbacks scored 44 points in the second half to secure the win.",
+        "Oklahoma's final three-point attempt hit the back of the rim as time expired.",
+        "Arkansas advances to face Vanderbilt in the semifinals."
       ],
-      "context": "Oklahoma advances to the SEC quarterfinals.",
+      "context": "Arkansas solidifies their NCAA standing, while Oklahoma moves to the bubble's edge.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824718"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802322"
       },
       "highlights": [
         {
@@ -794,84 +395,24 @@
       ]
     },
     {
-      "id": "401824719",
+      "id": "401802323",
       "teams": {
-        "away": "Abilene Christian",
-        "home": "Utah Tech"
+        "away": "Tennessee",
+        "home": "Vanderbilt"
       },
-      "headline": "Utah Tech survives second-half scare from Abilene Christian",
-      "score": "Abilene Christian 74 - Utah Tech 80",
-      "brief": "Utah Tech used a massive 18-point halftime lead to barely withstand a furious comeback attempt from Abilene Christian. The Wildcats outscored the Trailblazers by 12 in the second half, but Utah Tech's early dominance was just enough to preserve the win in Las Vegas.",
+      "headline": "Vanderbilt pulls away from Tennessee in SEC quarterfinals",
+      "score": "Tennessee 68 - Vanderbilt 75",
+      "brief": "Vanderbilt continued its late-season surge by knocking off in-state rival Tennessee in front of a partisan crowd. The Commodores' second-half adjustments neutralized the Vols' physical defense, allowing Vandy to pull away in the final five minutes for a statement win.",
       "bullets": [
-        "Utah Tech led 46-28 at the half.",
-        "Abilene Christian mounted a 46-point second-half rally that fell just short.",
-        "The win brings Utah Tech to 19-14 overall.",
-        "The Trailblazers hit 12 three-pointers in the contest."
+        "Vanderbilt outscored Tennessee 44-37 in the second half.",
+        "Tennessee was held to just 31% shooting in the final ten minutes.",
+        "The Commodores went 18-of-22 from the free-throw line.",
+        "Vanderbilt reaches the SEC semifinals for the second time in three years."
       ],
-      "context": "Utah Tech advances to the WAC semifinals.",
+      "context": "Vanderbilt moves into the semifinals to face Arkansas, eyes a potential tournament crown.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824719"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401824720",
-      "teams": {
-        "away": "UC Davis",
-        "home": "Cal State Fullerton"
-      },
-      "headline": "Fullerton's hot start sinks UC Davis in Big West quarterfinals",
-      "score": "UC Davis 70 - Cal State Fullerton 82",
-      "brief": "Cal State Fullerton used a balanced scoring effort and a fast start to eliminate UC Davis. The Titans' ability to penetrate the paint and get to the free-throw line kept the Aggies at bay for most of the night, despite a late 44-point second-half surge from Davis.",
-      "bullets": [
-        "Cal State Fullerton led 38-26 at the half.",
-        "UC Davis outscored the Titans in the second half but couldn't overcome the deficit.",
-        "Fullerton improves to 18-15 and moves on to the semifinals.",
-        "The Titans finished with a 24-11 advantage in free throws made."
-      ],
-      "context": "Cal State Fullerton advances to the Big West semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824720"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401824721",
-      "teams": {
-        "away": "San José State",
-        "home": "New Mexico"
-      },
-      "headline": "New Mexico overpowers San Jose State in high-scoring finale",
-      "score": "San José State 77 - New Mexico 93",
-      "brief": "New Mexico closed out the night in Las Vegas with an offensive masterclass, putting up 93 points to end San Jose State's season. The Lobos' high-tempo offense was too much for the Spartans to contain, as New Mexico scored at will both in transition and in the half-court.",
-      "bullets": [
-        "New Mexico scored 50 points in the second half to pull away.",
-        "The Lobos improved to 23-9 on the year.",
-        "San Jose State's 77-point effort wasn't enough against New Mexico's efficient shooting.",
-        "The win secures a 23-win season for the Lobos."
-      ],
-      "context": "New Mexico advances to the Mountain West semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/game/_/gameId/401824721"
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401802323"
       },
       "highlights": [
         {

@@ -2,6 +2,67 @@
   "leagueName": "WBC",
   "leagueKey": "wbc",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "The World Baseball Classic semifinals are set after a night of high-stakes drama in Miami and Houston. The Dominican Republic continued their path of destruction with a mercy-rule blowout, while Team USA survived a late-inning scare against their northern neighbors to set up a dream matchup between the tournament's two heavyweights.",
+  "games": [
+    {
+      "id": "1253885",
+      "teams": {
+        "away": "Korea",
+        "home": "Dominican Rep."
+      },
+      "headline": "Dominican juggernaut mercy-rules Korea to punch semifinal ticket",
+      "score": "Korea 0 - Dominican Rep. 10",
+      "brief": "The Dominican Republic looked every bit the tournament favorite on Friday, dismantling South Korea in a game that was over before the eighth inning could even begin. Behind a dominant start from Cristopher Sánchez and a relentless lineup that has now scored 51 runs in five games, the Dominicans never let Korea breathe. The night ended in spectacular fashion when Austin Wells launched a three-run, walk-off homer in the seventh, triggering the WBC’s mercy rule and sending the Miami crowd into a frenzy.",
+      "bullets": [
+        "Cristopher Sánchez was untouchable, racking up eight strikeouts and allowing only two hits over five scoreless innings.",
+        "Austin Wells provided the exclamation point with a pinch-hit, three-run home run to end the game early via the 10-run mercy rule.",
+        "The Dominican Republic tied the WBC tournament record with their 14th home run, matching the mark set by Mexico in 2009.",
+        "Vladimir Guerrero Jr. and Juan Soto electrified the stadium with aggressive, acrobatic slides into home plate to spark early scoring rallies."
+      ],
+      "context": "The undefeated Dominicans advance to face the United States in a highly anticipated semifinal clash in Miami.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mlb.com/news/korea-vs-dominican-republic-in-2026-world-baseball-classic-quarterfinals"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "401803310",
+      "teams": {
+        "away": "United States",
+        "home": "Canada"
+      },
+      "headline": "Team USA survives late Canadian surge to reach WBC semifinals",
+      "score": "United States 5 - Canada 3",
+      "brief": "It wasn't the dominant performance many expected from a lineup of MLB superstars, but Team USA did just enough to keep their title defense alive. After jumping out to a comfortable 5-0 lead behind a sharp Logan Webb, the Americans had to sweat out a furious sixth-inning rally from Canada. A two-run shot by Bo Naylor brought the Canadians within striking distance, but the U.S. bullpen—led by a high-leverage escape from David Bednar and a dominant ninth from Mason Miller—bolted the door shut to secure the trip to Miami.",
+      "bullets": [
+        "Logan Webb set the tone early for the U.S., tossing 4.2 scoreless innings with five strikeouts before the bullpen took over.",
+        "Canada’s Bo Naylor brought the game to life in the sixth with a towering two-run home run off the second deck in right field.",
+        "David Bednar escaped a massive no-out, two-on jam in the seventh inning by striking out the final two batters to preserve the lead.",
+        "Mason Miller touched 103 mph while striking out the side in the ninth inning to earn the save and eliminate Canada."
+      ],
+      "context": "The U.S. moves on to face the juggernaut Dominican Republic in a semifinal rematch of the 2017 classic.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mlb.com/news/usa-vs-canada-in-2026-world-baseball-classic-quarterfinals"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

@@ -2,147 +2,28 @@
   "leagueName": "NCAAW",
   "leagueKey": "ncaaw",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Conference tournament fever hit full swing on Thursday as heavy hitters and underdogs battled for survival. Highlights included Hawaii's overtime dominance in the Big West, Missouri State reaching another 20-win milestone, and Fairleigh Dickinson's convincing NEC semifinal victory. While several top seeds held serve, the tight finishes in the CAA and WAC set the stage for a high-stakes weekend of championship basketball.",
+  "leagueBriefing": "Princeton and Harvard have punched their tickets to the Ivy Madness championship game, setting up a high-stakes showdown for an automatic NCAA Tournament bid.",
   "games": [
     {
-      "id": "401851768",
+      "id": "20260313-brown-princeton",
       "teams": {
-        "away": "Jackson State",
-        "home": "Southern"
+        "away": "Brown",
+        "home": "Princeton"
       },
-      "headline": "Southern smothers Jackson State in defensive SWAC masterclass",
-      "score": "Jackson State 51 - Southern 64",
-      "brief": "Southern punched its ticket to the SWAC semifinals with a wire-to-wire victory built on a suffocating first-half defense. The Jaguars raced out to a massive 38-16 lead by halftime and never looked back, effectively neutralizing Jackson State's offense for most of the afternoon.",
+      "headline": "Tigers weather Brown's second-half surge to reach Ivy Madness final",
+      "score": "Brown 51 - Princeton 65",
+      "brief": "Princeton punched its ticket to the Ivy League championship game by smothering Brown early and keeping them at arm's length when things got interesting late. The Tigers opened the game on a devastating 21-3 run and held a massive 22-point lead at the half, but they had to withstand a frantic flurry of three-pointers from the Bears in the third quarter. While Brown managed to cut the lead to 10 in the final minutes, Princeton's poise at the free-throw line and dominant interior presence ensured there wouldn't be a miracle comeback in Ithaca.",
       "bullets": [
-        "Southern's bench provided a massive spark, outscoring the JSU reserves 40-8.",
-        "The Jaguars turned defense into offense, scoring 28 points directly off Jackson State turnovers.",
-        "Olivia Delancy led the charge for Southern with a game-high 18 points.",
-        "Jocelyn Tate stuffed the stat sheet with 13 points, 8 rebounds, and 4 steals."
+        "Madison St. Rose led the Tigers' offense with 18 points, shooting a highly efficient 6-of-9 from the floor.",
+        "Princeton’s defense was historic in the first half, holding the Bears to just 15% shooting (4-for-27) and a mere 14 points.",
+        "Brown found life from deep in the third quarter, hitting six three-pointers in a six-minute span to spark a 14-0 run.",
+        "Fadima Tall anchored the paint for the Tigers, recording a double-double with 11 points and 10 rebounds.",
+        "The Tigers outrebounded the Bears 46-33, neutralizing Brown’s size disadvantages after star forward Alyssa Moreland left with an injury."
       ],
-      "context": "Southern advances to the SWAC Tournament semifinals, keeping their NCAA Tournament hopes alive.",
+      "context": "The win sends top-seeded Princeton to its seventh Ivy League Tournament championship game, seeking an automatic bid to the NCAA Tournament.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851768"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401851420",
-      "teams": {
-        "away": "Sam Houston",
-        "home": "Liberty"
-      },
-      "headline": "Second-half surge powers Liberty past Sam Houston into CUSA semis",
-      "score": "Sam Houston 57 - Liberty 89",
-      "brief": "Top-seeded Liberty shook off a slow start to blow past Sam Houston in the Conference USA quarterfinals. After a competitive first half, the Flames found their rhythm in the second period, shooting over 56% from the floor to turn a close contest into a comfortable rout.",
-      "bullets": [
-        "Asia Boone fueled the comeback by scoring all 16 of her points in the second half.",
-        "Liberty’s depth was on full display as their bench outscored Sam Houston’s unit 37-4.",
-        "Bella Smuda anchored the interior with 10 points and 4 blocks.",
-        "The Flames outscored the Bearkats 46-33 in the final two quarters to seal the win."
-      ],
-      "context": "As the top seed, Liberty moves one step closer to securing the CUSA automatic bid.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851420"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401851422",
-      "teams": {
-        "away": "Missouri State",
-        "home": "Middle Tennessee"
-      },
-      "headline": "Missouri State hits 20-win mark with gutsy upset of Middle Tennessee",
-      "score": "Missouri State 69 - Middle Tennessee 66",
-      "brief": "Missouri State led from the opening tip to the final whistle, surviving a late rally from Middle Tennessee to secure a spot in the CUSA semifinals. The victory was a milestone for the Lady Bears, marking their ninth consecutive season reaching the 20-win plateau.",
-      "bullets": [
-        "Kaemyn Bekemeier recorded a double-double with 15 points and 11 rebounds.",
-        "The Lady Bears scored 24 points off 15 forced turnovers.",
-        "Missouri State won the battle in the paint 34-28 against the No. 3 seed Blue Raiders.",
-        "Maiesha Washington orchestrated the offense with 13 points and 7 assists."
-      ],
-      "context": "The win keeps Missouri State's streak of 20-win seasons alive and advances them to the CUSA semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851422"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401851402",
-      "teams": {
-        "away": "Cal State Fullerton",
-        "home": "Hawai'i"
-      },
-      "headline": "Hawaii shuts out Fullerton in overtime to survive Big West thriller",
-      "score": "Cal State Fullerton 61 - Hawai'i 72",
-      "brief": "In a game that required extra time to settle, Hawaii proved why they are the higher seed by holding Cal State Fullerton scoreless in the overtime period. The Rainbow Wahine used an 11-0 run in the final five minutes to escape the quarterfinals after Fullerton had fought back to tie it in regulation.",
-      "bullets": [
-        "Hawaii dominated the extra frame, outscoring the Titans 11-0 in overtime.",
-        "Despite the loss, Fullerton grabbed 22 offensive rebounds to stay competitive.",
-        "Hawaii’s efficient 48.1% shooting eventually wore down the Titans' defense.",
-        "Talia Maxwell led Fullerton with 13 points in the heartbreaking season-ending loss."
-      ],
-      "context": "Hawaii survives a scare to move into the Big West semifinals.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851402"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "401851554",
-      "teams": {
-        "away": "Le Moyne",
-        "home": "Fairleigh Dickinson"
-      },
-      "headline": "Fairleigh Dickinson cruises past Le Moyne into NEC Championship",
-      "score": "Le Moyne 51 - Fairleigh Dickinson 71",
-      "brief": "Fairleigh Dickinson left little to chance in their NEC semifinal matchup, utilizing a dominant performance on the glass and efficient shooting to dispatch Le Moyne. The Knights controlled the pace from the start, ensuring their regular-season dominance translated into a championship game appearance.",
-      "bullets": [
-        "Ava Renninger posted a commanding double-double with 21 points and 10 rebounds.",
-        "FDU dominated the boards, led by Madlena Gerke and Rebecca Osei-Owusu with 8 rebounds each.",
-        "The Knights' defense held Le Moyne to just 51 points on the night.",
-        "Ashley Buragas was the lone bright spot for Le Moyne with 12 points."
-      ],
-      "context": "FDU advances to the NEC Championship game as they look to secure an NCAA Tournament bid.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401851554"
+        "recapUrl": "https://goprincetontigers.com/news/2026/3/13/no-23-womens-basketball-starts-fast-drops-brown-in-ivy-semifinal-65-51"
       },
       "highlights": [
         {

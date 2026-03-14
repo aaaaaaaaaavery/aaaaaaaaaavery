@@ -1,72 +1,7 @@
 {
   "leagueName": "CONCACAF Champions Cup",
-  "leagueKey": "uefachampionsleague",
+  "leagueKey": "concacafchampionscup",
   "sourceType": "console_recaps",
-  "leagueBriefing": "MLS sides dominated the opening night of the Round of 16 as FC Cincinnati and the Seattle Sounders both secured massive 3-0 victories to put one foot in the quarterfinals. Cincinnati dismantled a Liga MX giant in record fashion, while Seattle's Paul Arriola completed a fairytale comeback with a brace exactly one year after his ACL injury.",
-  "games": [
-    {
-      "id": "20260312-FCCvsTIG",
-      "teams": {
-        "away": "Tigres UANL",
-        "home": "FC Cincinnati"
-      },
-      "headline": "Cincinnati makes statement with record-breaking shutout of Tigres",
-      "score": "FC Cincinnati 3 - Tigres UANL 0",
-      "brief": "FC Cincinnati didn't just beat Tigres UANL; they delivered a masterclass that felt like a changing of the guard in North American soccer. Kévin Denkey was the star of the show, pouncing on an early goalkeeping error and never looking back. The 3-0 result represents Cincinnati's largest-ever win over a Liga MX opponent and leaves the Mexican powerhouse needing a miracle in the return leg to avoid an early exit from the competition.",
-      "bullets": [
-        "Kévin Denkey powered the offense with two goals and an assist, becoming the club’s all-time leading scorer in Champions Cup play.",
-        "Goalkeeper Roman Celentano celebrated his 150th appearance for the club by keeping a clean sheet against a dangerous Tigres attack.",
-        "The three-goal margin is the largest victory FC Cincinnati has ever recorded against a team from Liga MX.",
-        "Tom Barlow netted his third goal of the current tournament to double the lead early in the second half.",
-        "FC Cincinnati remains unbeaten and has yet to concede a single goal in the 2026 Champions Cup campaign."
-      ],
-      "context": "The win gives Cincinnati a massive aggregate cushion heading into a notoriously difficult second leg in Mexico.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.fccincinnati.com/news/recap-fc-cincinnati-3-tigres-uanl-0-concacaf-champions-cup-round-of-16-first-leg"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "BGCtWKhCyB0",
-          "title": "FC Cincinnati vs Tigres UANL | 2026 Concacaf Champions Cup | Round of 16",
-          "url": "https://www.youtube.com/watch?v=BGCtWKhCyB0",
-          "embedUrl": "https://www.youtube.com/embed/BGCtWKhCyB0",
-          "publishedAt": "2026-03-13T03:19:40Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "20260312-VANvsSEA",
-      "teams": {
-        "away": "Seattle Sounders FC",
-        "home": "Vancouver Whitecaps"
-      },
-      "headline": "Arriola strikes twice in emotional return as Sounders crush Whitecaps",
-      "score": "Vancouver Whitecaps 0 - Seattle Sounders FC 3",
-      "brief": "Exactly one year and one day after tearing his ACL in this very competition, Paul Arriola made his first start of 2026 and reminded everyone why he's a difference-maker. His brace spearheaded a clinical Sounders performance that took the air out of BC Place. While Vancouver dominated the ball, Seattle was ruthless on the counter, bagging three crucial away goals that make the second leg feel like a mere formality for the Rave Green.",
-      "bullets": [
-        "Paul Arriola scored his first two goals of the season in his first start since returning from a devastating knee injury.",
-        "Jesús Ferreira provided his team-leading fourth assist of the year to set up the opening goal just before halftime.",
-        "Paul Rothrock added the third goal in the 70th minute, marking his second strike of the young 2026 season.",
-        "The Whitecaps held over 60% of possession but managed only two shots on target throughout the entire match.",
-        "Seattle's Stefan Frei earned the clean sheet, continuing his legendary form in a tournament he won in 2022."
-      ],
-      "context": "With three away goals in the bag, Seattle is in prime position to advance to an all-MLS quarterfinal against either Cincinnati or Tigres.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.soundersfc.com/news/recap-sounders-overpower-whitecaps-in-ccc-round-of-16-opener"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

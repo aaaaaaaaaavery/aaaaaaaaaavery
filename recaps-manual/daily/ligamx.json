@@ -2,6 +2,69 @@
   "leagueName": "Liga MX",
   "leagueKey": "ligamx",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "Drama unfolded late on Friday night in Liga MX as Monterrey surrendered a two-goal lead to draw with Juárez, while Puebla and Necaxa played out a gritty scoreless stalemate. Monterrey looked to be cruising toward a comfortable victory on the road, but a resilient Juárez side fought back in the second half to snatch a point in the dying moments.",
+  "games": [
+    {
+      "id": "2r8bce7y",
+      "teams": {
+        "away": "Monterrey",
+        "home": "Juárez"
+      },
+      "headline": "Juárez completes stunning comeback to stun Monterrey at the border",
+      "score": "Juárez 2 - 2 Monterrey",
+      "brief": "Monterrey appeared to have the game wrapped up after Uros Djurdjevic and Jesús Corona provided a 2-0 cushion heading into the break. However, Juárez emerged for the second half with renewed energy, cutting the deficit through Jairo Torres shortly after the restart. The hosts pushed relentlessly for an equalizer and finally found it via an Óscar Estupiñán penalty in the 91st minute, securing a massive point and denying Monterrey a chance to climb further up the table.",
+      "bullets": [
+        "Uros Djurdjevic scored his first goal for Monterrey just 1 minute into the match.",
+        "Jesús Corona doubled the lead for the visitors in the final seconds of first-half stoppage time.",
+        "Jairo Torres sparked the comeback with a 49th-minute strike assisted by José Luis Rodriguez.",
+        "Óscar Estupiñán converted a high-pressure penalty in the 91st minute to level the score.",
+        "Monterrey has now failed to keep a clean sheet in nine consecutive matches."
+      ],
+      "context": "The draw keeps Monterrey in 9th place, missing an opportunity to break into the top six, while Juárez sits in 12th in the Clausura standings.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.fotmob.com/matches/monterrey-vs-fc-juarez/2r8bce7y"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "rybnw",
+      "teams": {
+        "away": "Necaxa",
+        "home": "Puebla"
+      },
+      "headline": "Puebla and Necaxa trade blows in scoreless deadlock",
+      "score": "Puebla 0 - 0 Necaxa",
+      "brief": "In a physical encounter at Estadio Cuauhtémoc, Puebla and Necaxa were unable to find a breakthrough, resulting in a 0-0 draw. Puebla dominated long stretches of play and created several dangerous opportunities, but they were met by a resolute Necaxa defense. Despite Necaxa being reduced to ten men for nearly half an hour in the second half, the hosts couldn't capitalize, leaving both sides to settle for a point that does little to help their respective playoff pushes.",
+      "bullets": [
+        "Puebla controlled the tempo but failed to register a goal despite multiple shots on target.",
+        "Necaxa played with 10 men for nearly 30 minutes in the second half but held firm.",
+        "The Rayos (Necaxa) have now gone 18 matches without a clean sheet prior to tonight's shutout.",
+        "Necaxa goalkeeper Ezequiel Unsain was instrumental in preserving the draw with several key saves.",
+        "Puebla remains in 10th place, while Necaxa sits in 16th after the stalemate."
+      ],
+      "context": "Both teams remain outside the guaranteed playoff spots as they struggle for consistency in the latter half of the Clausura campaign.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.fotmob.com/matches/necaxa-vs-puebla/rybnw"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

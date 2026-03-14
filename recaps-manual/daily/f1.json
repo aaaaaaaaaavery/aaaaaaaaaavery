@@ -1,7 +1,39 @@
 {
   "leagueName": "Formula One",
-  "leagueKey": "f1",
+  "leagueKey": "formulaone",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "George Russell continued his perfect start to the 2026 season with a hard-fought victory in the Shanghai sprint, while Mercedes teammate Kimi Antonelli made history by becoming the youngest-ever F1 pole-sitter for the main race.",
+  "games": [
+    {
+      "id": "20260314-shanghai-sprint",
+      "teams": {
+        "away": "Mercedes",
+        "home": "Shanghai International Circuit"
+      },
+      "headline": "Russell holds off charging Ferraris to maintain perfect start in Shanghai sprint",
+      "score": null,
+      "brief": "George Russell proved why he's the man to beat in 2026, surviving a relentless challenge from Ferrari's Lewis Hamilton and Charles Leclerc to claim the first sprint victory of the season. After a frantic opening where the lead changed hands four times in just five laps, Russell managed to find clean air and manage his tires through a late safety car period. While the silver cars still look like the class of the field, the proximity of the Ferraris—finishing less than a second behind—suggests the 2026 regulation changes are delivering the close-quarters racing fans have been craving.",
+      "bullets": [
+        "George Russell stretched his championship lead to 11 points after taking the maximum 8 points for the sprint win.",
+        "Lewis Hamilton briefly led the race after a lightning start from fourth on the grid, eventually finishing third behind teammate Charles Leclerc.",
+        "Kimi Antonelli recovered to fifth place despite serving a 10-second time penalty for an opening-lap collision with Isack Hadjar.",
+        "A late safety car on lap 14, triggered by Nico Hulkenberg’s stopped Audi, forced a frantic round of pit stops and a three-lap dash to the finish.",
+        "Max Verstappen's Red Bull struggles continued as the reigning champ finished ninth, describing his car as 'uncontrollable' due to high tire degradation."
+      ],
+      "context": "Russell's victory solidifies Mercedes' early-season dominance, but Ferrari's double-podium finish marks their best collective pace since the 2024 finale.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.formula1.com/en/latest/article/russell-wins-thrilling-china-sprint-from-ferraris-leclerc-and-hamilton.3HLw6daSkBmV0rPREohMwQ"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

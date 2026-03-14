@@ -1,37 +1,37 @@
 {
-  "leagueName": "PGA Tour",
+  "leagueName": "PGA TOUR",
   "leagueKey": "pgatour",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The opening round of THE PLAYERS Championship was a war of attrition against the elements, ending in a four-way logjam at the top as TPC Sawgrass bared its teeth.",
+  "leagueBriefing": "Ludvig Åberg is making the difficult TPC Sawgrass look like a playground, firing a 63 to take control of THE PLAYERS Championship while the world's best scrambled just to stay in the tournament.",
   "games": [
     {
-      "id": "20260312-the-players-round-1",
+      "id": "the-players-championship-2026-round-2",
       "teams": {
-        "away": "The Field",
-        "home": "TPC Sawgrass"
+        "away": "",
+        "home": ""
       },
-      "headline": "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
+      "headline": "Åberg surges to two-shot lead at Sawgrass with record-tying front nine",
       "score": null,
-      "brief": "Round 1 at THE PLAYERS Championship was defined by survival as much as scoring. Sepp Straka utilized a spectacular chip-in eagle on the 16th to join Maverick McNealy, Lee Hodges, and Sahith Theegala in the clubhouse lead at 5-under par. On a day that saw wind, rain, and a brief weather delay, the iconic Stadium Course proved as treacherous as ever, claiming 38 balls in the water across the final three holes alone and forcing several big names to scramble just to stay in contention before darkness halted play.",
+      "brief": "Ludvig Åberg looked every bit the rising superstar on Friday, carding a 9-under 63 to seize a two-shot lead at THE PLAYERS Championship. The Swede was unconscious early, going 5-under through his first four holes and tying the front-nine record at the Stadium Course with a 29. While Åberg made it look easy, the story at the other end of the leaderboard was Scottie Scheffler and Rory McIlroy sweatily grinding out pars just to make the cut, proving that Sawgrass still has teeth for everyone else.",
       "bullets": [
-        "Sepp Straka carded a bogey-free 67, highlighted by seven par saves and a 50-foot chip-in for eagle on the par-5 16th.",
-        "Sahith Theegala provided the 'Shot of the Day' by holing out from the fairway for an eagle on the 12th hole.",
-        "The daunting closing stretch lived up to its reputation, with 38 balls finding the water on holes 16, 17, and 18 throughout the day.",
-        "World No. 1 Scottie Scheffler struggled to find fairways, finishing with an uncharacteristic even-par 72.",
-        "Defending major champion Collin Morikawa was forced to withdraw after just one hole due to a sudden back injury during a practice swing."
+        "Ludvig Åberg tied the TPC Sawgrass front-nine record with a 29, highlighted by hole-out chips on No. 4 and No. 9.",
+        "Xander Schauffele sits in solo second at 10-under after a bogey-free 65 where he hit a perfect 14-of-14 fairways.",
+        "World No. 1 Scottie Scheffler needed a clutch 8-foot birdie on the final hole to make the cut on the number at 1-over par.",
+        "Justin Thomas continued his bounce-back from injury, posting a second consecutive 68 to sit T4 at 8-under.",
+        "Cameron Young remains in the hunt at 9-under, seeking his second career PGA TOUR victory after breaking through last summer."
       ],
-      "context": "With 67 being the highest leading score after Round 1 since 2017, the tournament remains wide open heading into a busy Friday restart.",
+      "context": "Åberg is in prime position to become the youngest PLAYERS champion since Si Woo Kim, while Scheffler’s streak of 69 consecutive cuts made narrowly survived.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/12/the-players-championship-round-1-scores-leaderboard-results-mcnealy-mcilroy-scheffler-sepp-straka"
+        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/13/the-players-championship-round-2-scores-leaderboard-results-schauffele-young-aberg"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "anK2q3xuMg8",
-          "title": "PGA Tour Highlights",
-          "url": "https://www.youtube.com/watch?v=anK2q3xuMg8",
-          "embedUrl": "https://www.youtube.com/embed/anK2q3xuMg8"
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }

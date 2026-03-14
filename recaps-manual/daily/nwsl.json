@@ -2,6 +2,38 @@
   "leagueName": "NWSL",
   "leagueKey": "nwsl",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "The 2026 NWSL season kicked off with a heavyweight rematch of last year's semifinal as the Portland Thorns spoiled the party at a sold-out Audi Field. In a defensive battle where clear-cut chances were hard to come by, a single moment of brilliance from a teenage star allowed the Thorns to walk away with a statement road victory to open the new campaign.",
+  "games": [
+    {
+      "id": "834675f37cea4328bece6743d94c7d2d",
+      "teams": {
+        "away": "Portland Thorns FC",
+        "home": "Washington Spirit"
+      },
+      "headline": "Olivia Moultrie spoils Spirit homecoming as Thorns secure opening night win",
+      "score": "Washington Spirit 0 - 1 Portland Thorns FC",
+      "brief": "Portland Thorns midfielder Olivia Moultrie delivered the decisive blow in the 52nd minute, weaving through the box to fire home the only goal in a 1-0 win over the Washington Spirit. Despite the Spirit controlling over 60% of the ball and playing in front of a record-setting home crowd, they struggled to test the Portland goal effectively. The night was also highlighted by the emotional return of Thorns superstar Sophia Wilson, who saw her first competitive minutes since 2024 following maternity leave, helping Portland secure their first road shutout in D.C. since 2021.",
+      "bullets": [
+        "Olivia Moultrie scored the game's only goal in the 52nd minute, assisted by Pietra Tordin.",
+        "A sellout crowd of 19,215 at Audi Field marked one of the fastest-selling matches in Spirit history.",
+        "Sophia Wilson made her highly anticipated return to the pitch, subbing on in the 77th minute.",
+        "Washington’s Hal Hershfelt nearly equalized in the 75th minute but saw her powerful strike rattle off the crossbar.",
+        "New Thorns head coach Robert Vilahamn earned a victory in his NWSL coaching debut."
+      ],
+      "context": "The win serves as early-season revenge for the Thorns, who were eliminated by the Spirit in last year's playoff semifinals.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.thorns.com/news/thorns-claim-1-0-victory-over-spirit-in-season-opener"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

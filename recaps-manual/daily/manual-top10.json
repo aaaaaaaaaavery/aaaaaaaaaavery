@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-13",
+  "date": "2026-03-14",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "nba",
-      "gameId": "401803310_BOS@OKC",
-      "headline": "Gilgeous-Alexander breaks Wilt Chamberlain's record in Thunder win",
-      "scoreLine": "Celtics 102 - Thunder 104"
+      "leagueKey": "wbc",
+      "gameId": "401803310",
+      "headline": "Team USA survives late Canadian surge to reach WBC semifinals",
+      "scoreLine": "United States 5 - Canada 3"
     },
     {
       "rank": 2,
-      "leagueKey": "golf",
-      "gameId": "pgatour-20260312-the-players-round-1",
-      "headline": "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
+      "leagueKey": "f1",
+      "gameId": "20260314-shanghai-sprint",
+      "headline": "Russell holds off charging Ferraris to maintain perfect start in Shanghai sprint",
       "scoreLine": ""
     },
     {
       "rank": 3,
-      "leagueKey": "nhl",
-      "gameId": "401803300",
-      "headline": "Sharks stun Bruins at TD Garden to continue late-season surge",
-      "scoreLine": "Sharks 4 - Bruins 2"
+      "leagueKey": "ncaam",
+      "gameId": "401802311",
+      "headline": "Arizona survives Iowa State rally to reach Big 12 final",
+      "scoreLine": "Iowa State 80 - Arizona 82"
     },
     {
       "rank": 4,
       "leagueKey": "ncaam",
-      "gameId": "NCAAB_20260312_FSU@DUKE",
-      "headline": "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
-      "scoreLine": "Florida State 79 - Duke 80"
+      "gameId": "401802312",
+      "headline": "Michigan edges rival Ohio State to advance in Big Ten tourney",
+      "scoreLine": "Ohio State 67 - Michigan 71"
     },
     {
       "rank": 5,
-      "leagueKey": "nba",
-      "gameId": "q71917",
-      "headline": "Luka Doncic hits 51 points as Lakers cruise past Bulls in James’ return",
-      "scoreLine": "Bulls 130 - Lakers 142"
+      "leagueKey": "ncaam",
+      "gameId": "401802314",
+      "headline": "Houston dismantles Kansas in statement Big 12 win",
+      "scoreLine": "Kansas 47 - Houston 69"
     },
     {
       "rank": 6,
       "leagueKey": "ncaam",
-      "gameId": "NCAAB_20260312_BYU@HOU",
-      "headline": "Houston defense survives Dybantsa's record-breaking night",
-      "scoreLine": "BYU 66 - Houston 73"
+      "gameId": "401802310",
+      "headline": "Duke stifles Clemson to punch ticket to ACC title game",
+      "scoreLine": "Clemson 61 - Duke 73"
     },
     {
       "rank": 7,
-      "leagueKey": "nhl",
-      "gameId": "401803313",
-      "headline": "MacKinnon hits 44 goals as Avalanche crush Kraken in Seattle",
-      "scoreLine": "Avalanche 5 - Kraken 1"
+      "leagueKey": "golf",
+      "gameId": "pgatour-the-players-championship-2026-round-2",
+      "headline": "Åberg surges to two-shot lead at Sawgrass with record-tying front nine",
+      "scoreLine": ""
     },
     {
       "rank": 8,
-      "leagueKey": "tennis",
-      "gameId": "wta-20260312-sabalenka-mboko",
-      "headline": "Sabalenka halts Mboko's dream run to reach Indian Wells semis",
-      "scoreLine": "Victoria Mboko 0 - Aryna Sabalenka 2"
+      "leagueKey": "ncaam",
+      "gameId": "401802313",
+      "headline": "Florida bites back as Kentucky falls in SEC quarterfinals",
+      "scoreLine": "Kentucky 63 - Florida 71"
     },
     {
       "rank": 9,
-      "leagueKey": "tennis",
-      "gameId": "wta-20260312-rybakina-pegula",
-      "headline": "Rybakina thwarts Pegula comeback to book semifinal spot",
-      "scoreLine": "Jessica Pegula 0 - Elena Rybakina 2"
+      "leagueKey": "ncaam",
+      "gameId": "401802316",
+      "headline": "UCLA outlasts Michigan State in high-scoring Big Ten shootout",
+      "scoreLine": "UCLA 88 - Michigan State 84"
     },
     {
       "rank": 10,
-      "leagueKey": "golf",
-      "gameId": "livgolf-2026-singapore-round-2",
-      "headline": "DeChambeau pulls away in Singapore as Crushers surge to team lead",
-      "scoreLine": ""
+      "leagueKey": "ncaam",
+      "gameId": "401802315",
+      "headline": "UConn cruise past Georgetown to set up Big East final showdown",
+      "scoreLine": "Georgetown 51 - UConn 67"
     }
   ],
   "top10": [
-    "Gilgeous-Alexander breaks Wilt Chamberlain's record in Thunder win",
-    "Straka surges into four-way lead at Sawgrass as weather wreaks havoc",
-    "Sharks stun Bruins at TD Garden to continue late-season surge",
-    "Duke narrowly avoids disaster as Florida State buzzer beater rims out",
-    "Luka Doncic hits 51 points as Lakers cruise past Bulls in James’ return",
-    "Houston defense survives Dybantsa's record-breaking night",
-    "MacKinnon hits 44 goals as Avalanche crush Kraken in Seattle",
-    "Sabalenka halts Mboko's dream run to reach Indian Wells semis",
-    "Rybakina thwarts Pegula comeback to book semifinal spot",
-    "DeChambeau pulls away in Singapore as Crushers surge to team lead"
+    "Team USA survives late Canadian surge to reach WBC semifinals",
+    "Russell holds off charging Ferraris to maintain perfect start in Shanghai sprint",
+    "Arizona survives Iowa State rally to reach Big 12 final",
+    "Michigan edges rival Ohio State to advance in Big Ten tourney",
+    "Houston dismantles Kansas in statement Big 12 win",
+    "Duke stifles Clemson to punch ticket to ACC title game",
+    "Åberg surges to two-shot lead at Sawgrass with record-tying front nine",
+    "Florida bites back as Kentucky falls in SEC quarterfinals",
+    "UCLA outlasts Michigan State in high-scoring Big Ten shootout",
+    "UConn cruise past Georgetown to set up Big East final showdown"
   ],
-  "newsBriefing": "It was a landmark day across the sports world, headlined by Shai Gilgeous-Alexander eclipsing Wilt Chamberlain’s 63-year-old NBA record with his 127th consecutive 20-point game and Luka Doncic erupting for 51 points in LeBron James’ return to the Lakers' lineup. The NFL landscape shifted significantly as the Vikings secured Kyler Murray on a veteran minimum deal following his release from the Cardinals, while the Cowboys integrated newly acquired pass rusher Rashan Gary amidst a \"crazy\" week of trades and social media hacks. However, the day was also clouded by serious developments, including Atlanta Falcons edge rusher James Pearce Jr. facing multiple felony charges and Toronto’s Auston Matthews exiting a game with a knee injury after a controversial hit. In other arenas, Dwight Howard officially retired from all basketball following his Hall of Fame induction, Rory McIlroy struggled early at the Players Championship while a pack of five leaders set the pace at 5-under, and Kansas State neared a deal to name Belmont's Casey Alexander as their next head coach. Moving into postseason play, Team USA revamped its pitching roster for the World Baseball Classic quarterfinals, and the Big 12 made the unprecedented mid-tournament decision to scrap its new LED glass court for traditional hardwood after widespread player complaints about dangerous slippage.",
-  "updatedAt": "2026-03-13T13:49:12.451Z"
+  "newsBriefing": "In a day defined by high-stakes drama and significant setbacks, Kimi Antonelli made history as the youngest pole-sitter in Formula 1 history at the Chinese Grand Prix, while Team USA booked a dream World Baseball Classic semifinal clash against the Dominican Republic after a hard-fought 5-3 victory over Canada. College basketball's \"Selection Sunday\" countdown intensified as Jaden Bradley’s last-second buzzer-beater propelled No. 2 Arizona past Iowa State and into the Big 12 final, while UCLA managed to oust No. 8 Michigan State in the Big Ten despite losing star Tyler Bilodeau to a serious knee injury. The injury bug bit professional leagues even harder, with Toronto Maple Leafs captain Auston Matthews ruled out for the remainder of the NHL season due to a torn MCL and the Golden State Warriors losing four more players in a single night as their Western Conference slide continued. Amidst the playoff pushes and title chases, the coaching carousel began to turn with Cincinnati moving to fire Wes Miller after five seasons without a tournament appearance, and the WNBA faced an urgent Monday deadline to finalize a new CBA to avoid impacting its upcoming season.",
+  "updatedAt": "2026-03-14T15:02:57.514Z"
 }

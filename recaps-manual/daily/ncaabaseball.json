@@ -2,58 +2,27 @@
   "leagueName": "NCAA Baseball",
   "leagueKey": "ncaabaseball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Conference play kicked off with a bang on Thursday as top-ranked teams faced early tests and offensive records were nearly shattered. Georgia Tech sent a clear message to the ACC with a dominant shutout of Clemson, while Wichita State put on a historic clinic at the plate. In the Big 12, BYU proved that home-field advantage is real by halting one of the nation's longest active winning streaks.",
+  "leagueBriefing": "Conference play kicked off with a bang across the country as powerhouse programs faced major tests in their openers. From a massive 11-inning upset in Austin to a walk-off thriller in Fayetteville, the weekend started with high-stakes drama and several top-10 teams suffering statement losses.",
   "games": [
     {
-      "id": "JcLFfL9RUu0H5ystoOMbjQ7A58QMysWHEEqi7hufVoQXO5nVxbctjHh%2F6ifARsoKUNz2Cn1GpJx0eQgL%2FI8uNugW6%2F65ooJ9xE6%2BliOEFRl1EIOMAkcBvIU2aC8AuTau2UnY2vrhsp0zGxHkJEx3fbAnLWUmX%2F8r%2BMq5T8OXc2WIexLN5H205dHiBhHjVE91",
+      "id": "20260313-michigan-ucla",
       "teams": {
-        "away": "Georgia Tech",
-        "home": "Clemson"
+        "away": "Michigan",
+        "home": "UCLA"
       },
-      "headline": "Georgia Tech silences Clemson in dominant conference opener",
-      "score": "Georgia Tech 10 - Clemson 0",
-      "brief": "Georgia Tech made a massive statement to open ACC play, absolutely dismantling No. 11 Clemson in a game that was shortened to seven innings due to the run rule. The Yellow Jackets' pitching staff kept the Tigers completely off balance, surrendering only two hits while the offense relentlessly piled on runs. It was the kind of performance that shifts expectations in a division race, proving Tech can travel into a hostile environment and dominate a top-tier rival.",
+      "headline": "UCLA cruises past Michigan in Big Ten opener",
+      "score": "Michigan 5 - UCLA 10",
+      "brief": "Top-ranked UCLA flexed its muscle early in their conference opener against Michigan. While the Wolverines managed to score first and last, they couldn't keep pace with the Bruins' high-powered offense throughout the middle innings.",
       "bullets": [
-        "Yellow Jacket pitchers combined for a two-hit shutout, stifling a Clemson offense that entered the game with high momentum.",
-        "The game was called after seven innings as Georgia Tech reached a 10-run lead, invoking the conference run rule.",
-        "Georgia Tech's offense was clinical, racking up 12 hits while capitalizing on two Clemson errors.",
-        "This victory moves Georgia Tech to a 16-2 record, further solidifying their status as one of the most dangerous teams in the country."
+        "UCLA moved to 15-2 on the season with the dominant home win.",
+        "The Bruins pounded out 15 hits against the Michigan pitching staff.",
+        "Justin Brown made his collegiate debut for Michigan, striking out the first batter he faced.",
+        "Michigan fell to 9-7 overall as they start their Big Ten slate."
       ],
-      "context": "The dominant shutout serves as a major momentum shifter for Georgia Tech as they begin their ACC campaign against a top-15 opponent.",
+      "context": "The Bruins continue to solidify their position as the consensus #1 team in the nation.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://theacc.com/boxscore.aspx?id=JcLFfL9RUu0H5ystoOMbjQ7A58QMysWHEEqi7hufVoQXO5nVxbctjHh%2F6ifARsoKUNz2Cn1GpJx0eQgL%2FI8uNugW6%2F65ooJ9xE6%2BliOEFRl1EIOMAkcBvIU2aC8AuTau2UnY2vrhsp0zGxHkJEx3fbAnLWUmX%2F8r%2BMq5T8OXc2WIexLN5H2v5dHiBhHjVE91&path=baseball"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "WdAZv1-0HhQ",
-          "title": "Georgia Tech vs Clemson Highlights",
-          "url": "https://www.youtube.com/watch?v=WdAZv1-0HhQ",
-          "embedUrl": "https://www.youtube.com/embed/WdAZv1-0HhQ"
-        }
-      ]
-    },
-    {
-      "id": "18716",
-      "teams": {
-        "away": "Butler",
-        "home": "Wichita State"
-      },
-      "headline": "Wichita State flirts with history in 27-run explosion against Butler",
-      "score": "Butler 3 - Wichita State 27",
-      "brief": "Wichita State turned their series opener into a batting practice session, scoring their most runs in nearly a quarter-century to blow past Butler. After Butler took a brief early lead, the Shockers responded with a relentless barrage, highlighted by an 11-run third inning where they batted around without recording an out. It was a historic night at Eck Stadium that saw WSU score in every single inning they came to the plate, leaving the Bulldogs searching for answers.",
-      "bullets": [
-        "The 27 runs scored are the most by the Shockers since 2002 and the second-most in program history.",
-        "Max Kaufer continued his torrid start to the season, blasting two home runs to bring his season total to 11 through 18 games.",
-        "Wichita State scored in every inning (1st through 6th), a feat the program hadn't achieved since 1999.",
-        "Owen Washburn extended his impressive multi-hit game streak to 10 straight contests with a 2-for-4 performance.",
-        "The Shocker offense benefited from 12 walks and three hit batsmen issued by a parade of six Butler pitchers."
-      ],
-      "context": "The offensive explosion nearly broke the school record of 35 runs and marks a definitive turnaround for a Shocker program looking to return to national relevance.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://goshockers.com/news/2026/3/12/baseball-shockers-plate-27-runs-in-series-opener.aspx"
+        "recapUrl": "https://mgoblue.com/news/2026/3/14/baseball-wolverines-score-first-last-but-unable-to-catch-no-1-ucla-in-b1g-opener"
       },
       "highlights": [
         {
@@ -66,25 +35,204 @@
       ]
     },
     {
-      "id": "401803310",
+      "id": "20260313-olemiss-texas",
       "teams": {
-        "away": "Cincinnati",
-        "home": "BYU"
+        "away": "Ole Miss",
+        "home": "Texas"
       },
-      "headline": "BYU power surge ends Cincinnati’s seven-game win streak",
-      "score": "Cincinnati 2 - BYU 5",
-      "brief": "In a classic Big 12 battle, BYU used the long ball and stellar pitching to snap Cincinnati's red-hot seven-game winning streak. The game was a pitcher's duel through the early stages until the Cougars' bats woke up with two pivotal home runs that provided all the cushion they needed. While the Bearcats attempted a ninth-inning rally to keep their streak alive, BYU's bullpen slammed the door to secure a vital win in their conference home opener.",
+      "headline": "Ole Miss stuns No. 2 Texas in 11-inning thriller",
+      "score": "Ole Miss 9 - Texas 8",
+      "brief": "In a wild SEC opener, Ole Miss handed No. 2 Texas its first loss of the season in a marathon 11-inning battle in Austin. The Rebels clawed back from a late deficit and survived a high-scoring extra-inning frame to secure a massive statement win.",
       "bullets": [
-        "Ezra McNaughton delivered the decisive blow with a three-run home run in the bottom of the seventh inning to break the game open.",
-        "Crew McChesney opened the scoring for the Cougars with a two-run blast in the fourth inning.",
-        "BYU starter Garrison Sumner earned the win, allowing only one run and four hits while striking out six over 5.1 innings.",
-        "The loss was the first for Cincinnati in over two weeks, ending a seven-game stretch of dominant baseball.",
-        "The victory marked head coach Trent Pratt’s 200th career game at the helm for BYU."
+        "Tristan Bissetta launched a go-ahead grand slam in the 9th inning to keep the Rebels alive.",
+        "Owen Paino drew the decisive RBI walk in the top of the 11th to provide the winning run.",
+        "Texas fell to 16-1, ending their perfect start to the 2026 campaign.",
+        "Hunter Elliott dominated early for the Rebels, striking out five consecutive Longhorns to start the game."
       ],
-      "context": "This victory gives BYU an early edge in the Big 12 standings while halting one of the most significant winning streaks in Cincinnati program history.",
+      "context": "This win marks Ole Miss' first victory over a top-5 team since the 2025 SEC tournament.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://byucougars.com/news/2026/03/12/byu-opens-conference-play-with-5-2-win-over-cincinnati"
+        "recapUrl": "https://therebelwalk.com/2026/03/ole-miss-baseball-wins-extra-innings-thriller-in-sec-opener-over-no-2-texas-longhorns-in-austin/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260313-missst-arkansas",
+      "teams": {
+        "away": "Mississippi State",
+        "home": "Arkansas"
+      },
+      "headline": "Pompey’s walk-off blast lifts Arkansas over Bulldogs",
+      "score": "Mississippi State 4 - Arkansas 5",
+      "brief": "Mississippi State thought they had snatched momentum with a dramatic two-out rally in the ninth, but TJ Pompey had other plans. On the first pitch of the bottom half, Pompey cleared the wall to give Arkansas a thrilling walk-off win in their SEC opener.",
+      "bullets": [
+        "TJ Pompey hit the game-winning solo home run on the first pitch he saw in the 9th inning.",
+        "Mississippi State outhit the Razorbacks 11-7 but stranded 12 runners on base.",
+        "Zack Stewart added a solo home run earlier in the game for Arkansas.",
+        "Ryan McPherson struck out eight for the Bulldogs in a solid 6-inning start."
+      ],
+      "context": "Arkansas takes the early advantage in a series between two top-5 powerhouses.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://hailstate.com/news/2026/3/13/baseball-no-3-bulldogs-walked-off-in-sec-opener"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260313-gatech-clemson",
+      "teams": {
+        "away": "Georgia Tech",
+        "home": "Clemson"
+      },
+      "headline": "Schmidt’s grand slam powers Georgia Tech over Clemson",
+      "score": "Georgia Tech 9 - Clemson 3",
+      "brief": "Georgia Tech continued its hot start by handling No. 11 Clemson on the road. The Yellow Jackets broke open a tight contest in the seventh when Kent Schmidt delivered a soul-crushing grand slam, securing Tech's first series win at Clemson in a decade.",
+      "bullets": [
+        "Kent Schmidt hit his first career grand slam on an 0-2 count in the 7th inning.",
+        "Georgia Tech is off to its best start (17-2) since the 2013 season.",
+        "Vahn Lackey added a home run and Parker Brosius chipped in a two-run double.",
+        "Clemson's offense was limited to solo home runs and couldn't find a big rally."
+      ],
+      "context": "Georgia Tech has outscored Clemson 19-3 through the first two games of the series.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://ramblinwreck.com/schmidt-grand-slam-punctuates-9-3-win-over-clemson/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260313-auburn-missouri",
+      "teams": {
+        "away": "Auburn",
+        "home": "Missouri"
+      },
+      "headline": "Terrell’s blast and dominant pitching lead Auburn shutout",
+      "score": "Auburn 2 - Missouri 0",
+      "brief": "In a classic Friday night pitcher's duel, Auburn found just enough offense after a long weather delay to silence Missouri. Jake Marciano was spectacular through seven innings, and Bub Terrell provided the only insurance needed with a clutch two-run homer.",
+      "bullets": [
+        "Bub Terrell broke the scoreless tie with a two-run home run in the 8th inning.",
+        "Jake Marciano threw 7.0 shutout innings, allowing only two hits.",
+        "The loss snapped Missouri's 13-game winning streak.",
+        "Auburn has now allowed two or fewer runs in six consecutive games."
+      ],
+      "context": "Auburn's pitching staff has recorded three shutouts in their last five outings.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.secsports.com/news/2026/03/bub-terrells-two-run-homer-gives-auburn-road-win-vs-missouri"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260313-lsu-vanderbilt",
+      "teams": {
+        "away": "LSU",
+        "home": "Vanderbilt"
+      },
+      "headline": "Johnstone’s walk-off homer caps 25-run LSU-Vandy epic",
+      "score": "LSU 12 - Vanderbilt 13",
+      "brief": "Vanderbilt and LSU played an absolute classic in Nashville that featured six lead changes and a flurry of home runs. Just as LSU seemed to have stole it with a late five-run surge, Logan Johnstone sent the home crowd happy with a massive two-out, two-run walk-off bomb.",
+      "bullets": [
+        "Logan Johnstone hit a two-out, two-run walk-off home run in the bottom of the 9th.",
+        "The game featured 25 total runs and six lead changes throughout the night.",
+        "Vanderbilt's Braden Holcomb hit his 11th home run of the season.",
+        "LSU scored eight unanswered runs in the middle innings to nearly steal the road win."
+      ],
+      "context": "Vanderbilt gains a massive emotional edge to start the SEC schedule.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://vucommodores.com/johnstone-walks-it-off/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260313-fsu-wake",
+      "teams": {
+        "away": "Florida State",
+        "home": "Wake Forest"
+      },
+      "headline": "Mendes’ masterpiece and five homers crush Wake Forest",
+      "score": "Florida State 10 - Wake Forest 0",
+      "brief": "Florida State sent a loud message to the ACC by completely dismantling Wake Forest in seven innings. Wes Mendes was untouchable on the mound, and the Seminoles' hitters feasted on the wind, launching five home runs to trigger the run rule.",
+      "bullets": [
+        "Wes Mendes threw a 7-inning complete game two-hitter with 11 strikeouts.",
+        "Eli Putnam led the offensive charge with two home runs and two RBI.",
+        "FSU hit five home runs in total, with seven of their ten runs coming via the long ball.",
+        "The game was ended early via run rule after FSU built a 10-run lead in the 6th."
+      ],
+      "context": "FSU improves to 99-40 all-time against the Demon Deacons.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://seminoles.com/news/2026/3/13/baseball-mendes-shutout-and-five-homers-help-20-fsu-run-rule-12-wake"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260313-scar-florida",
+      "teams": {
+        "away": "South Carolina",
+        "home": "Florida"
+      },
+      "headline": "Gators walk off after South Carolina’s no-hit bid fails in 9th",
+      "score": "South Carolina 0 - Florida 1",
+      "brief": "South Carolina was two outs away from a historic no-hitter in Gainesville, but baseball had other plans. Florida broke up the no-no in the bottom of the ninth, then used a sacrifice fly in the 10th to snatch a 1-0 win in an incredible pitcher's duel.",
+      "bullets": [
+        "Cash Strayer hit the walk-off sacrifice fly in the bottom of the 10th inning.",
+        "South Carolina starter Josh Gunther threw 6.1 no-hit innings before being pulled.",
+        "Florida's Liam Peterson countered with 10 strikeouts over 6.0 dominant innings.",
+        "The two teams combined for only three total hits in the entire 10-inning game."
+      ],
+      "context": "This was South Carolina's first extra-inning game of the 2026 season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://gamecocksonline.com/news/2026/03/13/baseball-falls-in-extras-at-florida-in-sec-opener/"
       },
       "highlights": [
         {

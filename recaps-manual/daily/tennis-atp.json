@@ -1,0 +1,68 @@
+{
+  "leagueName": "ATP",
+  "leagueKey": "atp",
+  "sourceType": "console_recaps",
+  "leagueBriefing": "The 2026 BNP Paribas Open has reached its final four with a script that couldn't be more perfect for tennis fans. The top seeds have held their ground in the California desert, setting up two blockbuster semifinals that feature the world's most dominant players of the early season. Carlos Alcaraz continues his invincible start to 2026, while Jannik Sinner and Alexander Zverev bring historic momentum into their clash, and Daniil Medvedev remains the ultimate hard-court test.",
+  "games": [
+    {
+      "id": "20260314-zverev-sinner",
+      "teams": {
+        "away": "Zverev Alexander",
+        "home": "Sinner Jannik"
+      },
+      "headline": "Zverev joins elite company with Masters milestone ahead of Sinner showdown",
+      "score": null,
+      "brief": "Alexander Zverev enters this semifinal having just secured a massive piece of tennis history by becoming one of only five men in the Open Era to reach the semifinals at all nine Masters 1000 events. He’ll need every bit of that veteran poise against Jannik Sinner, who has been nothing short of ruthless this week. Sinner comes in fresh off a clinical demolition of American youngster Learner Tien and has won his last five meetings against the German. While Zverev is serving at an elite level—dropping only one service game all tournament—Sinner’s 'first-strike' tennis and defensive coverage have made him look nearly unbeatable in Indian Wells.",
+      "bullets": [
+        "Alexander Zverev became the fifth man since 1990 to reach the semifinals of all nine Masters 1000 tournaments, joining Nadal, Djokovic, Federer, and Murray.",
+        "Sinner enters the match with a 10-ace performance in his quarterfinal win and has won five straight matches against Zverev.",
+        "Zverev has been dominant on serve this week, saving 100% of break points (3/3) in his quarterfinal and hitting 13 aces in the round prior.",
+        "The head-to-head history is closely contested overall, with Sinner leading 6-4, though Zverev’s recent serving form is considered his best in years."
+      ],
+      "context": "A win for Zverev would complete a historic comeback to the top tier of the game, while Sinner is hunting for his first Indian Wells title to solidify his world number two ranking.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.perfect-tennis.com/indian-wells-2026-day-9-recap/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-alcaraz-medvedev",
+      "teams": {
+        "away": "Alcaraz Carlos",
+        "home": "Medvedev Daniil"
+      },
+      "headline": "Unstoppable Alcaraz seeks final return as Medvedev looks to break desert curse",
+      "score": null,
+      "brief": "Carlos Alcaraz is playing like a man who has forgotten how to lose, extending his perfect start to the 2026 season to a staggering 16-0. He meets Daniil Medvedev in a high-stakes rematch of the last two Indian Wells finals. While Alcaraz has looked 'unplayable' at times this week—dispatching Casper Ruud and Cameron Norrie with his trademark blend of power and touch—Medvedev is quietly putting together his own dominant run. The world number eleven has reached his fourth consecutive semifinal in the desert, but he faces a daunting psychological hurdle: he has lost four straight matches to the Spaniard, including those two heartbreaking final losses right here on Stadium 1.",
+      "bullets": [
+        "Carlos Alcaraz is a perfect 16-0 in matches played during the 2026 season and has reached five consecutive Indian Wells semifinals.",
+        "Medvedev benefited from a controversial overturned point in his quarterfinal against Jack Draper but has otherwise been dominant, not losing a set all tournament.",
+        "Alcaraz has dominated the recent rivalry, winning the last four encounters against Medvedev and claiming his fifth career Masters title before age 21.",
+        "The Spaniard produced 27 winners in his quarterfinal victory over Norrie, showcasing an aggressive baseline game that Medvedev has struggled to counter."
+      ],
+      "context": "Alcaraz is bidding to become the first man since Novak Djokovic to win three Indian Wells titles this century, while Medvedev is chasing his first title since his win in Dubai.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://bnpparibasopen.com/news/carlos-alcaraz-does-it-again-soars-past-medvedev-to-claim-back-to-back-titles"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
+}

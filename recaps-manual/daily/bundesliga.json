@@ -2,6 +2,38 @@
   "leagueName": "Bundesliga",
   "leagueKey": "bundesliga",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "Borussia Mönchengladbach snapped a three-match winless streak with a professional 2-0 victory over a struggling St. Pauli side at BORUSSIA-PARK. A spectacular free-kick from Kevin Stöger provided the breakthrough in the first half, and Gladbach never looked back, controlling the tempo and adding a second after the break to secure all three points and move further away from the danger zone.",
+  "games": [
+    {
+      "id": "1910775",
+      "teams": {
+        "away": "St. Pauli",
+        "home": "Borussia M'gladbach"
+      },
+      "headline": "Stöger free-kick spark as Gladbach cruises past St. Pauli",
+      "score": "Borussia M'gladbach 2 - 0 St. Pauli",
+      "brief": "Borussia Mönchengladbach delivered a dominant performance on Friday night, effectively neutralizing St. Pauli's attack to claim a 2-0 win. Kevin Stöger stole the show in the 37th minute with a clinical direct free-kick that left the keeper rooted to the spot. While St. Pauli enjoyed significant possession (60%), they lacked the cutting edge to trouble Moritz Nicolas. Franck Honorat sealed the result in the 62nd minute, latching onto a Joseph Scally assist to ensure Gladbach avenged their earlier DFB-Pokal exit against the same opponents.",
+      "bullets": [
+        "Kevin Stöger opened the scoring with a brilliant direct free-kick in the 37th minute.",
+        "Franck Honorat doubled the lead in the 62nd minute, his 6th goal contribution of the season.",
+        "St. Pauli dominated possession with 60% but managed only one shot on target throughout the 90 minutes.",
+        "The victory marks Gladbach's first clean sheet in five matches, moving them up to 12th in the table.",
+        "Attendance at BORUSSIA-PARK was recorded at 49,202 fans."
+      ],
+      "context": "The win provides Gladbach with breathing room in the mid-table, while St. Pauli remains precariously close to the relegation playoff spot.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.whoscored.com/matches/1910775/live/germany-bundesliga-2025-2026-borussia-m-gladbach-st-pauli"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

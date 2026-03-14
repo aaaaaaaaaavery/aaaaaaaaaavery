@@ -2,292 +2,260 @@
   "leagueName": "NBA",
   "leagueKey": "nba",
   "sourceType": "console_recaps",
-  "leagueBriefing": "A historic night in the NBA saw Shai Gilgeous-Alexander eclipse a legendary Wilt Chamberlain record, while Luka Doncic delivered a signature 51-point masterpiece in Los Angeles. The Eastern Conference-leading Pistons continued their dominance, and the Nuggets pulled off a stunning 20-point comeback to spoil a triple-double effort in San Antonio.",
+  "leagueBriefing": "The Western Conference playoff race tightened up on Friday night as the Rockets and Clippers both secured critical wins to bolster their postseason positioning. Houston edged out New Orleans in a thriller to climb into third place, while Kawhi Leonard matched a storied franchise record in a Clippers victory. Meanwhile, the Knicks stayed hot in the East despite a quiet night from deep, and the Cavaliers put on a clinic in Dallas to continue their dominant run.",
   "games": [
     {
-      "id": "401803310",
+      "id": "NBA_20260313_NO@HOU",
       "teams": {
-        "away": "76ers",
-        "home": "Pistons"
+        "away": "New Orleans Pelicans",
+        "home": "Houston Rockets"
       },
-      "headline": "Pistons dominate 76ers to maintain grip on Eastern Conference lead",
-      "score": "76ers 109 - Pistons 131",
-      "brief": "The Detroit Pistons looked every bit like the best team in the East, routing the 76ers from start to finish. Despite Philadelphia's attempts to trap Cade Cunningham and disrupt his rhythm, Detroit's depth took over, leading by as many as 17 in the first half and never looking back. It was a statement win for a Pistons squad that has quickly put a recent skid in the rearview mirror.",
+      "headline": "Durant hits clutch go-ahead jumper as Rockets climb to third in West",
+      "score": "Pelicans 105 - Rockets 107",
+      "brief": "Kevin Durant proved once again why he's one of the most reliable closers in the game, burying a contested 18-footer in the final seconds to lift Houston over New Orleans. The Rockets survived a monster performance from Dejounte Murray to move into the third seed in the Western Conference. It was a game of inches and late-game execution, as the Pelicans saw their chances slip away with back-to-back turnovers in the final 15 seconds.",
       "bullets": [
-        "Duncan Robinson led a balanced Detroit attack with 19 points.",
-        "Cade Cunningham orchestrated the offense with 13 assists despite taking only six shots.",
-        "Jalen Duren dominated the glass, posting a double-double with 14 points and 10 rebounds.",
-        "Philadelphia has now lost five of its last seven games as they struggle to find consistency."
+        "Kevin Durant led all scorers with 32 points, bouncing back from an 11-point outing in his previous game.",
+        "Dejounte Murray scored a game-high 35 points on an efficient 14-of-18 shooting for the Pelicans.",
+        "Amen Thompson provided a significant spark for Houston with 23 points in the victory.",
+        "The win marks the beginning of a five-game homestand for the surging Rockets."
       ],
-      "context": "The victory helps Detroit solidify its position at the top of the Eastern Conference standings.",
+      "context": "The victory moves Houston into third place in a tightly contested Western Conference playoff race.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.cbssports.com/nba/gametracker/recap/NBA_20260312_PHI@DET/"
+        "recapUrl": "https://www.cbssports.com/nba/gametracker/recap/NBA_20260313_NO@HOU/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "WqMoKTGJw48",
-          "title": "76ERS at PISTONS | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=WqMoKTGJw48",
-          "embedUrl": "https://www.youtube.com/embed/WqMoKTGJw48",
-          "publishedAt": "2026-03-13T01:49:14Z",
+          "videoId": "cJT_YY5VggE",
+          "title": "PELICANS at ROCKETS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=cJT_YY5VggE",
+          "embedUrl": "https://www.youtube.com/embed/cJT_YY5VggE",
+          "publishedAt": "2026-03-14T03:02:24Z",
           "matchScore": 135
         }
       ]
     },
     {
-      "id": "20260312-PHX-IND",
+      "id": "20260313-MEM-DET",
       "teams": {
-        "away": "Suns",
-        "home": "Pacers"
+        "away": "Memphis Grizzlies",
+        "home": "Detroit Pistons"
       },
-      "headline": "Booker’s 43-point outburst keeps Suns hot while Pacers’ slide continues",
-      "score": "Suns 123 - Pacers 108",
-      "brief": "Devin Booker was in total control in Indianapolis, pouring in 43 points to lead the Suns to their fourth straight win. The Pacers, playing their first game with trade-deadline acquisition Ivica Zubac, simply had no answer for the Phoenix backcourt. While Indiana kept it close early, the Suns' offensive firepower proved too much for a Pacers team that has now dropped 11 games in a row.",
+      "headline": "Cunningham turns facilitator as Pistons blow out Grizzlies",
+      "score": "Grizzlies 110 - Pistons 126",
+      "brief": "Detroit continued its winning ways by dismantling a struggling Memphis squad, fueled by a balanced offensive attack. Cade Cunningham embraced a playmaking role, carving up the Grizzlies' defense to find open teammates all night. The Pistons took control early and never looked back, winning their third straight game by a double-digit margin and showing the kind of depth they'll need for a deep playoff run.",
       "bullets": [
-        "Devin Booker finished with 43 points, shot 14-of-31 from the floor, and was perfect from the line.",
-        "Jalen Green provided a massive spark with 36 points on efficient 14-of-23 shooting.",
-        "Andrew Nembhard led the struggling Pacers with 23 points, all of which came in the first half.",
-        "The Suns moved to a season-high 12 games over .500 with the victory."
+        "Cade Cunningham finished with 15 assists while taking only 11 shots from the field.",
+        "Six different Pistons players scored in double figures during the dominant victory.",
+        "The Pistons have won their last three games by an impressive average of 25.3 points.",
+        "Detroit remains in the top spot in the Eastern Conference standings with a 48-18 record."
       ],
-      "context": "Phoenix continues its climb up the Western Conference ladder while Indiana remains at the bottom of the league standings.",
+      "context": "Detroit solidifies its hold on the top seed in the East while extending its winning streak to three games.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://fieldlevelmedia.com/nba/surging-suns-hand-pacers-11th-straight-loss/"
+        "recapUrl": "https://www.reddit.com/r/DetroitPistons/comments/1rt6q8t/post_game_thread_nba_the_pistons_defeat_the/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "7-vKWEiSxF0",
-          "title": "SUNS at PACERS | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=7-vKWEiSxF0",
-          "embedUrl": "https://www.youtube.com/embed/7-vKWEiSxF0",
-          "publishedAt": "2026-03-13T01:47:53Z",
+          "videoId": "ja3foWgTZWM",
+          "title": "GRIZZLIES at PISTONS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=ja3foWgTZWM",
+          "embedUrl": "https://www.youtube.com/embed/ja3foWgTZWM",
+          "publishedAt": "2026-03-14T02:29:58Z",
           "matchScore": 135
         }
       ]
     },
     {
-      "id": "505005",
+      "id": "5b584-brunson-scores-29-anunoby-adds-25-as-knicks-get-past-the-pacers-101-92-for-2nd-straight-victory",
       "teams": {
-        "away": "Wizards",
-        "home": "Magic"
+        "away": "New York Knicks",
+        "home": "Indiana Pacers"
       },
-      "headline": "Magic survive overtime thriller as Wizards' comeback falls short",
-      "score": "Wizards 131 - Magic 136",
-      "brief": "In a back-and-forth battle that needed extra time, the Orlando Magic managed to hold off a resilient Washington squad. The Wizards erupted for 42 points in the fourth quarter to force overtime, but Tristan da Silva and the Magic regained their composure in the extra period. It was a high-octane affair that saw Orlando's interior presence ultimately outweigh Washington's late-game shooting surge.",
+      "headline": "Brunson and Anunoby power Knicks past short-handed Pacers",
+      "score": "Knicks 101 - Pacers 92",
+      "brief": "The Knicks used a strong second-half surge to overcome a gritty effort from the injury-riddled Pacers in Indianapolis. Jalen Brunson and OG Anunoby shouldered the scoring load, while Mitchell Robinson dominated the glass to prevent any second-chance opportunities for Indiana. Despite a poor shooting night from behind the arc, New York found ways to grind out a victory and keep their hopes for home-court advantage alive.",
       "bullets": [
-        "Tristan da Silva led the Magic with 26 points and delivered a crucial block in overtime.",
-        "Wizards' Bilal Coulibaly scored a career-high 29 points in the losing effort.",
-        "Paolo Banchero and Wendell Carter Jr. both recorded double-doubles for Orlando.",
-        "The loss marks the 10th consecutive defeat for Washington."
+        "Jalen Brunson led the way with 29 points and nine assists.",
+        "Mitchell Robinson hauled in a career-high 22 rebounds to go along with 12 points.",
+        "OG Anunoby contributed 25 points and eight rebounds against his former coach's squad.",
+        "The Pacers have now lost 12 consecutive games as they struggle with widespread injuries."
       ],
-      "context": "Orlando bolsters its playoff positioning in the East, while Washington continues to search for its first win in weeks.",
+      "context": "New York continues its push for a top-four seed in the Eastern Conference playoffs.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://basketball.realgm.com/nba/boxscore/2026-03-12/Washington-at-Orlando/505005"
+        "recapUrl": "https://www.wral.com/news/ap/5b584-brunson-scores-29-anunoby-adds-25-as-knicks-get-past-the-pacers-101-92-for-2nd-straight-victory/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "L1k1jm5fQNU",
-          "title": "WIZARDS at MAGIC | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=L1k1jm5fQNU",
-          "embedUrl": "https://www.youtube.com/embed/L1k1jm5fQNU",
-          "publishedAt": "2026-03-13T02:03:34Z",
+          "videoId": "8LovAsoFE7U",
+          "title": "KNICKS at PACERS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=8LovAsoFE7U",
+          "embedUrl": "https://www.youtube.com/embed/8LovAsoFE7U",
+          "publishedAt": "2026-03-14T02:17:46Z",
           "matchScore": 135
         }
       ]
     },
     {
-      "id": "q72496",
+      "id": "raptors-rally-to-knock-off-suns",
       "teams": {
-        "away": "Nets",
-        "home": "Hawks"
+        "away": "Phoenix Suns",
+        "home": "Toronto Raptors"
       },
-      "headline": "Hawks soar to eighth straight win behind Jalen Johnson's near triple-double",
-      "score": "Nets 97 - Hawks 108",
-      "brief": "The Atlanta Hawks extended the league's longest active winning streak, dismantling the Nets in the final frame. Atlanta trailed briefly in the fourth quarter but responded with a decisive 10-0 run to put the game away. Jalen Johnson was everywhere for the Hawks, nearly recording a triple-double and anchoring a defense that held Brooklyn to just 18 points in the fourth quarter.",
+      "headline": "Raptors pull off late-game comeback to stun Suns in Toronto",
+      "score": "Suns 115 - Raptors 122",
+      "brief": "Toronto erased a 10-point fourth-quarter deficit with a blistering late run to take down the Suns at Scotiabank Arena. Scottie Barnes and RJ Barrett delivered clutch baskets in the closing minutes, capitalizing on a series of Phoenix miscues. The Suns looked to be in control after three quarters, but the Raptors' defensive intensity rose in the final frame, holding Phoenix to just 23 points while pouring in 36 of their own to seal the win.",
       "bullets": [
-        "Jalen Johnson flirted with history, finishing with 21 points, 9 rebounds, and 9 assists.",
-        "Zaccharie Risacher added 19 points as Atlanta won its eighth consecutive game.",
-        "Brooklyn played without leading scorer Michael Porter Jr. due to an ankle injury.",
-        "Josh Minott led the Nets with a career-high 24 points."
+        "Toronto closed the game on an 8-0 run over the final five minutes to take the lead.",
+        "RJ Barrett hit a critical corner three-pointer with 3:35 left to give Toronto its first late lead.",
+        "The Suns led by as many as 10 points early in the fourth quarter before the collapse.",
+        "Scottie Barnes anchored the comeback with a double-double and elite defensive play late."
       ],
-      "context": "The win moves Atlanta within 1.5 games of Toronto for the seventh seed in the Eastern Conference.",
+      "context": "Toronto keeps pace in the Eastern Conference play-in race with a signature comeback win.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.newsday.com/sports/basketball/nets-hawks-score-q72496"
+        "recapUrl": "https://fieldlevelmedia.com/nba/raptors-rally-to-knock-off-suns/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "SKbcFICgM8M",
-          "title": "NETS at HAWKS | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=SKbcFICgM8M",
-          "embedUrl": "https://www.youtube.com/embed/SKbcFICgM8M",
-          "publishedAt": "2026-03-13T02:50:40Z",
+          "videoId": "YYJKP1ziUHI",
+          "title": "SUNS at RAPTORS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=YYJKP1ziUHI",
+          "embedUrl": "https://www.youtube.com/embed/YYJKP1ziUHI",
+          "publishedAt": "2026-03-14T02:52:28Z",
           "matchScore": 135
         }
       ]
     },
     {
-      "id": "505007",
+      "id": "NBA_20260313_CLE@DAL",
       "teams": {
-        "away": "Bucks",
-        "home": "Heat"
+        "away": "Cleveland Cavaliers",
+        "home": "Dallas Mavericks"
       },
-      "headline": "Heat withstand Giannis’ 31 points to edge Bucks in Kaseya Center",
-      "score": "Bucks 105 - Heat 112",
-      "brief": "The Miami Heat used a disciplined team performance to overcome a 31-point night from Giannis Antetokounmpo. Milwaukee had a chance to tie the game in the final minute, but a missed three-pointer from Giannis allowed Miami to seal the victory with a clutch bucket on the ensuing possession. The Heat’s ability to control the glass and limit turnovers proved to be the difference in a tightly contested Eastern Conference battle.",
+      "headline": "Mobley dominates as Cavaliers steamroll Mavericks in Dallas",
+      "score": "Cavaliers 138 - Mavericks 105",
+      "brief": "Cleveland put on an offensive masterclass in Dallas, shooting over 60% from the field in a lopsided victory over the Mavericks. Evan Mobley set the tone early with a massive first half, and the Cavs never let up, eventually leading by as many as 35 points. Dallas had no answer for Cleveland's ball movement and perimeter shooting, as the Cavaliers won their seventh straight game against the Mavericks.",
       "bullets": [
-        "Giannis Antetokounmpo led all scorers with 31 points but missed a potential game-tying three late.",
-        "Kel'el Ware anchored the Heat interior with 13 rebounds and 6 points.",
-        "Kasparas Jakučionis provided a key offensive spark for Miami with 18 points.",
-        "Ryan Rollins had a standout performance for Milwaukee with 16 points and 10 assists."
+        "Evan Mobley matched his season high with 29 points in just 23 minutes of action.",
+        "Cleveland shot 61.5% from the floor and knocked down 18 three-pointers.",
+        "Rookie Cooper Flagg led the Mavericks with 25 points in the loss.",
+        "Donovan Mitchell added 24 points, including 12 in a 41-point third-quarter explosion for the Cavs."
       ],
-      "context": "Miami improves to 38-29, keeping pace in the competitive middle of the Eastern Conference playoff race.",
+      "context": "Cleveland earns its seventh consecutive win over Dallas as they maintain their hold on the No. 4 seed in the East.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://basketball.realgm.com/nba/boxscore/2026-03-12/Milwaukee-at-Miami/505007"
+        "recapUrl": "https://www.cbssports.com/nba/gametracker/recap/NBA_20260313_CLE@DAL/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "53m12k_SCjo",
-          "title": "BUCKS at HEAT | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=53m12k_SCjo",
-          "embedUrl": "https://www.youtube.com/embed/53m12k_SCjo",
-          "publishedAt": "2026-03-13T02:22:24Z",
+          "videoId": "M3YMX9pCwuM",
+          "title": "CAVALIERS at MAVERICKS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=M3YMX9pCwuM",
+          "embedUrl": "https://www.youtube.com/embed/M3YMX9pCwuM",
+          "publishedAt": "2026-03-14T02:12:50Z",
           "matchScore": 135
         }
       ]
     },
     {
-      "id": "20260312_DAL@MEM",
+      "id": "1253842-warriors-vs-timberwolves-live-score-nba",
       "teams": {
-        "away": "Mavericks",
-        "home": "Grizzlies"
+        "away": "Minnesota Timberwolves",
+        "home": "Golden State Warriors"
       },
-      "headline": "Middleton’s fourth-quarter takeover ends Mavericks’ losing streak",
-      "score": "Mavericks 120 - Grizzlies 112",
-      "brief": "Khris Middleton reminded everyone of his scoring pedigree, exploding for 22 points in the fourth quarter to single-handedly halt Dallas’ eight-game skid. The Mavericks dominated the paint and the boards against a severely depleted Memphis roster that had 11 players sidelined. Though the Grizzlies fought back to make it a two-point game heading into the fourth, they simply had no answer for Middleton’s late-game heroics.",
+      "headline": "Timberwolves stifle Warriors at Chase Center to end road trip on high note",
+      "score": "Timberwolves 127 - Warriors 117",
+      "brief": "Minnesota's defense proved too much for Golden State as the Timberwolves controlled the pace from the opening tip. Despite a late flurry of points from the Warriors, the Timberwolves' balanced scoring and dominance in the paint ensured the lead was never seriously threatened. The win provides Minnesota with much-needed momentum as they continue their pursuit of a top seed in the Western Conference.",
       "bullets": [
-        "Khris Middleton scored a season-high 35 points, including 8-of-10 from three-point range.",
-        "Daniel Gafford recorded a season-high 22 points and 14 rebounds.",
-        "The Mavericks outrebounded the Grizzlies 60-38, their highest total of the season.",
-        "Jaylen Wells led Memphis with 23 points in a game where the Grizzlies were missing 11 players."
+        "Minnesota led for the vast majority of the game, including an 11-point lead in the final minute.",
+        "Rudy Gobert anchored the defense and dominated the boards against a smaller Warriors lineup.",
+        "Golden State struggled with shooting consistency throughout the first three quarters.",
+        "The loss leaves the Warriors fighting to maintain their position in the Western Conference play-in race."
       ],
-      "context": "The win provides much-needed relief for a Dallas team that had been reeling during a nine-game road stretch.",
+      "context": "Minnesota stays in the hunt for a top-three seed, while Golden State's play-in position becomes more precarious.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.cbssports.com/nba/gametracker/recap/NBA_20260312_DAL@MEM/"
+        "recapUrl": "https://www.vavel.com/en-us/nba/2026/03/14/1253842-warriors-vs-timberwolves-live-score-nba.html"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "uaT_KRnSR9Q",
-          "title": "MAVERICKS at GRIZZLIES | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=uaT_KRnSR9Q",
-          "embedUrl": "https://www.youtube.com/embed/uaT_KRnSR9Q",
-          "publishedAt": "2026-03-13T02:35:52Z",
+          "videoId": "0H9cYDSoj6Y",
+          "title": "TIMBERWOLVES at WARRIORS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=0H9cYDSoj6Y",
+          "embedUrl": "https://www.youtube.com/embed/0H9cYDSoj6Y",
+          "publishedAt": "2026-03-14T04:53:52Z",
           "matchScore": 135
         }
       ]
     },
     {
-      "id": "20260312-DEN-SA",
+      "id": "505017",
       "teams": {
-        "away": "Nuggets",
-        "home": "Spurs"
+        "away": "Utah Jazz",
+        "home": "Portland Trail Blazers"
       },
-      "headline": "Nuggets erase 20-point deficit to stun Spurs in San Antonio",
-      "score": "Nuggets 136 - Spurs 131",
-      "brief": "In one of the most impressive comebacks of the season, the Denver Nuggets overcame a 20-point hole to beat the Spurs on the second night of a back-to-back. Nikola Jokic and Jamal Murray took turns dissecting the San Antonio defense in the second half, scoring a staggering 83 points after the break. The Spurs, playing without Victor Wembanyama, saw Stephon Castle post a historic triple-double, but it wasn't enough to stop the Denver juggernaut once it got rolling.",
+      "headline": "Sensabaugh's 31 points not enough as Blazers outlast Jazz",
+      "score": "Jazz 114 - Trail Blazers 124",
+      "brief": "Portland rode a balanced scoring effort and a strong second quarter to fend off a persistent Utah Jazz team. While Brice Sensabaugh caught fire for the Jazz, hitting six threes on his way to 31 points, the Trail Blazers' depth proved to be the difference maker. Portland's ability to capitalize on Jazz turnovers and convert at the free-throw line late allowed them to pull away in the fourth quarter.",
       "bullets": [
-        "Jamal Murray scored 39 points, including the go-ahead three-pointer late in the fourth.",
-        "Nikola Jokic dominated with a line of 31 points, 20 rebounds, and 12 assists.",
-        "Spurs rookie Stephon Castle became the youngest player with a 30/10/10 triple-double.",
-        "Denver shot 50% from the field despite a sluggish 20% start in the first quarter."
+        "Brice Sensabaugh led all scorers with 31 points on 12-of-19 shooting.",
+        "Portland outscored Utah 38-20 in a pivotal second quarter to take control of the game.",
+        "Jerami Grant and Scoot Henderson provided steady veteran leadership and scoring for the Blazers.",
+        "The Jazz committed 17 turnovers, which Portland turned into significant fast-break opportunities."
       ],
-      "context": "The victory secures a crucial tiebreaker for Denver in the Western Conference standings.",
+      "context": "Portland earns a much-needed win to stay in the mix for the final Western Conference play-in spot.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.denverstiffs.com/recap-the-denver-nuggets-defy-the-odds-and-mount-huge-comeback-against-san-antonio-spurs-to-win-136-131/"
+        "recapUrl": "https://basketball.realgm.com/nba/boxscore/2026-03-13/Utah-at-Portland/505017"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "BWMDP8vAVGs",
-          "title": "NUGGETS at SPURS | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=BWMDP8vAVGs",
-          "embedUrl": "https://www.youtube.com/embed/BWMDP8vAVGs",
-          "publishedAt": "2026-03-13T03:56:30Z",
+          "videoId": "0e8Hl4D5PPU",
+          "title": "JAZZ at TRAIL BLAZERS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=0e8Hl4D5PPU",
+          "embedUrl": "https://www.youtube.com/embed/0e8Hl4D5PPU",
+          "publishedAt": "2026-03-14T04:46:22Z",
           "matchScore": 135
         }
       ]
     },
     {
-      "id": "401803310_BOS@OKC",
+      "id": "NBA_20260313_CHI@LAC",
       "teams": {
-        "away": "Celtics",
-        "home": "Thunder"
+        "away": "Chicago Bulls",
+        "home": "LA Clippers"
       },
-      "headline": "Gilgeous-Alexander breaks Wilt Chamberlain's record in Thunder win",
-      "score": "Celtics 102 - Thunder 104",
-      "brief": "Shai Gilgeous-Alexander etched his name into the history books, surpassing Wilt Chamberlain for the most consecutive games with 20+ points. Fittingly, his record-breaking night came in a heavyweight clash between the league's top two teams. In a game that came down to the final second, Chet Holmgren sank two clutch free throws with less than a second remaining to secure the Thunder's seventh straight win and spoil a valiant effort from the Jayson Tatum-less Celtics.",
+      "headline": "Leonard ties franchise scoring record as Clippers down Bulls",
+      "score": "Bulls 108 - Clippers 119",
+      "brief": "Kawhi Leonard etched his name further into the Clippers' history books, matching Bob McAdoo's record for consecutive 20-point games in a solid win over Chicago. The Clippers overcame the absence of Darius Garland by leaning on their depth, with Bennedict Mathurin providing a massive spark off the bench. Chicago fought hard behind a triple-double from Josh Giddey, but the Clippers' late-game execution at the Intuit Dome proved to be the decider.",
       "bullets": [
-        "Gilgeous-Alexander scored 35 points, marking his 127th straight game with at least 20.",
-        "Chet Holmgren broke the tie with two free throws with 0.9 seconds left on the clock.",
-        "Jaylen Brown led the Celtics with 34 points in the absence of Jayson Tatum.",
-        "The Thunder have won every game since Gilgeous-Alexander returned from injury."
+        "Kawhi Leonard scored 28 points, marking his 44th straight game with at least 20 points.",
+        "Josh Giddey recorded his 11th triple-double of the season with 20 points, 11 rebounds, and 10 assists.",
+        "Bennedict Mathurin led the second unit with 26 points on 10-of-19 shooting.",
+        "The Clippers have won seven of their last eight games and moved to two games over .500."
       ],
-      "context": "The victory cements Oklahoma City’s status as the team to beat with the NBA's best record.",
+      "context": "The Clippers strengthen their grip on the 8th seed in the West, while the Bulls continue to slide after their West Coast road trip.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://lasvegassun.com/news/2026/mar/12/gilgeous-alexander-breaks-wilt-chamberlains-20-poi/"
+        "recapUrl": "https://www.cbssports.com/nba/gametracker/recap/NBA_20260313_CHI@LAC/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "6xBbal6mn1Q",
-          "title": "CELTICS at THUNDER | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=6xBbal6mn1Q",
-          "embedUrl": "https://www.youtube.com/embed/6xBbal6mn1Q",
-          "publishedAt": "2026-03-13T04:29:24Z",
-          "matchScore": 135
-        }
-      ]
-    },
-    {
-      "id": "q71917",
-      "teams": {
-        "away": "Bulls",
-        "home": "Lakers"
-      },
-      "headline": "Luka Doncic hits 51 points as Lakers cruise past Bulls in James’ return",
-      "score": "Bulls 130 - Lakers 142",
-      "brief": "Luka Doncic put on a show for the ages in Los Angeles, exploding for 51 points to power the Lakers past Chicago. The night also marked the return of LeBron James, who shook off a slow start to provide a veteran spark in the third quarter. While the Bulls found success from beyond the arc to keep things interesting, they had no answer for Doncic’s relentless scoring as he recorded his first 50-point game in a Lakers uniform.",
-      "bullets": [
-        "Luka Doncic finished with 51 points, 10 rebounds, and 9 assists.",
-        "LeBron James scored 18 points in his first game back after a three-game injury absence.",
-        "Austin Reaves contributed 30 points as the Lakers won their fourth straight.",
-        "Josh Giddey led the Bulls with 27 points, including six three-pointers."
-      ],
-      "context": "The Lakers move into third place in the Western Conference standings with the victory.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.newsday.com/sports/basketball/bulls-lakers-score-doncic-q71917"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "eOY6tOUQiaA",
-          "title": "BULLS at LAKERS | FULL GAME HIGHLIGHTS | March 12, 2026",
-          "url": "https://www.youtube.com/watch?v=eOY6tOUQiaA",
-          "embedUrl": "https://www.youtube.com/embed/eOY6tOUQiaA",
-          "publishedAt": "2026-03-13T05:38:59Z",
+          "videoId": "T8RusE6Ajm4",
+          "title": "BULLS at CLIPPERS | FULL GAME HIGHLIGHTS | March 13, 2026",
+          "url": "https://www.youtube.com/watch?v=T8RusE6Ajm4",
+          "embedUrl": "https://www.youtube.com/embed/T8RusE6Ajm4",
+          "publishedAt": "2026-03-14T05:05:59Z",
           "matchScore": 135
         }
       ]
