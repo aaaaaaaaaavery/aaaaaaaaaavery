@@ -2,27 +2,27 @@
   "leagueName": "NCAA Softball",
   "leagueKey": "ncaasoftball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "It was a wild Friday across the diamond as the SEC and Big Ten kicked off conference play with several statements. No. 1 Tennessee survived a marathon pitchers' duel in Starkville, while No. 12 Arizona made history with their ninth straight run-rule victory. Meanwhile, powerhouses like Oklahoma and UCLA showcased their offensive depth, proving that the road to Oklahoma City still runs through the usual suspects.",
+  "leagueBriefing": "Saturday was a day of high-stakes drama and massive upsets in college softball. No. 12 Mississippi State stunned the nation by handing No. 1 Tennessee its first loss of the season on a dramatic walk-off home run. Meanwhile, No. 2 Texas Tech flexed its muscle with a doubleheader sweep of No. 12 Arizona, and No. 9 Arkansas showed its resilience by toppling No. 6 Alabama in a high-scoring thriller to end the Crimson Tide's perfect start. From dominant run-rules to extra-inning battles, the SEC and ACC powerhouses are proving that no ranking is safe as conference play heats up.",
   "games": [
     {
-      "id": "20260313-tennessee-mississippistate",
+      "id": "401803273",
       "teams": {
         "away": "Tennessee",
         "home": "Mississippi State"
       },
-      "headline": "No. 1 Tennessee outlasts Bulldogs in extra-inning pitcher's duel",
-      "score": "Tennessee 3 - Mississippi State 1",
-      "brief": "In a game where hits were nearly impossible to come by, the top-ranked Lady Vols finally broke through in the ninth inning. Makenzie Butt provided the heroics with a three-run blast that shattered a scoreless tie and secured a gritty road win to open SEC play.",
+      "headline": "Troutman's walk-off blast hands No. 1 Tennessee first loss",
+      "score": "Tennessee 0 - Mississippi State 1",
+      "brief": "In a classic pitcher's duel that lived up to the hype, Taylor Troutman provided the game's only run with a lead-off, walk-off home run in the bottom of the seventh. The loss was the first of the season for the top-ranked Lady Vols, who were silenced by a masterful performance in the circle from Peja Goold.",
       "bullets": [
-        "Makenzie Butt's three-run homer in the top of the 9th was the first scoring play of the game.",
-        "Mississippi State's Alyssa Faircloth threw a career-high 9.0 innings with 9 strikeouts in a losing effort.",
-        "Both teams were held hitless until the fourth inning.",
-        "Tennessee pitcher Sage Mardjetko earned the win to improve to 6-0 on the season."
+        "Peja Goold struck out 10 batters while allowing only two hits in a complete-game shutout.",
+        "Taylor Troutman's walk-off homer was her only hit of the day after striking out in her first two appearances.",
+        "Mississippi State has now defeated a No. 1 ranked team in back-to-back seasons at home.",
+        "A record crowd in Starkville witnessed the Bulldogs' fourth-ever win over a top-ranked opponent."
       ],
-      "context": "Tennessee remains undefeated at 26-0, extending the best start in program history.",
+      "context": "The loss ends Tennessee's perfect 26-0 start and marks a significant early-season statement for the Bulldogs in SEC play.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://hailstate.com/news/2026/3/13/softball-state-falls-in-extra-innings-pitchers-duel-to-open-sec-play-against-no-1-tennessee"
+        "recapUrl": "https://hailstate.com/news/2026/3/14/softball-record-crowd-witnesses-troutmans-walk-off-winner-against-no-1-tennessee"
       },
       "highlights": [
         {
@@ -35,24 +35,24 @@
       ]
     },
     {
-      "id": "20260313-arizona-texastech",
+      "id": "20260314-arizona-texastech-doubleheader",
       "teams": {
         "away": "Arizona",
         "home": "Texas Tech"
       },
-      "headline": "Arizona sets program record with ninth consecutive run-rule win",
-      "score": "Arizona 9 - Texas Tech 0",
-      "brief": "The Wildcats continued their absolute tear, dismantling No. 2 Texas Tech in just five innings. Grace Jenkins was the catalyst, driving in seven runs on two homers to help Arizona set a new school record for consecutive run-rule victories.",
+      "headline": "Texas Tech pummels Arizona in emphatic doubleheader sweep",
+      "score": "Arizona 6 - Texas Tech 14",
+      "brief": "No. 2 Texas Tech bounced back from a Friday night loss by dismantling No. 12 Arizona in two straight run-rule victories. The Red Raiders' offense exploded for 22 runs on the day, highlighted by a power surge from Kaitlyn Terry and a milestone hit for Mihyia Davis.",
       "bullets": [
-        "Grace Jenkins finished 2-for-3 with a three-run homer and a grand slam for 7 total RBIs.",
-        "Jalen Adams threw a complete-game shutout, holding the Red Raiders to just four hits.",
-        "Arizona has now run-ruled nine straight opponents, a new program milestone.",
-        "The loss was only the second of the season for Texas Tech."
+        "Kaitlyn Terry smashed three home runs across the two games, including two in the opener.",
+        "Mihyia Davis recorded her 300th career hit, becoming the only active player in the country to reach that mark.",
+        "NiJaree Canady threw a two-hit shutout in the second game to secure the series win.",
+        "The 14-6 and 8-0 victories extended Coach Gerry Glasco's streak to 60 consecutive conference series wins."
       ],
-      "context": "The win solidifies Arizona as a top national contender as they enter the heart of their schedule.",
+      "context": "Texas Tech solidifies its status as a national title contender by outclassing a top-15 opponent in Lubbock.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://arizonawildcats.com/news/2026/3/13/softball-no-12-arizona-run-rules-no-2-texas-tech-to-open-series.aspx"
+        "recapUrl": "https://texastech.com/news/2026/3/14/softball-no-2-red-raiders-sweep-doubleheader-against-no-12-13-arizona"
       },
       "highlights": [
         {
@@ -65,24 +65,24 @@
       ]
     },
     {
-      "id": "20260313-olemiss-texas",
+      "id": "20260314-olemiss-texas",
       "teams": {
         "away": "Ole Miss",
         "home": "Texas"
       },
-      "headline": "Kavan's double-digit strikeouts power Longhorns to 22nd straight win",
-      "score": "Ole Miss 1 - Texas 3",
-      "brief": "Teagan Kavan was nearly untouchable in Austin, matching her season high with 12 strikeouts to lead Texas past Ole Miss. The Longhorns' early offensive pressure proved to be enough to maintain their dominant winning streak.",
+      "headline": "Texas nears program record with dominant run-rule of Rebels",
+      "score": "Ole Miss 2 - Texas 11",
+      "brief": "No. 3 Texas extended its winning streak to 23 games with a powerful display on Alumni Day. The Longhorns' lineup connected for three home runs, ending the game in six innings and moving within one win of the program record for consecutive victories.",
       "bullets": [
-        "Teagan Kavan allowed only four hits in her seventh complete game of the year.",
-        "Kayden Henry led the offense, going 2-for-3 with two RBIs and two stolen bases.",
-        "Texas has won 22 consecutive games, the second-longest streak in program history.",
-        "Ole Miss's lone run came via a Mackenzie Pickens solo home run in the sixth."
+        "Reese Atwood went 3-for-4 with her 10th home run of the season.",
+        "Freshman Hannah Wells delivered the walk-off three-run homer in the sixth inning.",
+        "Texas outhit Ole Miss 14-6 and has now secured 13 run-rule victories this season.",
+        "The Longhorns are now 13-0 at home and 5-0 in SEC conference play."
       ],
-      "context": "Texas is now 12-0 at home this season and moves to 4-0 in SEC play.",
+      "context": "The win puts Texas on the brink of history as they look to tie the 2006 team's 24-game win streak.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://texaslonghorns.com/news/2026/3/13/kavans-12-strikeout-gem-guides-no-3-softball past-ole-miss-in-series-opener"
+        "recapUrl": "https://www.secsports.com/news/2026/03/no-3-texas-shows-out-for-alumni-day-vs-ole-miss"
       },
       "highlights": [
         {
@@ -95,84 +95,24 @@
       ]
     },
     {
-      "id": "20260313-auburn-oklahoma",
-      "teams": {
-        "away": "Auburn",
-        "home": "Oklahoma"
-      },
-      "headline": "Sooners survive early Auburn blast to take slugfest at Love's Field",
-      "score": "Auburn 5 - Oklahoma 13",
-      "brief": "Despite an early three-run deficit, Oklahoma's offense proved too potent for Auburn to handle. The Sooners responded with a barrage of their own, eventually ending the game via run-rule in the sixth inning to secure their first SEC win of the year.",
-      "bullets": [
-        "The two teams combined for seven home runs in a high-scoring affair.",
-        "Auburn freshman Haven Roebuck went 3-for-3 with two home runs and four RBIs.",
-        "Oklahoma clinched the game in the bottom of the sixth with an Allyssa Parker sacrifice fly.",
-        "Gabbie Garcia had a monster day for the Sooners, going 4-for-4 with two homers."
-      ],
-      "context": "Oklahoma improves to 26-2 and successfully opens their SEC era with a victory.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://auburntigers.com/news/2026/03/13/no-24-auburn-softball-drops-series-opener-at-no-6-oklahoma"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260313-michigan-nebraska",
-      "teams": {
-        "away": "Michigan",
-        "home": "Nebraska"
-      },
-      "headline": "Jensen does it all as Nebraska tops Michigan in Big Ten opener",
-      "score": "Michigan 2 - Nebraska 5",
-      "brief": "Alexis Jensen put on a clinic in Lincoln, dominating both in the circle and at the plate. Her two-run homer in the second inning gave the Huskers an early cushion they wouldn't relinquish, marking a perfect start to their conference campaign.",
-      "bullets": [
-        "Alexis Jensen earned the win with 6.0 innings of work and 8 strikeouts while also driving in 3 runs.",
-        "Jordy Frahm recorded her sixth save of the season, moving within one of the program record.",
-        "Michigan loaded the bases with no outs in the second but failed to score.",
-        "The Huskers improved to 19-5 overall with the victory."
-      ],
-      "context": "Nebraska moves to 1-0 in Big Ten play, taking a crucial early-season series opener.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://huskers.com/news/2026/03/13/strong-start-propels-huskers-past-wolverines-in-big-ten-opener"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260313-arkansas-alabama",
+      "id": "20260314-arkansas-alabama",
       "teams": {
         "away": "Arkansas",
         "home": "Alabama"
       },
-      "headline": "Briski's 14 strikeouts keep Alabama's perfect season alive",
-      "score": "Arkansas 1 - Alabama 4",
-      "brief": "Jocelyn Briski was the story in Tuscaloosa, tying her career high with 14 strikeouts to shut down a potent Arkansas lineup. Alexis Pupillo's bases-clearing double in the fifth provided the offensive spark needed to keep the Tide's unblemished record intact.",
+      "headline": "Arkansas erupts late to end Alabama's perfect season",
+      "score": "Arkansas 14 - Alabama 9",
+      "brief": "In a wild back-and-forth slugfest, No. 9 Arkansas used a massive six-run seventh inning to deal No. 6 Alabama its first loss of the year. Dakota Kennedy led the charge for the Razorbacks, racking up seven RBIs to quiet the crowd in Tuscaloosa.",
       "bullets": [
-        "Jocelyn Briski threw a complete game, allowing only one run against a top-10 opponent.",
-        "Alexis Pupillo's three-run double in the bottom of the fifth was the turning point.",
-        "Alabama improved to 25-0, matching the fourth-best start in program history.",
-        "Arkansas led 1-0 briefly after a sacrifice fly in the top of the fifth."
+        "Dakota Kennedy fueled the offense with two home runs, including a decisive grand slam in the seventh.",
+        "Alabama lost for the first time in 26 games after surrendering 14 runs on 12 hits.",
+        "The teams combined for seven home runs in a game that saw three lead changes.",
+        "Arkansas evened the series, setting up a winner-take-all 'Championship Sunday' matchup."
       ],
-      "context": "Alabama's 25-0 start is just one win shy of their best-ever start from the 2012 season.",
+      "context": "Alabama's loss leaves the national landscape with one fewer undefeated team and tightens the race in the SEC.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://rolltide.com/news/2026/3/13/softball-clutch-hitting-lockdown-pitching-guides-alabama-to-4-1-win-friday-over-arkansas"
+        "recapUrl": "https://rolltide.com/news/2026/3/14/softball-alabama-takes-first-loss-of-the-season-to-even-the-weekend-series vs-arkansas"
       },
       "highlights": [
         {
@@ -185,24 +125,24 @@
       ]
     },
     {
-      "id": "20260313-michiganstate-ucla",
+      "id": "20260314-auburn-oklahoma",
       "teams": {
-        "away": "Michigan State",
-        "home": "UCLA"
+        "away": "Auburn",
+        "home": "Oklahoma"
       },
-      "headline": "Grant makes history as Bruins crush Spartans in Los Angeles",
-      "score": "Michigan State 0 - UCLA 10",
-      "brief": "The Bruins used a historic performance from Megan Grant to run-rule Michigan State in five innings. Grant became the fastest player in UCLA history to reach 20 home runs in a season, helping the team extend their winning streak to 18 games.",
+      "headline": "Sooners rally late to fend off Auburn upset bid",
+      "score": "Auburn 5 - Oklahoma 8",
+      "brief": "No. 4 Oklahoma showed why they are the standard-bearers of the sport, overcoming an early four-run deficit to defeat Auburn. After falling behind 5-1, the Sooners rattled off seven unanswered runs to secure their second SEC win of the weekend.",
       "bullets": [
-        "Megan Grant hit her 20th home run of the season in just her 26th game.",
-        "Taylor Tinsley tossed a three-hit, complete-game shutout to earn her 13th win.",
-        "UCLA has now homered in 18 consecutive contests.",
-        "The Bruins scored four runs in the opening frame to set the tone early."
+        "Oklahoma's Allyssa Parker provided three crucial innings of shutout relief to stabilize the game.",
+        "The Sooners' offense exploded for 11 hits to overcome the early Tigers' lead.",
+        "Auburn remains winless against ranked SEC opponents this season after the collapse.",
+        "The victory moves Oklahoma to 27-2 overall and remains perfect in the new conference."
       ],
-      "context": "UCLA's win streak hits 18 games as they continue to look like the most dangerous team in the Big Ten.",
+      "context": "The comeback win reinforces Oklahoma's resilience as they navigate their inaugural SEC schedule.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://uclabruins.com/news/2026/3/13/softball-no-7-ucla-blanks-michigan-state-10-0-behind-four-homers"
+        "recapUrl": "https://soonersports.com/news/2026/3/14/no-4-softball-rallies-past-auburn-8-5"
       },
       "highlights": [
         {
@@ -215,24 +155,54 @@
       ]
     },
     {
-      "id": "20260313-florida-kentucky",
+      "id": "20260314-michigan-nebraska",
+      "teams": {
+        "away": "Michigan",
+        "home": "Nebraska"
+      },
+      "headline": "Huskers sweep Michigan to open Big Ten play in style",
+      "score": "Michigan 2 - Nebraska 5",
+      "brief": "Nebraska made a statement in its Big Ten opener, sweeping a doubleheader from Michigan in front of one of the largest crowds in school history. Katelyn Caneda provided the fireworks with home runs in both games, helping the Huskers move to a perfect 3-0 in conference play.",
+      "bullets": [
+        "Katelyn Caneda's two-run shot in the sixth inning of game two provided the final cushion.",
+        "The crowd of 2,637 was the fifth-largest in Nebraska softball history.",
+        "Hannah Camenzind moved to 5-0 on the season with four scoreless innings in the start.",
+        "Nebraska's 21-5 start is the program's best through 26 games since 2011."
+      ],
+      "context": "The sweep establishes Nebraska as the early team to beat in the Big Ten race.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://huskers.com/news/2026/03/14/huskers-sweep-michigan-in-big-ten-opening-series"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-florida-kentucky",
       "teams": {
         "away": "Florida",
         "home": "Kentucky"
       },
-      "headline": "Gators explode for seven runs in the sixth to bury Kentucky",
-      "score": "Florida 10 - Kentucky 2",
-      "brief": "What was a tight 3-1 game quickly turned into a rout as Florida's bats woke up in the final frame. The Gators' seven-run explosion in the sixth inning ended the game early and secured a statement win on the road in Lexington.",
+      "headline": "Gators' power display overwhelms Kentucky in run-rule win",
+      "score": "Florida 9 - Kentucky 0",
+      "brief": "No. 8 Florida continued its dominant stretch, shutting out Kentucky in a five-inning mercy rule victory. The Gators' pitching staff combined for a two-hit shutout while the offense utilized home runs from Erickson and McLellan to keep the scoreboard moving.",
       "bullets": [
-        "Jocelyn Erickson hit her 14th home run of the year, a three-run shot during the sixth-inning rally.",
-        "Florida improves to 27-1 on the season and 4-0 in SEC play.",
-        "Cassidy McLellon opened the scoring with a two-run homer in the second inning.",
-        "Kentucky's Carly Sleeman hit a solo home run to briefly make it a 3-1 game."
+        "Jocelyn Erickson and Cassidy McLellan both homered for the Gators.",
+        "Florida improved its record to a staggering 28-1 on the season.",
+        "Kentucky's offense was held to just two hits in five innings by the Florida staff.",
+        "The Gators scored in four of the five innings played to end the game early."
       ],
-      "context": "Florida continues to dominate the SEC standings, remaining nearly perfect on the season.",
+      "context": "Florida remains one of the most consistent teams in the country, maintaining a nearly perfect record deep into the season.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://ukathletics.com/news/2026/03/13/seven-run-sixth-wins-game-one-for-no-5-gators-over-kentucky/"
+        "recapUrl": "https://www.secsports.com/boxscore/30734"
       },
       "highlights": [
         {
@@ -245,24 +215,24 @@
       ]
     },
     {
-      "id": "20260313-oklahomastate-arizonastate",
+      "id": "20260314-syracuse-fsu",
       "teams": {
-        "away": "Oklahoma State",
-        "home": "Arizona State"
+        "away": "Syracuse",
+        "home": "Florida State"
       },
-      "headline": "Kaylee Pond walks it off as Sun Devils stun Cowgirls in extras",
-      "score": "Oklahoma State 2 - Arizona State 3",
-      "brief": "Arizona State pulled off the upset of the night, taking down Oklahoma State thanks to a dramatic walk-off home run from Kaylee Pond in the eighth. In a battle of long balls, the Sun Devils found the final answer to secure the extra-inning victory.",
+      "headline": "Florida State cruises past Syracuse with massive fourth inning",
+      "score": "Syracuse 1 - Florida State 13",
+      "brief": "No. 10 Florida State used a seven-run explosion in the fourth inning to bury Syracuse in an ACC clash. The Seminoles' power was on full display with a grand slam that broke the game open and secured a comfortable run-rule victory in five innings.",
       "bullets": [
-        "Kaylee Pond hit a solo walk-off home run in the bottom of the 8th inning.",
-        "Arizona State's Brooklyn Ulrich tied the game with a two-run homer in the 5th.",
-        "Rosie Davis provided all the Cowgirls' offense with a two-run blast in the top of the 5th.",
-        "Both teams combined for only eight hits in the defensive struggle."
+        "The Seminoles scored seven runs in the bottom of the fourth to put the game out of reach.",
+        "A late grand slam was the highlight of Florida State's 10-hit performance.",
+        "Syracuse has now lost 31 of its last 35 meetings against the Seminoles.",
+        "Florida State improved to 24-4 overall and stayed perfect in the series."
       ],
-      "context": "A significant non-conference upset for the Sun Devils as they move to 21-6 on the season.",
+      "context": "The win confirms Florida State's status as a dominant force in the ACC as conference play begins.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://okstate.com/boxscore.aspx?id=17275"
+        "recapUrl": "https://cuse.com/news/2026/3/13/softball-orange-fall-to-no-10-florida-state-in-acc-opener"
       },
       "highlights": [
         {
@@ -275,24 +245,84 @@
       ]
     },
     {
-      "id": "20260313-georgiatech-virginia",
+      "id": "20260314-vt-duke",
+      "teams": {
+        "away": "Virginia Tech",
+        "home": "Duke"
+      },
+      "headline": "Duke jumps on Hokies early to even top-25 series",
+      "score": "Virginia Tech 2 - Duke 5",
+      "brief": "No. 25 Duke used an aggressive first inning to knock off No. 11 Virginia Tech and even their high-profile ACC series. The Blue Devils jumped out to a 4-0 lead before the Hokies could record an out, setting the tone for a defensive battle the rest of the way.",
+      "bullets": [
+        "Duke tallied four hits and drew two walks in a decisive four-run first inning.",
+        "Virginia Tech's offense was held to just two runs despite entering the game 22-3.",
+        "The Blue Devils' pitching staff settled in to protect the early lead for the duration of the game.",
+        "The series will now be decided in Sunday's rubber match."
+      ],
+      "context": "Duke's win provides a much-needed boost to their RPI and conference standing by taking down a top-15 rival.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://hokiesports.com/news/2026/03/14/virginia-tech-softball-no-11-hokies-fall-to-no-25-duke-5-2"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-tam-lsu",
+      "teams": {
+        "away": "Texas A&M",
+        "home": "LSU"
+      },
+      "headline": "Mya Perez powers Aggies past LSU in SEC opener",
+      "score": "Texas A&M 7 - LSU 2",
+      "brief": "No. 16 Texas A&M snapped a five-game losing streak in Baton Rouge with a convincing win over No. 17 LSU. Mya Perez led the way with a home run and three RBIs, while the Aggie pitching staff slammed the door on a late Tiger rally to secure the series-opening victory.",
+      "bullets": [
+        "Mya Perez went 3-for-3 with her team-leading 11th home run of the season.",
+        "Aggie pitchers held LSU to just four hits and two runs in front of a hostile road crowd.",
+        "Sidne Peters earned her first career save by striking out the final batter with the bases loaded.",
+        "Texas A&M has now homered in 11 consecutive games."
+      ],
+      "context": "The road win gives Texas A&M an early edge in the SEC standings and breaks a significant losing streak at Tiger Park.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://12thman.com/news/2026/3/14/softball-no-16-aggies-take-sec-opener-at-no-17-lsu-7-2"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-gt-uva",
       "teams": {
         "away": "Georgia Tech",
         "home": "Virginia"
       },
-      "headline": "Early runs hold up for Virginia in defensive battle with Georgia Tech",
-      "score": "Georgia Tech 1 - Virginia 2",
-      "brief": "The Cavaliers utilized aggressive early baserunning and shutdown relief pitching to edge out Georgia Tech in their ACC opener. Despite a late push from the Yellow Jackets, Virginia's defense remained composed to secure the series-opening win.",
+      "headline": "Yellow Jackets outlast Virginia in 10-inning marathon",
+      "score": "Georgia Tech 7 - Virginia 5",
+      "brief": "In a grueling 10-inning affair, Georgia Tech out-executed No. 18 Virginia to even the series. After multiple lead changes and missed opportunities for both teams, the Yellow Jackets finally broke through in the tenth, capitalizing on a bases-loaded single and a defensive miscue to secure the win.",
       "bullets": [
-        "Julia Cuozzo earned her fourth win, striking out five over 4.0 innings of work.",
-        "Courtney Layne picked up her third save of the season with 3.0 scoreless relief innings.",
-        "Virginia scored their second run on a costly Georgia Tech throwing error in the second.",
-        "Kassidy Hudson robbed a potential Georgia Tech home run in the sixth but the ball dropped for a triple."
+        "The game was Virginia's third extra-inning contest in their last five games.",
+        "Virginia hit back-to-back home runs in the second inning to briefly take the lead.",
+        "Georgia Tech's Kenley Hilleary earned the win in relief, pitching 6.2 strong innings.",
+        "Both teams totaled 14 hits in a game that lasted nearly four hours."
       ],
-      "context": "Virginia improves to 24-2 and continues their strong start to ACC play.",
+      "context": "The loss is a setback for Virginia in the ACC race and forced a series-deciding game on Sunday.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://virginiasports.com/news/2026/03/14/no-14-virginia-grabs-series-opener-with-georgia-tech"
+        "recapUrl": "https://virginiasports.com/news/2026/03/14/virginia-drops-10-inning-game-with-georgia-tech-saturday"
       },
       "highlights": [
         {
@@ -305,24 +335,24 @@
       ]
     },
     {
-      "id": "20260313-notredame-stanford",
+      "id": "20260314-notredame-stanford",
       "teams": {
         "away": "Notre Dame",
         "home": "Stanford"
       },
-      "headline": "Emily Jones leads Stanford comeback over Irish in Palo Alto",
-      "score": "Notre Dame 2 - Stanford 7",
-      "brief": "After falling behind early to a Notre Dame home run, the Cardinal responded with seven unanswered runs to pull away. Emily Jones's perfect night at the plate provided the sparks for a resilient Stanford squad that is finding its rhythm in ACC play.",
+      "headline": "Notre Dame upsets Stanford behind Levitt's big day",
+      "score": "Notre Dame 8 - Stanford 4",
+      "brief": "Notre Dame pulled off a major ACC upset, knocking off No. 20 Stanford on the road. Olivia Levitt's three-RBI performance, including a home run, provided the offensive spark the Irish needed to overcome an early Cardinal lead and secure their first conference victory.",
       "bullets": [
-        "Emily Jones went 3-for-3 with three RBIs to lead the Cardinal offense.",
-        "Anna Brewer earned the win in relief, shutting down the Irish after an early deficit.",
-        "Notre Dame's Ava Zachary hit a two-run home run in the first inning to take an early lead.",
-        "Zoe Prystajko earned her third save of the season to close out the game."
+        "Olivia Levitt went 2-for-3 with a home run and 3 RBIs for the Irish.",
+        "Kami Kamzik earned the win in a relief role, steadying the Irish after a shaky start.",
+        "Stanford fell to 15-7 overall and 5-3 in the ACC after the home loss.",
+        "Notre Dame improved to 11-16, successfully bouncing back from a tough start to the season."
       ],
-      "context": "Stanford moves to 5-2 in the ACC, while Notre Dame remains winless in conference play.",
+      "context": "The win is a major resume-builder for Notre Dame as they look to climb back into the ACC contention.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.on3.com/sites/cardinal-sports-report/news/recap-no-19-stanford-softball-cruises-past-notre-dame-on-friday"
+        "recapUrl": "https://www.on3.com/sites/cardinal-sports-report/news/recap-no-19-stanford-softball-falls-to-notre-dame-on-saturday/"
       },
       "highlights": [
         {
@@ -335,24 +365,24 @@
       ]
     },
     {
-      "id": "20260313-maryland-washington",
+      "id": "20260314-maryland-washington",
       "teams": {
         "away": "Maryland",
         "home": "Washington"
       },
-      "headline": "Huskies remain perfect at home with run-rule victory over Terps",
-      "score": "Maryland 2 - Washington 12",
-      "brief": "Washington made quick work of Maryland, using a high-powered offense to secure a walk-off run-rule win in the fifth. The Huskies' ability to capitalize on scoring opportunities early prevented the Terps from ever mounting a serious threat in Seattle.",
+      "headline": "Huskies edge Terps in tense 1-0 pitcher's duel",
+      "score": "Maryland 0 - Washington 1",
+      "brief": "In a game where every pitch mattered, No. 21 Washington rode a singular sac fly to a 1-0 victory over Maryland. The Huskies' defense was the star of the show, making several spectacular plays behind pitcher Morgan Reimer to preserve the shutout and extend their winning streak.",
       "bullets": [
-        "Washington recorded its 12th walk-off win of the season.",
-        "Mariah Penta homered for Maryland, her third of the year and second in as many games.",
-        "The Huskies scored four runs in the second and six more across the final frames to pull away.",
-        "Sammi Woods led Maryland with her team-leading 34th hit of the season."
+        "Washington has now won 10 consecutive games, though this was their lowest scoring output in that span.",
+        "Morgan Reimer threw a complete-game shutout, allowing only three hits.",
+        "The game's only run came on a fifth-inning sacrifice fly after the bases were loaded.",
+        "Maryland's Caitlin Olensky took the loss despite throwing four scoreless innings to start the game."
       ],
-      "context": "Washington stays unbeaten at home and moves to 20-6 on the season.",
+      "context": "Washington continues its hot streak, finding ways to win even when the bats aren't booming.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://umterps.com/news/2026/3/13/softball-washington-game-1.aspx"
+        "recapUrl": "https://wmucsports.net/maryland-softball-drops-first-two-games-of-west-coast-trip-to-washington/"
       },
       "highlights": [
         {
@@ -365,84 +395,114 @@
       ]
     },
     {
-      "id": "20260313-baylor-ucf",
-      "teams": {
-        "away": "Baylor",
-        "home": "UCF"
-      },
-      "headline": "Knights hold off Baylor rally to take Big 12 series opener",
-      "score": "Baylor 3 - UCF 4",
-      "brief": "In a nail-biting finish, No. 22 UCF held onto a narrow lead to defeat Baylor in Orlando. A late two-run homer from Baylor's Kaygen Marshall brought the Bears within one, but Isabella Vega slammed the door in the seventh to secure the win for the Knights.",
-      "bullets": [
-        "UCF's Isabella Vega earned her eighth win of the season with a complete-game performance.",
-        "Baylor freshman Kaygen Marshall hit her fifth home run of the season, a two-run shot in the sixth.",
-        "UCF took the lead for good with a three-run fifth inning highlighted by Beth Damon's two-run single.",
-        "Karynton Dawson hit her third triple of the season for Baylor."
-      ],
-      "context": "A pivotal Big 12 matchup that sees UCF improve their conference standing early in the season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://baylorbears.com/news/2026/3/13/softball-sb-drops-series-opener-at-ucf"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260313-grandcanyon-newmexico",
-      "teams": {
-        "away": "Grand Canyon",
-        "home": "New Mexico"
-      },
-      "headline": "Lopes use five-run fourth to pull away from Lobos",
-      "score": "Grand Canyon 7 - New Mexico 2",
-      "brief": "Grand Canyon maintained their perfect season by overcoming an early New Mexico home run. A massive five-run outburst in the fourth inning, aided by walks and errors, gave the Lopes all the cushion they needed to secure their 28th consecutive victory.",
-      "bullets": [
-        "GCU's win streak extends to 28-0 to start the season.",
-        "New Mexico's McKenzie hit her ninth home run of the year to briefly take a 2-1 lead.",
-        "The Lobos left the bases loaded in both the sixth and seventh innings.",
-        "Arianna Capek provided 3.1 innings of scoreless relief for New Mexico in the loss."
-      ],
-      "context": "Grand Canyon continues to be one of the few remaining undefeated teams in the country.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://golobos.com/news/2026/03/13/mckenzie-homers-in-loss-to-lopes-friday"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260313-bostoncollege-southcarolina",
+      "id": "20260314-bc-southcarolina",
       "teams": {
         "away": "Boston College",
         "home": "South Carolina"
       },
-      "headline": "Four-homer night powers Gamecocks to run-rule win over BC",
-      "score": "Boston College 2 - South Carolina 10",
-      "brief": "South Carolina put on an offensive clinic at home, using four home runs to dismantle Boston College in six innings. The Gamecocks' power display was too much for the Eagles to handle in the series opener, keeping the home crowd in Columbia happy.",
+      "headline": "Mackay's second walk-off in two days leads Gamecocks' rout",
+      "score": "Boston College 1 - South Carolina 9",
+      "brief": "For the second straight day, Jamie Mackay ended the game with a home run. No. 24 South Carolina dominated Boston College from the first inning, using a balanced attack and Mackay's late blast to secure a five-inning run-rule victory and improve to 18-10.",
       "bullets": [
-        "South Carolina hit four home runs in the victory.",
-        "The game was ended via run-rule in the bottom of the sixth inning.",
-        "The win moves the 24th-ranked Gamecocks to 17-10 on the season.",
-        "Boston College falls to 9-16 overall after the series-opening loss."
+        "Jamie Mackay hit her second walk-off home run in as many days to end the contest.",
+        "Tori Ensley led the early charge with a two-run triple in the first inning.",
+        "Jori Heard earned the win, allowing only one run across four innings of work.",
+        "The Gamecocks jumped on the Eagles early with a three-run first and never looked back."
       ],
-      "context": "South Carolina continues to show its power potential as they move deeper into the SEC schedule.",
+      "context": "South Carolina shows its depth and late-game heroics as they continue to climb the rankings.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.secsports.com/news/2026/03/no-24-south-carolinas-home-runs-help-beat-boston-college-in-run-rule-fashion"
+        "recapUrl": "https://www.secsports.com/news/2026/03/no-24-south-carolina-routs-boston-college-in-home-run-rule-win"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-baylor-ucf",
+      "teams": {
+        "away": "Baylor",
+        "home": "UCF"
+      },
+      "headline": "Baylor's early explosion stuns No. 15 UCF in Orlando",
+      "score": "Baylor 12 - UCF 3",
+      "brief": "Baylor wasted no time in silencing the Orlando crowd, racing out to a 9-0 lead in the first three innings against No. 15 UCF. The Bears never looked back, adding three more runs late to secure a lopsided win and force a series-deciding finale on Sunday.",
+      "bullets": [
+        "Baylor jumped out to a 9-0 lead by the third inning, effectively ending the game early.",
+        "The defeat was only the sixth of the season for the 23-6 Knights.",
+        "UCF's Cocoa Jaimes drove in a run in the fifth, but the comeback bid fell short.",
+        "The game was part of Baylor's impressive 19-7 start to the season."
+      ],
+      "context": "The dominant win sets up a high-stakes series finale with Big 12 implications.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://ucfknights.com/news/2026/03/14/no-15-softball-falls in-game-two-to-baylor-12-3"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-oklahomastate-asu",
+      "teams": {
+        "away": "Oklahoma State",
+        "home": "Arizona State"
+      },
+      "headline": "Sun Devils edge Cowgirls in tightly contested duel",
+      "score": "Oklahoma State 4 - Arizona State 5",
+      "brief": "In a matchup of western powers, Arizona State held off a late surge from No. 15 Oklahoma State to secure a one-run victory. The Sun Devils capitalized on a key error and consistent hitting to stay ahead, despite a late home run from the Cowgirls' Amanda Hasler.",
+      "bullets": [
+        "Amanda Hasler homered in the fourth inning to spark an Oklahoma State rally.",
+        "Arizona State's Katie Chester drove in crucial unearned runs following a Cowgirl error.",
+        "The Sun Devils improved to 22-6 on the season with the home victory.",
+        "Oklahoma State outhit ASU 8-6 but left several runners in scoring position."
+      ],
+      "context": "The loss is a blow to Oklahoma State's top-15 ranking as they continue their road swing.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://okstate.com/boxscore.aspx?id=17276"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-pennstate-oregon",
+      "teams": {
+        "away": "Penn State",
+        "home": "Oregon"
+      },
+      "headline": "Oregon's power surge crushes Nittany Lions in Big Ten debut",
+      "score": "Penn State 1 - Oregon 10",
+      "brief": "No. 19 Oregon made quite the first impression in the Big Ten, dismantling Penn State in a five-inning run-rule victory. The Ducks' offense was relentless, launching multiple home runs to support a dominant pitching performance that stifled the Nittany Lions' hitters.",
+      "bullets": [
+        "Oregon's Butler and Harper hit back-to-back solo home runs in the third inning.",
+        "The Ducks scored in every inning but the second to reach the run-rule threshold.",
+        "Penn State's only run came on a solo home run in the fourth inning.",
+        "Oregon improved to 20-7 and clinched the series victory with the win."
+      ],
+      "context": "Oregon's clinical performance marks them as a major contender in their new conference home.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://goducks.com/news/2026/3/14/softball-defending-b1g-champs-dominate-conference-opener"
       },
       "highlights": [
         {

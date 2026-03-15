@@ -1,29 +1,148 @@
 {
-  "leagueName": "NWSL",
+  "leagueName": "United States - NWSL",
   "leagueKey": "nwsl",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The 2026 NWSL season kicked off with a heavyweight rematch of last year's semifinal as the Portland Thorns spoiled the party at a sold-out Audi Field. In a defensive battle where clear-cut chances were hard to come by, a single moment of brilliance from a teenage star allowed the Thorns to walk away with a statement road victory to open the new campaign.",
+  "leagueBriefing": "The NWSL kicked off its 2026 campaign with a record-setting weekend that saw the expansion era begin in earnest. Over 30,000 fans in Foxborough witnessed a narrow defeat for the debutant Boston Legacy at the hands of the reigning champions, while fellow newcomers Denver Summit were edged out by Bay FC in a physical encounter. Comebacks were the theme in Kansas City and North Carolina, while Houston managed a gritty road shutout to spoil San Diego's home opener.",
   "games": [
     {
-      "id": "834675f37cea4328bece6743d94c7d2d",
+      "id": "20260314-BOS-GTH",
       "teams": {
-        "away": "Portland Thorns FC",
-        "home": "Washington Spirit"
+        "away": "NJ/NY Gotham FC",
+        "home": "Boston Legacy"
       },
-      "headline": "Olivia Moultrie spoils Spirit homecoming as Thorns secure opening night win",
-      "score": "Washington Spirit 0 - 1 Portland Thorns FC",
-      "brief": "Portland Thorns midfielder Olivia Moultrie delivered the decisive blow in the 52nd minute, weaving through the box to fire home the only goal in a 1-0 win over the Washington Spirit. Despite the Spirit controlling over 60% of the ball and playing in front of a record-setting home crowd, they struggled to test the Portland goal effectively. The night was also highlighted by the emotional return of Thorns superstar Sophia Wilson, who saw her first competitive minutes since 2024 following maternity leave, helping Portland secure their first road shutout in D.C. since 2021.",
+      "headline": "Gotham FC spoils Boston's record-breaking debut at Gillette Stadium",
+      "score": "Boston Legacy 0 - 1 NJ/NY Gotham FC",
+      "brief": "In front of a massive crowd of 30,207—an NWSL record for an inaugural match—the defending champions NJ/NY Gotham FC proved to be the ultimate party crashers. Spanish star Esther González came off the bench to score the only goal of the afternoon, capitalizing on a defensive lapse to secure three points and remind the league why the Bats are the team to beat.",
       "bullets": [
-        "Olivia Moultrie scored the game's only goal in the 52nd minute, assisted by Pietra Tordin.",
-        "A sellout crowd of 19,215 at Audi Field marked one of the fastest-selling matches in Spirit history.",
-        "Sophia Wilson made her highly anticipated return to the pitch, subbing on in the 77th minute.",
-        "Washington’s Hal Hershfelt nearly equalized in the 75th minute but saw her powerful strike rattle off the crossbar.",
-        "New Thorns head coach Robert Vilahamn earned a victory in his NWSL coaching debut."
+        "Esther González scored the decisive goal in the 55th minute following a cross from Lilly Reale.",
+        "The attendance of 30,207 set a new NWSL record for a club's inaugural match.",
+        "Boston Legacy was forced to play with 10 players for the final 13 minutes after Bianca St-Georges received a second yellow card.",
+        "U.S. National Team goalkeeper Casey Murphy made three saves in her debut for the expansion side."
       ],
-      "context": "The win serves as early-season revenge for the Thorns, who were eliminated by the Spirit in last year's playoff semifinals.",
+      "context": "Gotham FC begins their title defense with a perfect start, while Boston shows they can compete with the elite despite the loss.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.thorns.com/news/thorns-claim-1-0-victory-over-spirit-in-season-opener"
+        "recapUrl": "https://www.gothamfc.com/news/gotham-fc-spoils-boston-legacy-fcs-inaugural-match-with-10-victory"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-KCC-UTR",
+      "teams": {
+        "away": "Utah Royals",
+        "home": "Kansas City Current"
+      },
+      "headline": "Current use second-half surge to overcome Royals in KC",
+      "score": "Kansas City Current 2 - 1 Utah Royals",
+      "brief": "Kansas City Current maintained their perfect record in home openers at CPKC Stadium, coming from behind to defeat the Utah Royals 2-1. After a sluggish first half that saw Utah take the lead, the Current's new-look attack ignited after the break with Croix Bethune and Ally Sentnor both finding the net in their club debuts to secure the victory.",
+      "bullets": [
+        "Croix Bethune scored the equalizer in the 57th minute during her highly anticipated club debut.",
+        "Ally Sentnor provided the game-winner in the 69th minute with a spectacular individual effort.",
+        "Tatum Milazzo gave Utah a surprise lead in the 35th minute, marking the Royals' first-ever goal against Kansas City.",
+        "Head coach Chris Armas earned a win in his NWSL regular-season debut."
+      ],
+      "context": "Kansas City remains a force at home with their third straight opening-day win, while Utah shows early signs of improvement from last season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.kansascitycurrent.com/news/match-report-kansas-city-current-opens-2026-with-come-from-b"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "https://www.youtube.com/watch?v=R9j6w0f-R7o",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-BAY-DEN",
+      "teams": {
+        "away": "Denver Summit",
+        "home": "Bay FC"
+      },
+      "headline": "Pfeiffer stars as Bay FC holds off expansion rivals Denver",
+      "score": "Bay FC 2 - 1 Denver Summit",
+      "brief": "In a battle between two of the league's newest entities, Bay FC relied on a clinical first half to secure a 2-1 win over Denver Summit FC. Alex Pfeiffer was the standout, scoring early and then assisting on Joelle Anderson's winner to ensure Emma Coates' tenure as head coach began with maximum points in front of a sellout crowd in San Jose.",
+      "bullets": [
+        "Alex Pfeiffer scored just eight minutes in and added an assist later in the first half.",
+        "Melissa Kössler scored the first goal in Denver Summit history to briefly level the match in the 20th minute.",
+        "Denver played most of the match with 10 players after Janine Sonis was sent off in the 27th minute.",
+        "Bay FC held over 70% of the possession in a dominant second-half defensive display."
+      ],
+      "context": "Bay FC secures their first win since June 2025, while Denver proves they have the offensive teeth to compete even when short-handed.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://bayfc.com/press-releases/match-recap-vs-denver-summit-fc-03142026/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-NCC-LOU",
+      "teams": {
+        "away": "Racing Louisville FC",
+        "home": "North Carolina Courage"
+      },
+      "headline": "Sanchez brace lifts Courage over Racing in Cary thriller",
+      "score": "North Carolina Courage 2 - 1 Racing Louisville FC",
+      "brief": "Ashley Sanchez proved to be the difference-maker for the North Carolina Courage, netting a brace to lead her side to a 2-1 victory over Racing Louisville. In a match where Louisville actually produced the higher quality chances, Sanchez’s clinical finishing—including a deflected 86th-minute winner—ensured the Courage started their season with a win in front of a record home crowd.",
+      "bullets": [
+        "Ashley Sanchez scored both goals for the Courage (29', 86'), bringing her season total to two.",
+        "Sarah Weber equalized for Louisville in first-half stoppage time after a dominant spell of play.",
+        "North Carolina set a club season-opening attendance record with 8,157 fans at WakeMed Soccer Park.",
+        "Louisville outshot the Courage 17-15 and posted a much higher xG (2.53 to 1.04) despite the loss."
+      ],
+      "context": "The Courage show they can win even when second-best in the stats, while Louisville's high-pressing identity continues to look promising despite the result.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.racingloufc.com/news/2026/03/14/recap-racing-louisville-fc-at-north-carolina-courage-march-14-2026/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "Qinh8l_hVgw",
+          "title": "North Carolina Courage vs. Racing Louisville FC",
+          "url": "https://www.youtube.com/watch?v=Qinh8l_hVgw",
+          "embedUrl": "https://www.youtube.com/embed/Qinh8l_hVgw"
+        }
+      ]
+    },
+    {
+      "id": "20260314-SDW-HOU",
+      "teams": {
+        "away": "Houston Dash",
+        "home": "San Diego Wave"
+      },
+      "headline": "Robbe strike and clinical defense help Dash spoil Wave's opener",
+      "score": "San Diego Wave 0 - 1 Houston Dash",
+      "brief": "The Houston Dash delivered a classic road performance at Snapdragon Stadium, riding a Makenzy Robbe goal and stellar goalkeeping to a 1-0 win over the San Diego Wave. Despite the Wave controlling possession and peppering the Houston goal, they couldn't find a way past Jane Campbell, leaving the San Diego faithful frustrated in their first match under new leadership.",
+      "bullets": [
+        "Makenzy Robbe scored the match-winner in the 45th minute, just seconds before the halftime whistle.",
+        "Houston won despite being out-possessed and out-shot throughout the match.",
+        "San Diego Wave's new head coach Jonas Eidevall suffered a defeat in his first league match at the helm.",
+        "The Dash defense held firm during a frantic final 10 minutes that saw Houston pick up two yellow cards for time-wasting."
+      ],
+      "context": "Houston secures a massive statement win on the road against a title contender, while San Diego looks for answers in the final third.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.youtube.com/watch?v=3HeAp9NaBSs"
       },
       "highlights": [
         {

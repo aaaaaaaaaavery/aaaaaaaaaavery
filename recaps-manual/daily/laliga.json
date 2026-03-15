@@ -1,29 +1,118 @@
 {
-  "leagueName": "LaLiga",
+  "leagueName": "La Liga",
   "leagueKey": "laliga",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The lone LaLiga fixture on Friday night delivered late-game heroics as Alavés and Villarreal battled to a 1-1 draw at Mendizorroza. An own goal gave the hosts a slim lead for much of the night, but a clinical finish from Nicolas Pépé in the dying seconds of stoppage time rescued a point for the visitors.",
+  "leagueBriefing": "Real Madrid and Atlético Madrid both tightened their grip on the top three with crucial home victories, while the middle of the table saw a massive shake-up. Los Blancos dismantled Elche to close within a single point of leaders Barcelona, headlined by a sensational Arda Güler goal from behind the halfway line. Meanwhile, Girona produced a dominant three-goal showing to humble Athletic Club, and Real Oviedo climbed out of the basement with a gritty win over a struggling Valencia side.",
   "games": [
     {
-      "id": "3bxlyu",
+      "id": "20260314-GIR-ATH",
       "teams": {
-        "away": "Villarreal",
-        "home": "Deportivo Alavés"
+        "home": "Girona",
+        "away": "Athletic Club"
       },
-      "headline": "Nicolas Pépé strikes in 98th minute to deny Alavés victory",
-      "score": "Deportivo Alavés 1 - 1 Villarreal",
-      "brief": "In a match that seemed destined to end in a gritty 1-0 victory for Deportivo Alavés, Villarreal's Nicolas Pépé produced a moment of magic in the eighth minute of stoppage time to force a 1-1 draw. Alavés had taken the lead late in the first half courtesy of an unfortunate own goal by Rafa Marín and looked set to hold on for three vital points. However, the hosts failed to wrap the game up on several late counterattacks, eventually paying the price when Pépé fired home from a Gerard Moreno assist with virtually the last kick of the game.",
+      "headline": "Girona clinical in dominant three-goal rout of Athletic Club",
+      "score": "Girona 3 - 0 Athletic Club",
+      "brief": "Girona delivered one of their most complete performances of the season at Montilivi, systematically dismantling a top-six hopeful in Athletic Club. The hosts struck early through Hugo Rincón and never looked back, adding two late insurance goals to turn a competitive match into a blowout and move up to 15th in the table.",
       "bullets": [
-        "Nicolas Pépé scored the equalizer in the 90+8th minute, marking one of the latest goals of the season.",
-        "Rafa Marín scored an own goal in the 40th minute to give Alavés the initial lead.",
-        "Alavés manager Quique Sánchez Flores was making his home debut in front of 16,215 fans at Mendizorroza.",
-        "Villarreal dominated possession with 52% but struggled to find clinical finishes until the very end.",
-        "The draw helps Villarreal maintain their grip on a top-four spot, while Alavés remains in the bottom half of the table."
+        "Hugo Rincón opened the scoring just four minutes in with his first goal of the season.",
+        "Azzedine Ounahi doubled the lead in the 77th minute following a clinical fast break.",
+        "Claudio Echeverri sealed the win in stoppage time with a clever finish from close range.",
+        "Girona goalkeeper Paulo Gazzaniga made eight saves to keep an unlikely clean sheet against 20 Athletic shots."
       ],
-      "context": "The late draw prevents Alavés from moving further clear of the relegation zone, while Villarreal stays in the hunt for Champions League qualification.",
+      "context": "The victory pulls Girona five points clear of the relegation zone, while Athletic Club misses a chance to jump into the European spots.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.fotmob.com/matches/deportivo-alaves-vs-villarreal/3bxlyu"
+        "recapUrl": "https://www.365scores.com/football/match/laliga-11/athletic-bilbao-girona-144-175-11"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-ATM-GET",
+      "teams": {
+        "home": "Atlético Madrid",
+        "away": "Getafe"
+      },
+      "headline": "Molina stunner secures derby spoils for Atlético Madrid",
+      "score": "Atlético Madrid 1 - 0 Getafe",
+      "brief": "In a typically cagey Madrid derby, it took a moment of pure individual brilliance from Nahuel Molina to separate the sides. Atlético Madrid struggled to break down Getafe's disciplined five-man backline for much of the afternoon, but Molina's goal-of-the-season contender was enough to reclaim third place for Diego Simeone's men.",
+      "bullets": [
+        "Nahuel Molina scored the only goal with a spectacular long-range strike that nestled in the top corner.",
+        "Jan Oblak recorded his 15th clean sheet of the season, leading all La Liga goalkeepers.",
+        "Atlético Madrid has now won 25 of their last 34 meetings against their local rivals Getafe.",
+        "Getafe's Jose Bordalás remains winless in 17 career league matches against Atlético."
+      ],
+      "context": "Atleti moves back into third place, maintaining their unbeaten home record and staying within five points of the title race.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.fotmob.com/matches/getafe-vs-atletico-madrid/2qqieg"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-OVD-VAL",
+      "teams": {
+        "home": "Real Oviedo",
+        "away": "Valencia"
+      },
+      "headline": "Costas header lifts Oviedo off bottom in tense win over Valencia",
+      "score": "Real Oviedo 1 - 0 Valencia",
+      "brief": "Real Oviedo breathed new life into their survival hopes with a gutsy 1-0 win over Valencia at the Carlos Tartiere. David Costas provided the decisive header in the first half, and a heroic performance from goalkeeper Aarón Escandell ensured the hosts held on despite a late VAR scare that overturned what would have been a second Oviedo goal.",
+      "bullets": [
+        "David Costas scored the winning goal in the 30th minute with a powerful header from a set piece.",
+        "Aarón Escandell was named Man of the Match after making six crucial saves to preserve the win.",
+        "Alberto Reina had a goal ruled out by VAR for offside in the 77th minute.",
+        "The win marks Real Oviedo's first home victory in their last five league attempts."
+      ],
+      "context": "Oviedo moves off the bottom of the table for the first time in weeks, while Valencia remains mired in mid-table mediocrity.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mykhel.com/football/la-liga-real-oviedo-vs-valencia-match-2572216/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-RMA-ELC",
+      "teams": {
+        "home": "Real Madrid",
+        "away": "Elche"
+      },
+      "headline": "Güler scores from halfway line as Madrid crush Elche",
+      "score": "Real Madrid 4 - 1 Elche",
+      "brief": "Real Madrid moved within a point of the top of the table after a dominant 4-1 victory over Elche at the Santiago Bernabéu. While Antonio Rüdiger and Fede Valverde provided the foundation, the night belonged to Arda Güler, who capped a heavy rotation performance with an audacious 50-yard strike that will be talked about for years to come.",
+      "bullets": [
+        "Arda Güler scored a wonder-goal in the 89th minute, lobbing the keeper from behind the halfway line.",
+        "Antonio Rüdiger opened the scoring in the 38th minute following a scramble in the box.",
+        "Real Madrid were permitted an unusual sixth substitution due to concussion protocols after a clash of heads.",
+        "Fede Valverde continued his scoring streak with a trademark long-range rocket just before halftime."
+      ],
+      "context": "Madrid is now just one point behind Barcelona in the title race, setting up a massive sprint finish for the domestic crown.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://en.as.com/soccer/real-madrid-vs-elche-live-online-score-stats-goals-updates-laliga-202526-f202603-n/"
       },
       "highlights": [
         {

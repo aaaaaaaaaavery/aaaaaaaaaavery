@@ -2,71 +2,159 @@
   "leagueName": "Liga MX",
   "leagueKey": "ligamx",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Drama unfolded late on Friday night in Liga MX as Monterrey surrendered a two-goal lead to draw with Juárez, while Puebla and Necaxa played out a gritty scoreless stalemate. Monterrey looked to be cruising toward a comfortable victory on the road, but a resilient Juárez side fought back in the second half to snatch a point in the dying moments.",
+  "leagueBriefing": "Matchday 11 of the Clausura 2026 delivered a high-stakes Saturday where the heavyweights of Mexican soccer were held in check. Cruz Azul maintained their title-contender status despite a dramatic late equalizer from Pumas at the Olimpico Universitario, while Chivas Guadalajara provided the most clinical performance of the day by dismantling Santos Laguna. Meanwhile, Tijuana secured the shock of the night with a three-goal road rout in Leon, and the prolific Salomón Rondón continued his clinical form with a last-gasp equalizer to rescue Pachuca.",
   "games": [
     {
-      "id": "2r8bce7y",
+      "id": "20260314-ASL-PAC",
       "teams": {
-        "away": "Monterrey",
-        "home": "Juárez"
+        "away": "Pachuca",
+        "home": "Atlético San Luis"
       },
-      "headline": "Juárez completes stunning comeback to stun Monterrey at the border",
-      "score": "Juárez 2 - 2 Monterrey",
-      "brief": "Monterrey appeared to have the game wrapped up after Uros Djurdjevic and Jesús Corona provided a 2-0 cushion heading into the break. However, Juárez emerged for the second half with renewed energy, cutting the deficit through Jairo Torres shortly after the restart. The hosts pushed relentlessly for an equalizer and finally found it via an Óscar Estupiñán penalty in the 91st minute, securing a massive point and denying Monterrey a chance to climb further up the table.",
+      "headline": "Rondón nets 90th-minute equalizer to rescue point for Pachuca",
+      "score": "Atlético San Luis 1 - 1 Pachuca",
+      "brief": "In a battle of two of the league's top marksmen, Atlético San Luis appeared to have the points secured after Joao Pedro struck late in the first half. However, the relentless Tuzos attack finally paid off in the 90th minute when veteran striker Salomón Rondón found the net to ensure Pachuca remains in the hunt for a top-four seed.",
       "bullets": [
-        "Uros Djurdjevic scored his first goal for Monterrey just 1 minute into the match.",
-        "Jesús Corona doubled the lead for the visitors in the final seconds of first-half stoppage time.",
-        "Jairo Torres sparked the comeback with a 49th-minute strike assisted by José Luis Rodriguez.",
-        "Óscar Estupiñán converted a high-pressure penalty in the 91st minute to level the score.",
-        "Monterrey has now failed to keep a clean sheet in nine consecutive matches."
+        "Joao Pedro opened the scoring in the 43rd minute, bringing his league-leading tally to 21 goals.",
+        "Salomón Rondón rescued the draw for Pachuca with a clinical strike exactly at the 90-minute mark.",
+        "Pachuca moved to 21 points, maintaining 4th place in the general table.",
+        "The result leaves Atlético San Luis in 11th place as they fight for a Play-In spot."
       ],
-      "context": "The draw keeps Monterrey in 9th place, missing an opportunity to break into the top six, while Juárez sits in 12th in the Clausura standings.",
+      "context": "The draw keeps Pachuca in direct qualification position for the Liguilla, while San Luis misses a chance to break into the top ten.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.fotmob.com/matches/monterrey-vs-fc-juarez/2r8bce7y"
+        "recapUrl": "https://www.mediotiempo.com/futbol/liga-mx/resumen-partido-atletico-san-luis-vs-pachuca-jornada-11-clausura-2026"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "5w8UllO0SKE",
-          "title": "JUAREZ 2-2 MONTERREY | ¡Gran juego en la frontera! | Con México C26",
-          "url": "https://www.youtube.com/watch?v=5w8UllO0SKE",
-          "embedUrl": "https://www.youtube.com/embed/5w8UllO0SKE",
-          "publishedAt": "2026-03-14T07:00:14Z",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-GDL-SAN",
+      "teams": {
+        "away": "Santos Laguna",
+        "home": "Guadalajara"
+      },
+      "headline": "Chivas overwhelm Santos Laguna in clinical three-goal display",
+      "score": "Guadalajara 3 - 0 Santos Laguna",
+      "brief": "Guadalajara continued their impressive Clausura campaign with a dominant 3-0 victory over a struggling Santos Laguna at Estadio Akron. Chivas showed why they are considered serious title threats, controlling the tempo from the opening whistle and converting their chances with professional efficiency to stay within reach of the league leadership.",
+      "bullets": [
+        "Chivas secured their seventh victory of the season, maintaining one of the best records in the league.",
+        "The win marks Guadalajara's 14th goal of the campaign while keeping their defensive record intact.",
+        "Santos Laguna continues to struggle at the bottom of the table, suffering their sixth loss of the season.",
+        "The match drew over 34,000 fans to the Akron as the 'Rebaño Sagrado' continues its surge."
+      ],
+      "context": "Chivas remains the primary challenger to Cruz Azul for the top spot, trailing by only a few points with seven rounds left.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mediotiempo.com/futbol/liga-mx/resumen-partido-atletico-san-luis-vs-pachuca-jornada-11-clausura-2026"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "8cyiV86OWtE",
+          "title": "CHIVAS 3-0 SANTOS | ¡Puro golazo del Rebaño | Con México C26",
+          "url": "https://www.youtube.com/watch?v=8cyiV86OWtE",
+          "embedUrl": "https://www.youtube.com/embed/8cyiV86OWtE",
+          "publishedAt": "2026-03-15T03:20:02Z",
           "matchScore": 100
         }
       ]
     },
     {
-      "id": "rybnw",
+      "id": "20260314-LEO-TIJ",
       "teams": {
-        "away": "Necaxa",
-        "home": "Puebla"
+        "away": "Tijuana",
+        "home": "León"
       },
-      "headline": "Puebla and Necaxa trade blows in scoreless deadlock",
-      "score": "Puebla 0 - 0 Necaxa",
-      "brief": "In a physical encounter at Estadio Cuauhtémoc, Puebla and Necaxa were unable to find a breakthrough, resulting in a 0-0 draw. Puebla dominated long stretches of play and created several dangerous opportunities, but they were met by a resolute Necaxa defense. Despite Necaxa being reduced to ten men for nearly half an hour in the second half, the hosts couldn't capitalize, leaving both sides to settle for a point that does little to help their respective playoff pushes.",
+      "headline": "Castañeda brace leads Xolos to shock thumping of Leon",
+      "score": "León 0 - 3 Tijuana",
+      "brief": "Tijuana produced their most clinical performance of the year to stun Club León at the Nou Camp. Kevin Castañeda was the protagonist of the night, netting twice in the first half to silence the home crowd and set the stage for a blowout that significantly shifts the momentum in the bottom half of the table.",
       "bullets": [
-        "Puebla controlled the tempo but failed to register a goal despite multiple shots on target.",
-        "Necaxa played with 10 men for nearly 30 minutes in the second half but held firm.",
-        "The Rayos (Necaxa) have now gone 18 matches without a clean sheet prior to tonight's shutout.",
-        "Necaxa goalkeeper Ezequiel Unsain was instrumental in preserving the draw with several key saves.",
-        "Puebla remains in 10th place, while Necaxa sits in 16th after the stalemate."
+        "Kevin Castañeda scored twice in the first 45 minutes to give Xolos a commanding lead.",
+        "Abreu added the third goal to complete the 3-0 rout before the halftime whistle.",
+        "León failed to respond despite tactical changes in the second half and was held without a clean sheet yet again.",
+        "The victory is Tijuana's first significant away win of the 2026 Clausura."
       ],
-      "context": "Both teams remain outside the guaranteed playoff spots as they struggle for consistency in the latter half of the Clausura campaign.",
+      "context": "Tijuana moves within a point of León in the standings, breathing new life into their Play-In aspirations.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.fotmob.com/matches/necaxa-vs-puebla/rybnw"
+        "recapUrl": "https://www.vavel.com/en-us/mexican-soccer/2026/03/15/1254047-leon-vs-xolos-live-score-liga-mx.html"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "kHvkEcIp40s",
-          "title": "PUEBLA 0-0 NECAXA | Empate en el Cuauhtémoc | Con México C26",
-          "url": "https://www.youtube.com/watch?v=kHvkEcIp40s",
-          "embedUrl": "https://www.youtube.com/embed/kHvkEcIp40s",
-          "publishedAt": "2026-03-14T04:23:23Z",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-TOL-ATS",
+      "teams": {
+        "away": "Atlas",
+        "home": "Toluca"
+      },
+      "headline": "Stalemate at the Nemesio Díez as Toluca and Atlas share points",
+      "score": "Toluca 1 - 1 Atlas",
+      "brief": "Expectations were high for a high-scoring affair at the 'Hell' of the Nemesio Díez, but both teams cancelled each other out in a tense 1-1 draw. After a goalless first hour, two quick-fire goals in the final quarter-hour ensured both sides walked away with a point in what was a tactical chess match between the Red Devils and the Zorros.",
+      "bullets": [
+        "The match remained 0-0 at halftime despite Atlas having the more dangerous opportunities early on.",
+        "Toluca struggled to break out of their own half during the first 30 minutes of play.",
+        "The draw extends Toluca's historical dominance over Atlas to 15 games (7 wins, 5 draws).",
+        "Atlas goalkeeper made several key interventions late in the match to preserve the point."
+      ],
+      "context": "The draw keeps Toluca in the top six but prevents them from closing the gap on the top three leaders.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.vavel.com/en-us/mexican-soccer/2026/03/15/1253969-toluca-vs-atlas-live-score-liga-mx.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "drybKYXadFg",
+          "title": "TOLUCA 1-1 ATLAS | Empate dramático en el Nemesio Diez | Con México C26",
+          "url": "https://www.youtube.com/watch?v=drybKYXadFg",
+          "embedUrl": "https://www.youtube.com/embed/drybKYXadFg",
+          "publishedAt": "2026-03-15T04:21:54Z",
           "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-PUM-CRZ",
+      "teams": {
+        "away": "Cruz Azul",
+        "home": "Pumas UNAM"
+      },
+      "headline": "Pumas rescue dramatic point against league-leading Cruz Azul",
+      "score": "Pumas UNAM 2 - 2 Cruz Azul",
+      "brief": "In a classic showdown at the Estadio Olímpico Universitario, Pumas UNAM showed incredible resilience to claw back twice against the league's top-ranked side. Cruz Azul looked set to extend their lead at the top of the table, but a spirited Pumas response ensured the spoils were shared in a match that lived up to its heavyweight billing.",
+      "bullets": [
+        "Pumas rescued the draw with a goal in the dying stages of the match to finalise the 2-2 scoreline.",
+        "Cruz Azul remains at the top of the Liga MX table but sees their lead slightly narrowed.",
+        "Cruz Azul goalkeeper Kevin Mier was at fault for one of the goals conceded in a rare mistake.",
+        "The result solidifies Cruz Azul's status as the team to beat heading into the Liguilla."
+      ],
+      "context": "Cruz Azul remains the #1 seed in Liga MX, while Pumas earns a morale-boosting result against the best team in the country.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.tudn.com/futbol/liga-mx"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
         }
       ]
     }

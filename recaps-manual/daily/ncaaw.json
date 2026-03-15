@@ -2,38 +2,6 @@
   "leagueName": "NCAAW",
   "leagueKey": "ncaaw",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Princeton and Harvard have punched their tickets to the Ivy Madness championship game, setting up a high-stakes showdown for an automatic NCAA Tournament bid.",
-  "games": [
-    {
-      "id": "20260313-brown-princeton",
-      "teams": {
-        "away": "Brown",
-        "home": "Princeton"
-      },
-      "headline": "Tigers weather Brown's second-half surge to reach Ivy Madness final",
-      "score": "Brown 51 - Princeton 65",
-      "brief": "Princeton punched its ticket to the Ivy League championship game by smothering Brown early and keeping them at arm's length when things got interesting late. The Tigers opened the game on a devastating 21-3 run and held a massive 22-point lead at the half, but they had to withstand a frantic flurry of three-pointers from the Bears in the third quarter. While Brown managed to cut the lead to 10 in the final minutes, Princeton's poise at the free-throw line and dominant interior presence ensured there wouldn't be a miracle comeback in Ithaca.",
-      "bullets": [
-        "Madison St. Rose led the Tigers' offense with 18 points, shooting a highly efficient 6-of-9 from the floor.",
-        "Princeton’s defense was historic in the first half, holding the Bears to just 15% shooting (4-for-27) and a mere 14 points.",
-        "Brown found life from deep in the third quarter, hitting six three-pointers in a six-minute span to spark a 14-0 run.",
-        "Fadima Tall anchored the paint for the Tigers, recording a double-double with 11 points and 10 rebounds.",
-        "The Tigers outrebounded the Bears 46-33, neutralizing Brown’s size disadvantages after star forward Alyssa Moreland left with an injury."
-      ],
-      "context": "The win sends top-seeded Princeton to its seventh Ivy League Tournament championship game, seeking an automatic bid to the NCAA Tournament.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://goprincetontigers.com/news/2026/3/13/no-23-womens-basketball-starts-fast-drops-brown-in-ivy-semifinal-65-51"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

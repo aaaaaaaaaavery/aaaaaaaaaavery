@@ -2,6 +2,97 @@
   "leagueName": "Serie A",
   "leagueKey": "seriea",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "The Scudetto race took an unexpected turn as league-leaders Inter Milan stumbled at the San Siro, allowing the chasing pack to gain ground. Napoli capitalized on the Nerazzurri's slip-up with a resilient comeback win, while Juventus continued their winter resurgence behind a match-winning performance from Jérémie Boga. With only eight points now separating the top two and the top-four race tightening, the final stretch of the season is set for a photo finish.",
+  "games": [
+    {
+      "id": "20260314-INT-ATA",
+      "teams": {
+        "away": "Atalanta",
+        "home": "Internazionale"
+      },
+      "headline": "Late Krstović strike stuns Inter as leaders drop vital points",
+      "score": "Internazionale 1 - 1 Atalanta",
+      "brief": "Inter Milan’s relentless march toward the title hit a snag at the San Siro as a late equalizer from Nikola Krstović salvaged a 1-1 draw for Atalanta. Francesco Pio Esposito had given the hosts a deserved lead in the first half, but the Nerazzurri failed to put the game to bed, eventually paying the price when Krstović pounced in the 82nd minute to ignite a frantic and controversial finish.",
+      "bullets": [
+        "Francesco Pio Esposito opened the scoring in the 26th minute with a clinical low finish.",
+        "Nikola Krstović snatched the equalizer eight minutes from time, silencing the home crowd.",
+        "Inter manager Cristian Chivu was sent off in the 85th minute for his furious protests following the equalizer.",
+        "The draw leaves Inter eight points ahead of AC Milan, who have a game in hand against Lazio."
+      ],
+      "context": "Inter's second consecutive game without a win opens a window for AC Milan to turn the title race into a genuine contest.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.channelnewsasia.com/sport/inter-held-1-1-draw-atalanta-title-race-remains-open-5993781"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-NAP-LEC",
+      "teams": {
+        "away": "Lecce",
+        "home": "Napoli"
+      },
+      "headline": "Politano completes Napoli comeback to keep title hopes flickering",
+      "score": "Napoli 2 - 1 Lecce",
+      "brief": "Napoli overcame a nightmare start at the Stadio Diego Armando Maradona to secure a vital 2-1 victory over a stubborn Lecce side. After falling behind to a shock header in the opening minutes, the defending champions found their rhythm after the break, with Rasmus Højlund and Matteo Politano striking to ensure Antonio Conte’s men capitalized on Inter's earlier stumble.",
+      "bullets": [
+        "Jamil Siebert gave Lecce a surprise lead just three minutes into the match with a towering header.",
+        "Rasmus Højlund equalized in the 46th minute, tapping home from a pinpoint Politano cross.",
+        "Matteo Politano secured the win in the 67th minute, firing home after a clever set-piece routine.",
+        "The match was briefly halted for five minutes due to a medical emergency involving Lecce's Lameck Banda."
+      ],
+      "context": "The win moves Napoli within nine points of the top spot, solidifying their grip on third place and keeping them in the peripheral title conversation.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.vavel.com/en-us/soccer/2026/03/14/1254008-napoli-vs-lecce-live-score-serie-a.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-UDI-JUV",
+      "teams": {
+        "away": "Juventus",
+        "home": "Udinese"
+      },
+      "headline": "Boga goal secures vital away win as Juventus climb into top four",
+      "score": "Udinese 0 - 1 Juventus",
+      "brief": "Juventus continued their steady ascent up the Serie A table with a professional 1-0 victory over Udinese at the Bluenergy Stadium. Winter signing Jérémie Boga proved to be the difference maker, clinicaly finishing a move sparked by the mercurial Kenan Yildiz to move the Bianconeri into the Champions League places and hand Luciano Spalletti his 299th career win in the Italian top flight.",
+      "bullets": [
+        "Jérémie Boga scored the winner in the 38th minute, marking his third goal in six matches for the club.",
+        "Kenan Yildiz provided the assist, becoming the first Juve player under 21 to record 15 goal involvements in a season since 2005.",
+        "Juventus had a second goal from Francisco Conceição disallowed by VAR for an offside interference by Teun Koopmeiners.",
+        "The Bianconeri defense held Udinese to just two shots on target throughout the 90 minutes."
+      ],
+      "context": "Juventus moves into the top four for the first time this season, a major milestone in their pursuit of a return to Europe's elite competition.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-au/football/serie-a/articles/udinese-0-1-juventus-spalletti-closes-in-on-milestone-win-2026-03-14"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

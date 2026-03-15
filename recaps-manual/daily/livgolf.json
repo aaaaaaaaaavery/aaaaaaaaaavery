@@ -2,59 +2,28 @@
   "leagueName": "LIV Golf",
   "leagueKey": "livgolf",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Moving day in Singapore delivered a logjam at the top of the leaderboard as a legendary veteran and the league's most dominant force of the last year surged into a share of the lead. With tight fairways and tricky greens at Sentosa causing headaches for the field, the stage is set for a historic Sunday finish where records for both age and career wins are on the line.",
+  "leagueBriefing": "Bryson DeChambeau survived a chaotic playoff in the Singapore rain to claim his fourth individual title, while the 4Aces proved their resurgence is for real with a second consecutive team trophy.",
   "games": [
     {
-      "id": "20260314-liv-singapore",
+      "id": "20260315-liv-singapore",
       "teams": {
-        "away": "Joaquin Niemann",
-        "home": "Lee Westwood"
+        "away": "Crushers GC",
+        "home": "Sentosa Golf Club"
       },
-      "headline": "Vintage Westwood grabs share of Singapore lead as Niemann eyes record eighth title",
+      "headline": "DeChambeau survives water hazard and heartbreak to claim Singapore title",
       "score": null,
-      "brief": "Lee Westwood is proving that age is just a number at Sentosa Golf Club. The 52-year-old Englishman, fresh off a wrist injury, birdied three of his final four holes to move to 10-under and secure a spot in Sunday's final group for the first time in his LIV career. He shares the lead with Joaquin Niemann, who continues to be the league's gold standard. While Bryson DeChambeau loomed large early, a cold putter saw him slip one shot back, leaving a crowded leaderboard where experience is clashing with the league's youngest stars.",
+      "brief": "Bryson DeChambeau’s path to his fourth LIV Golf title was anything but smooth, ending in a playoff that saw him find the water off the tee only to be bailed out by a shocking short-game collapse from Richard T. Lee. In a tournament plagued by rain delays, DeChambeau’s resilience at Sentosa Golf Club allowed him to outlast Lee, who missed a two-foot par putt that would have extended the duel. Meanwhile, Dustin Johnson’s 4Aces GC dominated the team leaderboard for the second straight week, signaling that the league's original powerhouse has finally rediscovered its winning formula.",
       "bullets": [
-        "Lee Westwood is bidding to become the oldest winner in LIV Golf history at age 52, returning to form just two starts after a tendon injury in his left wrist.",
-        "Joaquin Niemann's 5-under 66 featured seven birdies, putting him in position to claim his eighth career LIV title and second successful title defense.",
-        "Sentosa's greens proved brutal on Saturday with 44 total three-putts, the seventh-highest single-round total in league history.",
-        "Jon Rahm saw his record streak of 23 consecutive rounds under par come to an end with an even-par 71, highlighted by an uncharacteristic three three-putts.",
-        "Wild Card entry Richard T. Lee remains in the hunt at 9-under, marking the best 54-hole position ever held by a Wild Card player."
+        "Bryson DeChambeau secured his fourth career LIV Golf individual title despite hitting his playoff tee shot into a water hazard.",
+        "Wild Card player Richard T. Lee recorded the best finish ever for an independent player (2nd) but missed a 2-foot par putt to lose the playoff.",
+        "Dustin Johnson’s 4Aces GC won their second consecutive team title with a 27-under total, finishing five shots clear of Ripper GC.",
+        "Lee Westwood, at 52 years old, finished solo third (12 under) in just his second start back from a wrist injury.",
+        "Jon Rahm extended his remarkable streak, finishing solo fifth to remain the only player with top-10 finishes in every 2026 event."
       ],
-      "context": "Westwood is chasing his first victory in six years while Niemann looks to extend his lead as the winningest player in LIV Golf history.",
+      "context": "DeChambeau's win vaults him into the top tier of the season standings, while the 4Aces' back-to-back victories mark their first sustained run of dominance since the 2022 season.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.livgolf.com/news/westwood-niemann-tied-after-round-3-liv-golf-singapore-2026"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260314-liv-singapore-team",
-      "teams": {
-        "away": "Ripper GC",
-        "home": "4Aces GC"
-      },
-      "headline": "4Aces surge to team lead in Singapore as Crushers crumble on moving day",
-      "score": null,
-      "brief": "The 4Aces are finally looking like the powerhouse team of old, surging to a two-shot lead behind a resurgent Anthony Kim and captain Dustin Johnson. After entering the day trailing by three, the Aces capitalized on a nightmare round from the Crushers GC, who plummeted to sixth place after all four members shot over par. With the Rippers and Legion XIII breathing down their necks, the Aces are in prime position to secure back-to-back trophies for the first time since 2022.",
-      "bullets": [
-        "4Aces GC leads at 16-under following 68s from both Dustin Johnson and Anthony Kim, while Thomas Pieters chipped in a 70.",
-        "The Crushers GC suffered a massive collapse, shooting a combined 9-over par to fall from the overnight lead to sixth place.",
-        "Ripper GC moved into a tie for second at 14-under, fueled by Elvis Smylie’s 4-under 67, the only bogey-free round of the day.",
-        "Fireballs GC posted the lowest team score of the day (11-under), largely thanks to Sergio Garcia’s field-leading 6-under 65.",
-        "The 4Aces are looking to win consecutive events for the first time in four years following their recent victory in Hong Kong."
-      ],
-      "context": "A victory would signal a definitive return to dominance for the 4Aces, who struggled throughout the 2025 season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.livgolf.com/news/westwood-niemann-tied-after-round-3-liv-golf-singapore-2026"
+        "recapUrl": "https://www.livgolf.com/news/bryson-dechambeau-wins-playoff-aramco-liv-golf-singapore-4aces-gc-top-team-2026"
       },
       "highlights": [
         {

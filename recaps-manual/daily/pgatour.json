@@ -1,29 +1,29 @@
 {
-  "leagueName": "PGA TOUR",
+  "leagueName": "PGA Tour",
   "leagueKey": "pgatour",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Ludvig Åberg is making the difficult TPC Sawgrass look like a playground, firing a 63 to take control of THE PLAYERS Championship while the world's best scrambled just to stay in the tournament.",
+  "leagueBriefing": "Ludvig Åberg navigated a volatile Moving Day at TPC Sawgrass to maintain his grip on the lead, setting up a showdown between two of golf's brightest young stars in the final round of THE PLAYERS.",
   "games": [
     {
-      "id": "the-players-championship-2026-round-2",
+      "id": "the-players-championship-2026-round-3",
       "teams": {
         "away": "",
         "home": ""
       },
-      "headline": "Åberg surges to two-shot lead at Sawgrass with record-tying front nine",
+      "headline": "Åberg maintains steady hand at Sawgrass to hold three-shot lead entering Sunday",
       "score": null,
-      "brief": "Ludvig Åberg looked every bit the rising superstar on Friday, carding a 9-under 63 to seize a two-shot lead at THE PLAYERS Championship. The Swede was unconscious early, going 5-under through his first four holes and tying the front-nine record at the Stadium Course with a 29. While Åberg made it look easy, the story at the other end of the leaderboard was Scottie Scheffler and Rory McIlroy sweatily grinding out pars just to make the cut, proving that Sawgrass still has teeth for everyone else.",
+      "brief": "Ludvig Åberg survived a rollercoaster finish at TPC Sawgrass to card a 1-under 71, keeping him three strokes clear of the field heading into the final round. Despite a frustrating three-putt bogey on the 18th, Åberg’s efficiency—highlighted by a massive eagle on the 11th—offset the late stumbles. He now faces a final-round duel with fellow PGA TOUR University alum Michael Thorbjornsen, as both local residents look to claim the tour's flagship event on a course that punished nearly everyone else in the chasing pack.",
       "bullets": [
-        "Ludvig Åberg tied the TPC Sawgrass front-nine record with a 29, highlighted by hole-out chips on No. 4 and No. 9.",
-        "Xander Schauffele sits in solo second at 10-under after a bogey-free 65 where he hit a perfect 14-of-14 fairways.",
-        "World No. 1 Scottie Scheffler needed a clutch 8-foot birdie on the final hole to make the cut on the number at 1-over par.",
-        "Justin Thomas continued his bounce-back from injury, posting a second consecutive 68 to sit T4 at 8-under.",
-        "Cameron Young remains in the hunt at 9-under, seeking his second career PGA TOUR victory after breaking through last summer."
+        "Ludvig Åberg reached 13-under par overall, powered by his third eagle of the tournament on the par-5 11th hole.",
+        "Michael Thorbjornsen surged into the final pairing with a 5-under 67, the second-best round of the day.",
+        "Cameron Young sat just two back until a double-bogey on the 18th dropped him to 9-under, four shots off the lead.",
+        "Robert MacIntyre recorded the low round of Saturday with a 7-under 65 to climb into a tie for 10th.",
+        "A star-studded group at 8-under includes Justin Thomas, Viktor Hovland, and Matt Fitzpatrick, all five shots back."
       ],
-      "context": "Åberg is in prime position to become the youngest PLAYERS champion since Si Woo Kim, while Scheffler’s streak of 69 consecutive cuts made narrowly survived.",
+      "context": "Åberg is looking to become the first player since Craig Perks in 2002 to win THE PLAYERS Championship in his debut appearance.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/13/the-players-championship-round-2-scores-leaderboard-results-schauffele-young-aberg"
+        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/14/the-players-championship-round-3-scores-leaderboard-results-tpc-sawgrass-ludvig-aberg"
       },
       "highlights": [
         {

@@ -2,6 +2,38 @@
   "leagueName": "UFC",
   "leagueKey": "ufc",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "Kevin Vallejos cemented his status as the next big thing in the featherweight division with a destructive first-round finish of a divisional mainstay.",
+  "games": [
+    {
+      "id": "89163952007",
+      "teams": {
+        "away": "Kevin Vallejos",
+        "home": "Josh Emmett"
+      },
+      "headline": "Vallejos announces arrival as contender with dominant knockout of Emmett",
+      "score": null,
+      "brief": "Kevin Vallejos proved he belongs in the elite tier of the featherweight division by completely overwhelming veteran Josh Emmett in just over three minutes. The 24-year-old prospect found his rhythm early, wobbling Emmett with a clean right hand before unleashing a relentless barrage of strikes that forced the referee to intervene. It was a statement performance that signaled a changing of the guard, leaving a respected contender searching for answers while Vallejos looks toward a top-10 ranking.",
+      "bullets": [
+        "Kevin Vallejos improved to 4-0 in the UFC with his second consecutive stoppage victory over a high-level veteran.",
+        "Josh Emmett suffered his third straight defeat, marking the first time in his career he has lost back-to-back fights by first-round stoppage.",
+        "The finish came at the 3:33 mark of Round 1 after Vallejos landed a flush right hand and followed up with dozens of unanswered strikes.",
+        "Despite taking his gloves off in the cage after the loss, the 41-year-old Emmett did not officially announce his retirement.",
+        "Vallejos now boasts an 18-1 professional record, with his only career loss occurring on Dana White's Contender Series in 2023."
+      ],
+      "context": "The victory likely propels Vallejos into the featherweight top 10 and establishes him as a primary title threat for the coming year.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/03/14/ufc-vegas-114-results-kevin-vallejos-vs-josh-emmett/89163952007/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

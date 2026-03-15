@@ -2,70 +2,452 @@
   "leagueName": "NHL",
   "leagueKey": "nhl",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The NHL's milestone 70,000th game night saw the Los Angeles Kings reclaim a playoff spot while the St. Louis Blues kept their slim postseason hopes alive with a dramatic comeback win.",
+  "leagueBriefing": "Saturday night in the NHL was defined by goaltending clinics and marathon shootouts. Linus Ullmark and Adin Hill both turned in perfect sheets to secure shutouts, while the Bruins and Blue Jackets survived grueling tiebreakers to keep their playoff momentum alive. From New Jersey's offensive explosion to Seattle's dominant road showing, the night shuffled the deck in both conferences as the postseason race intensifies.",
   "games": [
     {
-      "id": "2025021041",
+      "id": "401803303",
       "teams": {
-        "away": "Los Angeles Kings",
-        "home": "New York Islanders"
+        "away": "Anaheim Ducks",
+        "home": "Ottawa Senators"
       },
-      "headline": "Kings reclaim playoff spot as Kopitar nears franchise history",
-      "score": "Kings 3 - Islanders 2",
-      "brief": "The Los Angeles Kings surged into a first-period lead and weathered a late push from the Islanders to secure a vital two points in the Western Conference playoff race. Captain Anze Kopitar scored his eighth of the season, moving him just one point shy of tying Marcel Dionne's legendary franchise scoring record. While New York's Emil Heineman netted twice to make it a contest, the Kings' early three-goal barrage proved too much to overcome, lifting Los Angeles back into a wild-card position.",
+      "headline": "Ullmark stands tall as Senators blank Ducks",
+      "score": "Ducks 0 - Senators 2",
+      "brief": "Linus Ullmark was the story in Ottawa, turning aside all 23 shots he faced to lead the Senators to a controlled victory over Anaheim. The Senators didn't need much offense to get the job done, relying on a strong second period to provide all the cushion Ullmark required to secure his second shutout of the season.",
       "bullets": [
-        "Anze Kopitar now sits at 1,306 career points, just one behind Marcel Dionne for the most in Kings history.",
-        "Adrian Kempe recorded his team-leading 26th goal of the season with a highlight-reel one-handed deflection.",
-        "Trevor Moore opened the scoring just 3:33 into the game with a solo breakaway effort after blocking a shot.",
-        "The victory propelled the Kings past Seattle and San Jose into the second wild-card spot in the West.",
-        "Emil Heineman scored both goals for the Islanders, marking his 17th and 18th tallies of the year."
+        "Linus Ullmark earned his second shutout of the season with a 23-save performance.",
+        "Shane Pinto fueled the offense with two assists in the winning effort.",
+        "The Senators scored both of their goals during the second period to break the deadlock.",
+        "Anaheim's offense struggled to find rhythm, marking their second shutout loss in recent weeks."
       ],
-      "context": "The win moves the Kings back into the Western Conference playoff picture for the first time since early February.",
+      "context": "The win helps Ottawa maintain their footing in the Atlantic Division playoff hunt.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.nhl.com/kings/news/3-13-26-final-kings-3-islanders-2"
+        "recapUrl": "https://www.nhl.com/senators/video/ana-at-ott-recap-6390936697112"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "22B5xwdFWnw",
-          "title": "Kings vs. Islanders | NHL Highlights | March 13, 2026",
-          "url": "https://www.youtube.com/watch?v=22B5xwdFWnw",
-          "embedUrl": "https://www.youtube.com/embed/22B5xwdFWnw",
-          "publishedAt": "2026-03-14T02:00:32Z",
+          "videoId": "K5j3aZ46_jA",
+          "title": "Ducks vs. Senators | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=K5j3aZ46_jA",
+          "embedUrl": "https://www.youtube.com/embed/K5j3aZ46_jA",
+          "publishedAt": "2026-03-14T20:14:05Z",
+          "matchScore": 141
+        }
+      ]
+    },
+    {
+      "id": "2025021044",
+      "teams": {
+        "away": "Boston Bruins",
+        "home": "Washington Capitals"
+      },
+      "headline": "Minten ends marathon shootout to snap Bruins road skid",
+      "score": "Bruins 3 - Capitals 2",
+      "brief": "It took nine rounds of a tense shootout, but Fraser Minten finally found the back of the net to give Boston a much-needed victory in D.C. The Bruins had been struggling away from home, losing seven straight on the road, but Charlie McAvoy’s two-goal performance in regulation kept them alive long enough for the dramatic finish.",
+      "bullets": [
+        "Fraser Minten scored the lone goal of a nine-round shootout to secure the extra point.",
+        "Defenseman Charlie McAvoy carried the Bruins' regulation offense with two goals.",
+        "The victory snapped a frustrating seven-game road losing streak for Boston.",
+        "Logan Thompson was stellar for the Capitals, making 32 saves in the losing effort."
+      ],
+      "context": "Boston sweeps the season series 3-0 against Washington, gaining critical ground in the Eastern Conference standings.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/gamecenter/bos-vs-wsh/2026/03/14/2025021044"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "d1KxuBtv1CE",
+          "title": "Bruins vs. Capitals | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=d1KxuBtv1CE",
+          "embedUrl": "https://www.youtube.com/embed/d1KxuBtv1CE",
+          "publishedAt": "2026-03-14T22:44:40Z",
+          "matchScore": 141
+        }
+      ]
+    },
+    {
+      "id": "20260314-COL-WPG",
+      "teams": {
+        "away": "Colorado Avalanche",
+        "home": "Winnipeg Jets"
+      },
+      "headline": "Connor reaches 30-goal milestone as Jets stifle Avalanche",
+      "score": "Avalanche 1 - Jets 3",
+      "brief": "Winnipeg showcased why they are a defensive force, limiting the high-powered Avalanche to just a single goal. Kyle Connor continued his stellar season by hitting the 30-goal mark, and Connor Hellebuyck anchored the defense to ensure Colorado couldn't spark a late comeback in a physical Central Division clash.",
+      "bullets": [
+        "Kyle Connor tallied a goal and an assist, officially reaching 30 goals on the year.",
+        "Mark Scheifele provided the playmaking spark with two assists.",
+        "Connor Hellebuyck stopped 28 of 29 shots to outduel the Colorado attack.",
+        "The Jets' defense held the Avalanche scoreless through the first two periods."
+      ],
+      "context": "A significant win for Winnipeg as they tighten the race for home-ice advantage in the Central Division playoffs.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.youtube.com/watch?v=iEFD3J6zO8A"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "6VB0zfp_uiA",
+          "title": "Avalanche vs. Jets | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=6VB0zfp_uiA",
+          "embedUrl": "https://www.youtube.com/embed/6VB0zfp_uiA",
+          "publishedAt": "2026-03-15T00:45:12Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "2025021042",
+      "id": "20260314-NYR-MIN",
       "teams": {
-        "away": "Edmonton Oilers",
-        "home": "St. Louis Blues"
+        "away": "New York Rangers",
+        "home": "Minnesota Wild"
       },
-      "headline": "Robert Thomas caps stunning Blues comeback with last-second overtime winner",
-      "score": "Oilers 2 - Blues 3",
-      "brief": "The St. Louis Blues pulled off a miracle at Enterprise Center, erasing a two-goal deficit late in the third period before Robert Thomas sealed the victory with just nine seconds remaining in overtime. Edmonton appeared to have the game in hand following goals from Kasperi Kapanen and Connor McDavid, but the Blues' resilience shone through with tallies from Pius Suter and Cam Fowler in the final eight minutes of regulation. The win keeps St. Louis within striking distance of the wild-card hunt while sending the Oilers home with a frustrating end to their road trip.",
+      "headline": "Shesterkin’s 46-save masterclass powers Rangers past Wild",
+      "score": "Rangers 4 - Wild 2",
+      "brief": "The Wild threw everything but the kitchen sink at Igor Shesterkin, but the Rangers' netminder was impenetrable for most of the night. Making 46 saves, Shesterkin allowed his team to capitalize on their fewer chances, while Vladislav Gavrikov emerged as an unlikely offensive hero with a three-point performance.",
       "bullets": [
-        "Robert Thomas scored the game-winner with only 9.1 seconds left in overtime, his 16th goal of the season.",
-        "The Blues trailed 2-0 until the 12:22 mark of the third period before scoring three unanswered goals.",
-        "Joel Hofer was spectacular in net for St. Louis, making 36 saves to earn his 8th win in 12 starts.",
-        "Connor McDavid scored his 37th goal of the season, while Leon Draisaitl extended his point streak to eight games.",
-        "Oilers goaltender Connor Ingram recorded a rare goalie assist on McDavid's third-period goal."
+        "Igor Shesterkin faced a barrage of 48 shots, stopping 46 in a dominant display.",
+        "Vladislav Gavrikov recorded a goal and two assists, finishing with a +3 rating.",
+        "The Rangers jumped out to an early 4-0 lead before Minnesota attempted a late surge.",
+        "The Wild outshot the Rangers 48-22 but couldn't solve Shesterkin until the game was out of reach."
       ],
-      "context": "The Blues' sixth win in seven games pulls them within five points of a Western Conference wild-card spot.",
+      "context": "The Rangers continue their hot streak as they fight for the top seed in the Metropolitan Division.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.nhl.com/gamecenter/edm-vs-stl/2026/03/13/2025021042/boxscore"
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "3Xc-kKUcKro",
-          "title": "Oilers vs. Blues | NHL Highlights | March 13, 2026",
-          "url": "https://www.youtube.com/watch?v=3Xc-kKUcKro",
-          "embedUrl": "https://www.youtube.com/embed/3Xc-kKUcKro",
-          "publishedAt": "2026-03-14T03:25:43Z",
+          "videoId": "jLfHipJP2yw",
+          "title": "Rangers vs. Wild | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=jLfHipJP2yw",
+          "embedUrl": "https://www.youtube.com/embed/jLfHipJP2yw",
+          "publishedAt": "2026-03-15T01:10:32Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-TOR-BUF",
+      "teams": {
+        "away": "Toronto Maple Leafs",
+        "home": "Buffalo Sabres"
+      },
+      "headline": "Sabres edge Maple Leafs in tense shootout rivalry",
+      "score": "Maple Leafs 2 - Sabres 3",
+      "brief": "In a classic QEW rivalry game, the Sabres and Maple Leafs traded blows for 65 minutes before Buffalo finally claimed the extra point in a shootout. The game was a goaltending battle and a defensive grind, with neither team willing to give an inch in front of a divided Buffalo crowd.",
+      "bullets": [
+        "Jack Quinn and Owen Power both found the net for Buffalo in regulation.",
+        "The Sabres won the shootout 1-0 after a scoreless overtime period.",
+        "Toronto's loss comes despite a strong defensive effort that limited Buffalo to just two regulation goals.",
+        "Buffalo continues to play spoiler to the playoff-hopeful Maple Leafs."
+      ],
+      "context": "The Sabres' win adds more drama to the tightly packed Atlantic Division standings.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "mlnD91aW4A0",
+          "title": "Maple Leafs vs. Sabres | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=mlnD91aW4A0",
+          "embedUrl": "https://www.youtube.com/embed/mlnD91aW4A0",
+          "publishedAt": "2026-03-15T02:53:39Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-SJ-MTL",
+      "teams": {
+        "away": "San Jose Sharks",
+        "home": "Montreal Canadiens"
+      },
+      "headline": "Celebrini shines in Montreal as Sharks down Canadiens",
+      "score": "Sharks 4 - Canadiens 2",
+      "brief": "Macklin Celebrini gave Montreal fans a show, netting two goals and an assist to lead the Sharks to a road victory. San Jose used a strong second period to pull away, and Alex Nedeljkovic held firm under pressure to secure the win in one of hockey's most historic venues.",
+      "bullets": [
+        "Rookie standout Macklin Celebrini led all skaters with three points (2G, 1A).",
+        "Alex Nedeljkovic made 25 saves to earn his latest victory.",
+        "San Jose broke the game open with a two-goal second period surge.",
+        "Nick Suzuki scored for the Canadiens, but Montreal's offense couldn't keep pace."
+      ],
+      "context": "Celebrini's dominant performance further cements his status as the cornerstone of the Sharks' rebuild.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "7aCZ7cIDYOs",
+          "title": "Sharks vs. Canadiens | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=7aCZ7cIDYOs",
+          "embedUrl": "https://www.youtube.com/embed/7aCZ7cIDYOs",
+          "publishedAt": "2026-03-15T05:09:26Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-CAR-TB",
+      "teams": {
+        "away": "Carolina Hurricanes",
+        "home": "Tampa Bay Lightning"
+      },
+      "headline": "Hurricanes weather Lightning strike to win in Tampa",
+      "score": "Hurricanes 4 - Lightning 2",
+      "brief": "The Hurricanes' big guns showed up when it mattered, with Andrei Svechnikov and Sebastian Aho each recording multi-point nights to sink the Lightning. After a quiet second period, Carolina exploded for two goals in the third to silence the Tampa Bay faithful and secure a statement win.",
+      "bullets": [
+        "Andrei Svechnikov and Sebastian Aho both finished with a goal and an assist.",
+        "Carolina's penalty kill was perfect, neutralizing Tampa Bay's dangerous power play.",
+        "The Hurricanes outshot the Lightning in two of the three periods.",
+        "Tampa Bay's defense struggled to contain Carolina's relentless forecheck in the final frame."
+      ],
+      "context": "This victory keeps Carolina in the hunt for the Presidents' Trophy as the league's top regular-season team.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "O0Zzw5CRjYI",
+          "title": "Hurricanes vs. Lightning | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=O0Zzw5CRjYI",
+          "embedUrl": "https://www.youtube.com/embed/O0Zzw5CRjYI",
+          "publishedAt": "2026-03-15T02:02:32Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-LA-NJ",
+      "teams": {
+        "away": "Kings",
+        "home": "Devils"
+      },
+      "headline": "Hischier’s four-point night leads Devils over Kings in high-scoring affair",
+      "score": "Kings 4 - Devils 6",
+      "brief": "In the most explosive game of the night, Nico Hischier led the Devils to a 6-4 victory over the Kings. New Jersey blew the game open in the third period with four goals, overcoming a resilient performance from Anze Kopitar and the Kings in a seesaw battle that thrilled the Newark crowd.",
+      "bullets": [
+        "Nico Hischier dominated with two goals and two assists for a four-point night.",
+        "The Devils exploded for four goals in the third period to secure the comeback win.",
+        "Anze Kopitar scored twice for the Kings, but it wasn't enough to stem the tide.",
+        "Jack Hughes added a goal as the Devils' top line overwhelmed Los Angeles."
+      ],
+      "context": "New Jersey's offensive outburst is a timely reminder of their scoring depth as the playoffs approach.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "oEKrPi85btU",
+          "title": "Kings vs. Devils | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=oEKrPi85btU",
+          "embedUrl": "https://www.youtube.com/embed/oEKrPi85btU",
+          "publishedAt": "2026-03-15T01:58:36Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "2025021051",
+      "teams": {
+        "away": "Calgary Flames",
+        "home": "New York Islanders"
+      },
+      "headline": "Holmstrom’s early double helps Islanders hold off Flames",
+      "score": "Flames 2 - Islanders 3",
+      "brief": "The Islanders jumped out to a fast start at UBS Arena and never looked back, thanks to a two-goal first period from Simon Holmstrom. While the Flames mounted a late comeback attempt with two goals in the third, David Rittich made 30 saves to ensure the Islanders banked the two points.",
+      "bullets": [
+        "Simon Holmstrom scored twice in the first period, including a shorthanded goal.",
+        "David Rittich was sharp in net, turning aside 30 of 32 shots from Calgary.",
+        "The Islanders scored all three of their goals in the opening 20 minutes.",
+        "Blake Coleman scored his 16th goal of the season in Calgary's failed comeback bid."
+      ],
+      "context": "The Islanders keep pace in the wild-card race, while Calgary has now lost three of their last four games.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/gamecenter/cgy-vs-nyi/2026/03/14/2025021051"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "AUBHmAvRZpA",
+          "title": "Flames vs. Islanders | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=AUBHmAvRZpA",
+          "embedUrl": "https://www.youtube.com/embed/AUBHmAvRZpA",
+          "publishedAt": "2026-03-15T02:11:31Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-CBJ-PHI",
+      "teams": {
+        "away": "Blue Jackets",
+        "home": "Flyers"
+      },
+      "headline": "Marchenko hits milestone as Jackets outlast Flyers in shootout",
+      "score": "Blue Jackets 2 - Flyers 1",
+      "brief": "Kirill Marchenko was the hero for Columbus, scoring his 100th career goal in regulation before netting the winner in the shootout. It was a gritty, physical battle in Philadelphia, capping off a grueling stretch of four games in four cities for a Blue Jackets team that refused to quit.",
+      "bullets": [
+        "Kirill Marchenko became the ninth player in Blue Jackets history to score 100 goals.",
+        "Marchenko also scored the only goal of the shootout to secure the win.",
+        "Columbus extended their point streak to nine games (15-2-4 under Rick Bowness).",
+        "The game was a defensive stalemate, with neither team scoring in the second or third periods."
+      ],
+      "context": "The Blue Jackets have now earned points in 19 of their last 21 games, one of the best stretches in franchise history.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/bluejackets/news/blue-jackets-winning-thoughts-marchenko-greaves-flyers"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "SG_oDLz9IAk",
+          "title": "Blue Jackets vs. Flyers | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=SG_oDLz9IAk",
+          "embedUrl": "https://www.youtube.com/embed/SG_oDLz9IAk",
+          "publishedAt": "2026-03-15T02:56:19Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-DET-DAL",
+      "teams": {
+        "away": "Red Wings",
+        "home": "Stars"
+      },
+      "headline": "Stars edge Red Wings in overtime thriller",
+      "score": "Red Wings 2 - Stars 3",
+      "brief": "In a battle between two historic franchises, the Stars used a late overtime push to overcome the Red Wings in Dallas. Detroit showed incredible resilience to tie the game with two goals in the third, but the Stars' offensive depth proved too much in the extra frame as they secured the win at home.",
+      "bullets": [
+        "Wyatt Johnston led the way for Dallas with a goal and an assist.",
+        "Detroit rallied from a 2-0 deficit in the third period to force overtime.",
+        "Thomas Harley scored the game-winner in the overtime period.",
+        "The Stars' victory keeps them near the top of the Western Conference standings."
+      ],
+      "context": "Dallas continues to dominate the Central Division as they battle Colorado for the top spot.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "3ZqM4o6d6Lg",
+          "title": "Red Wings vs. Stars | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=3ZqM4o6d6Lg",
+          "embedUrl": "https://www.youtube.com/embed/3ZqM4o6d6Lg",
+          "publishedAt": "2026-03-15T03:06:08Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-PIT-UTA",
+      "teams": {
+        "away": "Penguins",
+        "home": "Mammoth"
+      },
+      "headline": "Penguins spoil Utah's home stand in narrow victory",
+      "score": "Penguins 4 - Mammoth 3",
+      "brief": "The Pittsburgh Penguins managed to escape Salt Lake City with a win, fending off a late charge from the Utah Mammoth. Anthony Mantha and Erik Karlsson led the veteran-heavy Penguins, while Utah’s Dylan Guenther continued his breakout season with two goals in a losing effort.",
+      "bullets": [
+        "Anthony Mantha recorded a goal and an assist in the win.",
+        "Erik Karlsson notched two assists, providing his signature playmaking from the blue line.",
+        "Dylan Guenther scored twice for Utah, keeping the game close until the final whistle.",
+        "The Penguins held off a late surge after taking a 4-2 lead in the third period."
+      ],
+      "context": "Pittsburgh earns vital points to stay relevant in the crowded Metropolitan Division playoff race.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "01CWTdFPr8M",
+          "title": "Penguins vs. Mammoth | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=01CWTdFPr8M",
+          "embedUrl": "https://www.youtube.com/embed/01CWTdFPr8M",
+          "publishedAt": "2026-03-15T04:16:00Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-SEA-VAN",
+      "teams": {
+        "away": "Kraken",
+        "home": "Canucks"
+      },
+      "headline": "Beniers and Eberle orchestrate Kraken's rout of Canucks",
+      "score": "Kraken 5 - Canucks 2",
+      "brief": "The Seattle Kraken dominated their Pacific Northwest rivals in Vancouver, led by a breakout performance from Matty Beniers and a playmaking clinic by Jordan Eberle. Seattle's offense was firing on all cylinders, leaving the struggling Canucks with few answers in front of their home fans.",
+      "bullets": [
+        "Bobby McMann scored twice to lead the Kraken's goal-scoring charge.",
+        "Matty Beniers notched three points (1G, 2A) and finished with a +4 rating.",
+        "Jordan Eberle provided three assists, masterminding the Seattle attack.",
+        "The Kraken outshot the Canucks in every period of the contest."
+      ],
+      "context": "Seattle solidifies their position in the Pacific Division playoff race with a dominant road win.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/nhl/scoreboard"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "eNrs-_c2cpU",
+          "title": "Kraken vs. Canucks | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=eNrs-_c2cpU",
+          "embedUrl": "https://www.youtube.com/embed/eNrs-_c2cpU",
+          "publishedAt": "2026-03-15T05:00:19Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "20260314-CHI-VGK",
+      "teams": {
+        "away": "Blackhawks",
+        "home": "Golden Knights"
+      },
+      "headline": "Hill perfect as Golden Knights overwhelm Blackhawks",
+      "score": "Blackhawks 0 - Golden Knights 4",
+      "brief": "Adin Hill earned his first shutout of the season in spectacular fashion, stopping all 21 shots as Vegas dismantled Chicago. The Golden Knights' power play was lethal, scoring twice in the first period to effectively end the game early and secure a dominant victory at T-Mobile Arena.",
+      "bullets": [
+        "Adin Hill recorded 21 saves for his 7th career shutout.",
+        "Pavel Dorofeyev scored twice on the power play, reaching 34 goals for the season.",
+        "Mitch Marner reached the 50-assist milestone with two helpers on the night.",
+        "The Golden Knights scored three goals in the first 12 minutes of the game."
+      ],
+      "context": "Vegas closes out the season series with Chicago on a high note, gaining momentum for the final playoff push.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/goldenknights/news/golden-knight-shut-out-blackhawks-in-4-0-win"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "6pGKroln3Yw",
+          "title": "Blackhawks vs. Golden Knights | NHL Highlights | March 14, 2026",
+          "url": "https://www.youtube.com/watch?v=6pGKroln3Yw",
+          "embedUrl": "https://www.youtube.com/embed/6pGKroln3Yw",
+          "publishedAt": "2026-03-15T05:07:10Z",
           "matchScore": 120
         }
       ]

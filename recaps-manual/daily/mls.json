@@ -2,6 +2,387 @@
   "leagueName": "MLS",
   "leagueKey": "mls",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "It was a dramatic Saturday in Major League Soccer, highlighted by historic milestones and stoppage-time thrillers. Hany Mukhtar etched his name in the record books with the 25,000th goal in MLS history to keep Nashville unbeaten, while Mateusz Bogusz delivered the second-latest winner in league history to cap a wild 10-man comeback for Houston. Petar Musa netted a hat trick to rescue a draw for FC Dallas against unbeaten expansion side San Diego, and Hugo Lloris tied a league record with his fourth consecutive shutout to open the season for a perfect LAFC.",
+  "games": [
+    {
+      "id": "20260314-TOR-RBNY",
+      "teams": {
+        "away": "New York RB",
+        "home": "Toronto FC"
+      },
+      "headline": "Late Choupo-Moting Strike Rescues Road Point for Red Bulls",
+      "score": "Toronto FC 1 - 1 New York RB",
+      "brief": "Toronto FC seemed poised for their second victory of the young season after Dániel Sallói opened the scoring late in the first half. But the New York Red Bulls relentlessly pushed for an equalizer and finally broke through in the 90th minute when Eric Maxim Choupo-Moting found the back of the net to snatch a 1-1 draw at BMO Field.",
+      "bullets": [
+        "Dániel Sallói gave Toronto the lead with a 43rd-minute strike.",
+        "Eric Maxim Choupo-Moting provided the late heroics, scoring the equalizer in the 90th minute.",
+        "New York RB held 68% of the possession and dominated the late stages of the match.",
+        "The draw leaves Toronto FC with four points from their first four matches of the campaign."
+      ],
+      "context": "New York salvaged a valuable road point to keep pace in the Eastern Conference, while Toronto continues to struggle to close out matches.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.besoccer.com/match/toronto-fc/red-bull-new-york/2026232490/events"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-ATL-PHI",
+      "teams": {
+        "away": "Philadelphia Union",
+        "home": "Atlanta United"
+      },
+      "headline": "Almirón's Hat Trick of Assists Highlights Atlanta's Dominant Win",
+      "score": "Atlanta United 3 - 1 Philadelphia Union",
+      "brief": "Miguel Almirón put on an absolute playmaking clinic, recording a hat trick of assists to lead Atlanta United past the Philadelphia Union 3-1 at Mercedes-Benz Stadium. Emmanuel Latte Lath, Tomás Jacob, and Alexey Miranchuk all capitalized on Almirón's pinpoint service, overpowering a rotated Union side that managed a late consolation goal from Agustín Anello.",
+      "bullets": [
+        "Miguel Almirón's three assists moved him into sole possession of first place on Atlanta United's all-time assist leaderboard.",
+        "Emmanuel Latte Lath opened the scoring in the 28th minute and later provided the secondary assist on Miranchuk's goal.",
+        "Tomás Jacob doubled the advantage just two minutes into the second half.",
+        "Agustín Anello scored his first career MLS goal for Philadelphia in the 87th minute."
+      ],
+      "context": "Almirón's milestone performance signals that Atlanta's star-studded attack is finding its rhythm early in the season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.atlutd.com/news/match-recap-stars-show-out-as-atlanta-united-puts-three-past-philadelphia-union-miguel-almiron-latte-lath-alexey-miranchuk-march-14-2026"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "ZenpO4Hv0DU",
+          "title": "Atlanta United vs. Philadelphia Union | Full Match Highlights",
+          "url": "https://www.youtube.com/watch?v=ZenpO4Hv0DU",
+          "embedUrl": "https://www.youtube.com/embed/ZenpO4Hv0DU",
+          "publishedAt": "2026-03-14T22:12:42Z",
+          "matchScore": 121
+        }
+      ]
+    },
+    {
+      "id": "20260314-CLB-NSH",
+      "teams": {
+        "away": "Nashville SC",
+        "home": "Columbus Crew"
+      },
+      "headline": "Mukhtar Nets Historic 25,000th MLS Goal as Nashville Stuns Crew",
+      "score": "Columbus Crew 0 - 1 Nashville SC",
+      "brief": "In a gritty, hard-fought battle at ScottsMiracle-Gro Field, Hany Mukhtar provided the magic in the dying moments to secure a 1-0 win for Nashville SC. The star playmaker connected with Cristian Espinoza in the 94th minute to score the 25,000th goal in Major League Soccer history, handing the defending champions another frustrating home defeat.",
+      "bullets": [
+        "Hany Mukhtar scored the milestone 25,000th goal in MLS history four minutes into second-half stoppage time.",
+        "Brian Schwake recorded two saves to earn his second clean sheet in four career MLS starts.",
+        "Columbus controlled 55% of possession but failed to score at home for the second consecutive week.",
+        "The victory propelled unbeaten Nashville to the top of the Eastern Conference table with 10 points."
+      ],
+      "context": "Mukhtar's historic stoppage-time winner keeps Nashville unbeaten while deepening the early-season woes for the winless Crew.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.newsday.com/sports/soccer/nashville-sc-columbus-crew-score-mls-m42534"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260314-CLT-MIA",
+      "teams": {
+        "away": "Inter Miami",
+        "home": "Charlotte"
+      },
+      "headline": "Kahlina's Heroics Preserve Goalless Draw Against Inter Miami",
+      "score": "Charlotte 0 - 0 Inter Miami",
+      "brief": "Charlotte FC and Inter Miami battled to a tense 0-0 draw at Bank of America Stadium in a match defined by stellar goalkeeping. Charlotte's Kristijan Kahlina stole the show with a spectacular double save in the first half to deny Ian Fray, while Miami earned a hard-fought road point despite head coach Javier Mascherano being sent off in stoppage time.",
+      "bullets": [
+        "Kristijan Kahlina produced a breathtaking double save in the 34th minute, stopping a header and swatting the rebound off the goal line.",
+        "Inter Miami started five academy products, giving key veterans a rest ahead of their Concacaf Champions Cup clash.",
+        "Miami head coach Javier Mascherano received a red card in the 95th minute for arguing from the technical area.",
+        "Charlotte remains undefeated at home this season."
+      ],
+      "context": "Inter Miami successfully navigated a tough road test with a heavily rotated squad, preserving key legs for international competition.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.intermiamicf.com/news/match-recap-inter-miami-cf-secures-draw-clean-sheet-in-charlotte"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "mDfen77sXWM",
+          "title": "Charlotte FC vs. Inter Miami CF | Full Match Highlights | Neck and Neck Battle!",
+          "url": "https://www.youtube.com/watch?v=mDfen77sXWM",
+          "embedUrl": "https://www.youtube.com/embed/mDfen77sXWM",
+          "publishedAt": "2026-03-15T02:34:45Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-NYC-COL",
+      "teams": {
+        "away": "Colorado Rapids",
+        "home": "New York City"
+      },
+      "headline": "Fernández Brace Propels NYCFC Past Rapids in the Bronx",
+      "score": "New York City 3 - 1 Colorado Rapids",
+      "brief": "Nicolás Fernández scored a pair of first-half goals to lead New York City FC to a comfortable 3-1 victory over the Colorado Rapids at Yankee Stadium. Despite a brilliant stoppage-time strike from Colorado's Darren Yapi before the break, Talles Magno added a late insurance goal to keep NYCFC soaring at the top of the Eastern Conference.",
+      "bullets": [
+        "Nicolás Fernández scored in the 22nd and 45th minutes, bringing his season tally to four goals.",
+        "Darren Yapi kept Colorado in the match with a goal deep into first-half stoppage time.",
+        "Talles Magno sealed the win in the 86th minute with his first goal since returning from loan.",
+        "NYCFC retained their place atop the Eastern Conference with 10 points from four matches."
+      ],
+      "context": "NYCFC's dominant attacking display solidifies their status as early-season frontrunners in the East.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.newyorkcityfc.com/news/match-recap-new-york-city-fc-3-1-colorado-rapids"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "HhYv51HkF98",
+          "title": "New York City FC vs. Colorado Rapids | Full Match Highlights | Nico Fernández Brace!",
+          "url": "https://www.youtube.com/watch?v=HhYv51HkF98",
+          "embedUrl": "https://www.youtube.com/embed/HhYv51HkF98",
+          "publishedAt": "2026-03-15T02:33:28Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-ORL-MTL",
+      "teams": {
+        "away": "CF Montréal",
+        "home": "Orlando City SC"
+      },
+      "headline": "Lions Respond to Coaching Change with Emotional Win Over Montréal",
+      "score": "Orlando City SC 2 - 1 CF Montréal",
+      "brief": "Just days after mutually parting ways with long-time manager Oscar Pareja, Orlando City found its footing with a 2-1 victory over CF Montréal under interim coach Martín Perelman. Duncan McGuire and captain Martín Ojeda both struck in the opening 31 minutes, providing enough cushion to withstand a quick response from Montreal's Prince Owusu.",
+      "bullets": [
+        "Duncan McGuire opened the scoring in the 19th minute, tying Nani for fourth on Orlando's all-time scoring list.",
+        "Martín Ojeda scored the decisive goal in the 31st minute after wearing the captain's armband for the night.",
+        "Prince Owusu headed in a corner kick for Montreal's lone goal in the 24th minute.",
+        "Martín Perelman became the first interim head coach to win a match in Orlando City's MLS era."
+      ],
+      "context": "The victory provides a massive emotional lift for Orlando City, snapping a three-game losing streak immediately following a major leadership change.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.orlandocitysc.com/news/match-report-orlando-city-sc-defeats-cf-montreal-2-1-at-home"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "P9-TWDlXQuw",
+          "title": "Orlando City vs. CF Montréal | Full Match Highlights",
+          "url": "https://www.youtube.com/watch?v=P9-TWDlXQuw",
+          "embedUrl": "https://www.youtube.com/embed/P9-TWDlXQuw",
+          "publishedAt": "2026-03-15T02:01:07Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-CHI-DC",
+      "teams": {
+        "away": "DC United",
+        "home": "Chicago Fire"
+      },
+      "headline": "Baribo's Stoppage-Time Penalty Completes D.C. United's Late Comeback",
+      "score": "Chicago Fire 1 - 2 DC United",
+      "brief": "D.C. United engineered a stunning late turnaround at Soldier Field, overturning an 81st-minute deficit to defeat the Chicago Fire 2-1. After Hugo Cuypers gave Chicago the lead from the penalty spot, Matti Peltola equalized moments later before Tai Baribo converted a dramatic 95th-minute penalty to snatch all three points.",
+      "bullets": [
+        "Tai Baribo scored his third goal of the season with a top-corner penalty in the 95th minute.",
+        "Matti Peltola sparked the comeback with his first career MLS goal in the 84th minute.",
+        "Hugo Cuypers scored for the third consecutive match, converting a penalty for Chicago's only tally.",
+        "Chicago dominated possession (63%) and outshot D.C. 16-11 but could not hold onto their late lead."
+      ],
+      "context": "D.C. United snapped a two-game losing streak with a massive burst of late resilience, leaving Chicago frustrated at home.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.dcunited.com/news/post-match-facts-chivdc-x9804"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "vRrtPLUARoU",
+          "title": "Chicago Fire FC vs. D.C. United | Full Match Highlights | LATE PK DRAMA!",
+          "url": "https://www.youtube.com/watch?v=vRrtPLUARoU",
+          "embedUrl": "https://www.youtube.com/embed/vRrtPLUARoU",
+          "publishedAt": "2026-03-15T03:19:51Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-DAL-SD",
+      "teams": {
+        "away": "San Diego",
+        "home": "Dallas"
+      },
+      "headline": "Musa's Hat Trick Rescues Point in Wild Shootout with San Diego",
+      "score": "Dallas 3 - 3 San Diego",
+      "brief": "Petar Musa put on a finishing clinic, scoring a brilliant hat trick to help FC Dallas salvage a 3-3 draw against unbeaten expansion side San Diego FC. San Diego looked poised for a road victory behind a brace from Onni Valakari, but Musa's relentless attacking output culminated in a dramatic 90th-minute equalizer to split the points at Toyota Stadium.",
+      "bullets": [
+        "Petar Musa recorded the 12th hat trick in FC Dallas history, scoring in the 41st, 54th, and 90th minutes.",
+        "Musa's performance moved him into fourth place on Dallas' all-time scoring list with 39 career goals.",
+        "Onni Valakari scored twice for San Diego (21', 51'), and Marcus Ingvartsen added a penalty in the 31st minute.",
+        "FC Dallas extended their regular-season home sellout streak to a club-record 37 consecutive matches."
+      ],
+      "context": "San Diego remains an impressive unbeaten force in their expansion season, while Musa proved he can single-handedly keep Dallas in any contest.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.fcdallas.com/news/fc-dallas-rallies-back-for-3-3-draw-with-san-diego-fc"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "6SkC9GQUax8",
+          "title": "FC Dallas vs. San Diego FC | Full Match Highlights | Musa Hatty & SIX-GOAL THRILLER!!",
+          "url": "https://www.youtube.com/watch?v=6SkC9GQUax8",
+          "embedUrl": "https://www.youtube.com/embed/6SkC9GQUax8",
+          "publishedAt": "2026-03-15T03:08:23Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-HOU-POR",
+      "teams": {
+        "away": "Portland Timbers",
+        "home": "Houston Dynamo"
+      },
+      "headline": "Bogusz Nets Historic 105th-Minute Winner in 10-Man Dynamo Thriller",
+      "score": "Houston Dynamo 3 - 2 Portland Timbers",
+      "brief": "In one of the wildest finishes in recent MLS memory, Mateusz Bogusz scored in the 15th minute of stoppage time to give the 10-man Houston Dynamo a 3-2 victory over the Portland Timbers. After Portland's Kristoffer Velde tied the match in the 80th minute and Houston's Nick Markanich was sent off in stoppage time, Bogusz finished a brilliant counterattack to send Shell Energy Stadium into a frenzy.",
+      "bullets": [
+        "Mateusz Bogusz scored his first Dynamo goal in the 105th minute, the second-latest winner in MLS history.",
+        "Houston was reduced to 10 men when Nick Markanich received a red card in the 94th minute.",
+        "Guilherme and Felipe Andrade also scored for Houston, with Bogusz and Jack McGlynn providing key assists.",
+        "Gage Guerra scored his first career MLS goal for Portland on a first-half stoppage-time rebound."
+      ],
+      "context": "Houston's incredible short-handed resilience resulted in a monumental morale-boosting victory in front of their home fans.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mlssoccer.com/news/dramatic-dynamo-mateusz-bogusz-delivers-historic-late-winner"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "TZ_1gMQZEMI",
+          "title": "Houston Dynamo FC vs. Portland Timbers | Full Match Highlights | WILD LATE WINNER!",
+          "url": "https://www.youtube.com/watch?v=TZ_1gMQZEMI",
+          "embedUrl": "https://www.youtube.com/embed/TZ_1gMQZEMI",
+          "publishedAt": "2026-03-15T03:32:38Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-LA-SKC",
+      "teams": {
+        "away": "Sporting KC",
+        "home": "LA Galaxy"
+      },
+      "headline": "Debutant Berg Johnsen Fires Sporting KC Past Galaxy",
+      "score": "LA Galaxy 1 - 2 Sporting KC",
+      "brief": "Sporting Kansas City earned their first victory of the Raphael Wicky era with a hard-fought 2-1 road win against the LA Galaxy. Dejan Joveljić haunted his former club by opening the scoring, and debutant Lasse Berg Johnsen delivered a spectacular game-winner from 20 yards out to hold off a late push by the Galaxy.",
+      "bullets": [
+        "Lasse Berg Johnsen scored the game-winner in the 74th minute of his MLS debut.",
+        "Dejan Joveljić scored his third goal of the season against his former team just after halftime.",
+        "Marco Reus gave the Galaxy late hope with an 82nd-minute header from close range.",
+        "Manu Garcia reached 50 career professional assists by setting up Joveljić's opening goal."
+      ],
+      "context": "The win marks a turning point for Sporting KC, giving new head coach Raphael Wicky his first three points of the season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.sportingkc.com/news/recap-sporting-kc-earns-first-victory-of-the-season-with-2-1-road-win-at-the-la-galaxy"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "mEbZRv1No9w",
+          "title": "LA Galaxy vs. Sporting Kansas City | Full Match Highlights | Joveljić Returns to LA for SKC!",
+          "url": "https://www.youtube.com/watch?v=mEbZRv1No9w",
+          "embedUrl": "https://www.youtube.com/embed/mEbZRv1No9w",
+          "publishedAt": "2026-03-15T03:57:01Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-RSL-ATX",
+      "teams": {
+        "away": "Austin",
+        "home": "Real Salt Lake"
+      },
+      "headline": "Spierings' Debut Stunner Lifts RSL to Third Straight Victory",
+      "score": "Real Salt Lake 2 - 1 Austin",
+      "brief": "Real Salt Lake extended their winning streak to three games thanks to a sensational 89th-minute strike from debutant Stijn Spierings. After an early Austin FC goal and an ensuing RSL equalizer via an own goal, Spierings came off the bench and hammered a long-range shot into the bottom corner to secure a dramatic 2-1 win at America First Field.",
+      "bullets": [
+        "Stijn Spierings scored the game-winner in the 89th minute, just seven minutes into his MLS debut.",
+        "Jon Bell opened the scoring for Austin with a powerful header from a set piece in the 18th minute.",
+        "Real Salt Lake equalized in the 25th minute when Austin defender Oleksandr Svatok misplayed a clearance for an own goal.",
+        "RSL has now won five of its last six home matches against Austin FC."
+      ],
+      "context": "The late heroics keep Real Salt Lake's hot streak alive, cementing their status as a dangerous team in the West.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.rsl.com/news/rsl-wins-third-consecutive-match-with-late-2-1-decision-over-austin"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "39tlVGdoN2M",
+          "title": "Real Salt Lake vs. Austin FC | Full Match Highlights | LATE WINNER!",
+          "url": "https://www.youtube.com/watch?v=39tlVGdoN2M",
+          "embedUrl": "https://www.youtube.com/embed/39tlVGdoN2M",
+          "publishedAt": "2026-03-15T04:37:43Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260314-LAFC-STL",
+      "teams": {
+        "away": "St. Louis City",
+        "home": "Los Angeles FC"
+      },
+      "headline": "Lloris Ties MLS Shutout Record as LAFC Blanks St. Louis",
+      "score": "Los Angeles FC 2 - 0 St. Louis City",
+      "brief": "Los Angeles FC stayed perfect on the season as Mathieu Choinière scored a second-half brace in a 2-0 victory over St. Louis City SC at BMO Stadium. The real story, however, was in net, where veteran goalkeeper Hugo Lloris recorded his fourth consecutive clean sheet, tying the MLS record for consecutive shutouts to open a campaign.",
+      "bullets": [
+        "Hugo Lloris tied Roman Bürki's MLS record with his fourth consecutive shutout to start the season.",
+        "Mathieu Choinière broke the deadlock in the 73rd minute and sealed the win with a second goal eight minutes later.",
+        "LAFC remains a perfect 4-0-0 on the season and has outscored opponents 8-0.",
+        "St. Louis City SC remains winless (0-3-1) and has gone three consecutive matches without scoring a goal."
+      ],
+      "context": "LAFC's impenetrable defense and timely scoring continue to make them the team to beat in the early weeks of the 2026 season.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://lasvegassun.com/news/2026/mar/15/choiniere-scores-2-goals-lloris-has-4th-consecutiv/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "8wg060SPfH8",
+          "title": "LAFC vs. St. Louis CITY SC | Full Match Highlights | Mathieu Choinière BRACE!",
+          "url": "https://www.youtube.com/watch?v=8wg060SPfH8",
+          "embedUrl": "https://www.youtube.com/embed/8wg060SPfH8",
+          "publishedAt": "2026-03-15T04:51:30Z",
+          "matchScore": 100
+        }
+      ]
+    }
+  ]
 }

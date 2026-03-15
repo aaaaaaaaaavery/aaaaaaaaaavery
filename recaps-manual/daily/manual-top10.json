@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-14",
+  "date": "2026-03-15",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "wbc",
-      "gameId": "401803310",
-      "headline": "Team USA survives late Canadian surge to reach WBC semifinals",
-      "scoreLine": "United States 5 - Canada 3"
-    },
-    {
-      "rank": 2,
       "leagueKey": "f1",
-      "gameId": "20260314-shanghai-sprint",
-      "headline": "Russell holds off charging Ferraris to maintain perfect start in Shanghai sprint",
+      "gameId": "13519942",
+      "headline": "Teenage star Antonelli makes history as Hamilton grabs first Ferrari podium",
       "scoreLine": ""
     },
     {
-      "rank": 3,
+      "rank": 2,
       "leagueKey": "ncaam",
-      "gameId": "401802311",
-      "headline": "Arizona survives Iowa State rally to reach Big 12 final",
-      "scoreLine": "Iowa State 80 - Arizona 82"
+      "gameId": "401803310",
+      "headline": "Duke goes back-to-back as Boozer and Evans outlast Virginia's stingy defense",
+      "scoreLine": "Virginia 70 - Duke 74"
+    },
+    {
+      "rank": 3,
+      "leagueKey": "premierleague",
+      "gameId": "20260314-ARS-EVE",
+      "headline": "History-maker Dowman seals dramatic Arsenal win to extend title lead",
+      "scoreLine": "Arsenal 2 - 0 Everton"
     },
     {
       "rank": 4,
       "leagueKey": "ncaam",
-      "gameId": "401802312",
-      "headline": "Michigan edges rival Ohio State to advance in Big Ten tourney",
-      "scoreLine": "Ohio State 67 - Michigan 71"
+      "gameId": "20260314-uconn-stjohns",
+      "headline": "Red Storm repeat as Big East kings after dismantling UConn at the Garden",
+      "scoreLine": "UConn 52 - St. John's 72"
     },
     {
       "rank": 5,
-      "leagueKey": "ncaam",
-      "gameId": "401802314",
-      "headline": "Houston dismantles Kansas in statement Big 12 win",
-      "scoreLine": "Kansas 47 - Houston 69"
+      "leagueKey": "wbc",
+      "gameId": "788097",
+      "headline": "Venezuela stuns Japan to dethrone reigning World Baseball Classic champs",
+      "scoreLine": "Venezuela 8 - Japan 5"
     },
     {
       "rank": 6,
-      "leagueKey": "ncaam",
-      "gameId": "401802310",
-      "headline": "Duke stifles Clemson to punch ticket to ACC title game",
-      "scoreLine": "Clemson 61 - Duke 73"
+      "leagueKey": "nba",
+      "gameId": "20260314-DEN-LAL",
+      "headline": "Doncic hits OT winner as Lakers edge Nuggets in thriller",
+      "scoreLine": "Nuggets 125 - Lakers 127"
     },
     {
       "rank": 7,
       "leagueKey": "golf",
-      "gameId": "pgatour-the-players-championship-2026-round-2",
-      "headline": "Åberg surges to two-shot lead at Sawgrass with record-tying front nine",
+      "gameId": "pgatour-the-players-championship-2026-round-3",
+      "headline": "Åberg maintains steady hand at Sawgrass to hold three-shot lead entering Sunday",
       "scoreLine": ""
     },
     {
       "rank": 8,
-      "leagueKey": "ncaam",
-      "gameId": "401802313",
-      "headline": "Florida bites back as Kentucky falls in SEC quarterfinals",
-      "scoreLine": "Kentucky 63 - Florida 71"
+      "leagueKey": "tennis",
+      "gameId": "atp-medvedev-stuns-alcaraz",
+      "headline": "Medvedev snaps Alcaraz’s 16-match winning streak to book Indian Wells final",
+      "scoreLine": "Daniil Medvedev 2 - Carlos Alcaraz 0"
     },
     {
       "rank": 9,
-      "leagueKey": "ncaam",
-      "gameId": "401802316",
-      "headline": "UCLA outlasts Michigan State in high-scoring Big Ten shootout",
-      "scoreLine": "UCLA 88 - Michigan State 84"
+      "leagueKey": "nhl",
+      "gameId": "2025021044",
+      "headline": "Minten ends marathon shootout to snap Bruins road skid",
+      "scoreLine": "Bruins 3 - Capitals 2"
     },
     {
       "rank": 10,
-      "leagueKey": "ncaam",
-      "gameId": "401802315",
-      "headline": "UConn cruise past Georgetown to set up Big East final showdown",
-      "scoreLine": "Georgetown 51 - UConn 67"
+      "leagueKey": "nwsl",
+      "gameId": "20260314-BOS-GTH",
+      "headline": "Gotham FC spoils Boston's record-breaking debut at Gillette Stadium",
+      "scoreLine": "Boston Legacy 0 - 1 NJ/NY Gotham FC"
     }
   ],
   "top10": [
-    "Team USA survives late Canadian surge to reach WBC semifinals",
-    "Russell holds off charging Ferraris to maintain perfect start in Shanghai sprint",
-    "Arizona survives Iowa State rally to reach Big 12 final",
-    "Michigan edges rival Ohio State to advance in Big Ten tourney",
-    "Houston dismantles Kansas in statement Big 12 win",
-    "Duke stifles Clemson to punch ticket to ACC title game",
-    "Åberg surges to two-shot lead at Sawgrass with record-tying front nine",
-    "Florida bites back as Kentucky falls in SEC quarterfinals",
-    "UCLA outlasts Michigan State in high-scoring Big Ten shootout",
-    "UConn cruise past Georgetown to set up Big East final showdown"
+    "Teenage star Antonelli makes history as Hamilton grabs first Ferrari podium",
+    "Duke goes back-to-back as Boozer and Evans outlast Virginia's stingy defense",
+    "History-maker Dowman seals dramatic Arsenal win to extend title lead",
+    "Red Storm repeat as Big East kings after dismantling UConn at the Garden",
+    "Venezuela stuns Japan to dethrone reigning World Baseball Classic champs",
+    "Doncic hits OT winner as Lakers edge Nuggets in thriller",
+    "Åberg maintains steady hand at Sawgrass to hold three-shot lead entering Sunday",
+    "Medvedev snaps Alcaraz’s 16-match winning streak to book Indian Wells final",
+    "Minten ends marathon shootout to snap Bruins road skid",
+    "Gotham FC spoils Boston's record-breaking debut at Gillette Stadium"
   ],
-  "newsBriefing": "In a day defined by high-stakes drama and significant setbacks, Kimi Antonelli made history as the youngest pole-sitter in Formula 1 history at the Chinese Grand Prix, while Team USA booked a dream World Baseball Classic semifinal clash against the Dominican Republic after a hard-fought 5-3 victory over Canada. College basketball's \"Selection Sunday\" countdown intensified as Jaden Bradley’s last-second buzzer-beater propelled No. 2 Arizona past Iowa State and into the Big 12 final, while UCLA managed to oust No. 8 Michigan State in the Big Ten despite losing star Tyler Bilodeau to a serious knee injury. The injury bug bit professional leagues even harder, with Toronto Maple Leafs captain Auston Matthews ruled out for the remainder of the NHL season due to a torn MCL and the Golden State Warriors losing four more players in a single night as their Western Conference slide continued. Amidst the playoff pushes and title chases, the coaching carousel began to turn with Cincinnati moving to fire Wes Miller after five seasons without a tournament appearance, and the WNBA faced an urgent Monday deadline to finalize a new CBA to avoid impacting its upcoming season.",
-  "updatedAt": "2026-03-14T15:02:57.514Z"
+  "newsBriefing": "It was a landmark day across the global sports landscape, defined by historic firsts and the crowning of champions. On the collegiate stage, Duke secured its second consecutive ACC tournament title in a 74-70 win over Virginia, marking an unprecedented conference trifecta for the school after winning titles in football and women's basketball in the same year. In the WAC, California Baptist earned its first-ever NCAA tournament berth following a dramatic 63-61 victory sealed by a missed Utah Valley alley-oop in the closing seconds. International competition saw Venezuela make history by stunning defending champion Japan 8-5 to reach their first World Baseball Classic semifinal and qualify for the 2028 Olympics, while Formula 1 celebrated 19-year-old Kimi Antonelli becoming the second-youngest race winner ever at the Chinese Grand Prix. The day was further highlighted by Mikaela Shiffrin tying a record with her eighth World Cup slalom win of the season, Bryson DeChambeau surviving a wild Singapore playoff to claim his fourth LIV Golf title, and Luka Doncic delivering a signature game-winning shot for the Lakers in an overtime thriller against the Nuggets. Even as global tensions forced the cancellation of the highly anticipated Finalissima between Spain and Argentina, the day remained a showcase of veteran dominance and the arrival of a new generation of stars.",
+  "updatedAt": "2026-03-15T14:48:13.652Z"
 }

@@ -2,6 +2,250 @@
   "leagueName": "Boxing",
   "leagueKey": "boxing",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "A weekend of championship action saw Anthony Cacace and Shokichi Iwata reclaim world titles, while Arnold Barboza Jr. made a statement in his welterweight debut and Riku Masuda likely ended the legendary career of Nonito Donaire.",
+  "games": [
+    {
+      "id": "anthony-cacace-outpoints-jazza-dickens-to-become-a-two-weight-champion",
+      "teams": {
+        "away": "Anthony Cacace",
+        "home": "Jazza Dickens"
+      },
+      "headline": "Cacace cements legacy with gritty title win over Dickens in Dublin",
+      "score": null,
+      "brief": "In an emotionally charged atmosphere at Dublin's 3Arena, Belfast's Anthony Cacace proved he still has plenty left in the tank by dethroning Jazza Dickens to claim the WBA junior lightweight world title. While the fight never quite exploded into an all-out war, it was a high-level chess match between two seasoned veterans. Cacace used his superior size and a pivotal breakthrough in the fifth round to build a lead, surviving a late surge and a nasty head clash to edge out a narrow but deserved decision on the cards.",
+      "bullets": [
+        "Anthony Cacace won via unanimous decision with scores of 115-113, 116-112, and 116-113.",
+        "The victory makes Cacace a two-time world titleholder, adding to a recent run of form that includes wins over Joe Cordina and Leigh Wood.",
+        "Cacace nearly finished the fight in the fifth round after hurting Dickens, who spent much of the mid-rounds in survival mode.",
+        "A head clash in the ninth round left Cacace cut and momentarily rattled, allowing Dickens to mount a brief comeback.",
+        "The 34-year-old Dickens remains a respected fixture in the division despite the loss, moving his record to 36-7."
+      ],
+      "context": "The win solidifies Cacace as one of Ireland's premier active fighters and sets him up for potential unifications at 130 pounds.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.boxingscene.com/articles/anthony-cacace-outpoints-jazza-dickens-to-become-a-two-weight-champion"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "masuda-stops-donaire-olascuaga-matsumoto-retain-world-titles",
+      "teams": {
+        "away": "Nonito Donaire",
+        "home": "Riku Masuda"
+      },
+      "headline": "Masuda stops legendary Donaire as youth prevails in Tokyo",
+      "score": null,
+      "brief": "The legendary career of Nonito Donaire likely reached its end in Tokyo as the 43-year-old 'Filipino Flash' was stopped in eight rounds by the surging Riku Masuda. After a competitive start where Donaire's veteran craft kept him in the hunt, Masuda's youth and power took over following a mid-fight head clash. The 28-year-old Japanese standout dropped the Hall of Famer in the seventh before Donaire's corner mercifully threw in the towel during the eighth.",
+      "bullets": [
+        "Riku Masuda earned a career-best TKO victory at 1:44 of the 8th round in this WBA bantamweight eliminator.",
+        "Donaire suffered a significant cut over his right eye in the fifth round that changed the momentum of the fight.",
+        "The defeat is the 10th for Donaire, a four-weight world champion, sparking widespread calls for his retirement.",
+        "Masuda bounced back from a previous loss to Seiya Tsutsumi to move his record to 9-1 with 8 KOs.",
+        "Donaire was also deducted a point in the final round for a rare 'stepping on the ring' infraction."
+      ],
+      "context": "This win positions Masuda for a world title shot and signals the definitive end of an era for one of boxing's most beloved legends.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.ringmagazine.com/news/masuda-stops-donaire-in-8-as-olascuaga-matsumoto-retain-world-titles-1zWPStkCQzXW7dTX8NaZEL"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "olascuaga-stops-iimura-flyweight-defense",
+      "teams": {
+        "away": "Jukiya Iimura",
+        "home": "Anthony Olascuaga"
+      },
+      "headline": "Olascuaga retains flyweight crown with relentless ninth-round stoppage",
+      "score": null,
+      "brief": "Anthony Olascuaga successfully defended his WBO flyweight title with a display of pure aggression, eventually breaking down Jukiya Iimura in the ninth round. Olascuaga’s high-octane pace proved too much for the challenger, who struggled to keep up with the champion's volume and power. While Olascuaga admitted to being 'impatient' at times, his physical dominance ensured the belt stayed in his possession.",
+      "bullets": [
+        "Olascuaga secured the stoppage victory in the 9th round to improve to 12-1.",
+        "The champion expressed a desire for major unifications next to test himself against the division's other elite titleholders.",
+        "Iimura showed heart but was simply outgunned by the champion's superior punch placement and engine.",
+        "This marked another successful outing for the American champion fighting on Japanese soil."
+      ],
+      "context": "Olascuaga remains a key player in the flyweight unification picture.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.ringmagazine.com/news/masuda-stops-donaire-in-8-as-olascuaga-matsumoto-retain-world-titles-1zWPStkCQzXW7dTX8NaZEL"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "iwata-reclaims-gold-over-niyomtrong",
+      "teams": {
+        "away": "Thammanoon Niyomtrong",
+        "home": "Shokichi Iwata"
+      },
+      "headline": "Iwata becomes two-time champion after technical decision win",
+      "score": null,
+      "brief": "Shokichi Iwata reclaimed world championship status in a technical bout that was cut short due to a head clash. Iwata was comfortably ahead on all scorecards, dominating nearly every round against the veteran Thammanoon Niyomtrong before the ringside physician ruled Niyomtrong unable to continue due to a worsening cut.",
+      "bullets": [
+        "The fight went to the scorecards in the 8th round, with Iwata winning 79-73 (twice) and 78-74.",
+        "Niyomtrong's cut originated from an accidental head clash back in the fourth round.",
+        "Iwata is now a two-time world champion and stated his intention to fight twice more in 2026.",
+        "The victory marks a significant milestone in Iwata's rebuild since losing his first title to Rene Santiago."
+      ],
+      "context": "Iwata's win shakes up the hierarchy in the lower weight classes as he returns to the throne.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.ringmagazine.com/news/masuda-stops-donaire-in-8-as-olascuaga-matsumoto-retain-world-titles-1zWPStkCQzXW7dTX8NaZEL"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "matsumoto-shutout-defense-takada",
+      "teams": {
+        "away": "Yuni Takada",
+        "home": "Ryusei Matsumoto"
+      },
+      "headline": "Matsumoto pitches perfect shutout to retain strawweight title",
+      "score": null,
+      "brief": "Ryusei Matsumoto left no room for debate in his rematch with Yuni Takada, delivering a masterclass in boxing to retain his WBA strawweight title. Moving with surgical precision, the southpaw champion dominated every minute of every round, frustrating Takada and proving he has outgrown the domestic level in Japan.",
+      "bullets": [
+        "Matsumoto won by unanimous decision with identical scores of 120-108 from all three judges.",
+        "The victory was the first defense of his WBA strawweight crown.",
+        "Matsumoto moves his professional record to a perfect 8-0.",
+        "Post-fight, the champion declared he is ready to graduate to the 'world's strongest fighters'."
+      ],
+      "context": "Matsumoto's dominance suggests he is ready for major international assignments at 105 pounds.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.ringmagazine.com/news/masuda-stops-donaire-in-8-as-olascuaga-matsumoto-retain-world-titles-1zWPStkCQzXW7dTX8NaZEL"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "barboza-jr-outclasses-sims-jr-welterweight-debut",
+      "teams": {
+        "away": "Kenneth Sims Jr.",
+        "home": "Arnold Barboza Jr."
+      },
+      "headline": "Barboza Jr. shines in dominant welterweight debut over Sims Jr.",
+      "score": null,
+      "brief": "Arnold Barboza Jr. made a resounding statement in his move up to 147 pounds, comfortably outboxing Kenneth Sims Jr. to secure a unanimous decision win in Anaheim. Entering as a 'pick'em' favorite, Barboza utilized his speed and reach to neutralize the dangerous Sims, controlling the pace from start to finish. The performance was a tactical masterclass that saw one judge award Barboza every single round, signaling his readiness for the elite names at welterweight.",
+      "bullets": [
+        "Arnold Barboza Jr. won via unanimous decision with scores of 120-108, 118-110, and 117-111.",
+        "The win marks Barboza’s successful debut at 147 pounds after a super lightweight title loss to Teofimo Lopez in May.",
+        "Barboza called out several big names post-fight, including Ryan Garcia, Devin Haney, and Keyshawn Davis.",
+        "Despite both fighters suffering cuts in the 11th round, Barboza remained unfazed and finished the 12th round strongly.",
+        "The victory moves Barboza to 33-1 and sets up a potential Golden Boy showdown with Alexis Rocha."
+      ],
+      "context": "Barboza establishes himself as a major player in the welterweight division and positions himself for a high-profile matchup in 2026.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://sports.yahoo.com/arnold-barboza-jr-outclasses-kenneth-sims-jr-for-impressive-win-in-welterweight-debut-072230553.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "collazo-stops-haro-strawweight-defense",
+      "teams": {
+        "away": "Jesus Haro",
+        "home": "Oscar Collazo"
+      },
+      "headline": "Collazo forces Haro to quit in one-sided strawweight title defense",
+      "score": null,
+      "brief": "Unified strawweight champion Oscar Collazo continued his destructive run, forcing challenger Jesus Haro to remain on his stool after six rounds of punishment. Collazo focused his attack on Haro's midsection, systematically breaking down the challenger until Haro's corner decided he had taken enough damage. The victory further cements Collazo as arguably the best 105-pounder in the world today.",
+      "bullets": [
+        "Oscar Collazo improved to 14-0 with his 11th knockout victory.",
+        "Haro retired on his stool before the start of the 7th round after being visibly affected by body shots.",
+        "This was Collazo's second consecutive opponent forced to quit on the stool.",
+        "Collazo is eyeing a unification rematch with WBC champion Melvin Jerusalem next."
+      ],
+      "context": "Collazo's dominance keeps him atop the strawweight rankings as he pursues undisputed status.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://sports.yahoo.com/arnold-barboza-jr-outclasses-kenneth-sims-jr-for-impressive-win-in-welterweight-debut-072230553.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "fundora-stops-ruiz-undisputed-defense",
+      "teams": {
+        "away": "Viviana Ruiz",
+        "home": "Gabriela Fundora"
+      },
+      "headline": "Fundora retains undisputed status with late stoppage of Ruiz",
+      "score": null,
+      "brief": "Gabriela Fundora defended her undisputed flyweight championship in clinical fashion, stopping the veteran Viviana Ruiz in the sixth round. While Ruiz showed immense grit and landed clean overhand rights early on, Fundora’s height and power eventually overwhelmed the challenger. A flurry of punches against the ropes forced the referee to step in, ensuring Fundora remains the queen of the 112-pound division.",
+      "bullets": [
+        "Gabriela Fundora secured the TKO victory in the 6th round to move to 18-0.",
+        "Fundora scored a knockdown at the end of the 4th round with a left hand.",
+        "The challenger, 43-year-old Viviana Ruiz, was competitive early but could not withstand the champion's volume.",
+        "Fundora remains the only undisputed champion in the flyweight division."
+      ],
+      "context": "Fundora's successful defense maintains her status as one of the most dominant forces in women's boxing.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://sports.yahoo.com/arnold-barboza-jr-outclasses-kenneth-sims-jr-for-impressive-win-in-welterweight-debut-072230553.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

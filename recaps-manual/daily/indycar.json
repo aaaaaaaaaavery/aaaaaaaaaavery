@@ -2,6 +2,38 @@
   "leagueName": "IndyCar",
   "leagueKey": "indycar",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "Marcus Ericsson ended a 13-year pole drought in spectacular fashion, dominating the inaugural qualifying session on the streets of Arlington.",
+  "games": [
+    {
+      "id": "10805311",
+      "teams": {
+        "away": "Marcus Ericsson",
+        "home": "Grand Prix of Arlington"
+      },
+      "headline": "Ericsson ends 13-year drought with dominant pole at inaugural Arlington GP",
+      "score": null,
+      "brief": "Marcus Ericsson delivered a masterclass in the first-ever qualifying session for the Grand Prix of Arlington, securing his first career IndyCar pole and his first top starting spot in any series since 2013. In a new 'Fast Six' format featuring single-car, single-lap runs, Ericsson went out first and set a blistering pace that heavy hitters like Alex Palou and Pato O'Ward simply couldn't match. The session proved to be a survival of the fittest on the new 2.73-mile street circuit, with several championship contenders finding the walls while Ericsson remained clinical.",
+      "bullets": [
+        "Marcus Ericsson's lap of 1m34.3562s secured his first pole in 117 career IndyCar starts.",
+        "Reigning champion Alex Palou qualified second, trailing Ericsson by a significant 0.4618s margin.",
+        "Scott McLaughlin, a pre-qualifying favorite, will start from the back of the pack after a heavy crash in the second group session.",
+        "The session debuted a new knockout qualifying format where the 'Fast Six' competed via individual single-lap flyers.",
+        "Andretti Global placed two cars in the top four, with Will Power joining pole-sitter Ericsson on the second row."
+      ],
+      "context": "This pole marks a major milestone for Ericsson as he looks to establish himself as a consistent qualifying threat alongside his proven race-winning pedigree.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.motorsport.com/indycar/news/marcus-ericsson-finally-claims-his-first-indycar-pole-at-inaugural-arlington-gp/10805311/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }
