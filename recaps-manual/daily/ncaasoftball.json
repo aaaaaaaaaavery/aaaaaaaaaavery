@@ -2,7 +2,7 @@
   "leagueName": "NCAA Softball",
   "leagueKey": "ncaasoftball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "LSU snapped a cold spell in a big way on Monday night, using a late-inning surge to secure their first SEC win of the season and avoid a series sweep against Texas A&M.",
+  "leagueBriefing": "LSU found its rhythm at the plate just in time to salvage a game in the series against Texas A&M, using a late-inning offensive surge and a complete game from Tatum Clopton to avoid the home sweep.",
   "games": [
     {
       "id": "20260316-texas-am-lsu",
@@ -10,20 +10,20 @@
         "away": "Texas A&M",
         "home": "LSU"
       },
-      "headline": "LSU bats wake up in series-salvaging win over Texas A&M",
+      "headline": "Clopton dominates as LSU avoids sweep with dominant win over Texas A&M",
       "score": "Texas A&M 2 - LSU 7",
-      "brief": "After struggling to find any rhythm at the plate over the weekend, LSU finally found its spark under the lights at Tiger Park. The Tigers entered the night last in the SEC in batting average, but they looked like a completely different squad on Monday, racking up eight hits and pulling away with a decisive four-run sixth inning. Tatum Clopton provided the stability they needed in the circle, tossing a complete game to help LSU secure a much-needed first conference victory and some momentum heading into their next road trip.",
+      "brief": "LSU snapped its conference skid in a big way Monday night, riding a career-defining performance from Tatum Clopton to a 7-2 win over No. 16 Texas A&M. After dropping the first two games of the series, the Tigers finally broke through with a four-run sixth inning that turned a tight contest into a comfortable finale. Clopton was the story in the circle, tossing a complete game and matching her season high with six strikeouts to keep the Aggies' potent lineup at bay while LSU's bats tallied eight hits to ensure they didn't leave the series empty-handed.",
       "bullets": [
-        "Tatum Clopton dominated in a complete-game effort, allowing only one earned run while striking out six Aggies.",
-        "Alix Franklin provided the early fireworks with a two-out, solo home run in the second inning to give LSU its first lead of the series.",
-        "Maci Bergeron blew the game open in the sixth inning with a clutch two-run single that capped off a four-run frame.",
-        "The Tigers' eight hits in this contest were more than they produced in the first two games of the series combined.",
-        "Texas A&M's Mya Perez was held in check after hitting home runs in each of the first two games of the series."
+        "Tatum Clopton earned her first complete game of the season, allowing just one earned run and striking out six over seven innings.",
+        "Alix Franklin ignited the Tiger offense with a solo home run in the second inning to give LSU its first lead of the entire series.",
+        "A late four-run sixth inning for LSU featured RBI walks from Avery Hodge and Jalia Lassiter followed by a two-run double from Maci Bergeron.",
+        "Texas A&M's Kennedy Powell continued her hot streak, going 2-for-4 with a double and scoring both of the Aggies' runs.",
+        "The Aggies committed two fielding errors and surrendered five walks, contributing to LSU's largest scoring output of the series."
       ],
-      "context": "The victory marks LSU's first SEC win of the season and avoids a 0-6 start in conference play.",
+      "context": "The victory marked LSU's first SEC win of the season and prevented a series sweep at the hands of the Aggies.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.nola.com/sports/lsu/lsu-softball-breaks-out-of-hitting-slump-beats-texas-am/article_11a5c892-4afe-4bf2-968a-9e90a238bc05.html"
+        "recapUrl": "https://lsusports.net/news/2026/03/16/no-20-lsu-avoids-sweep-with-7-2-win-over-no-16-texas-am/"
       },
       "highlights": [
         {
@@ -33,7 +33,21 @@
           "url": "",
           "embedUrl": ""
         }
-      ]
+      ],
+      "teamMeta": {
+        "away": {
+          "record": "19-9",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 16
+        },
+        "home": {
+          "record": "19-9",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 17
+        }
+      }
     }
   ]
 }

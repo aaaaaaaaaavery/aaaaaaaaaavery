@@ -40,6 +40,7 @@
         <button id="saveTop10Btn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Save</button>
         <button id="clearTop10Btn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Clear</button>
         <button id="downloadTop10Btn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Download</button>
+                <button id="copyNewsletterBtn" type="button" class="rounded-md border border-amber-300 bg-white px-2 py-1 text-[11px] font-medium text-amber-800 hover:bg-amber-100">Copy for Mailchimp</button>
       </div>
     </div>
   </header>
@@ -130,6 +131,31 @@
       <div id="mobileLeaguesModalList" class="flex-1 space-y-1 overflow-y-auto p-2"></div>
     </div>
   </div>
+
+    <div id="newsletterModal" class="fixed inset-0 z-50 hidden bg-black/50 p-3">
+        <div class="mx-auto flex h-full w-full max-w-5xl flex-col overflow-hidden rounded-md border border-gray-200 bg-white shadow-xl">
+            <div class="flex items-center justify-between gap-3 border-b border-gray-200 px-4 py-3">
+                <div class="min-w-0">
+                    <div class="text-sm font-semibold text-gray-900">Mailchimp HTML Export</div>
+                    <div class="text-xs text-gray-500">Copy this HTML into a Mailchimp code block or HTML editor.</div>
+                </div>
+                <button id="newsletterModalClose" type="button" aria-label="Close Mailchimp export"
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-200 text-lg leading-none text-gray-700 hover:bg-gray-100">
+                    ×
+                </button>
+            </div>
+            <div class="flex-1 overflow-hidden p-3">
+                <textarea id="newsletterTextarea" spellcheck="false" class="h-full min-h-[320px] w-full resize-none rounded-md border border-gray-300 bg-gray-50 p-3 font-mono text-xs text-gray-800 outline-none focus:border-black"></textarea>
+            </div>
+            <div class="flex items-center justify-between gap-3 border-t border-gray-200 px-4 py-3">
+                <div id="newsletterCopyStatus" class="text-xs text-gray-500">Generates from the current Top 10 on this page.</div>
+                <div class="flex items-center gap-2">
+                    <button id="newsletterCopyAction" type="button" class="rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-xs font-medium text-amber-800 hover:bg-amber-100">Copy HTML</button>
+                    <button id="newsletterDoneBtn" type="button" class="rounded-md border border-gray-300 bg-white px-3 py-2 text-xs font-medium text-gray-700 hover:bg-gray-100">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <div id="layoutDebugPanel" class="fixed bottom-2 left-2 right-2 z-50 hidden rounded-md border border-red-300 bg-red-50/95 p-2 text-[10px] leading-tight text-red-700"></div>
 
@@ -585,6 +611,12 @@
                 tottenhamhotspur: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/330px-Tottenham_Hotspur.svg.png",
                 tottenham: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/330px-Tottenham_Hotspur.svg.png",
                 spurs: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/330px-Tottenham_Hotspur.svg.png",
+                brentford: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/500px-Brentford_FC_crest.svg.png",
+                brentfordfc: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/500px-Brentford_FC_crest.svg.png",
+                wolves: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/500px-Wolverhampton_Wanderers_FC_crest.svg.png",
+                wolverhamptonwanderers: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/500px-Wolverhampton_Wanderers_FC_crest.svg.png",
+                wolverhamptonwanderersfc: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/500px-Wolverhampton_Wanderers_FC_crest.svg.png",
+                wolverhampton: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/500px-Wolverhampton_Wanderers_FC_crest.svg.png",
             },
             uefachampionsleague: {
                 tottenhamhotspur: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/330px-Tottenham_Hotspur.svg.png",
@@ -993,6 +1025,12 @@ Wisconsin
             montanastate: "Montana St",
             montanast: "Montana St",
         };
+        const TEAM_DISPLAY_NAME_OVERRIDES = {
+            wolverhamptonwanderers: "Wolves",
+            wolverhamptonwanderersfc: "Wolves",
+            wolverhampton: "Wolves",
+            wolves: "Wolves",
+        };
         const NCAA_SCORE_CARD_FILE_BY_LEAGUE = {
             ncaam: "recaps-manual/daily/ncaam.json",
             ncaaw: "recaps-manual/daily/ncaaw.json",
@@ -1008,6 +1046,7 @@ Wisconsin
             "uefachampionsleague",
             "uefaeuropaleague",
             "uefaconferenceleague",
+            "premierleague",
             "mls",
             "ligamx",
             "laliga",
@@ -1072,10 +1111,68 @@ Wisconsin
             return key ? (leagueMap.get(key) || null) : null;
         }
 
-        function formatStandingMeta(row) {
+        function formatStandingMeta(row, leagueKey, teamMeta) {
+            const lk = String(leagueKey || "").toLowerCase();
+            const toOrdinal = (value) => {
+                const n = Number.parseInt(String(value || ""), 10);
+                if (!Number.isFinite(n)) return "";
+                const suffix = (n % 100 >= 11 && n % 100 <= 13)
+                    ? "th"
+                    : ({ 1: "st", 2: "nd", 3: "rd" }[n % 10] || "th");
+                return `${n}${suffix}`;
+            };
+
+            // NHL: show live W-L-OTL record (from teamMeta) + hardcoded pts/rank
+            if (lk === "nhl") {
+                const liveRecord = String(teamMeta?.record || "").trim();
+                const points = row?.Points ? `${row.Points} pts` : "";
+                const rankText = row ? toOrdinal(row.Rank) : "";
+                const groupRaw = String(row?.Conference || row?.Group || "").toLowerCase();
+                let conferenceText = "";
+                if (groupRaw.includes("west")) conferenceText = "West";
+                else if (groupRaw.includes("east")) conferenceText = "East";
+                const placement = [rankText, conferenceText].filter(Boolean).join(" ").trim();
+                return [liveRecord, points, placement].filter(Boolean).join(", ") || "-";
+            }
+
+            // NCAA Baseball / Softball: just show record (rank is prepended to team name)
+            if (lk === "ncaabaseball" || lk === "ncaasoftball") {
+                const liveRecord = String(teamMeta?.record || "").trim();
+                return liveRecord || "-";
+            }
+
+            // NCAAM / NCAAW: seed is prepended to team name; nothing extra in meta line
+            if (lk === "ncaam" || lk === "ncaaw") {
+                if (teamMeta?.seed) return "";
+                // No seed available — fall through to default
+            }
+
             if (!row) return "-";
-            const rank = row.Rank ? `#${row.Rank}` : "";
+
             const record = row.Record || [row.Wins, row.Draws, row.Losses].filter(Boolean).join("-") || [row.Wins, row.Losses].filter(Boolean).join("-");
+
+            if (lk === "nba") {
+                const rankText = toOrdinal(row.Rank);
+                const group = String(row.Group || "").toLowerCase();
+                let conferenceText = "";
+                if (group.includes("west")) conferenceText = "West";
+                else if (group.includes("east")) conferenceText = "East";
+                const placement = [rankText, conferenceText].filter(Boolean).join(" ").trim();
+                return [record, placement].filter(Boolean).join(", ") || "-";
+            }
+
+            if (SOCCER_LEAGUE_KEYS.has(lk)) {
+                const points = row.Points ? `${row.Points} pts` : "";
+                const wins = String(row.Wins || "").trim() || "0";
+                const draws = String(row.Draws || "").trim() || "0";
+                const losses = String(row.Losses || "").trim() || "0";
+                const soccerRecord = `${wins}-${draws}-${losses}`;
+                const rankText = toOrdinal(row.Rank);
+                const left = [points, `(${soccerRecord})`].filter(Boolean).join(" ").trim();
+                return [left, rankText].filter(Boolean).join(", ") || "-";
+            }
+
+            const rank = row.Rank ? `#${row.Rank}` : "";
             const points = row.Points ? `${row.Points} pts` : "";
             return [rank, record, points].filter(Boolean).join(" • ") || "-";
         }
@@ -32037,6 +32134,7 @@ Wisconsin
     const saveTop10Btn = document.getElementById("saveTop10Btn");
     const clearTop10Btn = document.getElementById("clearTop10Btn");
     const downloadTop10Btn = document.getElementById("downloadTop10Btn");
+    const copyNewsletterBtn = document.getElementById("copyNewsletterBtn");
     const adminToolsBar = document.getElementById("adminToolsBar");
     const modePill = document.getElementById("modePill");
     const manualStatus = document.getElementById("manualStatus");
@@ -32052,6 +32150,12 @@ Wisconsin
     const mobileLeaguesModal = document.getElementById("mobileLeaguesModal");
     const mobileLeaguesModalList = document.getElementById("mobileLeaguesModalList");
     const mobileLeaguesModalClose = document.getElementById("mobileLeaguesModalClose");
+    const newsletterModal = document.getElementById("newsletterModal");
+    const newsletterModalClose = document.getElementById("newsletterModalClose");
+    const newsletterTextarea = document.getElementById("newsletterTextarea");
+    const newsletterCopyAction = document.getElementById("newsletterCopyAction");
+    const newsletterDoneBtn = document.getElementById("newsletterDoneBtn");
+    const newsletterCopyStatus = document.getElementById("newsletterCopyStatus");
     const layoutDebugPanel = document.getElementById("layoutDebugPanel");
     const prevLeagueBtn = document.getElementById("prevLeagueBtn");
     const nextLeagueBtn = document.getElementById("nextLeagueBtn");
@@ -32349,6 +32453,172 @@ Wisconsin
       return true;
     }
 
+        function escapeNewsletterHtml(value) {
+            return String(value || "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/\"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+
+        function buildNewsletterGameUrl(game) {
+            const anchorId = makeGameAnchorId("all", game?.id || "");
+            const baseUrl = String(location.origin || "https://thporth.com").replace(/\/$/, "");
+            return `${baseUrl}/#${anchorId}`;
+        }
+
+        function extractYouTubeVideoId(input) {
+            const raw = String(input || "").trim();
+            if (!raw) return "";
+            if (/^[A-Za-z0-9_-]{11}$/.test(raw)) return raw;
+            const match = raw.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
+            return match ? match[1] : "";
+        }
+
+        function resolveHighlightMedia(game) {
+            const highlights = Array.isArray(game?.highlights) ? game.highlights : [];
+            const first = highlights.find((h) => String(h?.url || h?.embedUrl || h?.videoId || "").trim()) || null;
+            if (!first) return { url: "", thumbnailUrl: "", alt: "" };
+
+            const rawVideoId = String(first.videoId || "").trim();
+            const rawUrl = String(first.url || first.embedUrl || "").trim();
+            const videoId = extractYouTubeVideoId(rawVideoId) || extractYouTubeVideoId(rawUrl);
+            const url = rawUrl || (videoId ? `https://www.youtube.com/watch?v=${videoId}` : "");
+            const thumbnailUrl = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "";
+            const alt = String(first.title || game?.headline || "Highlight").trim() || "Highlight";
+            return { url, thumbnailUrl, alt };
+        }
+
+        function buildMailchimpNewsletterHtml() {
+            const top10Data = buildAllLeagueData();
+            const games = Array.isArray(top10Data?.games) ? top10Data.games : [];
+            const dateLabel = new Date().toLocaleDateString("en-US", {
+                weekday: "long",
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+            });
+
+            const gameHtml = games.map((game, index) => {
+                const badge = escapeNewsletterHtml(String(game?.sourceLeagueName || game?.sourceLeagueKey || "SPORT"));
+                const headline = escapeNewsletterHtml(String(game?.headline || "Top story"));
+                const scoreLine = escapeNewsletterHtml(String(game?.scoreLine || "").trim());
+                const brief = escapeNewsletterHtml(String(game?.brief || game?.lead || "").trim());
+                const context = escapeNewsletterHtml(String(game?.context || "").trim());
+                const highlight = resolveHighlightMedia(game);
+                const bullets = (Array.isArray(game?.bullets) ? game.bullets : [])
+                    .slice(0, 3)
+                    .map((bullet) => `<li style="margin:0 0 6px 0;">${escapeNewsletterHtml(String(bullet || ""))}</li>`)
+                    .join("");
+                const scoreHtml = scoreLine
+                    ? `<div style="margin:8px 0 0 0;font-size:13px;line-height:18px;color:#6b7280;">${scoreLine}</div>`
+                    : "";
+                const briefHtml = brief
+                    ? `<div style="margin:10px 0 0 0;font-size:14px;line-height:21px;color:#111827;">${brief}</div>`
+                    : "";
+                const highlightHtml = (highlight.url && highlight.thumbnailUrl)
+                    ? `<a href="${escapeNewsletterHtml(highlight.url)}" style="text-decoration:none;"><img src="${escapeNewsletterHtml(highlight.thumbnailUrl)}" alt="${escapeNewsletterHtml(highlight.alt)}" style="display:block;width:100%;max-width:280px;height:auto;border:1px solid #e5e7eb;border-radius:8px;" /></a>`
+                    : "";
+                const bulletsHtml = bullets
+                    ? `<ul style="margin:0 0 0 18px;padding:0;font-size:13px;line-height:19px;color:#374151;">${bullets}</ul>`
+                    : "";
+                const mediaRowHtml = (bulletsHtml || highlightHtml)
+                    ? (highlightHtml
+                        ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:16px 0 0 0;">
+                                <tr>
+                                    <td valign="top" width="50%" style="width:50%;padding:0 10px 0 0;">${bulletsHtml}</td>
+                                    <td valign="top" width="50%" style="width:50%;padding:0 0 0 10px;">${highlightHtml}</td>
+                                </tr>
+                            </table>`
+                        : `<div style="margin:16px 0 0 0;">${bulletsHtml}</div>`)
+                    : "";
+                const contextHtml = context
+                    ? `<div style="margin:16px 0 0 0;font-size:13px;line-height:19px;color:#4b5563;">${context}</div>`
+                    : "";
+                const borderStyle = index === games.length - 1 ? "border-bottom:none;" : "border-bottom:1px solid #e5e7eb;";
+
+                return `
+                    <tr>
+                        <td style="padding:20px 24px;${borderStyle}">
+                            <div style="margin:0 0 10px 0;">
+                                <span style="display:inline-block;border:1px solid #fecaca;background:#fef2f2;color:#991b1b;border-radius:999px;padding:4px 10px;font-size:11px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;">${badge}</span>
+                            </div>
+                            <div style="margin:0;font-size:22px;line-height:28px;font-weight:800;color:#111827;">${headline}</div>
+                            ${scoreHtml}
+                            ${briefHtml}
+                            ${mediaRowHtml}
+                            ${contextHtml}
+                        </td>
+                    </tr>`;
+            }).join("");
+
+            return `<!DOCTYPE html>
+<html>
+    <body style="margin:0;padding:0;background:#f3f4f6;font-family:Arial,Helvetica,sans-serif;color:#111827;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f3f4f6;">
+            <tr>
+                <td align="center" style="padding:24px 12px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:720px;background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;">
+                        <tr>
+                            <td style="padding:28px 24px 20px 24px;background:#111827;">
+                                <img src="https://thporth.com/thporth-red-logo.png" alt="THPORTH" width="25" style="display:block;width:25px;height:auto;" />
+                                <div style="margin:8px 0 0 0;font-size:30px;line-height:36px;font-weight:800;color:#ffffff;">Your daily sports briefing</div>
+                                <div style="margin:8px 0 0 0;font-size:14px;line-height:20px;color:#d1d5db;">${escapeNewsletterHtml(dateLabel)}</div>
+                            </td>
+                        </tr>
+                        ${gameHtml}
+                        <tr>
+                            <td style="padding:18px 24px;background:#f9fafb;">
+                                <div style="margin:16px 0 0 0;font-size:14px;line-height:21px;font-weight:700;color:#111827;">Go beyond the top 10</div>
+                                <div style="margin:4px 0 0 0;font-size:14px;line-height:21px;color:#111827;">Know everything happening in the world of sports&mdash;in under 5 minutes. Catch up on every league with game-focused recaps at <a href="https://thporth.com" style="color:#ff3436;text-decoration:none;font-weight:700;">THPORTH.com</a></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>`;
+        }
+
+        function setNewsletterModalOpen(open) {
+            if (!newsletterModal) return;
+            newsletterModal.classList.toggle("hidden", !open);
+            if (!open && newsletterCopyStatus) {
+                newsletterCopyStatus.textContent = "Generates from the current Top 10 on this page.";
+            }
+        }
+
+        function openNewsletterExportModal() {
+            if (!newsletterTextarea) return;
+            const html = buildMailchimpNewsletterHtml();
+            newsletterTextarea.value = html;
+            setNewsletterModalOpen(true);
+            newsletterTextarea.focus();
+            newsletterTextarea.select();
+        }
+
+        async function copyNewsletterHtmlToClipboard() {
+            if (!newsletterTextarea) return;
+            const text = newsletterTextarea.value || "";
+            if (!text.trim()) return;
+            try {
+                if (navigator.clipboard?.writeText) {
+                    await navigator.clipboard.writeText(text);
+                } else {
+                    newsletterTextarea.focus();
+                    newsletterTextarea.select();
+                    document.execCommand("copy");
+                }
+                if (newsletterCopyStatus) newsletterCopyStatus.textContent = "Copied. Paste this into Mailchimp.";
+            } catch (err) {
+                newsletterTextarea.focus();
+                newsletterTextarea.select();
+                if (newsletterCopyStatus) newsletterCopyStatus.textContent = "Select all and copy manually.";
+            }
+        }
+
     function saveManualPicksToStorage() {
       const payload = {
         date: getTodayDateKey(),
@@ -32410,6 +32680,8 @@ Wisconsin
         if (saveTop10Btn) saveTop10Btn.classList.add("hidden");
         if (clearTop10Btn) clearTop10Btn.classList.add("hidden");
         if (downloadTop10Btn) downloadTop10Btn.classList.add("hidden");
+                if (copyNewsletterBtn) copyNewsletterBtn.classList.add("hidden");
+                setNewsletterModalOpen(false);
         return;
       }
 
@@ -32417,6 +32689,7 @@ Wisconsin
       if (saveTop10Btn) saveTop10Btn.classList.remove("hidden");
       if (clearTop10Btn) clearTop10Btn.classList.remove("hidden");
       if (downloadTop10Btn) downloadTop10Btn.classList.remove("hidden");
+            if (copyNewsletterBtn) copyNewsletterBtn.classList.remove("hidden");
       const count = collectManualPicksArray().length;
       const unsaved = state.hasUnsavedManualChanges ? " • Unsaved changes" : " • Saved";
       const savedAt = state.lastManualSavedAt
@@ -33186,10 +33459,14 @@ Wisconsin
 
       if (lk === "ligamx") {
         const mapped = LIGAMX_TEAM_ABBR_TO_FULL[String(raw).toUpperCase()];
-        if (mapped) return mapped;
+                if (mapped) {
+                    const mappedOverride = TEAM_DISPLAY_NAME_OVERRIDES[normalizeTeamLookupName(mapped)] || "";
+                    return mappedOverride || mapped;
+                }
       }
 
-      return raw;
+            const override = TEAM_DISPLAY_NAME_OVERRIDES[normalizeTeamLookupName(raw)] || "";
+            return override || raw;
     }
 
         function parseStructuredScoreLine(scoreLine) {
@@ -33886,6 +34163,21 @@ Wisconsin
                                         const canonicalScores = resolveCanonicalAwayHomeScores(g, parsedScore, scoreLeagueKey);
                                         let awayScoreValue = canonicalScores.awayScore;
                                         let homeScoreValue = canonicalScores.homeScore;
+                                        const awayTeamMeta = g?.teamMeta?.away || null;
+                                        const homeTeamMeta = g?.teamMeta?.home || null;
+
+                                        // Extract rank/seed prefix for NCAA leagues (rendered separately at smaller font)
+                                        const isNcaaBaseballSoftball = normalizedScoreLeagueKey === "ncaabaseball" || normalizedScoreLeagueKey === "ncaasoftball";
+                                        const isNcaaTourney = normalizedScoreLeagueKey === "ncaam" || normalizedScoreLeagueKey === "ncaaw";
+                                        let awayRankPrefix = "";
+                                        let homeRankPrefix = "";
+                                        if (isNcaaBaseballSoftball) {
+                                            if (awayTeamMeta?.top25Rank) awayRankPrefix = String(awayTeamMeta.top25Rank);
+                                            if (homeTeamMeta?.top25Rank) homeRankPrefix = String(homeTeamMeta.top25Rank);
+                                        } else if (isNcaaTourney) {
+                                            if (awayTeamMeta?.seed) awayRankPrefix = String(awayTeamMeta.seed);
+                                            if (homeTeamMeta?.seed) homeRankPrefix = String(homeTeamMeta.seed);
+                                        }
 
                     const awayRowData = {
                         name: awayName,
@@ -33894,6 +34186,8 @@ Wisconsin
                         logoUrl: awayLogoUrl,
                         fallbackTeam: awayFallbackTeam,
                         scoreValue: awayScoreValue,
+                        teamMeta: awayTeamMeta,
+                        rankPrefix: awayRankPrefix,
                     };
                     const homeRowData = {
                         name: homeName,
@@ -33902,6 +34196,8 @@ Wisconsin
                         logoUrl: homeLogoUrl,
                         fallbackTeam: homeFallbackTeam,
                         scoreValue: homeScoreValue,
+                        teamMeta: homeTeamMeta,
+                        rankPrefix: homeRankPrefix,
                     };
 
                     const topRowData = isSoccerScoreLeague ? homeRowData : awayRowData;
@@ -33930,11 +34226,19 @@ Wisconsin
 
                         const team = document.createElement("div");
                         team.className = "truncate text-sm font-medium text-gray-700";
-                        team.textContent = rowData.displayName || rowData.fallbackTeam;
+                        if (rowData.rankPrefix) {
+                            const rankSpan = document.createElement("span");
+                            rankSpan.className = "mr-1 text-[10px] font-medium text-gray-500";
+                            rankSpan.textContent = rowData.rankPrefix;
+                            team.appendChild(rankSpan);
+                            team.appendChild(document.createTextNode(rowData.displayName || rowData.fallbackTeam));
+                        } else {
+                            team.textContent = rowData.displayName || rowData.fallbackTeam;
+                        }
                         teamLine.appendChild(team);
                         teamWrap.appendChild(teamLine);
 
-                        const metaText = isWbcScore ? "" : formatStandingMeta(rowData.standing);
+                        const metaText = isWbcScore ? "" : formatStandingMeta(rowData.standing, scoreLeagueKey, rowData.teamMeta);
                         if (metaText) {
                             const meta = document.createElement("div");
                             meta.className = "truncate text-[11px] font-normal text-gray-500";
@@ -34736,6 +35040,39 @@ Wisconsin
         downloadManualPicksAsJSON();
       });
     }
+
+        if (copyNewsletterBtn) {
+            copyNewsletterBtn.addEventListener("click", () => {
+                if (!state.isAdminMode) return;
+                openNewsletterExportModal();
+            });
+        }
+
+        if (newsletterCopyAction) {
+            newsletterCopyAction.addEventListener("click", async () => {
+                await copyNewsletterHtmlToClipboard();
+            });
+        }
+
+        if (newsletterModalClose) {
+            newsletterModalClose.addEventListener("click", () => {
+                setNewsletterModalOpen(false);
+            });
+        }
+
+        if (newsletterDoneBtn) {
+            newsletterDoneBtn.addEventListener("click", () => {
+                setNewsletterModalOpen(false);
+            });
+        }
+
+        if (newsletterModal) {
+            newsletterModal.addEventListener("click", (ev) => {
+                if (ev.target === newsletterModal) {
+                    setNewsletterModalOpen(false);
+                }
+            });
+        }
 
     if (mobileShowAllLeaguesBtn) {
       mobileShowAllLeaguesBtn.addEventListener("click", () => {

@@ -616,6 +616,75 @@ PAGE COVERAGE STEPS
 - Use targeted search queries with both teams + date + league for each game.
 - Prioritize official league/team sites and major sports outlets.
 
+---
+TEAM RECORD / RANK / SEED EXTRACTION (LEAGUE-SPECIFIC)
+
+For each game, extract team metadata by leagueKey using the rules below.
+If a field is not required for that league, set it to null.
+Do NOT infer missing values.
+
+Add this object to every game:
+
+"teamMeta": {
+  "away": {
+    "record": null,
+    "standing": null,
+    "seed": null,
+    "top25Rank": null
+  },
+  "home": {
+    "record": null,
+    "standing": null,
+    "seed": null,
+    "top25Rank": null
+  }
+}
+
+LEAGUE RULES
+
+1) nba
+- Do NOT gather record.
+- Do NOT gather standing.
+- Keep all teamMeta fields null for both teams.
+
+2) nhl
+- Gather ONLY total record in W-L-OTL format for each team.
+- Example source text: (26-34-710-22-3Away)
+  - Use ONLY the first segment: 26-34-7
+  - Ignore the split/home-away segment after it.
+- Put value in teamMeta.<side>.record
+- Do NOT populate standing/seed/top25Rank.
+
+3) ncaabaseball, ncaasoftball
+- Gather top-25 ranking number (the number before team name) when present.
+- Gather team record.
+- Put ranking in teamMeta.<side>.top25Rank as an integer.
+- Put record string in teamMeta.<side>.record.
+- Do NOT populate standing/seed.
+
+4) ncaam, ncaaw
+- Gather ONLY tournament seed (number before team name).
+- Put seed in teamMeta.<side>.seed as an integer.
+- Do NOT gather record.
+- Do NOT populate standing/top25Rank.
+
+5) Soccer leagues
+(premierleague, mls, uefachampionsleague, laliga, seriea, bundesliga, ligue1, ligamx, facup, nwsl, uefaeuropaleague, uefaconferenceleague, carabaocup, coupedefrance, shebelievescup, scottishcup, scottishpremiership)
+- Grab nothing for team records/rank/seed.
+- Keep all teamMeta fields null.
+
+NORMALIZATION RULES
+- record must be a plain string (examples: "26-34-7", "31-12", "18-7").
+- top25Rank and seed must be integers (no "#", no text).
+- standing is reserved for future use; keep null unless explicitly requested.
+- Never place record/seed/rank inside team names.
+- Never place record/seed/rank inside score.
+
+FINAL CHECK FOR teamMeta
+- Every game includes teamMeta.away and teamMeta.home with all 4 keys.
+- Values follow league-specific rules above.
+- Non-required fields remain null.
+
 FINAL SELF-CHECK (SILENT, BEFORE OUTPUT)
 1. Did I attempt all listed games from the page?
 2. For each missing game, did I confirm no recap was available at all?
@@ -645,8 +714,8 @@ Do all these games, for leagueName`
                 contentBlocks: [
                   {
                     id: 'step-2-sub-7-block-1',
-                    type: 'note',
-                    text: 'Note: Now same exact thing for [leagueName]'
+                    type: 'copy',
+                    text: '__USE_STEP_2_SUB_2_PROMPT__'
                   }
                 ]
               },
@@ -1174,7 +1243,44 @@ Output format (exact):
         ]
       };
 
+      function syncStep2PromptBlocks(targetTemplates) {
+        if (!targetTemplates || !Array.isArray(targetTemplates.steps)) return false;
+
+        const step2 = targetTemplates.steps.find((step) => step.id === 'step-2');
+        if (!step2 || !Array.isArray(step2.subSteps)) return false;
+
+        const sub2 = step2.subSteps.find((sub) => sub.id === 'step-2-sub-2');
+        const sub7 = step2.subSteps.find((sub) => sub.id === 'step-2-sub-7');
+        if (!sub2 || !sub7) return false;
+
+        const block2 = Array.isArray(sub2.contentBlocks)
+          ? sub2.contentBlocks.find((block) => block.id === 'step-2-sub-2-block-1')
+          : null;
+        const block7 = Array.isArray(sub7.contentBlocks)
+          ? sub7.contentBlocks.find((block) => block.id === 'step-2-sub-7-block-1')
+          : null;
+        if (!block2 || !block7) return false;
+
+        const promptText = String(block2.text || '').trim();
+        if (!promptText) return false;
+
+        let changed = false;
+        if (block7.type !== 'copy') {
+          block7.type = 'copy';
+          changed = true;
+        }
+        if (block7.text !== promptText) {
+          block7.text = promptText;
+          changed = true;
+        }
+
+        return changed;
+      }
+
+      syncStep2PromptBlocks(DEFAULT_TEMPLATES);
+
       const templates = loadJson(TEMPLATE_KEY, DEFAULT_TEMPLATES);
+      const promptSyncChanged = syncStep2PromptBlocks(templates);
       const state = loadJson(STATE_KEY, {
         dateKey: getDateKey(),
         completedStepIds: {},
@@ -1201,7 +1307,8 @@ Output format (exact):
         state.selectedSubStepId = null;
       }
 
-      if (ensureDefaultSteps(templates, DEFAULT_TEMPLATES)) {
+      const defaultStepSyncChanged = ensureDefaultSteps(templates, DEFAULT_TEMPLATES);
+      if (promptSyncChanged || defaultStepSyncChanged) {
         localStorage.setItem(TEMPLATE_KEY, JSON.stringify(templates));
       }
 
