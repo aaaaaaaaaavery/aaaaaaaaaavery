@@ -2,162 +2,37 @@
   "leagueName": "Premier League",
   "leagueKey": "premierleague",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Arsenal took a massive step toward their first title since 2004 on a day where their rivals faltered. The Gunners used a historic late surge to down Everton, while Manchester City's title defense hit a major speed bump with a frustrating draw at West Ham. Meanwhile, the race for the top four was blown wide open as Newcastle United stunned Chelsea at Stamford Bridge, and Brighton boosted their European credentials with a gritty away win at Sunderland.",
+  "leagueBriefing": "Brentford's European dreams took a slight dent as they allowed bottom-of-the-table Wolves to claw back from two goals down in a thrilling Monday night draw.",
   "games": [
     {
-      "id": "20260314-SUN-BHA",
+      "id": "20260316-brentford-wolves",
       "teams": {
-        "away": "Brighton & Hove Albion",
-        "home": "Sunderland"
+        "away": "Wolverhampton Wanderers",
+        "home": "Brentford"
       },
-      "headline": "Minteh's freak goal sinks Sunderland as Brighton's European dream stays alive",
-      "score": "Sunderland 0 - 1 Brighton & Hove Albion",
-      "brief": "In a match where quality was often at a premium, a bizarre moment of luck decided the points at the Stadium of Light. Yankuba Minteh's attempted cross in the second half took a wicked slice and looped over a stranded Melker Ellborg, handing Brighton a vital victory. Sunderland were left to rue their missed chances and a disallowed goal as their home form continues to stutter at the worst possible time.",
+      "headline": "Arokodare caps Wolves comeback as Brentford let lead slip",
+      "score": "Brentford 2 - 2 Wolverhampton Wanderers",
+      "brief": "Brentford looked to be cruising toward the European spots after a dominant opening 40 minutes, but a resilient Wolverhampton Wanderers side refused to stay down. Igor Thiago celebrated his maiden Brazil call-up with a goal that seemed to have the Bees in complete control at 2-0. However, Adam Armstrong's stunner just before the break changed the mood entirely, allowing the visitors to find a second-half equalizer through substitute Tolu Arokodare and maintain their recent unbeaten spark.",
       "bullets": [
-        "Yankuba Minteh scored the only goal in the 58th minute with a cross-shot from a tight angle.",
-        "Chris Rigg had a goal ruled out for offside earlier in the second half that would have given Sunderland the lead.",
-        "Brighton goalkeeper Bart Verbruggen made several key saves to preserve his clean sheet.",
-        "Sunderland has now lost three consecutive home matches after an unbeaten start to the season at the Stadium of Light."
+        "Igor Thiago marked his first-ever call-up to the Brazil national team with his 19th league goal of the season.",
+        "Michael Kayode opened the scoring with a powerful header, marking his first goal in 41 appearances for the Bees.",
+        "Adam Armstrong ignited the comeback with a sublime 25-yard strike into the top corner just before halftime.",
+        "Substitute Tolu Arokodare equalized with a stooping header only three minutes after coming off the bench.",
+        "Wolves struck the woodwork twice in the second half through Armstrong and Arokodare, nearly snatching all three points."
       ],
-      "context": "Brighton moves into the top half and within touching distance of European spots, while Sunderland prepares for a high-stakes Tyne-Wear derby next week.",
+      "context": "The draw leaves Wolves 12 points from safety while Brentford remain in seventh, missed a chance to move within a point of the top six.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.nbcsports.com/soccer/news/sunderland-vs-brighton-live-updates-score-highlights-stats-watch"
+        "recapUrl": "https://www.theguardian.com/football/2026/mar/16/brentford-wolves-premier-league-match-report"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    },
-    {
-      "id": "20260314-BUR-BOU",
-      "teams": {
-        "away": "AFC Bournemouth",
-        "home": "Burnley"
-      },
-      "headline": "Clarets and Cherries play out frustrating stalemate in high-stakes draw",
-      "score": "Burnley 0 - 0 AFC Bournemouth",
-      "brief": "Despite 37 total shots and both teams striking the woodwork, neither Burnley nor Bournemouth could find the breakthrough in a frantic 0-0 draw at Turf Moor. The result does little to help Burnley's desperate survival bid, while Bournemouth will feel they missed a golden opportunity to put serious pressure on the top six after dominating large stretches of the match.",
-      "bullets": [
-        "The two sides combined for 37 shots, the second-highest total in a goalless Premier League game this season.",
-        "Bournemouth hit the woodwork through Marcus Tavernier, while Burnley's Jaidon Anthony saw a volley crash off the crossbar.",
-        "Bournemouth has now drawn five matches 0-0 this season, the most in the division.",
-        "Burnley remains eight points adrift of safety with only eight matches remaining."
-      ],
-      "context": "Bournemouth extends their unbeaten run to ten matches but loses ground in the European race, while Burnley's hopes of staying up continue to fade.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.nbcsports.com/soccer/news/burnley-vs-bournemouth-final-score-recap-video-highlights-analysis"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "kxhA5K72vqI",
-          "title": "Burnley v. Bournemouth | PREMIER LEAGUE HIGHLIGHTS | 3/14/2026 | NBC Sports",
-          "url": "https://www.youtube.com/watch?v=kxhA5K72vqI",
-          "embedUrl": "https://www.youtube.com/embed/kxhA5K72vqI",
-          "publishedAt": "2026-03-14T17:49:33Z",
-          "matchScore": 141
-        }
-      ]
-    },
-    {
-      "id": "20260314-CHE-NEW",
-      "teams": {
-        "away": "Newcastle United",
-        "home": "Chelsea"
-      },
-      "headline": "Gordon strike stuns Chelsea as Newcastle ignite top-four race",
-      "score": "Chelsea 0 - 1 Newcastle United",
-      "brief": "Newcastle United delivered a defensive masterclass at Stamford Bridge, soaking up massive Chelsea pressure to secure a 1-0 win that has huge implications for the Champions League spots. Anthony Gordon's clinical first-half finish proved to be the difference, as a disjointed Chelsea side failed to convert any of their 22 attempts against Eddie Howe's disciplined low block.",
-      "bullets": [
-        "Anthony Gordon scored the winning goal in the 18th minute after being played through by Joe Willock.",
-        "Chelsea captain Reece James struck the post with a 93rd-minute free-kick in a desperate search for an equalizer.",
-        "Aaron Ramsdale made a string of vital saves to keep Chelsea's high-priced attack at bay.",
-        "The defeat leaves Chelsea in fifth place, trailing the top four by three points with an extra game played."
-      ],
-      "context": "Newcastle's victory moves them within six points of Chelsea, while the Blues' Champions League hopes take a massive hit ahead of their midweek European clash.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.chelseafc.com/en/match/chelsea-vs-newcastle-united-english-premier-league-2026-03-14"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "ZtekZQbU-OQ",
-          "title": "Chelsea v. Newcastle United | PREMIER LEAGUE HIGHLIGHTS | 3/14/2026 | NBC Sports",
-          "url": "https://www.youtube.com/watch?v=ZtekZQbU-OQ",
-          "embedUrl": "https://www.youtube.com/embed/ZtekZQbU-OQ",
-          "publishedAt": "2026-03-14T20:34:01Z",
-          "matchScore": 141
-        }
-      ]
-    },
-    {
-      "id": "20260314-ARS-EVE",
-      "teams": {
-        "away": "Everton",
-        "home": "Arsenal"
-      },
-      "headline": "History-maker Dowman seals dramatic Arsenal win to extend title lead",
-      "score": "Arsenal 2 - 0 Everton",
-      "brief": "Arsenal fans were left breathless as two goals in the final moments of the game secured a 2-0 victory over a stubborn Everton side. After Viktor Gyökeres finally broke the deadlock in the 89th minute, 16-year-old schoolboy Max Dowman made history by dribbling half the length of the pitch to become the Premier League's youngest-ever goalscorer and send the Emirates into raptures.",
-      "bullets": [
-        "Max Dowman (16) became the youngest scorer in Premier League history with his 96th-minute solo goal.",
-        "Viktor Gyökeres scored the opener in the 89th minute to break Everton's resistance.",
-        "The win moved Arsenal 10 points clear at the top of the table before Manchester City kicked off later in the day.",
-        "Everton goalkeeper Jordan Pickford was caught stranded upfield for the second goal after going up for a late corner."
-      ],
-      "context": "Arsenal's late show puts immense pressure on their title rivals, while Dowman's record-breaking moment instantly becomes the story of the season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.theguardian.com/football/2026/mar/14/arsenal-everton-premier-league-match-report"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "GHGAIz3U5cw",
-          "title": "Arsenal v. Everton | PREMIER LEAGUE HIGHLIGHTS | 3/14/2026 | NBC Sports",
-          "url": "https://www.youtube.com/watch?v=GHGAIz3U5cw",
-          "embedUrl": "https://www.youtube.com/embed/GHGAIz3U5cw",
-          "publishedAt": "2026-03-14T21:05:08Z",
-          "matchScore": 141
-        }
-      ]
-    },
-    {
-      "id": "20260314-WHU-MCI",
-      "teams": {
-        "away": "Manchester City",
-        "home": "West Ham United"
-      },
-      "headline": "Mavropanos header dents Man City title hopes in London Stadium thriller",
-      "score": "West Ham United 1 - 1 Manchester City",
-      "brief": "Manchester City's bid to retain their crown suffered a significant setback as they were held to a 1-1 draw by a resilient West Ham. Bernardo Silva's lucky opener was cancelled out almost immediately by a towering Konstantinos Mavropanos header, and despite a late onslaught that saw City hit the woodwork, the Hammers held on for a point that lifts them out of the relegation zone.",
-      "bullets": [
-        "Bernardo Silva opened the scoring in the 31st minute with a cross that inadvertently looped into the net.",
-        "Konstantinos Mavropanos equalized just four minutes later, heading home from a Jarrod Bowen corner.",
-        "Manchester City dominated with 24 shots but found Hammers keeper Mads Hermansen in inspired form.",
-        "Erling Haaland’s uncharacteristic goal drought continued as he failed to score for the 9th time in his last 12 league games."
-      ],
-      "context": "City now trails Arsenal by nine points with a game in hand, while West Ham moves out of the bottom three for the first time in 100 days.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.mancity.com/news/mens/west-ham-v-manchester-city-pl-14-march-2026-63909111"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "SCjiTQhFmk4",
-          "title": "West Ham United v. Manchester City | PREMIER LEAGUE HIGHLIGHTS | 3/14/2026 | NBC Sports",
-          "url": "https://www.youtube.com/watch?v=SCjiTQhFmk4",
-          "embedUrl": "https://www.youtube.com/embed/SCjiTQhFmk4",
-          "publishedAt": "2026-03-14T22:53:49Z",
+          "videoId": "53HA9NWiLgk",
+          "title": "Brentford v. Wolves | PREMIER LEAGUE HIGHLIGHTS | 3/16/2026 | NBC Sports",
+          "url": "https://www.youtube.com/watch?v=53HA9NWiLgk",
+          "embedUrl": "https://www.youtube.com/embed/53HA9NWiLgk",
+          "publishedAt": "2026-03-16T22:40:12Z",
           "matchScore": 141
         }
       ]

@@ -2,38 +2,6 @@
   "leagueName": "LIV Golf",
   "leagueKey": "livgolf",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Bryson DeChambeau survived a chaotic playoff in the Singapore rain to claim his fourth individual title, while the 4Aces proved their resurgence is for real with a second consecutive team trophy.",
-  "games": [
-    {
-      "id": "20260315-liv-singapore",
-      "teams": {
-        "away": "Crushers GC",
-        "home": "Sentosa Golf Club"
-      },
-      "headline": "DeChambeau survives water hazard and heartbreak to claim Singapore title",
-      "score": null,
-      "brief": "Bryson DeChambeau’s path to his fourth LIV Golf title was anything but smooth, ending in a playoff that saw him find the water off the tee only to be bailed out by a shocking short-game collapse from Richard T. Lee. In a tournament plagued by rain delays, DeChambeau’s resilience at Sentosa Golf Club allowed him to outlast Lee, who missed a two-foot par putt that would have extended the duel. Meanwhile, Dustin Johnson’s 4Aces GC dominated the team leaderboard for the second straight week, signaling that the league's original powerhouse has finally rediscovered its winning formula.",
-      "bullets": [
-        "Bryson DeChambeau secured his fourth career LIV Golf individual title despite hitting his playoff tee shot into a water hazard.",
-        "Wild Card player Richard T. Lee recorded the best finish ever for an independent player (2nd) but missed a 2-foot par putt to lose the playoff.",
-        "Dustin Johnson’s 4Aces GC won their second consecutive team title with a 27-under total, finishing five shots clear of Ripper GC.",
-        "Lee Westwood, at 52 years old, finished solo third (12 under) in just his second start back from a wrist injury.",
-        "Jon Rahm extended his remarkable streak, finishing solo fifth to remain the only player with top-10 finishes in every 2026 event."
-      ],
-      "context": "DeChambeau's win vaults him into the top tier of the season standings, while the 4Aces' back-to-back victories mark their first sustained run of dominance since the 2022 season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.livgolf.com/news/bryson-dechambeau-wins-playoff-aramco-liv-golf-singapore-4aces-gc-top-team-2026"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

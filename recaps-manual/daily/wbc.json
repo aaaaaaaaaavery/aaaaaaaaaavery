@@ -2,69 +2,36 @@
   "leagueName": "WBC",
   "leagueKey": "wbc",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The semifinals are set after a historic night that saw the reigning champions fall and an underdog reach new heights. Venezuela pulled off a massive upset by knocking out Japan, while Italy continued its undefeated dream run to punch its first-ever ticket to the final four.",
+  "leagueBriefing": "The World Baseball Classic has reached its peak as Venezuela prepares for a historic final showdown against Team USA in Miami.",
   "games": [
     {
-      "id": "788098",
-      "teams": {
-        "away": "Puerto Rico",
-        "home": "Italy"
-      },
-      "headline": "Italy continues historic unbeaten run to reach first WBC semifinal",
-      "score": "Puerto Rico 6 - Italy 8",
-      "brief": "Italy’s improbable Cinderella story just added its most impressive chapter yet. Despite an early leadoff blast from Puerto Rico, the Azzurri responded immediately with a four-run first inning that chased starter Seth Lugo before he could even record two outs. Italy's relentless offense built an 8-2 lead by the fourth, and while they had to sweat out a bases-loaded jam in the eighth, they held on to remain undefeated and secure the deepest tournament run in the program's history.",
-      "bullets": [
-        "Vinnie Pasquantino, Dominic Canzone, and Jac Caglianone fueled the first-inning rally with three consecutive RBI singles.",
-        "Sam Aldegheri earned the win on the mound, while Greg Weissert locked down a five-out save to stifle the late Puerto Rican comeback.",
-        "The game made WBC history as the first time both leadoff hitters (Willi Castro for PR and Italy's response) resulted in such explosive opening frames.",
-        "Andrew Fischer and J.J. D'Orazio broke the game open in the fourth with back-to-back two-run doubles."
-      ],
-      "context": "Italy advances to its first-ever World Baseball Classic semifinal, where they will face Venezuela in Miami.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.mlb.com/royals/news/puerto-rico-vs-italy-in-2026-world-baseball-classic-quarterfinals"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "jzLe1uHEeEE",
-          "title": "Puerto Rico vs. Italy 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=jzLe1uHEeEE",
-          "embedUrl": "https://www.youtube.com/embed/jzLe1uHEeEE",
-          "publishedAt": "2026-03-15T00:33:18Z",
-          "matchScore": 100
-        }
-      ]
-    },
-    {
-      "id": "788097",
+      "id": "788093",
       "teams": {
         "away": "Venezuela",
-        "home": "Japan"
+        "home": "Italy"
       },
-      "headline": "Venezuela stuns Japan to dethrone reigning World Baseball Classic champs",
-      "score": "Venezuela 8 - Japan 5",
-      "brief": "The reign of Japan is over. In a heavyweight battle that lived up to the hype, Venezuela overcame a mid-game deficit to knock out the defending champions. After trailing 5-2 against ace Yoshinobu Yamamoto, the Venezuelan lineup exploded against the Japanese bullpen, led by a go-ahead home run from Wilyer Abreu in the sixth. Venezuela's relief corps then slammed the door, silencing the Tokyo crowd and ending Japan's bid for a fourth title in dramatic fashion.",
+      "headline": "Venezuela reaches first Classic final with dramatic seventh-inning surge past Italy",
+      "score": "Venezuela 4 - Italy 2",
+      "brief": "In a night filled with South Florida rain and high-stakes drama, Venezuela punch their ticket to the World Baseball Classic final for the first time in history. Down 2-1 in the seventh, the Venezuelans ignited a two-out rally that silenced the Italian bench and sent the Miami crowd into a frenzy. It was a victory that transcended the box score, serving as a massive emotional release for a country with deep baseball roots that had never reached this stage of the tournament.",
       "bullets": [
-        "Ronald Acuña Jr. set the tone early with a massive leadoff home run off Yoshinobu Yamamoto.",
-        "Wilyer Abreu delivered the decisive blow with a home run in the sixth inning to reclaim the lead for Venezuela.",
-        "Daniel Palencia secured the historic victory by striking out Shohei Ohtani for the final out of the game.",
-        "The win marks Venezuela's first trip to the WBC semifinals in 17 years, ending Japan's streak of reaching the final four in every previous tournament."
+        "A three-run outburst in the 7th inning turned the game around, highlighted by RBI singles from Ronald Acuña Jr., Maikel Garcia, and Luis Arraez.",
+        "Eugenio Suárez provided the early spark for Venezuela with a solo home run in the 4th inning.",
+        "Angel Zerpa earned the win in relief, while Danny Palencia locked down his second save of the tournament.",
+        "Despite the loss, Italy's 'espresso-fueled' run reached its end after they held a 2-0 lead into the 4th inning.",
+        "Gleyber Torres was a perfect 2-for-2 at the plate with a walk to anchor the Venezuelan offense."
       ],
-      "context": "Venezuela eliminates the defending champions and advances to the semifinals for the first time since 2009.",
+      "context": "Venezuela advances to meet Team USA in the championship game, marking their first-ever appearance in a World Baseball Classic final.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.vavel.com/en-us/more-sports/2026/03/15/1254092-venezuela-vs-japan-live-score-world-baseball-classic.html"
+        "recapUrl": "https://www.mlb.com/gameday/venezuela-vs-italy/2026/03/16/788093/final/wrap"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "QFIJzQeaCkc",
-          "title": "Venezuela vs. Japan 2026 World Baseball Classic | Game Highlights",
-          "url": "https://www.youtube.com/watch?v=QFIJzQeaCkc",
-          "embedUrl": "https://www.youtube.com/embed/QFIJzQeaCkc",
-          "publishedAt": "2026-03-15T06:23:34Z",
-          "matchScore": 100
+          "videoId": "FJyad001Pfs",
+          "title": "Venezuela vs Italy Highlights",
+          "url": "https://www.youtube.com/watch?v=FJyad001Pfs&pp=ygUadmVuZXp1ZWxhIGl0YWx5IGhpZ2hsaWdodHM%3D",
+          "embedUrl": "https://www.youtube.com/embed/FJyad001Pfs"
         }
       ]
     }

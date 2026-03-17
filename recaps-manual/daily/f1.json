@@ -1,39 +1,7 @@
 {
   "leagueName": "Formula One",
-  "leagueKey": "formulaone",
+  "leagueKey": "f1",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Kimi Antonelli made history in Shanghai, becoming the second-youngest winner in F1 history while leading a Mercedes 1-2. The race was defined by a teenage prodigy's dominance and a vintage wheel-to-wheel scrap between Ferrari teammates that saw Lewis Hamilton secure his first podium in red.",
-  "games": [
-    {
-      "id": "13519942",
-      "teams": {
-        "away": "Mercedes",
-        "home": "Mercedes"
-      },
-      "headline": "Teenage star Antonelli makes history as Hamilton grabs first Ferrari podium",
-      "score": null,
-      "brief": "Kimi Antonelli proved the hype is real, dominating the Chinese Grand Prix at just 19 years old to lead home a Mercedes one-two finish. While the Italian youngster checked out at the front, the real fireworks happened behind him as Lewis Hamilton and Charles Leclerc engaged in a thrilling, high-stakes duel for the final podium spot. Hamilton eventually prevailed in the intra-team Ferrari battle to claim his first trophy for the Scuderia, marking a major milestone in his new chapter with the Italian team.",
-      "bullets": [
-        "Kimi Antonelli (19 years, 202 days) became the second-youngest F1 winner ever, trailing only Max Verstappen.",
-        "Lewis Hamilton secured his first podium finish since November 2024 and his first ever for Ferrari.",
-        "George Russell retained his championship lead by four points over Antonelli after finishing second.",
-        "Max Verstappen suffered a rare DNF after an electrical failure forced him out with 10 laps remaining.",
-        "It was a disastrous day for McLaren as both Lando Norris and Oscar Piastri failed to start due to power unit issues."
-      ],
-      "context": "Antonelli's maiden win signals a massive shift in the championship race as Mercedes continues to dominate the early 2026 season.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.skysports.com/f1/news/12433/13519942/chinese-gp-kimi-antonelli-claims-maiden-f1-win-from-george-russell-as-lewis-hamilton-gets-first-ferrari-podium-in-shanghai"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

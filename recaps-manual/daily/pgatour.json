@@ -2,38 +2,6 @@
   "leagueName": "PGA Tour",
   "leagueKey": "pgatour",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Ludvig Åberg navigated a volatile Moving Day at TPC Sawgrass to maintain his grip on the lead, setting up a showdown between two of golf's brightest young stars in the final round of THE PLAYERS.",
-  "games": [
-    {
-      "id": "the-players-championship-2026-round-3",
-      "teams": {
-        "away": "",
-        "home": ""
-      },
-      "headline": "Åberg maintains steady hand at Sawgrass to hold three-shot lead entering Sunday",
-      "score": null,
-      "brief": "Ludvig Åberg survived a rollercoaster finish at TPC Sawgrass to card a 1-under 71, keeping him three strokes clear of the field heading into the final round. Despite a frustrating three-putt bogey on the 18th, Åberg’s efficiency—highlighted by a massive eagle on the 11th—offset the late stumbles. He now faces a final-round duel with fellow PGA TOUR University alum Michael Thorbjornsen, as both local residents look to claim the tour's flagship event on a course that punished nearly everyone else in the chasing pack.",
-      "bullets": [
-        "Ludvig Åberg reached 13-under par overall, powered by his third eagle of the tournament on the par-5 11th hole.",
-        "Michael Thorbjornsen surged into the final pairing with a 5-under 67, the second-best round of the day.",
-        "Cameron Young sat just two back until a double-bogey on the 18th dropped him to 9-under, four shots off the lead.",
-        "Robert MacIntyre recorded the low round of Saturday with a 7-under 65 to climb into a tie for 10th.",
-        "A star-studded group at 8-under includes Justin Thomas, Viktor Hovland, and Matt Fitzpatrick, all five shots back."
-      ],
-      "context": "Åberg is looking to become the first player since Craig Perks in 2002 to win THE PLAYERS Championship in his debut appearance.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.pgatour.com/article/news/daily-wrapup/2026/03/14/the-players-championship-round-3-scores-leaderboard-results-tpc-sawgrass-ludvig-aberg"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

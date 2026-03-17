@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-15",
+  "date": "2026-03-17",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "f1",
-      "gameId": "13519942",
-      "headline": "Teenage star Antonelli makes history as Hamilton grabs first Ferrari podium",
-      "scoreLine": ""
+      "leagueKey": "wbc",
+      "gameId": "788093",
+      "headline": "Venezuela reaches first Classic final with dramatic seventh-inning surge past Italy",
+      "scoreLine": "Venezuela 4 - Italy 2"
     },
     {
       "rank": 2,
-      "leagueKey": "ncaam",
-      "gameId": "401803310",
-      "headline": "Duke goes back-to-back as Boozer and Evans outlast Virginia's stingy defense",
-      "scoreLine": "Virginia 70 - Duke 74"
+      "leagueKey": "premierleague",
+      "gameId": "20260316-brentford-wolves",
+      "headline": "Arokodare caps Wolves comeback as Brentford let lead slip",
+      "scoreLine": "Brentford 2 - 2 Wolverhampton Wanderers"
     },
     {
       "rank": 3,
-      "leagueKey": "premierleague",
-      "gameId": "20260314-ARS-EVE",
-      "headline": "History-maker Dowman seals dramatic Arsenal win to extend title lead",
-      "scoreLine": "Arsenal 2 - 0 Everton"
+      "leagueKey": "nba",
+      "gameId": "401789431",
+      "headline": "Doncic's 36 points lead Lakers to gritty road win in Houston",
+      "scoreLine": "Lakers 100 - Rockets 92"
     },
     {
       "rank": 4,
-      "leagueKey": "ncaam",
-      "gameId": "20260314-uconn-stjohns",
-      "headline": "Red Storm repeat as Big East kings after dismantling UConn at the Garden",
-      "scoreLine": "UConn 52 - St. John's 72"
+      "leagueKey": "nba",
+      "gameId": "401789432",
+      "headline": "Spurs reach 50-win mark as Wembanyama silences the Intuit Dome",
+      "scoreLine": "Spurs 119 - Clippers 115"
     },
     {
       "rank": 5,
-      "leagueKey": "wbc",
-      "gameId": "788097",
-      "headline": "Venezuela stuns Japan to dethrone reigning World Baseball Classic champs",
-      "scoreLine": "Venezuela 8 - Japan 5"
+      "leagueKey": "nba",
+      "gameId": "401789425",
+      "headline": "Alexander-Walker erupts for career-high 41 to lead Hawks over Magic",
+      "scoreLine": "Magic 112 - Hawks 124"
     },
     {
       "rank": 6,
       "leagueKey": "nba",
-      "gameId": "20260314-DEN-LAL",
-      "headline": "Doncic hits OT winner as Lakers edge Nuggets in thriller",
-      "scoreLine": "Nuggets 125 - Lakers 127"
+      "gameId": "401789428",
+      "headline": "Brown wins duel with Booker as Celtics edge Suns in heavyweight clash",
+      "scoreLine": "Suns 112 - Celtics 120"
     },
     {
       "rank": 7,
-      "leagueKey": "golf",
-      "gameId": "pgatour-the-players-championship-2026-round-3",
-      "headline": "Åberg maintains steady hand at Sawgrass to hold three-shot lead entering Sunday",
-      "scoreLine": ""
+      "leagueKey": "nhl",
+      "gameId": "401803311",
+      "headline": "Cotter plays hero as Devils stun Bruins in overtime",
+      "scoreLine": "Bruins 3 - Devils 4"
     },
     {
       "rank": 8,
-      "leagueKey": "tennis",
-      "gameId": "atp-medvedev-stuns-alcaraz",
-      "headline": "Medvedev snaps Alcaraz’s 16-match winning streak to book Indian Wells final",
-      "scoreLine": "Daniil Medvedev 2 - Carlos Alcaraz 0"
+      "leagueKey": "nhl",
+      "gameId": "401803314",
+      "headline": "Vintage Malkin leads Penguins' offensive barrage in Denver",
+      "scoreLine": "Penguins 7 - Avalanche 2"
     },
     {
       "rank": 9,
-      "leagueKey": "nhl",
-      "gameId": "2025021044",
-      "headline": "Minten ends marathon shootout to snap Bruins road skid",
-      "scoreLine": "Bruins 3 - Capitals 2"
+      "leagueKey": "seriea",
+      "gameId": "2558789",
+      "headline": "Fiorentina thrashes Cremonese to pull away from relegation zone",
+      "scoreLine": "Cremonese 1 - 4 Fiorentina"
     },
     {
       "rank": 10,
-      "leagueKey": "nwsl",
-      "gameId": "20260314-BOS-GTH",
-      "headline": "Gotham FC spoils Boston's record-breaking debut at Gillette Stadium",
-      "scoreLine": "Boston Legacy 0 - 1 NJ/NY Gotham FC"
+      "leagueKey": "ncaasoftball",
+      "gameId": "20260316-texas-am-lsu",
+      "headline": "LSU bats wake up in series-salvaging win over Texas A&M",
+      "scoreLine": "Texas A&M 2 - LSU 7"
     }
   ],
   "top10": [
-    "Teenage star Antonelli makes history as Hamilton grabs first Ferrari podium",
-    "Duke goes back-to-back as Boozer and Evans outlast Virginia's stingy defense",
-    "History-maker Dowman seals dramatic Arsenal win to extend title lead",
-    "Red Storm repeat as Big East kings after dismantling UConn at the Garden",
-    "Venezuela stuns Japan to dethrone reigning World Baseball Classic champs",
-    "Doncic hits OT winner as Lakers edge Nuggets in thriller",
-    "Åberg maintains steady hand at Sawgrass to hold three-shot lead entering Sunday",
-    "Medvedev snaps Alcaraz’s 16-match winning streak to book Indian Wells final",
-    "Minten ends marathon shootout to snap Bruins road skid",
-    "Gotham FC spoils Boston's record-breaking debut at Gillette Stadium"
+    "Venezuela reaches first Classic final with dramatic seventh-inning surge past Italy",
+    "Arokodare caps Wolves comeback as Brentford let lead slip",
+    "Doncic's 36 points lead Lakers to gritty road win in Houston",
+    "Spurs reach 50-win mark as Wembanyama silences the Intuit Dome",
+    "Alexander-Walker erupts for career-high 41 to lead Hawks over Magic",
+    "Brown wins duel with Booker as Celtics edge Suns in heavyweight clash",
+    "Cotter plays hero as Devils stun Bruins in overtime",
+    "Vintage Malkin leads Penguins' offensive barrage in Denver",
+    "Fiorentina thrashes Cremonese to pull away from relegation zone",
+    "LSU bats wake up in series-salvaging win over Texas A&M"
   ],
-  "newsBriefing": "It was a landmark day across the global sports landscape, defined by historic firsts and the crowning of champions. On the collegiate stage, Duke secured its second consecutive ACC tournament title in a 74-70 win over Virginia, marking an unprecedented conference trifecta for the school after winning titles in football and women's basketball in the same year. In the WAC, California Baptist earned its first-ever NCAA tournament berth following a dramatic 63-61 victory sealed by a missed Utah Valley alley-oop in the closing seconds. International competition saw Venezuela make history by stunning defending champion Japan 8-5 to reach their first World Baseball Classic semifinal and qualify for the 2028 Olympics, while Formula 1 celebrated 19-year-old Kimi Antonelli becoming the second-youngest race winner ever at the Chinese Grand Prix. The day was further highlighted by Mikaela Shiffrin tying a record with her eighth World Cup slalom win of the season, Bryson DeChambeau surviving a wild Singapore playoff to claim his fourth LIV Golf title, and Luka Doncic delivering a signature game-winning shot for the Lakers in an overtime thriller against the Nuggets. Even as global tensions forced the cancellation of the highly anticipated Finalissima between Spain and Argentina, the day remained a showcase of veteran dominance and the arrival of a new generation of stars.",
-  "updatedAt": "2026-03-15T14:48:13.652Z"
+  "newsBriefing": "Major shifts in the sports landscape dominated the headlines today, ranging from historic coaching milestones and high-stakes international drama to significant roster shakeups just days before the NCAA tournament. Steve Kerr etched his name deeper into NBA history by becoming the fourth-fastest coach to reach 600 wins as his Warriors snapped a losing streak, while the league at large moved closer to a new era with a pending vote on expansion into Seattle and Las Vegas. The college basketball world was rocked by the arrest of Alabama star Aden Holloway on felony drug charges, leaving the Crimson Tide to scramble for a new identity without their second-leading scorer right as March Madness begins. Meanwhile, Michigan's top seed looks even more impressive following revelations that star Yaxel Lendeborg turned down a massive $7-9 million NIL offer from Kentucky to stay with the Wolverines. On the international stage, Venezuela celebrated a historic first by rallying past Italy to reach the World Baseball Classic final against the U.S., while a geopolitical rift has cast doubt on the upcoming World Cup, with Iran requesting to move its matches from American soil to Mexico due to security concerns. NFL news rounded out the day as the Kansas City Chiefs fortified their quarterback depth by acquiring Justin Fields from the Jets to back up an injured Patrick Mahomes, and the San Francisco 49ers continued their wide receiver overhaul by signing veteran Christian Kirk to a one-year deal.",
+  "updatedAt": "2026-03-17T11:33:21.551Z"
 }
