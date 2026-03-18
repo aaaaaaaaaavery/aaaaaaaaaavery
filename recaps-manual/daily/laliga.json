@@ -1,39 +1,7 @@
 {
-  "leagueName": "La Liga",
+  "leagueName": "LaLiga",
   "leagueKey": "laliga",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Rayo Vallecano salvaged a point at home against bottom-dwelling Levante, extending their unbeaten streak while leaving the visitors stuck in the relegation zone.",
-  "games": [
-    {
-      "id": "20260316-rayo-vallecano-levante",
-      "teams": {
-        "away": "Levante",
-        "home": "Rayo Vallecano"
-      },
-      "headline": "Ciss rescues point for Rayo Vallecano in late drama against Levante",
-      "score": "Rayo Vallecano 1 - 1 Levante",
-      "brief": "Rayo Vallecano maintained their six-game unbeaten run in La Liga, but they had to work for it after falling behind to a disciplined Levante side. Carlos Espí opened the scoring for the visitors just before halftime, threatening a major upset at the Estadio de Vallecas. However, Pathé Ciss proved to be the hero for the hosts, striking a contested equalizer in the fourth minute of stoppage time to break Levante hearts and ensure the spoils were shared.",
-      "bullets": [
-        "Pathé Ciss scored a dramatic equalizer in the 94th minute, his first goal since returning from a knee injury.",
-        "Carlos Espí gave Levante the lead in the 41st minute with a clinical finish assisted by Iker Losada.",
-        "The result extends Rayo Vallecano's unbeaten league streak to six matches, moving them up to 13th in the table.",
-        "Levante remains at the bottom of the standings, five points adrift of safety despite taking seven points from their last nine available.",
-        "Rayo Vallecano dominated possession with 61% but struggled to break down a stubborn Levante defense until the final moments."
-      ],
-      "context": "The draw keeps Rayo Vallecano comfortably mid-table while Levante faces an increasingly uphill battle to avoid relegation with only 10 games remaining.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.newsday.com/sports/soccer/levante-rayo-vallecano-laliga-e08701"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "C0fmK7iYd7c",
-          "title": "Rayo Vallecano vs Levante Highlights",
-          "url": "https://www.youtube.com/watch?v=C0fmK7iYd7c&pp=ygUXcmF5byBsZXZhbnRlIGhpZ2hsaWdodHM%3D",
-          "embedUrl": "https://www.youtube.com/embed/C0fmK7iYd7c"
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

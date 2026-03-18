@@ -2,38 +2,6 @@
   "leagueName": "Serie A",
   "leagueKey": "seriea",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Fiorentina dominated a crucial relegation six-pointer at the Stadio Giovanni Zini, moving four points clear of the drop zone while deepening Cremonese's survival crisis.",
-  "games": [
-    {
-      "id": "2558789",
-      "teams": {
-        "away": "Fiorentina",
-        "home": "Cremonese"
-      },
-      "headline": "Fiorentina thrashes Cremonese to pull away from relegation zone",
-      "score": "Cremonese 1 - 4 Fiorentina",
-      "brief": "In a high-stakes battle at the bottom of the table, Fiorentina showed superior quality to dismantle Cremonese and secure their biggest away win of the season. Fabiano Parisi and Roberto Piccoli set the tone with first-half strikes before Dodô effectively ended the contest shortly after the interval. While David Okereke provided a brief spark for the hosts, Albert Gudmundsson’s late goal ensured the Viola took home all three points and left Cremonese winless in their last 14 outings.",
-      "bullets": [
-        "Roberto Piccoli produced a career-first performance by recording both a goal and an assist in the same Serie A match.",
-        "Fabiano Parisi opened the scoring in the 25th minute with his first goal of the league season.",
-        "David De Gea was forced into a massive save just 120 seconds into the match to deny Federico Bonazzoli from point-blank range.",
-        "Cremonese's winless streak has now reached 14 matches, leaving them three points adrift of safety in the 18th position.",
-        "The victory moves Fiorentina into 16th place, leapfrogging Lecce and providing a four-point cushion over the relegation zone."
-      ],
-      "context": "The result significantly shifts the relegation landscape, giving Fiorentina much-needed breathing room while keeping Cremonese stuck in the bottom three.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://football-italia.net/serie-a-cremonese-1-4-fiorentina-viola-quality/"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "MSx6UmQozqw",
-          "title": "Cremonese vs Fiorentina Highlights",
-          "url": "https://www.youtube.com/watch?v=MSx6UmQozqw",
-          "embedUrl": "https://www.youtube.com/embed/MSx6UmQozqw"
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

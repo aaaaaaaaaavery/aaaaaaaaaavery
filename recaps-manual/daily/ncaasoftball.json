@@ -2,28 +2,159 @@
   "leagueName": "NCAA Softball",
   "leagueKey": "ncaasoftball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "LSU found its rhythm at the plate just in time to salvage a game in the series against Texas A&M, using a late-inning offensive surge and a complete game from Tatum Clopton to avoid the home sweep.",
+  "leagueBriefing": "Ranked powerhouses asserted their dominance on Tuesday as Alabama, Arkansas, and Duke handled their business, while Oklahoma State made a statement by taking down Grand Canyon in a ranked-on-ranked showdown.",
   "games": [
     {
-      "id": "20260316-texas-am-lsu",
+      "id": "401799480",
       "teams": {
-        "away": "Texas A&M",
-        "home": "LSU"
+        "away": "UL Monroe",
+        "home": "Alabama"
       },
-      "headline": "Clopton dominates as LSU avoids sweep with dominant win over Texas A&M",
-      "score": "Texas A&M 2 - LSU 7",
-      "brief": "LSU snapped its conference skid in a big way Monday night, riding a career-defining performance from Tatum Clopton to a 7-2 win over No. 16 Texas A&M. After dropping the first two games of the series, the Tigers finally broke through with a four-run sixth inning that turned a tight contest into a comfortable finale. Clopton was the story in the circle, tossing a complete game and matching her season high with six strikeouts to keep the Aggies' potent lineup at bay while LSU's bats tallied eight hits to ensure they didn't leave the series empty-handed.",
+      "headline": "Taylor delivers early as Alabama stays hot against Warhawks",
+      "score": "UL Monroe 1 - Alabama 4",
+      "brief": "Alabama continued its clinical start to the season, leaning on early run production and steady pitching to turn aside UL Monroe. Ambrey Taylor set the tone immediately with a two-run triple in the first inning, providing more than enough cushion for a Crimson Tide staff that limited the Warhawks to just one run over seven innings.",
       "bullets": [
-        "Tatum Clopton earned her first complete game of the season, allowing just one earned run and striking out six over seven innings.",
-        "Alix Franklin ignited the Tiger offense with a solo home run in the second inning to give LSU its first lead of the entire series.",
-        "A late four-run sixth inning for LSU featured RBI walks from Avery Hodge and Jalia Lassiter followed by a two-run double from Maci Bergeron.",
-        "Texas A&M's Kennedy Powell continued her hot streak, going 2-for-4 with a double and scoring both of the Aggies' runs.",
-        "The Aggies committed two fielding errors and surrendered five walks, contributing to LSU's largest scoring output of the series."
+        "Ambrey Taylor provided the game's biggest swing with a two-run triple in the bottom of the first.",
+        "The Crimson Tide improved their impressive season record to 27-1.",
+        "Both teams played clean defense, finishing the contest with zero errors apiece.",
+        "UL Monroe's offense was held to six hits, matching Alabama's total but failing to string them together for a big inning."
       ],
-      "context": "The victory marked LSU's first SEC win of the season and prevented a series sweep at the hands of the Aggies.",
+      "context": "Alabama maintains its top-10 momentum as they prepare for the heart of the SEC schedule.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://lsusports.net/news/2026/03/16/no-20-lsu-avoids-sweep-with-7-2-win-over-no-16-texas-am/"
+        "recapUrl": "https://www.espn.com/college-softball/recap/_/gameId/401799480"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ],
+      "teamMeta": {
+        "away": {
+          "record": "17-15",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "27-1",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 6
+        }
+      }
+    },
+    {
+      "id": "401799481",
+      "teams": {
+        "away": "Central Arkansas",
+        "home": "Arkansas"
+      },
+      "headline": "Arkansas offense explodes early in run-rule rout of Central Arkansas",
+      "score": "Central Arkansas 2 - Arkansas 10",
+      "brief": "The Razorbacks didn't waste any time in Fayetteville, putting up double digits in just five innings to trigger the run rule against Central Arkansas. Arkansas's power-heavy lineup overwhelmed the Bears' pitching staff, scoring early and often to ensure the game never stayed competitive for long.",
+      "bullets": [
+        "The game was called after 5 innings due to the NCAA run rule with Arkansas leading by eight.",
+        "Arkansas improved to 24-4 on the year, defending their top-10 ranking.",
+        "The Razorbacks' defense was efficient, overcoming a single error to keep Central Arkansas to just two runs.",
+        "Central Arkansas struggled to find rhythm, committing two errors that fueled the Razorbacks' rallies."
+      ],
+      "context": "Arkansas continues to showcase why they are a legitimate national title contender with high-powered offensive depth.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/college-softball/recap/_/gameId/401799481"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "24-4",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 9
+        }
+      }
+    },
+    {
+      "id": "401799483",
+      "teams": {
+        "away": "UNC Wilmington",
+        "home": "Duke"
+      },
+      "headline": "Duke unleashes historic 17-run barrage in five-inning masterclass",
+      "score": "UNC Wilmington 0 - Duke 17",
+      "brief": "In one of the most lopsided ranked performances of the season, Duke absolutely dismantled UNC Wilmington. The Blue Devils’ bats were white-hot from the opening pitch, racking up 17 runs and 14 hits in just four turns at the plate, while the pitching staff combined for a dominant one-hit shutout.",
+      "bullets": [
+        "Duke scored 17 runs on 14 hits, averaging over four runs per inning played.",
+        "UNC Wilmington was held to a single hit the entire game.",
+        "The Blue Devils improved to 19-10, showing signs of a mid-season offensive surge.",
+        "Every starter in the Duke lineup reached base in the lopsided victory."
+      ],
+      "context": "This dominant performance serves as a massive confidence booster for a Duke team looking to climb the ACC standings.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/college-softball/recap/_/gameId/401799483"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "19-10",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 20
+        }
+      }
+    },
+    {
+      "id": "401799486",
+      "teams": {
+        "away": "Oklahoma State",
+        "home": "Grand Canyon"
+      },
+      "headline": "Cowgirls spoil Grand Canyon's perfect home vibe with double-digit upset",
+      "score": "Oklahoma State 10 - Grand Canyon 5",
+      "brief": "In a highly anticipated matchup of ranked West Coast and Big 12 powers, Oklahoma State traveled to Phoenix and handed Grand Canyon a rare loss. The Cowgirls used a 12-hit attack to puncture what had been one of the most reliable pitching staffs in the country, proving they can win high-scoring affairs on the road.",
+      "bullets": [
+        "Oklahoma State out-hit Grand Canyon 12-6 to secure the ranked victory.",
+        "The loss was only the second of the season for No. 22 Grand Canyon (30-2).",
+        "The Cowgirls overcame one error to secure their 19th win of the season.",
+        "This win marks a significant resume-builder for Oklahoma State as they head into a tough conference stretch."
+      ],
+      "context": "This top-25 win likely propels Oklahoma State upward in next week's polls while testing Grand Canyon's elite status.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/college-softball/recap/_/gameId/401799486"
       },
       "highlights": [
         {
@@ -39,13 +170,13 @@
           "record": "19-9",
           "standing": null,
           "seed": null,
-          "top25Rank": 16
+          "top25Rank": 21
         },
         "home": {
-          "record": "19-9",
+          "record": "30-1",
           "standing": null,
           "seed": null,
-          "top25Rank": 17
+          "top25Rank": 22
         }
       }
     }

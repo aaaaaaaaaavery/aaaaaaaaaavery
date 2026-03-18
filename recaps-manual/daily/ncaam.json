@@ -2,6 +2,97 @@
   "leagueName": "NCAAM",
   "leagueKey": "ncaam",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "The 2026 NCAA Tournament kicked off with a pair of First Four thrillers in Dayton, where Texas survived a last-second scare and Howard made program history with its first-ever tournament victory.",
+  "games": [
+    {
+      "id": "401783861",
+      "teams": {
+        "away": "Texas",
+        "home": "NC State"
+      },
+      "headline": "Tramon Mark leaves it late to send Texas past NC State in First Four",
+      "score": "Texas 68 - NC State 66",
+      "brief": "In a physical battle between two 11-seeds, Tramon Mark proved why he's the go-to option for the Longhorns. With the game tied and the clock winding down, Mark drove the length of the floor to bank in a leaning jumper with just 1.1 seconds remaining. NC State, which fought back from a late deficit, couldn't get a final shot off, ending a gritty season for the Wolfpack while Texas moves on to face 6-seed Iowa State.",
+      "bullets": [
+        "Tramon Mark led all scorers with 17 points, including the game-winning bucket in the final seconds.",
+        "Quadir Copeland paced NC State with 16 points, 8 rebounds, and 4 steals in a losing effort.",
+        "Texas held a narrow 30-29 lead at halftime and managed to withstand a late 7-0 Wolfpack run.",
+        "The Longhorns shot 44% from the field compared to 41% for NC State.",
+        "Texas advances to the Round of 64 to face Iowa State in the West Region."
+      ],
+      "context": "Texas advances to face 6-seed Iowa State in the West Region bracket.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401783861"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": 11,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": 11,
+          "top25Rank": null
+        }
+      }
+    },
+    {
+      "id": "401783860",
+      "teams": {
+        "away": "UMBC",
+        "home": "Howard"
+      },
+      "headline": "Howard survives UMBC's late surge to claim first NCAA Tournament win",
+      "score": "UMBC 83 - Howard 86",
+      "brief": "Howard finally has its 'One Shining Moment.' The Bison jumped out to a dominant start and held off a furious second-half rally from UMBC to secure the first NCAA Tournament win in school history. Bryce Harris was a force inside, racking up a massive double-double to ensure Howard wouldn't be on the wrong end of another UMBC miracle. The Bison now head to the Midwest Region's main bracket for a date with top-seeded Auburn.",
+      "bullets": [
+        "Bryce Harris dominated the paint for Howard, finishing with 19 points and 14 rebounds.",
+        "UMBC's Dion Brown missed a potential game-tying three-pointer as the buzzer sounded.",
+        "The Bison led by as many as 12 points in the first half before UMBC's 42-point second-half surge.",
+        "De'Shane Armstrong Jr. led the Retrievers with 17 points and 6 rebounds.",
+        "This victory marks the first-ever NCAA Tournament win for the Howard Bison program."
+      ],
+      "context": "Howard makes history with its first tournament win and advances to face 1-seed Auburn.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401783860"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": 16,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": 16,
+          "top25Rank": null
+        }
+      }
+    }
+  ]
 }

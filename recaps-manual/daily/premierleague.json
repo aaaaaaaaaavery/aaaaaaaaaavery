@@ -2,40 +2,6 @@
   "leagueName": "Premier League",
   "leagueKey": "premierleague",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Brentford's European dreams took a slight dent as they allowed bottom-of-the-table Wolves to claw back from two goals down in a thrilling Monday night draw.",
-  "games": [
-    {
-      "id": "20260316-brentford-wolves",
-      "teams": {
-        "away": "Wolverhampton Wanderers",
-        "home": "Brentford"
-      },
-      "headline": "Arokodare caps Wolves comeback as Brentford let lead slip",
-      "score": "Brentford 2 - 2 Wolverhampton Wanderers",
-      "brief": "Brentford looked to be cruising toward the European spots after a dominant opening 40 minutes, but a resilient Wolverhampton Wanderers side refused to stay down. Igor Thiago celebrated his maiden Brazil call-up with a goal that seemed to have the Bees in complete control at 2-0. However, Adam Armstrong's stunner just before the break changed the mood entirely, allowing the visitors to find a second-half equalizer through substitute Tolu Arokodare and maintain their recent unbeaten spark.",
-      "bullets": [
-        "Igor Thiago marked his first-ever call-up to the Brazil national team with his 19th league goal of the season.",
-        "Michael Kayode opened the scoring with a powerful header, marking his first goal in 41 appearances for the Bees.",
-        "Adam Armstrong ignited the comeback with a sublime 25-yard strike into the top corner just before halftime.",
-        "Substitute Tolu Arokodare equalized with a stooping header only three minutes after coming off the bench.",
-        "Wolves struck the woodwork twice in the second half through Armstrong and Arokodare, nearly snatching all three points."
-      ],
-      "context": "The draw leaves Wolves 12 points from safety while Brentford remain in seventh, missed a chance to move within a point of the top six.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.theguardian.com/football/2026/mar/16/brentford-wolves-premier-league-match-report"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "53HA9NWiLgk",
-          "title": "Brentford v. Wolves | PREMIER LEAGUE HIGHLIGHTS | 3/16/2026 | NBC Sports",
-          "url": "https://www.youtube.com/watch?v=53HA9NWiLgk",
-          "embedUrl": "https://www.youtube.com/embed/53HA9NWiLgk",
-          "publishedAt": "2026-03-16T22:40:12Z",
-          "matchScore": 141
-        }
-      ]
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

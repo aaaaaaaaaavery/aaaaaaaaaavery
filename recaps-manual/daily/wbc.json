@@ -2,38 +2,54 @@
   "leagueName": "WBC",
   "leagueKey": "wbc",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The World Baseball Classic has reached its peak as Venezuela prepares for a historic final showdown against Team USA in Miami.",
+  "leagueBriefing": "Venezuela stands atop the baseball world for the first time after a thrilling ninth-inning rally to defeat the United States in Miami.",
   "games": [
     {
-      "id": "788093",
+      "id": "788094",
       "teams": {
         "away": "Venezuela",
-        "home": "Italy"
+        "home": "USA"
       },
-      "headline": "Venezuela reaches first Classic final with dramatic seventh-inning surge past Italy",
-      "score": "Venezuela 4 - Italy 2",
-      "brief": "In a night filled with South Florida rain and high-stakes drama, Venezuela punch their ticket to the World Baseball Classic final for the first time in history. Down 2-1 in the seventh, the Venezuelans ignited a two-out rally that silenced the Italian bench and sent the Miami crowd into a frenzy. It was a victory that transcended the box score, serving as a massive emotional release for a country with deep baseball roots that had never reached this stage of the tournament.",
+      "headline": "Venezuela captures first World Baseball Classic title with late heroics against USA",
+      "score": "Venezuela 3 - USA 2",
+      "brief": "In a championship game that lived up to the hype, Eugenio Suárez delivered a go-ahead RBI double in the top of the ninth to secure Venezuela's first World Baseball Classic crown. The victory was a masterclass in resilience, as Venezuela stifled a star-studded American lineup for most of the night and quickly recovered after Bryce Harper tied the game with a massive eighth-inning blast. For a nation where baseball is a way of life, the final out sparked a celebration years in the making.",
       "bullets": [
-        "A three-run outburst in the 7th inning turned the game around, highlighted by RBI singles from Ronald Acuña Jr., Maikel Garcia, and Luis Arraez.",
-        "Eugenio Suárez provided the early spark for Venezuela with a solo home run in the 4th inning.",
-        "Angel Zerpa earned the win in relief, while Danny Palencia locked down his second save of the tournament.",
-        "Despite the loss, Italy's 'espresso-fueled' run reached its end after they held a 2-0 lead into the 4th inning.",
-        "Gleyber Torres was a perfect 2-for-2 at the plate with a walk to anchor the Venezuelan offense."
+        "Eugenio Suárez provided the decisive blow with a ninth-inning double, capping a tournament where he emerged as a national hero.",
+        "Tournament MVP Maikel Garcia drove in the game's first run with a sacrifice fly and finished the Classic with a .385 average.",
+        "Eduardo Rodriguez dominated the U.S. bats early, allowing just one hit and one walk over 4.1 scoreless innings.",
+        "Bryce Harper briefly electrified the home crowd with a game-tying, two-run home run in the bottom of the eighth inning.",
+        "Venezuela's path to the title was a gauntlet, featuring knockout-stage wins over powerhouses Japan, Italy, and the United States."
       ],
-      "context": "Venezuela advances to meet Team USA in the championship game, marking their first-ever appearance in a World Baseball Classic final.",
+      "context": "The victory marks Venezuela's first championship in tournament history, ending the United States' bid for a repeat title on home soil.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.mlb.com/gameday/venezuela-vs-italy/2026/03/16/788093/final/wrap"
+        "recapUrl": "https://www.mlb.com/news/venezuela-wins-world-baseball-classic-2026?game_pk=788094"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "FJyad001Pfs",
-          "title": "Venezuela vs Italy Highlights",
-          "url": "https://www.youtube.com/watch?v=FJyad001Pfs&pp=ygUadmVuZXp1ZWxhIGl0YWx5IGhpZ2hsaWdodHM%3D",
-          "embedUrl": "https://www.youtube.com/embed/FJyad001Pfs"
+          "videoId": "jnVPMQkbGFE",
+          "title": "The FULL 1ST INNING between Team Venezuela and Team USA in the 2026 World Baseball Classic Final! 👀",
+          "url": "https://www.youtube.com/watch?v=jnVPMQkbGFE",
+          "embedUrl": "https://www.youtube.com/embed/jnVPMQkbGFE",
+          "publishedAt": "2026-03-18T00:52:22Z",
+          "matchScore": 100
         }
-      ]
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      }
     }
   ]
 }

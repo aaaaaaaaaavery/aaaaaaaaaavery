@@ -2,6 +2,135 @@
   "leagueName": "UEFA Champions League",
   "leagueKey": "uefachampionsleague",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "The Champions League quarterfinal field is taking shape after a dramatic night of second-leg action that saw historic comebacks and the reigning holders asserting their dominance across the continent.",
+  "games": [
+    {
+      "id": "80029454",
+      "teams": {
+        "away": "Bodø / Glimt",
+        "home": "Sporting CP"
+      },
+      "headline": "Sporting pull off historic comeback to crush Bodo/Glimt dreams",
+      "score": "Sporting CP 5 - 0 Bodø / Glimt",
+      "brief": "Sporting CP produced a night for the history books in Lisbon, overturning a daunting three-goal first-leg deficit with a ruthless five-goal barrage. After being stunned in the Arctic Circle last week, the Portuguese champions played with a desperate intensity that the Norwegian 'giantkillers' simply couldn't handle. The match was forced into extra time where Sporting finally found the goals to move ahead on aggregate, reaching the quarterfinals for the first time in over forty years.",
+      "bullets": [
+        "Gonçalo Inácio ignited the comeback with a first-half header before Pedro Gonçalves and Luis Suárez forced extra time.",
+        "Maximilian Araujo scored the decisive aggregate lead goal just two minutes into the extra period.",
+        "Bodo/Glimt's Kjetil Knutsen set a competition record by starting the same lineup for six consecutive matches.",
+        "This is Sporting's first appearance in the Champions League quarterfinals since the 1982/83 season."
+      ],
+      "context": "Sporting advances 5-3 on aggregate, ending Bodo/Glimt's fairy-tale run and setting up a quarterfinal clash with Arsenal.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-mena/football/uefa-champions-league/articles-video/sporting-thrash-bodo-glimt-to-reach-champions-league-quarters-2026-03-17"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "sygi3ivAd0M",
+          "title": "Sporting CP vs. Bodø/Glimt : Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=sygi3ivAd0M",
+          "embedUrl": "https://www.youtube.com/embed/sygi3ivAd0M",
+          "publishedAt": "2026-03-17T20:46:41Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "554849",
+      "teams": {
+        "away": "Bayer Leverkusen",
+        "home": "Arsenal"
+      },
+      "headline": "Eze and Rice stunners propel Arsenal past Leverkusen",
+      "score": "Arsenal 2 - 0 Bayer Leverkusen",
+      "brief": "Arsenal kept their quadruple dreams alive with a commanding performance at the Emirates, defined by two moments of individual brilliance. Eberechi Eze and Declan Rice both found the net with spectacular long-range strikes to break down a resilient Bayer Leverkusen side. While the first leg was a tense stalemate, the Gunners left no doubt in London, dominating possession and restricting the visitors to almost zero clear-cut opportunities.",
+      "bullets": [
+        "Eberechi Eze scored his first-ever Champions League goal with a 20-yard screamer in the 36th minute.",
+        "Arsenal recorded their 25th clean sheet of the season, a milestone achievement in just 49 matches.",
+        "The Gunners registered 12 shots on target, equaling their club record for a Champions League knockout match.",
+        "Declan Rice sealed the tie just after the hour mark with a clinical low drive into the bottom corner."
+      ],
+      "context": "Arsenal advances 3-1 on aggregate and will face Sporting CP in the quarterfinals next month.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.skysports.com/football/arsenal-vs-bayer-leverkusen/report/554849"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "GHu4MBYT8l0",
+          "title": "Arsenal vs. Bayer Leverkusen: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=GHu4MBYT8l0",
+          "embedUrl": "https://www.youtube.com/embed/GHu4MBYT8l0",
+          "publishedAt": "2026-03-17T22:12:42Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "554901",
+      "teams": {
+        "away": "PSG",
+        "home": "Chelsea"
+      },
+      "headline": "Clinical PSG embarrass Chelsea at the Bridge to march on",
+      "score": "Chelsea 0 - 3 PSG",
+      "brief": "The gap between Europe's elite and the current Chelsea project was laid bare at Stamford Bridge as the Champions League holders strolled to a dominant victory. PSG effectively ended the contest within the first fifteen minutes, ruthlessly punishing defensive errors from a youthful Blues backline. The atmosphere turned toxic in West London as home fans booed their team off at halftime, witnessing their heaviest two-legged European defeat in club history.",
+      "bullets": [
+        "Khvicha Kvaratskhelia and Bradley Barcola both scored in the opening 14 minutes to silence the home crowd.",
+        "Chelsea's 8-2 aggregate loss is the most goals they have ever conceded in a two-legged European tie.",
+        "19-year-old Senny Mayulu came off the bench to add a third goal in the second half.",
+        "The defeat was compounded by a late injury to Trevoh Chalobah, leaving Chelsea to finish with ten men."
+      ],
+      "context": "The holders advance 8-2 on aggregate, while Chelsea's focus shifts to a desperate fight for European qualification in the league.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.beinsports.com/en-mena/football/uefa-champions-league/articles-video/clinical-psg-see-off-chelsea-to-reach-the-champions-league-quarter-finals-2026-03-17"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "rB9xwSyVE98",
+          "title": "Chelsea vs. PSG: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=rB9xwSyVE98",
+          "embedUrl": "https://www.youtube.com/embed/rB9xwSyVE98",
+          "publishedAt": "2026-03-17T22:05:08Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "554900",
+      "teams": {
+        "away": "Real Madrid",
+        "home": "Manchester City"
+      },
+      "headline": "Vinícius Jr. brace haunts City as Real Madrid cruise into quarters",
+      "score": "Manchester City 1 - 2 Real Madrid",
+      "brief": "Real Madrid proved once again they are the masters of the Champions League, navigating a high-pressure night at the Etihad with clinical composure. A first-half red card for Bernardo Silva for a handball on the line completely changed the complexion of the match, allowing Vinícius Júnior to fire Madrid ahead from the spot. Despite a spirited equalizer from Erling Haaland, the ten men of City couldn't find the miracle they needed, and Vinícius added a second in stoppage time to put the result beyond doubt.",
+      "bullets": [
+        "Vinícius Júnior was named MVP after scoring a penalty and a dramatic 93rd-minute winner.",
+        "Bernardo Silva was sent off in the 22nd minute for a goal-line handball, the turning point of the tie.",
+        "This is the third consecutive year that Real Madrid have eliminated Manchester City from the competition.",
+        "Erling Haaland's 41st-minute tap-in briefly gave City hope, but they were thwarted by a string of Thibaut Courtois saves."
+      ],
+      "context": "Real Madrid progresses 5-1 on aggregate, setting up a heavyweight quarterfinal clash with Bayern Munich.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.skysports.com/football/manchester-city-vs-real-madrid/report/554900"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "SXIqIDIkbyk",
+          "title": "Manchester City vs. Real Madrid: Extended Highlights | UCL Round of 16 Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=SXIqIDIkbyk",
+          "embedUrl": "https://www.youtube.com/embed/SXIqIDIkbyk",
+          "publishedAt": "2026-03-17T22:45:27Z",
+          "matchScore": 100
+        }
+      ]
+    }
+  ]
 }

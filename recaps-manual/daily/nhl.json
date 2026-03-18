@@ -2,164 +2,418 @@
   "leagueName": "NHL",
   "leagueKey": "nhl",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The playoff races tightened on Monday night as Detroit used a massive second period to down Calgary, while Utah pulled off a statement win in Dallas. Elsewhere, Pittsburgh's offense exploded in Colorado, and the Devils stayed alive in the hunt with a dramatic overtime victory over the Bruins.",
+  "leagueBriefing": "The Atlantic Division race hit a fever pitch on Tuesday night as Buffalo maintained its lead with a record-breaking road win in Vegas, while Tampa Bay stayed within striking distance by routing Seattle. In Montreal, a classic rivalry saw Cole Caufield hit a major goal-scoring milestone in overtime, while the Islanders continued their surge at the expense of a shorthanded Toronto squad.",
   "games": [
     {
       "id": "401803310",
       "teams": {
-        "away": "Calgary Flames",
-        "home": "Detroit Red Wings"
+        "away": "New York Islanders",
+        "home": "Toronto Maple Leafs"
       },
-      "headline": "Kane’s clinical finishing powers Red Wings past Flames",
-      "score": "Flames 2 - Red Wings 5",
-      "brief": "Detroit turned a tight game into a rout with a four-goal second-period outburst. Patrick Kane showed he still has the magic touch, finding the back of the net twice to lead the Red Wings. Calgary struck first, but they simply couldn't handle Detroit's depth and efficiency once the Wings found their rhythm in front of the home crowd.",
+      "headline": "Islanders special teams shine as Toronto struggles without Matthews",
+      "score": "Islanders 3 - Maple Leafs 1",
+      "brief": "The Islanders capitalized on a pair of early power plays to build a lead they wouldn't relinquish, continuing their hot streak as they push for playoff positioning. For Toronto, the night was a reminder of the massive void left by star center Auston Matthews, as the Leafs' high-powered offense struggled to find a rhythm against Ilya Sorokin.",
       "bullets": [
-        "Patrick Kane notched two goals, marking his 4th multi-goal game of the season.",
-        "Alex DeBrincat provided the playmaking spark with 3 assists.",
-        "Detroit's four-goal second period matched their highest-scoring single period of the year.",
-        "The win moves Detroit five points clear in the Atlantic Division playoff race."
+        "Calum Ritchie led the charge with a goal and an assist, both coming on first-period power plays.",
+        "Mathew Barzal recorded a playmaker's hat trick with three primary assists in the victory.",
+        "Islanders defenseman Matthew Schaefer is now just one point away from becoming the fourth rookie blueliner in franchise history to reach 50 points.",
+        "Toronto's third-ranked power play was held scoreless on four opportunities by the Isles' 29th-ranked PK unit."
       ],
-      "context": "Detroit solidifies its hold on a top-three seed in the Atlantic Division.",
+      "context": "The Islanders have now won nine of their last 12 games to solidify their Wild Card standing.",
+      "teamMeta": {
+        "away": {
+          "record": "39-24-5",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "29-28-12",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803310"
+        "recapUrl": "https://nationaltoday.com/us/ny/new-york/news/2026/03/18/islanders-top-maple-leafs-3-1-in-toronto/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "XUFGjxq9VGQ",
-          "title": "Flames vs. Red Wings | NHL Highlights | March 16, 2026",
-          "url": "https://www.youtube.com/watch?v=XUFGjxq9VGQ",
-          "embedUrl": "https://www.youtube.com/embed/XUFGjxq9VGQ",
-          "publishedAt": "2026-03-17T02:00:17Z",
+          "videoId": "d6hnNgjRt4Y",
+          "title": "Islanders vs. Maple Leafs | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=d6hnNgjRt4Y",
+          "embedUrl": "https://www.youtube.com/embed/d6hnNgjRt4Y",
+          "publishedAt": "2026-03-18T02:23:19Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "401803311",
+      "id": "2025021069",
       "teams": {
         "away": "Boston Bruins",
-        "home": "New Jersey Devils"
+        "home": "Montreal Canadiens"
       },
-      "headline": "Cotter plays hero as Devils stun Bruins in overtime",
-      "score": "Bruins 3 - Devils 4",
-      "brief": "In a game that felt like a playoff preview, the Devils rallied from an early deficit to take down the Bruins in the extra frame. Paul Cotter was the man of the hour, scoring twice including the overtime winner. Despite a vintage performance from David Pastrnak, Boston couldn't close the door on a New Jersey team fighting for its postseason life.",
+      "headline": "Caufield hits 40-goal mark with dramatic overtime winner against Boston",
+      "score": "Bruins 2 - Canadiens 3",
+      "brief": "In a classic clash between rivals, Cole Caufield provided the night's biggest highlight by netting his 40th goal of the season just minutes into overtime. The victory was a statement for a young Montreal squad that had been reeling, as they fended off multiple comeback attempts from the Bruins to jump them in the Atlantic Division standings.",
       "bullets": [
-        "Paul Cotter scored his first career NHL overtime winner.",
-        "David Pastrnak's two goals brought his season total to 45.",
-        "New Jersey erased a 2-0 first-period deficit to claim the win.",
-        "Devils goaltender made 32 saves to keep the Bruins at bay in the third period."
+        "Cole Caufield became the first Montreal Canadien to reach 40 goals in a season since 1994.",
+        "Pavel Zacha accounted for all of Boston's offense with two goals, including a power-play marker.",
+        "Brendan Gallagher celebrated his 900th career game, having spent his entire tenure with the Habs.",
+        "David Pastrnak notched an assist to extend his point streak against Montreal to 14 games, tying Bobby Orr's franchise record."
       ],
-      "context": "New Jersey remains within two points of the final Wild Card spot in the East.",
+      "context": "The win moves Montreal one point ahead of Boston for third place in the Atlantic Division with a game in hand.",
+      "teamMeta": {
+        "away": {
+          "record": "37-23-8",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "37-20-10",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803311"
+        "recapUrl": "https://www.newsday.com/sports/hockey/bruins-canadiens-score-i34840"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "yZTsWQFZ6Uo",
-          "title": "Bruins vs. Devils | NHL Highlights | March 16, 2026",
-          "url": "https://www.youtube.com/watch?v=yZTsWQFZ6Uo",
-          "embedUrl": "https://www.youtube.com/embed/yZTsWQFZ6Uo",
-          "publishedAt": "2026-03-17T02:28:49Z",
+          "videoId": "FbsM5kMLxLw",
+          "title": "Bruins vs. Canadiens | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=FbsM5kMLxLw",
+          "embedUrl": "https://www.youtube.com/embed/FbsM5kMLxLw",
+          "publishedAt": "2026-03-18T02:14:26Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "401803312",
+      "id": "2025021070",
       "teams": {
-        "away": "Los Angeles Kings",
-        "home": "New York Rangers"
+        "away": "Carolina Hurricanes",
+        "home": "Columbus Blue Jackets"
       },
-      "headline": "Kings stifle Rangers in dominant road performance",
-      "score": "Kings 4 - Rangers 1",
-      "brief": "The Kings put on a defensive clinic at Madison Square Garden, frustrating the Rangers from the opening whistle. Alex Laferriere led the charge offensively with a three-point night, while the LA blue line limited New York to just a handful of high-danger chances. It was a professional road win for a Kings team looking to find consistency before April.",
+      "headline": "Coyle orchestrates blowout win as Columbus stunts Carolina's division hopes",
+      "score": "Hurricanes 1 - Blue Jackets 5",
+      "brief": "The Blue Jackets played spoiler in a big way on Tuesday, dominating a Hurricanes team that was looking to keep pace at the top of the Eastern Conference. Charlie Coyle was the engine for Columbus, putting on a playmaking clinic that left the Carolina defense scrambling all night in one of their most lopsided losses of the spring.",
       "bullets": [
-        "Alex Laferriere recorded a goal and two assists in his best performance of the month.",
-        "The Rangers were held scoreless until the final five minutes of the game.",
-        "Anze Kopitar moved into the top 50 all-time NHL scoring list with his assist.",
-        "LA has now won four of its last five road games."
+        "Charlie Coyle dominated the scoresheet with a four-point night, including three assists.",
+        "Jet Greaves was stellar in net for the Jackets, turning away 27 of 28 shots faced.",
+        "Carolina's lone goal came in the second period, but they were outshot 30-28 overall.",
+        "Columbus scored twice in the first and second periods to keep the game well out of reach."
       ],
-      "context": "The Kings move into a tie for second place in the Pacific Division.",
+      "context": "The loss prevents Carolina from reclaiming sole possession of first place in the Eastern Conference.",
+      "teamMeta": {
+        "away": {
+          "record": "42-19-6",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "35-21-11",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803312"
+        "recapUrl": "https://www.nhl.com/gamecenter/car-vs-cbj/2026/03/17/2025021070"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "71qiIBviCgU",
-          "title": "Kings vs. Rangers | NHL Highlights | March 16, 2026",
-          "url": "https://www.youtube.com/watch?v=71qiIBviCgU",
-          "embedUrl": "https://www.youtube.com/embed/71qiIBviCgU",
-          "publishedAt": "2026-03-17T02:12:24Z",
+          "videoId": "V8RHeMxW8MY",
+          "title": "Hurricanes vs. Blue Jackets | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=V8RHeMxW8MY",
+          "embedUrl": "https://www.youtube.com/embed/V8RHeMxW8MY",
+          "publishedAt": "2026-03-18T02:25:02Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "401803313",
+      "id": "20260317-wild-blackhawks",
       "teams": {
-        "away": "Utah Mammoth",
-        "home": "Dallas Stars"
+        "away": "Minnesota Wild",
+        "home": "Chicago Blackhawks"
       },
-      "headline": "Mammoth storm Dallas with four-goal third period",
-      "score": "Mammoth 6 - Stars 3",
-      "brief": "Utah proved they belong among the Western Conference elite with a stunning comeback victory in Dallas. Trailing late in the game, the Mammoth exploded for four goals in the final period to shock the Stars. It was a display of depth and resilience that served notice to the rest of the league that Utah is a legitimate threat.",
+      "headline": "Minnesota survives late Chicago rally for season sweep of overtime thrillers",
+      "score": "Wild 4 - Blackhawks 3",
+      "brief": "The Wild and Blackhawks continue to have a flair for the dramatic, as Chicago fought back late to force overtime for the third time this season. However, the result remained the same, with Minnesota finding the game-winner in the extra frame to keep their momentum building toward the postseason while Chicago's youth movement continues to flash potential.",
       "bullets": [
-        "Utah's four goals in the third period came in a span of just 12 minutes.",
-        "Nate Schmidt provided the leadership on the back end and a key insurance goal.",
-        "Wyatt Johnston scored for Dallas, but the Stars' defense crumbled late.",
-        "This marks Utah's first win in Dallas in franchise history."
+        "Mats Zuccarello secured the victory in overtime, his second OT winner of the season against Chicago.",
+        "Defenseman Brock Faber paced the Wild with three assists and logged heavy minutes.",
+        "Frank Nazar continues to impress for the Blackhawks, tallying a goal and an assist in the losing effort.",
+        "The Wild have now won all three meetings against the Blackhawks this year by an identical 4-3 score in overtime."
       ],
-      "context": "Utah closes the gap on Dallas for the top spot in the Central Division.",
+      "context": "Minnesota maintains a comfortable lead in the Central Division playoff race with the win.",
+      "teamMeta": {
+        "away": {
+          "record": "39-18-12",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "25-30-12",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803313"
+        "recapUrl": "https://www.secondcityhockey.com/chicago-blackhawks-minnesota-wild-march-17-2026-regular-season-result-score-recap-highlights/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "w-U1pehuurU",
-          "title": "Mammoth vs. Stars | NHL Highlights | March 16, 2026",
-          "url": "https://www.youtube.com/watch?v=w-U1pehuurU",
-          "embedUrl": "https://www.youtube.com/embed/w-U1pehuurU",
-          "publishedAt": "2026-03-17T03:03:02Z",
+          "videoId": "e8RhQEnubH0",
+          "title": "Wild vs. Blackhawks | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=e8RhQEnubH0",
+          "embedUrl": "https://www.youtube.com/embed/e8RhQEnubH0",
+          "publishedAt": "2026-03-18T02:41:26Z",
           "matchScore": 120
         }
       ]
     },
     {
-      "id": "401803314",
+      "id": "2025021071",
       "teams": {
-        "away": "Pittsburgh Penguins",
-        "home": "Colorado Avalanche"
+        "away": "Nashville Predators",
+        "home": "Winnipeg Jets"
       },
-      "headline": "Vintage Malkin leads Penguins' offensive barrage in Denver",
-      "score": "Penguins 7 - Avalanche 2",
-      "brief": "The Penguins turned back the clock in Colorado, putting up seven goals on one of the league's stingiest home teams. Evgeni Malkin was the orchestrator, bagging two goals and an assist in a dominant performance. Pittsburgh's power play finally clicked, and they caught the Avalanche on a rare off-night for their goaltending core.",
+      "headline": "Saros stands tall in shootout as Predators edge Jets in goalie duel",
+      "score": "Predators 4 - Jets 3",
+      "brief": "In a matchup defined by elite goaltending, Juuse Saros got the last laugh, leading the Predators to a shootout victory in Winnipeg. The Jets controlled the pace for much of the night, but couldn't find the finishing touch against Saros, who came up with several highlight-reel saves to secure two critical points for a Nashville team fighting to stay relevant in the West.",
       "bullets": [
-        "Evgeni Malkin recorded his 15th career three-point game against Colorado.",
-        "Erik Karlsson added three points from the blue line (1G, 2A).",
-        "The seven goals conceded are the most the Avalanche have allowed at home this season.",
-        "Pittsburgh went 3-for-4 on the power play."
+        "Juuse Saros made 36 saves through regulation and overtime before stopping two more in the shootout.",
+        "Winnipeg's Gabriel Vilardi stayed hot with a goal and an assist, continuing his career-best season.",
+        "Kyle Connor provided three assists for the Jets but was denied in his shootout attempt.",
+        "The win snapped a two-game season-series winning streak for the Jets over the Predators."
       ],
-      "context": "Pittsburgh stays in the thick of the Metropolitan Division playoff race.",
+      "context": "Nashville earns crucial points to keep their fading playoff hopes alive in the Western Conference.",
+      "teamMeta": {
+        "away": {
+          "record": "30-28-9",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "28-28-11",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/nhl/recap/_/gameId/401803314"
+        "recapUrl": "https://www.nhl.com/gamecenter/nsh-vs-wpg/2026/03/17/2025021071"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "pAVRXqJHR0o",
-          "title": "Penguins vs. Avalanche | NHL Highlights | March 16, 2026",
-          "url": "https://www.youtube.com/watch?v=pAVRXqJHR0o",
-          "embedUrl": "https://www.youtube.com/embed/pAVRXqJHR0o",
-          "publishedAt": "2026-03-17T04:43:41Z",
+          "videoId": "-YkFhuqG5FM",
+          "title": "Predators vs. Jets | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=-YkFhuqG5FM",
+          "embedUrl": "https://www.youtube.com/embed/-YkFhuqG5FM",
+          "publishedAt": "2026-03-18T03:31:53Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "2025021073",
+      "teams": {
+        "away": "San Jose Sharks",
+        "home": "Edmonton Oilers"
+      },
+      "headline": "Oilers depth answers the bell after Draisaitl's season-ending injury",
+      "score": "Sharks 3 - Oilers 5",
+      "brief": "Facing their first game since learning Leon Draisaitl would miss the rest of the season, the Oilers responded with a relentless team effort. Thirteen different players found the scoresheet in a high-octane win over San Jose, proving that while they've lost a superstar, they still have the offensive firepower to be a problem in the Pacific Division.",
+      "bullets": [
+        "Max Jones netted the eventual game-winner in the third period, his second goal of the season.",
+        "Adam Henrique was the only Oiler with multiple points, recording two primary assists.",
+        "Goaltender Connor Ingram reached a personal milestone with his 50th career NHL victory.",
+        "The Sharks erased a 3-1 deficit in the second period before Edmonton pulled away late."
+      ],
+      "context": "The Oilers maintain their hold on a Pacific Division playoff spot despite the loss of Draisaitl.",
+      "teamMeta": {
+        "away": {
+          "record": "32-28-6",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "34-26-9",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/oilers/news/game-recap-oilers-5-sharks-3-03-17-26"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "WfA4Xxv3h90",
+          "title": "Sharks vs. Oilers | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=WfA4Xxv3h90",
+          "embedUrl": "https://www.youtube.com/embed/WfA4Xxv3h90",
+          "publishedAt": "2026-03-18T04:11:52Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "2025021074",
+      "teams": {
+        "away": "Florida Panthers",
+        "home": "Vancouver Canucks"
+      },
+      "headline": "Pettersson's pair leads Canucks to emphatic upset over Panthers",
+      "score": "Panthers 2 - Canucks 5",
+      "brief": "The Vancouver Canucks delivered a vintage performance at home, taking down the playoff-bound Florida Panthers with a balanced offensive attack. Elias Pettersson looked every bit the superstar, finding the back of the net twice, while the Vancouver defense successfully neutralized the Panthers' top threats for most of the evening.",
+      "bullets": [
+        "Elias Pettersson notched his 30th and 31st goals of the season to lead all scorers.",
+        "Marco Rossi had a breakout night with three points, including a highlight-reel goal in the second period.",
+        "Brock Boeser served as the primary facilitator, racking up three assists in the victory.",
+        "Florida was held to just 23 shots, one of their lowest totals during the current road trip."
+      ],
+      "context": "The loss stalls Florida's push for home-ice advantage in the first round of the playoffs.",
+      "teamMeta": {
+        "away": {
+          "record": "33-31-3",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "21-38-8",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/gamecenter/fla-vs-van/2026/03/17/2025021074"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "QyCt4zHAPsk",
+          "title": "Panthers vs. Canucks | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=QyCt4zHAPsk",
+          "embedUrl": "https://www.youtube.com/embed/QyCt4zHAPsk",
+          "publishedAt": "2026-03-18T04:58:10Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "2025021075",
+      "teams": {
+        "away": "Sabres",
+        "home": "Golden Knights"
+      },
+      "headline": "Luukkonen shuts out Vegas as Sabres set franchise road point streak record",
+      "score": "Sabres 2 - Golden Knights 0",
+      "brief": "The Buffalo Sabres wrote a new chapter in their franchise history books on Tuesday, extending their road point streak to 11 games with a gritty shutout in Las Vegas. Ukko-Pekka Luukkonen was the story of the night, frustrating the Golden Knights' shooters at every turn and moving Buffalo into a tie for the top seed in the Eastern Conference.",
+      "bullets": [
+        "Ukko-Pekka Luukkonen made 28 saves for his first shutout of the 2025-26 season.",
+        "The Sabres have now gone 10-0-1 in their last 11 road games, a new franchise record.",
+        "Josh Doan scored the game-winner by banking a shot off the goalie's back from behind the net.",
+        "Buffalo moved into a tie with Carolina for first place in the Eastern Conference with 90 points."
+      ],
+      "context": "Buffalo is now tied for the NHL's best record while setting a new franchise benchmark for road dominance.",
+      "teamMeta": {
+        "away": {
+          "record": "42-20-6",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "31-23-14",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/sabres/news/buffalo-sabres-vegas-golden-knights-recap-highlights-x9895"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "lC3DYBj1sAQ",
+          "title": "Sabres vs. Golden Knights | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=lC3DYBj1sAQ",
+          "embedUrl": "https://www.youtube.com/embed/lC3DYBj1sAQ",
+          "publishedAt": "2026-03-18T05:24:12Z",
+          "matchScore": 120
+        }
+      ]
+    },
+    {
+      "id": "2025021076",
+      "teams": {
+        "away": "Lightning",
+        "home": "Kraken"
+      },
+      "headline": "Kucherov's five-point masterpiece fuels Lightning's rout of Seattle",
+      "score": "Lightning 6 - Kraken 2",
+      "brief": "Nikita Kucherov put on a clinic in Seattle, reminding the league why he's a perennial MVP candidate. The Lightning winger was involved in nearly every goal as Tampa Bay dismantled the Kraken, keeping pace in the hyper-competitive Atlantic Division race and showing they are peaking just in time for the stretch run.",
+      "bullets": [
+        "Nikita Kucherov exploded for five points, including a hat trick and two primary assists.",
+        "Brandon Hagel added a goal and three assists, benefiting from Kucherov's elite vision.",
+        "The Lightning blew the game open with three goals in the third period to silence the Seattle crowd.",
+        "Tampa Bay remains four points behind Buffalo for the top spot in the Atlantic Division."
+      ],
+      "context": "The win keeps Tampa Bay firmly in the hunt for the Atlantic Division title and a top-two seed.",
+      "teamMeta": {
+        "away": {
+          "record": "41-21-4",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "31-27-9",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.nhl.com/gamecenter/tbl-vs-sea/2026/03/17/2025021076"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "6Lxn01OutKU",
+          "title": "Lightning vs. Kraken | NHL Highlights | March 17, 2026",
+          "url": "https://www.youtube.com/watch?v=6Lxn01OutKU",
+          "embedUrl": "https://www.youtube.com/embed/6Lxn01OutKU",
+          "publishedAt": "2026-03-18T05:13:43Z",
           "matchScore": 120
         }
       ]

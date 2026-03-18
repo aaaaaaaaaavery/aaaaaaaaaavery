@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-17",
+  "date": "2026-03-18",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
-      "leagueKey": "wbc",
-      "gameId": "788093",
-      "headline": "Venezuela reaches first Classic final with dramatic seventh-inning surge past Italy",
-      "scoreLine": "Venezuela 4 - Italy 2"
+      "leagueKey": "ncaam",
+      "gameId": "401783861",
+      "headline": "Tramon Mark leaves it late to send Texas past NC State in First Four",
+      "scoreLine": "Texas 68 - NC State 66"
     },
     {
       "rank": 2,
-      "leagueKey": "premierleague",
-      "gameId": "20260316-brentford-wolves",
-      "headline": "Arokodare caps Wolves comeback as Brentford let lead slip",
-      "scoreLine": "Brentford 2 - 2 Wolverhampton Wanderers"
+      "leagueKey": "ncaam",
+      "gameId": "401783860",
+      "headline": "Howard survives UMBC's late surge to claim first NCAA Tournament win",
+      "scoreLine": "UMBC 83 - Howard 86"
     },
     {
       "rank": 3,
-      "leagueKey": "nba",
-      "gameId": "401789431",
-      "headline": "Doncic's 36 points lead Lakers to gritty road win in Houston",
-      "scoreLine": "Lakers 100 - Rockets 92"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "80029454",
+      "headline": "Sporting pull off historic comeback to crush Bodo/Glimt dreams",
+      "scoreLine": "Sporting CP 5 - 0 Bodø / Glimt"
     },
     {
       "rank": 4,
-      "leagueKey": "nba",
-      "gameId": "401789432",
-      "headline": "Spurs reach 50-win mark as Wembanyama silences the Intuit Dome",
-      "scoreLine": "Spurs 119 - Clippers 115"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "554849",
+      "headline": "Eze and Rice stunners propel Arsenal past Leverkusen",
+      "scoreLine": "Arsenal 2 - 0 Bayer Leverkusen"
     },
     {
       "rank": 5,
-      "leagueKey": "nba",
-      "gameId": "401789425",
-      "headline": "Alexander-Walker erupts for career-high 41 to lead Hawks over Magic",
-      "scoreLine": "Magic 112 - Hawks 124"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "554901",
+      "headline": "Clinical PSG embarrass Chelsea at the Bridge to march on",
+      "scoreLine": "Chelsea 0 - 3 PSG"
     },
     {
       "rank": 6,
-      "leagueKey": "nba",
-      "gameId": "401789428",
-      "headline": "Brown wins duel with Booker as Celtics edge Suns in heavyweight clash",
-      "scoreLine": "Suns 112 - Celtics 120"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "554900",
+      "headline": "Vinícius Jr. brace haunts City as Real Madrid cruise into quarters",
+      "scoreLine": "Manchester City 1 - 2 Real Madrid"
     },
     {
       "rank": 7,
-      "leagueKey": "nhl",
-      "gameId": "401803311",
-      "headline": "Cotter plays hero as Devils stun Bruins in overtime",
-      "scoreLine": "Bruins 3 - Devils 4"
+      "leagueKey": "nba",
+      "gameId": "401783819",
+      "headline": "SGA drops 40 as Thunder survive late Magic rally in Orlando",
+      "scoreLine": "Thunder 113 - Magic 108"
     },
     {
       "rank": 8,
       "leagueKey": "nhl",
-      "gameId": "401803314",
-      "headline": "Vintage Malkin leads Penguins' offensive barrage in Denver",
-      "scoreLine": "Penguins 7 - Avalanche 2"
+      "gameId": "2025021069",
+      "headline": "Caufield hits 40-goal mark with dramatic overtime winner against Boston",
+      "scoreLine": "Bruins 2 - Canadiens 3"
     },
     {
       "rank": 9,
-      "leagueKey": "seriea",
-      "gameId": "2558789",
-      "headline": "Fiorentina thrashes Cremonese to pull away from relegation zone",
-      "scoreLine": "Cremonese 1 - 4 Fiorentina"
+      "leagueKey": "concacafchampionscup",
+      "gameId": "20260317-alajuelense-lafc",
+      "headline": "Bouanga brace powers LAFC to gritty road win over Alajuelense",
+      "scoreLine": "Alajuelense 1 - 2 Los Angeles FC"
     },
     {
       "rank": 10,
-      "leagueKey": "ncaasoftball",
-      "gameId": "20260316-texas-am-lsu",
-      "headline": "LSU bats wake up in series-salvaging win over Texas A&M",
-      "scoreLine": "Texas A&M 2 - LSU 7"
+      "leagueKey": "concacafchampionscup",
+      "gameId": "20260317-cruzazul-monterrey",
+      "headline": "Cruz Azul and Monterrey trade blows in tense all-Mexican draw",
+      "scoreLine": "Cruz Azul 1 - 1 Monterrey"
     }
   ],
   "top10": [
-    "Venezuela reaches first Classic final with dramatic seventh-inning surge past Italy",
-    "Arokodare caps Wolves comeback as Brentford let lead slip",
-    "Doncic's 36 points lead Lakers to gritty road win in Houston",
-    "Spurs reach 50-win mark as Wembanyama silences the Intuit Dome",
-    "Alexander-Walker erupts for career-high 41 to lead Hawks over Magic",
-    "Brown wins duel with Booker as Celtics edge Suns in heavyweight clash",
-    "Cotter plays hero as Devils stun Bruins in overtime",
-    "Vintage Malkin leads Penguins' offensive barrage in Denver",
-    "Fiorentina thrashes Cremonese to pull away from relegation zone",
-    "LSU bats wake up in series-salvaging win over Texas A&M"
+    "Tramon Mark leaves it late to send Texas past NC State in First Four",
+    "Howard survives UMBC's late surge to claim first NCAA Tournament win",
+    "Sporting pull off historic comeback to crush Bodo/Glimt dreams",
+    "Eze and Rice stunners propel Arsenal past Leverkusen",
+    "Clinical PSG embarrass Chelsea at the Bridge to march on",
+    "Vinícius Jr. brace haunts City as Real Madrid cruise into quarters",
+    "SGA drops 40 as Thunder survive late Magic rally in Orlando",
+    "Caufield hits 40-goal mark with dramatic overtime winner against Boston",
+    "Bouanga brace powers LAFC to gritty road win over Alajuelense",
+    "Cruz Azul and Monterrey trade blows in tense all-Mexican draw"
   ],
-  "newsBriefing": "Major shifts in the sports landscape dominated the headlines today, ranging from historic coaching milestones and high-stakes international drama to significant roster shakeups just days before the NCAA tournament. Steve Kerr etched his name deeper into NBA history by becoming the fourth-fastest coach to reach 600 wins as his Warriors snapped a losing streak, while the league at large moved closer to a new era with a pending vote on expansion into Seattle and Las Vegas. The college basketball world was rocked by the arrest of Alabama star Aden Holloway on felony drug charges, leaving the Crimson Tide to scramble for a new identity without their second-leading scorer right as March Madness begins. Meanwhile, Michigan's top seed looks even more impressive following revelations that star Yaxel Lendeborg turned down a massive $7-9 million NIL offer from Kentucky to stay with the Wolverines. On the international stage, Venezuela celebrated a historic first by rallying past Italy to reach the World Baseball Classic final against the U.S., while a geopolitical rift has cast doubt on the upcoming World Cup, with Iran requesting to move its matches from American soil to Mexico due to security concerns. NFL news rounded out the day as the Kansas City Chiefs fortified their quarterback depth by acquiring Justin Fields from the Jets to back up an injured Patrick Mahomes, and the San Francisco 49ers continued their wide receiver overhaul by signing veteran Christian Kirk to a one-year deal.",
-  "updatedAt": "2026-03-17T11:33:21.551Z"
+  "newsBriefing": "In a day marked by shifting leadership and critical roster updates, the sports world saw Duke’s Cameron Boozer headline the AP All-America team as the only unanimous first-team selection, while the NFL Players Association elected former offensive lineman JC Tretter as its next executive director. On the international stage, Team USA secured first place in the FIBA Women’s World Cup Qualifying Tournament behind an MVP performance from Caitlin Clark, who successfully returned from a groin injury alongside senior national team debutants Paige Bueckers and Angel Reese. However, the injury bug bit the NHL hard as the Edmonton Oilers announced superstar Leon Draisaitl will miss the remainder of the regular season with a lower-body injury, and Tiger Woods admitted his status for next month's Masters remains unclear due to ongoing health fluctuations. Meanwhile, NASCAR took a firm stance on conduct by suspending driver Daniel Dye for mocking a fellow competitor’s sexuality, and Maxx Crosby addressed the fallout of his nixed trade to Baltimore by reiterating his lifelong commitment to the Raiders.",
+  "updatedAt": "2026-03-18T12:12:25.951Z"
 }

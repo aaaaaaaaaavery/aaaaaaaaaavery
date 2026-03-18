@@ -2,6 +2,71 @@
   "leagueName": "CONCACAF Champions Cup",
   "leagueKey": "concacafchampionscup",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "Major League Soccer and Liga MX powers took center stage in the Champions Cup as LAFC secured a vital road victory in Costa Rica, while two Mexican giants battled to a stalemate in Mexico City.",
+  "games": [
+    {
+      "id": "20260317-alajuelense-lafc",
+      "teams": {
+        "away": "Los Angeles FC",
+        "home": "Alajuelense"
+      },
+      "headline": "Bouanga brace powers LAFC to gritty road win over Alajuelense",
+      "score": "Alajuelense 1 - 2 Los Angeles FC",
+      "brief": "Los Angeles FC showed why they are perennial contenders, weathering a hostile atmosphere in Alajuela to take a slim advantage back to California. Dénis Bouanga was the difference-maker once again, finding the net twice to offset a late surge from the hosts. Alajuelense struggled to find their rhythm early on but a late penalty gave them a lifeline, ensuring the second leg remains a competitive affair rather than a formality.",
+      "bullets": [
+        "Dénis Bouanga scored in both halves, continuing his prolific run in continental competition.",
+        "Alajuelense dominated possession (56%) but managed only three shots on target throughout the match.",
+        "A 75th-minute penalty converted by Giancarlo González provided the only goal for the Costa Rican side.",
+        "LAFC goalkeeper Hugo Lloris made two crucial saves in stoppage time to preserve the one-goal lead."
+      ],
+      "context": "LAFC heads home with two crucial away goals, putting them in the driver's seat for the quarterfinals.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.mlssoccer.com/news/recap-alajuelense-1-lafc-2"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "zaVaXUFuVCM",
+          "title": "LD Alajuelense vs LAFC  | 2026 Concacaf Champions Cup | Round of 16",
+          "url": "https://www.youtube.com/watch?v=zaVaXUFuVCM",
+          "embedUrl": "https://www.youtube.com/embed/zaVaXUFuVCM",
+          "publishedAt": "2026-03-18T04:11:10Z",
+          "matchScore": 100
+        }
+      ]
+    },
+    {
+      "id": "20260317-cruzazul-monterrey",
+      "teams": {
+        "away": "Monterrey",
+        "home": "Cruz Azul"
+      },
+      "headline": "Cruz Azul and Monterrey trade blows in tense all-Mexican draw",
+      "score": "Cruz Azul 1 - 1 Monterrey",
+      "brief": "In a tactical chess match between two Liga MX heavyweights, Cruz Azul and Monterrey left everything to be decided in the return leg. The match was defined by physical play and disciplined defending, with neither side willing to overextend. Monterrey struck first through a counter-attack, but the 'Cementeros' responded with a thunderous header late in the first half. The second half saw plenty of yellow cards but few clear-cut chances as both managers seemed content to settle for the draw.",
+      "bullets": [
+        "Sergio Canales opened the scoring for Monterrey in the 22nd minute with a clinical finish from the edge of the box.",
+        "Cruz Azul's Giorgos Giakoumakis leveled the score with a powerful header just before the halftime whistle.",
+        "The match saw a total of seven yellow cards as tempers flared in the closing twenty minutes.",
+        "Monterrey leaves with a precious away goal, giving them a slight tiebreak advantage heading into the second leg."
+      ],
+      "context": "The draw sets up a high-stakes second leg in Monterrey where an away goal could be the deciding factor.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.concacaf.com/champions-cup/news/cruz-azul-and-monterrey-draw-in-first-leg/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "hNtO0KYlgus",
+          "title": "Cruz Azul vs CF Monterrey | 2026 Concacaf Champions Cup | Round of 16",
+          "url": "https://www.youtube.com/watch?v=hNtO0KYlgus",
+          "embedUrl": "https://www.youtube.com/embed/hNtO0KYlgus",
+          "publishedAt": "2026-03-18T05:59:32Z",
+          "matchScore": 100
+        }
+      ]
+    }
+  ]
 }
