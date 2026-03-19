@@ -16,9 +16,31 @@
       --header-h: 0px;
     }
 
-  </style>
-</head>
-<body class="min-h-screen overflow-x-hidden bg-gray-100 font-sans text-gray-800 antialiased">
+        /* Landing page: show only centered logo */
+        .landing-logo-only header,
+        .landing-logo-only aside,
+        .landing-logo-only main,
+        .landing-logo-only #mobileLeaguesModal,
+        .landing-logo-only #newsletterModal,
+        .landing-logo-only #layoutDebugPanel,
+        .landing-logo-only [id^="league"],
+        .landing-logo-only [id^="mobile"],
+        .landing-logo-only .grid,
+        .landing-logo-only .flex {
+            display: none !important;
+        }
+
+        .landing-logo-only { background: #ffffff !important; }
+
+        #centeredLogoOnly { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 9999; }
+        #centeredLogoOnly img { height: 10rem; width: auto; }
+
+    </style>
+    </head>
+    <body class="min-h-screen overflow-x-hidden bg-gray-100 font-sans text-gray-800 antialiased landing-logo-only">
+        <div id="centeredLogoOnly">
+            <img src="https://thporth.com/thporth-red-logo.png" alt="THPORTH" />
+        </div>
   <header id="appHeader" class="sticky top-0 z-20 border-b border-gray-200 bg-white px-2 py-2 sm:px-4 sm:py-3 md:px-6">
     <div class="mx-auto flex max-w-none items-center justify-between gap-3">
       <div class="flex min-w-0 items-center gap-3">
