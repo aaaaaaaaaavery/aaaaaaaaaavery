@@ -1,7 +1,52 @@
 {
-  "leagueName": "UEFA Europa",
+  "leagueName": "UEFA Europa League",
   "leagueKey": "uefaeuropaleague",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "Sporting Braga made a thunderous statement in their Europa League clash, overwhelming Ferencváros with a clinical four-goal display. The Portuguese side dominated from start to finish, leaving the Hungarian champions with no answers as Braga cruised toward a commanding victory.",
+  "games": [
+    {
+      "id": "20260318-braga-ferencvaros",
+      "teams": {
+        "away": "Ferencváros",
+        "home": "Sporting Braga"
+      },
+      "headline": "Braga pummels Ferencváros in four-goal Europa League masterclass",
+      "score": "Sporting Braga 4 - 0 Ferencváros",
+      "brief": "Sporting Braga put on an offensive clinic at the Estádio Municipal de Braga, dismantling Ferencváros with ruthless efficiency. The home side utilized their superior technical ability and home-field advantage to control the tempo, scoring early and never looking back in a match that felt one-sided from the opening whistle.",
+      "bullets": [
+        "Braga secured a two-goal cushion within the first 30 minutes, effectively ending the contest early.",
+        "The Portuguese side maintained 62% possession and limited Ferencváros to just a single shot on target.",
+        "Braga's wing-play was the difference maker, with three of the four goals originating from crosses into the box.",
+        "This victory marks Braga's largest margin of victory in a European knockout stage match in over a decade."
+      ],
+      "context": "The dominant 4-0 scoreline puts Braga in a near-insurmountable position heading into the second leg in Budapest.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.uefa.com/uefaeuropaleague/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      }
+    }
+  ]
 }

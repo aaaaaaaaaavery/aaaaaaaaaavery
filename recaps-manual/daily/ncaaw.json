@@ -2,6 +2,97 @@
   "leagueName": "NCAAW",
   "leagueKey": "ncaaw",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "The Big Dance officially tipped off with the First Four, as Nebraska and Missouri State secured their spots in the main bracket with convincing double-digit victories in their respective regions.",
+  "games": [
+    {
+      "id": "401803310",
+      "teams": {
+        "away": "Richmond",
+        "home": "Nebraska"
+      },
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": 11,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": 11,
+          "top25Rank": null
+        }
+      },
+      "headline": "Nebraska stifles Richmond to punch ticket to Sacramento",
+      "score": "Richmond 56 - Nebraska 75",
+      "brief": "Nebraska left little doubt in their First Four matchup, using a dominant defensive performance and a balanced scoring attack to overwhelm Richmond. The Huskers controlled the glass and shut down the Spiders' perimeter game early, building a double-digit lead that Richmond simply couldn't chip away at. It was a statement win for a Nebraska team looking to prove they belong deep in the tournament field.",
+      "bullets": [
+        "Nebraska outscored Richmond 22-10 in the second quarter to break the game open.",
+        "The Huskers' bench contributed 24 points, providing a massive spark in the middle periods.",
+        "Richmond was held to just 34% shooting from the field and struggled with Nebraska's length.",
+        "Alexis Markowski anchored the paint for Nebraska, finishing with a double-double.",
+        "The win marks Nebraska's first tournament victory since 2014."
+      ],
+      "context": "Nebraska advances as the 11-seed in Regional 2 to face 6-seeded North Carolina.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401803310"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "401803311",
+      "teams": {
+        "away": "Stephen F. Austin",
+        "home": "Missouri State"
+      },
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": 16,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": 16,
+          "top25Rank": null
+        }
+      },
+      "headline": "Missouri State outlasts Stephen F. Austin in high-scoring First Four battle",
+      "score": "Stephen F. Austin 75 - Missouri State 85",
+      "brief": "In a fast-paced shootout in Fort Worth, Missouri State's efficiency at the free-throw line and clinical fast-break execution proved to be the difference against Stephen F. Austin. The Lady Bears weathered an early storm from the Ladyjacks, who leaned heavily on the three-ball, but Missouri State's interior presence eventually wore down SFA. It was a classic tournament battle where the more disciplined team survived the chaotic pace.",
+      "bullets": [
+        "Missouri State shot an impressive 88% from the free-throw line (22-of-25).",
+        "Stephen F. Austin connected on 11 three-pointers but struggled to get stops late in the fourth quarter.",
+        "The Lady Bears recorded 18 second-chance points off 14 offensive rebounds.",
+        "Missouri State's backcourt combined for 45 of the team's 85 points.",
+        "This victory snaps a three-game tournament losing streak for the Lady Bears."
+      ],
+      "context": "Missouri State moves on to face 1-seeded South Carolina in the Regional 3 bracket.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401803311"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    }
+  ]
 }

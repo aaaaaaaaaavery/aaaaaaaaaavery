@@ -1239,6 +1239,37 @@ Output format (exact):
                 ]
               }
             ]
+          },
+          {
+            id: 'step-8',
+            number: 8,
+            name: 'Copy top 10 for Mailchimp',
+            subSteps: [
+              {
+                id: 'step-8-sub-1',
+                title: 'Open this URL and click Copy for Mailchimp button →',
+                contentBlocks: [
+                  {
+                    id: 'step-8-sub-1-block-1',
+                    type: 'link',
+                    text: 'http://localhost:8000/index-test.html?admin=1',
+                    url: 'http://localhost:8000/index-test.html?admin=1'
+                  }
+                ]
+              },
+              {
+                id: 'step-8-sub-2',
+                title: 'Paste in the <> box at this URL →',
+                contentBlocks: [
+                  {
+                    id: 'step-8-sub-2-block-1',
+                    type: 'link',
+                    text: 'https://us21.admin.mailchimp.com/campaigns/edit?id=12934181',
+                    url: 'https://us21.admin.mailchimp.com/campaigns/edit?id=12934181'
+                  }
+                ]
+              }
+            ]
           }
         ]
       };

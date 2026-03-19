@@ -2,38 +2,14 @@
   "leagueName": "NCAAM",
   "leagueKey": "ncaam",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The 2026 NCAA Tournament kicked off with a pair of First Four thrillers in Dayton, where Texas survived a last-second scare and Howard made program history with its first-ever tournament victory.",
+  "leagueBriefing": "The First Four concluded in Dayton with a night defined by historical milestones and perimeter dominance. Miami (Ohio) capped an incredible 32-1 campaign by securing its first tournament win in 27 years, while Prairie View A&M stifled Lehigh to earn the program's first-ever NCAA Tournament victory. Both 11 and 16 seeds now move on to face basketball giants Tennessee and Florida, respectively.",
   "games": [
     {
-      "id": "401783861",
+      "id": "2973359",
       "teams": {
-        "away": "Texas",
-        "home": "NC State"
+        "away": "Miami (OH)",
+        "home": "SMU"
       },
-      "headline": "Tramon Mark leaves it late to send Texas past NC State in First Four",
-      "score": "Texas 68 - NC State 66",
-      "brief": "In a physical battle between two 11-seeds, Tramon Mark proved why he's the go-to option for the Longhorns. With the game tied and the clock winding down, Mark drove the length of the floor to bank in a leaning jumper with just 1.1 seconds remaining. NC State, which fought back from a late deficit, couldn't get a final shot off, ending a gritty season for the Wolfpack while Texas moves on to face 6-seed Iowa State.",
-      "bullets": [
-        "Tramon Mark led all scorers with 17 points, including the game-winning bucket in the final seconds.",
-        "Quadir Copeland paced NC State with 16 points, 8 rebounds, and 4 steals in a losing effort.",
-        "Texas held a narrow 30-29 lead at halftime and managed to withstand a late 7-0 Wolfpack run.",
-        "The Longhorns shot 44% from the field compared to 41% for NC State.",
-        "Texas advances to the Round of 64 to face Iowa State in the West Region."
-      ],
-      "context": "Texas advances to face 6-seed Iowa State in the West Region bracket.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401783861"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
       "teamMeta": {
         "away": {
           "record": null,
@@ -47,38 +23,38 @@
           "seed": 11,
           "top25Rank": null
         }
-      }
+      },
+      "headline": "Miami (Ohio) silences skeptics with record-setting barrage to sink SMU",
+      "score": "Miami (OH) 89 - SMU 79",
+      "brief": "The RedHawks proved they belonged in the Big Dance, riding a historic shooting performance to dispatch SMU in Dayton. After an undefeated regular season was followed by a disappointing conference tournament exit, Miami (Ohio) relied on a First Four-record 16 three-pointers to overwhelm the Mustangs' size advantage. Eian Elmer led the way with 23 points, including a punctuation-mark dunk in the final minute that secured the school's first tournament win since 1999 and set up a date with Tennessee.",
+      "bullets": [
+        "Eian Elmer sparked the offense with 23 points, shooting 6-of-9 from beyond the arc.",
+        "Miami (Ohio) set a new First Four record by knocking down 16 total three-pointers.",
+        "The win marks the first NCAA Tournament victory for the RedHawks in 27 years.",
+        "SMU's Jaden Toombs posted a double-double with 20 points and 11 rebounds in the loss.",
+        "The RedHawks finished the night matching the Mustangs in rebounding (35-35) despite being significantly undersized."
+      ],
+      "context": "Miami (Ohio) advances to the Round of 64 to face No. 6 seed Tennessee in the Midwest Region.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://miamiredhawks.com/news/2026/3/18/mens-basketball-miami-smu-first-four-recap"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
     },
     {
-      "id": "401783860",
+      "id": "20260318-PVAMU-LEHIGH",
       "teams": {
-        "away": "UMBC",
-        "home": "Howard"
+        "away": "Prairie View A&M",
+        "home": "Lehigh"
       },
-      "headline": "Howard survives UMBC's late surge to claim first NCAA Tournament win",
-      "score": "UMBC 83 - Howard 86",
-      "brief": "Howard finally has its 'One Shining Moment.' The Bison jumped out to a dominant start and held off a furious second-half rally from UMBC to secure the first NCAA Tournament win in school history. Bryce Harris was a force inside, racking up a massive double-double to ensure Howard wouldn't be on the wrong end of another UMBC miracle. The Bison now head to the Midwest Region's main bracket for a date with top-seeded Auburn.",
-      "bullets": [
-        "Bryce Harris dominated the paint for Howard, finishing with 19 points and 14 rebounds.",
-        "UMBC's Dion Brown missed a potential game-tying three-pointer as the buzzer sounded.",
-        "The Bison led by as many as 12 points in the first half before UMBC's 42-point second-half surge.",
-        "De'Shane Armstrong Jr. led the Retrievers with 17 points and 6 rebounds.",
-        "This victory marks the first-ever NCAA Tournament win for the Howard Bison program."
-      ],
-      "context": "Howard makes history with its first tournament win and advances to face 1-seed Auburn.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401783860"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
       "teamMeta": {
         "away": {
           "record": null,
@@ -92,7 +68,31 @@
           "seed": 16,
           "top25Rank": null
         }
-      }
+      },
+      "headline": "Panthers defensive masterclass earns Prairie View A&M first tourney win",
+      "score": "Prairie View A&M 67 - Lehigh 55",
+      "brief": "Prairie View A&M turned a defensive clinic into school history, suffocating Lehigh's top scorers to claim the program's first-ever NCAA Tournament win. Despite trailing at halftime, the Panthers used a decisive 14-2 second-half run to pull away, led by a 25-point outburst from Dontae Horne. The story of the night was the Panthers' length and athleticism, which held Lehigh's star Nasir Whitlock to just five points on 2-of-15 shooting and forced 16 turnovers.",
+      "bullets": [
+        "Dontae Horne led all scorers with 25 points and added four steals in the victory.",
+        "Prairie View A&M's defense limited Patriot League MVP Nasir Whitlock to just 5 points.",
+        "The Panthers recorded 9 blocks and 12 steals to disrupt the Lehigh offense.",
+        "Hank Alvey provided a bright spot for Lehigh, recording 23 points and 15 rebounds.",
+        "This victory represents the first NCAA Tournament win in Prairie View A&M program history."
+      ],
+      "context": "Prairie View A&M advances as a No. 16 seed in the South Region to face No. 1 seed Florida.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://thebrownandwhite.com/2026/03/18/mens-basketball-falls-to-prairie-view-am-in-first-four-round-of-march-madness/"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
     }
   ]
 }

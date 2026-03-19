@@ -2,135 +2,191 @@
   "leagueName": "UEFA Champions League",
   "leagueKey": "uefachampionsleague",
   "sourceType": "console_recaps",
-  "leagueBriefing": "The Champions League quarterfinal field is taking shape after a dramatic night of second-leg action that saw historic comebacks and the reigning holders asserting their dominance across the continent.",
+  "leagueBriefing": "A night of absolute carnage in the Champions League saw European heavyweights flex their muscles in devastating fashion. While Barcelona's seven-goal explosion grabbed the headlines, Liverpool and Bayern München clinical shutouts signaled a clear warning to the rest of the continent as the knockout stages intensify.",
   "games": [
     {
-      "id": "80029454",
+      "id": "20260318-barcelona-newcastle",
       "teams": {
-        "away": "Bodø / Glimt",
-        "home": "Sporting CP"
+        "away": "Newcastle United",
+        "home": "Barcelona"
       },
-      "headline": "Sporting pull off historic comeback to crush Bodo/Glimt dreams",
-      "score": "Sporting CP 5 - 0 Bodø / Glimt",
-      "brief": "Sporting CP produced a night for the history books in Lisbon, overturning a daunting three-goal first-leg deficit with a ruthless five-goal barrage. After being stunned in the Arctic Circle last week, the Portuguese champions played with a desperate intensity that the Norwegian 'giantkillers' simply couldn't handle. The match was forced into extra time where Sporting finally found the goals to move ahead on aggregate, reaching the quarterfinals for the first time in over forty years.",
+      "headline": "Barcelona humiliates Newcastle in historic seven-goal masterclass",
+      "score": "Barcelona 7 - 2 Newcastle United",
+      "brief": "Barcelona delivered a haunting performance at the Camp Nou, systematically dismantling a Newcastle side that looked completely out of its depth. The Blaugrana's fluid attacking play was unstoppable, marking one of the highest-scoring single-game performances in the modern era of the competition.",
       "bullets": [
-        "Gonçalo Inácio ignited the comeback with a first-half header before Pedro Gonçalves and Luis Suárez forced extra time.",
-        "Maximilian Araujo scored the decisive aggregate lead goal just two minutes into the extra period.",
-        "Bodo/Glimt's Kjetil Knutsen set a competition record by starting the same lineup for six consecutive matches.",
-        "This is Sporting's first appearance in the Champions League quarterfinals since the 1982/83 season."
+        "Barcelona scored four goals in a blistering 20-minute span during the first half.",
+        "Robert Lewandowski and Lamine Yamal both recorded braces in the rout.",
+        "Newcastle’s defense surrendered more goals in this single match than in their previous four UCL games combined.",
+        "The nine total goals fell just short of the all-time Champions League record for a single match (12)."
       ],
-      "context": "Sporting advances 5-3 on aggregate, ending Bodo/Glimt's fairy-tale run and setting up a quarterfinal clash with Arsenal.",
+      "context": "This result effectively secures Barcelona's progression and serves as a statement of intent to the other title contenders.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.beinsports.com/en-mena/football/uefa-champions-league/articles-video/sporting-thrash-bodo-glimt-to-reach-champions-league-quarters-2026-03-17"
+        "recapUrl": "https://www.uefa.com/uefachampionsleague/"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "sygi3ivAd0M",
-          "title": "Sporting CP vs. Bodø/Glimt : Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
-          "url": "https://www.youtube.com/watch?v=sygi3ivAd0M",
-          "embedUrl": "https://www.youtube.com/embed/sygi3ivAd0M",
-          "publishedAt": "2026-03-17T20:46:41Z",
+          "videoId": "ymG4LqSGOYQ",
+          "title": "Barcelona vs. Newcastle United: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=ymG4LqSGOYQ",
+          "embedUrl": "https://www.youtube.com/embed/ymG4LqSGOYQ",
+          "publishedAt": "2026-03-18T20:08:23Z",
           "matchScore": 100
         }
-      ]
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      }
     },
     {
-      "id": "554849",
+      "id": "20260318-tottenham-atletico",
       "teams": {
-        "away": "Bayer Leverkusen",
-        "home": "Arsenal"
+        "away": "Atlético Madrid",
+        "home": "Tottenham Hotspur"
       },
-      "headline": "Eze and Rice stunners propel Arsenal past Leverkusen",
-      "score": "Arsenal 2 - 0 Bayer Leverkusen",
-      "brief": "Arsenal kept their quadruple dreams alive with a commanding performance at the Emirates, defined by two moments of individual brilliance. Eberechi Eze and Declan Rice both found the net with spectacular long-range strikes to break down a resilient Bayer Leverkusen side. While the first leg was a tense stalemate, the Gunners left no doubt in London, dominating possession and restricting the visitors to almost zero clear-cut opportunities.",
+      "headline": "Spurs edge Atlético in chaotic five-goal thriller",
+      "score": "Tottenham Hotspur 3 - 2 Atlético Madrid",
+      "brief": "In a clash of contrasting styles, Tottenham’s high-octane offense eventually wore down Diego Simeone’s disciplined Atlético defense. It was a game of shifts and momentum, with Spurs finding a late winner to take a narrow but crucial advantage into the second leg of this heavyweight encounter.",
       "bullets": [
-        "Eberechi Eze scored his first-ever Champions League goal with a 20-yard screamer in the 36th minute.",
-        "Arsenal recorded their 25th clean sheet of the season, a milestone achievement in just 49 matches.",
-        "The Gunners registered 12 shots on target, equaling their club record for a Champions League knockout match.",
-        "Declan Rice sealed the tie just after the hour mark with a clinical low drive into the bottom corner."
+        "Heung-min Son scored the decisive goal in the 82nd minute following a rapid counter-attack.",
+        "Atlético Madrid uncharacteristically conceded twice from set-pieces.",
+        "Spurs recorded 65% possession, their highest against a top-tier Spanish opponent in years.",
+        "The match saw nine yellow cards as tempers flared in a physical second half."
       ],
-      "context": "Arsenal advances 3-1 on aggregate and will face Sporting CP in the quarterfinals next month.",
+      "context": "Spurs lead the tie, but Atlético's two away goals mean the return leg in Madrid remains on a knife-edge.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.skysports.com/football/arsenal-vs-bayer-leverkusen/report/554849"
+        "recapUrl": "https://www.tottenhamhotspur.com"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "GHu4MBYT8l0",
-          "title": "Arsenal vs. Bayer Leverkusen: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
-          "url": "https://www.youtube.com/watch?v=GHu4MBYT8l0",
-          "embedUrl": "https://www.youtube.com/embed/GHu4MBYT8l0",
-          "publishedAt": "2026-03-17T22:12:42Z",
+          "videoId": "Kbz86Uuz_6Q",
+          "title": "Tottenham vs. Atlético Madrid: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=Kbz86Uuz_6Q",
+          "embedUrl": "https://www.youtube.com/embed/Kbz86Uuz_6Q",
+          "publishedAt": "2026-03-18T22:19:39Z",
           "matchScore": 100
         }
-      ]
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      }
     },
     {
-      "id": "554901",
+      "id": "20260318-liverpool-galatasaray",
       "teams": {
-        "away": "PSG",
-        "home": "Chelsea"
+        "away": "Galatasaray",
+        "home": "Liverpool"
       },
-      "headline": "Clinical PSG embarrass Chelsea at the Bridge to march on",
-      "score": "Chelsea 0 - 3 PSG",
-      "brief": "The gap between Europe's elite and the current Chelsea project was laid bare at Stamford Bridge as the Champions League holders strolled to a dominant victory. PSG effectively ended the contest within the first fifteen minutes, ruthlessly punishing defensive errors from a youthful Blues backline. The atmosphere turned toxic in West London as home fans booed their team off at halftime, witnessing their heaviest two-legged European defeat in club history.",
+      "headline": "Clinical Liverpool cruise past Galatasaray at Anfield",
+      "score": "Liverpool 4 - 0 Galatasaray",
+      "brief": "Liverpool made light work of the Turkish champions, putting on a professional display that emphasized the gap in quality between the two sides. From the opening whistle, the Reds pressed high and never allowed Galatasaray to settle, resulting in a clean sheet and a mountain for the visitors to climb in the return leg.",
       "bullets": [
-        "Khvicha Kvaratskhelia and Bradley Barcola both scored in the opening 14 minutes to silence the home crowd.",
-        "Chelsea's 8-2 aggregate loss is the most goals they have ever conceded in a two-legged European tie.",
-        "19-year-old Senny Mayulu came off the bench to add a third goal in the second half.",
-        "The defeat was compounded by a late injury to Trevoh Chalobah, leaving Chelsea to finish with ten men."
+        "Mohamed Salah reached a new milestone for European goals scored at Anfield.",
+        "Liverpool’s midfield restricted Galatasaray to zero shots on target throughout the match.",
+        "The victory extends Liverpool's unbeaten home streak in European competition to 15 matches.",
+        "Three of the four goals were assisted by Liverpool’s full-backs, highlighting their tactical dominance out wide."
       ],
-      "context": "The holders advance 8-2 on aggregate, while Chelsea's focus shifts to a desperate fight for European qualification in the league.",
+      "context": "With a four-goal cushion, Liverpool looks almost certain to advance to the next round.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.beinsports.com/en-mena/football/uefa-champions-league/articles-video/clinical-psg-see-off-chelsea-to-reach-the-champions-league-quarter-finals-2026-03-17"
+        "recapUrl": "https://www.liverpoolfc.com"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "rB9xwSyVE98",
-          "title": "Chelsea vs. PSG: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
-          "url": "https://www.youtube.com/watch?v=rB9xwSyVE98",
-          "embedUrl": "https://www.youtube.com/embed/rB9xwSyVE98",
-          "publishedAt": "2026-03-17T22:05:08Z",
+          "videoId": "Se9o_3FnolY",
+          "title": "Liverpool vs. Galatasaray: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=Se9o_3FnolY",
+          "embedUrl": "https://www.youtube.com/embed/Se9o_3FnolY",
+          "publishedAt": "2026-03-18T22:22:21Z",
           "matchScore": 100
         }
-      ]
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      }
     },
     {
-      "id": "554900",
+      "id": "20260318-bayern-atalanta",
       "teams": {
-        "away": "Real Madrid",
-        "home": "Manchester City"
+        "away": "Atalanta",
+        "home": "Bayern München"
       },
-      "headline": "Vinícius Jr. brace haunts City as Real Madrid cruise into quarters",
-      "score": "Manchester City 1 - 2 Real Madrid",
-      "brief": "Real Madrid proved once again they are the masters of the Champions League, navigating a high-pressure night at the Etihad with clinical composure. A first-half red card for Bernardo Silva for a handball on the line completely changed the complexion of the match, allowing Vinícius Júnior to fire Madrid ahead from the spot. Despite a spirited equalizer from Erling Haaland, the ten men of City couldn't find the miracle they needed, and Vinícius added a second in stoppage time to put the result beyond doubt.",
+      "headline": "Bayern overpower Atalanta as Kane shines in Munich",
+      "score": "Bayern München 4 - 1 Atalanta",
+      "brief": "Bayern München’s relentless attacking machinery proved too much for Atalanta’s adventurous style. While the Italian side managed to find the net, they were ultimately overwhelmed by Bayern’s clinical finishing and superior physical presence, leaving the Bundesliga giants in a commanding position.",
       "bullets": [
-        "Vinícius Júnior was named MVP after scoring a penalty and a dramatic 93rd-minute winner.",
-        "Bernardo Silva was sent off in the 22nd minute for a goal-line handball, the turning point of the tie.",
-        "This is the third consecutive year that Real Madrid have eliminated Manchester City from the competition.",
-        "Erling Haaland's 41st-minute tap-in briefly gave City hope, but they were thwarted by a string of Thibaut Courtois saves."
+        "Harry Kane scored a trademark header and provided an assist in a Man of the Match performance.",
+        "Atalanta briefly made it 2-1 before Bayern pulled away with two goals in five minutes.",
+        "Bayern has now scored 3+ goals in every home Champions League game this season.",
+        "Manuel Neuer made two spectacular saves early in the match to prevent an Atalanta upset."
       ],
-      "context": "Real Madrid progresses 5-1 on aggregate, setting up a heavyweight quarterfinal clash with Bayern Munich.",
+      "context": "Bayern heads to Italy with a comfortable three-goal lead, firmly in control of the tie.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.skysports.com/football/manchester-city-vs-real-madrid/report/554900"
+        "recapUrl": "https://fcbayern.com"
       },
       "highlights": [
         {
           "provider": "youtube",
-          "videoId": "SXIqIDIkbyk",
-          "title": "Manchester City vs. Real Madrid: Extended Highlights | UCL Round of 16 Leg 2 | CBS Sports Golazo",
-          "url": "https://www.youtube.com/watch?v=SXIqIDIkbyk",
-          "embedUrl": "https://www.youtube.com/embed/SXIqIDIkbyk",
-          "publishedAt": "2026-03-17T22:45:27Z",
+          "videoId": "KWIGWRIFyys",
+          "title": "Bayern Munich vs. Atalanta: Extended Highlights | UCL Round of 16 - Leg 2 | CBS Sports Golazo",
+          "url": "https://www.youtube.com/watch?v=KWIGWRIFyys",
+          "embedUrl": "https://www.youtube.com/embed/KWIGWRIFyys",
+          "publishedAt": "2026-03-18T22:10:30Z",
           "matchScore": 100
         }
-      ]
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      }
     }
   ]
 }

@@ -2,203 +2,41 @@
   "leagueName": "NCAA Baseball",
   "leagueKey": "ncaabaseball",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Tuesday provided a massive shakeup at the top of the rankings as No. 2 Texas fell at home to Tarleton State, while No. 5 Auburn asserted its dominance with a convincing win over No. 3 Georgia Tech. Across the country, the SEC and ACC powerhouses largely held serve, though mid-major programs like SE Louisiana and Portland proved they can play giant-killer by taking down top-20 opponents.",
+  "leagueBriefing": "Ranked powerhouses like Arkansas and Virginia survived scares to keep their winning streaks alive, while USC needed a dramatic walk-off to avoid an upset. The midweek slate was defined by high-scoring rallies and tight pitching duels across the country.",
   "games": [
     {
-      "id": "20260317-pepperdine-ucla",
-      "teams": {
-        "away": "Pepperdine",
-        "home": "UCLA"
-      },
-      "headline": "Top-ranked Bruins survive scare against Pepperdine",
-      "score": "Pepperdine 4 - UCLA 5",
-      "brief": "In a tight mid-week battle at Jackie Robinson Stadium, the top-ranked Bruins managed to hold off a late surge from Pepperdine. UCLA relied on timely hitting and a solid bullpen performance to navigate a game where both teams matched each other with eight hits apiece.",
-      "bullets": [
-        "UCLA improved to 18-2 on the season with the narrow victory.",
-        "Pepperdine out-hit the Bruins for much of the game but committed two costly errors.",
-        "The Bruins' pitching staff combined for 11 strikeouts to stifle the Waves' rally.",
-        "UCLA's defense turned a critical double play in the 8th inning to preserve the lead."
-      ],
-      "context": "UCLA maintains its hold on the No. 1 spot heading into a pivotal weekend conference series.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803310"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "10-12",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "18-2",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 1
-        }
-      }
-    },
-    {
-      "id": "20260317-tarleton-texas",
-      "teams": {
-        "away": "Tarleton State",
-        "home": "Texas"
-      },
-      "headline": "Tarleton State stuns No. 2 Texas in Austin",
-      "score": "Tarleton State 6 - Texas 1",
-      "brief": "Tarleton State pulled off the upset of the night, traveling to Austin and thoroughly outplaying the No. 2 Longhorns. Texas was held to just two hits all evening as Tarleton's pitching staff authored a masterpiece, silencing one of the nation's most potent lineups.",
-      "bullets": [
-        "Texas suffered just its second loss of the season, falling to 18-2.",
-        "Tarleton State pitchers combined to allow only two hits over nine innings.",
-        "The Texans broke the game open with a three-run 5th inning.",
-        "This marks one of the biggest wins in Tarleton State program history since moving to Division I."
-      ],
-      "context": "Texas is likely to tumble in the rankings after a rare dominant loss at home.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803311"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "12-10",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "18-2",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 2
-        }
-      }
-    },
-    {
-      "id": "20260317-gt-auburn",
-      "teams": {
-        "away": "Georgia Tech",
-        "home": "Auburn"
-      },
-      "headline": "Auburn throttles Georgia Tech in top-five showdown",
-      "score": "Georgia Tech 2 - Auburn 9",
-      "brief": "In a highly anticipated clash of top-five teams, No. 5 Auburn left no doubt about who was the better squad on Tuesday. Behind a dominant start from Andreas Alvarez, who fanned 10 batters, the Tigers dismantled the No. 3 Yellow Jackets to claim a statement midweek win.",
-      "bullets": [
-        "Andreas Alvarez gave up only two hits across five dominant innings of work.",
-        "Chris Rembert led the Auburn offense with a home run and three RBIs.",
-        "Georgia Tech was held to just three total hits in the contest.",
-        "Auburn improves to 18-2, mirroring the record of the top-ranked teams."
-      ],
-      "context": "Auburn makes a strong case to jump into the top three in next week's rankings.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803312"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "17-4",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 3
-        },
-        "home": {
-          "record": "18-2",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 5
-        }
-      }
-    },
-    {
-      "id": "20260317-unco-arkansas",
+      "id": "401803310",
       "teams": {
         "away": "Northern Colorado",
         "home": "Arkansas"
       },
-      "headline": "Hogs hammer Northern Colorado in run-rule victory",
-      "score": "Northern Colorado 2 - Arkansas 13",
-      "brief": "Arkansas made short work of Northern Colorado, ending the game early via the run rule in the 8th inning. The Razorbacks' bats were on fire at Baum-Walker Stadium, churning out 12 hits and taking advantage of every opportunity to keep the pressure on the visitors.",
+      "headline": "Lee dominates early as Razorbacks sweep midweek series",
+      "score": "Northern Colorado 4 - Arkansas 9",
+      "brief": "Peyton Lee was the story in Fayetteville, carrying a no-hitter into the fifth inning to help the Razorbacks finish off a two-game sweep of Northern Colorado. Arkansas jumped out to a 9-0 lead by the seventh before the Bears finally found some life against the bullpen, but the cushion was more than enough to secure the Hogs' 16th win of the season.",
       "bullets": [
-        "Arkansas improved to 15-6 on the year with the dominant showing.",
-        "The Razorbacks scored in five different innings to maintain a steady lead.",
-        "Arkansas pitching surrendered only four hits while racking up 12 strikeouts.",
-        "Northern Colorado fell to 4-15 after the lopsided loss."
+        "Freshman Peyton Lee struck out six and allowed just one hit over five scoreless innings.",
+        "Arkansas improved to 5-1 in midweek games this season.",
+        "Damian Ruiz reached base four times and drove in two runs in his first start in center field.",
+        "The Razorbacks recorded four stolen bases, bringing their season total to 33 through 22 games."
       ],
-      "context": "Arkansas continues to look like an offensive juggernaut at home.",
+      "context": "The Razorbacks carry momentum into their first road test of the season, a weekend series at South Carolina.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803313"
+        "recapUrl": "https://www.secsports.com/news/2026/03/no-4-arkansas-overpowers-northern-colorado-at-home"
       },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
       "teamMeta": {
         "away": {
-          "record": "4-15",
+          "record": "3-20",
           "standing": null,
           "seed": null,
           "top25Rank": null
         },
         "home": {
-          "record": "15-6",
+          "record": "16-6",
           "standing": null,
           "seed": null,
           "top25Rank": 4
         }
-      }
-    },
-    {
-      "id": "20260317-jkst-msst",
-      "teams": {
-        "away": "Jackson State",
-        "home": "Mississippi State"
-      },
-      "headline": "Mississippi State explodes for 17 runs to bury Jackson State",
-      "score": "Jackson State 1 - Mississippi State 17",
-      "brief": "Mississippi State left nothing to chance against Jackson State, putting up a staggering 17 runs in just seven innings. The Bulldogs exploited five Jackson State errors and pounded out 12 hits in a game that was effectively over by the third inning.",
-      "bullets": [
-        "The Bulldogs scored 10 runs in the first three innings alone.",
-        "Jackson State committed five errors, leading to several unearned runs.",
-        "Mississippi State pitchers combined to allow only one hit over seven innings.",
-        "The win moves the Bulldogs to 17-4 on the season."
-      ],
-      "context": "A dominant tune-up for Mississippi State before returning to SEC play.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803314"
       },
       "highlights": [
         {
@@ -208,173 +46,41 @@
           "url": "",
           "embedUrl": ""
         }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "11-9",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "17-4",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 6
-        }
-      }
+      ]
     },
     {
-      "id": "20260317-cit-uga",
+      "id": "15251",
       "teams": {
-        "away": "The Citadel",
-        "home": "Georgia"
+        "away": "Virginia",
+        "home": "Liberty"
       },
-      "headline": "Branch's walk-off blast rescues Georgia against The Citadel",
-      "score": "The Citadel 5 - Georgia 8",
-      "brief": "Georgia avoided a disastrous home loss thanks to late-inning heroics from Kolby Branch. Trailing late, the Bulldogs rallied to tie the game before Branch crushed a walk-off home run—his second homer of the final three frames—to send the Athens crowd home happy.",
+      "headline": "Virginia holds off furious Liberty rally in high-scoring thriller",
+      "score": "Virginia 14 - Liberty 12",
+      "brief": "What looked like a blowout turned into a nail-biter as Virginia survived an eight-run surge from Liberty over the final three innings. The Cavaliers built a massive 14-4 lead behind a seven-run first inning, but the Flames brought the go-ahead run to the plate in the ninth before Lucas Hartman finally slammed the door to preserve the road win.",
       "bullets": [
-        "Kolby Branch hit two home runs in the final three innings, including the game-winner.",
-        "The Citadel led for much of the game after a strong start against the Georgia bullpen.",
-        "Georgia out-hit The Citadel 12-9 in the comeback effort.",
-        "The Bulldogs moved to 18-4 with their third consecutive win."
+        "Virginia exploded for seven runs in the first inning on just one hit, aided by three walks and a hit batsman.",
+        "Liberty outhit Virginia 17-9 but left 13 men on base.",
+        "Flames first baseman Riley DeCandido homered twice and drove in four runs in the comeback attempt.",
+        "Jake Weatherspoon led the Cavaliers' offense with four RBIs."
       ],
-      "context": "Georgia shows resilience ahead of a critical stretch in the SEC schedule.",
+      "context": "The win marks Virginia's 18th victory as they continue to solidify their spot in the top 10.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803315"
+        "recapUrl": "https://libertyflames.com/news/2026/3/18/baseball-liberty-rallies-but-falls-to-no-9-virginia-in-slugfest"
       },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
       "teamMeta": {
         "away": {
-          "record": "12-8",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
           "record": "18-4",
           "standing": null,
           "seed": null,
-          "top25Rank": 7
-        }
-      }
-    },
-    {
-      "id": "20260317-ou-sela",
-      "teams": {
-        "away": "Oklahoma",
-        "home": "SE Louisiana"
-      },
-      "headline": "Lions roar past No. 8 Sooners in shutout victory",
-      "score": "Oklahoma 0 - SE Louisiana 3",
-      "brief": "In one of the most surprising results of the day, SE Louisiana completely shut down the No. 8 Oklahoma offense. The Lions' pitching staff was flawless, scattering four hits and allowing zero runs to secure a massive signature win for the Southland Conference program.",
-      "bullets": [
-        "Oklahoma was shut out for the first time this season.",
-        "SE Louisiana pitchers combined for 10 strikeouts and zero walks.",
-        "The Lions scored all three of their runs in the 4th and 5th innings.",
-        "Oklahoma fell to 17-4 despite a solid outing from their starting pitcher."
-      ],
-      "context": "A significant blow to Oklahoma's ranking and a major boost for SE Louisiana's postseason resume.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803316"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "17-4",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 8
-        },
-        "home": {
-          "record": "14-8",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        }
-      }
-    },
-    {
-      "id": "20260317-gtwn-uva",
-      "teams": {
-        "away": "Georgetown",
-        "home": "Virginia"
-      },
-      "headline": "Cavaliers outlast Hoyas in tight midweek duel",
-      "score": "Georgetown 4 - Virginia 6",
-      "brief": "Virginia utilized a balanced offensive attack and a gritty bullpen performance to see off a challenge from Georgetown. The Hoyas actually out-hit the Cavaliers 7-6, but Virginia's ability to capitalize on walks and timely base running proved to be the difference.",
-      "bullets": [
-        "Virginia moved to 17-4 with the victory in Charlottesville.",
-        "Georgetown left seven runners on base in the final four innings.",
-        "The Cavaliers' middle relief provided three scoreless innings to preserve the lead.",
-        "Both teams committed one error in a cleanly played contest."
-      ],
-      "context": "Virginia maintains its momentum heading into a tough ACC weekend.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803317"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "13-9",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "17-4",
-          "standing": null,
-          "seed": null,
           "top25Rank": 9
+        },
+        "home": {
+          "record": "13-7",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
         }
-      }
-    },
-    {
-      "id": "20260317-ncst-uncw",
-      "teams": {
-        "away": "NC State",
-        "home": "UNC Wilmington"
-      },
-      "headline": "Wolfpack bats explode in run-rule win at UNCW",
-      "score": "NC State 14 - UNC Wilmington 2",
-      "brief": "No. 10 NC State left the coast with a dominant victory, overwhelming UNC Wilmington with 14 hits in a game called after seven innings. The Pack's offense was relentless from the jump, scoring in every inning except the first and fourth to cruise to a lopsided win.",
-      "bullets": [
-        "NC State pounded out 14 hits in just seven innings of play.",
-        "UNCW was held to just three hits by a trio of Wolfpack pitchers.",
-        "NC State improved to 17-4, matching several other top-10 teams.",
-        "The Wolfpack defense was perfect, committing zero errors."
-      ],
-      "context": "NC State looks like a legitimate title contender with its potent offensive depth.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803318"
       },
       "highlights": [
         {
@@ -384,315 +90,28 @@
           "url": "",
           "embedUrl": ""
         }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "17-4",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 10
-        },
-        "home": {
-          "record": "14-7",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        }
-      }
+      ]
     },
     {
-      "id": "20260317-bcu-fsu",
+      "id": "20260318-csb-usc",
       "teams": {
-        "away": "Bethune-Cookman",
-        "home": "Florida State"
-      },
-      "headline": "Noles avoid Bethune-Cookman's hitless miracle in wild win",
-      "score": "Bethune-Cookman 1 - Florida State 12",
-      "brief": "Florida State won big on paper, but the story of the night was Bethune-Cookman managing to lose 12-1 despite not recording a single hit. The Wildcats were plagued by poor control and defensive lapses, while the No. 11 Seminoles took full advantage of every free pass to end the game early in seven innings.",
-      "bullets": [
-        "Florida State pitchers combined for a seven-inning no-hitter.",
-        "Bethune-Cookman's lone run came via a walk, a stolen base, and an error.",
-        "The Seminoles scored 12 runs on just nine hits.",
-        "FSU improved to 17-3 on the season."
-      ],
-      "context": "A rare statistical anomaly highlights a comfortable win for the Seminoles.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803319"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "8-14",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "17-3",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 11
-        }
-      }
-    },
-    {
-      "id": "20260317-nich-usm",
-      "teams": {
-        "away": "Nicholls",
-        "home": "Southern Miss"
-      },
-      "headline": "Golden Eagles blank Nicholls behind stellar pitching",
-      "score": "Nicholls 0 - Southern Miss 4",
-      "brief": "Southern Miss relied on a lights-out performance from its pitching staff to dispatch Nicholls in a clean 4-0 win. The Golden Eagles held the Colonels to just four hits and zero runs, while their own offense did just enough to secure the victory in Hattiesburg.",
-      "bullets": [
-        "Southern Miss pitchers combined for 12 strikeouts and only one walk.",
-        "Nicholls fell to 15-7 after failing to advance a runner past second base.",
-        "The Golden Eagles move to 17-4, keeping pace with the top of the Sun Belt.",
-        "Nicholls committed three errors which led to two unearned Southern Miss runs."
-      ],
-      "context": "Southern Miss continues its quietly dominant start to the 2026 campaign.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803320"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "15-7",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "17-4",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 12
-        }
-      }
-    },
-    {
-      "id": "20260317-sdsu-usc",
-      "teams": {
-        "away": "San Diego State",
+        "away": "Cal State Bakersfield",
         "home": "USC"
       },
-      "headline": "Trojans handle Aztecs to reach 20-win milestone",
-      "score": "San Diego State 4 - USC 7",
-      "brief": "USC continued its historic start to the season by taking down San Diego State to become one of the first teams in the country to reach 20 wins. The Trojans' offense was efficient, scoring seven runs on seven hits and playing mistake-free baseball to secure the midweek victory.",
+      "headline": "Basseer's walk-off blast rescues Trojans in ninth",
+      "score": "Cal State Bakersfield 3 - USC 4",
+      "brief": "Trailing for the entire game, No. 13 USC found magic in the bottom of the ninth when Jack Basseer launched a 409-foot two-run homer to left. The Trojans' offense had been stifled by the Roadrunners for eight innings, but the walk-off victory pushed their incredible season record to 21-1.",
       "bullets": [
-        "USC improved to a staggering 20-1 on the season.",
-        "San Diego State out-hit the Trojans 8-7 but couldn't capitalize with runners on.",
-        "The Trojans' bullpen closed the door with three hitless innings to finish the game.",
-        "USC has now won 12 consecutive games."
+        "Jack Basseer hit his team-leading fifth home run of the year to win it.",
+        "The Trojans were held to just four hits all night by Bakersfield pitching.",
+        "Henry Chabot earned the win with two scoreless innings of hitless relief.",
+        "Cal State Bakersfield led 3-0 through the fifth inning before USC began its comeback."
       ],
-      "context": "USC is firmly establishing itself as a national championship frontrunner.",
+      "context": "USC continues one of the hottest starts in program history as they head back into Big Ten play.",
       "recapStatus": "ok",
       "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803321"
+        "recapUrl": "https://usctrojans.com/news/2026/3/18/baseball-basseers-walk-off-blast-powers-trojans-past-csu-bakersfield-4-3"
       },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "11-10",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "20-1",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 13
-        }
-      }
-    },
-    {
-      "id": "20260317-orst-port",
-      "teams": {
-        "away": "Oregon State",
-        "home": "Portland"
-      },
-      "headline": "Portland pulls off shocker against No. 17 Oregon State",
-      "score": "Oregon State 1 - Portland 3",
-      "brief": "The Pilots stunned the No. 17 Beavers in a low-scoring defensive struggle in Portland. Oregon State's offense, usually one of the most consistent in the Pac-12, was held to just three hits and one lone run as Portland's pitchers executed a perfect game plan to upset their in-state rivals.",
-      "bullets": [
-        "Oregon State fell to 14-5 with the disappointing midweek loss.",
-        "Portland's pitching staff combined for 11 strikeouts against the ranked Beavers.",
-        "The Pilots scored all three runs in the bottom of the 6th inning.",
-        "Oregon State had the tying run at the plate in the 9th but failed to convert."
-      ],
-      "context": "A blow to Oregon State's RPI and a massive momentum builder for Portland.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803322"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "14-5",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 17
-        },
-        "home": {
-          "record": "12-9",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        }
-      }
-    },
-    {
-      "id": "20260317-stet-fla",
-      "teams": {
-        "away": "Stetson",
-        "home": "Florida"
-      },
-      "headline": "Gators pound Stetson in dominant offensive display",
-      "score": "Stetson 1 - Florida 10",
-      "brief": "No. 18 Florida left no room for doubt against Stetson, cruising to a 10-1 victory at Condron Family Ballpark. The Gators' pitching staff was dominant, allowing only four hits, while the offense capitalized on three Stetson errors to turn the game into a rout by the mid-innings.",
-      "bullets": [
-        "Florida improved to 19-3 on the season with the win.",
-        "Stetson committed three errors and issued six walks to fuel the Florida offense.",
-        "The Gators' pitching staff racked up 14 strikeouts in the contest.",
-        "Florida has now won five straight games."
-      ],
-      "context": "Florida is hitting its stride just as the meat of the SEC schedule begins.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803323"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "9-13",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "19-3",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 18
-        }
-      }
-    },
-    {
-      "id": "20260317-clem-cofc",
-      "teams": {
-        "away": "Clemson",
-        "home": "Charleston"
-      },
-      "headline": "Tigers stifle Charleston in low-scoring road win",
-      "score": "Clemson 3 - Charleston 1",
-      "brief": "No. 19 Clemson relied on elite pitching to secure a tough road win against the College of Charleston. Despite being out-hit 7-6, the Tigers made their hits count and used a lock-down bullpen to prevent the Cougars from ever stringing together a multi-run rally.",
-      "bullets": [
-        "Clemson moved to 17-4 with the victory.",
-        "Charleston left nine runners on base throughout the game.",
-        "The Tigers' bullpen allowed only one hit over the final four innings.",
-        "Both teams played error-free baseball in a very fundamentally sound game."
-      ],
-      "context": "Clemson continues to prove it can win close, low-scoring games on the road.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803324"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "17-4",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 19
-        },
-        "home": {
-          "record": "9-11",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        }
-      }
-    },
-    {
-      "id": "20260317-eku-tenn",
-      "teams": {
-        "away": "Eastern Kentucky",
-        "home": "Tennessee"
-      },
-      "headline": "Vols hammer Eastern Kentucky in offensive clinic",
-      "score": "Eastern Kentucky 3 - Tennessee 10",
-      "brief": "No. 22 Tennessee flexed its offensive muscle in a comfortable 10-3 win over Eastern Kentucky. The Vols tallied 10 hits and benefited from a balanced lineup that saw contributions from top to bottom, ensuring the game was never in doubt after a four-run 2nd inning.",
-      "bullets": [
-        "Tennessee improved to 15-6 on the season.",
-        "Eastern Kentucky fell to 7-14 despite a respectable seven-hit performance.",
-        "The Vols' pitching staff recorded 13 strikeouts to limit the damage.",
-        "Tennessee has scored 10 or more runs in three of its last five games."
-      ],
-      "context": "Tennessee's offense is finding its rhythm at the perfect time.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803325"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
       "teamMeta": {
         "away": {
           "record": "7-14",
@@ -701,32 +120,11 @@
           "top25Rank": null
         },
         "home": {
-          "record": "15-6",
+          "record": "21-1",
           "standing": null,
           "seed": null,
-          "top25Rank": 22
+          "top25Rank": 13
         }
-      }
-    },
-    {
-      "id": "20260317-txst-tamu",
-      "teams": {
-        "away": "Texas State",
-        "home": "Texas A&M"
-      },
-      "headline": "Aggies outslug Texas State in high-scoring affair",
-      "score": "Texas State 6 - Texas A&M 9",
-      "brief": "In a competitive battle between Lone Star State rivals, No. 23 Texas A&M used a mid-game power surge to pull away from Texas State. The Aggies' lineup was efficient, scoring nine runs on just eight hits, while their defense remained perfect to avoid any late-inning drama.",
-      "bullets": [
-        "Texas A&M improved to 17-3 with the win.",
-        "Texas State out-hit the Aggies 7-6 but couldn't overcome several stranded runners.",
-        "The Aggies' bullpen provided four critical innings of two-run ball to hold the lead.",
-        "Both teams played a clean game with zero recorded errors."
-      ],
-      "context": "Texas A&M continues to solidify its spot in the top 25 with consistent midweek performances.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803326"
       },
       "highlights": [
         {
@@ -736,41 +134,173 @@
           "url": "",
           "embedUrl": ""
         }
+      ]
+    },
+    {
+      "id": "20260318-uncg-unc",
+      "teams": {
+        "away": "UNC Greensboro",
+        "home": "North Carolina"
+      },
+      "headline": "Tar Heels use late five-run surge to pull away from Spartans",
+      "score": "UNC Greensboro 2 - North Carolina 8",
+      "brief": "North Carolina found itself in a deadlocked 2-2 battle through six innings before the bats finally woke up. A massive five-run seventh inning, highlighted by a Rom Kellis home run, allowed the Tar Heels to breathe easy and secure a midweek win over a pesky UNCG squad.",
+      "bullets": [
+        "The game was tied at 2-2 until the sixth inning when UNC regained the lead.",
+        "UNC utilized seven different pitchers in a scheduled staff day.",
+        "Luke Jenkins drove in both runs for the Spartans with a two-out single in the fourth.",
+        "North Carolina outhit the Spartans 9-5 and left 15 runners on base."
       ],
+      "context": "The win keeps North Carolina steady as they prepare for a high-stakes ACC schedule.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://uncgspartans.com/news/2026/3/18/baseball-falls-in-late-game-rally-to-no-14-north-carolina-8-2.aspx"
+      },
       "teamMeta": {
         "away": {
+          "record": "10-12",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": "18-3-1",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 14
+        }
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260318-cc-campbell",
+      "teams": {
+        "away": "Coastal Carolina",
+        "home": "Campbell"
+      },
+      "headline": "Murphy's walk-off single knocks off No. 16 Coastal Carolina",
+      "score": "Coastal Carolina 3 - Campbell 4",
+      "brief": "Campbell secured its highest-ranked win in two years in dramatic fashion on Wednesday night. After Coastal Carolina tied the game with a sacrifice fly in the top of the ninth, Mike Murphy delivered a base hit up the middle in the bottom half to give the Camels a signature victory over the 16th-ranked Chanticleers.",
+      "bullets": [
+        "Campbell pitchers allowed only one hit the entire game while striking out 14 batters.",
+        "The Camels issued 10 walks, which allowed Coastal to stay in the game despite the lack of hits.",
+        "This was Campbell's first win over a ranked opponent since February 2025.",
+        "Mike Murphy's game-winner was the first hit for either team with runners in scoring position (combined 1-for-24)."
+      ],
+      "context": "This upset loss snaps a winning streak for Coastal Carolina and boosts Campbell's resume heading into conference play.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://gocamels.com/news/2026/3/18/baseball-camels-walk-off-no-16-coastal-carolina-4-3.aspx"
+      },
+      "teamMeta": {
+        "away": {
+          "record": "13-7",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 16
+        },
+        "home": {
+          "record": "11-9",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "20260318-clemson-citadel",
+      "teams": {
+        "away": "Clemson",
+        "home": "The Citadel"
+      },
+      "headline": "Lichtenberger drives in five as Clemson cruises in Charleston",
+      "score": "Clemson 9 - The Citadel 3",
+      "brief": "In front of a record-setting crowd at Riley Park, Clemson showed why they are a top-20 mainstay. Tyler Lichtenberger led the charge with a five-RBI performance, as the Tigers used a strong middle-inning push to silence the Bulldogs and complete their sweep of the Lowcountry road trip.",
+      "bullets": [
+        "Tyler Lichtenberger went 3-for-5 with five RBIs and two runs scored.",
+        "The game featured a record-setting attendance of 5,298 fans.",
+        "Clemson scored all nine of their runs in the fourth, fifth, and sixth innings.",
+        "The Citadel’s Andrew Bowers took the loss after giving up seven hits in 3.2 innings."
+      ],
+      "context": "The Tigers remain one of the most consistent teams in the ACC, improving to 18-4.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://citadelsports.com/news/2026/3/18/baseball-the-citadel-drops-midweek-clash-against-no-19-clemson-9-3.aspx"
+      },
+      "teamMeta": {
+        "away": {
+          "record": "18-4",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 19
+        },
+        "home": {
+          "record": "8-11",
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "",
+          "title": "",
+          "url": "",
+          "embedUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "16075",
+      "teams": {
+        "away": "Louisiana",
+        "home": "Houston"
+      },
+      "headline": "Ragin' Cajuns explode in 10th to outlast Houston",
+      "score": "Louisiana 6 - Houston 3",
+      "brief": "Louisiana and Houston traded blows for nine innings before the Ragin' Cajuns finally broke through in extras. Capitalizing on a critical Houston throwing error and a wild pitch, Louisiana plated three runs in the top of the 10th to secure a hard-fought midweek victory on the road.",
+      "bullets": [
+        "Colt Brown homered in the fourth and added a key RBI groundout in the 10th.",
+        "Louisiana's Rigoberto Hernandez reached on a fielder's choice in the 10th that sparked the three-run rally.",
+        "Cody Brasch earned the win in relief, while Houston's Kendall Hoffman took the loss.",
+        "Houston's Riley Jackson hit his fourth home run of the season in the second inning."
+      ],
+      "context": "Louisiana earns a high-quality midweek road win against a Big 12 opponent.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://uhcougars.com/boxscore.aspx?id=16075"
+      },
+      "teamMeta": {
+        "away": {
+          "record": "15-7",
+          "standing": null,
+          "seed": null,
+          "top25Rank": 25
+        },
+        "home": {
           "record": "12-8",
           "standing": null,
           "seed": null,
           "top25Rank": null
-        },
-        "home": {
-          "record": "17-3",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 23
         }
-      }
-    },
-    {
-      "id": "20260317-lib-wake",
-      "teams": {
-        "away": "Liberty",
-        "home": "Wake Forest"
-      },
-      "headline": "Deacs dominate Liberty in one-hit run-rule victory",
-      "score": "Liberty 0 - Wake Forest 11",
-      "brief": "No. 24 Wake Forest looked every bit like a top-tier team on Tuesday, dismantling Liberty in a game that was called after seven innings. The Demon Deacons' pitching was the story, allowing only a single hit over seven dominant frames while the offense pounded out 11 runs.",
-      "bullets": [
-        "Wake Forest improved to 16-5 with the clinical performance.",
-        "Liberty was held to just one hit, their lowest total of the season.",
-        "The Deacs scored in every inning except the 4th and 6th.",
-        "Wake Forest pitching combined for 10 strikeouts and only two walks."
-      ],
-      "context": "Wake Forest looks primed for a climb in the rankings after this statement win.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803327"
       },
       "highlights": [
         {
@@ -780,109 +310,7 @@
           "url": "",
           "embedUrl": ""
         }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "13-6",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "16-5",
-          "standing": null,
-          "seed": null,
-          "top25Rank": 24
-        }
-      }
-    },
-    {
-      "id": "20260317-gram-lsu",
-      "teams": {
-        "away": "Grambling",
-        "home": "LSU"
-      },
-      "headline": "LSU cruises past Grambling in midweek tune-up",
-      "score": "Grambling 1 - LSU 7",
-      "brief": "LSU handled business at Alex Box Stadium, dispatching Grambling with a steady offensive performance and solid pitching. The Tigers utilized their deep bullpen to keep Grambling off balance, allowing only six hits while the lineup capitalized on three Grambling errors.",
-      "bullets": [
-        "LSU improved to 15-7 on the season.",
-        "The Tigers' pitchers combined for 11 strikeouts in the win.",
-        "Grambling's lone run came on a solo home run in the 4th inning.",
-        "LSU has now won four of its last five games."
-      ],
-      "context": "LSU is building momentum as they head back into the heart of SEC play.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803328"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "9-13",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "15-7",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        }
-      }
-    },
-    {
-      "id": "20260317-ala-usa",
-      "teams": {
-        "away": "Alabama",
-        "home": "South Alabama"
-      },
-      "headline": "South Alabama upsets Tide in error-filled showdown",
-      "score": "Alabama 3 - South Alabama 6",
-      "brief": "South Alabama took advantage of a nightmare defensive performance from Alabama to secure a significant midweek victory. The Crimson Tide committed a staggering five errors, which the Jaguars turned into multiple scoring opportunities despite being out-hit by Alabama's lineup.",
-      "bullets": [
-        "Alabama committed five errors, their most in a single game this season.",
-        "South Alabama improved to 14-7 with the upset win.",
-        "The Jaguars racked up 14 hits, consistently putting pressure on the Tide defense.",
-        "Alabama fell to 15-7 following the loss."
-      ],
-      "context": "A costly loss for Alabama that highlights defensive vulnerabilities ahead of conference play.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.espn.com/college-baseball/game/_/gameId/401803329"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "",
-          "title": "",
-          "url": "",
-          "embedUrl": ""
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": "15-7",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": "14-7",
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        }
-      }
+      ]
     }
   ]
 }

@@ -1,90 +1,90 @@
 {
-  "date": "2026-03-18",
+  "date": "2026-03-19",
   "mode": "manual",
   "picks": [
     {
       "rank": 1,
       "leagueKey": "ncaam",
-      "gameId": "401783861",
-      "headline": "Tramon Mark leaves it late to send Texas past NC State in First Four",
-      "scoreLine": "Texas 68 - NC State 66"
+      "gameId": "2973359",
+      "headline": "Miami (Ohio) silences skeptics with record-setting barrage to sink SMU",
+      "scoreLine": "Miami (OH) 89 - SMU 79"
     },
     {
       "rank": 2,
-      "leagueKey": "ncaam",
-      "gameId": "401783860",
-      "headline": "Howard survives UMBC's late surge to claim first NCAA Tournament win",
-      "scoreLine": "UMBC 83 - Howard 86"
+      "leagueKey": "nba",
+      "gameId": "401789420",
+      "headline": "Celtics stifle Warriors in dominant finals rematch",
+      "scoreLine": "Warriors 99 - Celtics 120"
     },
     {
       "rank": 3,
-      "leagueKey": "uefachampionsleague",
-      "gameId": "80029454",
-      "headline": "Sporting pull off historic comeback to crush Bodo/Glimt dreams",
-      "scoreLine": "Sporting CP 5 - 0 Bodø / Glimt"
+      "leagueKey": "nhl",
+      "gameId": "401803306",
+      "headline": "Hurricanes edge Penguins in high-scoring overtime thriller",
+      "scoreLine": "Penguins 5 - Hurricanes 6"
     },
     {
       "rank": 4,
       "leagueKey": "uefachampionsleague",
-      "gameId": "554849",
-      "headline": "Eze and Rice stunners propel Arsenal past Leverkusen",
-      "scoreLine": "Arsenal 2 - 0 Bayer Leverkusen"
+      "gameId": "20260318-liverpool-galatasaray",
+      "headline": "Clinical Liverpool cruise past Galatasaray at Anfield",
+      "scoreLine": "Liverpool 4 - 0 Galatasaray"
     },
     {
       "rank": 5,
-      "leagueKey": "uefachampionsleague",
-      "gameId": "554901",
-      "headline": "Clinical PSG embarrass Chelsea at the Bridge to march on",
-      "scoreLine": "Chelsea 0 - 3 PSG"
+      "leagueKey": "nba",
+      "gameId": "401789428",
+      "headline": "Davis and James power Lakers past young Rockets",
+      "scoreLine": "Lakers 124 - Rockets 116"
     },
     {
       "rank": 6,
       "leagueKey": "uefachampionsleague",
-      "gameId": "554900",
-      "headline": "Vinícius Jr. brace haunts City as Real Madrid cruise into quarters",
-      "scoreLine": "Manchester City 1 - 2 Real Madrid"
+      "gameId": "20260318-tottenham-atletico",
+      "headline": "Spurs edge Atlético in chaotic five-goal thriller",
+      "scoreLine": "Tottenham Hotspur 3 - 2 Atlético Madrid"
     },
     {
       "rank": 7,
-      "leagueKey": "nba",
-      "gameId": "401783819",
-      "headline": "SGA drops 40 as Thunder survive late Magic rally in Orlando",
-      "scoreLine": "Thunder 113 - Magic 108"
+      "leagueKey": "nhl",
+      "gameId": "401803308",
+      "headline": "Oettinger stands tall as Stars outlast Avalanche in shootout",
+      "scoreLine": "Stars 2 - Avalanche 1"
     },
     {
       "rank": 8,
-      "leagueKey": "nhl",
-      "gameId": "2025021069",
-      "headline": "Caufield hits 40-goal mark with dramatic overtime winner against Boston",
-      "scoreLine": "Bruins 2 - Canadiens 3"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "20260318-bayern-atalanta",
+      "headline": "Bayern overpower Atalanta as Kane shines in Munich",
+      "scoreLine": "Bayern München 4 - 1 Atalanta"
     },
     {
       "rank": 9,
-      "leagueKey": "concacafchampionscup",
-      "gameId": "20260317-alajuelense-lafc",
-      "headline": "Bouanga brace powers LAFC to gritty road win over Alajuelense",
-      "scoreLine": "Alajuelense 1 - 2 Los Angeles FC"
+      "leagueKey": "nhl",
+      "gameId": "401803307",
+      "headline": "Capitals suffocate Senators as Ovechkin nears scoring milestone",
+      "scoreLine": "Senators 1 - Capitals 4"
     },
     {
       "rank": 10,
-      "leagueKey": "concacafchampionscup",
-      "gameId": "20260317-cruzazul-monterrey",
-      "headline": "Cruz Azul and Monterrey trade blows in tense all-Mexican draw",
-      "scoreLine": "Cruz Azul 1 - 1 Monterrey"
+      "leagueKey": "uefachampionsleague",
+      "gameId": "20260318-barcelona-newcastle",
+      "headline": "Barcelona humiliates Newcastle in historic seven-goal masterclass",
+      "scoreLine": "Barcelona 7 - 2 Newcastle United"
     }
   ],
   "top10": [
-    "Tramon Mark leaves it late to send Texas past NC State in First Four",
-    "Howard survives UMBC's late surge to claim first NCAA Tournament win",
-    "Sporting pull off historic comeback to crush Bodo/Glimt dreams",
-    "Eze and Rice stunners propel Arsenal past Leverkusen",
-    "Clinical PSG embarrass Chelsea at the Bridge to march on",
-    "Vinícius Jr. brace haunts City as Real Madrid cruise into quarters",
-    "SGA drops 40 as Thunder survive late Magic rally in Orlando",
-    "Caufield hits 40-goal mark with dramatic overtime winner against Boston",
-    "Bouanga brace powers LAFC to gritty road win over Alajuelense",
-    "Cruz Azul and Monterrey trade blows in tense all-Mexican draw"
+    "Miami (Ohio) silences skeptics with record-setting barrage to sink SMU",
+    "Celtics stifle Warriors in dominant finals rematch",
+    "Hurricanes edge Penguins in high-scoring overtime thriller",
+    "Clinical Liverpool cruise past Galatasaray at Anfield",
+    "Davis and James power Lakers past young Rockets",
+    "Spurs edge Atlético in chaotic five-goal thriller",
+    "Oettinger stands tall as Stars outlast Avalanche in shootout",
+    "Bayern overpower Atalanta as Kane shines in Munich",
+    "Capitals suffocate Senators as Ovechkin nears scoring milestone",
+    "Barcelona humiliates Newcastle in historic seven-goal masterclass"
   ],
-  "newsBriefing": "In a day marked by shifting leadership and critical roster updates, the sports world saw Duke’s Cameron Boozer headline the AP All-America team as the only unanimous first-team selection, while the NFL Players Association elected former offensive lineman JC Tretter as its next executive director. On the international stage, Team USA secured first place in the FIBA Women’s World Cup Qualifying Tournament behind an MVP performance from Caitlin Clark, who successfully returned from a groin injury alongside senior national team debutants Paige Bueckers and Angel Reese. However, the injury bug bit the NHL hard as the Edmonton Oilers announced superstar Leon Draisaitl will miss the remainder of the regular season with a lower-body injury, and Tiger Woods admitted his status for next month's Masters remains unclear due to ongoing health fluctuations. Meanwhile, NASCAR took a firm stance on conduct by suspending driver Daniel Dye for mocking a fellow competitor’s sexuality, and Maxx Crosby addressed the fallout of his nixed trade to Baltimore by reiterating his lifelong commitment to the Raiders.",
-  "updatedAt": "2026-03-18T12:12:25.951Z"
+  "newsBriefing": "The sports world witnessed a blend of historic milestones and somber triumphs today, headlined by Lionel Messi reaching his 900th career goal even as Inter Miami suffered a surprising Champions Cup elimination. In the basketball ranks, injury woes dominated the narrative as Louisville’s star freshman Mikel Brown Jr. was ruled out of the NCAA Tournament opener and SMU coach Andy Enfield defended his team's transparency regarding B.J. Edwards' health following their First Four exit. Professional stars also clarified their futures, with LeBron James withdrawing interest from a Las Vegas expansion bid and Steve Kerr conceding the Golden State Warriors are firmly bound for the play-in tournament. On the ice, the Blackstone Valley Co-op hockey team delivered the day’s most emotional story, securing a Rhode Island state title in quadruple overtime led by captain Colin Dorgan, who lost three family members in a recent rink shooting. Meanwhile, institutional shifts loom on the horizon as the Cleveland Browns proposed extending the NFL's trade window for draft picks to five years, and MLB Commissioner Rob Manfred teased a potential move for the World Baseball Classic to midseason. Amidst these changes, the return of New York Yankees ace Gerrit Cole to the mound for his first spring training start since surgery offered a promising glimpse into the upcoming baseball season.",
+  "updatedAt": "2026-03-19T12:39:07.758Z"
 }

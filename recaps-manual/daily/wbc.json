@@ -2,54 +2,6 @@
   "leagueName": "WBC",
   "leagueKey": "wbc",
   "sourceType": "console_recaps",
-  "leagueBriefing": "Venezuela stands atop the baseball world for the first time after a thrilling ninth-inning rally to defeat the United States in Miami.",
-  "games": [
-    {
-      "id": "788094",
-      "teams": {
-        "away": "Venezuela",
-        "home": "USA"
-      },
-      "headline": "Venezuela captures first World Baseball Classic title with late heroics against USA",
-      "score": "Venezuela 3 - USA 2",
-      "brief": "In a championship game that lived up to the hype, Eugenio Suárez delivered a go-ahead RBI double in the top of the ninth to secure Venezuela's first World Baseball Classic crown. The victory was a masterclass in resilience, as Venezuela stifled a star-studded American lineup for most of the night and quickly recovered after Bryce Harper tied the game with a massive eighth-inning blast. For a nation where baseball is a way of life, the final out sparked a celebration years in the making.",
-      "bullets": [
-        "Eugenio Suárez provided the decisive blow with a ninth-inning double, capping a tournament where he emerged as a national hero.",
-        "Tournament MVP Maikel Garcia drove in the game's first run with a sacrifice fly and finished the Classic with a .385 average.",
-        "Eduardo Rodriguez dominated the U.S. bats early, allowing just one hit and one walk over 4.1 scoreless innings.",
-        "Bryce Harper briefly electrified the home crowd with a game-tying, two-run home run in the bottom of the eighth inning.",
-        "Venezuela's path to the title was a gauntlet, featuring knockout-stage wins over powerhouses Japan, Italy, and the United States."
-      ],
-      "context": "The victory marks Venezuela's first championship in tournament history, ending the United States' bid for a repeat title on home soil.",
-      "recapStatus": "ok",
-      "source": {
-        "recapUrl": "https://www.mlb.com/news/venezuela-wins-world-baseball-classic-2026?game_pk=788094"
-      },
-      "highlights": [
-        {
-          "provider": "youtube",
-          "videoId": "jnVPMQkbGFE",
-          "title": "The FULL 1ST INNING between Team Venezuela and Team USA in the 2026 World Baseball Classic Final! 👀",
-          "url": "https://www.youtube.com/watch?v=jnVPMQkbGFE",
-          "embedUrl": "https://www.youtube.com/embed/jnVPMQkbGFE",
-          "publishedAt": "2026-03-18T00:52:22Z",
-          "matchScore": 100
-        }
-      ],
-      "teamMeta": {
-        "away": {
-          "record": null,
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        },
-        "home": {
-          "record": null,
-          "standing": null,
-          "seed": null,
-          "top25Rank": null
-        }
-      }
-    }
-  ]
+  "leagueBriefing": "",
+  "games": []
 }

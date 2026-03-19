@@ -2,6 +2,53 @@
   "leagueName": "Liga MX",
   "leagueKey": "ligamx",
   "sourceType": "console_recaps",
-  "leagueBriefing": "",
-  "games": []
+  "leagueBriefing": "Guadalajara seized the spotlight in Liga MX with a ruthless midweek performance, vaulting to the top of the Clausura 2026 table. The match served as a stark reminder of Chivas' title credentials while deepening the crisis for a struggling León side that finished the night demoralized and shorthanded.",
+  "games": [
+    {
+      "id": "20260318-guadalajara-leon",
+      "teams": {
+        "away": "León",
+        "home": "Guadalajara"
+      },
+      "headline": "Chivas storm to Liga MX summit with five-goal demolition of León",
+      "score": "Guadalajara 5 - 0 León",
+      "brief": "Guadalajara put on a clinic at Estadio Akron, dismantling León in a lopsided affair that saw five different players find the back of the net. Chivas dominated from the opening whistle, and once they broke the deadlock, the floodgates opened. A combination of clinical finishing and a León red card turned a competitive fixture into a statement win for the new league leaders.",
+      "bullets": [
+        "The win propels Guadalajara to the top of the Clausura 2026 standings, leapfrogging Cruz Azul.",
+        "Five different scorers (Gutiérrez, Sandoval, González, Sepúlveda, and Camberos) contributed to the rout.",
+        "León's night went from bad to worse when a VAR-reviewed penalty was followed later by a red card, leaving them to defend with 10 men.",
+        "Chivas' defense secured their fifth clean sheet of the campaign, allowing only one shot on target the entire match."
+      ],
+      "context": "This victory moves Guadalajara into first place overall in the Clausura 2026, solidifying their status as favorites for the Liguilla.",
+      "recapStatus": "ok",
+      "source": {
+        "recapUrl": "https://www.vavel.com/en-us/mexican-soccer/2026/03/19/1254491-chivas-vs-leon-live-score-liga-mx.html"
+      },
+      "highlights": [
+        {
+          "provider": "youtube",
+          "videoId": "toUaJq6uBB8",
+          "title": "CHIVAS 5-0 LEÓN | El Rebaño gana, gusta, golea y es líder en juego pendiente | J9 Con México C26",
+          "url": "https://www.youtube.com/watch?v=toUaJq6uBB8",
+          "embedUrl": "https://www.youtube.com/embed/toUaJq6uBB8",
+          "publishedAt": "2026-03-19T06:00:46Z",
+          "matchScore": 100
+        }
+      ],
+      "teamMeta": {
+        "away": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        },
+        "home": {
+          "record": null,
+          "standing": null,
+          "seed": null,
+          "top25Rank": null
+        }
+      }
+    }
+  ]
 }
